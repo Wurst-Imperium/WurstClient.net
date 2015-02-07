@@ -1,0 +1,14 @@
+---
+redirect_delay: 0
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+  <title>Redirecting...</title>
+  <meta http-equiv="refresh" content="{{ page.redirect_delay }};url={{ page.redirect_url }}">
+</head>
+<body>
+  Redirecting to <a href="{{ page.redirect_url }}">{{ page.redirect_url }}</a>...
+</body>
+</html>

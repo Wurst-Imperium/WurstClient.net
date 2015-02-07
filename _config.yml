@@ -1,0 +1,30 @@
+exclude:
+- README.md
+
+gems:
+  - jekyll-sitemap
+
+timezone: Europe/Berlin
+
+title: Wurst Client
+
+paginate: 5
+
+paginate_path: "/news/:num"
+
+permalink: /news/:year-:month-:day-:title/index.html
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Alexander01998"
