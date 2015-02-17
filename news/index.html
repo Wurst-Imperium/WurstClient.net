@@ -8,7 +8,10 @@ no_index: true
 			<span class="mega-octicon octicon-radio-tower"></span>
 			{{ page.title }}
 		</h1>
-		<a href="/news/feed.xml" class="pull-right btn btn-default"><span class="hidden-xs">RSS feed <span class="octicon octicon-rss"></span></span><span class="visible-xs mega-octicon octicon-rss"></span></a>
+		<a href="/news/feed.xml" class="pull-right btn btn-default">
+			<span class="hidden-xs">RSS feed <span class="octicon octicon-rss"></span>
+			</span><span class="visible-xs mega-octicon octicon-rss" data-toggle="tooltip" data-placement="top" data-container="body" title="RSS feed"></span>
+		</a>
 	</div>
 	<div class="list-group">
 		{% for post in paginator.posts %}
@@ -25,6 +28,12 @@ no_index: true
 			</div>
 		</div>
 		{% endfor %}
+		<div class="text-center alert">
+			<p>
+				Want even more news?
+			</p>
+			<iframe src="https://ghbtns.com/github-btn.html?user=Alexander01998&type=follow&count=true" frameborder="0" scrolling="0" width="183px" height="20px"></iframe>
+		</div>
 		<nav>
 			<ul class="pagination">
 				{% if paginator.previous_page %}
