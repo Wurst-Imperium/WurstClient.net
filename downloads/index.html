@@ -9,11 +9,11 @@ title: Downloads
         <h2 class="list-group-item-heading">Wurst Client</h2>
       </div>
       <div class="list-group-item-text panel-body">
-        <a class="btn btn-primary" href="https://github.com/Wurst-Imperium/Wurst-Client/releases/latest">
+        <a id="wurst-client-latest" class="btn btn-primary" href="https://github.com/Wurst-Imperium/Wurst-Client/releases/latest">
           <span class="octicon octicon-arrow-down"></span>
           Download latest release
         </a>
-        <a class="btn btn-default" href="https://github.com/Wurst-Imperium/Wurst-Client/releases">
+        <a id="wurst-client-all" class="btn btn-default" href="https://github.com/Wurst-Imperium/Wurst-Client/releases">
           <span class="octicon octicon-eye"></span>
           View all releases
         </a>
@@ -24,22 +24,22 @@ title: Downloads
           </button>
           <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
             <li>
-              <a href="http://old.wurst-client.tk/download/wurst-client/wurst-client-for-minecraft-1-8/releases" data-toggle="tooltip" data-placement="right" data-container="body" title="v1.3 - v1.4.1">
+              <a id="wurst-client-old-1-8" href="http://old.wurst-client.tk/download/wurst-client/wurst-client-for-minecraft-1-8/releases" data-toggle="tooltip" data-placement="right" data-container="body" title="v1.3 - v1.4.1">
                 Old MC 1.8 releases
               </a>
             </li>
             <li>
-              <a href="http://old.wurst-client.tk/download/wurst-client/wurst-client-for-minecraft-1-7-x/releases" data-toggle="tooltip" data-placement="right" data-container="body" title="v1.0 - v1.3.1">
+              <a id="wurst-client-old-1-7" href="http://old.wurst-client.tk/download/wurst-client/wurst-client-for-minecraft-1-7-x/releases" data-toggle="tooltip" data-placement="right" data-container="body" title="v1.0 - v1.3.1">
                 MC 1.7.X releases
               </a>
               </li>
             <li>
-              <a href="http://old.wurst-client.tk/download/wurst-client/wurst-client-for-minecraft-1-7-x/public-beta" data-toggle="tooltip" data-placement="right" data-container="body" title="v1.8 - v1.10.2">
+              <a id="wurst-client-old-public-beta" href="http://old.wurst-client.tk/download/wurst-client/wurst-client-for-minecraft-1-7-x/public-beta" data-toggle="tooltip" data-placement="right" data-container="body" title="v1.8 - v1.10.2">
                 Public beta
               </a>
               </li>
             <li>
-              <a href="http://old.wurst-client.tk/download/wurst-client/wurst-client-for-minecraft-1-7-x/closed-beta" data-toggle="tooltip" data-placement="right" data-container="body" title="v1.1 - v1.7.2">
+              <a id="wurst-client-old-closed-beta" href="http://old.wurst-client.tk/download/wurst-client/wurst-client-for-minecraft-1-7-x/closed-beta" data-toggle="tooltip" data-placement="right" data-container="body" title="v1.1 - v1.7.2">
                 Closed beta
               </a>
               </li>
@@ -71,3 +71,25 @@ title: Downloads
     </div>
   </div>
 </div>
+<script>
+	$(document).ready(function(){
+		$("#wurst-client-latest").click(function(){
+			ga('send', 'event', 'button', 'click', 'wurst-client-latest');
+		});
+		$("#wurst-client-all").click(function(){
+			ga('send', 'event', 'button', 'click', 'wurst-client-all');
+		});
+		$("#wurst-client-old-1-8").click(function(){
+			ga('send', 'event', 'button', 'click', 'wurst-client-old-1-8');
+		});
+		$("#wurst-client-old-1-7").click(function(){
+			ga('send', 'event', 'button', 'click', 'wurst-client-old-1-7');
+		});
+		$("#wurst-client-old-public-beta").click(function(){
+			ga('send', 'event', 'button', 'click', 'wurst-client-old-public-beta');
+		});
+		$("#wurst-client-old-closed-beta").click(function(){
+			ga('send', 'event', 'button', 'click', 'wurst-client-old-closed-beta');
+		});
+	});
+</script>
