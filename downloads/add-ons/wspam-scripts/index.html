@@ -1,0 +1,31 @@
+---
+title: WSPAM scripts
+---
+<div class="container">
+  <h1 class="page-header"><span class="mega-octicon octicon-file-code"></span> {{ page.title }}</h1>
+  <div class="row">
+    {% for template in site.data.downloads.add-ons.wspam %}
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="thumbnail">
+        <img src="{{ template.image }}">
+        <div class="caption">
+          <h2 class="list-group-item-heading">{{ template.title }}</h2>
+          <p>{{ template.description }}</p>
+          <div class="btn-group-vertical">
+            <a id="wurst-wallpapers" class="btn btn-default" href="{{ template.link }}">
+              <span class="octicon octicon-arrow-down"></span>
+              Download
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+    	$(document).ready(function(){
+    		$("#wurst-client-latest").click(function(){
+    			ga('send', 'event', 'button', 'click', 'wurst-client-latest');
+    		});
+    </script>
+    {% endfor %}
+  </div>
+</div>
