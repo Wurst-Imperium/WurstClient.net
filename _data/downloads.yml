@@ -1,0 +1,9 @@
+add-ons:
+  autobuild:
+    -
+      link: http://pastebin.com/download.php?i=XbJD0GTR
+      image: https://cloud.githubusercontent.com/assets/10100202/6276229/a0b1d572-b885-11e4-9660-d44b5fbd74a1.jpg
+      title: Cube
+      description: A simple 3 by 3 cube.
+      size: 3x3x3
+      blocks: 27
