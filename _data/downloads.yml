@@ -77,3 +77,23 @@ add-ons:
       id: wspam-swastika
       title: Swastika
       description: Wurst heil!
+fans:
+  wallpapers:
+    -
+      image: https://cloud.githubusercontent.com/assets/10100202/6287506/6128c4aa-b912-11e4-99f1-ee973efe08ad.jpg
+      id: wallpaper-wurst
+      title: Wurst
+      description: Increase the swag of your screen with this awesome background!
+      downloads:
+        -
+          size: 1440p
+          link: https://github.com/Wurst-Imperium/filedrop/releases/download/v1.0/wurst-wallpaper-1440p.zip
+        -
+          size: 1080p
+          link: https://github.com/Wurst-Imperium/filedrop/releases/download/v1.0/wurst-wallpaper-1080p.zip
+        -
+          size: 720p
+          link: https://github.com/Wurst-Imperium/filedrop/releases/download/v1.0/wurst-wallpaper-720p.zip
+        -
+          size: 480p
+          link: https://github.com/Wurst-Imperium/filedrop/releases/download/v1.0/wurst-wallpaper-480p.zip
