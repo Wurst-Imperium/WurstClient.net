@@ -42,6 +42,12 @@ add-ons:
       blocks: 62
   wspam:
     -
+      link: https://github.com/Wurst-Imperium/filedrop/releases/download/v1.0/wspam-bob.zip
+      image:
+      id: wspam-bob
+      title: Bob
+      description: Bob and his tank are not only against Google+, but also against Pay2Win servers.
+    -
       link: https://github.com/Wurst-Imperium/filedrop/releases/download/v1.0/wspam-christmas-tree.zip
       image:
       id: wspam-christmas-tree
