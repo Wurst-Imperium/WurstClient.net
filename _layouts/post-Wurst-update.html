@@ -1,0 +1,39 @@
+---
+layout: default
+---
+<div class="container">
+	<div class="panel-heading panel-title">
+		<h1>{{ page.title }}</h1>
+		<p class="text-muted">by {{ page.author }} on {{ page.date | date: "%B %-d, %Y" }}</p>
+	</div>
+	<div class="panel-body">
+		<div class="thumbnail">
+			<img src="{{ page.Wurst-image }}" class="img-responsive">
+			<div class="caption">
+				<p class="text-info">
+					Wurst {{ page.Wurst-version }} just got released. Download &amp; changelog below.
+					<span class="octicon octicon-heart"></span>
+				</p>
+			</div>
+		</div>
+		{{ content }}
+			<a href="/news/" class="btn btn-default hidden-print">
+				<span class="octicon octicon-arrow-left"></span>
+				Back
+			</a>
+		<div class="btn-group">
+			<a href="https://github.com/Wurst-Imperium/Wurst-Client/releases/tag/{{ page.Wurst-version }}" class="btn btn-primary">
+				<span class="octicon octicon-cloud-download"></span>
+				Wurst {{ page.Wurst-version }}
+			</a>
+			<a href="https://github.com/Wurst-Imperium/Wurst-Client/issues" class="btn btn-default">
+				<span class="octicon octicon-comment-discussion"></span>
+				Issues
+			</a>
+			<a href="https://github.com/Wurst-Imperium/Wurst-Client/blob/master/CONTRIBUTING.md" class="btn btn-default">
+				<span class="octicon octicon-book"></span>
+				Guidelines for Issues
+			</a>
+		</div>
+	</div>
+</div>

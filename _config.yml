@@ -3,6 +3,7 @@ exclude:
 
 gems:
   - jekyll-sitemap
+  - jemoji
 
 timezone: Europe/Berlin
 
@@ -29,3 +30,10 @@ defaults:
     values:
       layout: "post"
       author: "Alexander01998"
+  -
+    scope:
+      path: ""
+      type: "posts"
+      category: "Wurst-update"
+    values:
+      layout: "post-Wurst-update"
