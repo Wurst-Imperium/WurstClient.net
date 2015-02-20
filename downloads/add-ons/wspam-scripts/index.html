@@ -5,15 +5,18 @@ layout: download
 <div class="container">
   <h1 class="page-header"><span class="mega-octicon octicon-file-code"></span> {{ page.title }}</h1>
   <div class="row">
-    {% for template in site.data.downloads.add-ons.wspam %}
+    {% for script in site.data.downloads.add-ons.wspam %}
     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
       <div class="thumbnail">
-        <img src="{{ template.image }}">
+        <img src="{{ script.image }}">
         <div class="caption">
-          <h2 class="list-group-item-heading">{{ template.title }}</h2>
-          <p>{{ template.description }}</p>
+          <h2 class="list-group-item-heading">{{ script.title }}</h2>
+          <p>{{ script.description }}</p>
+          <p>
+            Lines: {{ script.lines }}
+          </p>
           <div class="btn-group-vertical">
-            <a id="{{ template.id }}" class="btn btn-default" href="{{ template.link }}">
+            <a id="{{ script.id }}" class="btn btn-default" href="{{ script.link }}">
               <span class="octicon octicon-arrow-down"></span>
               Download
             </a>
@@ -23,8 +26,8 @@ layout: download
     </div>
     <script>
     	$(document).ready(function(){
-    		$("#{{ template.id }}").click(function(){
-    			ga('send', 'event', 'download-button', 'click', '{{ template.id }}');
+    		$("#{{ script.id }}").click(function(){
+    			ga('send', 'event', 'download-button', 'click', '{{ script.id }}');
     		});
     </script>
     {% endfor %}
