@@ -42,31 +42,31 @@ add-ons:
       blocks: 62
   wspam:
     -
-      link: https://github.com/Wurst-Imperium/filedrop/releases/download/v1.0/christmas-tree.zip
+      link: https://github.com/Wurst-Imperium/filedrop/releases/download/v1.0/wspam-christmas-tree.zip
       image:
       id: wspam-christmas-tree
       title: Christmas Tree
       description: A sweet little ASCII art X-Mas tree. Merry Christmas!
     -
-      link: https://github.com/Wurst-Imperium/filedrop/releases/download/v1.0/illuminati.zip
+      link: https://github.com/Wurst-Imperium/filedrop/releases/download/v1.0/wspam-illuminati.zip
       image:
       id: wspam-illuminati
       title: Illuminati
       description: They are arising! Sort of.
     -
-      link: https://github.com/Wurst-Imperium/filedrop/releases/download/v1.0/middle-finger.zip
+      link: https://github.com/Wurst-Imperium/filedrop/releases/download/v1.0/wspam-middle-finger.zip
       image:
       id: wspam-middle-finger
       title: Middle Finger
       description: Nothing can say "Fuck you!" better than this.
     -
-      link: https://github.com/Wurst-Imperium/filedrop/releases/download/v1.0/peace-sign.zip
+      link: https://github.com/Wurst-Imperium/filedrop/releases/download/v1.0/wspam-peace-sign.zip
       image:
       id: wspam-peace-sign
       title: Peace Sign
       description: "The opposite of the Middle Finger: Nothing can say \"Peace bro!\" better than this."
     -
-      link: https://github.com/Wurst-Imperium/filedrop/releases/download/v1.0/swastika.zip
+      link: https://github.com/Wurst-Imperium/filedrop/releases/download/v1.0/wspam-swastika.zip
       image:
       id: wspam-swastika
       title: Swastika
