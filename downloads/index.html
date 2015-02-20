@@ -57,11 +57,11 @@ title: Downloads
             Wurst add-ons
           </h2>
           <div class="btn-group-vertical">
-            <a id="autobuild-templates" class="btn btn-default" href="add-ons/autobuild">
+            <a class="btn btn-default" href="add-ons/autobuild">
               <span class="octicon octicon-home"></span>
               AutoBuild templates
             </a>
-            <a id="wspam-scripts" class="btn btn-default" href="add-ons/wspam-scripts">
+            <a class="btn btn-default" href="add-ons/wspam-scripts">
               <span class="octicon octicon-file-code"></span>
               WSPAM scripts
             </a>
@@ -77,7 +77,7 @@ title: Downloads
             <span class="mega-octicon octicon-heart"></span>
           </h2>
           <div class="btn-group-vertical">
-            <a id="wurst-wallpapers" class="btn btn-default disabled" href="fans/wallpapaers">
+            <a class="btn btn-default disabled" href="fans/wallpapaers">
               <span class="octicon octicon-device-desktop"></span>
               Wurst wallpapers
             </a>
@@ -90,31 +90,22 @@ title: Downloads
 <script>
 	$(document).ready(function(){
 		$("#wurst-client-latest").click(function(){
-			ga('send', 'event', 'button', 'click', 'wurst-client-latest');
+			ga('send', 'event', 'download-button', 'click', 'wurst-client-latest');
 		});
 		$("#wurst-client-all").click(function(){
-			ga('send', 'event', 'button', 'click', 'wurst-client-all');
+			ga('send', 'event', 'download-button', 'click', 'wurst-client-all');
 		});
 		$("#wurst-client-old-1-8").click(function(){
-			ga('send', 'event', 'button', 'click', 'wurst-client-old-1-8');
+			ga('send', 'event', 'download-button', 'click', 'wurst-client-old-1-8');
 		});
 		$("#wurst-client-old-1-7").click(function(){
-			ga('send', 'event', 'button', 'click', 'wurst-client-old-1-7');
+			ga('send', 'event', 'download-button', 'click', 'wurst-client-old-1-7');
 		});
 		$("#wurst-client-old-public-beta").click(function(){
-			ga('send', 'event', 'button', 'click', 'wurst-client-old-public-beta');
+			ga('send', 'event', 'download-button', 'click', 'wurst-client-old-public-beta');
 		});
 		$("#wurst-client-old-closed-beta").click(function(){
-			ga('send', 'event', 'button', 'click', 'wurst-client-old-closed-beta');
-		});
-		$("#autobuild-templates").click(function(){
-			ga('send', 'event', 'button', 'click', 'autobuild-templates');
-		});
-		$("#wspam-scripts").click(function(){
-			ga('send', 'event', 'button', 'click', 'wspam-scripts');
-		});
-		$("#wurst-wallpapers").click(function(){
-			ga('send', 'event', 'button', 'click', 'wurst-wallpapers');
+			ga('send', 'event', 'download-button', 'click', 'wurst-client-old-closed-beta');
 		});
 	});
 </script>

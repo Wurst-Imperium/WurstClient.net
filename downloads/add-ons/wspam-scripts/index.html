@@ -12,7 +12,7 @@ title: WSPAM scripts
           <h2 class="list-group-item-heading">{{ template.title }}</h2>
           <p>{{ template.description }}</p>
           <div class="btn-group-vertical">
-            <a id="wurst-wallpapers" class="btn btn-default" href="{{ template.link }}">
+            <a id="{{ template.id }}" class="btn btn-default" href="{{ template.link }}">
               <span class="octicon octicon-arrow-down"></span>
               Download
             </a>
@@ -22,8 +22,8 @@ title: WSPAM scripts
     </div>
     <script>
     	$(document).ready(function(){
-    		$("#wurst-client-latest").click(function(){
-    			ga('send', 'event', 'button', 'click', 'wurst-client-latest');
+    		$("#{{ template.id }}").click(function(){
+    			ga('send', 'event', 'download-button', 'click', '{{ template.id }}');
     		});
     </script>
     {% endfor %}

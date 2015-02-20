@@ -3,6 +3,7 @@ add-ons:
     -
       link: http://pastebin.com/download.php?i=XbJD0GTR
       image: https://cloud.githubusercontent.com/assets/10100202/6276229/a0b1d572-b885-11e4-9660-d44b5fbd74a1.jpg
+      id: autobuild-cube
       title: Cube
       description: A simple 3 by 3 cube.
       size: 3x3x3
@@ -10,6 +11,7 @@ add-ons:
     -
       link: http://pastebin.com/download.php?i=RadY9mmy
       image: https://cloud.githubusercontent.com/assets/10100202/6276230/a0b69562-b885-11e4-9874-fb022ff1a91f.jpg
+      id: autobuild-illuminati
       title: Illuminati
       description: The Illuminati logo
       size: 1x7x4
@@ -17,6 +19,7 @@ add-ons:
     -
       link: http://pastebin.com/download.php?i=BhN5S0sv
       image: https://cloud.githubusercontent.com/assets/10100202/6276226/a0a1152a-b885-11e4-9d5c-ed1ccf5e2491.jpg
+      id: autobuild-sphere
       title: Sphere
       description: A simple 5 by 5 sphere.
       size: 5x5x5
@@ -24,6 +27,7 @@ add-ons:
     -
       link: http://pastebin.com/download.php?i=qNaVaP7T
       image: https://cloud.githubusercontent.com/assets/10100202/6276227/a0a79666-b885-11e4-9d0b-c04e6c5fdfbd.jpg
+      id: autobuild-stairs
       title: Stairs
       description: A 3 blocks wide, 4 blocks high staircase.
       size: 5x3x4
@@ -31,6 +35,7 @@ add-ons:
     -
       link: http://pastebin.com/download.php?i=X0HqWQyy
       image: https://cloud.githubusercontent.com/assets/10100202/6276228/a0abffda-b885-11e4-9bab-a70f0875c828.jpg
+      id: autobuild-tree
       title: Tree
       description: A realistic Minecraft tree. My personal favorite.
       size: 5x5x6
@@ -39,25 +44,30 @@ add-ons:
     -
       link: https://github.com/Wurst-Imperium/filedrop/releases/download/v1.0/christmas-tree.zip
       image:
+      id: wspam-christmas-tree
       title: Christmas Tree
       description: A sweet little ASCII art X-Mas tree. Merry Christmas!
     -
       link: https://github.com/Wurst-Imperium/filedrop/releases/download/v1.0/illuminati.zip
       image:
+      id: wspam-illuminati
       title: Illuminati
       description: They are arising! Sort of.
     -
       link: https://github.com/Wurst-Imperium/filedrop/releases/download/v1.0/middle-finger.zip
       image:
+      id: wspam-middle-finger
       title: Middle Finger
       description: Nothing can say "Fuck you!" better than this.
     -
       link: https://github.com/Wurst-Imperium/filedrop/releases/download/v1.0/peace-sign.zip
       image:
+      id: wspam-peace-sign
       title: Peace Sign
       description: "The opposite of the Middle Finger: Nothing can say \"Peace bro!\" better than this."
     -
       link: https://github.com/Wurst-Imperium/filedrop/releases/download/v1.0/swastika.zip
       image:
+      id: wspam-swastika
       title: Swastika
       description: Wurst heil!
