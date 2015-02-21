@@ -20,7 +20,16 @@ no_index: true
 				<h2 class="list-group-item-heading">
 					<a href="{{ post.url | remove: "index.html" }}">{{ post.title }}</a>
 				</h2>
-				<p class="text-muted">by {{ post.author }} on {{ post.date | date: "%B %-d, %Y" }}</p>
+				<p class="text-muted">
+					by
+					<i>{{ post.author }}</i>
+					on
+					<i>{{ post.date | date: "%b %-d %Y" }}</i>.
+					{% if post.category %}
+					Category:
+					<i>{{ post.category }}</i>
+					{% endif %}
+				</p>
 			</div>
 			<div class="list-group-item-text panel-body">
 				{% if post.images.size > 0 %}
@@ -36,6 +45,22 @@ no_index: true
 					{% endif %}
 						{{ post.content | truncate: 256, "..." | markdownify }}
 						<a href="{{ post.url | remove: "index.html" }}" class="btn btn-default">Read more <span class="octicon octicon-book"></span></a>
+						{% if post.category != Wurst-update %}{% comment %} WTF? Why != and not ==? {% endcomment %}
+						<div class="btn-group">
+							<a href="https://github.com/Wurst-Imperium/Wurst-Client/releases/tag/{{ page.Wurst-version }}" class="btn btn-primary">
+								<span class="octicon octicon-cloud-download"></span>
+								Wurst {{ post.Wurst-version }}
+							</a>
+							<a href="https://github.com/Wurst-Imperium/Wurst-Client/issues" class="btn btn-default">
+								<span class="octicon octicon-comment-discussion"></span>
+								Issues
+							</a>
+							<a href="https://github.com/Wurst-Imperium/Wurst-Client/blob/master/CONTRIBUTING.md" class="btn btn-default">
+								<span class="octicon octicon-book"></span>
+								Guidelines for Issues
+							</a>
+						</div>
+						{% endif %}
 				{% if post.images.size > 0 %}
 					</div>
 				{% endif %}
