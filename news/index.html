@@ -45,7 +45,7 @@ no_index: true
 					{% endif %}
 						{{ post.content | truncate: 256, "..." | markdownify }}
 						<a href="{{ post.url | remove: "index.html" }}" class="btn btn-default">Read more <span class="octicon octicon-book"></span></a>
-						{% if post.category != Wurst-update %}{% comment %} WTF? Why != and not ==? {% endcomment %}
+						{% if post.category == "Wurst-update" %}
 						<div class="btn-group">
 							<a href="https://github.com/Wurst-Imperium/Wurst-Client/releases/tag/{{ page.Wurst-version }}" class="btn btn-primary">
 								<span class="octicon octicon-cloud-download"></span>

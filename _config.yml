@@ -28,5 +28,5 @@ defaults:
       path: ""
       type: "posts"
     values:
-      author: "Alexander01998"
       layout: "post"
+      author: "Alexander01998"
