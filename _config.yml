@@ -28,12 +28,5 @@ defaults:
       path: ""
       type: "posts"
     values:
-      layout: "post"
       author: "Alexander01998"
-  -
-    scope:
-      path: ""
-      type: "posts"
-      category: "Wurst-update"
-    values:
-      layout: "post-Wurst-update"
+      layout: "post"

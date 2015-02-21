@@ -4,7 +4,16 @@ layout: default
 <div class="container">
 	<div class="panel-heading panel-title">
 		<h1>{{ page.title }}</h1>
-		<p class="text-muted">by {{ page.author }} on {{ page.date | date: "%B %-d, %Y" }}</p>
+		<p class="text-muted">
+			by
+			<i>{{ page.author }}</i>
+			on
+			<i>{{ page.date | date: "%b %-d %Y" }}</i>.
+			{% if page.category %}
+			Category:
+			<i>{{ page.category }}</i>
+			{% endif %}
+		</p>
 	</div>
 	<div class="panel-body">
 		<div class="thumbnail">
