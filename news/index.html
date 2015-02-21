@@ -30,14 +30,17 @@ no_index: true
 						<img src="{{ image.link }}">
 					</div>
 					{% endfor %}
+					{% endif %}
+					{{ post.content | truncate: 256, "..." | markdownify }}
 					<div class=" col-xs-12 col-sm-6 col-md-8">
+						{% endif %}
 						{{ post.content | truncate: 256, "..." | markdownify }}
 						<a href="{{ post.url | remove: "index.html" }}" class="btn btn-default">Read more <span class="octicon octicon-book"></span></a>
+						{{ post.content | truncate: 256, "..." | markdownify }}
 					</div>
-				</div>
-				{% else %}
+				{% endif %}
 				{{ post.content | truncate: 256, "..." | markdownify }}
-				<a href="{{ post.url | remove: "index.html" }}" class="btn btn-default">Read more <span class="octicon octicon-book"></span></a>
+				</div>
 				{% endif %}
 			</div>
 		</div>
