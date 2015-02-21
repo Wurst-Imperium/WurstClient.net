@@ -8,7 +8,9 @@ layout: default
 	</div>
 	<div class="panel-body">
 		<div class="thumbnail">
-			<img src="{{ page.Wurst-image }}" class="img-responsive">
+			{% for image in page.images limit: 1 %}
+			<img src="{{ image.link }}">
+			{% endfor %}
 			<div class="caption">
 				<p class="text-info">
 					Wurst {{ page.Wurst-version }} just got released. Download &amp; changelog below.
@@ -17,6 +19,18 @@ layout: default
 			</div>
 		</div>
 		{{ content }}
+		<div class="row">
+			{% for image in page.images offset: 1 %}
+			<div class="thumbnail col-xs-12 col-sm-6 col-md-4">
+				<img src="{{ image.link }}">
+				{% if image.text %}
+				<div class="caption">
+						{{ image.text }}
+				</div>
+				{% endif %}
+			</div>
+			{% endfor %}
+		</div>
 			<a href="/news/" class="btn btn-default hidden-print">
 				<span class="octicon octicon-arrow-left"></span>
 				Back

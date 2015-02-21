@@ -23,8 +23,22 @@ no_index: true
 				<p class="text-muted">by {{ post.author }} on {{ post.date | date: "%B %-d, %Y" }}</p>
 			</div>
 			<div class="list-group-item-text panel-body">
+				{% if post.images.size > 0 %}
+				<div class="row">
+					{% for image in post.images limit: 1 %}
+					<div class="thumbnail col-xs-12 col-sm-6 col-md-4">
+						<img src="{{ image.link }}">
+					</div>
+					{% endfor %}
+					<div class=" col-xs-12 col-sm-6 col-md-8">
+						{{ post.content | truncate: 256, "..." | markdownify }}
+						<a href="{{ post.url | remove: "index.html" }}" class="btn btn-default">Read more <span class="octicon octicon-book"></span></a>
+					</div>
+				</div>
+				{% else %}
 				{{ post.content | truncate: 256, "..." | markdownify }}
-					<a href="{{ post.url | remove: "index.html" }}" class="btn btn-default">Read more <span class="octicon octicon-book"></span></a>
+				<a href="{{ post.url | remove: "index.html" }}" class="btn btn-default">Read more <span class="octicon octicon-book"></span></a>
+				{% endif %}
 			</div>
 		</div>
 		{% endfor %}
