@@ -2,7 +2,7 @@
 >
 >Copyright © 2015 | Alexander01998 | All rights reserved.
 >
->These contributing guidelines are licensed under the terms of the [MPl v2.0](https://www.mozilla.org/MPL/2.0/).
+>These contributing guidelines are licensed under the terms of the [MPL v2.0](https://www.mozilla.org/MPL/2.0/).
 
 # Content
 1. [General rules](#general-rules)
