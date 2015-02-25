@@ -4,7 +4,7 @@ no_index: true
 ---
 [
 {% for element in site.pages %}{% comment %}
-{% endcomment %}{% unless element.no_index == true %}{% comment %}
+{% endcomment %}{% unless element.no_index == true or element.url contains "/api/v" %}{% comment %}
 {% endcomment %}  {
     "title": "{% if element.url == "/index.html" %}Home{% else %}{{ element.title }}{% endif %}",
     "content": "{{ element.content | strip_html | strip_newlines | remove: "	" | escape }}",

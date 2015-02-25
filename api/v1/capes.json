@@ -1,0 +1,9 @@
+---
+layout: none
+no_index: true
+capes:
+  wurst: "https://cloud.githubusercontent.com/assets/10100202/6376589/200f00ae-bd1f-11e4-9ed9-64b9586cd3fb.png"
+---
+{
+  "Alexander01998": "{{ page.capes.wurst }}"
+}
