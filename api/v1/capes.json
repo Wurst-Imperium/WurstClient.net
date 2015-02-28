@@ -6,5 +6,6 @@ capes:
 ---
 {
   "Alexander01998": "{{ page.capes.wurst }}",
-  "daqx": "{{ page.capes.wurst }}"
+  "daqx": "{{ page.capes.wurst }}",
+  "Marka2000": "{{ page.capes.wurst }}"
 }
