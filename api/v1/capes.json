@@ -3,6 +3,7 @@ layout: none
 no_index: true
 capes:
   wurst: "https://cloud.githubusercontent.com/assets/10100202/6376589/200f00ae-bd1f-11e4-9ed9-64b9586cd3fb.png"
+  wizhax2015: "https://cloud.githubusercontent.com/assets/10100202/6558136/715f8a82-c67a-11e4-8922-7f8e9b8311cd.png"
 ---
 {
   "Alexander01998": "{{ page.capes.wurst }}",
