@@ -19,7 +19,7 @@ layout: default
 		{% for image in page.images limit: 1 %}
 		<div class="thumbnail">
 			<img src="{{ image.link }}">
-			{% if page.category == "Wurst-update" or if image.text %}
+			{% if page.category == "Wurst-update" or image.text %}
 			<div class="caption">
 				{% if page.category == "Wurst-update" %}
 				<p class="text-info">
