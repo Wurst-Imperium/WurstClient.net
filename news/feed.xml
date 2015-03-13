@@ -6,24 +6,24 @@ no_index: true
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
     <title>{{ site.name | xml_escape }}</title>
-    <description>{% if site.description %}{{ site.description | xml_escape }}{% endif %}</description>
+    <description>{% if site.description %}{{ site.description | strip_html | xml_escape }}{% endif %}</description>
     <link>{{ site.url }}</link>
     <atom:link href="{{ site.url }}/news/feed.xml" rel="self" type="application/rss+xml" />
-    {% for post in site.posts limit:10 %}
-      <item>
-        <title>{{ post.title | xml_escape }}</title>
-        {% if post.author.name %}
-          <dc:creator>{{ post.author.name | xml_escape }}</dc:creator>
-        {% endif %}
-        {% if post.excerpt %}
-          <description>{{ post.excerpt | xml_escape }}</description>
-        {% else %}
-          <description>{{ post.content | truncate: 256, "..." | xml_escape }}</description>
-        {% endif %}
-        <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
-        <link>{{ site.url }}{{ post.url | remove: "index.html" }}</link>
-        <guid isPermaLink="true">{{ site.url }}{{ post.url | remove: "index.html" }}</guid>
-      </item>
-    {% endfor %}
-  </channel>
+    {% for post in site.posts limit:10 %}{% comment %}
+      {% endcomment %}<item>
+        <title>{{ post.title | strip_html | xml_escape }}</title>
+        {% if post.author %}{% comment %}
+          {% endcomment %}<dc:creator>{{ post.author | xml_escape }}</dc:creator>
+        {% endif %}{% comment %}
+        {% endcomment %}{% if post.excerpt %}{% comment %}
+          {% endcomment %}<description>{{ post.excerpt | strip_html | strip_newlines | xml_escape }}</description>
+        {% else %}{% comment %}
+          {% endcomment %}<description>{{ post.content | strip_html | strip_newlines | truncate: 256, "..." | xml_escape }}</description>
+        {% endif %}{% comment %}
+        {% endcomment %}<pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+        <link>{{ site.url }}{{ post.url | remove: "index.html" | strip_html | xml_escape }}</link>
+        <guid isPermaLink="true">{{ site.url }}{{ post.url | remove: "index.html" | strip_html | xml_escape }}</guid>
+    </item>
+    {% endfor %}{% comment %}
+  {% endcomment %}</channel>
 </rss>
