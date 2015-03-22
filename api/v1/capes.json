@@ -11,6 +11,7 @@ capes:
   "Marka2000": "{{ page.capes.wurst }}",
   "WiZARDHAXoCOM": "{{ page.capes.wizhax2015 }}",
   "ZerakPvP": "{{ page.capes.wizhax2015 }}",
+  "Tigrex_HD": "{{ page.capes.wizhax2015 }}",
   "Peter_Sickle": "{{ page.capes.wizhax2015 }}",
   "Fox473": "{{ page.capes.wizhax2015 }}",
   "Huggan40": "{{ page.capes.wizhax2015 }}",
