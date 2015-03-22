@@ -9,5 +9,11 @@ capes:
   "Alexander01998": "{{ page.capes.wurst }}",
   "daqx": "{{ page.capes.wurst }}",
   "Marka2000": "{{ page.capes.wurst }}",
-  "WiZARDHAXoCOM": "{{ page.capes.wizhax2015 }}"
+  "WiZARDHAXoCOM": "{{ page.capes.wizhax2015 }}",
+  "ZerakPvP": "{{ page.capes.wizhax2015 }}",
+  "Peter_Sickle": "{{ page.capes.wizhax2015 }}",
+  "Fox473": "{{ page.capes.wizhax2015 }}",
+  "Huggan40": "{{ page.capes.wizhax2015 }}",
+  "heafie": "{{ page.capes.wizhax2015 }}",
+  "_37_": "{{ page.capes.wizhax2015 }}"
 }
