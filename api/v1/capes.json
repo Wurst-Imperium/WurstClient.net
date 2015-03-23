@@ -12,6 +12,7 @@ capes:
   "WiZARDHAXoCOM": "{{ page.capes.wurst }}",
   "ZerakPvP": "{{ page.capes.wizhax2015 }}",
   "Tigrex_HD": "{{ page.capes.wizhax2015 }}",
+  "TypicalModders": "{{ page.capes.wizhax2015 }}",
   "Peter_Sickle": "{{ page.capes.wizhax2015 }}",
   "Mr_Anonymous_": "{{ page.capes.wizhax2015 }}",
   "Fox473": "{{ page.capes.wizhax2015 }}",
