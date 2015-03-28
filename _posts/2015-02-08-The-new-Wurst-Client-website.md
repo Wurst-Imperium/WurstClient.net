@@ -1,5 +1,5 @@
 ---
-title: The new Wurst Client website
+title: New Wurst Client website
 ---
 After about two weeks of coding, the new Wurst Client website is finally here! Just like the Wurst Client, this website is open source. You can find it's source code at [GitHub.com/Wurst-imperium/wurst-client.tk](https://github.com/Wurst-Imperium/wurst-client.tk).
 

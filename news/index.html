@@ -9,8 +9,13 @@ no_index: true
 			{{ page.title }}
 		</h1>
 		<a href="/news/feed.xml" class="pull-right btn btn-default">
-			<span class="hidden-xs">RSS feed <span class="octicon octicon-rss"></span>
-			</span><span class="visible-xs mega-octicon octicon-rss" data-toggle="tooltip" data-placement="top" data-container="body" title="RSS feed"></span>
+			<span class="hidden-xs">
+				RSS feed
+				<span class="octicon octicon-rss"></span>
+			</span>
+			<span class="visible-xs-inline h2">
+				<span class="octicon octicon-rss" data-toggle="tooltip" data-placement="left" data-container="body" title="RSS feed"></span>
+			</span>
 		</a>
 	</div>
 	<div class="list-group">
@@ -43,7 +48,7 @@ no_index: true
 					{% if post.images.size > 0 %}
 					<div class=" col-xs-12 col-sm-6 col-md-8">
 					{% endif %}
-						{{ post.content | truncate: 256, "..." | markdownify }}
+						{{ post.excerpt }}
 						<a href="{{ post.url | remove: "index.html" }}" class="btn btn-default">Read more <span class="octicon octicon-book"></span></a>
 						{% if post.category == "Wurst-update" %}
 						<div class="btn-group">
