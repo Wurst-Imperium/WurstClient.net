@@ -10,12 +10,22 @@
 
 /*
 
+ORIGINAL:
 .octicon is optimized for 16px.
 .mega-octicon is optimized for 32px but can be used larger.
 
+EDIT:
+Both .octicon and .mega-octicon are sized automatically.
+
 */
 .octicon, .mega-octicon {
-  font: normal normal normal 16px/1 octicons;
+  font-family: octicons;
+  font-size: inherit;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 1;
   display: inline-block;
   text-decoration: none;
   text-rendering: auto;
@@ -26,7 +36,7 @@
   -ms-user-select: none;
   user-select: none;
 }
-.mega-octicon { font-size: 32px; }
+/*.mega-octicon { font-size: 32px; }*/
 
 
 .octicon-alert:before { content: '\f02d'} /*  */
