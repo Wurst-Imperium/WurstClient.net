@@ -1,111 +1,97 @@
 ---
 title: Downloads
+add-ons:
+  -
+    id: autobuild
+    image: https://cloud.githubusercontent.com/assets/10100202/6879088/13b3f744-d4ec-11e4-84ec-3e28b2bdd236.jpg
+    name: AutoBuild templates
+    icon: home
+  -
+    id: wallpapers
+    image: https://cloud.githubusercontent.com/assets/10100202/6881188/03483c30-d555-11e4-9aad-03d77c13b249.jpg
+    name: Wallpapers
+    icon: device-desktop
+  -
+    id: wspam
+    image: https://cloud.githubusercontent.com/assets/10100202/6880615/baa8f424-d53b-11e4-85bb-014f888cb1a4.jpg
+    name: WSPAM scripts
+    icon: file-code
 ---
 <div class="container">
-  <h1 class="page-header"><span class="mega-octicon octicon-cloud-download"></span> {{ page.title }}</h1>
-  <div class="row">
-    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="thumbnail">
-        <div class="caption">
-          <h2 class="list-group-item-heading">Wurst Client</h2>
-          <div class="btn-group-vertical">
-            <a id="wurst-client-latest" class="btn btn-primary" href="https://github.com/Wurst-Imperium/Wurst-Client/releases/latest">
-              <span class="octicon octicon-cloud-download"></span>
-              Download latest release
-            </a>
-            <a id="wurst-client-all" class="btn btn-default" href="https://github.com/Wurst-Imperium/Wurst-Client/releases">
-              <span class="octicon octicon-eye"></span>
-              View all releases
-            </a>
-            <div class="btn-group">
-              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                <span class="octicon octicon-playback-rewind"></span>
-                Old stuff
-              </button>
-              <ul class="dropdown-menu">
-                <li>
-                  <a id="wurst-client-old-1-8" href="http://old.wurst-client.tk/download/wurst-client/wurst-client-for-minecraft-1-8/releases" data-toggle="tooltip" data-placement="right" data-container="body" title="v1.3 - v1.4.1">
-                    <span class="text-muted">Old MC 1.8 releases</span>
-                  </a>
-                </li>
-                <li>
-                  <a id="wurst-client-old-1-7" href="http://old.wurst-client.tk/download/wurst-client/wurst-client-for-minecraft-1-7-x/releases" data-toggle="tooltip" data-placement="right" data-container="body" title="v1.0 - v1.3.1">
-                    <span class="text-warning">MC 1.7.X releases</span>
-                  </a>
-                  </li>
-                <li>
-                  <a id="wurst-client-old-public-beta" href="http://old.wurst-client.tk/download/wurst-client/wurst-client-for-minecraft-1-7-x/public-beta" data-toggle="tooltip" data-placement="right" data-container="body" title="v1.8 - v1.10.2">
-                    <span class="text-danger">Public beta</span>
-                  </a>
-                  </li>
-                <li>
-                  <a id="wurst-client-old-closed-beta" href="http://old.wurst-client.tk/download/wurst-client/wurst-client-for-minecraft-1-7-x/closed-beta" data-toggle="tooltip" data-placement="right" data-container="body" title="v1.1 - v1.7.2">
-                    <span class="text-danger">Closed beta</span>
-                  </a>
-                  </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+  <h1 class="page-header">
+    {{ page.title }}
+  </h1>
+  <div class="jumbotron text-center">
+    <img class="img-responsive" src="https://cloud.githubusercontent.com/assets/10100202/6868084/c764a252-d488-11e4-94cf-1daa5e398c35.png">
+    <a class="btn btn-primary btn-lg" href="https://github.com/Wurst-Imperium/Wurst-Client/releases/latest">
+      <span class="octicon octicon-cloud-download"></span>
+      Download Wurst (latest release)
+    </a>
+    <a class="btn btn-default btn-lg hidden-md hidden-lg" href="#add-ons">
+      <span class="octicon octicon-diff"></span>
+      Download Add-Ons
+    </a>
+  </div>
+  <div class="text-right collapse in" id="old-versions-link">
+    <small>
+      Looking for the
+      <a href="javascript:void();">old versions</a>?
+    </small>
+  </div>
+  <div class="collapse" id="old-versions">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h2 class="panel-title">
+          Old Versions
+          <a class="close">&times;</a>
+        </h2>
       </div>
-    </div>
-    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="thumbnail">
-        <div class="caption">
-          <h2 class="list-group-item-heading">
-            <span class="mega-octicon octicon-diff-added"></span>
-            Wurst add-ons
-          </h2>
-          <div class="btn-group-vertical">
-            <a class="btn btn-default" href="add-ons/autobuild">
-              <span class="octicon octicon-home"></span>
-              AutoBuild templates
-            </a>
-            <a class="btn btn-default" href="add-ons/wspam-scripts">
-              <span class="octicon octicon-file-code"></span>
-              WSPAM scripts
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="thumbnail">
-        <div class="caption">
-          <h2 class="list-group-item-heading">
-            For the fans
-            <span class="mega-octicon octicon-heart"></span>
-          </h2>
-          <div class="btn-group-vertical">
-            <a class="btn btn-default" href="fans/wallpapers">
-              <span class="octicon octicon-device-desktop"></span>
-              Wurst wallpapers
-            </a>
-          </div>
-        </div>
+      <div class="list-group">
+        <a class="list-group-item" href="https://old.wurst-client.tk/download/wurst-client/wurst-client-for-minecraft-1-8/releases">
+          Outdated Releases (Minecraft 1.8.X)
+        </a>
+        <a class="list-group-item" href="https://old.wurst-client.tk/download/wurst-client/wurst-client-for-minecraft-1-7-x/releases">
+          Outdated Releases (Minecraft 1.7.X)
+        </a>
+        <a class="list-group-item" href="https://old.wurst-client.tk/download/wurst-client/wurst-client-for-minecraft-1-7-x/public-beta">
+          Public Beta (Minecraft 1.7.X)
+        </a>
+        <a class="list-group-item" href="https://old.wurst-client.tk/download/wurst-client/wurst-client-for-minecraft-1-7-x/closed-beta">
+          Closed Beta (Minecraft 1.7.X)
+        </a>
       </div>
     </div>
   </div>
+  <script>
+    $("#old-versions-link a").click(function()
+    {
+      $("#old-versions").collapse("show");
+      $("#old-versions-link").collapse("hide");
+    });
+    $("#old-versions a.close").click(function()
+    {
+      $("#old-versions").collapse("hide");
+      $("#old-versions-link").collapse("show");
+    });
+  </script>
+  <h2 class="page-header" id="add-ons">
+    Add-Ons
+  </h2>
+  <div class="row">
+    {% for item in page.add-ons %}
+    <div class="col-xs-12 col-sm-6 col-md-4">
+      <div class="thumbnail">
+        <a class="embed-responsive embed-responsive-16by9" href="{{ item.id }}">
+          <img src="{{ item.image }}" class="embed-responsive-item img-rounded">
+        </a>
+        <div class="caption">
+          <a class="btn btn-default btn-lg btn-block" href="{{ item.id }}">
+            <span class="octicon octicon-{{ item.icon }}"></span>
+            {{ item.name }}
+          </a>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
 </div>
-<script>
-	$(document).ready(function(){
-		$("#wurst-client-latest").click(function(){
-			ga('send', 'event', 'download-button', 'click', 'wurst-client-latest');
-		});
-		$("#wurst-client-all").click(function(){
-			ga('send', 'event', 'download-button', 'click', 'wurst-client-all');
-		});
-		$("#wurst-client-old-1-8").click(function(){
-			ga('send', 'event', 'download-button', 'click', 'wurst-client-old-1-8');
-		});
-		$("#wurst-client-old-1-7").click(function(){
-			ga('send', 'event', 'download-button', 'click', 'wurst-client-old-1-7');
-		});
-		$("#wurst-client-old-public-beta").click(function(){
-			ga('send', 'event', 'download-button', 'click', 'wurst-client-old-public-beta');
-		});
-		$("#wurst-client-old-closed-beta").click(function(){
-			ga('send', 'event', 'download-button', 'click', 'wurst-client-old-closed-beta');
-		});
-	});
-</script>

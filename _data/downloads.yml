@@ -47,8 +47,7 @@ fans:
     -
       image: https://cloud.githubusercontent.com/assets/10100202/6287506/6128c4aa-b912-11e4-99f1-ee973efe08ad.jpg
       id: wallpaper-wurst
-      title: Wurst
-      description: Increase the swag of your screen with this awesome background!
+      title: Wurst logo
       downloads:
         -
           size: 1440p

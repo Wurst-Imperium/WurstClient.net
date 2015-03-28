@@ -15,7 +15,9 @@ layout: download
     {% for template in category[1] %}
     <div class="col-xs-12 col-sm-6 col-md-4">
       <div class="thumbnail">
-        <img src="{{ template.image }}">
+        <div class="embed-responsive embed-responsive-16by9">
+          <img src="{{ template.image }}" class="embed-responsive-item img-rounded">
+        </div>
         <div class="caption">
           <table class="table table-bordered table-condensed table-hover">
             {% for data in template | offset: 2 %}
