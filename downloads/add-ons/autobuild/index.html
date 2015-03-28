@@ -3,36 +3,38 @@ title: AutoBuild templates
 layout: download
 ---
 <div class="container">
-  <h1 class="page-header"><span class="mega-octicon octicon-home"></span> {{ page.title }}</h1>
+  <h1 class="page-header">
+    <span class="mega-octicon octicon-home" style="font-size: inherit;"></span>
+    {{ page.title }}
+  </h1>
+  {% for category in site.data.autobuild %}
+  <h2 class="page-header">
+    {{ category | first }}
+  </h2>
   <div class="row">
-    {% for template in site.data.downloads.add-ons.autobuild %}
-    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+    {% for template in category[1] %}
+    <div class="col-xs-12 col-sm-6 col-md-4">
       <div class="thumbnail">
         <img src="{{ template.image }}">
         <div class="caption">
-          <h2 class="list-group-item-heading">{{ template.title }}</h2>
-          <p>{{ template.description }}</p>
-          <p>
-            Size: {{ template.size }}
-          </p>
-          <p>
-            Blocks: {{ template.blocks }}
-          </p>
+          <table class="table table-bordered table-condensed table-hover">
+            {% for data in template | offset: 2 %}
+              <tr>
+                <th>{{ data[0] | capitalize }}:</th>
+                <td>{{ data[1] }}</td>
+              </tr>
+            {% endfor %}
+          </table>
           <div class="btn-group-vertical">
-            <a id="{{ template.id }}" class="btn btn-default" href="{{ template.link }}">
-              <span class="octicon octicon-arrow-down"></span>
+            <a class="btn btn-default" href="https://github.com/Wurst-Imperium/filedrop/releases/download/wurst-client.tk/autobuild-{{ template.id }}.zip">
+              <span class="octicon octicon-cloud-download"></span>
               Download
             </a>
           </div>
         </div>
       </div>
     </div>
-    <script>
-    	$(document).ready(function(){
-    		$("#{{ template.id }}").click(function(){
-    			ga('send', 'event', 'download-button', 'click', '{{ template.id }}');
-    		});
-    </script>
     {% endfor %}
   </div>
+  {% endfor %}
 </div>

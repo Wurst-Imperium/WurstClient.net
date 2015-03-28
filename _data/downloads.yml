@@ -1,13 +1,4 @@
 add-ons:
-  autobuild:
-    -
-      link: https://github.com/Wurst-Imperium/filedrop/releases/download/v1.0/autobuild-tree.zip
-      image: https://cloud.githubusercontent.com/assets/10100202/6276228/a0abffda-b885-11e4-9bab-a70f0875c828.jpg
-      id: autobuild-tree
-      title: Tree
-      description: A realistic Minecraft tree. My personal favorite.
-      size: 5x5x6
-      blocks: 62
   wspam:
     -
       link: https://github.com/Wurst-Imperium/filedrop/releases/download/v1.0/wspam-bob.zip
