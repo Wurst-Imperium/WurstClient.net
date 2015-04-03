@@ -48,25 +48,10 @@ layout: default
 			</div>
 			{% endfor %}
 		</div>
+		{% include post-footer.html post = page %}
 		<a href="/news/" class="btn btn-default hidden-print">
 			<span class="octicon octicon-arrow-left"></span>
 			Back
 		</a>
-		{% if page.category == "Wurst-update" %}
-		<div class="btn-group">
-			<a href="https://github.com/Wurst-Imperium/Wurst-Client/releases/tag/{{ page.Wurst-version }}" class="btn btn-primary">
-				<span class="octicon octicon-cloud-download"></span>
-				Wurst {{ page.Wurst-version }}
-			</a>
-			<a href="https://github.com/Wurst-Imperium/Wurst-Client/issues" class="btn btn-default">
-				<span class="octicon octicon-comment-discussion"></span>
-				Issues
-			</a>
-			<a href="https://github.com/Wurst-Imperium/Wurst-Client/blob/master/CONTRIBUTING.md" class="btn btn-default">
-				<span class="octicon octicon-book"></span>
-				Guidelines for Issues
-			</a>
-		</div>
-		{% endif %}
 	</div>
 </div>

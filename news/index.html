@@ -49,23 +49,8 @@ no_index: true
 					<div class=" col-xs-12 col-sm-6 col-md-8">
 					{% endif %}
 						{{ post.excerpt }}
+						{% include post-footer.html post = post %}
 						<a href="{{ post.url | remove: "index.html" }}" class="btn btn-default">Read more <span class="octicon octicon-book"></span></a>
-						{% if post.category == "Wurst-update" %}
-						<div class="btn-group">
-							<a href="https://github.com/Wurst-Imperium/Wurst-Client/releases/tag/{{ page.Wurst-version }}" class="btn btn-primary">
-								<span class="octicon octicon-cloud-download"></span>
-								Wurst {{ post.Wurst-version }}
-							</a>
-							<a href="https://github.com/Wurst-Imperium/Wurst-Client/issues" class="btn btn-default">
-								<span class="octicon octicon-comment-discussion"></span>
-								Issues
-							</a>
-							<a href="https://github.com/Wurst-Imperium/Wurst-Client/blob/master/CONTRIBUTING.md" class="btn btn-default">
-								<span class="octicon octicon-book"></span>
-								Guidelines for Issues
-							</a>
-						</div>
-						{% endif %}
 				{% if post.images.size > 0 %}
 					</div>
 				{% endif %}
