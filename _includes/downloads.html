@@ -1,0 +1,38 @@
+<div class="container">
+  <h1 class="page-header">
+    <span class="mega-octicon octicon-{{ page.icon }}"></span>
+    {{ page.title }}
+  </h1>
+  {% for category in include.list %}
+  <h2 class="page-header">
+    {{ category | first }}
+  </h2>
+  <div class="row">
+    {% for template in category[1] %}
+    <div class="col-xs-12 col-sm-6 col-md-4">
+      <div class="thumbnail">
+        <div class="embed-responsive embed-responsive-16by9">
+          <img src="{{ template.image }}" class="embed-responsive-item img-rounded">
+        </div>
+        <div class="caption">
+          <table class="table table-bordered table-condensed table-hover">
+            {% for data in template | offset: 2 %}
+              <tr>
+                <th>{{ data[0] | capitalize }}:</th>
+                <td>{{ data[1] }}</td>
+              </tr>
+            {% endfor %}
+          </table>
+          <div class="btn-group-vertical">
+            <a class="btn btn-default" href="https://github.com/Wurst-Imperium/files/releases/download/wurst-client.tk/{{ template.id }}.zip">
+              <span class="octicon octicon-cloud-download"></span>
+              Download
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  {% endfor %}
+</div>
