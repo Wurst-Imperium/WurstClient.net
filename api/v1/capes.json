@@ -10,6 +10,8 @@ capes:
   "Neodarki": "{{ page.capes.wurst }}",
   "Marka2000": "{{ page.capes.wurst }}",
   "WiZARDHAXoCOM": "{{ page.capes.wurst }}",
+  "eXire_": "{{ page.capes.wurst }}",
+  
   "ZerakPvP": "{{ page.capes.wizhax2015 }}",
   "Tigrex_HD": "{{ page.capes.wizhax2015 }}",
   "TypicalModders": "{{ page.capes.wizhax2015 }}",
