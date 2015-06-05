@@ -1,0 +1,2 @@
+jekyll serve -w
+pause
