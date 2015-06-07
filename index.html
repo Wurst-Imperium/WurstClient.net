@@ -1,70 +1,232 @@
 ---
 ---
+<style>
+	.carousel-caption {
+	  width: 100%;
+		height: 100%;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		text-shadow: 0 0 0.5em #000, 0 0 0.5em #000;
+	}
+
+	.carousel-caption img {
+		max-width: 80%;
+	}
+
+	.carousel-caption .h1 {
+		font-size: 3em;
+		margin-top: 0.05em;
+		margin-bottom: 0.05em;
+	}
+
+	.carousel-caption .h2 {
+		font-size: 2em;
+		margin-top: 0.025em;
+		margin-bottom: 0.025em;
+	}
+
+	@media (min-width: 768px) {
+		.carousel-caption .h1 {
+			font-size: 7.5em;
+		}
+
+		.carousel-caption .h2 {
+			font-size: 5em;
+		}
+	}
+
+	@media (min-width: 992px) {
+		.carousel-caption .h1 {
+			font-size: 9.75em;
+		}
+
+		.carousel-caption .h2 {
+			font-size: 6em;
+		}
+	}
+
+	@media (min-width: 1200px) {
+		.carousel-caption .h1 {
+			font-size: 12em;
+		}
+
+		.carousel-caption .h2 {
+			font-size: 6em;
+		}
+	}
+
+	.item>img {
+		width: 100%;
+	}
+
+	.carousel-table {
+		display: table;
+	  width: 100%;
+	  height: 100%;
+	}
+
+	.carousel-cell {
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	.item .move {
+		transition: 0.5s;
+		opacity: 0;
+	}
+
+	.item.active .move {
+		transform: translateY(0);
+		opacity: 1;
+	}
+
+	.item .move-top {
+		transform: translateY(-128px);
+	}
+
+	.item .move-bottom {
+		transform: translateY(128px);
+	}
+
+	.item .move-right {
+		transform: translateX(128px);
+	}
+
+	.item .move-left {
+		transform: translateX(-128px);
+	}
+
+	.item .delay-1 {
+		transition-delay: 0.25s;
+	}
+
+	.item .delay-2 {
+		transition-delay: 0.5s;
+	}
+
+	.item .delay-3 {
+		transition-delay: 0.75s;
+	}
+</style>
 <div class="container">
 	<div id="slideshow" class="carousel slide" data-ride="carousel">
 		<ol class="carousel-indicators hidden-xs">
-			<li data-target="#slideshow" data-slide-to="0" class="active"></li>
-			<li data-target="#slideshow" data-slide-to="1"></li>
-			<li data-target="#slideshow" data-slide-to="2"></li>
-			<li data-target="#slideshow" data-slide-to="3"></li>
-			<li data-target="#slideshow" data-slide-to="4"></li>
-			<li data-target="#slideshow" data-slide-to="5"></li>
-		</ol>
+		<li data-target="#slideshow" data-slide-to="0" class="active"></li>
+		<li data-target="#slideshow" data-slide-to="1"></li>
+		<li data-target="#slideshow" data-slide-to="2"></li>
+		<li data-target="#slideshow" data-slide-to="3"></li>
+		<li data-target="#slideshow" data-slide-to="4"></li>
+	</ol>
 		<div class="carousel-inner">
-			<div class="item active">
-				<img alt="Auto-Updater" src="https://cloud.githubusercontent.com/assets/10100202/7083502/f6d6e268-df62-11e4-9a2f-35edcff80985.jpg">
-			</div>
-			<div class="item">
-				<img alt="Wurst-Bot" src="https://cloud.githubusercontent.com/assets/10100202/7083838/d4e4a77c-df66-11e4-9218-7dac5e8ed218.jpg">
-			</div>
-			<div class="item">
-				<img alt="featured on WiZARDHAX" src="https://cloud.githubusercontent.com/assets/10100202/7084083/923253c2-df69-11e4-88f9-9cee4c2eceb2.jpg">
-				<div class="carousel-caption">
-					<a class="btn btn-lg btn-danger" href="https://www.youtube.com/watch?v=CCDaXo_GoR0" target="_blank">
-						<span class="octicon octicon-playback-play"></span>
-						Watch the Video
-					</a>
+			<div class="item active" style="background-image: url('https://cloud.githubusercontent.com/assets/10100202/8023909/1f6e1d0a-0d20-11e5-90d6-769f5b6e686b.png');background-position: center center;">
+				<img class="invisible hidden-xs" src="https://cloud.githubusercontent.com/assets/10100202/8023944/ff28a6da-0d21-11e5-9be5-2846c64907e0.gif">
+				<img class="visible-xs" alt="Wurst Client" src="https://cloud.githubusercontent.com/assets/10100202/8024162/ffcba878-0d29-11e5-97ad-688b0fb1aee9.jpg">
+				<div class="carousel-caption hidden-xs">
+					<div class="carousel-table">
+						<div class="carousel-cell">
+							<div class="row move move-top">
+								<img alt="Wurst Client" src="https://cloud.githubusercontent.com/assets/10100202/8023970/a6206b9e-0d22-11e5-800a-e715bd2a00be.png">
+							</div>
+							<div class="row move move-bottom delay-1">
+								<a class="btn btn-primary btn-lg" href="https://github.com/Wurst-Imperium/Wurst-Client/releases/latest">
+						      <span class="octicon octicon-cloud-download"></span>
+						      Download Wurst
+						    </a>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 			<div class="item">
-				<img alt="Destruction at HYPERSPEED" src="https://cloud.githubusercontent.com/assets/10100202/7083500/f6b51c64-df62-11e4-8540-6e6724239f45.jpg">
-			</div>
-			<div class="item">
-				<img alt="Open Source" src="https://cloud.githubusercontent.com/assets/10100202/7084795/1ed35cc0-df71-11e4-8b06-ba24e30b08c0.jpg">
+				<img alt="WiZARD using Wurst" src="https://cloud.githubusercontent.com/assets/10100202/8024218/0a464932-0d2c-11e5-96ac-152a3d535bff.jpg">
 				<div class="carousel-caption">
-					<a class="btn btn-lg btn-success" href="https://github.com/Wurst-Imperium/Wurst-Client/fork" target="_blank">
-						<span class="octicon octicon-git-pull-request"></span>
-						Contribute
-					</a>
+					<div class="carousel-table">
+						<div class="carousel-cell">
+							<div class="row move move-top h1" style="color: #f08;">
+								featured on
+							</div>
+							<div class="row move move-right delay-2 hidden-xs">
+								<div class="col-xs-6 col-xs-offset-3">
+									<a class="btn btn-lg btn-danger btn-block" href="https://www.youtube.com/watch?v=u2yZZ8ayI3A" target="_blank">
+										<span class="octicon octicon-playback-play"></span>
+										Watch the Video
+									</a>
+								</div>
+							</div>
+							<br class="hidden-xs hidden-sm">
+							<div class="row move move-bottom delay-1 h1">
+								<img alt="WiZARDHAX.com" src="https://cloud.githubusercontent.com/assets/10100202/8024190/cb88e110-0d2a-11e5-92c0-fd6a8b0dc90b.png">
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 			<div class="item">
-				<img alt="powerful Spammer" src="https://cloud.githubusercontent.com/assets/10100202/7084582/11d138fa-df6f-11e4-8427-4cea111ffbe0.jpg">
+				<img alt="ObamaCat: Yes We Code!" src="https://cloud.githubusercontent.com/assets/10100202/8024427/84c14390-0d33-11e5-807c-1d193a7df82c.jpg">
+				<div class="carousel-caption">
+					<div class="carousel-table">
+						<div class="carousel-cell" style="font-family: 'Segoe UI';">
+							<div class="row move move-top h1">
+								Open Source
+							</div>
+							<div class="row move move-top delay-1 h2">
+								on
+								<span class="mega-octicon octicon-logo-github"></span>
+							</div>
+							<div class="row move move-bottom delay-2 h2">
+								<div class="col-xs-6 col-xs-offset-3">
+									<a class="btn btn-lg btn-success btn-block" href="https://github.com/Wurst-Imperium/Wurst-Client/fork" target="_blank">
+										<span class="octicon octicon-mark-github"></span>
+										Contribute
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<img alt="Griefing with Wurst" src="https://cloud.githubusercontent.com/assets/10100202/8024411/bcaaa9dc-0d32-11e5-8943-244378c81e18.jpg">
+				<div class="carousel-caption">
+					<div class="carousel-table">
+						<div class="carousel-cell" style="font-family: 'Segoe UI';">
+							<div class="row move move-top h1">
+								Destrcution
+							</div>
+							<div class="row move move-bottom delay-1 h2">
+								at
+							</div>
+							<div class="row move move-bottom delay-2 h1">
+								HYPERSPEED
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<img alt="Wurst-Bot" src="https://cloud.githubusercontent.com/assets/10100202/8024118/a07bcca0-0d28-11e5-939d-12858439bdb8.jpg">
+				<div class="carousel-caption">
+					<div class="carousel-table">
+						<div class="carousel-cell">
+							<div class="row move move-top h1">
+								Wurst-Bot
+							</div>
+							<div class="row h2" style="color: #e00;">
+								<span class="move move-left delay-1">
+									automate
+								</span>
+								<br class="visible-sm">
+								<span class="move move-right delay-1">
+									everything
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
-	</div>
-	<style>
-		.carousel-inner .item .carousel-caption {
-			bottom: 30%;
-			transform: translateY(-256px);
-			opacity: 0;
-		}
-
-		.carousel-inner .item.active .carousel-caption {
-		  transition: 0.5s;
-		  transition-delay: 1s;
-		  transform: translate(0) scale(2);
-		  opacity: 1;
-		}
-	</style>
-	<hr>
-  <div class="jumbotron text-center">
-		<a class="btn btn-primary btn-lg" href="https://github.com/Wurst-Imperium/Wurst-Client/releases/latest">
-      <span class="octicon octicon-cloud-download"></span>
-      Download Wurst
-      <br class="visible-xs">
-      (latest release)
-    </a>
 	</div>
 	<hr>
 	<div class="panel panel-primary">
