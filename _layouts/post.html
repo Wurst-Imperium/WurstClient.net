@@ -2,56 +2,60 @@
 layout: default
 ---
 <div class="container">
-	<div class="panel-heading panel-title">
-		<h1>{{ page.title }}</h1>
-		<p class="text-muted">
-			by
-			<i>{{ page.author }}</i>
-			on
-			<i>{{ page.date | date: "%b %-d %Y" }}</i>.
-			{% if page.category %}
-			Category:
-			<i>{{ page.category }}</i>
-			{% endif %}
-		</p>
-	</div>
-	<div class="panel-body">
-		{% for image in page.images limit: 1 %}
-		<div class="thumbnail">
-			<img src="{{ image.link }}">
-			{% if page.category == "Wurst-update" or image.text %}
-			<div class="caption">
-				{% if page.category == "Wurst-update" %}
-				<p class="text-info">
-					Wurst {{ page.Wurst-version }} just got released. Download &amp; changelog below.
-					<span class="octicon octicon-heart"></span>
+	<div class="row">
+		<div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+			<div class="panel-heading panel-title">
+				<h1>{{ page.title }}</h1>
+				<p class="text-muted">
+					by
+					<i>{{ page.author }}</i>
+					on
+					<i>{{ page.date | date: "%b %-d %Y" }}</i>.
+					{% if page.category %}
+					Category:
+					<i>{{ page.category }}</i>
+					{% endif %}
 				</p>
-				{% else %}
-				<p>
-					{{ image.text }}
-				</p>
-				{% endif %}
 			</div>
-			{% endif %}
-		</div>
-		{% endfor %}
-		{{ content }}
-		<div class="row">
-			{% for image in page.images offset: 1 %}
-			<div class="thumbnail col-xs-12 col-sm-6 col-md-4">
-				<img src="{{ image.link }}">
-				{% if image.text %}
-				<div class="caption">
-						{{ image.text }}
+			<div class="panel-body">
+				{% for image in page.images limit: 1 %}
+				<div class="thumbnail">
+					<img src="{{ image.link }}">
+					{% if page.category == "Wurst-update" or image.text %}
+					<div class="caption">
+						{% if page.category == "Wurst-update" %}
+						<p class="text-info">
+							Wurst {{ page.Wurst-version }} just got released. Download &amp; changelog below.
+							<span class="octicon octicon-heart"></span>
+						</p>
+						{% else %}
+						<p>
+							{{ image.text }}
+						</p>
+						{% endif %}
+					</div>
+					{% endif %}
 				</div>
-				{% endif %}
+				{% endfor %}
+				{{ content }}
+				<div class="row">
+					{% for image in page.images offset: 1 %}
+					<div class="thumbnail col-xs-12 col-sm-6 col-md-4">
+						<img src="{{ image.link }}">
+						{% if image.text %}
+						<div class="caption">
+								{{ image.text }}
+						</div>
+						{% endif %}
+					</div>
+					{% endfor %}
+				</div>
+				{% include post-footer.html post = page %}
+				<a href="/news/" class="btn btn-default hidden-print">
+					<span class="octicon octicon-arrow-left"></span>
+					Back
+				</a>
 			</div>
-			{% endfor %}
 		</div>
-		{% include post-footer.html post = page %}
-		<a href="/news/" class="btn btn-default hidden-print">
-			<span class="octicon octicon-arrow-left"></span>
-			Back
-		</a>
 	</div>
 </div>
