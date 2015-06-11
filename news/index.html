@@ -49,8 +49,8 @@ no_index: true
 					<div class=" col-xs-12 col-sm-6 col-md-8">
 					{% endif %}
 						{{ post.excerpt }}
-						{% include post-footer.html post = post %}
 						<a href="{{ post.url | remove: "index.html" }}" class="btn btn-default">Read more <span class="octicon octicon-book"></span></a>
+						{% include post-footer.html post = post %}
 				{% if post.images.size > 0 %}
 					</div>
 				{% endif %}
