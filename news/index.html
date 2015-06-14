@@ -64,7 +64,7 @@ no_index: true
 			<ul class="pagination">
 				{% if paginator.previous_page %}
 				<li>
-					<a href="{{ paginator.previous_page_path | remove: "index.html" }}" aria-label="previous page">
+					<a href="{{ paginator.previous_page_path | remove: "index.html" }}">
 						<span class="octicon octicon-arrow-left"></span>
 					</a>
 				</li>
@@ -74,7 +74,7 @@ no_index: true
 				</li>
 				{% if paginator.next_page %}
 				<li>
-					<a href="{{ paginator.next_page_path | remove: "index.html" }}" aria-label="next page">
+					<a href="{{ paginator.next_page_path | remove: "index.html" }}">
 						<span class="octicon octicon-arrow-right"></span>
 					</a>
 				</li>
