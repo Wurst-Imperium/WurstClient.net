@@ -34,11 +34,13 @@ layout: default
 <!-- Tumblr -->
 <script>!function(d,s,id){var js,ajs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://secure.assets.tumblr.com/share-button.js";ajs.parentNode.insertBefore(js,ajs);}}(document, "script", "tumblr-js");</script>
 
-<div class="container">
-	<div class="row">
-		<div class="col-sm-10 col-md-8 col-md-offset-1">
-			<div class="panel-heading panel-title">
-				<h1>{{ page.title }}</h1>
+<div class="page-header">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-10 col-md-offset-1">
+				<h1 class="visible-xs-inline visible-sm-inline visible-md-inline visible-lg-inline">
+					{{ page.title }}
+				</h1>
 				<p class="text-muted">
 					by
 					<i>{{ page.author }}</i>
@@ -50,11 +52,17 @@ layout: default
 					{% endif %}
 				</p>
 			</div>
-			<div class="panel-body">
+		</div>
+	</div>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="col-sm-10 col-md-8 col-md-offset-1">
+			<div>
 				{% for image in page.images limit: 1 %}
 				<div class="thumbnail">
-					<img src="{{ image.link }}">
-					{% if page.category == "Wurst-update" or image.text %}
+					<img class="img-rounded" src="{{ image.link }}">
+					{% if image.text %}
 					<div class="caption">
 						{{ image.text }}
 					</div>
@@ -64,13 +72,15 @@ layout: default
 				{{ content }}
 				<div class="row">
 					{% for image in page.images offset: 1 %}
-					<div class="thumbnail col-xs-12 col-sm-6 col-md-4">
-						<img src="{{ image.link }}">
-						{% if image.text %}
-						<div class="caption">
-								{{ image.text }}
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="thumbnail">
+							<img class="img-rounded" src="{{ image.link }}">
+							{% if image.text %}
+							<div class="caption">
+									{{ image.text }}
+							</div>
+							{% endif %}
 						</div>
-						{% endif %}
 					</div>
 					{% endfor %}
 				</div>
