@@ -60,32 +60,33 @@ no_index: true
 			</div>
 		</div>
 		{% endfor %}
-		<nav>
+		<nav class="text-center">
 			<ul class="pagination">
 				{% if paginator.previous_page %}
 				<li>
 					<a href="{{ paginator.previous_page_path | remove: "index.html" }}">
+						{% if paginator.next_page %}
 						<span class="octicon octicon-arrow-left"></span>
+						{% endif %}
+						Newer News
 					</a>
 				</li>
 				{% endif %}
-				<li class="active">
-					<span>{{ paginator.page }}</span>
-				</li>
 				{% if paginator.next_page %}
 				<li>
 					<a href="{{ paginator.next_page_path | remove: "index.html" }}">
+						Older News
+						{% if paginator.previous_page %}
 						<span class="octicon octicon-arrow-right"></span>
+						{% endif %}
 					</a>
 				</li>
 				{% endif %}
 			</ul>
-		</nav>
-		<div class="text-center alert">
 			<p>
 				Want even more news?
 			</p>
 			<iframe src="https://ghbtns.com/github-btn.html?user=Alexander01998&type=follow&count=true" frameborder="0" scrolling="0" width="189px" height="20px"></iframe>
-		</div>
+		</nav>
 	</div>
 </div>
