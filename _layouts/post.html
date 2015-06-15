@@ -68,7 +68,14 @@ layout: default
 				{% endif %}
 			</div>
 			{% endfor %}
-			{{ content }}
+			<style>
+				#post-content img {
+					max-width: 100%;
+				}
+			</style>
+			<div id="post-content">
+				{{ content }}
+			</div>
 			<div class="row">
 				{% for image in page.images offset: 1 %}
 				<div class="col-xs-12 col-sm-6 col-md-4">
