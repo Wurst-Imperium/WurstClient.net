@@ -27,21 +27,6 @@ html, body {
   filter: blur(0.25em);
 }
 
-.btn-primary {
-  background-color: #08d;
-  border-color: #05a;
-}
-
-.btn-primary:hover,
-.btn-primary:focus,
-.btn-primary.focus,
-.btn-primary:active,
-.btn-primary.active,
-.open>.dropdown-toggle.btn-primary {
-  background-color: #09e;
-  border-color: #06b;
-}
-
 .carousel-caption {
   width: 100%;
   height: 100%;
