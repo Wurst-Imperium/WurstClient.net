@@ -1,0 +1,40 @@
+---
+layout: default
+---
+<div class="page-header">
+	<div class="container">
+		<h1 class="visible-xs-inline visible-sm-inline visible-md-inline visible-lg-inline">
+			<span class="mega-octicon octicon-book hidden-xs"></span>
+			{{ page.title }}
+		</h1>
+		<a href="#" class="pull-right btn btn-default">
+			<span class="hidden-xs">
+				<span class="octicon octicon-pencil"></span>
+				Edit
+			</span>
+			<span class="visible-xs">
+				<span class="octicon octicon-pencil" data-toggle="tooltip" data-placement="left" data-container="body" title="Edit"></span>
+			</span>
+		</a>
+	</div>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="col-sm-9">
+			<style>
+				#content img {
+					max-width: 100%;
+				}
+			</style>
+			<div id="content">
+				{{ content | markdownify }}
+			</div>
+		</div>
+		<div class="hidden-xs col-sm-3">
+			<div class="well">
+				{% capture sidebar %}{% include wiki-sidebar.md %}{% endcapture %}
+				{{ sidebar | markdownify }}
+			</div>
+		</div>
+	</div>
+</div>
