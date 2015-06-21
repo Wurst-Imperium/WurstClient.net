@@ -2,16 +2,12 @@
 title: .fastbreak Command
 layout: wiki
 ---
-Changes the settings of FastBreak. Further information will be under [the wiki page for FastBreak]().
-
-`instant`: The player can touch a block and can switch to another, while the first gets destroyed.
-
-`normal`: Increases the players mining speed.
+Changes the settings of FastBreak.
 
 ## Syntax
-`.fastbreak mode [normal/instant]` changes the settings to normal or instant.
+`.fastbreak mode <mode>` changes the FastBreak mode.
 
-## Example
-`.fastbreak mode normal`
+## Modes
+`normal`: Increases the mining speed as specified in the "FastBreak speed" slider.
 
-![](http://puu.sh/hJpkC/3f98c49fdd.png)
+`instant`: Increases the mining speed to theoretical infinity. This would allow you to break blocks instantly if the server could keep up with it.
