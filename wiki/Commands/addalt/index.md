@@ -1,22 +1,14 @@
 ---
-title: AddAlt
+title: .addalt Command
 layout: wiki
 ---
-## Content
-  1. [Description](#description)
-  2. [Syntax](#syntax)
-  3. [Example](#example)
+Adds a specific player or all players on a server to your alt list. Meant to be used together with [Force OP (AuthMeCracker)](/wiki/Force_OP_(AuthMeCracker)).
 
-## Description
-Adds a Player or all players on a server to your alt list.
+Alts are "alternative" player names that you can use on servers. There is a difference between cracked Alts, which you can only use on cracked servers and premium Alts, which you can use everywhere. The `.addalt` command can only be used to add cracked Alts.
 
-Alts are "alternative" player names, that you can use on other servers. There is a difference between cracked Alts,
-which you can only use on cracked Servers and premium Alts, which you can use everywhere. 
-Use the Alt-Manager to manage them more specific.
+To manage your Alts, use the AltManager.
 
-## Syntax
-`.addalt [player]` adds the entered player to your alt list.
-`.addalt all' adds all players on a server to your alt list.
+## Usage
+- `.addalt <player>` adds the entered player to your alt list.
 
-## Example
-`.addalt Notch` adds Notch to your alt list.
+- `.addalt all` adds all players on the server you are playing on to your alt list.
