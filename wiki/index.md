@@ -1,12 +1,7 @@
 ---
-title: Wurst Wiki
+title: Welcome to the Wurst Client wiki!
 layout: wiki
 ---
-## Category
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+![Wurst Client logo](https://cloud.githubusercontent.com/assets/10100202/8269115/0df480ba-179c-11e5-9eb9-30ce637a0827.png)
 
-### Sub-category
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-### Sub-category
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+The Wurst Client is a Minecraft hacked client made by Alexander01998. It contains a large variety of cheats that allow you to do many things that you couldn't do in vanilla Minecraft. The main purpose of Wurst is to make Griefing easier, but it also has some features that are useful for other things, such as cheating in minigames. Since January 25 2015, Wurst is an open source project on [GitHub](https://github.com/Wurst-Imperium/Wurst-Client).
