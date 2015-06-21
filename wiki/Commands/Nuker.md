@@ -1,0 +1,27 @@
+---
+title: Nuker
+layout: wiki
+---
+## Content
+  1. [Description](#description)
+  2. [Syntax](#syntax)
+  3. [Example](#example)
+  
+## Description
+Changes the settings of Nuker. Further information will be under [the wiki page for Nuker]().
+
+Modes:
+* Normal: Smashes every block around you.
+* Id: Only destroys the block with the current given Id.
+* Flat: Destroy every block around and above, but not underneath.
+* Smash: Destroys every block that can be destroyed with one hit. (Tall Grass, Flowers, ...)
+
+## Syntax
+`.nuker mode [normal/id/flat/smash]` changes the mode for nuker to the given one.
+
+`.nuker id [block_id]` sets the id for id nuker.
+
+`.nuker name [block_name]` turns the block name into an id for id nuker.
+
+## Example
+`nuker id 1` sets the id of Id Nuker to 1.
