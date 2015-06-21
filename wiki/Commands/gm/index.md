@@ -2,12 +2,7 @@
 title: .gm Command
 layout: wiki
 ---
-Useful for server that don't support /gm. This does not bypass permissions, it just is a shortcut for /gamemode.
+A shorter alias for the `/gamemode` command. Useful for servers that don't support `/gm`.
 
 ## Syntax
-`.gm [gamemode]`. Possible are words like *survival* or *s* and numbers like *0*.
-
-## Example
-`.gm 3`
-
-![](http://puu.sh/hJpTc/b75cc98cea.png)
+`.gm <gamemode>` Possible parameters are words like `survival`, letters like `s` and numbers like `0`. Any parameter that is valid for `/gamemode` is also valid for `.gm`.
