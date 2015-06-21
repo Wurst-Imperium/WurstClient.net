@@ -8,22 +8,22 @@ A command in Wurst is similar to a command in vanilla Minecraft, except that it 
 Commands can not only be toggled by typing them into the chat, but also by keybinding them.
 
 ## List of Commands
-- `.addalt`
-- `.annoy`
-- `.binds`
-- `.blink`
-- `.clear`
-- `.damage`
-- `.drop`
-- `.enchant`
-- `.fastbreak`
-- `.features`
-- `.follow`
-- `.friends`
-- `.getpos`
-- `.gm`
-- `.goto`
-- `.help`
+- [`.addalt`](addalt)
+- [`.annoy`](annoy)
+- [`.binds`](binds)
+- [`.blink`](blink)
+- [`.clear`](clear)
+- [`.damage`](damage)
+- [`.drop`](drop)
+- [`.enchant`](enchant)
+- [`.fastbreak`](fastbreak)
+- [`.features`](features)
+- [`.follow`](follow)
+- [`.friends`](friends)
+- [`.getpos`](getpos)
+- [`.gm`](gm)
+- [`.goto`](goto)
+- [`.help`](help)
 - `.invsee`
 - `.ip`
 - `.jump`
@@ -43,4 +43,4 @@ Commands can not only be toggled by typing them into the chat, but also by keybi
 - `.tp`
 - `.vclip`
 - `.wms`
-- `.x-ray`
+- `.xray`
