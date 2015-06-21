@@ -2,12 +2,6 @@
 title: .search Command
 layout: wiki
 ---
-## Content
-  1. [Description](#description)
-  2. [Syntax](#syntax)
-  3. [Example](#example)
-
-## Description
 Changes the settings of Search or toggles it. You still need to toggle Search after changing the ID.
 
 ## Syntax

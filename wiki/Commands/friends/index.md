@@ -2,12 +2,6 @@
 title: .friends Command
 layout: wiki
 ---
-## Content
-  1. [Description](#description)
-  2. [Syntax](#syntax)
-  3. [Example](#example)
-
-## Description
 Manages your friend list. Friends won't be attacked by KillAuras and have a special color for Tracers/ESPs.
 
 ## Syntax

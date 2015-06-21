@@ -2,12 +2,6 @@
 title: .throw Command
 layout: wiki
 ---
-## Content
-  1. [Description](#description)
-  2. [Syntax](#syntax)
-  3. [Example](#example)
-
-## Description
 Changes the amount of Throw or toggles it. Throw lets you throw multiple items like eggs or snowballs at once.
 
 ## Syntax

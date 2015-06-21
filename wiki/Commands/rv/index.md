@@ -2,12 +2,6 @@
 title: .rv Command
 layout: wiki
 ---
-## Content
-  1. [Description](#description)
-  2. [Syntax](#syntax)
-  3. [Example](#example)
-
-## Description
 Toggles RemoteView or makes it target a specific entity.
 
 ## Syntax

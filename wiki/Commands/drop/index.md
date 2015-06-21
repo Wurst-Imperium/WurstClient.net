@@ -2,12 +2,6 @@
 title: .drop Command
 layout: wiki
 ---
-## Content
-  1. [Description](#description)
-  2. [Syntax](#syntax)
-  3. [Example](#example)
-
-## Description
 Drops all your items on the ground. Randomly drops items, if infinite drop is enabled.
 
 ## Syntax

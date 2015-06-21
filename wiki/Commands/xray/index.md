@@ -2,12 +2,6 @@
 title: .xray Command
 layout: wiki
 ---
-## Content
-  1. [Description](#description)
-  2. [Syntax](#syntax)
-  3. [Example](#example)
-
-## Description
 Manages or toggles X-Ray.
 
 ## Syntax

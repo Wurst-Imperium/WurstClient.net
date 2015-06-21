@@ -2,12 +2,6 @@
 title: .damage Command
 layout: wiki
 ---
-## Content
-  1. [Description](#description)
-  2. [Syntax](#syntax)
-  3. [Example](#example)
-
-## Description
 Applies the given amount of damage. This should be a number between 1 and 20, which stays for your health. This does not work
 on NoCheat+ Servers, that have fall-damage disabled.
 

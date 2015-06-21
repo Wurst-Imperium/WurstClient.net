@@ -2,12 +2,6 @@
 title: .path Command
 layout: wiki
 ---
-## Content
-  1. [Description](#description)
-  2. [Syntax](#syntax)
-  3. [Example](#example)
-
-## Description
 Shows the shortest path to a specific point. Useful for labyrinths and caves.
 
 ## Syntax
