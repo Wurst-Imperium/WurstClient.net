@@ -1,1 +1,1 @@
-This will be the sidebar.
+[Main Page](/wiki/Main_Page)
