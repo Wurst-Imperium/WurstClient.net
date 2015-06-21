@@ -2,15 +2,9 @@
 title: .goto Command
 layout: wiki
 ---
-Walks or flies you to a specific location. The path won't change if you start to fly in the middle of the process.
+Walks or flies you to a specific location. Uses artificial intelligence to find the shortest path and to avoid danger.
 
 ## Syntax
-`.goto [x] [y] [z]` Walks to the given location. This does support relative coordinates (~ ~ ~).
+- `.goto <x> <y> <z>` walks or flies to the given coordinates. Supports relative coordinates (those with `~`).
 
-`.goto [entity]` Walks to the given entity. This does only support Names together with your choice of Target. (Configurable
-in the ClickGUI)
-
-## Example
-`.goto ~1 ~ ~1` walks one block to east and one to south
-
-![](http://puu.sh/hJq7I/bc496cce09.png)
+- `.goto <entity>` walks or flies to the given entity. Affected by the Target selector in the ClickGUI.
