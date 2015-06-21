@@ -12,6 +12,7 @@ Manages your friend list. Friends won't be attacked by KillAuras and have a spec
 
 ## Syntax
 `.friends add/remove [player]` adds or removes the player from your list.
+
 `.friends list [page]` shows your friends list and its page.
 
 ## Example
