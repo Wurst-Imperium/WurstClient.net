@@ -16,3 +16,5 @@ Now of course the main reason for making a wiki is to provide information. If it
 When I got started with Minecraft, I wanted to be an expert at it from the beginning on, so I read nearly every page of the Minecraft wiki before I even bought my Minecraft account. Who knows, maybe there is someone similar to me out there who can now do the same thing with Wurst.
 
 This wiki should also significantly reduce the amount of questions that we get on the Wurst Client GitHub page, meaning less hard work for me and the people who have decided to voluntarily answer some of the questions for me (they are awesome!).
+
+The new wiki can be found at [Wurst-Client.tk/wiki](https://www.wurst-client.tk/wiki/). Check it out!
