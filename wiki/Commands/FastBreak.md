@@ -1,3 +1,7 @@
+---
+title: FastBreak
+layout: wiki
+---
 ## Content
   1. [Description](#description)
   2. [Syntax](#syntax)
