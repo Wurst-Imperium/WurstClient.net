@@ -2,13 +2,11 @@
 title: .enchant Command
 layout: wiki
 ---
-Enchants items with everything. This does not count for Silk Touch. The enchantment Level is 127.
+Enchants items with everything (except for Silk Touch) at level 127.
 
 ## Syntax
-`.enchant [all]` enchants the item in the players hand or all items in your inventory.
+- `.enchant` enchants the item in the players hand.
 
-## Example
-`.enchant`
+- `.enchant all` enchants all items in your inventory.
 
-Requirements: Creative mode
-![](http://puu.sh/hJnvn/9ca87c68e6.png)
+![a diamond pickaxe enchanted through .enchant](https://cloud.githubusercontent.com/assets/10100202/8273078/447b7ce8-185e-11e5-81f7-5ea6c39d0d41.png)
