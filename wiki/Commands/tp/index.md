@@ -1,12 +1,12 @@
 ---
-title: Teleport
+title: .tp Command
 layout: wiki
 ---
 ## Content
   1. [Description](#description)
   2. [Syntax](#syntax)
   3. [Example](#example)
-  
+
 ## Description
 Teleports you up to 100 blocks away. Only works on vanilla servers!
 

@@ -1,12 +1,12 @@
 ---
-title: Enchant
+title: .enchant Command
 layout: wiki
 ---
 ## Content
   1. [Description](#description)
   2. [Syntax](#syntax)
   3. [Example](#example)
-  
+
 ## Description
 Enchants items with everything. This does not count for Silk Touch. The enchantment Level is 127.
 

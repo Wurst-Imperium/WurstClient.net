@@ -1,12 +1,12 @@
 ---
-title: Nuker
+title: .nuker Command
 layout: wiki
 ---
 ## Content
   1. [Description](#description)
   2. [Syntax](#syntax)
   3. [Example](#example)
-  
+
 ## Description
 Changes the settings of Nuker. Further information will be under [the wiki page for Nuker]().
 

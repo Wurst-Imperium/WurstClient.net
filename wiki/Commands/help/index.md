@@ -1,12 +1,12 @@
 ---
-title: Help
+title: .help Command
 layout: wiki
 ---
 ## Content
   1. [Description](#description)
   2. [Syntax](#syntax)
   3. [Example](#example)
-  
+
 ## Description
 Shows the command list or the help for a command.
 

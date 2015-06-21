@@ -1,12 +1,12 @@
 ---
-title: GoTo
+title: .goto Command
 layout: wiki
 ---
 ## Content
   1. [Description](#description)
   2. [Syntax](#syntax)
   3. [Example](#example)
-  
+
 ## Description
 Walks or flies you to a specific location. The path won't change if you start to fly in the middle of the process.
 

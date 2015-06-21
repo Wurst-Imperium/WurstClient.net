@@ -1,5 +1,5 @@
 ---
-title: Leave
+title: .leave Command
 layout: wiki
 ---
 ## Content

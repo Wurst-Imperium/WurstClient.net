@@ -1,12 +1,12 @@
 ---
-title: Spammer
+title: .spammer Command
 layout: wiki
 ---
 ## Content
   1. [Description](#description)
   2. [Syntax](#syntax)
   3. [Example](#example)
-  
+
 ## Description
 Changes the delay of Spammer or spams spam from a file. Delay means the time Spammer waits between sending messages. Spam files
 can be created and saved with the [Spammer Mod]().

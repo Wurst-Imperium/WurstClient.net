@@ -1,12 +1,12 @@
 ---
-title: Rename
+title: .rename Command
 layout: wiki
 ---
 ## Content
   1. [Description](#description)
   2. [Syntax](#syntax)
   3. [Example](#example)
-  
+
 ## Description
 Renames the item in your hand. Use $ for colors, use $$ for $. The Name even shows in death messages, if you kill someone
 with your item!
