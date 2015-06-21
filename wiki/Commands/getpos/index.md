@@ -2,13 +2,7 @@
 title: .getpos Command
 layout: wiki
 ---
-Shows your current Position and is able to copy it to the clipboard. (<kbd>CTRL</kbd>+<kbd>V</kbd> to paste it).
-Position is shown in the regular X/Y/Z order.
+Shows your current Position or copies it to the clipboard. The X, Y and Z coordinates are separated by a single space to make the output of this command compatible to other commands like [`.goto`](/wiki/Commands/goto).
 
 ## Syntax
 `.getpos [copy]`
-
-## Example
-`.getpos`
-
-![](http://puu.sh/hJpGE/fbee4bae69.png)
