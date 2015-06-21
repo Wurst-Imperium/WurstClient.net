@@ -2,14 +2,10 @@
 title: .damage Command
 layout: wiki
 ---
-Applies the given amount of damage. This should be a number between 1 and 20, which stays for your health. This does not work
-on NoCheat+ Servers, that have fall-damage disabled.
+Applies the given amount of damage. The amount of damage must be a number between 1 and 40. This works on both normal servers and NoCheat+ servers, as long as they have fall damage enabled.
 
 ## Syntax
-`.damage [amount]` damages the player with the given amount, ignores armor.
+`.damage <amount>` damages the player with the given amount.
 
 ## Example
-`.damage 8` deals 8 (4 hearts) damage to the player.
-
-Requirements: Survival mode
-![](http://puu.sh/hJoe8/7a95c1bb8f.png)
+`.damage 8` deals 8 damage points (4 hearts) to the player.
