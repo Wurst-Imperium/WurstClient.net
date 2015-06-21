@@ -12,6 +12,7 @@ Walks or flies you to a specific location. The path won't change if you start to
 
 ## Syntax
 `.goto [x] [y] [z]` Walks to the given location. This does support relative coordinates (~ ~ ~).
+
 `.goto [entity]` Walks to the given entity. This does only support Names together with your choice of Target. (Configurable
 in the ClickGUI)
 
