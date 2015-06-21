@@ -1,19 +1,12 @@
 ---
-title: Binds
+title: .binds Command
 layout: wiki
 ---
-## Content
-  1. [Description](#description)
-  2. [Syntax](#syntax)
-  3. [Example](#example)
-
-## Description
-Lists all Keybinds.
+Shows the keybind list. The keybind list is divided into pages that each contain up to eight keybinds.
 
 ## Syntax
-`.binds [page]` shows your keybinds - 8 per page.
+`.binds [<page>]`
 
-## Example
-`.binds 1` shows your first 8 keybinds (Page 1).
+Typing the command without specifying a page will always show the first page.
 
-![](http://puu.sh/hJoH1/df715b5139.png)
+![first page of the keybind list](https://cloud.githubusercontent.com/assets/10100202/8272975/aee13d66-1859-11e5-912f-98d4e200f000.png)
