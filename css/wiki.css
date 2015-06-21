@@ -7,3 +7,14 @@
   margin: 44px 0 22px;
   border-bottom: 1px solid #eee;
 }
+
+#content kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  line-height: 12px;
+  color: #555;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+}
