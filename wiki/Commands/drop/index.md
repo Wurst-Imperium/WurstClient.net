@@ -2,14 +2,9 @@
 title: .drop Command
 layout: wiki
 ---
-Drops all your items on the ground. Randomly drops items, if infinite drop is enabled.
+Drops all your items on the ground.
 
 ## Syntax
-`.drop [infinite]` drops all items and can continue dropping items forever, which is only possible in creative mode.
+- `.drop` drops all items.
 
-## Example
-`.drop` drops the players inventory.
-
-Requirements: `.drop` > none | `.drop infinite` > Creative mode
-![](http://puu.sh/hJnUc/0528e202a8.png)
-![](http://puu.sh/hJnWD/f1b5e7ff94.png)
+- `.drop infinite` Continuously spawns new items and drops them. This requires creative mode.
