@@ -2,13 +2,9 @@
 title: .follow Command
 layout: wiki
 ---
-Toggles Follow or makes it target a specific entity. This relies on your choice of Target, which is configurable in the
-ClickGUI.
+Toggles Follow or makes it target a specific entity. This command is influenced by the Target selector in the ClickGUI.
 
 ## Syntax
-`.follow [entity]` Follows the nearest or the given entity.
+- `.follow` Follows the nearest entity.
 
-## Example
-`.follow Bertha` follows the closest entity with the name "Bertha".
-
-![](http://puu.sh/hJniW/0962f648bd.png)
+- `.follow <entity>` Follows the nearest entity with the given name. This parameter is case sensitive.
