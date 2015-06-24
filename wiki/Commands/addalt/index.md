@@ -8,7 +8,7 @@ Alts are "alternative" player names that you can use on servers. There is a diff
 
 To manage your Alts, use the AltManager.
 
-## Usage
+## Syntax
 - `.addalt <player>` adds the entered player to your alt list.
 
 - `.addalt all` adds all players on the server you are playing on to your alt list.
