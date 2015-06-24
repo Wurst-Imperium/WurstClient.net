@@ -2,40 +2,42 @@
 layout: default
 no_footer: true
 ---
-<div class="page-header">
+<span itemscope itemtype="http://schema.org/WebPage">
+	<div class="page-header">
+		<div class="container">
+			<h1 class="visible-xs-inline visible-sm-inline visible-md-inline visible-lg-inline">
+				<span class="mega-octicon octicon-book hidden-xs"></span>
+				{{ page.title }}
+			</h1>
+			<a href="https://github.com/Wurst-Imperium/wurst-client.tk/edit/gh-pages/{{ page.path }}" class="pull-right btn btn-default">
+				<span class="hidden-xs">
+					<span class="octicon octicon-pencil"></span>
+					Edit
+				</span>
+				<span class="visible-xs">
+					<span class="octicon octicon-pencil" data-toggle="tooltip" data-placement="left" data-container="body" title="Edit"></span>
+				</span>
+			</a>
+		</div>
+	</div>
 	<div class="container">
-		<h1 class="visible-xs-inline visible-sm-inline visible-md-inline visible-lg-inline">
-			<span class="mega-octicon octicon-book hidden-xs"></span>
-			{{ page.title }}
-		</h1>
-		<a href="https://github.com/Wurst-Imperium/wurst-client.tk/edit/gh-pages/{{ page.path }}" class="pull-right btn btn-default">
-			<span class="hidden-xs">
-				<span class="octicon octicon-pencil"></span>
-				Edit
-			</span>
-			<span class="visible-xs">
-				<span class="octicon octicon-pencil" data-toggle="tooltip" data-placement="left" data-container="body" title="Edit"></span>
-			</span>
-		</a>
-	</div>
-</div>
-<div class="container">
-	<div class="row">
-		<div class="col-sm-9">
-			<link href="/css/wiki.css" rel="stylesheet">
-			<div id="content">
-				{{ content | markdownify }}
+		<div class="row">
+			<div class="col-sm-9">
+				<link href="/css/wiki.css" rel="stylesheet">
+				<div id="content" itemprop="mainContentOfPage">
+					{{ content | markdownify }}
+				</div>
 			</div>
-		</div>
-		<div class="hidden-xs col-sm-3">
-			<div class="well">
-				{% capture sidebar %}{% include wiki-sidebar.md %}{% endcapture %}
-				{{ sidebar | markdownify }}
-				<a href="https://github.com/Wurst-Imperium/wurst-client.tk/new/gh-pages/wiki" class="btn btn-default">
-					<span class="octicon octicon-plus"></span>
-					Add a Page
-				</a>
+			<div class="hidden-xs col-sm-3">
+				<div class="well">
+					{% capture sidebar %}{% include wiki-sidebar.md %}{% endcapture %}
+					{{ sidebar | markdownify }}
+					<a href="https://github.com/Wurst-Imperium/wurst-client.tk/new/gh-pages/wiki" class="btn btn-default">
+						<span class="octicon octicon-plus"></span>
+						Add a Page
+					</a>
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
+</span>
