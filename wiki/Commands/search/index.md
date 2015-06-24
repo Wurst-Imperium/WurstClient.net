@@ -5,8 +5,8 @@ layout: wiki
 Changes the settings of Search or toggles it.
 
 ## Syntax
-`.search id <block_id>` sets the search for the given block ID.
+- `.search` toggles Search.
 
-`.search name <block_name>` changes the given name to the equal ID and sets the search to it.
+- `.search id <block_id>` sets the ID for Search.
 
-![](http://puu.sh/hKry4/e03972d267.png)
+- `.search name <block_name>` sets the ID for Search using a block name. The `minecraft:` prefix can be omitted, therefore `furnace` is the same block as `minecraft:furnace`.
