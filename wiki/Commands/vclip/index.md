@@ -7,6 +7,3 @@ blocks on Bukkit servers. Negative amounts teleport you down, positive amounts t
 
 ## Syntax
 `.vclip <height>`
-
-![](http://puu.sh/hKsyT/f69d68d1b2.png)
-![](http://puu.sh/hKszc/febc336698.png)
