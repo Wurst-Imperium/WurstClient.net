@@ -2,7 +2,7 @@
 title: .say Command
 layout: wiki
 ---
-Sends a chat message, even if the message starts with a dot. Useful for servers that require you to type `.legit` etc.
+Sends a chat message, even if the message starts with a dot. Useful if a server admin wants you to type `.legit`.
 
 ## Syntax
 `.say <message>`
