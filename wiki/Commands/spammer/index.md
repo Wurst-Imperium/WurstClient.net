@@ -2,10 +2,9 @@
 title: .spammer Command
 layout: wiki
 ---
-Changes the delay of Spammer or spams spam from a file. Delay means the time Spammer waits between sending messages. Spam files
-can be created and saved with the [Spammer Mod]().
+Changes the delay of Spammer (the time Spammer waits between sending messages) or loads a WSPAM script.
 
 ## Syntax
-`.spammer delay <delay_in_ms>`
+- `.spammer delay <delay>` sets the delay to the given amount of milliseconds.
 
-`.spammer spam <file>` spams the given file. This works without the file extension.
+- `.spammer spam <file>` spams the given file. This works without the `.wspam` file extension.
