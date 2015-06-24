@@ -9,4 +9,4 @@ Shows the shortest path to a specific point. Useful for labyrinths and caves.
 
 `.path [entity]` shows the shortest path to the given entity. Affected by the Target selector in the ClickGUI.
 
-![](http://puu.sh/hKqwq/d74c8b17fa.png)
+![Wurst Client path visualization](https://cloud.githubusercontent.com/assets/10100202/8334087/575e5a8a-1a96-11e5-948a-cb0a0cbcae11.png)
