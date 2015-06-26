@@ -13,23 +13,35 @@
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav">
 				<li>
-					<a href="/news/">
+					<a href="/news">
 						<span class="octicon octicon-radio-tower"></span>
 						News
 					</a>
 				</li>
 				<li>
-					<a href="/downloads/">
+					<a href="/downloads">
 						<span class="octicon octicon-cloud-download"></span>
 						Downloads
 					</a>
 				</li>
+				<li>
+					<a href="/wiki">
+						<span class="octicon octicon-book"></span>
+						Wiki
+					</a>
+				</li>
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-						<span class="octicon octicon-list-unordered"></span>
-						More
+						<span class="octicon octicon-mark-github"></span>
+						GitHub
 					</a>
-					<ul class="dropdown-menu" role="menu">
+					<ul class="dropdown-menu">
+						<li>
+							<a href="https://github.com/Wurst-Imperium/Wurst-Client/fork">
+								<span class="octicon octicon-code"></span>
+								Source Code
+							</a>
+						</li>
 						<li>
 							<a href="https://github.com/Wurst-Imperium/Wurst-Client/fork">
 								<span class="octicon octicon-git-pull-request"></span>
@@ -37,27 +49,21 @@
 							</a>
 						</li>
 						<li>
-							<a href="/wiki">
-								<span class="octicon octicon-book"></span>
-								Wurst Wiki
-							</a>
-						</li>
-						<li>
 							<a href="https://github.com/Wurst-Imperium/Wurst-Client/issues?q=label%3Aquestion">
 								<span class="octicon octicon-question"></span>
-								Questions &amp; Answers
+								Questions
 							</a>
 						</li>
 						<li>
 							<a href="https://github.com/Wurst-Imperium/Wurst-Client/labels/bug">
 								<span class="octicon octicon-bug"></span>
-								Report Bugs
+								Bug Reports
 							</a>
 						</li>
 						<li>
 							<a href="https://github.com/Wurst-Imperium/Wurst-Client/labels/enhancement">
 								<span class="octicon octicon-comment"></span>
-								Suggest Features
+								Suggestions
 							</a>
 						</li>
 					</ul>
@@ -65,13 +71,33 @@
 			</ul>
 			{% unless include.no_search %}
 			<ul class="nav navbar-nav navbar-right">
-				<li class="dropdown">
-					<a style="padding: 8px;" class="dropdown-toggle" data-toggle="dropdown">
-						<input id="search-input" type="text" class="form-control" placeholder="Search">
+				<li>
+					<a href="#" data-toggle="modal" data-target="#search">
+						<span class="octicon octicon-search"></span>
+						Search
 					</a>
-					<ul id="search-results" class="dropdown-menu"></ul>
 				</li>
 			</ul>
+			<div class="modal fade" id="search">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal">
+								&times;
+							</button>
+			        <h4 class="modal-title" id="myModalLabel">
+								<span class="octicon octicon-search"></span>
+								Search
+							</h4>
+			      </div>
+			      <div class="modal-body">
+							<input id="search-input" type="text" class="form-control">
+							<br>
+							<ul id="search-results" class="list-group"></ul>
+			      </div>
+			    </div>
+			  </div>
+			</div>
 			{% endunless %}
 		</div>
 	</div>
