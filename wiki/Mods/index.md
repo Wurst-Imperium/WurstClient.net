@@ -51,7 +51,7 @@ There are two different kinds of mods: the normal mods, which can additionally b
 - FightBot
 - Flight
 - Follow
-- [Force OP (AuthMeCracker)](/wiki/Force_OP_(AuthMeCracker))
+- [Force OP (AuthMeCracker)](/wiki/Mods/Force_OP_(AuthMeCracker))
 - Freecam
 - Fullbright
 - Glide
