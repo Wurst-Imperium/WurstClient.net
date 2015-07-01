@@ -25,8 +25,8 @@ First Section:
 
 7 MAC/LINUX: Once you have extracted MCP, Open Terminal
    In Terminal Run the following commands:
-   1. cd <Drag Folder with MCP files from File Browser here> 
-   2. ./decompile.sh
+      cd <Drag Folder with MCP files from File Browser here> 
+      ./decompile.sh
 
 8. Wait until this step has finished DO NOT CLOSE THE WINDOW UNTIL IT SAYS IT HAS FINISHED
 
@@ -113,7 +113,7 @@ This section is about Wurst recompilation and reobsufacating for use of a custom
 1. Right-Click your project in Eclipse and Click "Export". Then choose "Runnable Jar" under the Java category. In the location where you want save your jar, navigate to .minecraft/versions then make a new folder and for this example we will call it Wurst v2. Call your jar Wurst v2.jar and save it to this folder.
 
 2. Copy your Wurst.json to the Wurst v2 folder. Rename the Wurst.json to Wurst v2.json and open it in Notepad (Windows), xCode (Mac), gedit (Ubuntu/Linux). 
-WARNING FOR MAC: DO NOT OPEN THIS FILE IN TEXTEDIT it messes up the formatting and you won't be able to launch Wurst In the id field change "Wurst" to "Wurst v2" then save the file.
+WARNING FOR MAC: DO NOT OPEN THIS FILE IN TEXTEDIT it messes up the formatting and you won't be able to launch Wurst. In the id field change "Wurst" to "Wurst v2" then save the file.
 
 3. Restart your launcher. Edit profile and choose the version "Wurst v2"
 
