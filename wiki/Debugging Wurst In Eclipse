@@ -103,3 +103,18 @@ Time to create a launch config! This part is pretty easy.
 
 4. If Wurst launches you have done everything correctly! Feel free to add mods and help develop the client. The next section will cover recompiling to use the client in the Minecraft launcher
    
+Fifth Section
+
+Definitions:
+See above
+
+This section is about Wurst recompilation and reobsufacating for use of a custom Wurst version in the Minecraft launcher. The reason we do not use MCP to recompile is because MCP's recompile function is broken and this way works just as well.
+
+1. Right-Click your project in Eclipse and Click "Export". Then choose "Runnable Jar" under the Java category. In the location where you want save your jar, navigate to .minecraft/versions then make a new folder and for this example we will call it Wurst v2. Call your jar Wurst v2.jar and save it to this folder.
+
+2. Copy your Wurst.json to the Wurst v2 folder. Rename the Wurst.json to Wurst v2.json and open it in Notepad (Windows), xCode (Mac), gedit (Ubuntu/Linux). 
+WARNING FOR MAC: DO NOT OPEN THIS FILE IN TEXTEDIT it messes up the formatting and you won't be able to launch Wurst In the id field change "Wurst" to "Wurst v2" then save the file.
+
+3. Restart your launcher. Edit profile and choose the version "Wurst v2"
+ 
+
