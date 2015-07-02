@@ -1,18 +1,19 @@
 ***THIS IS NOT A TUTORIAL TO INSTALL WURST. This tutorial is how to debug wurst in Eclipse. This is also how to get to the stage to be able to modify Wurst. This tutorial assumes you know how to use a web browser and that you have basic computer skills***
 
-Definitions:
-
-Get-Download
-
-Eclipse- A program for developing
-
-MCP- Mod Coder's Pack
-
-Extract- Right-Click and Press the Extract Button
-
-Run- Type the command and then press enter
 
 # First Section:
+
+## Definitions:
+
+### Get-Download
+
+### Eclipse- A program for developing
+
+### MCP- Mod Coder's Pack
+
+### Extract- Right-Click and Press the Extract Button
+
+### Run- Type the command and then press enter
 
 1. Get and Install Eclipse: https://eclipse.org/
 
@@ -37,11 +38,11 @@ Run- Type the command and then press enter
 
 # Second Section:
 
-Definitions:
+## Definitions:
 
-your-mcp-folder-the folder that contains all the files extracted from MCP
+### your-mcp-folder-the folder that contains all the files extracted from MCP
 
-your-wurst-folder-The folder in which you extracted your Wurst source code from GitHub.
+### your-wurst-folder-The folder in which you extracted your Wurst source code from GitHub.
 
 1. Open Eclipse
 
@@ -60,8 +61,8 @@ your-wurst-folder-The folder in which you extracted your Wurst source code from 
 
 # Third Section:
 
-Definitions:
-Look at the definitons for the second section
+## Definitions:
+### Look at the definitons for the second section
 
 1. The next step is fairly descriptive. Here is the tutorial for creating a new project courtesy of Alexander01998 (The Creator of the Wurst-Client):
   
@@ -96,8 +97,8 @@ I hope you are still with me, that was a lot. The good news is that things are m
 
 # Fourth Section:
 
-Definitions:
-See above section's definitions
+## Definitions:
+### See above section's definitions
 
 Time to create a launch config! This part is pretty easy.
 
@@ -113,8 +114,8 @@ Time to create a launch config! This part is pretty easy.
 
 # Fifth Section
 
-Definitions:
-See above
+## Definitions:
+### See above
 
 This section is about Wurst recompilation and reobsufacating for use of a custom Wurst version in the Minecraft launcher. The reason we do not use MCP to recompile is because MCP's recompile function is broken and this way works just as well.
 
