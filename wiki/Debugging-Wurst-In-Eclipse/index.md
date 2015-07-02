@@ -15,6 +15,8 @@
 
 ### Run- Type the command and then press enter
 
+## Steps:
+
 1. Get and Install Eclipse: https://eclipse.org/
 
 2. Get and Extract MCP 9.10: http://www.modcoderpack.com/website/
@@ -44,6 +46,8 @@
 
 ### your-wurst-folder-The folder in which you extracted your Wurst source code from GitHub.
 
+## Steps:
+
 1. Open Eclipse
 
 2. Eclipse will create a dialog called "choose your workspace". Click "Browse" then navigate to your-mcp-folder then click the folder (NOT A DOUBLE CLICK) then click open then click Finish. 
@@ -63,6 +67,8 @@
 
 ## Definitions:
 ### Look at the definitons for the second section
+
+## Steps:
 
 1. The next step is fairly descriptive. Here is the tutorial for creating a new project courtesy of Alexander01998 (The Creator of the Wurst-Client):
   
@@ -100,6 +106,8 @@ I hope you are still with me, that was a lot. The good news is that things are m
 ## Definitions:
 ### See above section's definitions
 
+## Steps:
+
 Time to create a launch config! This part is pretty easy.
 
 1. On the top of Eclipse's "toolbar" you will see a green button with a "Play" sign on it. Click the little arrow right below it and select "Run Configurations".
@@ -116,6 +124,8 @@ Time to create a launch config! This part is pretty easy.
 
 ## Definitions:
 ### See above
+
+## Steps:
 
 This section is about Wurst recompilation and reobsufacating for use of a custom Wurst version in the Minecraft launcher. The reason we do not use MCP to recompile is because MCP's recompile function is broken and this way works just as well.
 
