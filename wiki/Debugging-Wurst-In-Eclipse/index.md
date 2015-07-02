@@ -108,7 +108,9 @@ Time to create a launch config! This part is pretty easy.
 3. Add the launch configuration and you are now done with launch configurations! To launch Wurst click the little arrow and click "Wurst"
 
 4. If Wurst launches you have done everything correctly! Feel free to add mods and help develop the client. The next section will cover recompiling to use the client in the Minecraft launcher
-   
+ 
+>**Notice:** Contributing changes in the vanilla MC source code requires some extra steps. Read [#412](https://github.com/Wurst-Imperium/Wurst-Client/issues/412) for more information.  
+
 # Fifth Section
 
 Definitions:
@@ -125,5 +127,5 @@ WARNING FOR MAC: DO NOT OPEN THIS FILE IN TEXTEDIT it messes up the formatting a
 
 Click Play and your good to go! You have successfully added on to the Wurst-Client and have read through this tutorial! Give yourself a pat on the back!
  
->**Notice:** Contributing changes in the vanilla MC source code requires some extra steps. Read [#412](https://github.com/Wurst-Imperium/Wurst-Client/issues/412) for more information.
+
 
