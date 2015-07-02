@@ -12,7 +12,7 @@ Extract- Right-Click and Press the Extract Button
 
 Run- Type the command and then press enter
 
-First Section:
+# First Section:
 
 1. Get and Install Eclipse: https://eclipse.org/
 
@@ -35,7 +35,7 @@ First Section:
 
 8. Wait until this step has finished DO NOT CLOSE THE WINDOW UNTIL IT SAYS IT HAS FINISHED
 
-Second Section:
+# Second Section:
 
 Definitions:
 
@@ -58,7 +58,7 @@ your-wurst-folder-The folder in which you extracted your Wurst source code from 
    https://cloud.githubusercontent.com/assets/11248300/8185478/0fc80bf2-141b-11e5-8303-979211d229d6.png
    https://cloud.githubusercontent.com/assets/11248300/8185480/113333d6-141b-11e5-91a5-92a1ffacf41c.png
 
-Third Section:
+# Third Section:
 
 Definitions:
 Look at the definitons for the second section
@@ -94,7 +94,7 @@ I hope you are still with me, that was a lot. The good news is that things are m
 5. Right click your project and select properties. Select Java Build Path. On the top there should be 4 "tabs." Click source folders. Click "Add Source." Then check the folder called "mcp910" then click "Done". In the properties toggle Ignore optional compiler problems to Yes. Then click "Done" in properties.
 
 
-Fourth Section:
+# Fourth Section:
 
 Definitions:
 See above section's definitions
@@ -109,7 +109,7 @@ Time to create a launch config! This part is pretty easy.
 
 4. If Wurst launches you have done everything correctly! Feel free to add mods and help develop the client. The next section will cover recompiling to use the client in the Minecraft launcher
    
-Fifth Section
+# Fifth Section
 
 Definitions:
 See above
