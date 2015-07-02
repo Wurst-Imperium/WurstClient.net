@@ -1,10 +1,15 @@
-This tutorial is how to debug wurst in Eclipse. This tutorial assumes you know how to use a web browser and that you have basic computer skills
+THIS IS NOT A TUTORIAL TO INSTALL WURST. This tutorial is how to debug wurst in Eclipse. This is also how to get to the stage to be able to modify Wurst. This tutorial assumes you know how to use a web browser and that you have basic computer skills
 
 Definitions:
+
 Get-Download
+
 Eclipse- A program for developing
+
 MCP- Mod Coder's Pack
+
 Extract- Right-Click and Press the Extract Button
+
 Run- Type the command and then press enter
 
 First Section:
@@ -21,9 +26,9 @@ First Section:
 
 6. Extract these as well. We will come back to these soon
 
-7 WINDOWS: In the directory you extracted MCP double click the file named "decompile.bat"
+7. WINDOWS: In the directory you extracted MCP double click the file named "decompile.bat"
 
-7 MAC/LINUX: Once you have extracted MCP, Open Terminal
+7. MAC/LINUX: Once you have extracted MCP, Open Terminal
    In Terminal Run the following commands:
       cd <Drag Folder with MCP files from File Browser here> 
       ./decompile.sh
@@ -35,6 +40,7 @@ Second Section:
 Definitions:
 
 your-mcp-folder-the folder that contains all the files extracted from MCP
+
 your-wurst-folder-The folder in which you extracted your Wurst source code from GitHub.
 
 1. Open Eclipse
