@@ -1,4 +1,4 @@
-***THIS IS NOT A TUTORIAL TO INSTALL WURST. This tutorial is how to debug wurst in Eclipse. This is also how to get to the stage to be able to modify Wurst. This tutorial assumes you know how to use a web browser and that you have basic computer skill. Parts of this tutorial are inherited from the Debuggin Wurst in Eclipse page from the Wurst-Wiki version 2.0 and other members of the Wurst-Client community.***
+***THIS IS NOT A TUTORIAL TO INSTALL WURST. This tutorial is how to debug wurst in Eclipse. This is also how to get to the stage to be able to modify Wurst. This tutorial assumes you know how to use a web browser and that you have basic computer skill. Parts of this tutorial are inherited from the Debugging Wurst in Eclipse page from the Wurst-Wiki version 2.0 and other members of the Wurst-Client community.***
 
 
 # First Section:
