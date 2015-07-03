@@ -30,21 +30,3 @@ In the Minecraft project, add a linked source folder that points to the source c
 11. By now, Eclipse should no longer display any errors and you should be able to debug Wurst using the default MCP launch configuration. If you are still seeing errors or if you can't launch Wurst, you have done one or more of the above steps incorrectly.
 
 12. You can now make changes and contribute them. Read the [guidelines for contributing](https://github.com/Wurst-Imperium/Wurst-Client/blob/master/CONTRIBUTING.md) for details.  
-
-# Fifth Section
-
-## Definitions:
-### See above
-
-## Steps:
-
-This section is about Wurst recompilation and reobsufacating for use of a custom Wurst version in the Minecraft launcher. The reason we do not use MCP to recompile is because MCP's recompile function is broken and this way works just as well.
-
-1. Right-Click your project in Eclipse and Click "Export". Then choose "Runnable Jar" under the Java category. In the location where you want save your jar, navigate to .minecraft/versions then make a new folder and for this example we will call it Wurst v2. Call your jar Wurst v2.jar and save it to this folder.
-
-2. Copy your Wurst.json to the Wurst v2 folder. Rename the Wurst.json to Wurst v2.json and open it in Notepad (Windows), xCode (Mac), gedit (Ubuntu/Linux).
-WARNING FOR MAC: DO NOT OPEN THIS FILE IN TEXTEDIT it messes up the formatting and you won't be able to launch Wurst. In the id field change "Wurst" to "Wurst v2" then save the file.
-
-3. Restart your launcher. Edit profile and choose the version "Wurst v2"
-
-Click Play and your good to go! You have successfully added on to the Wurst-Client and have read through this tutorial! Give yourself a pat on the back!
