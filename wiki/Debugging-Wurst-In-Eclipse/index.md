@@ -1,3 +1,7 @@
+---
+title: Debugging Wurst in Eclipse
+layout: wiki
+---
 ***THIS IS NOT A TUTORIAL TO INSTALL WURST. This tutorial is how to debug wurst in Eclipse. This is also how to get to the stage to be able to modify Wurst. This tutorial assumes you know how to use a web browser and that you have basic computer skill. Parts of this tutorial are inherited from the Debugging Wurst in Eclipse page from the Wurst-Wiki version 2.0 and other members of the Wurst-Client community.***
 
 
@@ -33,7 +37,7 @@
 
 7. MAC/LINUX: Once you have extracted MCP, Open Terminal
    In Terminal Run the following commands:
-      >**cd** ```Drag Folder with MCP files from File Browser into this space in your terminal window``` 
+      >**cd** ```Drag Folder with MCP files from File Browser into this space in your terminal window```
       >**./decompile.sh**
 
 8. Wait until this step has finished DO NOT CLOSE THE WINDOW UNTIL IT SAYS IT HAS FINISHED
@@ -50,11 +54,11 @@
 
 1. Open Eclipse
 
-2. Eclipse will create a dialog called "choose your workspace". Click "Browse" then navigate to your-mcp-folder then click the folder (NOT A DOUBLE CLICK) then click open then click Finish. 
+2. Eclipse will create a dialog called "choose your workspace". Click "Browse" then navigate to your-mcp-folder then click the folder (NOT A DOUBLE CLICK) then click open then click Finish.
 
 3. Eclipse will bring you to a tutorial page, click the arrow in the top right that says "Go to Workspace."
 
-4. On the Panel on your right you will see 2 items. Right Click the one that says "Client." Hover your cursor over "Team" and then click "Apply Patch." 
+4. On the Panel on your right you will see 2 items. Right Click the one that says "Client." Hover your cursor over "Team" and then click "Apply Patch."
 
 5. Here is a patch tutorial courtesy of Nitrogeon-Dioxide:
    https://cloud.githubusercontent.com/assets/11248300/8185475/0e31fda2-141b-11e5-97b4-4425c5b8c90d.png
@@ -71,22 +75,22 @@
 ## Steps:
 
 1. The next step is fairly descriptive. Here is the tutorial for creating a new project courtesy of Alexander01998 (The Creator of the Wurst-Client):
-  
+
     >* Create a clone of Wurst. This is the tricky part, so read carefully!
-  
+
     >* In Eclipse, go to File>Import...>Git/Projects from Git>Clone URI.
-  
+
     >* Type git@github.com:Wurst-Imperium/Wurst-Client.git into the first text field. The rest will be filled out        automatically.
-  
+
     >* Click Next > until it asks you for a wizard. Select Use the New Project wizard and click Finish.
-  
+
      >* A new window will open. Select Java/Java Project and click Next >.
-  
+
      >* Give your project a name and change the project location to the Wurst Client folder inside of your clone.
-  
+
     >* Example: If your clone is at C:\Users\Octocat\GitHub\Wurst-Client-clone, your project location is at C:\Users\Octocat\GitHub\Wurst-Client-clone\Wurst Client.
-  
-     >* Click Finish. 
+
+     >* Click Finish.
 
 2. Right-Click on your Project in Eclipse and add a new folder. Call it "lib". Take all of the JARS from your-mcp-folder/jars/libraries and add OFFICAL VANILLA 1.8 jar, the slick.jar from the Slick2D extracted directory/lib from Step 4, The lwjgl.jar, jinput.jar, and lwjgl_utils.jar from the LWJGL directory/jars downloaded from Step 5, and put them in this folder. This will make things way easier in the next step.
 
@@ -117,7 +121,7 @@ Time to create a launch config! This part is pretty easy.
 3. Add the launch configuration and you are now done with launch configurations! To launch Wurst click the little arrow and click "Wurst"
 
 4. If Wurst launches you have done everything correctly! Feel free to add mods and help develop the client. The next section will cover recompiling to use the client in the Minecraft launcher
- 
+
 >**Notice:** Contributing changes in the vanilla MC source code requires some extra steps. Read [#412](https://github.com/Wurst-Imperium/Wurst-Client/issues/412) for more information.  
 
 # Fifth Section
@@ -131,12 +135,9 @@ This section is about Wurst recompilation and reobsufacating for use of a custom
 
 1. Right-Click your project in Eclipse and Click "Export". Then choose "Runnable Jar" under the Java category. In the location where you want save your jar, navigate to .minecraft/versions then make a new folder and for this example we will call it Wurst v2. Call your jar Wurst v2.jar and save it to this folder.
 
-2. Copy your Wurst.json to the Wurst v2 folder. Rename the Wurst.json to Wurst v2.json and open it in Notepad (Windows), xCode (Mac), gedit (Ubuntu/Linux). 
+2. Copy your Wurst.json to the Wurst v2 folder. Rename the Wurst.json to Wurst v2.json and open it in Notepad (Windows), xCode (Mac), gedit (Ubuntu/Linux).
 WARNING FOR MAC: DO NOT OPEN THIS FILE IN TEXTEDIT it messes up the formatting and you won't be able to launch Wurst. In the id field change "Wurst" to "Wurst v2" then save the file.
 
 3. Restart your launcher. Edit profile and choose the version "Wurst v2"
 
 Click Play and your good to go! You have successfully added on to the Wurst-Client and have read through this tutorial! Give yourself a pat on the back!
- 
-
-
