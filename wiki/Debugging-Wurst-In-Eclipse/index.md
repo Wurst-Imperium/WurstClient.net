@@ -29,4 +29,4 @@ In the Minecraft project, add a linked source folder that points to the source c
 
 11. By now, Eclipse should no longer display any errors and you should be able to debug Wurst using the default MCP launch configuration. If you are still seeing errors or if you can't launch Wurst, you have done one or more of the above steps incorrectly.
 
-12. You can now make changes and contribute them. Read the [guidelines for contributing](https://github.com/Wurst-Imperium/Wurst-Client/blob/master/CONTRIBUTING.md) for details.  
+12. You can now make changes and contribute them. Read the [guidelines for contributing](https://github.com/Wurst-Imperium/Wurst-Client/blob/master/CONTRIBUTING.md) for details.
