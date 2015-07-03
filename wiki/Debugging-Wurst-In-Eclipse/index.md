@@ -10,30 +10,11 @@ layout: wiki
 
 3. Set up the MCP and decompile Minecraft 1.8.
 
-# Second Section:
+4. Create a *local* repository for your decompiled Minecraft source code.  
+:warning: **Do not publish this repository!** Making the Minecraft source code publicly available is illegal.
 
-## Definitions:
-
-### your-mcp-folder-the folder that contains all the files extracted from MCP
-
-### your-wurst-folder-The folder in which you extracted your Wurst source code from GitHub.
-
-## Steps:
-
-1. Open Eclipse
-
-2. Eclipse will create a dialog called "choose your workspace". Click "Browse" then navigate to your-mcp-folder then click the folder (NOT A DOUBLE CLICK) then click open then click Finish.
-
-3. Eclipse will bring you to a tutorial page, click the arrow in the top right that says "Go to Workspace."
-
-4. On the Panel on your right you will see 2 items. Right Click the one that says "Client." Hover your cursor over "Team" and then click "Apply Patch."
-
-5. Here is a patch tutorial courtesy of Nitrogeon-Dioxide:
-   https://cloud.githubusercontent.com/assets/11248300/8185475/0e31fda2-141b-11e5-97b4-4425c5b8c90d.png
-   https://cloud.githubusercontent.com/assets/11248300/8185477/0ec3f6e4-141b-11e5-91bf-f5e728546b34.png
-   For this step choose "File" for Patch and click "Browse." Then navigate to your-wurst-folder/patch. Then click      the file called "minecraft.patch" then click "Open"
-   https://cloud.githubusercontent.com/assets/11248300/8185478/0fc80bf2-141b-11e5-8303-979211d229d6.png
-   https://cloud.githubusercontent.com/assets/11248300/8185480/113333d6-141b-11e5-91a5-92a1ffacf41c.png
+5. Go to your Wurst-Client clone and open the `patch` folder, there is a file called `minecraft.patch`. Apply that patch to your Minecraft repository.  
+:information_source: The correct Git command for applying a patch is: `git apply --ignore-space-change --ignore-whitespace yourpatchfile.patch`
 
 # Third Section:
 
