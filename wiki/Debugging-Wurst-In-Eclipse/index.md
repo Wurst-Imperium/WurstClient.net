@@ -16,43 +16,16 @@ layout: wiki
 5. Go to your Wurst-Client clone and open the `patch` folder, there is a file called `minecraft.patch`. Apply that patch to your Minecraft repository.  
 :information_source: The correct Git command for applying a patch is: `git apply --ignore-space-change --ignore-whitespace yourpatchfile.patch`
 
-# Third Section:
+6. Import both repositories into Eclipse (`File>Import...>Git/Projects from Git`).
 
-## Definitions:
-### Look at the definitons for the second section
+7. Add all of Minecraft's libraries to both projects, just like you would when setting up an MCP project.
 
-## Steps:
+8. Add the Slick2D library as well.
 
-1. The next step is fairly descriptive. Here is the tutorial for creating a new project courtesy of Alexander01998 (The Creator of the Wurst-Client):
+9. In the Wurst Client project, add a linked source folder that points to the source code of the Minecraft project.  
+In the Minecraft project, add a linked source folder that points to the source code of the Wurst Client project.
 
-    >* Create a clone of Wurst. This is the tricky part, so read carefully!
-
-    >* In Eclipse, go to File>Import...>Git/Projects from Git>Clone URI.
-
-    >* Type git@github.com:Wurst-Imperium/Wurst-Client.git into the first text field. The rest will be filled out        automatically.
-
-    >* Click Next > until it asks you for a wizard. Select Use the New Project wizard and click Finish.
-
-     >* A new window will open. Select Java/Java Project and click Next >.
-
-     >* Give your project a name and change the project location to the Wurst Client folder inside of your clone.
-
-    >* Example: If your clone is at C:\Users\Octocat\GitHub\Wurst-Client-clone, your project location is at C:\Users\Octocat\GitHub\Wurst-Client-clone\Wurst Client.
-
-     >* Click Finish.
-
-2. Right-Click on your Project in Eclipse and add a new folder. Call it "lib". Take all of the JARS from your-mcp-folder/jars/libraries and add OFFICAL VANILLA 1.8 jar, the slick.jar from the Slick2D extracted directory/lib from Step 4, The lwjgl.jar, jinput.jar, and lwjgl_utils.jar from the LWJGL directory/jars downloaded from Step 5, and put them in this folder. This will make things way easier in the next step.
-
-3. Right-Click the project and click "Properties." Navigate to "Java Build Path." Click "Add Jars" then navigate to your "lib" folder. Hold "Control" (On your Keyboard) and select all the jars in this folder. Then click "Open". Then click "Done" on this window.
-
-
-I hope you are still with me, that was a lot. The good news is that things are much easier from here on out.
-
-
-4. Right click your project and create a new folder. Call this folder "mcp910". Click "Advanced" then select the option "This is a linked folder". Link this to your-mcp-folder/src.
-
-5. Right click your project and select properties. Select Java Build Path. On the top there should be 4 "tabs." Click source folders. Click "Add Source." Then check the folder called "mcp910" then click "Done". In the properties toggle Ignore optional compiler problems to Yes. Then click "Done" in properties.
-
+10. Make sure that both projects use Java 8. Some Eclipse versions do this automatically, others don't.
 
 # Fourth Section:
 
