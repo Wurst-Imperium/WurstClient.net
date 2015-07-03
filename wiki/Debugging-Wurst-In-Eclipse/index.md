@@ -27,24 +27,9 @@ In the Minecraft project, add a linked source folder that points to the source c
 
 10. Make sure that both projects use Java 8. Some Eclipse versions do this automatically, others don't.
 
-# Fourth Section:
+11. By now, Eclipse should no longer display any errors and you should be able to debug Wurst using the default MCP launch configuration. If you are still seeing errors or if you can't launch Wurst, you have done one or more of the above steps incorrectly.
 
-## Definitions:
-### See above section's definitions
-
-## Steps:
-
-Time to create a launch config! This part is pretty easy.
-
-1. On the top of Eclipse's "toolbar" you will see a green button with a "Play" sign on it. Click the little arrow right below it and select "Run Configurations".
-
-2. Click the white button that is to create a new launch configuration. Call it "Wurst". Then in the "Main types" field type "net.minecraft.client.main.Main".
-
-3. Add the launch configuration and you are now done with launch configurations! To launch Wurst click the little arrow and click "Wurst"
-
-4. If Wurst launches you have done everything correctly! Feel free to add mods and help develop the client. The next section will cover recompiling to use the client in the Minecraft launcher
-
->**Notice:** Contributing changes in the vanilla MC source code requires some extra steps. Read [#412](https://github.com/Wurst-Imperium/Wurst-Client/issues/412) for more information.  
+12. You can now make changes and contribute them. Read the [guidelines for contributing](https://github.com/Wurst-Imperium/Wurst-Client/blob/master/CONTRIBUTING.md) for details.  
 
 # Fifth Section
 
