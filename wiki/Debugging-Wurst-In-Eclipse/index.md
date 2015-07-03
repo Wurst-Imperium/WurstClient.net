@@ -4,20 +4,6 @@ layout: wiki
 ---
 > **Notice:** This tutorial assumes that you are familiar with [Eclipse](http://www.eclipse.org/), [Git](https://windows.github.com/) and the [MCP](http://mcp.ocean-labs.de/). If you are not familiar with these applications, you will not be able to understand this tutorial.
 
-# First Section:
-
-## Definitions:
-
-### Get-Download
-
-### Eclipse- A program for developing
-
-### MCP- Mod Coder's Pack
-
-### Extract- Right-Click and Press the Extract Button
-
-### Run- Type the command and then press enter
-
 ## Steps:
 
 1. Get and Install Eclipse: https://eclipse.org/
