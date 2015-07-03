@@ -4,28 +4,11 @@ layout: wiki
 ---
 > **Notice:** This tutorial assumes that you are familiar with [Eclipse](http://www.eclipse.org/), [Git](https://windows.github.com/) and the [MCP](http://mcp.ocean-labs.de/). If you are not familiar with these applications, you will not be able to understand this tutorial.
 
-## Steps:
+1. Clone the `Wurst-Imperium/Wurst-Client` repository.
 
-1. Get and Install Eclipse: https://eclipse.org/
+2. Download the [Slick2D library](http://slick.ninjacave.com/).
 
-2. Get and Extract MCP 9.10: http://www.modcoderpack.com/website/
-
-3. Download the Wurst-Client source code from Github. Click the button that says "download to computer"
-
-4. Download the Slick2D Library: http://slick.ninjacave.com/
-
-5. Download LWJGL 2.9.1: http://sourceforge.net/projects/java-game-lib/files/Official%20Releases/LWJGL%202.9.1/lwjgl-2.9.1.zip/download
-
-6. Extract these as well. We will come back to these soon
-
-7. WINDOWS: In the directory you extracted MCP double click the file named "decompile.bat"
-
-7. MAC/LINUX: Once you have extracted MCP, Open Terminal
-   In Terminal Run the following commands:
-      >**cd** ```Drag Folder with MCP files from File Browser into this space in your terminal window```
-      >**./decompile.sh**
-
-8. Wait until this step has finished DO NOT CLOSE THE WINDOW UNTIL IT SAYS IT HAS FINISHED
+3. Set up the MCP and decompile Minecraft 1.8.
 
 # Second Section:
 
