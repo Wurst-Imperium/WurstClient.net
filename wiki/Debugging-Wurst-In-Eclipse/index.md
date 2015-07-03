@@ -2,7 +2,7 @@
 title: Debugging Wurst in Eclipse
 layout: wiki
 ---
-> **Notice:** This tutorial assumes that you are familiar with both [Eclipse](http://www.eclipse.org/) and [Git](https://windows.github.com/). If you are not familiar with these applications, you will not be able to understand this tutorial.
+> **Notice:** This tutorial assumes that you are familiar with [Eclipse](http://www.eclipse.org/), [Git](https://windows.github.com/) and the [MCP](http://mcp.ocean-labs.de/). If you are not familiar with these applications, you will not be able to understand this tutorial.
 
 # First Section:
 
