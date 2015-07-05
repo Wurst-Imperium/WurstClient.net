@@ -20,6 +20,7 @@ layout: wiki
 1. Make sure you have installed Java 8 using the steps above
 2. Go into Terminal and execute the following commands:
    > which java
+   
    > ls -l ```OUTPUT OF ABOVE COMMAND```
 3. Copy that path into the ```Executable``` field in the ```Edit Profile``` option in the launcher.
 
