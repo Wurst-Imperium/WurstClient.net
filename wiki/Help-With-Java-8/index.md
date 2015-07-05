@@ -18,7 +18,7 @@ layout: wiki
 4. **Done!**
 ### Additional Steps for MAC/Linux Computers:
 1. Make sure you have installed Java 8 using the steps in Method 1
-2. Go into Terminal and Execute the following **
+2. Go into Terminal and Execute the following 
    > which java
    
    > ls -l ```OUTPUT OF ABOVE COMMAND```
