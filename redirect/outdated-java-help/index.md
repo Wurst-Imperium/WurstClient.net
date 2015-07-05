@@ -32,12 +32,10 @@
 3. **Done!** This launcher has the latest Java 8 built-in, so it will never attempt to launch Wurst with an old version.
 
 # Method 3: Get Windows
-Only Mac users get problems with old Java versions, Windows users don't.
+It is much easier to use Java 8 with Windows!
 
 1. [**Get Windows.**](http://windows.microsoft.com/)
 
 2. **Done!**
 
-Also, now that Microsoft owns Mojang, Minecraft will soon be integrated into Microsoft HoloLens (see picture below). Windows 10 will then be required to play Minecraft. It will be awesome...
 
-![http://compass.surface.com/assets/ee/f4/eef48fbb-2819-46d9-8a91-e6361be206b7.jpg#Your-world-as-a-canvas_Desktop.jpg](http://www.microsoft.com/microsoft-hololens/en-us)
