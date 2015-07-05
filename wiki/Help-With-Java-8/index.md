@@ -38,7 +38,7 @@ layout: wiki
 It is much easier to use Java 8 with Windows!
 
 1. [**Get Windows.**](http://windows.microsoft.com/)
-2. Get the [new launcher](minecraft.net/download) 
+2. Get the [new launcher](http://minecraft.net/download) 
 3. **Done!**
 
 
