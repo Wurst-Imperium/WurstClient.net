@@ -1,3 +1,7 @@
+---
+title: Help With Java 8
+layout: wiki
+---
 > **Notice:** Wurst detects your Java version with 100% accuracy.
 >
 > If Wurst says that you are not using Java 8, then you are not using Java 8. Period.  
