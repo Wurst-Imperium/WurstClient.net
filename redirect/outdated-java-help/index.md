@@ -19,7 +19,7 @@
    
    > ls -l ```OUTPUT OF ABOVE COMMAND```
 
-Copy that path into the ```Executable``` field in the ```Edit Profile``` option in the launcher.
+3. Copy that path into the ```Executable``` field in the ```Edit Profile``` option in the launcher.
 
 
 # Method 2: Use the new Minecraft launcher
