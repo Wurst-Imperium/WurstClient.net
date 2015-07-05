@@ -12,7 +12,7 @@
 > 3\. is the most important step. Make sure you do it correctly.
 
 4. **Done!**
-### Additional Steps for MAC/Linux Computers
+### Additional Steps for MAC/Linux Computers:
 1. Make sure you have installed Java 8 using the steps in Method 1
 2. Go into Terminal and Execute the following **
    > which java
