@@ -16,13 +16,11 @@ layout: wiki
 > 3\. is the most important step. Make sure you do it correctly.
 
 4. **Done!**
-### Additional Steps for MAC/Linux Computers:
-1. Make sure you have installed Java 8 using the steps in Method 1
-2. Go into Terminal and Execute the following 
+### Additional Steps for MAC/LINUX Computers:
+1. Make sure you have installed Java 8 using the steps above
+2. Go into Terminal and execute the following commands:
    > which java
-   
    > ls -l ```OUTPUT OF ABOVE COMMAND```
-
 3. Copy that path into the ```Executable``` field in the ```Edit Profile``` option in the launcher.
 
 
