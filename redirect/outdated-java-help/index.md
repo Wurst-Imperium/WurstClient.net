@@ -40,4 +40,4 @@ Only Mac users get problems with old Java versions, Windows users don't.
 
 Also, now that Microsoft owns Mojang, Minecraft will soon be integrated into Microsoft HoloLens (see picture below). Windows 10 will then be required to play Minecraft. It will be awesome...
 
-[[[http://compass.surface.com/assets/ee/f4/eef48fbb-2819-46d9-8a91-e6361be206b7.jpg#Your-world-as-a-canvas_Desktop.jpg]]](http://www.microsoft.com/microsoft-hololens/en-us)
+![http://compass.surface.com/assets/ee/f4/eef48fbb-2819-46d9-8a91-e6361be206b7.jpg#Your-world-as-a-canvas_Desktop.jpg](http://www.microsoft.com/microsoft-hololens/en-us)
