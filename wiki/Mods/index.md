@@ -54,6 +54,7 @@ There are two different kinds of mods: the normal mods, which can additionally b
 - [Force OP (AuthMeCracker)](/wiki/Mods/Force_OP_(AuthMeCracker))
 - Freecam
 - Fullbright
+- GhostHand
 - Glide
 - Headless
 - HealthTags
