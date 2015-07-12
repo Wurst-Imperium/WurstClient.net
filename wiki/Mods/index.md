@@ -57,6 +57,7 @@ There are two different kinds of mods: the normal mods, which can additionally b
 - GhostHand
 - Glide
 - Headless
+- HeadRoll
 - HealthTags
 - HighJump
 - /home
@@ -88,6 +89,7 @@ There are two different kinds of mods: the normal mods, which can additionally b
 - Phase
 - PlayerESP
 - PlayerFinder
+- PotionSaver
 - ProphuntESP
 - Protect
 - Regen
@@ -100,6 +102,7 @@ There are two different kinds of mods: the normal mods, which can additionally b
 - Step
 - Throw
 - Timer
+- Tired
 - Tracers
 - TriggerBot
 - TrollPotion
