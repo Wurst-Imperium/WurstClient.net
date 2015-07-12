@@ -9,7 +9,7 @@ no_index: true
     <description>{% if site.description %}{{ site.description | strip_html | xml_escape }}{% endif %}</description>
     <link>{{ site.url }}</link>
     <atom:link href="{{ site.url }}/news/feed.xml" rel="self" type="application/rss+xml" />
-    {% for post in site.posts limit:10 %}{% comment %}
+    {% for post in site.posts limit:5 %}{% comment %}
       {% endcomment %}<item>
         <title>{{ post.title | strip_html | xml_escape }}</title>
         {% if post.author %}{% comment %}
