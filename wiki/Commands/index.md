@@ -21,6 +21,7 @@ Commands can not only be toggled by typing them into the chat, but also by keybi
 - [.follow](follow)
 - [.friends](friends)
 - [.getpos](getpos)
+- [.ghosthand](ghosthand)
 - [.gm](gm)
 - [.goto](goto)
 - [.help](help)
