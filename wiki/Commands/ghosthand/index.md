@@ -2,10 +2,9 @@
 title: .ghosthand Command
 layout: wiki
 ---
-Allows you to reach specific blocks through walls.
+Changes the settings of GhostHand or toggles it.
 
 ## Syntax
 `.ghosthand id [<block id>]`
 
 `.ghosthand name [<block name>]`
-
