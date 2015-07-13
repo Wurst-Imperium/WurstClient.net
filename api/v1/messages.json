@@ -1,0 +1,44 @@
+---
+layout: none
+no_index: true
+---
+{% comment %}
+Syntax for emergency messages
+
+The primary reason why I'm documenting this is so that I won't forget it in an
+emergency situation. I don't think that this documentation will ever be useful
+for a contributor, but if you really want to, go ahead and read it.
+
+{
+  // The Wurst version that this message is targetting, without the leading 'v'
+  "1.0": {
+    // The title of the message
+    // MC color codes are supported
+    "title": "§n§lHello world!",
+    // The body of the message
+    // Use '\n' for line breaks & Jekyll comments for better readability
+    // Lines should not be longer than 80 characters
+    // MC color codes are supported
+    "body": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor\n{% comment %}
+      {% endcomment %}incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis\n{% comment %}
+      {% endcomment %}nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n{% comment %}
+      {% endcomment %}Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu\n{% comment %}
+      {% endcomment %}fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in\n{% comment %}
+      {% endcomment %}culpa qui officia deserunt mollit anim id est laborum.",
+    // All buttons that the user can click on, except for the cancel button
+    "buttons": {
+      // The left value is the button text (MC color codes are supported)
+      // The right value is the URL that the button will open once clicked
+      // Buttons can only open URLs, they can't do anything else!
+      "§aUpdate Wurst": "https://github.com/Wurst-Imperium/Wurst-Client/releases/latest"
+    },
+    // Whether or not the cancel button should be shown and whether it should ask for confirmation
+    // Modes:
+    //   allowed: Shows the button and immediately cancels once it's pressed
+    //   prompt: Shows the button and shows an 'Are you sure?' screen once it's pressed
+    //   forbidden: Doesn't show the button
+    "cancel": "prompt"
+  }
+}
+{% endcomment %}{
+}
