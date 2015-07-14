@@ -1,0 +1,67 @@
+---
+---
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple sucks" content="yes" />
+  	<title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+  	{% if page.author %}
+  		<meta name="author" content="{{ page.author }}">
+  	{% endif %}
+  	{% if page.description %}
+  		<meta name="description" content="{{ page.description }}">
+  	{% endif %}
+  	<link href="/css/bootstrap.min.css" rel="stylesheet">
+  	<link href="/css/wurst.css" rel="stylesheet">
+  	<!--[if lt IE 9]>
+  	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  	<![endif]-->
+    <link href="/css/impress.css" rel="stylesheet" />
+  	<link href="/css/octicons.css" rel="stylesheet">
+    {% include analytics.html %}
+</head>
+<body class="impress-not-supported">
+  <div class="fallback-message">
+    <p>
+      Your browser
+      <b>doesn't support</b>
+      the features required to display this correctly, so you are presented with a simplified version.
+    </p>
+    <p>
+      For the best experience, please use the latest
+      <b>
+        <a href="http://www.mozilla.org">
+          Firefox
+        </a>
+      </b>
+      or
+      <b>
+        <a href="http://www.google.com/chrome/">
+          Chrome
+        </a>
+      </b>
+      browser.
+    </p>
+  </div>
+  {% if page.author %}
+    <p style="position: fixed;bottom: 0.5em;left: 1em;font-size: 2em;color: #fff;text-shadow: #000 0 1px 0, #000 0 0 4px;">
+      <span class="mega-octicon octicon-pencil" aria-label="written"></span>
+      with
+      <span class="mega-octicon octicon-heart" aria-label="love"></span>
+      by {{ page.author }}
+    </p>
+  {% endif %}
+<div id="impress">
+  {{ content }}
+</div>
+<script src="/js/impress.js"></script>
+<script>
+  var api = impress().init();
+</script>
+</body>
+</html>
