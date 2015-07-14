@@ -29,6 +29,10 @@ code {
     background-color: rgba(0, 0, 0, 0.6);
 }
 
+.step {
+  font-size: 48px;
+}
+
 #title {
     padding: 0;
 }
