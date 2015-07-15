@@ -95,6 +95,7 @@ There are two different kinds of mods: the normal mods, which can additionally b
 - Regen
 - RemoteView
 - Search
+- SkinBlinker
 - Sneak
 - Spammer
 - SpeedNuker
