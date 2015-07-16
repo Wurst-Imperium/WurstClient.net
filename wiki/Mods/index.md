@@ -69,6 +69,7 @@ There are two different kinds of mods: the normal mods, which can additionally b
 - Kaboom
 - KillauraLegit
 - Killaura
+- KillerPotion
 - Liquids
 - LSD
 - MassTPA
