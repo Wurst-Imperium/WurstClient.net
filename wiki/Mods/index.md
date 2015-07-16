@@ -10,6 +10,7 @@ There are two different kinds of mods: the normal mods, which can additionally b
 ## List of Mods
 - AntiAFK
 - AntiBlind
+- AntiCactus
 - AntiFire
 - AntiKnockback
 - AntiPotion
