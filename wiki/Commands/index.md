@@ -10,6 +10,7 @@ Commands can not only be toggled by typing them into the chat, but also by keybi
 ## List of Commands
 - [.addalt](addalt)
 - [.annoy](annoy)
+- [.author](author)
 - [.binds](binds)
 - [.blink](blink)
 - [.clear](clear)
