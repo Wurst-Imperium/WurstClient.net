@@ -2,7 +2,7 @@
 title: .author Command
 layout: wiki
 ---
-Changes the held book's author. Use only if you hold a book.
+Changes the held book's author. Use only if you are holding a book.
 
 ## Syntax
 `.author <Player>` Changes the book author's name to `Player`
