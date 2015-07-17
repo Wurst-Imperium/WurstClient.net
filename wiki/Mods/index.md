@@ -10,6 +10,7 @@ There are two different kinds of mods: the normal mods, which can additionally b
 ## List of Mods
 - AntiAFK
 - AntiBlind
+- AntiCactus
 - AntiFire
 - AntiKnockback
 - AntiPotion
@@ -57,6 +58,7 @@ There are two different kinds of mods: the normal mods, which can additionally b
 - GhostHand
 - Glide
 - Headless
+- HeadRoll
 - HealthTags
 - HighJump
 - /home
@@ -68,6 +70,7 @@ There are two different kinds of mods: the normal mods, which can additionally b
 - Kaboom
 - KillauraLegit
 - Killaura
+- KillerPotion
 - Liquids
 - LSD
 - MassTPA
@@ -88,11 +91,13 @@ There are two different kinds of mods: the normal mods, which can additionally b
 - Phase
 - PlayerESP
 - PlayerFinder
+- PotionSaver
 - ProphuntESP
 - Protect
 - Regen
 - RemoteView
 - Search
+- SkinBlinker
 - Sneak
 - Spammer
 - SpeedNuker
@@ -100,6 +105,7 @@ There are two different kinds of mods: the normal mods, which can additionally b
 - Step
 - Throw
 - Timer
+- Tired
 - Tracers
 - TriggerBot
 - TrollPotion
