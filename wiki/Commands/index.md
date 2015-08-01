@@ -33,6 +33,7 @@ Commands can not only be toggled by typing them into the chat, but also by keybi
 - [.nothing](nothing)
 - [.nuker](nuker)
 - [.path](path)
+- [.potion](potion)
 - [.protect](protect)
 - [.rename](rename)
 - [.rv](rv)
