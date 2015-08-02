@@ -1,6 +1,8 @@
 ---
 title: .enchant Command
 layout: wiki
+tags:
+  - cmd
 ---
 Enchants items with everything (except for Silk Touch) at level 127.
 

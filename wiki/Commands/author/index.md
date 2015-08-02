@@ -1,6 +1,8 @@
 ---
 title: .author Command
 layout: wiki
+tags:
+  - cmd
 ---
 Changes the held book's author. Use only while holding a book.
 

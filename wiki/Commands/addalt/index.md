@@ -1,6 +1,8 @@
 ---
 title: .addalt Command
 layout: wiki
+tags:
+  - cmd
 ---
 Adds a specific player or all players on a server to your alt list. Meant to be used together with [Force OP (AuthMeCracker)](/wiki/Force_OP_(AuthMeCracker)).
 

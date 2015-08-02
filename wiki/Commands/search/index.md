@@ -1,6 +1,8 @@
 ---
 title: .search Command
 layout: wiki
+tags:
+  - cmd
 ---
 Changes the settings of Search or toggles it.
 

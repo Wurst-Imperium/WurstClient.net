@@ -1,6 +1,8 @@
 ---
 title: .friends Command
 layout: wiki
+tags:
+  - cmd
 ---
 Manages your friends list. Friends won't be attacked by Killaura and have a special color in Tracers and PlayerESP.
 

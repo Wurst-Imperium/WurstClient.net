@@ -1,6 +1,8 @@
 ---
 title: .clear Command
 layout: wiki
+tags:
+  - cmd
 ---
 Clears the chat completely.
 

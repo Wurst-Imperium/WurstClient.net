@@ -1,6 +1,8 @@
 ---
 title: .rv Command
 layout: wiki
+tags:
+  - cmd
 ---
 Toggles RemoteView or makes it target a specific entity.
 

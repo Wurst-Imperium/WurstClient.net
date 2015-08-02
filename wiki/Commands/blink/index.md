@@ -1,6 +1,8 @@
 ---
 title: .blink Command
 layout: wiki
+tags:
+  - cmd
 ---
 Enables, disables or cancels Blink.
 

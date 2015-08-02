@@ -1,6 +1,8 @@
 ---
 title: .binds Command
 layout: wiki
+tags:
+  - cmd
 ---
 Shows the keybind list. The keybind list is divided into pages that each contain up to eight keybinds.
 

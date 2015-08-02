@@ -1,6 +1,8 @@
 ---
 title: .goto Command
 layout: wiki
+tags:
+  - cmd
 ---
 Walks or flies you to a specific location. Uses artificial intelligence to find the shortest path and to avoid danger.
 

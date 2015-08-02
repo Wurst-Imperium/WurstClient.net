@@ -7,42 +7,24 @@ A command in Wurst is similar to a command in vanilla Minecraft, except that it 
 
 Commands can not only be toggled by typing them into the chat, but also by keybinding them.
 
-## List of Commands
-- [.addalt](addalt)
-- [.annoy](annoy)
-- [.author](author)
-- [.binds](binds)
-- [.blink](blink)
-- [.clear](clear)
-- [.damage](damage)
-- [.drop](drop)
-- [.enchant](enchant)
-- [.fastbreak](fastbreak)
-- [.features](features)
-- [.follow](follow)
-- [.friends](friends)
-- [.getpos](getpos)
-- [.ghosthand](ghosthand)
-- [.gm](gm)
-- [.goto](goto)
-- [.help](help)
-- [.invsee](invsee)
-- [.ip](ip)
-- [.jump](jump)
-- [.leave](leave)
-- [.nothing](nothing)
-- [.nuker](nuker)
-- [.path](path)
-- [.protect](protect)
-- [.rename](rename)
-- [.rv](rv)
-- [.say](say)
-- [.search](search)
-- [.spammer](spammer)
-- [.t](t)
-- [.taco](taco)
-- [.throw](throw)
-- [.tp](tp)
-- [.vclip](vclip)
-- [.wms](wms)
-- [.xray](xray)
+## List of All Commands
+{% assign first = true %}
+{% capture rawcmds %}{% comment %}
+  {% endcomment %}{% for page in site.pages %}{% comment %}
+    {% endcomment %}{% if page.layout == "wiki" and page.tags contains "cmd" %}{% comment %}
+      {% endcomment %}{% unless first %}{% comment %}
+        {% endcomment %}§separator1§{% comment %}
+      {% endcomment %}{% else %}{% comment %}
+        {% endcomment %}{% assign first = false %}{% comment %}
+      {% endcomment %}{% endunless %}{% comment %}
+      {% endcomment %}{{ page.title | remove: " Command" }}{% comment %}
+      {% endcomment %}§separator2§{% comment %}
+      {% endcomment %}{{ page.url | remove: "index.html" }}{% comment %}
+    {% endcomment %}{% endif %}{% comment %}
+  {% endcomment %}{% endfor %}{% comment %}
+{% endcomment %}{% endcapture %}{% comment %}
+{% endcomment %}{% assign cmds = rawcmds | split: "§separator1§" | sort %}{% comment %}
+{% endcomment %}{% for rawcmd in cmds %}{% comment %}
+  {% endcomment %}{% assign cmd = rawcmd | split: "§separator2§" %}{% comment %}
+    {% endcomment %}- [{{ cmd[0] }}]({{ cmd[1] }})
+{% endfor %}

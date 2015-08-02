@@ -1,6 +1,8 @@
 ---
 title: .taco Command
 layout: wiki
+tags:
+  - cmd
 ---
 Renders a dancing taco on your hotbar.
 

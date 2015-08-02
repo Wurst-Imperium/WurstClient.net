@@ -1,6 +1,8 @@
 ---
 title: .drop Command
 layout: wiki
+tags:
+  - cmd
 ---
 Drops all your items on the ground.
 

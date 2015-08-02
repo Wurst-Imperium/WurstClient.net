@@ -1,6 +1,8 @@
 ---
 title: .spammer Command
 layout: wiki
+tags:
+  - cmd
 ---
 Changes the delay of Spammer (the time Spammer waits between sending messages) or loads a WSPAM script.
 

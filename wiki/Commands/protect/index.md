@@ -1,6 +1,8 @@
 ---
 title: .protect Command
 layout: wiki
+tags:
+  - cmd
 ---
 Toggles Protect or makes it protect a specific entity. While Protect is on, you will follow your target and attack everything around it.
 

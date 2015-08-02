@@ -1,6 +1,8 @@
 ---
 title: .tp Command
 layout: wiki
+tags:
+  - cmd
 ---
 Teleports you up to 100 blocks away. Only works on vanilla servers.
 

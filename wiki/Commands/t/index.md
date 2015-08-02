@@ -1,6 +1,8 @@
 ---
 title: .t Command
 layout: wiki
+tags:
+  - cmd
 ---
 Toggles a mod. Useful for keybinds and for scripting.
 
