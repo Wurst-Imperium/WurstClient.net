@@ -1,6 +1,8 @@
 ---
 title: .potion Command
 layout: wiki
+tags:
+  - cmd
 ---
 Adds, sets or remove effects of held potion. Accepts arguments in groups of 3 for add and set modes. Can set multiple effects to one potion. Make sure it fits the chat bar.
 
