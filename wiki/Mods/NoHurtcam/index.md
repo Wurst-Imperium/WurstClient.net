@@ -1,4 +1,4 @@
---
+---
 title: NoHurtcam Mod
 layout: wiki
 ---
