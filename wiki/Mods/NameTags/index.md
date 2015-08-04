@@ -1,4 +1,4 @@
---
+---
 title: NameTags Mod
 layout: wiki
 ---
