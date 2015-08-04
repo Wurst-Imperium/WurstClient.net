@@ -21,3 +21,5 @@ It's called Spammer, but it's a lot more.
 
 
 :x: Low delays may not bypass NoCheat+.
+
+See also: [spammer Command](https://www.wurst-client.tk/wiki/Commands/spammer/)
