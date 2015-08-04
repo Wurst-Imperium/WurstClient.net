@@ -1,5 +1,5 @@
 ---
-title: MutiAura Mod
+title: Mutiaura Mod
 layout: wiki
 ---
 Faster Killaura that attacks multiple entities at once.
