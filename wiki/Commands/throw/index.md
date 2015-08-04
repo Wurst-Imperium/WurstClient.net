@@ -8,4 +8,5 @@ Changes the amount of Throw or toggles it. Throw lets you throw multiple items l
 
 ## Syntax
 `.throw [amount <amount>]`
+
 Also see: [Throw Mod](https://www.wurst-client.tk/wiki/Mods/Throw/)
