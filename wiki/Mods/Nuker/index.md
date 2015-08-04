@@ -1,5 +1,5 @@
 ---
-title: SpeedNuker Mod
+title: Nuker Mod
 layout: wiki
 ---
 Destroys blocks around you
