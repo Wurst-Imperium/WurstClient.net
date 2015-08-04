@@ -40,3 +40,8 @@ Changes the settings of Nuker.
     Destroys every block that can be destroyed with one hit. (tall grass, flowers, etc.)
   </dd>
 </dl>
+
+Also see:
+* [Nuker](https://www.wurst-client.tk/wiki/Mods/Nuker)
+* [NukerLegit](https://www.wurst-client.tk/wiki/Mods/NukerLegit)
+* [SpeedNuker](https://www.wurst-client.tk/wiki/Mods/SpeedNuker)
