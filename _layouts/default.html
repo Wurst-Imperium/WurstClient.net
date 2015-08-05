@@ -6,7 +6,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+	<title>{% if page.title %}{{ page.title }}{% unless page.exacttitle %} - {% endunless %}{% endif %}{% unless page.exacttitle %}{{ site.title }}{% endunless %}</title>
 	{% if page.description %}
 		<meta name="description" content="{{ page.description }}">
 	{% endif %}
