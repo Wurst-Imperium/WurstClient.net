@@ -1,4 +1,11 @@
-﻿$(document).ready(function()
+/* bootstrap-utils */
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip();
+  $('[data-toggle="popover"]').popover();
+});
+
+/* scrolling */
+$(document).ready(function()
 {
 	$('a[href*=#]:not([href=#])').click(function()
 	{
