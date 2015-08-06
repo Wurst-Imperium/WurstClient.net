@@ -4,14 +4,14 @@ layout: wiki
 tags:
   - cmd
 ---
-Adds, sets or remove effects of held potion. Accepts arguments in groups of 3 for add and set modes. Can set multiple effects to one potion. Make sure it fits the chat bar.
+Adds, sets or remove effects of the held potion. Accepts arguments in groups of 3 for add and set modes. Can set multiple effects to one potion. Make sure it fits the chat bar.
 
 ## Syntax
 
-`.potion <remove> <id>`
-`.potion <add/set> <id> <amplifier> <duration>`
+`.potion <remove> <id/name>`
+`.potion <add/set> <id/name> <amplifier> <duration>`
 or longer:
-`.potion <add/set><id> <amplifier> <duration> <id> <amplifier> <duration>`
+`.potion <add/set> <id/name> <amplifier> <duration> <id/name> <amplifier> <duration>`
 
 - `add` adds effects
 - `set` removes current effect and changes them with given effects
