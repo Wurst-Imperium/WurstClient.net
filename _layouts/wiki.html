@@ -4,7 +4,7 @@ layout: default
 <span itemscope itemtype="http://schema.org/WebPage">
 	<div class="page-header">
 		<div class="container">
-			<h1 class="visible-xs-inline visible-sm-inline visible-md-inline visible-lg-inline">
+			<h1 itemprop="headline" class="visible-xs-inline visible-sm-inline visible-md-inline visible-lg-inline">
 				<span class="mega-octicon octicon-book hidden-xs"></span>
 				{{ page.title }}
 			</h1>
@@ -23,9 +23,9 @@ layout: default
 		<div class="row">
 			<div class="col-sm-9">
 				<link href="/css/wiki.css" rel="stylesheet">
-				<div id="content" itemprop="mainContentOfPage">
+				<main id="content" itemprop="mainContentOfPage">
 					{{ content | markdownify }}
-				</div>
+				</main>
 			</div>
 			<div class="hidden-xs col-sm-3">
 				<div class="well">
