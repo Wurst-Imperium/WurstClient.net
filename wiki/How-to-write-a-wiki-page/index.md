@@ -33,12 +33,18 @@ To upload an image to the GitHub cloud, click the <kbd>New Issue</kbd> button on
 ## Headlines
 Some common headlines for wiki pages are:
 
-1. Overview
-2. Usage
-3. Media
-4. Tips
-5. Known Issues
-6. History
-7. See Also
+1. **Overview** - A general description or definition of the thing.
+
+2. **Usage** - Describes how the thing may be used.
+
+3. **Media** - Related images, videos, etc.
+
+4. **Tips** - Well, tips.
+
+5. **Known Issues** - Known problems, common errors, etc.
+
+6. **History** - When the thing was added or changed in a Wurst update (eg: "Wurst v1.15: Flight is now able to bypass NoCheat+ if YesCheat+ is enabled.").
+
+7. **See Also** - A list of related things. This was originally planned to be an auto-generated list using front matter, but unforunately, that didn't work.
 
 Not all wiki pages use these headlines, but if you do use them, make sure that you use them in the order shown above. A table of content must only be added if the page is really long.
