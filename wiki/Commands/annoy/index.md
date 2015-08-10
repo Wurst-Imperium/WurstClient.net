@@ -1,8 +1,7 @@
 ---
 title: .annoy Command
 layout: wiki
-tags:
-  - cmd
+category: Command
 ---
 Annoys another player by repeating everything they say. This might not work on every server, since there are specific requirements to recognize a chat message.
 

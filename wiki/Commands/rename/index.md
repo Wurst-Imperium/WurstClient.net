@@ -1,8 +1,7 @@
 ---
 title: .rename Command
 layout: wiki
-tags:
-  - cmd
+category: Command
 ---
 Renames the item in your hand. Requires creative mode.
 

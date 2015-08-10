@@ -11,7 +11,7 @@ Commands can not only be toggled by typing them into the chat, but also by keybi
 {% assign first = true %}
 {% capture rawcmds %}{% comment %}
   {% endcomment %}{% for page in site.pages %}{% comment %}
-    {% endcomment %}{% if page.layout == "wiki" and page.tags contains "cmd" %}{% comment %}
+    {% endcomment %}{% if page.layout == "wiki" and page.category == "Command" %}{% comment %}
       {% endcomment %}{% unless first %}{% comment %}
         {% endcomment %}§separator1§{% comment %}
       {% endcomment %}{% else %}{% comment %}

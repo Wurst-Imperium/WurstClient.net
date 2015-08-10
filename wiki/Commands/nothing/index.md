@@ -1,8 +1,7 @@
 ---
 title: .nothing Command
 layout: wiki
-tags:
-  - cmd
+category: Command
 ---
 Does nothing. Useful for scripting.
 

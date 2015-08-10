@@ -1,8 +1,7 @@
 ---
 title: .wms Command
 layout: wiki
-tags:
-  - cmd
+category: Command
 ---
 Enables/disables Wurst messages or sends a message. Wurst messages are only visible to you, not to other players.
 

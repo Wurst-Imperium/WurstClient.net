@@ -1,8 +1,7 @@
 ---
 title: .invsee Command
 layout: wiki
-tags:
-  - cmd
+category: Command
 ---
 Allows you to see parts of another player's inventory.
 

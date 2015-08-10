@@ -1,8 +1,7 @@
 ---
 title: .fastbreak Command
 layout: wiki
-tags:
-  - cmd
+category: Command
 ---
 Changes the settings of FastBreak.
 

@@ -1,8 +1,7 @@
 ---
 title: .gm Command
 layout: wiki
-tags:
-  - cmd
+category: Command
 ---
 A shorter alias for the `/gamemode` command. Useful for servers that don't support `/gm`.
 

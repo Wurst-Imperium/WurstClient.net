@@ -1,8 +1,7 @@
 ---
 title: .help Command
 layout: wiki
-tags:
-  - cmd
+category: Command
 ---
 Shows the command list or the available help for a specific command.
 

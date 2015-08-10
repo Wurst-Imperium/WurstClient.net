@@ -1,8 +1,7 @@
 ---
 title: .ghosthand Command
 layout: wiki
-tags:
-  - cmd
+category: Command
 ---
 Changes the settings of GhostHand or toggles it.
 

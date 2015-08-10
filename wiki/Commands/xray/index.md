@@ -1,8 +1,7 @@
 ---
 title: .xray Command
 layout: wiki
-tags:
-  - cmd
+category: Command
 ---
 Manages or toggles X-Ray.
 

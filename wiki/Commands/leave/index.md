@@ -1,8 +1,7 @@
 ---
 title: .leave Command
 layout: wiki
-tags:
-  - cmd
+category: Command
 ---
 Leaves the current server or changes the mode of AutoLeave.
 

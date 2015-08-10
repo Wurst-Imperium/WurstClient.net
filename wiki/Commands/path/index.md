@@ -1,8 +1,7 @@
 ---
 title: .path Command
 layout: wiki
-tags:
-  - cmd
+category: Command
 ---
 Shows the shortest path to a specific point. Useful for labyrinths and caves.
 

@@ -1,8 +1,7 @@
 ---
 title: .follow Command
 layout: wiki
-tags:
-  - cmd
+category: Command
 ---
 Toggles Follow or makes it target a specific entity. This command is influenced by the Target selector in the ClickGUI.
 
