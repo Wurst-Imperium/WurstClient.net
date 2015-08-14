@@ -4,7 +4,7 @@ layout: wiki
 tags:
   - cmd
 ---
-Adds, sets or remove effects of the held potion. Accepts arguments in groups of 3 for add and set modes. Can set multiple effects to one potion. Make sure it fits the chat bar.
+Adds, sets or removes effects of the held potion. Accepts arguments in groups of 3 for add and set modes. Can set multiple effects to one potion. Make sure it fits the chat bar.
 
 ## Syntax
 
