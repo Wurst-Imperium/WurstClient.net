@@ -8,8 +8,9 @@ Adds, sets or remove effects of the held potion. Accepts arguments in groups of 
 
 ## Syntax
 
-`.potion <remove> <id/name>`
-`.potion <add/set> <id/name> <amplifier> <duration>`
+`remove <effect>`
+`add (<effect> <amplifier> <duration>)...`
+`set (<effect> <amplifier> <duration>)...`
 or longer:
 `.potion <add/set> <id/name> <amplifier> <duration> <id/name> <amplifier> <duration>`
 
