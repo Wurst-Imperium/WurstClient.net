@@ -1,6 +1,7 @@
 ---
 title: Force OP (BookHack)
 layout: wiki
+category: Special Feature
 ---
 BookHack allows you to insert links that execute commands into writable books.
 
