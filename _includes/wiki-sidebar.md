@@ -4,4 +4,4 @@
 
 [Commands](/wiki/Commands)
 
-[How to write a wiki page](/wiki/How-to-write-a-wiki-page)
+[How to write a wiki page](/wiki/Tutorials/How-to-write-a-wiki-page)

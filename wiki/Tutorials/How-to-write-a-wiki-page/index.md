@@ -11,7 +11,7 @@ All wiki pages are inside of a subdirectory of the `wiki` directory. The name of
 For instance, this page is located at `\wiki\How-to-write-a-wiki-page\index.md`.
 
 ## Markup
-All wiki pages must have proper Markdown format as described in [Mastering Markdown](https://guides.github.com/features/mastering-markdown/). GitHub flavored Markdown is not supported. All wiki pages must have Jekyll front matter as described in [the Jekyll docs](http://jekyllrb.com/docs/frontmatter/). The front matter must contain the title of the page, followed by the layout "wiki", followed by the category, and may contain additional data.
+All wiki pages must have proper Markdown format as described in [Mastering Markdown](https://guides.github.com/features/mastering-markdown/). GitHub flavored Markdown is not supported. All wiki pages must have Jekyll front matter as described in [the Jekyll docs](http://jekyllrb.com/docs/frontmatter/). The front matter must contain the title of the page, followed by the layout "wiki", and may contain additional data. All pages execpt for the Main Page should have a category as well.
 
 For instance, have a look at the front matter of this page:
 

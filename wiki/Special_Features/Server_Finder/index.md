@@ -1,6 +1,7 @@
 ---
-title: ServerFinder
+title: Server Finder
 layout: wiki
+category: Special Feature
 ---
 ## About
 The Wurst Client ServerFinder is a tool for finding griefable Minecraft servers quickly and with very little effort. It usually finds around 50 servers per minute.

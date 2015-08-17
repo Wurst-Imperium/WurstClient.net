@@ -1,6 +1,7 @@
 ---
 title: How to Debug Wurst in Eclipse
 layout: wiki
+category: Tutorial
 ---
 > **Notice:** This tutorial assumes that you are familiar with [Eclipse](http://www.eclipse.org/), [Git](https://windows.github.com/) and the [MCP](http://mcp.ocean-labs.de/). If you are not familiar with these applications, you will not be able to understand this tutorial.
 
