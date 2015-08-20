@@ -6,15 +6,15 @@ category: Command
 Gives you an item with custom NBT settings in creative.
 
 ## Syntax
-- `.give <item name> <amount> <metadata> <NBT data>`
+- `.give <item_name>|<item_id>) [<amount>] [<metadata>] [<nbt>]`
 
-- `<item name>` is type of the item.
+- `<item name>` or `<item id>` determines the type of the item.
 
-- `<amount>` quantity of the given item.
+- `[<amount>]` quantity of the given item. Not necessary.
 
-- `<metadata>` is only used on some items. (For Example: colored wools)
+- `[<metadata>]` is only used on some items. (For Example: colored wools) And isn't necessary.
 
-- `<NBT data>` "[Named Binary Tag](http://minecraft.gamepedia.com/NBT_format)" is custom setting for your item.
+- `[<NBT data>]` "[Named Binary Tag](http://minecraft.gamepedia.com/NBT_format)" is custom setting for your item. Not necessary.
 
 ## Template Syntax
 
