@@ -1,22 +1,22 @@
 ---
 title: .potion Command
 layout: wiki
+description: Adds, sets or removes the effects of the held potion. Can modify multiple effects at once in the `add` and `set` modes.
 category: Command
 ---
-Adds, sets or removes effects of the held potion. Accepts arguments in groups of 3 for add and set modes. Can set multiple effects to one potion. Make sure it fits the chat bar.
+Adds, sets or removes the effects of the held potion. Accepts arguments in groups of 3 for the `add` and `set` modes. Can set multiple effects to one potion. Make sure it fits into the chat bar, or use Spammer to bypass this limit.
 
 ## Syntax
+- `.potion add (<effect> <amplifier> <duration>)...`  
+Adds effects to the potion.
 
-- `remove <effect>`
-- `add (<effect> <amplifier> <duration>)...`
-- `set (<effect> <amplifier> <duration>)...`
-- `.potion <add/set> <id/name> <amplifier> <duration> <id/name> <amplifier> <duration>`
+- `.potion set (<effect> <amplifier> <duration>)...`  
+Removes current effect and replaces them with the given effects.
 
-- `add` adds effects you chose.
-- `set` removes current effect and changes them with given effects.
-- `remove` removes effects you chose.
+- `.potion remove <effect>`  
+Removes effects from the potion.
 
 ## Example
-`.potion set invisibility 0 60 strength 24 75` would set the held potion's effects to invisibility for 60 seconds and strength 25 for 75 seconds.
+`.potion set invisibility 1 60 strength 25 75` would set the held potion's effects to Invisibility for 60 seconds and Strength 25 for 75 seconds. This potion would then look like that:
 
-![.potion](https://cloud.githubusercontent.com/assets/11584045/8901300/74b61982-3450-11e5-9f3a-0a69402c380c.jpg)
+![A potion with Invisibility and Strength 25](https://cloud.githubusercontent.com/assets/11584045/8901300/74b61982-3450-11e5-9f3a-0a69402c380c.jpg)
