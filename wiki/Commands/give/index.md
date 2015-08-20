@@ -1,39 +1,37 @@
 ---
 title: .give Command
 layout: wiki
+description: Allows you to give yourself any item in Creative Mode, even if the /give command is blocked. NBT data is also supported.
 category: Command
 ---
-Gives you an item with custom NBT settings in creative.
+Allows you to give yourself any item in Creative Mode, even if the `/give` command is blocked. NBT data is also supported.
 
 ## Syntax
-- `.give <item_name>|<item_id>) [<amount>] [<metadata>] [<nbt>]`
+`.give (<item_name>|<item_id>) [<amount>] [<metadata>] [<nbt>]`
 
-- `<item name>` or `<item id>` determines the type of the item.
+`<item_name>` or `<item_id>` determines the item.
 
-- `[<amount>]` quantity of the given item. Not necessary.
+`<amount>` determines the quantity of the item. Defaults to 1.
 
-- `[<metadata>]` is only used on some items. (For Example: colored wools) And isn't necessary.
+`<metadata>` determines the metadata of the item. (e.g. the color of a wool block). Defaults to 0.
 
-- `[<NBT data>]` "[Named Binary Tag](http://minecraft.gamepedia.com/NBT_format)" is custom setting for your item. Not necessary.
+`<nbt>` determines the NBT data ([Named Binary Tag](http://minecraft.gamepedia.com/NBT_format)) of the item. Defaults to an empty NBT compound.
 
-## Template Syntax
+### Template Syntax
 
-There are some example commands (templates) for you.
+Besides the custom items, there are also some templates.
 
-- `.give templates` shows you the list of templates.
+- `.give templates`  
+Shows the list of templates.
 
-- `.give template <template id> <amount>` gives you the item in the template.
+- `.give template <template_id> [<amount>]`  
+Gives you the item in the template, with an optional amount.
 
-## Template IDs
+## Templates
 
-- <b>1</b>) Knockback Stick
-
-- <b>2</b>) One Hit Sword
-
-- <b>3</b>) Super Bow
-
-- <b>4</b>) Super Thorns Chestplate
-
-- <b>5</b>) Super Potion
-
-- <b>6</b>) Griefer Potion
+1. Knockback Stick
+2. One Hit Sword
+3. Super Bow
+4. Super Thorns Chestplate
+5. Super Potion
+6. Griefer Potion
