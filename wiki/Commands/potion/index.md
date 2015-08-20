@@ -12,9 +12,9 @@ Adds, sets or removes effects of the held potion. Accepts arguments in groups of
 - `set (<effect> <amplifier> <duration>)...`
 - `.potion <add/set> <id/name> <amplifier> <duration> <id/name> <amplifier> <duration>`
 
-- `add` adds effects
-- `set` removes current effect and changes them with given effects
-- `remove` removes effects
+- `add` adds effects you chose.
+- `set` removes current effect and changes them with given effects.
+- `remove` removes effects you chose.
 
 ## Example
 `.potion set invisibility 0 60 strength 24 75` would set the held potion's effects to invisibility for 60 seconds and strength 25 for 75 seconds.
