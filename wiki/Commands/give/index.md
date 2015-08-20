@@ -26,14 +26,14 @@ There are some example commands (templates) for you.
 
 ## Template IDs
 
-- <b>0</b>) Knockback Stick
+- <b>1</b>) Knockback Stick
 
-- <b>1</b>) One Hit Sword
+- <b>2</b>) One Hit Sword
 
-- <b>2</b>) Super Bow
+- <b>3</b>) Super Bow
 
-- <b>3</b>) Super Thorns Chestplate
+- <b>4</b>) Super Thorns Chestplate
 
-- <b>4</b>) Super Potion
+- <b>5</b>) Super Potion
 
-- <b>5</b>) Griefer Potion
+- <b>6</b>) Griefer Potion
