@@ -31,3 +31,5 @@ It it works well, I will integrate this app into the Wurst Client itself. But fi
 So for now, you can only get to the app using this link: [https://feedback.wurst-client.tk/](https://feedback.wurst-client.tk/)
 
 Please note that you do need to register an account before you can submit feedback or votes. This is meant to prevent spam and to ensure that everyone can only vote once.
+
+**Update:** There has been a bug that prevented people with a Yahoo Mail address from registering. This bug is now fixed.
