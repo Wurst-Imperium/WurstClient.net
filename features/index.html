@@ -1,0 +1,29 @@
+---
+title: Feature List
+---
+<div class="container">
+  <div class="alert alert-info">
+    <strong>
+      Tip:
+    </strong>
+    Press Ctrl+F to search for a feature.
+  </div>
+  {% for category in site.data.features %}
+    <h2>
+      {{ category | first }}
+    </h2>
+    <ul>
+      {% for feature in category[1] %}
+        <li>
+          {% if feature[1] == nil %}
+            {{ feature[0] }}
+          {% else %}
+            <a href="{{ feature[1] }}">
+              {{ feature[0] }}
+            </a>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  {% endfor %}
+</div>
