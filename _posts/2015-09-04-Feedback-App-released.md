@@ -26,7 +26,7 @@ If it works so well for a company as big as Microsoft, then sure it will do wond
 
 ![Wurst Client Feedback App](https://cloud.githubusercontent.com/assets/10100202/9670662/cd85a130-528d-11e5-8001-9e8d386c8afc.png)
 
-It it works well, I will integrate this app into the Wurst Client itself. But first I need to make sure that the server can actually handle the traffic and won't go down after a few days.
+If it works well, I will integrate this app into the Wurst Client itself. But first I need to make sure that the server can actually handle the traffic and won't go down after a few days.
 
 So for now, you can only get to the app using this link: [https://feedback.wurst-client.tk/](https://feedback.wurst-client.tk/)
 
