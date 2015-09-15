@@ -1,39 +1,6 @@
 ---
 layout: default
 ---
-<!-- Facebook -->
-<div id="fb-root"></div>
-<script>
-	(function(d, s, id){
-	  var js, fjs = d.getElementsByTagName(s)[0];
-	  if(d.getElementById(id))return;
-	  js = d.createElement(s);
-		js.id = id;
-	  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
-	  fjs.parentNode.insertBefore(js, fjs);
-	}(document, 'script', 'facebook-jssdk'));
-</script>
-<!-- Twitter -->
-<script>
-	window.twttr = (function(d, s, id){
-	  var js, fjs = d.getElementsByTagName(s)[0], t = window.twttr || {};
-	  if(d.getElementById(id))return t;
-	  js = d.createElement(s);
-	  js.id = id;
-	  js.src = "https://platform.twitter.com/widgets.js";
-	  fjs.parentNode.insertBefore(js, fjs);
-	  t._e = [];
-	  t.ready = function(f){
-	    t._e.push(f);
-	  };
-	  return t;
-	}(document, "script", "twitter-wjs"));
-</script>
-<!-- Google+ -->
-<script src="https://apis.google.com/js/platform.js" async defer></script>
-<!-- Tumblr -->
-<script>!function(d,s,id){var js,ajs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://secure.assets.tumblr.com/share-button.js";ajs.parentNode.insertBefore(js,ajs);}}(document, "script", "tumblr-js");</script>
-
 <div class="page-header">
 	<div class="container">
 		<div class="row">
@@ -57,7 +24,7 @@ layout: default
 </div>
 <div class="container">
 	<div class="row">
-		<div class="col-sm-10 col-md-8 col-md-offset-1">
+		<div class="col-sm-10 col-md-8 col-md-offset-2">
 			{% for image in page.images limit: 1 %}
 			<div class="thumbnail">
 				<img class="img-rounded" src="{{ image.link }}">
@@ -72,7 +39,7 @@ layout: default
 				#post-content img {
 					max-width: 100%;
 				}
-				
+
 				#post-content {
 			    font-size: 18px;
 				}
@@ -101,33 +68,6 @@ layout: default
 			</a>
 			{% include post-footer.html post = page %}
 		</div>
-		<div class="hidden-xs col-sm-2 text-center">
-			<div class="well">
-				<div class="row">
-					<div class="fb-share-button" data-layout="box_count"></div>
-				</div>
-				<br>
-				<div class="row">
-					<a
-						class="twitter-share-button"
-						data-count="vertical"
-						href="https://twitter.com/intent/tweet?via=Wurst_Imperium&text={{ page.title | replace: ' ', '%20' | replace: '&', '%26' | replace: '?', '%3F' | replace: '!', '%21' | replace: ',', '%2C' | replace: '\'', '%27' }}">
-						Tweet
-					</a>
-				</div>
-				<br>
-				<div class="row">
-					<div class="g-plus" data-action="share" data-annotation="vertical-bubble" data-height="60"></div>
-				</div>
-				<br>
-				<div class="row">
-					<a class="tumblr-share-button" data-color="blue" data-notes="top" href="https://embed.tumblr.com/share"></a>
-				</div>
-				<br>
-				<div class="row">
-					<script type="text/javascript" src="//www.redditstatic.com/button/button2.js"></script>
-				</div>
-			</div>
-		</div>
 	</div>
 </div>
+<script src="//load.sumome.com/" data-sumo-site-id="afb9b2ec1a409937f7d82c7d9608e5b3eb9fff83e198fe4dc0222db718ac3f83" async="async"></script>
