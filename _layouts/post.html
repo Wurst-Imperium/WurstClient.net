@@ -67,7 +67,24 @@ layout: default
 				Back
 			</a>
 			{% include post-footer.html post = page %}
+			<br>
+			<br>
+			<div id="disqus_thread"></div>
+			<noscript>
+				Please enable JavaScript to view the
+				<a href="https://disqus.com/?ref_noscript" rel="nofollow">
+					comments section.
+				</a>
+			</noscript>
 		</div>
 	</div>
 </div>
 <script src="//load.sumome.com/" data-sumo-site-id="afb9b2ec1a409937f7d82c7d9608e5b3eb9fff83e198fe4dc0222db718ac3f83" async="async"></script>
+<script type="text/javascript">
+    var disqus_shortname = 'wurst-client';
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
