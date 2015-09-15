@@ -21,46 +21,56 @@ no_index: true
 </div>
 <div class="container">
 	{% for post in paginator.posts %}
-	<div class="well">
-		<h2>
-			<a href="{{ post.url | remove: "index.html" }}">{{ post.title }}</a>
-		</h2>
-		<p class="text-muted">
-			by
-			<i>{{ post.author }}</i>
-			on
-			<i>{{ post.date | date: "%b %-d %Y" }}</i>.
-			{% if post.category %}
-			Category:
-			<i>{{ post.category }}</i>
-			{% endif %}
-		</p>
-		{% if post.images.size > 0 %}
-		<div class="row">
-			<div class="col-xs-12 col-sm-6 col-md-4">
-				{% for image in post.images limit: 1 %}
-				<div class="thumbnail">
-					<img src="{{ image.link }}">
-				</div>
-				{% endfor %}
-			</div>
-		{% endif %}
-			{% if post.images.size > 0 %}
-			<div class="col-xs-12 col-sm-6 col-md-8">
-			{% endif %}
-				{{ post.excerpt }}
-				<a href="{{ post.url | remove: "index.html" }}" class="btn btn-default">Read more <span class="octicon octicon-book"></span></a>
-				{% include post-footer.html post = post %}
-		{% if post.images.size > 0 %}
-			</div>
-		{% endif %}
-		{% if post.images.size > 0 %}
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h2>
+				<a href="{{ post.url | remove: "index.html" }}">
+					{{ post.title }}
+				</a>
+			</h2>
+			<p class="text-muted">
+				by
+				<i>{{ post.author }}</i>
+				on
+				<i>{{ post.date | date: "%b %-d %Y" }}</i>.
+				{% if post.category %}
+				Category:
+				<i>{{ post.category }}</i>
+				{% endif %}
+			</p>
 		</div>
-		{% endif %}
+		<div class="panel-body">
+			{% if post.images.size > 0 %}
+			<div class="row">
+				<div class="col-xs-12 col-sm-6 col-md-4">
+					{% for image in post.images limit: 1 %}
+					<div class="thumbnail">
+						<a href="{{ post.url | remove: "index.html" }}">
+							<img src="{{ image.link }}">
+						</a>
+					</div>
+					{% endfor %}
+				</div>
+			{% endif %}
+				{% if post.images.size > 0 %}
+				<div class="col-xs-12 col-sm-6 col-md-8">
+				{% endif %}
+					<div class="lead">
+						{{ post.excerpt }}
+					</div>
+			{% if post.images.size > 0 %}
+				</div>
+			</div>
+			{% endif %}
+		</div>
+		<div class="panel-footer">
+			<a href="{{ post.url | remove: "index.html" }}" class="btn btn-default">
+				Read more
+				<span class="octicon octicon-book"></span>
+			</a>
+			{% include post-footer.html post = post %}
+		</div>
 	</div>
-	{% unless forloop.last %}
-	<hr>
-	{% endunless %}
 	{% endfor %}
 	<nav class="text-center">
 		<ul class="pagination">
