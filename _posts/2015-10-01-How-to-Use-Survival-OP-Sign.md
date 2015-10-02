@@ -15,7 +15,7 @@ In the following video, I'm going to walk you through the entire process of usin
 
 If you can't watch the video for some reason, here is the text version of the tutorial:
 
-First off, as mentioned before, this requires a server running **Minecraft 1.8 - 1.8.5 without Spigot**. If the server you are using runs Minecraft 1.8.6, 2.8.7, 1.8.8 or any later version, then you can't use it on that server. The same goes for servers running Minecraft 1.7.X or anything with Spigot.
+First off, as mentioned before, this requires a server running **Minecraft 1.8 - 1.8.5 without Spigot**. If the server you are using runs Minecraft 1.8.6, 1.8.7, 1.8.8 or any later version, then you can't use it on that server. The same goes for servers running Minecraft 1.7.X or anything with Spigot.
 
 So how do you find servers that have the right version? The easiest way is to use the **ServerFinder**. If you don't know what the ServerFinder is, it's basically a tool for finding tons of easy-to-grief servers within just a few minutes.
 
