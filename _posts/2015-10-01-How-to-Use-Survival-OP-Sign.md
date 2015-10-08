@@ -23,7 +23,7 @@ Just press the ServerFinder button in the Muliplayer menu, type in a numeric ser
 
 So now you should have a huge list of servers with green text showing their versions. Just look for one that has the correct version and join it. Easy, right?
 
-Now you need to get a sign, but don't place it yet. You first turn on the OP-Sign mod (press <kbd>Tab</kbd>, then click the <kbd>OP-Sign</kbd> button in the `Exploits` window).
+Now you need to get a sign, but don't place it yet. You first turn on the OP-Sign mod (press <kbd>LCtrl</kbd>, then click the <kbd>OP-Sign</kbd> button in the `Exploits` window).
 
 A new screen will show up that asks you to enter a command. By default, the command is set to `/op YourName`, which will give you OP on most servers. Just click the <kbd>Done</kbd> button and you'll be fine.
 
