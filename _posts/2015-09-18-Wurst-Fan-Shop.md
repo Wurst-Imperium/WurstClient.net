@@ -7,6 +7,7 @@ images:
 Today I'm very happy to announce that we now have a Wurst Client Fan Shop. I have been working on this fan shop for quite some time, and now it's finally up and running.
 
 If you are following me on Twitter, you already know that I recently got a new mouse pad with a picture of me lighting a bunch of TNT blocks on fire, with the Heading "Keep Griefin'". This is one of the products that you can get in this fan shop.
+<!--read more-->
 
 The other products, at least for now, are a mug and a T-shirt with the same image printed on them. The T-shirt comes in white and black by default, but can be customized to have any color you like. Here are some examples:
 

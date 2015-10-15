@@ -12,6 +12,7 @@ In the following video, I'm going to walk you through the entire process of usin
   <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Ix-LmaFFvj4" allowfullscreen></iframe>
 </div>
 <br>
+<!--read more-->
 
 If you can't watch the video for some reason, here is the text version of the tutorial:
 

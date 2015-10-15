@@ -21,11 +21,12 @@ images:
   - link: https://cloud.githubusercontent.com/assets/10100202/6880379/d35085ee-d52e-11e4-9e2b-905f2fb40f75.jpg
     text:  Small Wall
 ---
-#### We got some sexxy new templates for you. [Check it out!](/downloads/autobuild)
+We got some sexxy new templates for you. [Check it out!](/downloads/autobuild)
 
 ## How to install
 1. Navigate to `%appdata%\.minecraft\wurst\autobuild`.
 2. Drop your templates (the JSON files) there.
 3. Enjoy!
+<!--read more-->
 
 ## Available templates (download [here](/downloads/autobuild))

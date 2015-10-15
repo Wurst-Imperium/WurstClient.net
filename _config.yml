@@ -15,6 +15,8 @@ paginate_path: "/news-:num"
 
 permalink: /news/:year-:month-:day-:title/index.html
 
+excerpt_separator: <!--read more-->
+
 defaults:
   -
     scope:

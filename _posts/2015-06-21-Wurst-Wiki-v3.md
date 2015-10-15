@@ -3,11 +3,10 @@ title: The brand new Wurst Wiki (version 3)
 images:
   - link: https://cloud.githubusercontent.com/assets/10100202/8271100/09451ef8-1805-11e5-8b57-d7aab04561ad.jpg
 ---
-<p class="lead">
-  The new Wurst Client wiki makes it easier than ever to find information about Wurst. And if there is something you can't find, you can add it!
-</p>
+The new Wurst Client wiki makes it easier than ever to find information about Wurst. And if there is something you can't find, you can add it!
 
 Over the last couple of days, I've completely rewritten the Wurst wiki and I am now happy to announce version 3 of it. This new wiki makes it easier than ever for you to edit it. All you need is a GitHub account and enough power in your hand to move your mouse to the `Edit` button that you can now find at the top of every wiki page.
+<!--read more-->
 
 In the past, I have gotten a lot of messages and emails from people who wanted to contribute to the wiki (version 2), but were unable to do so because they didn't understand how GitHub's built-in wikis work. Now, hopefully, these sad people should be much happier. :smile:
 

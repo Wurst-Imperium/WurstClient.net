@@ -14,6 +14,7 @@ Target got its own frame and some more options for advanced target selections. Y
 The "Sleeping players" option is primarily meant to bypass Mineplex's new Survival Games that places sleeping players on the ground so that they look like corpses. Most Killauras make no difference between sleeping players and awake players, so they would get stuck in those corpses and stop attacking the real players.
 
 While we're at it, I also fixed the "Monsters" Target option not selecting Ghasts and Slimes. And while adding the Target frame, I also fixed some GUI related bugs, such as the title of the Movement frame overlapping the minimize button and custom AutoBuild templates with long names making the mod frames bigger.
+<!--read more-->
 
 ## Proxy Support
 Proxies allow you to change your IP address, so that you can join servers that have banned your IP. This is especially useful for cracked servers, as the combination of cracked alts and proxies makes it completely impossible for them to ban you permanently.

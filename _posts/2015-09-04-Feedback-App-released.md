@@ -4,9 +4,7 @@ description: Let's get your voices heard.
 images:
   - link: https://cloud.githubusercontent.com/assets/10100202/9668326/3a7e0370-5281-11e5-8813-9956759272d6.png
 ---
-<p class="lead">
-  Let's get your voices heard.
-</p>
+Let's get your voices heard.
 
 As I mentioned in a [previous post](/news/2015-08-15-feedback), feedback is a very important thing for me. As Wurst is getting more and more popular, I'm also getting more and more feedback every day, and it's getting pretty hard to manage.
 
@@ -15,6 +13,7 @@ I could sit there all day reading and answering all of your comments, suggestion
 Furthermore, it's really hard for me to recognize patterns in the feedback: Out of 100 people, there might be 30 people wanting one feature, but only 10 people wanting another feature. Unless I make a table of all suggestions and the number of people wanting them, there is no way I could see things like that.
 
 About a month ago, I realized what a big problem this is and I have since been working on a solution. Luckily, it seems that Microsoft has had the same problem with Windows 10, and they came up with an **amazing** solution!
+<!--read more-->
 
 ![Windows Feedback App](https://cloud.githubusercontent.com/assets/10100202/9670119/3ee4a0f4-528b-11e5-8e65-d2826bee2cc0.png)
 
