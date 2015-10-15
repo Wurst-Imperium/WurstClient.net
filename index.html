@@ -135,29 +135,74 @@ description: The Wurst Client is a Hacked Client for Minecraft 1.8.X and 1.7.X. 
 		</div>
 	</div>
 	<hr>
-	<div class="panel panel-primary">
-		<div class="panel-heading">
-			<h2 class="panel-title">
-				<span class="octicon octicon-radio-tower"></span>
-				Latest news
-			</h2>
-		</div>
-		<div class="list-group">
-			{% for post in site.posts limit: 5 %}
-			<a class="list-group-item" href="{{ post.url | remove: "index.html" }}">{{ post.title }}</a>
-			{% endfor %}
-		</div>
-		<div class="panel-footer">
-			<div class="btn-group">
-				<a class="btn btn-primary" href="/news/">
-					More news
-				</a>
-				<a class="btn btn-default" href="/news/feed.xml" data-toggle="tooltip" data-placement="right" data-container="body" title="RSS feed">
-					<span class="octicon octicon-rss"></span>
-				</a>
+		<div class="row">
+			<div class="col-sm-8">
+				{% for post in paginator.posts %}
+				<article class="panel panel-default">
+					<div class="panel-heading">
+						<h1>
+							<a href="{{ post.url | remove: "index.html" }}">
+								{{ post.title }}
+							</a>
+						</h1>
+						<p class="text-muted">
+							by
+							<i>{{ post.author }}</i>
+							on
+							<i>{{ post.date | date: "%B %-d %Y" }}</i>.
+							{% if post.category %}
+							Category:
+							<i>{{ post.category }}</i>
+							{% endif %}
+						</p>
+					</div>
+					<div class="panel-body" style="font-size: 18px;">
+						{% if post.images.size > 0 %}
+							{% for image in post.images limit: 1 %}
+							<div class="thumbnail">
+								<a href="{{ post.url | remove: "index.html" }}">
+									<img src="{{ image.link }}">
+								</a>
+							</div>
+							{% endfor %}
+						{% endif %}
+						{{ post.excerpt }}
+					</div>
+					<div class="panel-footer">
+						<a href="{{ post.url | remove: "index.html" }}" class="btn btn-primary">
+							<span class="octicon octicon-book"></span>
+							Read more
+						</a>
+						{% include post-footer.html post = post %}
+					</div>
+				</article>
+				{% endfor %}
 			</div>
 		</div>
-	</div>
+		<nav class="text-center">
+			<ul class="pagination">
+				{% if paginator.previous_page %}
+				<li>
+					<a href="{{ paginator.previous_page_path | remove: "index.html" }}">
+						{% if paginator.next_page %}
+						<span class="octicon octicon-arrow-left"></span>
+						{% endif %}
+						Newer News
+					</a>
+				</li>
+				{% endif %}
+				{% if paginator.next_page %}
+				<li>
+					<a href="{{ paginator.next_page_path | remove: "index.html" }}">
+						Older News
+						{% if paginator.previous_page %}
+						<span class="octicon octicon-arrow-right"></span>
+						{% endif %}
+					</a>
+				</li>
+				{% endif %}
+			</ul>
+		</nav>
 	<hr>
 	<h2>
 		Social Media
