@@ -1,0 +1,28 @@
+{% assign post = include.post %}
+<header>
+  <h1>
+    {% if page == post %}
+      {{ post.title }}
+    {% else %}
+      <a href="{{ post.url | remove: "index.html" }}">
+        {{ post.title }}
+      </a>
+    {% endif %}
+  </h1>
+  <ul class="list-inline text-muted">
+    <li title="Author: {{ post.author }}">
+      <span class="octicon octicon-person"></span>
+      {{ post.author }}
+    </li>
+    <li title="Date posted: {{ post.date | date: "%B %-d, %Y" }}">
+      <span class="octicon octicon-clock"></span>
+      {{ post.date | date: "%B %-d, %Y" }}
+    </li>
+    {% if post.category %}
+      <li title="Category: {{ post.category | replace: "-", " " }}">
+        <span class="octicon octicon-versions"></span>
+        {{ post.category | replace: "-", " " }}
+      </li>
+    {% endif %}
+  </ul>
+</header>

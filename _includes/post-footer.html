@@ -1,11 +1,25 @@
 {% assign post = include.post %}
-{% if post.category == "Wurst-update" %}
-<a class="btn btn-default" href="https://github.com/Wurst-Imperium/Wurst-Client/releases/download/{{ post.Wurst-version }}/Wurst-Client-{{ post.Wurst-version }}.zip">
-  <span class="octicon octicon-cloud-download"></span>
-  Download Wurst {{ post.Wurst-version }}
-</a>
-<a class="btn btn-default" target="_blank" href="https://github.com/Wurst-Imperium/Wurst-Client/releases/tag/{{ post.Wurst-version }}">
-  <span class="octicon octicon-list-unordered"></span>
-  Changelog
-</a>
-{% endif %}
+<footer>
+  {% if page != post %}
+    <a href="{{ post.url | remove: "index.html" }}" class="btn btn-primary">
+      <span class="octicon octicon-book"></span>
+      Read more
+    </a>
+  {% endif %}
+  {% if post.category == "Wurst-update" %}
+    <a class="btn btn-{% if page == post %}primary{% else %}default{% endif %}" href="https://github.com/Wurst-Imperium/Wurst-Client/releases/download/{{ post.Wurst-version }}/Wurst-Client-{{ post.Wurst-version }}.zip">
+      <span class="octicon octicon-cloud-download"></span>
+      Download {{ post.Wurst-version }}
+    </a>
+    <a class="btn btn-default" target="_blank" href="https://github.com/Wurst-Imperium/Wurst-Client/releases/tag/{{ post.Wurst-version }}">
+      <span class="octicon octicon-list-unordered"></span>
+      View Changelog
+    </a>
+  {% endif %}
+  {% if page == post %}
+    <a href="/" class="btn btn-default">
+      <span class="octicon octicon-arrow-left"></span>
+      Back
+    </a>
+  {% endif %}
+</footer>

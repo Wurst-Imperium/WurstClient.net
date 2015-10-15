@@ -5,19 +5,7 @@ layout: default
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
-				<h1 class="visible-xs-inline visible-sm-inline visible-md-inline visible-lg-inline">
-					{{ page.title }}
-				</h1>
-				<p class="text-muted">
-					by
-					<i>{{ page.author }}</i>
-					on
-					<i>{{ page.date | date: "%b %-d %Y" }}</i>.
-					{% if page.category %}
-					Category:
-					<i>{{ page.category }}</i>
-					{% endif %}
-				</p>
+				{% include post-header.html post = page %}
 			</div>
 		</div>
 	</div>
@@ -35,16 +23,7 @@ layout: default
 				{% endif %}
 			</div>
 			{% endfor %}
-			<style>
-				#post-content img {
-					max-width: 100%;
-				}
-
-				#post-content {
-			    font-size: 18px;
-				}
-			</style>
-			<div id="post-content">
+			<div class="post-content">
 				{{ content }}
 			</div>
 			<div class="row">
@@ -62,10 +41,6 @@ layout: default
 				{% endfor %}
 			</div>
 			<br>
-			<a href="/news/" class="btn btn-default hidden-print">
-				<span class="octicon octicon-arrow-left"></span>
-				Back
-			</a>
 			{% include post-footer.html post = page %}
 			<br>
 			<br>
