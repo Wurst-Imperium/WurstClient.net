@@ -3,16 +3,12 @@ layout: default
 ---
 <div class="page-header">
 	<div class="container">
-		<div class="row">
-			<div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
-				{% include post-header.html post = page %}
-			</div>
-		</div>
+		{% include post-header.html post = page %}
 	</div>
 </div>
 <div class="container">
 	<div class="row">
-		<div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+		<div class="col-sm-8">
 			{% for image in page.images limit: 1 %}
 			<div class="thumbnail">
 				<img class="img-rounded" src="{{ image.link }}">
@@ -51,6 +47,9 @@ layout: default
 					comments section.
 				</a>
 			</noscript>
+		</div>
+		<div class="col-sm-4 hidden-xs">
+			{% include sidebar.html %}
 		</div>
 	</div>
 </div>
