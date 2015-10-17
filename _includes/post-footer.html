@@ -15,6 +15,13 @@
       <span class="octicon octicon-list-unordered"></span>
       View Changelog
     </a>
+  {% else if post.category == "Video" %}
+    {% unless page == post %}
+      <a class="btn btn-default" href="https://www.youtube.com/watch?v={{ post.video-id }}">
+        <span class="octicon octicon-eye"></span>
+        Watch Video
+      </a>
+    {% endunless %}
   {% endif %}
   {% if page == post %}
     <a href="/" class="btn btn-default">
