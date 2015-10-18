@@ -1,7 +1,7 @@
 <nav class="navbar navbar-default navbar-static-top">
 	<div class="container">
 		<div class="navbar-header">
-			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
@@ -10,89 +10,75 @@
 				<img src="https://cloud.githubusercontent.com/assets/10100202/8148736/a02a0596-12aa-11e5-927d-3adf3ff4753e.png" alt="Wurst Client">
 			</a>
 		</div>
-		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			<ul class="nav navbar-nav">
-				<li>
-					<a href="/news">
-						<span class="octicon octicon-radio-tower"></span>
-						News
-					</a>
-				</li>
-				<li>
-					<a href="/downloads">
-						<span class="octicon octicon-cloud-download"></span>
-						Downloads
-					</a>
-				</li>
-				<li>
-					<a href="/wiki">
-						<span class="octicon octicon-book"></span>
-						Wiki
-					</a>
-				</li>
-				<li class="dropdown hidden-sm">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-						<span class="octicon octicon-mark-github"></span>
-						GitHub
-					</a>
-					<ul class="dropdown-menu">
+		<div class="collapse navbar-collapse" id="navbar-collapse">
+			<div class="row header-row">
+				{% unless include.no_search %}
+					<ul class="nav navbar-nav navbar-right">
 						<li>
-							<a href="https://github.com/Wurst-Imperium/Wurst-Client">
-								<span class="octicon octicon-code"></span>
-								Source Code
-							</a>
-						</li>
-						<li>
-							<a href="https://github.com/Wurst-Imperium/Wurst-Client/fork">
-								<span class="octicon octicon-git-pull-request"></span>
-								Contribute
-							</a>
-						</li>
-						<li>
-							<a href="https://github.com/Wurst-Imperium/Wurst-Client/issues?q=label%3Aquestion">
-								<span class="octicon octicon-question"></span>
-								Questions
+							<a href="#" data-toggle="modal" data-target="#search">
+								<span class="octicon octicon-search"></span>
+									Search
 							</a>
 						</li>
 					</ul>
-				</li>
-				<li>
-					<a href="http://shop.spreadshirt.com/Wurst-Client/">
-						<span class="octicon octicon-heart"></span>
-						Fan Shop
-					</a>
-				</li>
-			</ul>
-			{% unless include.no_search %}
-			<ul class="nav navbar-nav navbar-right">
-				<li>
-					<a href="#" data-toggle="modal" data-target="#search">
-						<span class="octicon octicon-search"></span>
-						Search
-					</a>
-				</li>
-			</ul>
-			<div class="modal fade" id="search">
-			  <div class="modal-dialog">
-			    <div class="modal-content">
-			      <div class="modal-header">
-			        <button type="button" class="close" data-dismiss="modal">
-								&times;
-							</button>
-			        <p class="modal-title" id="myModalLabel">
-								<span class="octicon octicon-search"></span>
-								Search
-							</p>
-			      </div>
-			      <div class="modal-body">
-							<input id="search-input" type="text" class="form-control" autofocus>
-							<br>
-							<ul id="search-results" class="list-group"></ul>
-			      </div>
-			    </div>
-			  </div>
+				{% endunless %}
 			</div>
-			{% endunless %}
+			<div class="row header-row">
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<a href="/downloads">
+							<span class="octicon octicon-cloud-download"></span>
+							Downloads
+						</a>
+					</li>
+					<li>
+						<a href="/github">
+							<span class="octicon octicon-repo"></span>
+							Source Code
+						</a>
+					</li>
+					<li>
+						<a href="/wiki">
+							<span class="octicon octicon-book"></span>
+							Wiki
+						</a>
+					</li>
+					<li>
+						<a href="/feedback">
+							<span class="octicon octicon-comment"></span>
+							Feedback
+						</a>
+					</li>
+					<li>
+						<a href="/fanshop">
+							<span class="octicon octicon-gift"></span>
+							Merchandise
+						</a>
+					</li>
+				</ul>
+			</div>
 		</div>
 	</div>
 </nav>
+{% unless include.no_search %}
+<div class="modal fade" id="search">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">
+					&times;
+				</button>
+        <p class="modal-title" id="myModalLabel">
+					<span class="octicon octicon-search"></span>
+					Search
+				</p>
+      </div>
+      <div class="modal-body">
+				<input id="search-input" type="text" class="form-control" autofocus>
+				<br>
+				<ul id="search-results" class="list-group"></ul>
+      </div>
+    </div>
+  </div>
+</div>
+{% endunless %}

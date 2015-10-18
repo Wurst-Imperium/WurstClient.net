@@ -25,6 +25,12 @@
   max-width: 100%;
 }
 
+/* Wurst Header */
+.header-row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 /* Wurst Sliders */
 html, body {
   width: 100%;
