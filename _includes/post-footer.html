@@ -11,22 +11,17 @@
       <span class="octicon octicon-cloud-download"></span>
       Download {{ post.Wurst-version }}
     </a>
+  {% endif %}
+  {% if post.video-id %}
+    <a class="btn btn-{% if page == post and post.category == "Video" %}primary{% else %}default{% endif %}" href="https://www.youtube.com/watch?v={{ post.video-id }}" target="_blank">
+      <span class="octicon octicon-eye"></span>
+      Watch Video
+    </a>
+  {% endif %}
+  {% if post.category == "Wurst-update" %}
     <a class="btn btn-default" target="_blank" href="https://github.com/Wurst-Imperium/Wurst-Client/releases/tag/{{ post.Wurst-version }}">
       <span class="octicon octicon-list-unordered"></span>
       View Changelog
-    </a>
-  {% else if post.category == "Video" %}
-    {% unless page == post %}
-      <a class="btn btn-default" href="https://www.youtube.com/watch?v={{ post.video-id }}">
-        <span class="octicon octicon-eye"></span>
-        Watch Video
-      </a>
-    {% endunless %}
-  {% endif %}
-  {% if page == post %}
-    <a href="/" class="btn btn-default">
-      <span class="octicon octicon-arrow-left"></span>
-      Back
     </a>
   {% endif %}
 </footer>
