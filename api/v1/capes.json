@@ -11,7 +11,7 @@ capes:
   "Marka2000": "{{ page.capes.wurst }}",
   "WiZARDHAXoCOM": "{{ page.capes.wurst }}",
   "eXire_": "{{ page.capes.wurst }}",
-  
+
   "ZerakPvP": "{{ page.capes.wizhax2015 }}",
   "Tigrex_HD": "{{ page.capes.wizhax2015 }}",
   "TypicalModders": "{{ page.capes.wizhax2015 }}",
@@ -22,6 +22,6 @@ capes:
   "Huggan40": "{{ page.capes.wizhax2015 }}",
   "heafie": "{{ page.capes.wizhax2015 }}",
   "_37_": "{{ page.capes.wizhax2015 }}",
-  
-  "use_new_server": true
+
+  "use_new_server": false
 }
