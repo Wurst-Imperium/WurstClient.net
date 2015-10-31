@@ -23,5 +23,5 @@ capes:
   "heafie": "{{ page.capes.wizhax2015 }}",
   "_37_": "{{ page.capes.wizhax2015 }}",
 
-  "use_new_server": false
+  "use_new_server": true
 }
