@@ -15,9 +15,4 @@ I'm also working on the Wurst Feedback App and the Fan Shop, so pretty much all 
 While we're at it, if there's a feature that you want to see in the next Wurst update, be sure to vote for it on the [Wurst Feedback App](https://feedback.wurst-client.tk/). Or if you have nothing to do, give me some feedback about the [Wurst YouTube Channel](/youtube) or the [Wurst Fan Shop](/fanshop). These two are still relatively new and I need some feedback to improve them.
 <!--read more-->
 
-<div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/RZz9iCkmAxE" allowfullscreen></iframe>
-</div>
-<br>
-
 Additionally, I've recorded for WiZARDHAX.com another time. You can watch that video here: <a href="https://www.youtube.com/watch?v=12R6o7xBBT0" target="_blank">https://www.youtube.com/watch?v=12R6o7xBBT0</a>

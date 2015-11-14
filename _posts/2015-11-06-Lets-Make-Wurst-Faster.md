@@ -12,11 +12,6 @@ The 3 people that submit the best performance improvements will  get a "Wurst pe
 Watch the video for more details.
 <!--read more-->
 
-<div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/{{ page.video-id }}" allowfullscreen></iframe>
-</div>
-<br>
-
 Use this form to submit your performance improvement:
 
 <div class="embed-responsive embed-responsive-16by9" style="padding-bottom: 120%">
