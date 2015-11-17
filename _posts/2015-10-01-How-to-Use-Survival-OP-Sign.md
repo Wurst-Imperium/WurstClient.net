@@ -7,7 +7,7 @@ images:
 ---
 After the release of Wurst 2.5, a lot of people asked me how to use the new Survival OP-Sign mod. So today I'm going to explain that.
 
-In the following video, I'm going to walk you through the entire process of using OP-Sign, with everything explained in detail and no step skipped.
+In [this video](https://www.youtube.com/watch?v={{ page.video-id }}), I'm going to walk you through the entire process of using OP-Sign, with everything explained in detail and no step skipped.
 
 <!--read more-->
 
@@ -17,7 +17,7 @@ First off, as mentioned before, this requires a server running **Minecraft 1.8 -
 
 So how do you find servers that have the right version? The easiest way is to use the **ServerFinder**. If you don't know what the ServerFinder is, it's basically a tool for finding tons of easy-to-grief servers within just a few minutes.
 
-Just press the ServerFinder button in the Muliplayer menu, type in a numeric server IP (like `85.131.231.92`) and press the <kbd>Search</kbd> button. For a more detailed tutorial with pictures, have a look at the [ServerFinder wiki page](/wiki/Special_Features/Server_Finder/).
+Just press the ServerFinder button in the Multiplayer menu, type in a numeric server IP (like `85.131.231.92`) and press the <kbd>Search</kbd> button. For a more detailed tutorial with pictures, have a look at the [ServerFinder wiki page](/wiki/Special_Features/Server_Finder/).
 
 So now you should have a huge list of servers with green text showing their versions. Just look for one that has the correct version and join it. Easy, right?
 
