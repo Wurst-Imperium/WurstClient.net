@@ -85,7 +85,7 @@ There are two different kinds of mods: the normal mods, which can additionally b
 - NoWeb
 - NukerLegit
 - Nuker
-- OP-Sign
+- [OP-Sign](/wiki/Mods/OP-Sign_(Force_OP))
 - Overlay
 - Panic
 - Phase
