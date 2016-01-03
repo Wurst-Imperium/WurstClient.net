@@ -15,8 +15,10 @@ add-ons:
 {% assign latestVersion = "https://github.com/Wurst-Imperium/Wurst-Client/releases/latest" %}
 {% for post in site.posts %}
   {% if post.category == "Wurst-update" and latestVersion == "https://github.com/Wurst-Imperium/Wurst-Client/releases/latest" %}
-    {% assign latestVersion = post.Wurst-version %}
-    {% assign changelogLink = post.url | remove: "index.html" %}
+    {% unless post.Wurst-version contains "pre" %}
+      {% assign latestVersion = post.Wurst-version %}
+      {% assign changelogLink = post.url | remove: "index.html" %}
+    {% endunless %}
   {% endif %}
 {% endfor %}
 <div class="container">
