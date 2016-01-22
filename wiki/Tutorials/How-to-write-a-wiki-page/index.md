@@ -17,13 +17,13 @@ All wiki pages, wheter written in Markdown or in HTML, must have Jekyll front ma
 
 For instance, have a look at the front matter of this page:
 
-{% highlight yaml %}
+<pre>
 ---
 title: How to write a wiki page
 layout: wiki
 category: Tutorial
 ---
-{% endhighlight %}
+</pre>
 
 You should always preview your page in [Jekyll for Windows](https://github.com/juthilo/run-jekyll-on-windows) or at least in [Atom](https://github.com/atom/atom) before submitting it to make sure that it is properly formatted.
 
