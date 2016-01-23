@@ -3,10 +3,11 @@ title: Wurst 2.13 - Navigator
 description: "It's finally here: Wurst 2.13 with Navigator! To learn more about Navigator and what's so awesome about it, please take a look at the \"Meet Navigator\" page."
 category: Wurst-update
 Wurst-version: v2.13
+video-id: XRV9iM_33EM
 images:
   - link: https://cloud.githubusercontent.com/assets/10100202/12520428/ca43ff96-c144-11e5-8fcd-9fb165e17c97.jpg
 ---
-It's finally here: Wurst 2.13 with Navigator! I couldn't get the update video done in time, so that will be added later (probably tomorrow).
+It's finally here: Wurst 2.13 with Navigator!
 
 To learn more about Navigator and what's so awesome about it, please take a look at the ["Meet Navigator" page](/navigator). Other than that, here's the changelog for this update, and it's pretty long this time:
 
