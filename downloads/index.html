@@ -17,7 +17,6 @@ add-ons:
   {% if post.category == "Wurst-update" and latestVersion == "https://github.com/Wurst-Imperium/Wurst-Client/releases/latest" %}
     {% unless post.Wurst-version contains "pre" %}
       {% assign latestVersion = post.Wurst-version %}
-      {% assign changelogLink = post.url | remove: "index.html" %}
     {% endunless %}
   {% endif %}
 {% endfor %}
@@ -38,7 +37,7 @@ add-ons:
     </a>
     <br class="visible-xs">
     <br class="visible-xs">
-    <a class="btn btn-default btn-lg" href="{{ changelogLink }}">
+    <a class="btn btn-default btn-lg" href="/changelog">
       <span class="octicon octicon-list-unordered"></span>
       View Changelog
     </a>

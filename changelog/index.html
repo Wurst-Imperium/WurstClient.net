@@ -1,0 +1,21 @@
+---
+layout: none
+---
+{% assign latestVersion = "https://github.com/Wurst-Imperium/Wurst-Client/releases/latest" %}
+{% assign changelogLink = site.posts[0].url | remove: "index.html" %}
+{% for post in site.posts %}
+  {% if post.category == "Wurst-update" and latestVersion == "https://github.com/Wurst-Imperium/Wurst-Client/releases/latest" %}
+    {% unless post.Wurst-version contains "pre" %}
+      {% assign latestVersion = post.Wurst-version %}
+      {% assign changelogLink = post.url | remove: "index.html" %}
+    {% endunless %}
+  {% endif %}
+{% endfor %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+  <title>Redirecting...</title>
+  <meta http-equiv="refresh" content="0;url={{ changelogLink }}">
+</head>
+</html>
