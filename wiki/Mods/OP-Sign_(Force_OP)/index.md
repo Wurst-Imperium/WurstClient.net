@@ -10,16 +10,7 @@ A server running Minecraft 1.8 - 1.8.5 without Spigot is required in order for t
 
 ## Video Tutorial
 
-<div>
-  <a href="https://www.youtube.com/watch?v=JAhcIuu9myE" target="_blank">
-    <div class="thumbnail thumbnail-video">
-      <img class="img-rounded" src="https://i.ytimg.com/vi/JAhcIuu9myE/maxresdefault.jpg">
-        <div class="btn btn-video">
-          <span class="glyphicon glyphicon-play"></span>
-        </div>
-    </div>
-  </a>
-</div>
+{% include video.html id = "JAhcIuu9myE" %}
 
 ## Usage
 The easiest way to find servers that have the right version is to use the **ServerFinder**. The ServerFinder is basically a tool for finding large amounts of easy-to-grief servers within just a few minutes. Just press the ServerFinder button in the Muliplayer menu, type in a numeric server IP (like `85.131.231.92`) and press the <kbd>Search</kbd> button. For a more detailed tutorial with pictures, have a look at the [ServerFinder wiki page](/wiki/Special_Features/Server_Finder/).

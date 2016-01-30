@@ -6,7 +6,7 @@ category: Special Feature
 ## Overview
 The Wurst Client ServerFinder is a tool for finding griefable Minecraft servers quickly and with very little effort. It usually finds around 50 servers per minute.
 
-## Usage
+## Text Tutorial (with Pictures)
 1. **Get an IP** to start with. Just [Google `minecraft server ip`](https://www.google.com/?gfe_rd=cr&ei=FCnXVKG8CIbCUK77gPAB#q=minecraft+server+ip&tbs=qdr:d) and you're good to go.
 <br>
 <br>
@@ -40,22 +40,6 @@ The Wurst Client ServerFinder is a tool for finding griefable Minecraft servers 
 <br>
 ![Minecraft server selection screen showing 96 griefable servers](https://cloud.githubusercontent.com/assets/10100202/6096345/1ef3f8d2-af8c-11e4-9a23-14e2805162bb.jpg)
 
-## Media
-<div class="row">
-  <div class="col-xs-12 col-sm-8 col-md-6">
-    <div class="thumbnail">
-      <div class="embed-responsive embed-responsive-16by9">
-        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/GOOOJI7006A" allowfullscreen></iframe>
-      </div>
-      <div class="caption">
-        <h3>Video Tutorial (German)</h3>
-        <p>
-          Made by
-          <a href="https://www.youtube.com/user/ShymonPlays">
-            ShymonPlays
-          </a>
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
+## Fanmade Video Tutorial (German)
+
+{% include video.html id = "GOOOJI7006A" %}

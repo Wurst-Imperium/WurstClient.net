@@ -23,10 +23,9 @@ The nice thing about it is that no one can see that the book text is a link, so 
 - **Only admins can use admin commands.** If you want to `/op` yourself, you must give the book to an admin, not just any random player.
 
 ## Video Tutorial
-<div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Z8umRki0p9g"></iframe>
-</div>
-<br>
+
+{% include video.html id = "Z8umRki0p9g" %}
+
 Thanks to [WiZARDHAX](https://www.youtube.com/user/wizardhaxtube) for making this tutorial.
 
 ## Skype Tutorial ;)
