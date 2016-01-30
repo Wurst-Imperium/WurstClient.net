@@ -2,12 +2,6 @@
   max-width: 100%;
 }
 
-#content h2, #content h3, #content h4, #content h5, #content h6 {
-  padding-bottom: 10px;
-  margin: 44px 0 22px;
-  border-bottom: 1px solid #eee;
-}
-
 /* code block highlighting */
 .highlight  { background: #ffffff; }
 .highlight .c { color: #999988; font-style: italic } /* Comment */
