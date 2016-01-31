@@ -6,10 +6,8 @@ category: Command
 ## Overview
 The `.say` command sends a message directly to the chat, even if that message starts with a dot.
 
-<!--
 ## Video Tutorial
-{% include video.html id = "" %}
--->
+{% include video.html id = "Jq-7sgnXl38" %}
 
 ## Text Tutorial
 Especially when using Wurst to cheat in PVP games, you might get into a situation where an admin will ask you to proof that you are not cheating by typing something like `.legit`, `.help` or `...` into the chat.
