@@ -148,12 +148,12 @@ Commands:
   .potion: /wiki/Commands/potion
   .protect: /wiki/Commands/protect
   .rename: /wiki/Commands/rename
-  .repair:
+  .repair: /wiki/Commands/repair
   .rv: /wiki/Commands/rv
   .say: /wiki/Commands/say
   .search: /wiki/Commands/search
   .spammer: /wiki/Commands/spammer
-  .sv:
+  .sv: /wiki/Commands/sv
   .t: /wiki/Commands/t
   .taco: /wiki/Commands/taco
   .throw: /wiki/Commands/throw
