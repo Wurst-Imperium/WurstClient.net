@@ -9,6 +9,8 @@ layout: default
 <div class="container">
 	<div class="row">
 		<div class="col-sm-9">
+			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5218363098774955" data-ad-slot="1650350426" data-ad-format="auto"></ins>
+			<br>
 			{% for image in page.images limit: 1 %}
 				{% if page.video-id %}
 					<a href="https://www.youtube.com/watch?v={{ page.video-id }}" target="_blank">
@@ -45,7 +47,6 @@ layout: default
 			<br>
 			{% include post-footer.html post = page %}
 			<br>
-			<br>
 			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5218363098774955" data-ad-slot="1650350426" data-ad-format="auto"></ins>
 			<br>
 			<div id="disqus_thread"></div>
@@ -58,16 +59,14 @@ layout: default
 		</div>
 		<div class="col-sm-3 hidden-xs">
 			{% include sidebar.html %}
-			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5218363098774955" data-ad-slot="1650350426" data-ad-format="auto"></ins>
-			<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-			<script>
-				(adsbygoogle = window.adsbygoogle || []).push({});
-				(adsbygoogle = window.adsbygoogle || []).push({});
-			</script>
 		</div>
 	</div>
 </div>
-<script src="//load.sumome.com/" data-sumo-site-id="afb9b2ec1a409937f7d82c7d9608e5b3eb9fff83e198fe4dc0222db718ac3f83" async="async"></script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 <script type="text/javascript">
     var disqus_shortname = 'wurst-client';
     (function() {
@@ -76,3 +75,4 @@ layout: default
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
 </script>
+<script src="//load.sumome.com/" data-sumo-site-id="afb9b2ec1a409937f7d82c7d9608e5b3eb9fff83e198fe4dc0222db718ac3f83" async="async"></script>
