@@ -7,7 +7,7 @@ A command in Wurst is similar to a command in vanilla Minecraft, except that it 
 
 Commands can not only be toggled by typing them into the chat, but also by keybinding them.
 
-## List of All Commands
+## List of Commands
 {% assign first = true %}
 {% capture rawcmds %}{% comment %}
   {% endcomment %}{% for page in site.pages %}{% comment %}
