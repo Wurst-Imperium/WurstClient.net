@@ -19,3 +19,5 @@ So if you only have a little bit of experience and you're not sure if it's enoug
 The requirements also include that you know the **basics of Git**, which is the version control system that we use for the Wurst-Client project. But don't be afraid if you don't know anything Git yet, because it's a pretty easy thing to learn.
 
 GitHub made a beginner-friendly Git tutorial at <a href="http://try.github.io/" target="_blank">try.github.io</a> that can teach you most of the things you'll need in only about 15 minutes.
+
+And while you're at it, [make a **GitHub account**](https://github.com/) if you don't have one yet. You'll need that later so that you can fork the Wurst-Client repository, make Pull Requests, etc.
