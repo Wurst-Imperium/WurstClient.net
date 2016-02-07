@@ -21,3 +21,5 @@ The requirements also include that you know the **basics of Git**, which is the 
 GitHub made a beginner-friendly Git tutorial at <a href="http://try.github.io/" target="_blank">try.github.io</a> that can teach you most of the things you'll need in only about 15 minutes.
 
 And while you're at it, [make a **GitHub account**](https://github.com/) if you don't have one yet. You'll need that later so that you can fork the Wurst-Client repository, make Pull Requests, etc.
+
+In terms of software, you should be using **Eclipse LUNA** as your IDE and **Windows 10** as your operating system. If you use a different software or a different operating system, you will likely need to do some things differently and you might run into issues that this tutorial can't help you with.
