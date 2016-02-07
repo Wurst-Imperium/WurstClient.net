@@ -7,7 +7,7 @@ So you want to contribute to Wurst, eh?
 
 Well you've come to the right place! The following step-by-step tutorial will teach you exactly how to do that.
 
-**By the way, thank you for taking the time to contribute!** Your contributions massively speed up the development of Wurst and thereby help us to make it a better client for everyone.
+*By the way, thank you for taking the time to contribute!* Your contributions massively speed up the development of Wurst and thereby help us to make it a better client for everyone.
 
 ## Requirements
 In terms of experience, you will need a bit of **knowledge about Java**, as Wurst is entirely written in Java just like Minecraft is.
