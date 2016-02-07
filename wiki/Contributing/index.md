@@ -23,3 +23,12 @@ GitHub made a beginner-friendly Git tutorial at <a href="http://try.github.io/" 
 And while you're at it, [make a **GitHub account**](https://github.com/) if you don't have one yet. You'll need that later so that you can fork the Wurst-Client repository, make Pull Requests, etc.
 
 In terms of software, you should be using **Eclipse LUNA** as your IDE and **Windows 10** as your operating system. If you use a different software or a different operating system, you will likely need to do some things differently and you might run into issues that this tutorial can't help you with.
+
+## 1. Signing the CLA
+The **Contributor License Agreement** (CLA) is basically the terms and conditions for contributing to Wurst. You have to accept them in order to contribute something.
+
+First, make sure that you're logged in to your GitHub account. Then go to [CLA-Assistant.io/Wurst-Imperium/Wurst-Client](https://cla-assistant.io/Wurst-Imperium/Wurst-Client), read the agreement and sign it by clicking the big blue button at the bottom.
+
+Here's a picture for clarification:
+
+![Contributor License Agreement of Wurst-Imperium/Wurst-Client](https://cloud.githubusercontent.com/assets/10100202/12874699/f719f444-cdd8-11e5-8307-ec1cb781769d.jpg)
