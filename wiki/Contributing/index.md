@@ -35,7 +35,7 @@ Here's a picture for clarification:
 
 
 ## 2. Forking & Cloning
-To fork the Wurst Client, simply **click the "Fork" button** on the [Wurst-Imperium/Wurst-Client repository](https://github.com/Wurst-Imperium/Wurst-Client).
+To fork the Wurst Client, simply **click the "Fork" button** on the [Wurst-Imperium/Wurst-Client repository](https://github.com/Wurst-Imperium/Wurst-Client). Forking basically creates a copy of the Wurst-Client repository that you can edit and that is saved on GitHub's servers.
 
 Here's another picture to show you where that button is:
 
