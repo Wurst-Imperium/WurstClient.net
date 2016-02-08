@@ -32,3 +32,11 @@ First, make sure that you're logged in to your GitHub account. Then go to [CLA-A
 Here's a picture for clarification:
 
 ![Contributor License Agreement of Wurst-Imperium/Wurst-Client](https://cloud.githubusercontent.com/assets/10100202/12874699/f719f444-cdd8-11e5-8307-ec1cb781769d.jpg)
+
+
+## 2. Forking & Cloning
+To fork the Wurst Client, simply **click the "Fork" button** on the [Wurst-Imperium/Wurst-Client repository](https://github.com/Wurst-Imperium/Wurst-Client).
+
+Here's another picture to show you where that button is:
+
+![Fork button on Wurst-Imperium/Wurst-Client](https://cloud.githubusercontent.com/assets/10100202/12882763/156949ec-ce54-11e5-9a21-5d3a777b9329.jpg)
