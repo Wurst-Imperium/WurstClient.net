@@ -40,3 +40,17 @@ To fork the Wurst Client, simply **click the "Fork" button** on the [Wurst-Imper
 Here's another picture to show you where that button is:
 
 ![Fork button on Wurst-Imperium/Wurst-Client](https://cloud.githubusercontent.com/assets/10100202/12882763/156949ec-ce54-11e5-9a21-5d3a777b9329.jpg)
+
+Cloning is a bit more complicated, but it's not too bad. There are several programs that can do this, we will be using **Eclipse eGit** because its built into Eclipse and doesn't require you to install any additional software.
+
+You will need the _Git Repositories_ view in order to use eGit. To get that view, first go to **Window > Show View > Other...** as shown in the screenshot below:
+
+![Eclipse eGit: Window > Show View > Other...](https://cloud.githubusercontent.com/assets/10100202/12884824/27a24e30-ce61-11e5-9f90-abca845a0575.jpg)
+
+Then select **Git > Git Repositories** and click the OK button.
+
+![Eclipse eGit: Git > Git Repositories](https://cloud.githubusercontent.com/assets/10100202/12885053/f89467d4-ce62-11e5-8d12-97a497c96399.jpg)
+
+Now the _Git Repositories_ view should appear somewhere on the screen. You can put it wherever you want, I like to place it in the bottom left corner.
+
+![Eclipse eGit: Placing the "Git Repositories" view in the bottom left corner](https://cloud.githubusercontent.com/assets/10100202/12885135/baf4b6d0-ce63-11e5-9050-b9f7e5afdbb0.jpg)
