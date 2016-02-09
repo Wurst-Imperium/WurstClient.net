@@ -1,5 +1,5 @@
 ---
-title: How to Contribute to the Wurst-Client project
+title: How to Contribute to the Wurst-Client project - Part 1
 layout: wiki
 category: Contributing
 ---
@@ -84,3 +84,8 @@ Most people save their GitHub repositories in **Documents/GitHub/RepositoryName*
 Finally, **click "Finish"** and wait for it clone. Now you're done with the cloning part.
 
 ![Eclipse eGit: Local Destination](https://cloud.githubusercontent.com/assets/10100202/12898543/84e98cc4-cead-11e5-9057-2565a0c139bc.jpg)
+
+<a href="/wiki/Contributing/part2/" class="btn btn-default">
+  <span class="octicon octicon-arrow-right"></span>
+  Continue with Part 2
+</a>
