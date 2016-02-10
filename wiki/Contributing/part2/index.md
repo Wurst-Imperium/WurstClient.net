@@ -9,7 +9,6 @@ category: Contributing
 </a>
 
 ## 3. Decompiling Minecraft
-
 The repository that you just cloned only contains the source code of Wurst itself. You will also need the source code of Minecraft in order to compile it without errors and run it in Eclipse's debug mode.
 
 You get that source code by decompiling **Minecraft 1.8** using **MCP 9.10**. It's important that the versions are correct, as any other versions will be incompatible to Wurst.
