@@ -52,3 +52,16 @@ Make sure it looks like the screenshot below, then **click OK** on both of the d
 ![Eclipse Code Style: Edit Template](https://cloud.githubusercontent.com/assets/10100202/12987103/dfb3c38c-d0fa-11e5-9bab-cd5c0570a7d7.jpg)
 
 And that is it for this step. You can now use <kbd>Ctrl</kbd> <kbd>Shift</kbd> <kbd>F</kbd> to format your code according to our style rules.
+
+## 6. Adding the Libraries
+As you might have noticed, Eclipse is still showing you a lot of errors for the Wurst Client project. That is partially because the libraries are missing and partially because the modified Minecraft code is missing.
+
+Right on the Wurst Client project and select **Build Path > Configure Build Path**.
+
+![Eclipse Libraries: Build Path > Configure Build Path](https://cloud.githubusercontent.com/assets/10100202/12987883/68341358-d0fe-11e5-99e2-543821007a12.jpg)
+
+On the dialog that appears, click **Add External JARs** and add all of the JAR files in "YourMcpFolder/jars/libraries" and in the sub-folders of that folder. I highly recommend moving them all into one folder before you do this, as that makes this process much easier.
+
+Also add **1.8.jar** from "YourMcpFolder/jars/versions/1.8" and **slick.jar**, which you can download at the [Slick Ninjacave website](http://slick.ninjacave.com/).
+
+![Eclipse Libraries: Java Build Path](https://cloud.githubusercontent.com/assets/10100202/12988289/4f019cdc-d100-11e5-9dcc-c8298fbb2596.jpg)
