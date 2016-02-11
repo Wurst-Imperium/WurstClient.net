@@ -65,3 +65,8 @@ On the dialog that appears, click **Add External JARs** and add all of the JAR f
 Also add **1.8.jar** from "YourMcpFolder/jars/versions/1.8" and **slick.jar**, which you can download at the [Slick Ninjacave website](http://slick.ninjacave.com/).
 
 ![Eclipse Libraries: Java Build Path](https://cloud.githubusercontent.com/assets/10100202/12988289/4f019cdc-d100-11e5-9dcc-c8298fbb2596.jpg)
+
+<a href="/wiki/Contributing/part4/" class="btn btn-default">
+  <span class="octicon octicon-arrow-right"></span>
+  Continue with Part 4
+</a>
