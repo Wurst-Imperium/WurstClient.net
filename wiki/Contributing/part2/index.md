@@ -55,3 +55,8 @@ Then **add "\Wurst Client"** at the end of the "Location" field so that the path
 Once you got that, **click "Finish"** (not "Next") and you're done with this step.
 
 ![Eclipse Import: Create a Java Project](https://cloud.githubusercontent.com/assets/10100202/12976295/442ab650-d0c3-11e5-9603-671a6446fc9f.jpg)
+
+<a href="/wiki/Contributing/part3/" class="btn btn-default">
+  <span class="octicon octicon-arrow-right"></span>
+  Continue with Part 3
+</a>
