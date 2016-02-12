@@ -1,5 +1,5 @@
 ---
-title: How to Contribute to the Wurst-Client project - Part 3
+title: How to Contribute to the Wurst-Client project - Part 4
 layout: wiki
 category: Contributing
 ---
