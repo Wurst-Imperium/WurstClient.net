@@ -25,7 +25,7 @@ Finally, **click "Apply"** to save the changes.
 
 ![Eclipse Code Style: Clean Up](https://cloud.githubusercontent.com/assets/10100202/12984553/9657b0e2-d0ee-11e5-916b-80f5cd50fafd.jpg)
 
-Now do the same thing with **Java Code Style > Formatter**. Just do what you did with Clean Up, except that you import **"codestyle.xml"** instead of "cleanup.xml".
+Now do the same thing with **Java Code Style > Formatter**. Just do what you did with Clean Up, except that you import **"formatter.xml"** instead of "cleanup.xml".
 
 ![Eclipse Code Style: Formatter](https://cloud.githubusercontent.com/assets/10100202/12985601/cf542088-d0f3-11e5-9ea3-c3f7ade93515.jpg)
 
