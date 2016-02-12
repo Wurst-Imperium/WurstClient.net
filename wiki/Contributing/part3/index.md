@@ -35,7 +35,7 @@ Select **Code > New Java Files** and click **Edit**.
 
 ![Eclipse Code Style: Code Templates](https://cloud.githubusercontent.com/assets/10100202/12986437/8ba367be-d0f7-11e5-9e89-c527928e449e.jpg)
 
-A second dialog will pop up. **Paste in the follwoing text** above all of the existing lines:
+A second dialog will pop up. **Paste in the following text** above all of the existing lines:
 
 ```
 /*
