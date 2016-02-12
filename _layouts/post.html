@@ -24,9 +24,12 @@ layout: default
 						</div>
 					{% endif %}
 				</div>
-				{% if page.video-id %}
+			{% if page.video-id %}
 			</a>
-				{% endif %}
+			<a href="https://www.youtube.com/watch?v={{ page.video-id }}" target="_blank">
+				>>> Click here to watch the video on YouTube
+			</a>
+			{% endif %}
 			{% endfor %}
 			<div class="post-content">
 				{{ content }}
