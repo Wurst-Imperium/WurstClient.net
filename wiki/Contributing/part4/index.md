@@ -55,7 +55,7 @@ Looking good, except for that "NO-HEAD" error that appeared out of nowhere.
 
 ![Patching Minecraft: NO-HEAD](https://cloud.githubusercontent.com/assets/10100202/12990176/2c00e7f2-d109-11e5-8688-b7e1756e2962.jpg)
 
-You can fix that by making an initial commit for this repository. To do that, make sure that the Minecraft project is selected in the Package Explorer and then press <kbd>Ctrl</kbd> <kbd>#</kbd>.
+You can fix that by making an initial commit for this repository. To do that, make sure that the Minecraft project is selected in the Package Explorer and then press <kbd>Ctrl</kbd> <kbd>#</kbd>. Additionally, you can also right click the project and go to Team > Commit if you don't have the # button.
 
 On the dialog that pops up, type in **"vanilla Minecraft"** or something like that. Then click on the small checked checkbox on the right to **select everything**.
 
