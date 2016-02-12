@@ -12,10 +12,4 @@
       Download {{ post.Wurst-version }}
     </a>
   {% endif %}
-  {% if post.video-id %}
-    <a class="btn btn-{% if page == post and post.category == "Video" %}primary{% else %}default{% endif %}" href="https://www.youtube.com/watch?v={{ post.video-id }}" target="_blank">
-      <span class="octicon octicon-eye"></span>
-      Watch Video
-    </a>
-  {% endif %}
 </footer>
