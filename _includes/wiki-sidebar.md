@@ -1,7 +1,7 @@
-[Main Page](/wiki/Main_Page)
+[Main Page](/wiki/Main_Page/)
 
-[Mods](/wiki/Mods)
+[Mods](/wiki/Mods/)
 
-[Commands](/wiki/Commands)
+[Commands](/wiki/Commands/)
 
-[How to write a wiki page](/wiki/Tutorials/How-to-write-a-wiki-page)
+[How to Contribute](/wiki/Contributing/part1/)
