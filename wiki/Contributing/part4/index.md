@@ -55,7 +55,7 @@ Looking good, except for that "NO-HEAD" error that appeared out of nowhere.
 
 ![Patching Minecraft: NO-HEAD](https://cloud.githubusercontent.com/assets/10100202/12990176/2c00e7f2-d109-11e5-8688-b7e1756e2962.jpg)
 
-You can fix that by making an initial commit for this repository. To do that, make sure that the Minecraft project is selected in the Package Explorer and then press <kbd>Ctrl</kbd> <kbd>#</kbd>.
+You can fix that by making an initial commit for this repository. To do that, make sure that the Minecraft project is selected in the Package Explorer and then press <kbd>Ctrl</kbd> <kbd>#</kbd>. Additionally, you can also right click the project and go to **Team > Commit** if you don't have the <kbd>#</kbd> button.
 
 On the dialog that pops up, type in **"vanilla Minecraft"** or something like that. Then click on the small checked checkbox on the right to **select everything**.
 
@@ -98,7 +98,7 @@ Once you have that, click **Ok** and go back.
 
 ![options-step-4](https://cloud.githubusercontent.com/assets/10100202/13003745/b2ffda6a-d177-11e5-92c1-9e58db7b2154.jpg)
 
-Now commit the changes that you made. Check the checkbox at the top left to **select all changes**, type in a commit message and click **Commit to master**.
+Now commit the changes that you made. Check the checkbox at the top left to **select all changes**, type in a commit message, and click **Commit to master**.
 
 ![options-step-5](https://cloud.githubusercontent.com/assets/10100202/13004053/5710f016-d179-11e5-982e-72f8123e01d3.jpg)
 
@@ -141,13 +141,13 @@ If you now take a look at Eclipse, you'll notice that there is a **"tmp" folder*
 
 ![Patching Minecraft: Deleting the "tmp" folder](https://cloud.githubusercontent.com/assets/10100202/12999898/77dedeae-d154-11e5-9a8f-8dc7143b49fb.jpg)
 
-Then commit the applied modifications. You've seen this before: Press <kbd>Ctrl</kbd> <kbd>#</kbd> while the Minecraft project is selected, type in a commit message, select all chnages and press **Commit**.
+Then commit the applied modifications. You've seen this before: Press <kbd>Ctrl</kbd> <kbd>#</kbd> while the Minecraft project is selected (or **Team > Commit**) type in a commit message, select all changes and press **Commit**.
 
 ![Patching Minecraft: Commit Changes](https://cloud.githubusercontent.com/assets/10100202/13010012/dfdf1316-d19f-11e5-8ef9-483c7141661a.jpg)
 
-Almost there. You have the Wurst source, the libraries and the modofied Minecraft source code, but you're still getting errors.
+Almost there. You have the Wurst source, the libraries and the modified Minecraft source code, but you're still getting errors.
 
-The final step to fix those errors is to link the Wurst code to he Minecraft code. Don't worry, this step is easy.
+The final step to fix those errors is to link the Wurst code to the Minecraft code. Don't worry, this step is easy.
 
 Right click on the Wurst Client project and select **New > Folder**.
 
@@ -165,7 +165,7 @@ Right click on the "minecraft" folder and select **Build Path > Use as Source Fo
 
 ![linking-step-3](https://cloud.githubusercontent.com/assets/10100202/13011144/aa17170a-d1a5-11e5-9adf-4d607adb1b96.jpg)
 
-Now the Minecraft source code is linked to the Wurst Client project and most of the errors should have disappeared. To fix the rmaining ones, just do the same thing the other way around and link the Wurst source code to the Minecraft project.
+Now the Minecraft source code is linked to the Wurst Client project and most of the errors should have disappeared. To fix the remaining ones, just do the same thing the other way around and link the Wurst source code to the Minecraft project.
 
 Right click on the Minecraft project and select **New > Folder** again (I don't think you need another screenshot of that).
 
