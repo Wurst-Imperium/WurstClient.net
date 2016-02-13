@@ -98,7 +98,7 @@ Once you have that, click **Ok** and go back.
 
 ![options-step-4](https://cloud.githubusercontent.com/assets/10100202/13003745/b2ffda6a-d177-11e5-92c1-9e58db7b2154.jpg)
 
-Now commit the changes that you made. Check the checkbox at the top left to **select all changes**, type in a commit message and click **Commit to master**.
+Now commit the changes that you made. Check the checkbox at the top left to **select all changes**, type in a commit message, and click **Commit to master**.
 
 ![options-step-5](https://cloud.githubusercontent.com/assets/10100202/13004053/5710f016-d179-11e5-982e-72f8123e01d3.jpg)
 
