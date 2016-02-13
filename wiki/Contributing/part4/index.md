@@ -55,7 +55,7 @@ Looking good, except for that "NO-HEAD" error that appeared out of nowhere.
 
 ![Patching Minecraft: NO-HEAD](https://cloud.githubusercontent.com/assets/10100202/12990176/2c00e7f2-d109-11e5-8688-b7e1756e2962.jpg)
 
-You can fix that by making an initial commit for this repository. To do that, make sure that the Minecraft project is selected in the Package Explorer and then press <kbd>Ctrl</kbd> <kbd>#</kbd>. Additionally, you can also right click the project and go to Team > Commit if you don't have the <kbd>#</kbd> button.
+You can fix that by making an initial commit for this repository. To do that, make sure that the Minecraft project is selected in the Package Explorer and then press <kbd>Ctrl</kbd> <kbd>#</kbd>. Additionally, you can also right click the project and go to **Team > Commit** if you don't have the <kbd>#</kbd> button.
 
 On the dialog that pops up, type in **"vanilla Minecraft"** or something like that. Then click on the small checked checkbox on the right to **select everything**.
 
@@ -141,7 +141,7 @@ If you now take a look at Eclipse, you'll notice that there is a **"tmp" folder*
 
 ![Patching Minecraft: Deleting the "tmp" folder](https://cloud.githubusercontent.com/assets/10100202/12999898/77dedeae-d154-11e5-9a8f-8dc7143b49fb.jpg)
 
-Then commit the applied modifications. You've seen this before: Press <kbd>Ctrl</kbd> <kbd>#</kbd> while the Minecraft project is selected, type in a commit message, select all chnages and press **Commit**.
+Then commit the applied modifications. You've seen this before: Press <kbd>Ctrl</kbd> <kbd>#</kbd> while the Minecraft project is selected (or **Team > Commit**) type in a commit message, select all changes and press **Commit**.
 
 ![Patching Minecraft: Commit Changes](https://cloud.githubusercontent.com/assets/10100202/13010012/dfdf1316-d19f-11e5-8ef9-483c7141661a.jpg)
 
