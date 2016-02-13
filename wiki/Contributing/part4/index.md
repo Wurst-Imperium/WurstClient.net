@@ -145,9 +145,9 @@ Then commit the applied modifications. You've seen this before: Press <kbd>Ctrl<
 
 ![Patching Minecraft: Commit Changes](https://cloud.githubusercontent.com/assets/10100202/13010012/dfdf1316-d19f-11e5-8ef9-483c7141661a.jpg)
 
-Almost there. You have the Wurst source, the libraries and the modofied Minecraft source code, but you're still getting errors.
+Almost there. You have the Wurst source, the libraries and the modified Minecraft source code, but you're still getting errors.
 
-The final step to fix those errors is to link the Wurst code to he Minecraft code. Don't worry, this step is easy.
+The final step to fix those errors is to link the Wurst code to the Minecraft code. Don't worry, this step is easy.
 
 Right click on the Wurst Client project and select **New > Folder**.
 
@@ -165,7 +165,7 @@ Right click on the "minecraft" folder and select **Build Path > Use as Source Fo
 
 ![linking-step-3](https://cloud.githubusercontent.com/assets/10100202/13011144/aa17170a-d1a5-11e5-9adf-4d607adb1b96.jpg)
 
-Now the Minecraft source code is linked to the Wurst Client project and most of the errors should have disappeared. To fix the rmaining ones, just do the same thing the other way around and link the Wurst source code to the Minecraft project.
+Now the Minecraft source code is linked to the Wurst Client project and most of the errors should have disappeared. To fix the remaining ones, just do the same thing the other way around and link the Wurst source code to the Minecraft project.
 
 Right click on the Minecraft project and select **New > Folder** again (I don't think you need another screenshot of that).
 
