@@ -13,7 +13,7 @@ A server running Minecraft 1.8 - 1.8.5 without Spigot is required in order for t
 {% include video.html id = "JAhcIuu9myE" %}
 
 ## Usage
-The easiest way to find servers that have the right version is to use the **ServerFinder**. The ServerFinder is basically a tool for finding large amounts of easy-to-grief servers within just a few minutes. Just press the ServerFinder button in the Muliplayer menu, type in a numeric server IP (like `85.131.231.92`) and press the <kbd>Search</kbd> button. For a more detailed tutorial with pictures, have a look at the [ServerFinder wiki page](/wiki/Special_Features/Server_Finder/).
+The easiest way to find servers that have the right version is to use the **ServerFinder**. The ServerFinder is basically a tool for finding large amounts of easy-to-grief servers within just a few minutes. Just press the ServerFinder button in the Multiplayer menu, type in a numeric server IP (like `85.131.231.92`) and press the <kbd>Search</kbd> button. For a more detailed tutorial with pictures, have a look at the [ServerFinder wiki page](/wiki/Special_Features/Server_Finder/).
 
 You should now have a huge list of servers with green text showing their versions. Just look for one that has the correct version and join it. Now you need to get a sign, but don't place it yet. You first need to turn on the OP-Sign mod (press <kbd>LCtrl</kbd>, then click the <kbd>OP-Sign</kbd> button in the `Exploits` window).
 
