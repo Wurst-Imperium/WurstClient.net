@@ -5,7 +5,7 @@ layout: wiki
 ## Definition
 A mod in Wurst is a cheat that can be toggled using the `.t` command. It is also possible (and usually preferred) to toggle a mod through a keybind instead. This can be done by keybinding the `.t` command for that mod. For example, the command to toggle the Killaura mod is `.t killaura`.
 
-There are two different kinds of mods: the normal mods, which can additionally be toggled through a button in the Navigaot, and the hidden mods, which are hidden from the Navigator, but can still be toggled through other means.
+There are two different kinds of mods: the normal mods, which can additionally be toggled through a button in the Navigator, and the hidden mods, which are hidden from the Navigator, but can still be toggled through other means.
 
 ## List of Mods
 - AntiAFK
@@ -32,7 +32,7 @@ There are two different kinds of mods: the normal mods, which can additionally b
 - AutoWalk
 - BaseFinder
 - Blink
-- Blockhit
+- BlockHit
 - BowAimbot
 - BuildRandom
 - BunnyHop
