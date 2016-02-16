@@ -32,7 +32,7 @@ Mods:
   AutoWalk:
   BaseFinder:
   Blink:
-  Blockhit:
+  BlockHit:
   BowAimbot:
   BuildRandom:
   BunnyHop:
@@ -148,12 +148,15 @@ Commands:
   .potion: /wiki/Commands/potion
   .protect: /wiki/Commands/protect
   .rename: /wiki/Commands/rename
-  .repair: /wiki/Commands/repair
+  .repair:
   .rv: /wiki/Commands/rv
   .say: /wiki/Commands/say
   .search: /wiki/Commands/search
+  .setcheckbox:
+  .setmode:
+  .setslider:
   .spammer: /wiki/Commands/spammer
-  .sv: /wiki/Commands/sv
+  .sv: 
   .t: /wiki/Commands/t
   .taco: /wiki/Commands/taco
   .throw: /wiki/Commands/throw
