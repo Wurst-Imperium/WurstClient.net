@@ -19,4 +19,4 @@ It is possible (though not very likely) to get kicked from the server with the m
 
 You would normally get kicked for flying after staying in the air for at least 4 seconds. Regen makes that timer run 1000 times faster, so you would get kicked after 4 milliseconds.
 
-Wurst will try to prevent that from happening by only increasing the regeneration speed while you are on the ground, but it can rarely happen that the server thinks you are in the air while the client tinks you are on the ground, causing you to get kicked for flying.
+Wurst will try to prevent that from happening by only increasing the regeneration speed while you are on the ground, but it can rarely happen that the server thinks you are in the air while the client thinks you are on the ground, causing you to get kicked for flying.
