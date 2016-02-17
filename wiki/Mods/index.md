@@ -112,6 +112,7 @@ There are two different kinds of mods: the normal mods, which can additionally b
 - Throw
 - Timer
 - Tired
+- TP-Aura
 - Tracers
 - TriggerBot
 - TrollPotion
