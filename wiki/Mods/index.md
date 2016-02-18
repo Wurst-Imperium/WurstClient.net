@@ -85,6 +85,7 @@ There are two different kinds of mods: the normal mods, which can additionally b
 - NameProtect
 - NameTags
 - Navigator
+- NoClip
 - NoFall
 - NoHurtcam
 - NoSlowdown
