@@ -177,4 +177,11 @@ The folder name will be set to "src" again. This time, rename it to **"wurst"** 
 
 Finally, right click on the "wurst" folder and select **Build Path > Use as Source Folder**.
 
-Congratulations! Now you are completely finished and all errors should have disappeared (Minecraft may still show some warnings).
+Congratulations! Now you are completely finished with the setup and all errors should have disappeared (Minecraft may still show some warnings).
+
+Part 5 of this tutorial will be all about creating a Pull Request and submitting your contributions.
+
+<a href="/wiki/Contributing/part5/" class="btn btn-default">
+  <span class="octicon octicon-arrow-right"></span>
+  Continue with Part 5
+</a>
