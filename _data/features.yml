@@ -1,19 +1,20 @@
 Special Features:
   Alt Manager:
-  Book Hack:
+  Book Hack: /wiki/Special_Features/Force_OP_(BookHack)/
   Easter Eggs:
-  Session Stealer:
-  ServerFinder:
+  Session Stealer: /wiki/Special_Features/Force_OP_(Session_Stealer)/
+  ServerFinder: /wiki/Special_Features/Server_Finder/
   Wurst-Bot:
   Target:
   Zoom:
 Mods:
-  AntiAFK: /wiki/Mods/AntiAFK/
-  AntiBlind: /wiki/Mods/AntiBlind/
-  AntiCactus: /wiki/Mods/AntiCactus/
-  AntiFire: /wiki/Mods/AntiFire/
-  AntiKnockback: /wiki/Mods/AntiKnockback/
-  AntiPotion: /wiki/Mods/AntiPotion/
+  AntiAFK:
+  AntiBlind:
+  AntiCactus:
+  AntiFire:
+  AntiKnockback:
+  AntiMAC:
+  AntiPotion:
   AntiSpam:
   ArenaBrawl:
   AutoArmor:
@@ -38,6 +39,7 @@ Mods:
   BunnyHop:
   CaveFinder:
   ChestESP:
+  ClickAura:
   CMD-Block:
   CrashChest:
   CrashItem:
@@ -82,13 +84,15 @@ Mods:
   MultiAura:
   NameProtect:
   NameTags:
+  Navigator:
+  NoClip:
   NoFall:
   NoHurtcam:
   NoSlowdown:
   NoWeb:
   NukerLegit:
   Nuker:
-  Survival OP-Sign:
+  Survival OP-Sign: /wiki/Mods/OP-Sign_(Force_OP)/
   Overlay:
   Panic:
   Phase:
@@ -126,6 +130,7 @@ Commands:
   .binds: /wiki/Commands/binds
   .blink: /wiki/Commands/blink
   .clear: /wiki/Commands/clear
+  .copyitem:
   .damage: /wiki/Commands/damage
   .drop: /wiki/Commands/drop
   .enchant: /wiki/Commands/enchant
@@ -143,6 +148,7 @@ Commands:
   .ip: /wiki/Commands/ip
   .jump: /wiki/Commands/jump
   .leave: /wiki/Commands/leave
+  .modify:
   .nothing: /wiki/Commands/nothing
   .nuker: /wiki/Commands/nuker
   .path: /wiki/Commands/path
