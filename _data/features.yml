@@ -13,6 +13,7 @@ Mods:
   AntiCactus:
   AntiFire:
   AntiKnockback:
+  AntiMAC
   AntiPotion:
   AntiSpam:
   ArenaBrawl:
@@ -38,7 +39,7 @@ Mods:
   BunnyHop:
   CaveFinder:
   ChestESP:
-  ClickGUI:
+  ClickAura
   CMD-Block:
   CrashChest:
   CrashItem:
@@ -83,6 +84,7 @@ Mods:
   MultiAura:
   NameProtect:
   NameTags:
+  Navigator
   NoFall:
   NoHurtcam:
   NoSlowdown:
