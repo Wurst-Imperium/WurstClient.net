@@ -13,6 +13,7 @@ There are two different kinds of mods: the normal mods, which can additionally b
 - AntiCactus
 - AntiFire
 - AntiKnockback
+- AntiMAC
 - AntiPotion
 - AntiSpam
 - ArenaBrawl
@@ -38,7 +39,7 @@ There are two different kinds of mods: the normal mods, which can additionally b
 - BunnyHop
 - CaveFinder
 - ChestESP
-- ClickGUI
+- ClickAura
 - CMD-Block
 - CrashChest
 - CrashItem
@@ -83,6 +84,7 @@ There are two different kinds of mods: the normal mods, which can additionally b
 - MultiAura
 - NameProtect
 - NameTags
+- Navigator
 - NoFall
 - NoHurtcam
 - NoSlowdown
