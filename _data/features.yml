@@ -126,34 +126,34 @@ Mods:
 Commands:
   .addalt: /wiki/Commands/addalt
   .annoy: /wiki/Commands/annoy
-  .author: /wiki/Commands/author
+  .author:
   .binds: /wiki/Commands/binds
-  .blink: /wiki/Commands/blink
-  .clear: /wiki/Commands/clear
+  .blink:
+  .clear:
   .copyitem:
   .damage: /wiki/Commands/damage
-  .drop: /wiki/Commands/drop
+  .drop:
   .enchant: /wiki/Commands/enchant
   .fastbreak: /wiki/Commands/fastbreak
-  .features: /wiki/Commands/features
-  .follow: /wiki/Commands/follow
+  .features:
+  .follow:
   .friends: /wiki/Commands/friends
-  .getpos: /wiki/Commands/getpos
-  .ghosthand: /wiki/Commands/ghosthand
+  .getpos:
+  .ghosthand:
   .give: /wiki/Commands/give
-  .gm: /wiki/Commands/gm
-  .goto: /wiki/Commands/goto
-  .help: /wiki/Commands/help
-  .invsee: /wiki/Commands/invsee
-  .ip: /wiki/Commands/ip
-  .jump: /wiki/Commands/jump
+  .gm:
+  .goto:
+  .help:
+  .invsee:
+  .ip:
+  .jump:
   .leave: /wiki/Commands/leave
   .modify:
-  .nothing: /wiki/Commands/nothing
+  .nothing:
   .nuker: /wiki/Commands/nuker
   .path: /wiki/Commands/path
   .potion: /wiki/Commands/potion
-  .protect: /wiki/Commands/protect
+  .protect:
   .rename: /wiki/Commands/rename
   .repair:
   .rv: /wiki/Commands/rv
@@ -164,9 +164,9 @@ Commands:
   .setslider:
   .spammer: /wiki/Commands/spammer
   .sv: 
-  .t: /wiki/Commands/t
-  .taco: /wiki/Commands/taco
-  .throw: /wiki/Commands/throw
+  .t:
+  .taco:
+  .throw:
   .tp: /wiki/Commands/tp
   .vclip: /wiki/Commands/vclip
   .wms: /wiki/Commands/wms
