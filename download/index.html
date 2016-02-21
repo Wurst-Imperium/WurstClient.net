@@ -1,5 +1,145 @@
 ---
-layout: redirect
-redirect_url: /downloads/
-no_index: true
+title: Wurst Client Download for Minecraft 1.8.X
+exacttitle: true
 ---
+{% assign currentVersion = "https://github.com/Wurst-Imperium/Wurst-Client/releases/latest" %}
+{% for post in site.posts %}
+  {% if post.category == "Wurst-update" and currentVersion == "https://github.com/Wurst-Imperium/Wurst-Client/releases/latest" %}
+    {% unless post.Wurst-version contains "pre" %}
+      {% assign currentVersion = post.Wurst-version %}
+      {% assign latestUpdate = post %}
+    {% endunless %}
+  {% endif %}
+{% endfor %}
+{% assign minecraftVersions = "1.8 - 1.8.9" %}
+{% capture downloadLink %}https://github.com/Wurst-Imperium/Wurst-Client/releases/download/{{ currentVersion }}/Wurst-Client-{{ currentVersion }}.zip{% endcapture %}
+<div class="container-fluid">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <h1>Download Wurst</h1>
+        <p>
+          <img src="https://drive.google.com/uc?id=0B2YeSS9tm5zLMF9NWjNZYnNqSTA" alt="downloads counter" />
+          <br>
+          <img src="https://img.shields.io/badge/current_version-{{ currentVersion }}-brightgreen.svg" alt="current version: {{ currentVersion }}" />
+          <br>
+          <img src="https://img.shields.io/badge/Minecraft_versions-{{ minecraftVersions | replace: ' ', '_' | replace: '-', '--' }}-brightgreen.svg" alt="Minecraft versions: {{ minecraftVersions }}" />
+        </p>
+        <p>
+          <a class="btn btn-primary btn-lg" href="{{ downloadLink }}">
+            <span class="octicon octicon-cloud-download"></span>
+            Download Wurst
+            {{ currentVersion }}
+          </a>
+        </p>
+        <p class="collapse in" id="old-versions-link">
+          <a href="javascript:$('#old-versions').collapse('toggle');">older versions</a>
+        </p>
+      </div>
+      <div class="col-sm-6">
+        <p>
+          <br class="visible-sm" />
+          <img class="img-responsive" src="https://cloud.githubusercontent.com/assets/10100202/13201361/2d5ae2f8-d86e-11e5-86fa-bb4d6f78af7e.png" alt="Minecraft Wurst Client" />
+        </p>
+      </div>
+      <div class="col-xs-12 collapse" id="old-versions">
+        <p>
+          <h2>Older Versions</h2>
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th>Name / Link</th>
+                <th>Type</th>
+                <th>Wurst versions</th>
+                <th>Minecraft versions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <a href="https://github.com/Wurst-Imperium/Wurst-Client/releases">
+                    Releases on GitHub
+                  </a>
+                </td>
+                <td>Open Source</td>
+                <td>v1.4 - {{ currentVersion }}</td>
+                <td>{{ minecraftVersions }}</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="https://old.wurst-client.tk/download/wurst-client/wurst-client-for-minecraft-1-8/releases">
+                    Outdated Releases
+                  </a>
+                </td>
+                <td>Closed Source</td>
+                <td>v1.3 - v1.4.1</td>
+                <td>1.8 - 1.8.9</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="https://old.wurst-client.tk/download/wurst-client/wurst-client-for-minecraft-1-7-x/releases">
+                    Wurst for Minecraft 1.7.X
+                  </a>
+                </td>
+                <td>Closed Source</td>
+                <td>v1.0 - v1.3.1</td>
+                <td>1.7.2 - 1.7.10</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="https://old.wurst-client.tk/download/wurst-client/wurst-client-for-minecraft-1-7-x/public-beta">
+                    Public Beta
+                  </a>
+                </td>
+                <td>Closed Source</td>
+                <td>v1.8 Beta - v1.10.2 Beta</td>
+                <td>1.7.2 - 1.7.10</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="https://old.wurst-client.tk/download/wurst-client/wurst-client-for-minecraft-1-7-x/closed-beta">
+                    Closed Beta
+                  </a>
+                </td>
+                <td>Closed Source</td>
+                <td>v1.0 Beta - v1.7.2 Beta</td>
+                <td>1.7.2 - 1.7.10</td>
+              </tr>
+            </tbody>
+          </table>
+        </p>
+      </div>
+    </div>
+  </div>
+  <br />
+</div>
+<div class="container-fluid lightgray">
+  <br />
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <p>
+          <br class="hidden-lg" />
+          <a href="{{ latestUpdate.url | remove: "index.html" }}">
+          	<img class="img-responsive img-rounded" src="{{ latestUpdate.images[0].link }}">
+          </a>
+        </p>
+      </div>
+      <div class="col-sm-6">
+        <article>
+          <h1>New in Wurst {{ currentVersion }}</h1>
+          <p>
+            {{ latestUpdate.excerpt | truncatewords: 48 }}
+          </p>
+          <p>
+            <a href="{{ latestUpdate.url | remove: "index.html" }}" class="btn btn-primary">
+              <span class="octicon octicon-book"></span>
+              Read More
+            </a>
+          </p>
+        </article>
+      </div>
+    </div>
+  </div>
+  <br />
+</div>
