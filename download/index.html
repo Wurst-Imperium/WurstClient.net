@@ -118,11 +118,9 @@ exacttitle: true
   <div class="container">
     <div class="row">
       <div class="col-sm-6">
-        <div class="thumbnail">
-  				<a href="{{ latestUpdate.url | remove: "index.html" }}">
-  					<img class="img-rounded" src="{{ latestUpdate.images[0].link }}">
-  				</a>
-  			</div>
+				<a href="{{ latestUpdate.url | remove: "index.html" }}">
+					<img class="img-responsive img-rounded" src="{{ latestUpdate.images[0].link }}">
+				</a>
       </div>
       <div class="col-sm-6">
         <article>
@@ -140,4 +138,5 @@ exacttitle: true
       </div>
     </div>
   </div>
+  <br />
 </div>
