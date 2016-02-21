@@ -82,6 +82,11 @@ kbd {
   margin-right: 0;
 }
 
+/* light gray background */
+.lightgray {
+  background-color: #f5f5f5;
+}
+
 /* Wurst Sliders */
 html, body {
   width: 100%;
