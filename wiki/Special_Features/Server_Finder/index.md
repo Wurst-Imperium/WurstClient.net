@@ -3,42 +3,24 @@ title: Server Finder
 layout: wiki
 category: Special Feature
 ---
-## Overview
-The Wurst Client ServerFinder is a tool for finding griefable Minecraft servers quickly and with very little effort. It usually finds around 50 servers per minute.
+## Text Tutorial
+First off, you will need to manually find one server IP to get started. Just go to a random server list website and copy one of the IPs.
 
-## Text Tutorial (with Pictures)
-1. **Get an IP** to start with. Just [Google `minecraft server ip`](https://www.google.com/?gfe_rd=cr&ei=FCnXVKG8CIbCUK77gPAB#q=minecraft+server+ip&tbs=qdr:d) and you're good to go.
-<br>
-<br>
-![random server list website](https://cloud.githubusercontent.com/assets/10100202/6096406/3b08f434-af8f-11e4-992f-6b8451316599.jpg)
-<br>
-<br>
+![random server list website](https://cloud.githubusercontent.com/assets/10100202/13251167/d7380f0a-da2e-11e5-8fee-6f1b5e897ce4.jpg)
 
-2. **Convert the IP.** If the IP you found looks like `109.168.212.27`, you can skip this step. If it has something like `:25565` at the end, remove that. If it looks like `mineplex.eu`, [open the console](http://www.wikihow.com/Open-the-Command-Prompt-in-Windows) and type `ping YOUR_IP`. You will then see an IP that looks like `109.168.212.27`.
-<br>
-<br>
-![converting a Minecraft server IP using the Microsoft Windows command prompt](https://cloud.githubusercontent.com/assets/10100202/6096215/e1f1d3d8-af85-11e4-8b55-82ca2b109f6c.jpg)
-<br>
-<br>
+Then paste that IP into Server Finder, optionally configure the maximum amount of threads and press the "Search" button. More threads make it run faster, but also require a faster computer and a faster internet connection. If you're not sure, just leave it at the default value of 128 threads.
 
-3. **Start ServerFinder** with the converted IP. The `Max. threads` option below the IP field determines how many servers it can check at the same time. The higher this number is, the faster it will be, but it will also cause more lag.
-<br>
-<br>
-![using ServerFinder](https://cloud.githubusercontent.com/assets/10100202/6096277/0df6e75e-af89-11e4-9c7c-1dcaab63e3a5.jpg)
-<br>
-<br>
+![Server Finder](https://cloud.githubusercontent.com/assets/10100202/13251168/d73cac04-da2e-11e5-8227-5c2fc5c40c87.jpg)
 
-4. **Run a Clean Up** once ServerFinder is done. Some of the servers that it found will be broken and Clean Up will remove these broken servers.
-<br>
-<br>
-![using CleanUp](https://cloud.githubusercontent.com/assets/10100202/6096289/e20644e0-af89-11e4-9dff-f401d0b218be.jpg)
-<br>
-<br>
+Once Server Finder is done, and you go back to the server list, you will notice that some of the servers it found will be broken. Wait until all servers are done loading, so that you can see which ones are working and which ones aren't.
 
-5. **That's it!** I found 96 servers this time. How many can you find?
-<br>
-<br>
-![Minecraft server selection screen showing 96 griefable servers](https://cloud.githubusercontent.com/assets/10100202/6096345/1ef3f8d2-af8c-11e4-9a23-14e2805162bb.jpg)
+Then click the "Clean Up" button and run a Clean Up with the default settings to get rid of the broken servers. Make sure that your Clean Up settings match the ones in this screenshot:
+
+![Clean Up settings](https://cloud.githubusercontent.com/assets/10100202/13251169/d7413e2c-da2e-11e5-9f6d-8577523312ec.jpg)
+
+And that's it. I found 285 servers this time. How many can you find?
+
+![285 servers found through Server Finder](https://cloud.githubusercontent.com/assets/10100202/13251166/d7338336-da2e-11e5-8bfd-48f7bdeb4e1e.jpg)
 
 ## Fanmade Video Tutorial (German)
 
