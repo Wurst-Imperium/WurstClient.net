@@ -21,7 +21,3 @@ Then click the "Clean Up" button and run a Clean Up with the default settings to
 And that's it. I found 285 servers this time. How many can you find?
 
 ![285 servers found through Server Finder](https://cloud.githubusercontent.com/assets/10100202/13251166/d7338336-da2e-11e5-8bfd-48f7bdeb4e1e.jpg)
-
-## Fanmade Video Tutorial (German)
-
-{% include video.html id = "GOOOJI7006A" %}
