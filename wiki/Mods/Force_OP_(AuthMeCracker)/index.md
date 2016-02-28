@@ -1,5 +1,5 @@
 ---
-title: Force OP (AuthMeCracker)
+title: How to Use AuthMe Cracker (Force OP)
 layout: wiki
 ---
 ## Overview

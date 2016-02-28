@@ -1,5 +1,5 @@
 ---
-title: .rv Command
+title: How to Use .rv (Remote View other Players & Mobs)
 layout: wiki
 category: Command
 ---

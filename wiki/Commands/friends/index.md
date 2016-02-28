@@ -1,5 +1,5 @@
 ---
-title: .friends Command
+title: How to Use .friends (Manage Friends - Filter for Killaura, etc.)
 layout: wiki
 category: Command
 ---

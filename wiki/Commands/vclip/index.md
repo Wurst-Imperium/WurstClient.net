@@ -1,5 +1,5 @@
 ---
-title: .vclip Command
+title: How to Use .vclip (Glitch Through Blocks Vertically)
 layout: wiki
 category: Command
 ---

@@ -1,5 +1,5 @@
 ---
-title: Nuker Mod
+title: How to Use Nuker (Auto-Destroy Blocks Around You)
 description: Nuker is a mod that automatically breaks blocks around you. It can be set to break either all blocks or just certain types of blocks and has a configurable range.
 layout: wiki
 category: Mod

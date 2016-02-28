@@ -1,5 +1,5 @@
 ---
-title: .wms Command
+title: How to Use .wms (Client-Side Messages)
 layout: wiki
 category: Command
 ---

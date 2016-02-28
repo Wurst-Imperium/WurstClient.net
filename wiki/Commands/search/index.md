@@ -1,5 +1,5 @@
 ---
-title: .search Command
+title: How to Use .search (Search Settings - Find any Type of Block)
 layout: wiki
 category: Command
 ---

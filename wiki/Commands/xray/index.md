@@ -1,5 +1,5 @@
 ---
-title: .xray Command
+title: How to Use .xray (Add & Remove X-Ray Blocks)
 layout: wiki
 category: Command
 ---

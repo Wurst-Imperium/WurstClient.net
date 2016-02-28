@@ -1,5 +1,5 @@
 ---
-title: .damage Command
+title: How to Use .damage (Damage & /kill Bypass)
 layout: wiki
 category: Command
 ---

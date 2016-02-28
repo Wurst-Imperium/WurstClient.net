@@ -1,5 +1,5 @@
 ---
-title: .rename Command
+title: How to Use .rename (Rename Items & Add Colors)
 layout: wiki
 category: Command
 ---

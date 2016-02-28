@@ -1,5 +1,5 @@
 ---
-title: .addalt Command
+title: How to Use .addalt (Add Alts for AuthMe Cracker)
 layout: wiki
 category: Command
 ---

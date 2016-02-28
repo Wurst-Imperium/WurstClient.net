@@ -1,5 +1,5 @@
 ---
-title: Force OP (Session Stealer)
+title: How to Use Session Stealer (Force OP - Steal Sessions of Admins)
 layout: wiki
 description: The Session Stealer allows you to temporarily steal the Minecraft account of any other player, making it an easy Force OP.
 category: Special Feature

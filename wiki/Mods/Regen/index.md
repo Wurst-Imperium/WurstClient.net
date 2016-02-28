@@ -1,5 +1,5 @@
 ---
-title: Regen Mod
+title: How to Use Regen (Heal Instantly - God Mode)
 description: Regen is a mod that allows you to regenerate your health 1000 times faster than normal.
 layout: wiki
 category: Mod

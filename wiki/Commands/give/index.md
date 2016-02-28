@@ -1,5 +1,5 @@
 ---
-title: .give Command
+title: How to Use .give (Give Yourself Items, Custom NBT & More)
 layout: wiki
 description: Allows you to give yourself any item in Creative Mode, even if the /give command is blocked. NBT data is also supported.
 category: Command
