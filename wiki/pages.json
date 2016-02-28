@@ -1,0 +1,11 @@
+---
+layout: none
+no_index: true
+---
+[
+{% for page in site.pages %}{% if page.layout == "wiki" and (page.category == "Mod" or page.category == "Command" or page.category == "Special Feature") %}  {
+    "title": "{{ page.title | escape }}",
+    "url": "{{ page.url | remove: "index.html" }}"
+  },
+{% endif %}{% endfor %}  {}
+]
