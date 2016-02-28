@@ -1,13 +1,11 @@
 ---
-title: Commands
+title: Command Tutorials
 layout: wiki
 ---
-## Definition
-A command in Wurst is similar to a command in vanilla Minecraft, except that it starts with a `.` instead of a `/`.
+A command in Wurst is similar to a command in vanilla Minecraft, except that it starts with a `.` instead of a `/`. Commands can not only be executed by typing them into the chat, but also by adding a keybind for them.
 
-Commands can not only be toggled by typing them into the chat, but also by keybinding them.
+We don't have a tutorial for every command in Wurst, but we are working on it. Here is a list of the tutorials that we got so far:
 
-## List of Commands
 {% assign first = true %}
 {% capture rawcmds %}{% comment %}
   {% endcomment %}{% for page in site.pages %}{% comment %}
@@ -17,7 +15,7 @@ Commands can not only be toggled by typing them into the chat, but also by keybi
       {% endcomment %}{% else %}{% comment %}
         {% endcomment %}{% assign first = false %}{% comment %}
       {% endcomment %}{% endunless %}{% comment %}
-      {% endcomment %}{{ page.title | remove: " Command" }}{% comment %}
+      {% endcomment %}{{ page.title }}{% comment %}
       {% endcomment %}§separator2§{% comment %}
       {% endcomment %}{{ page.url | remove: "index.html" }}{% comment %}
     {% endcomment %}{% endif %}{% comment %}
@@ -27,4 +25,5 @@ Commands can not only be toggled by typing them into the chat, but also by keybi
 {% endcomment %}{% for rawcmd in cmds %}{% comment %}
   {% endcomment %}{% assign cmd = rawcmd | split: "§separator2§" %}{% comment %}
     {% endcomment %}- [{{ cmd[0] }}]({{ cmd[1] }})
+
 {% endfor %}

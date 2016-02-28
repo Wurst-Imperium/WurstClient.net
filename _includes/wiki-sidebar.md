@@ -1,7 +1,9 @@
 [Main Page](/wiki/Main_Page/)
 
-[Mods](/wiki/Mods/)
+[Mod Tutorials](/wiki/Mods/)
 
-[Commands](/wiki/Commands/)
+[Command Tutorials](/wiki/Commands/)
+
+[Special Feature Tutorials](/wiki/Special_Features/)
 
 [How to Contribute](/wiki/Contributing/part1/)
