@@ -7,10 +7,8 @@ category: Mod
 ## Overview
 The Flight mod allows you to fly. It has a configurable speed and includes bypasses for vanilla Minecraft's "Flying is not enabled on this server" kick, the Mineplex AntiCheat system and certain versions of NoCheat+.
 
-<!--
 ## Video Tutorial
-{% include video.html id = "" %}
--->
+{% include video.html id = "K5Na5dfsSsU" %}
 
 ## Text Tutorial
 The basic usage of Flight couldn't be more simple: Turn it on and you fly, turn it off and you don't fly. You can also configure the speed at which you fly by using the Flight Speed slider on the Navigator page of the Flight mod.
