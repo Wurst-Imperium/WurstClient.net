@@ -27,7 +27,7 @@ There isn't really a way to find out whether or not a specific server has the ri
 
 Also note that the YesCheat+ version of Flight does not allow you to fly any higher than where you started. You can fly down and back up, but not up and back down.
 
-Lastly, Flight has a "Flying is not enabled" Bypass checkbox that, when checked, protects you from getting kicked for flying. This is a new feature in Wurst 2.19, any previous versions don't have this checkbox.
+Lastly, Flight has a "Flight-Kick-Bypass" checkbox that, when checked, protects you from getting kicked for flying. This is a new feature in Wurst 2.19, any previous versions don't have this checkbox.
 
 Normally, any Minecraft server (even vanilla ones) will kick you for "Flying is not enabled on this server" if you fly for at least 4 seconds without touching the ground, but this bypass will prevent that from happening.
 
