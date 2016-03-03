@@ -1,6 +1,7 @@
 ---
 title: How to Use AuthMe Cracker (Force OP)
 layout: wiki
+category: Mod
 ---
 ## Overview
 Force OP (a.k.a. AuthMe Cracker) is a mod that cracks AuthMe passwords. It can be used on AuthMe servers to force OP yourself by cracking the AuthMe password of an admin or to get access to other people's plots and items by cracking their AuthMe password.
