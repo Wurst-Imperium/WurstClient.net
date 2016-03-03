@@ -1,25 +1,8 @@
 ---
 title: Error 404 (not found)
-no_search: true
 no_index: true
 ---
 <div class="container">
 	<h1 class="page-header">{{ page.title }}</h1>
-	<p class="lead">The page you were looking for could not be found. Try searching it:</p>
-	<div class="panel panel-default">
-		<input id="404-input" type="text" class="form-control" placeholder="Search">
-		<div id="404-results" class="list-group"></div>
-		<script src="/js/jekyll-search.js" type="text/javascript"></script>
-		<script type="text/javascript">
-			SimpleJekyllSearch.init({
-				searchInput: document.getElementById('404-input'),
-				resultsContainer: document.getElementById('404-results'),
-				dataSource: '/search-map.json',
-				searchResultTemplate: '<a href="{url}" class="list-group-item">{title}</a>',
-				noResultsText: '<a class="list-group-item list-group-item-danger">No results found.</a>',
-				limit: 50,
-				fuzzy: true,
-			});
-		</script>
-	</div>
+	<p class="lead">The page you were looking for could not be found. Try searching it.</p>
 </div>

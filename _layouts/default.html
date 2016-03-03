@@ -20,21 +20,8 @@
 </head>
 <body>
 	<script src="/js/bootstrap.min.js"></script>
-	{% unless page.no_header %}{% include header.html no_search = page.no_search %}{% endunless %}
+	{% unless page.no_header %}{% include header.html %}{% endunless %}
 	{{ content }}
 	{% unless page.no_footer %}{% include footer.html %}{% endunless %}
-	{% unless page.no_search %}
-	<script>
-		SimpleJekyllSearch.init({
-			searchInput: document.getElementById('search-input'),
-			resultsContainer: document.getElementById('search-results'),
-			dataSource: '/search-map.json',
-			searchResultTemplate: '<li class="list-group-item"><a href="{url}">{title}</a></li>',
-			noResultsText: '<li class="list-group-item list-group-item-danger">No results found.</li>',
-			limit: 20,
-			fuzzy: true,
-		});
-	</script>
-	{% endunless %}
 </body>
 </html>

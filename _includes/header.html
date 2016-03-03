@@ -12,7 +12,6 @@
 		</div>
 		<div class="collapse navbar-collapse" id="navbar-collapse">
 			<div class="row header-row">
-				{% unless include.no_search %}
 					<ul class="nav navbar-nav navbar-right">
 						<li>
 							<a href="#" data-toggle="modal" data-target="#search">
@@ -21,7 +20,6 @@
 							</a>
 						</li>
 					</ul>
-				{% endunless %}
 			</div>
 			<div class="row header-row">
 				<ul class="nav navbar-nav navbar-right">
@@ -60,7 +58,6 @@
 		</div>
 	</div>
 </nav>
-{% unless include.no_search %}
 <div class="modal fade" id="search">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -72,13 +69,23 @@
 					<span class="octicon octicon-search"></span>
 					Search
 				</p>
+
       </div>
       <div class="modal-body">
-				<input id="search-input" type="text" class="form-control" autofocus>
-				<br>
-				<ul id="search-results" class="list-group"></ul>
+				<div class="cse-branding-bottom" style="background-color:#FFFFFF;color:#000000">
+				  <div class="cse-branding-form">
+				    <form action="http://www.google.com" id="cse-search-box">
+				      <div>
+				        <input type="hidden" name="cx" value="partner-pub-5218363098774955:3739724421" />
+				        <input type="hidden" name="ie" value="UTF-8" />
+				        <input type="text" name="q" size="55" />
+				        <input type="submit" name="sa" value="Search" />
+				      </div>
+				    </form>
+				  </div>
+				</div>
+
       </div>
     </div>
   </div>
 </div>
-{% endunless %}
