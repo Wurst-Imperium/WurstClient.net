@@ -1,5 +1,5 @@
 ---
-title: How to Use .potion (Edit Potions & Add Cutsom Effects)
+title: How to Use .potion (Edit Potions & Add Custom Effects)
 layout: wiki
 description: Adds, sets or removes the effects of the held potion. Can modify multiple effects at once in the `add` and `set` modes.
 category: Command
