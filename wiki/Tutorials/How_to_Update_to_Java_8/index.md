@@ -15,7 +15,7 @@ category: Tutorial
 ```
 /Library/Java/JavaVirtualMachines/jdk1.8.0_XX.jdk/Contents/Home/bin/java
 ```
-Replace XX with download numbers and click save progile.
+Replace XX with download numbers and click save profile.
 
 
 ## Troubleshooting
