@@ -3,10 +3,8 @@ title: How to Install the Wurst Client for Minecraft
 layout: wiki
 category: Installation
 ---
-<!--
 ## Video Tutorial
-{% include video.html id = "" %}
--->
+{% include video.html id = "GH6xD_BGsLw" %}
 
 ## Text Tutorial
 First off, if you haven't already, [download Wurst](/download/) and save it somewhere on your computer.
