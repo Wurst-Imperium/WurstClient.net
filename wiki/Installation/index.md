@@ -3,10 +3,11 @@ title: How to Install the Wurst Client for Minecraft
 layout: wiki
 category: Installation
 ---
-## Video Tutorial
+## Video Tutorial (Windows)
 {% include video.html id = "GH6xD_BGsLw" %}
 
-## Text Tutorial
+(Scroll down for Mac tutorial)
+## Text Tutorial (Windows)
 First off, if you haven't already, [download Wurst](/download/) and save it somewhere on your computer.
 
 Then open the Windows Explorer and type `%appdata%` into the address bar, as shown below:
@@ -62,3 +63,66 @@ Lastly, don't forget to save the new profile.
 The installation is now complete and you can start Wurst using the "Play" button.
 
 ![Minecraft launcher > Play](https://cloud.githubusercontent.com/assets/10100202/13546906/6998cf7a-e2bc-11e5-95f0-9e777c97c53b.png)
+
+## Text Tutorial (Mac)
+If you haven't already, [download Wurst](/download) and save it somewhere on your computer.
+
+Then right click Finder and choose New Finder Window.
+
+![Finder > New Finder Window](https://cloud.githubusercontent.com/assets/11584045/13547848/20433dc8-e2ea-11e5-879b-91582aa24f81.png)
+
+After that, click Go > Go to Folder...
+
+![Go > Go to folder...](https://cloud.githubusercontent.com/assets/11584045/13547918/c7962daa-e2eb-11e5-9f29-e30e320b6da5.png)
+
+Paste the following and click "Go".
+
+```
+~/Library/Application Support/minecraft/versions
+```
+
+Leave the window open, and tell the software that you downloaded Wurst to show you the file.
+
+![Show downloaded file in Safari](https://cloud.githubusercontent.com/assets/11584045/13547994/8cc1f536-e2ed-11e5-8e6a-adbd67635088.png)
+
+You'll have to drag and drop the Wurst Client file to version folder.
+
+![Drag & Drop the Wurst files](https://cloud.githubusercontent.com/assets/11584045/13548050/ffa50f10-e2ee-11e5-88af-95ee099c0092.png)
+
+Close the Downloads folder. If the file, which you draged, is a ZIP file, then double click it to unzip and delete the ZIP file. If it isn't go to the next step.
+
+Open the Wurst Client folder, there should be another folder called Wurst.
+Right click and copy it.
+
+![Copy the Wurst folder](https://cloud.githubusercontent.com/assets/11584045/13548157/341b236c-e2f2-11e5-802b-fb5e74eaaf77.png)
+
+And go back to enclosing folder.
+
+![Go > Enclosing Folder](https://cloud.githubusercontent.com/assets/11584045/13548208/8dba4c1c-e2f3-11e5-8be9-51662d3bec1f.png)
+
+Right click somewhere in that window. Let's paste it.
+
+![Paste it](https://cloud.githubusercontent.com/assets/11584045/13548224/0d232348-e2f4-11e5-869a-6a66a340c4f5.png)
+
+We don't need the old Wurst-Client folder anymore.
+
+![Delete the folder](https://cloud.githubusercontent.com/assets/11584045/13548257/85ab876a-e2f4-11e5-9b29-b53da9047e75.png)
+
+Installation is done! There's only one more step. Now open the Minecraft Launcher and click New Profile.
+The most important setting is the Use Version setting. Set it to Wurst next to Minecraft 1.8.
+
+There are also optional settings that may help you:
+
+- Set “Profile Name” to `Wurst Client` so that you know that this profie is Wurst.
+
+- Append `\instances\Wurst` to the “Game Directory” field so that this profile can’t change the settings of your other profiles.
+
+- Set “Launcher Visibility” to “Hide launcher and re-open when game closes”. That will bring you back to the launcher when you close Minecraft.
+
+- In “JVM Arguments”, replace `-Xmx1G` with `-Xmx4G` so that Minecraft gets more RAM and runs faster.
+ 
+Lastly: Do not forget to click save game!
+
+Installation complete. Select Wurst Client in Profile box and click play. *Time to rule the game!*
+
+![New Profile](https://cloud.githubusercontent.com/assets/11584045/13548369/5c3f6eac-e2f7-11e5-887a-115700a0343b.png)
