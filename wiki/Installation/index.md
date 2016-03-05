@@ -65,17 +65,17 @@ The installation is now complete and you can start Wurst using the "Play" button
 ![Minecraft launcher > Play](https://cloud.githubusercontent.com/assets/10100202/13546906/6998cf7a-e2bc-11e5-95f0-9e777c97c53b.png)
 
 ## Text Tutorial (Mac)
-If you haven't already, [download](/download) and save it somewhere on your computer.
+If you haven't already, [download Wurst](/download) and save it somewhere on your computer.
 
 Then right click Finder and choose New Finder Window.
 
 ![Finder > New Finder Window](https://cloud.githubusercontent.com/assets/11584045/13547848/20433dc8-e2ea-11e5-879b-91582aa24f81.png)
 
-After that, click Go > Go to folder...
+After that, click Go > Go to Folder...
 
 ![Go > Go to folder...](https://cloud.githubusercontent.com/assets/11584045/13547918/c7962daa-e2eb-11e5-9f29-e30e320b6da5.png)
 
-Paste the following:
+Paste the following and click "Go".
 
 ```
 ~/Library/Application Support/minecraft/versions
@@ -85,7 +85,7 @@ Leave the window open, and tell the software that you downloaded Wurst to show y
 
 ![Show downloaded file in Safari](https://cloud.githubusercontent.com/assets/11584045/13547994/8cc1f536-e2ed-11e5-8e6a-adbd67635088.png)
 
-You'll have to drag and drop the Wurst Client files to version folder.
+You'll have to drag and drop the Wurst Client file to version folder.
 
 ![Drag & Drop the Wurst files](https://cloud.githubusercontent.com/assets/11584045/13548050/ffa50f10-e2ee-11e5-88af-95ee099c0092.png)
 
