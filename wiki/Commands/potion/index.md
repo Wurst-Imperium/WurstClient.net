@@ -19,4 +19,4 @@ Removes effects from the potion.
 ## Example
 `.potion set invisibility 1 60 strength 25 75` would set the held potion's effects to Invisibility for 60 seconds and Strength 25 for 75 seconds. This potion would then look like that:
 
-![A potion with Invisibility and Strength 25](https://cloud.githubusercontent.com/assets/11584045/8901300/74b61982-3450-11e5-9f3a-0a69402c380c.jpg)
+![A potion with Invisibility and Strength 25](https://cloud.githubusercontent.com/assets/11584045/13553681/80323c02-e399-11e5-9538-3d836249df7f.jpg)
