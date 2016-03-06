@@ -17,7 +17,7 @@ Also make sure that your Fork is **up to date** with the original Wurst-Client r
 
 Once you have that, go the [Wurst-Client repository](https://github.com/Wurst-Imperium/Wurst-Client) and click the **New Pull Request** button. Then select Wurst-Imperium/Wurst-Client master as the base branch and the branch with your contribution as the head branch as shown in the screenshot below:
 
-![GitHub Pull Request: Comparing changes](https://cloud.githubusercontent.com/assets/10100202/13134636/f0a065b6-d608-11e5-859e-b8db69e0f4f7.jpg)
+![GitHub Pull Request: Comparing changes](https://cloud.githubusercontent.com/assets/11584045/13554977/d67a1354-e3bd-11e5-8de5-7e716a11d164.jpg)
 
 Then give your Pull Request a title, a description and maybe add a screenshot. Make sure it's clear what your feature or bugfix does and avoid generic titles like "New feature" or "Bugfix".
 
