@@ -13,7 +13,7 @@ In addition to the source code, the Wurst-Client repository also contains the co
 
 First right-click on your Wurst Client project and **select "Properties"**.
 
-![Eclipse Code Style: Properties](https://cloud.githubusercontent.com/assets/10100202/12983213/8c6f35ba-d0e8-11e5-82cc-d4c2e95cc46b.jpg)
+![Eclipse Code Style: Properties](https://cloud.githubusercontent.com/assets/11584045/13555007/d4d7cfea-e3be-11e5-9a6b-f4e8206ddd7e.jpg)
 
 In the dialog that appears, select **Java Code Style > Clean Up**. Now there should be a bunch of options on the right side, most of which are grayed out.
 
@@ -23,17 +23,17 @@ In the file selector that appears, go to your **Wurst-Client** folder (where the
 
 Finally, **click "Apply"** to save the changes.
 
-![Eclipse Code Style: Clean Up](https://cloud.githubusercontent.com/assets/10100202/12984553/9657b0e2-d0ee-11e5-916b-80f5cd50fafd.jpg)
+![Eclipse Code Style: Clean Up](https://cloud.githubusercontent.com/assets/11584045/13555009/f9f9ac12-e3be-11e5-9ec7-77e2c0a8ed81.jpg)
 
 Now do the same thing with **Java Code Style > Formatter**. Just do what you did with Clean Up, except that you import **"formatter.xml"** instead of "cleanup.xml".
 
-![Eclipse Code Style: Formatter](https://cloud.githubusercontent.com/assets/10100202/12985601/cf542088-d0f3-11e5-9ea3-c3f7ade93515.jpg)
+![Eclipse Code Style: Formatter](https://cloud.githubusercontent.com/assets/11584045/13555014/1a1a7fbc-e3bf-11e5-9923-91680780c5e6.jpg)
 
 Select **Java Code Style > Code Templates** and **check "Enable project specific settings"** again. As you can tell, this screen looks a bit different than the previous two.
 
 Select **Code > New Java Files** and click **Edit**.
 
-![Eclipse Code Style: Code Templates](https://cloud.githubusercontent.com/assets/10100202/12986437/8ba367be-d0f7-11e5-9e89-c527928e449e.jpg)
+![Eclipse Code Style: Code Templates](https://cloud.githubusercontent.com/assets/11584045/13555029/46eea59a-e3bf-11e5-9349-9d3bc678b555.jpg)
 
 A second dialog will pop up. **Paste in the following text** above all of the existing lines:
 
@@ -49,7 +49,7 @@ A second dialog will pop up. **Paste in the following text** above all of the ex
 
 Make sure it looks like the screenshot below, then **click OK** on both of the dialogs.
 
-![Eclipse Code Style: Edit Template](https://cloud.githubusercontent.com/assets/10100202/12987103/dfb3c38c-d0fa-11e5-9bab-cd5c0570a7d7.jpg)
+![Eclipse Code Style: Edit Template](https://cloud.githubusercontent.com/assets/11584045/13555037/660f8dcc-e3bf-11e5-8464-bdb61c1661e0.jpg)
 
 And that is it for this step. You can now use <kbd>Ctrl</kbd> <kbd>Shift</kbd> <kbd>F</kbd> to format your code according to our style rules.
 
@@ -58,13 +58,13 @@ As you might have noticed, Eclipse is still showing you a lot of errors for the 
 
 Right on the Wurst Client project and select **Build Path > Configure Build Path**.
 
-![Eclipse Libraries: Build Path > Configure Build Path](https://cloud.githubusercontent.com/assets/10100202/12987883/68341358-d0fe-11e5-99e2-543821007a12.jpg)
+![Eclipse Libraries: Build Path > Configure Build Path](https://cloud.githubusercontent.com/assets/11584045/13555043/8190188c-e3bf-11e5-892c-db92d229eded.jpg)
 
 On the dialog that appears, click **Add External JARs** and add all of the JAR files in "YourMcpFolder/jars/libraries" and in the sub-folders of that folder. I highly recommend moving them all into one folder before you do this, as that makes this process much easier.
 
 Also add **1.8.jar** from "YourMcpFolder/jars/versions/1.8" and **slick.jar**, which you can download at the [Slick Ninjacave website](http://slick.ninjacave.com/).
 
-![Eclipse Libraries: Java Build Path](https://cloud.githubusercontent.com/assets/10100202/12988289/4f019cdc-d100-11e5-9dcc-c8298fbb2596.jpg)
+![Eclipse Libraries: Java Build Path](https://cloud.githubusercontent.com/assets/11584045/13555054/bbb8d6a2-e3bf-11e5-8379-972e2fb92fb0.jpg)
 
 <a href="/wiki/Contributing/part4/" class="btn btn-default">
   <span class="octicon octicon-arrow-right"></span>
