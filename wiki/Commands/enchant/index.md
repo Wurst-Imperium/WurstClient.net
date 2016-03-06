@@ -10,4 +10,4 @@ Enchants items with everything (except for Silk Touch) at level 127.
 
 - `.enchant all` enchants all items in your inventory.
 
-![a diamond pickaxe enchanted through .enchant](https://cloud.githubusercontent.com/assets/10100202/8273078/447b7ce8-185e-11e5-81f7-5ea6c39d0d41.png)
+![a diamond pickaxe enchanted through .enchant](https://cloud.githubusercontent.com/assets/11584045/13553646/c82b814a-e398-11e5-9726-eafffab83f92.png)
