@@ -2,7 +2,7 @@
 title: Welcome to the Wurst Client wiki!
 layout: wiki
 ---
-![Wurst Client logo](https://cloud.githubusercontent.com/assets/10100202/8269115/0df480ba-179c-11e5-9eb9-30ce637a0827.png)
+![Wurst Client logo](https://cloud.githubusercontent.com/assets/11584045/13553599/819eda66-e397-11e5-906e-aba15c37a3f6.png)
 
 ## About Wurst
 The Wurst Client is a Minecraft hacked client made by Alexander01998. It contains a large variety of cheats that allow you to do things that you couldn't do in vanilla Minecraft.
