@@ -31,6 +31,6 @@ Thanks to [WiZARDHAX](https://www.youtube.com/user/wizardhaxtube) for making thi
 {% include adsense.html %}
 
 ## Skype Tutorial ;)
-![someone on Skype complaining about BookHack not working despite never having used it](https://cloud.githubusercontent.com/assets/10100202/7282607/62dfc2c2-e931-11e4-8181-ba33f477849f.jpg)
+![someone on Skype complaining about BookHack not working despite never having used it](https://cloud.githubusercontent.com/assets/11584045/13553705/23e6f572-e39a-11e5-95f1-64e1123db0dd.jpg)
 
 Please don't be like this. At least give the mod a try before saying that it doesn't work. Just like this random person on Skype, you will notice that it actually **does** work if you use it correctly.
