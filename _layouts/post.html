@@ -12,53 +12,53 @@ layout: default
 			<!-- Wurst News top -->
 			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5218363098774955" data-ad-slot="5352619220" data-ad-format="auto"></ins>
 			<br>
-			{% for image in page.images limit: 1 %}
-				{% if page.video-id %}
-					<a href="https://www.youtube.com/watch?v={{ page.video-id }}" target="_blank">
-				{% endif %}
-				<div class="thumbnail{% if page.video-id %} thumbnail-video{% endif %}">
-					<img class="img-rounded" src="{{ image.link }}">
-					{% if page.video-id %}
-						<div class="btn btn-video">
-							<span class="glyphicon glyphicon-play"></span>
-						</div>
-					{% endif %}
-				</div>
-			{% if page.video-id %}
-			</a>
-			<a href="https://www.youtube.com/watch?v={{ page.video-id }}" target="_blank">
-				<span class="glyphicon glyphicon-film"></span>
-				Click here to watch the video on YouTube
-			</a>
-			{% endif %}
-			{% endfor %}
 			<div class="post-content">
-				{{ content }}
-			</div>
-			<div class="row">
-				{% for image in page.images offset: 1 %}
-				<div class="col-xs-12 col-sm-6 col-md-4">
-					<div class="thumbnail">
+				{% for image in page.images limit: 1 %}
+					{% if page.video-id %}
+						<a href="https://www.youtube.com/watch?v={{ page.video-id }}" target="_blank">
+					{% endif %}
+					<div class="thumbnail{% if page.video-id %} thumbnail-video{% endif %}">
 						<img class="img-rounded" src="{{ image.link }}">
-						{% if image.text %}
-						<div class="caption">
-								{{ image.text }}
-						</div>
+						{% if page.video-id %}
+							<div class="btn btn-video">
+								<span class="glyphicon glyphicon-play"></span>
+							</div>
 						{% endif %}
 					</div>
-				</div>
-				{% endfor %}
-			</div>
-			<br>
-			{% include post-footer.html post = page %}
-			<br>
-			<div id="disqus_thread"></div>
-			<noscript>
-				Please enable JavaScript to view the
-				<a href="https://disqus.com/?ref_noscript" rel="nofollow">
-					comments section.
+				{% if page.video-id %}
 				</a>
-			</noscript>
+				<a href="https://www.youtube.com/watch?v={{ page.video-id }}" target="_blank">
+					<span class="glyphicon glyphicon-film"></span>
+					Click here to watch the video on YouTube
+				</a>
+				{% endif %}
+				{% endfor %}
+				{{ content }}
+				<div class="row">
+					{% for image in page.images offset: 1 %}
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="thumbnail">
+							<img class="img-rounded" src="{{ image.link }}">
+							{% if image.text %}
+							<div class="caption">
+									{{ image.text }}
+							</div>
+							{% endif %}
+						</div>
+					</div>
+					{% endfor %}
+				</div>
+				<br>
+				{% include post-footer.html post = page %}
+				<br>
+				<div id="disqus_thread"></div>
+				<noscript>
+					Please enable JavaScript to view the
+					<a href="https://disqus.com/?ref_noscript" rel="nofollow">
+						comments section.
+					</a>
+				</noscript>
+			</div>
 		</div>
 		<div class="col-sm-3 hidden-xs">
 			{% include sidebar.html %}
