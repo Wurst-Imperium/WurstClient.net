@@ -78,7 +78,7 @@ You might find that most of the tokens have already been invalidated. This can b
 <div class="row">
   <div class="col-sm-10 col-md-8 col-lg-6">
     <div class="thumbnail">
-      <img src="https://cloud.githubusercontent.com/assets/10100202/9369230/203acbb6-46c8-11e5-8fdf-5192dfce3a23.png" alt="Session Stealer Button">
+      <img src="https://cloud.githubusercontent.com/assets/11584045/13553712/48ce2784-e39a-11e5-9880-174d049041aa.png" alt="Session Stealer Button">
       <div class="caption">
         <p>
           The button on the Alt Manager screen that opens the Session Stealer.
@@ -88,7 +88,7 @@ You might find that most of the tokens have already been invalidated. This can b
   </div>
   <div class="col-sm-10 col-md-8 col-lg-6">
     <div class="thumbnail">
-      <img src="https://cloud.githubusercontent.com/assets/10100202/9366024/20730df4-46b5-11e5-9b6a-c9cdbe38f63c.png" alt="Session Stealer GUI">
+      <img src="https://cloud.githubusercontent.com/assets/11584045/13553717/6782d45e-e39a-11e5-9a2f-ef69f9a4647b.png" alt="Session Stealer GUI">
       <div class="caption">
         <p>
           The GUI of the Session Stealer itself.

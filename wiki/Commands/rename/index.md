@@ -10,4 +10,4 @@ Use `$` for [colors](http://minecraft.gamepedia.com/Formatting_codes) (instead o
 ## Syntax
 `.rename <new_name>` renames the item in your hand to the given name.
 
-![renaming an item in Wurst](https://cloud.githubusercontent.com/assets/10100202/8334298/6a53d98e-1a97-11e5-9889-e11c5e05bb43.png)
+![renaming an item in Wurst](https://cloud.githubusercontent.com/assets/11584045/13553688/a4707d36-e399-11e5-9ddf-e62b8d1c7983.png)

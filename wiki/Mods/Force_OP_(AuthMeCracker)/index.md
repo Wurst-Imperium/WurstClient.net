@@ -34,7 +34,7 @@ To add an admin to your alt list, you can simply type `.addalt <name of the admi
 #### Preparation
 Now leave the server, go to the AltManager and log in as one of the admins. Then join the server again and turn ForceOP/AuthMeCracker on. A frame with options will open:
 
-![screenshot of the AuthMeCracker GUI](https://cloud.githubusercontent.com/assets/10100202/6094241/6a6eb050-af22-11e4-994c-be442c0f9485.png)
+![screenshot of the AuthMeCracker GUI](https://cloud.githubusercontent.com/assets/11584045/13553618/da83eaae-e397-11e5-9624-f3f36ef5a93f.png)
 
 If you just leave everything as it is, it will try the username and 49 other common AuthMe passwords at a speed of 1 password per second. This takes up to about a minute and has a chance of about 10% to work because about 10% of all users use one of these passwords. In most cases, this configuration will give you the best results.
 Keep in mind that it's 10% per admin, not 10% per server. So the more admins a server has, the higher the chance that one of them has a bad AuthMe password.
@@ -52,7 +52,7 @@ Whether or not it should wait for `Wrong password!` messages also has a small in
 When you're done with the options, click the `Start` button and wait until it's done. If you get kicked for `Login timeout!`, just reconnect or turn AutoReconnect on. If you get kicked and temporarily banned for `Too many failed attempts. You are temporarily denied to join this server.`, it is patched on that server. When it's done, you will get a Wurst message that either starts with `[Wurst] [SUCCESS]` or `[Wurst] [FAILURE]`.
 
 <div class="thumbnail">
-  <img src="https://cloud.githubusercontent.com/assets/10100202/6094242/6db4c3c6-af22-11e4-8a91-5bec214d4743.png" alt="screenshot of successfully using the AuthMeCracker">
+  <img src="https://cloud.githubusercontent.com/assets/11584045/13553619/da842bcc-e397-11e5-95d5-5d15924c4605.png" alt="screenshot of successfully using the AuthMeCracker">
   <div class="caption">
     The success message in older versions. It was changed in Wurst v1.1 and now says:
     <q>

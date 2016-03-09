@@ -10,4 +10,4 @@ Enables/disables Wurst messages or sends a message. Wurst messages are only visi
 
 `.wms echo <message>` sends the given Wurst message.
 
-![sending a custom Wurst message](https://cloud.githubusercontent.com/assets/10100202/8334798/2de50484-1a9a-11e5-94f2-bf2f0e09995c.png)
+![sending a custom Wurst message](https://cloud.githubusercontent.com/assets/11584045/13553692/ed704034-e399-11e5-9e12-761830a20717.png)

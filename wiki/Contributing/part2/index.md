@@ -24,27 +24,27 @@ Now you should have the Minecraft source code in "YourMcpFolder\src\minecraft".
 ## 4. Importing Wurst to Eclipse
 Now that you have all the source code that you need, it's time to import it into Eclipse so that you can edit it. First right-click on the Package Explorer and **select "Import"**.
 
-![Eclipse Import: Package Explorer > Import](https://cloud.githubusercontent.com/assets/10100202/12944321/97390bae-cfe6-11e5-881d-81b0bf5e1f79.jpg)
+![Eclipse Import: Package Explorer > Import](https://cloud.githubusercontent.com/assets/11584045/13554870/afc99e7a-e3bb-11e5-813f-e0da2551eac5.jpg)
 
 A dialog will appear. Select **Git > Projects from Git** and click "Next".
 
-![Eclipse Import: Git > Projects from Git](https://cloud.githubusercontent.com/assets/10100202/12946386/54bfeabe-cff4-11e5-9390-36556f8299ae.jpg)
+![Eclipse Import: Git > Projects from Git](https://cloud.githubusercontent.com/assets/11584045/13554876/e0dea64a-e3bb-11e5-87df-22ea38df9852.jpg)
 
 On the next screen, select **Existing local repository** and click "Next".
 
-![Eclipse Import: Existing local repository](https://cloud.githubusercontent.com/assets/10100202/12946735/e607e330-cff6-11e5-97e8-81655e389cfe.jpg)
+![Eclipse Import: Existing local repository](https://cloud.githubusercontent.com/assets/11584045/13554883/ff5c789a-e3bb-11e5-8873-82c6552a6dc9.jpg)
 
 Now select your **Wurst-Client** repository (which will probably be your only option) and click "Next".
 
-![Eclipse Import: Select a Git Repository](https://cloud.githubusercontent.com/assets/10100202/12946843/a492c7d4-cff7-11e5-830d-9c95ca34a919.jpg)
+![Eclipse Import: Select a Git Repository](https://cloud.githubusercontent.com/assets/11584045/13554889/1d4444dc-e3bc-11e5-8b5d-6ee1c990c35a.jpg)
 
-On the net screen, select **Use the New Project wizard** if it isn't selected already and then click "Finish".
+On the next screen, select **Use the New Project wizard** if it isn't selected already and then click "Finish".
 
 ![Eclipse Import: Select a wizard](https://cloud.githubusercontent.com/assets/10100202/12970657/df621a3c-d091-11e5-9e0c-5789ebbd35b5.jpg)
 
 A second dialog will appear. Select **Java > Java Project** and click "Next".
 
-![Eclipse Import: Select a wizard](https://cloud.githubusercontent.com/assets/10100202/12970708/8965fc9c-d092-11e5-9bb2-fae4fca526f5.jpg)
+![Select Java Project](https://cloud.githubusercontent.com/assets/11584045/13554916/924365e2-e3bc-11e5-8828-9d0270b67fbf.jpg)
 
 And lastly, you will see one more screen that is a little more complicated than the previous ones. First, **uncheck "Use default location"**.
 
@@ -54,7 +54,7 @@ Then **add "\Wurst Client"** at the end of the "Location" field so that the path
 
 Once you got that, **click "Finish"** (not "Next") and you're done with this step.
 
-![Eclipse Import: Create a Java Project](https://cloud.githubusercontent.com/assets/10100202/12976295/442ab650-d0c3-11e5-9603-671a6446fc9f.jpg)
+![Eclipse Import: Create a Java Project](https://cloud.githubusercontent.com/assets/11584045/13554957/92d365e2-e3bd-11e5-87b2-6bcf014a3b40.jpg)
 
 <a href="/wiki/Contributing/part3/" class="btn btn-default">
   <span class="octicon octicon-arrow-right"></span>

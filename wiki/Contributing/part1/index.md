@@ -31,7 +31,7 @@ First, make sure that you're logged in to your GitHub account. Then go to [CLA-A
 
 Here's a picture for clarification:
 
-![Contributor License Agreement of Wurst-Imperium/Wurst-Client](https://cloud.githubusercontent.com/assets/10100202/12874699/f719f444-cdd8-11e5-8307-ec1cb781769d.jpg)
+![Contributor License Agreement of Wurst-Imperium/Wurst-Client](https://cloud.githubusercontent.com/assets/11584045/13554796/0c966964-e3ba-11e5-9b0e-66d384433f37.jpg)
 
 
 ## 2. Forking & Cloning
@@ -39,25 +39,25 @@ To fork the Wurst Client, simply **click the "Fork" button** on the [Wurst-Imper
 
 Here's another picture to show you where that button is:
 
-![Fork button on Wurst-Imperium/Wurst-Client](https://cloud.githubusercontent.com/assets/10100202/12882763/156949ec-ce54-11e5-9a21-5d3a777b9329.jpg)
+![Fork button on Wurst-Imperium/Wurst-Client](https://cloud.githubusercontent.com/assets/11584045/13554808/3c3d0916-e3ba-11e5-9e32-200bb623977b.jpg)
 
 Cloning is a bit more complicated, but it's not too bad. There are several programs that can do this, we will be using **Eclipse eGit** because its built into Eclipse and doesn't require you to install any additional software.
 
 You will need the _Git Repositories_ view in order to use eGit. To get that view, first go to **Window > Show View > Other...** as shown in the screenshot below:
 
-![Eclipse eGit: Window > Show View > Other...](https://cloud.githubusercontent.com/assets/10100202/12884824/27a24e30-ce61-11e5-9f90-abca845a0575.jpg)
+![Eclipse eGit: Window > Show View > Other...](https://cloud.githubusercontent.com/assets/11584045/13554815/63896e4c-e3ba-11e5-8431-2d4f038998a9.jpg)
 
 Then select **Git > Git Repositories** and click the OK button.
 
-![Eclipse eGit: Git > Git Repositories](https://cloud.githubusercontent.com/assets/10100202/12885053/f89467d4-ce62-11e5-8d12-97a497c96399.jpg)
+![Eclipse eGit: Git > Git Repositories](https://cloud.githubusercontent.com/assets/11584045/13554832/a1e7b608-e3ba-11e5-83dc-a314c6cf66da.jpg)
 
 Now the _Git Repositories_ view should appear somewhere on the screen. You can put it wherever you want, I like to place it in the **bottom left corner**.
 
-![Eclipse eGit: Placing the "Git Repositories" view in the bottom left corner](https://cloud.githubusercontent.com/assets/10100202/12885135/baf4b6d0-ce63-11e5-9050-b9f7e5afdbb0.jpg)
+![Eclipse eGit: Placing the "Git Repositories" view in the bottom left corner](https://cloud.githubusercontent.com/assets/11584045/13554838/ce950494-e3ba-11e5-85fa-4d103c9ac942.jpg)
 
 Now that you have eGit set up, you can make a Clone of your Fork. **Click the "Clone" button** at the top of the _Git Repositories_ view, as shown in the screenshot below:
 
-![Eclipse eGit: Clone button](https://cloud.githubusercontent.com/assets/10100202/12885272/e8dec90e-ce64-11e5-8b59-4e9e55c2285a.jpg)
+![Eclipse eGit: Clone button](https://cloud.githubusercontent.com/assets/11584045/13554840/f2f19046-e3ba-11e5-9c9e-9da52dc79d04.jpg)
 
 Now here comes the complicated part: A dialog will appear asking you to fill in a whole bunch of text fields that all have confusing labels. But don't worry too much about it, most of the fields will be filled out automatically once you correctly filled out the first one.
 
@@ -71,11 +71,11 @@ The _Secure Store_ option may open another dialog asking you to set a security q
 
 Finally, compare your dialog with the following screenshot and **click "Next"** if everything is correct.
 
-![Eclipse eGit: Source Git Repository](https://cloud.githubusercontent.com/assets/10100202/12897116/e4afaf2e-cea5-11e5-9805-a16b49f7112a.jpg)
+![Eclipse eGit: Source Git Repository](https://cloud.githubusercontent.com/assets/11584045/13554849/28d34e0c-e3bb-11e5-988d-ac87bf9b3606.jpg)
 
 On the next screen, **select all checkboxes** if they aren't already selected and then **click "Next"**. That's all you need to do here.
 
-![Eclipse eGit: Branch Selection](https://cloud.githubusercontent.com/assets/10100202/12898542/84e54088-cead-11e5-97fa-6deed7c62e68.jpg)
+![Eclipse eGit: Branch Selection](https://cloud.githubusercontent.com/assets/11584045/13554852/4440e56e-e3bb-11e5-8071-2b4606c73d84.jpg)
 
 The last screen will ask you for a directory and a few other things, but only the directory is important. **Click "Browse"** and select a folder where you want to save your clone.
 
@@ -83,7 +83,7 @@ Most people save their GitHub repositories in **Documents/GitHub/RepositoryName*
 
 Finally, **click "Finish"** and wait for it clone. Now you're done with the cloning part.
 
-![Eclipse eGit: Local Destination](https://cloud.githubusercontent.com/assets/10100202/12898543/84e98cc4-cead-11e5-9057-2565a0c139bc.jpg)
+![Eclipse eGit: Local Destination](https://cloud.githubusercontent.com/assets/11584045/13554857/60d0e044-e3bb-11e5-942a-0452d986a4d0.jpg)
 
 <a href="/wiki/Contributing/part2/" class="btn btn-default">
   <span class="octicon octicon-arrow-right"></span>
