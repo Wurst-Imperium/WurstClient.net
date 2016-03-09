@@ -25,6 +25,8 @@ Mods:
   AutoMine:
   AutoRespawn:
   AutoSign:
+  AutoSoup:
+  AutoSplashPot:
   AutoSprint:
   AutoSteal:
   AutoSwitch:
@@ -117,6 +119,7 @@ Mods:
   Tired:
   TP-Aura:
   Tracers:
+  Trajectories:
   TriggerBot:
   TrollPotion:
   TrueSight:
