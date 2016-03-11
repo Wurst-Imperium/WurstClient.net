@@ -38,7 +38,7 @@ Now select your **Wurst-Client** repository (which will probably be your only op
 
 ![Eclipse Import: Select a Git Repository](https://cloud.githubusercontent.com/assets/10100202/12946843/a492c7d4-cff7-11e5-830d-9c95ca34a919.jpg)
 
-On the net screen, select **Use the New Project wizard** if it isn't selected already and then click "Finish".
+On the next screen, select **Use the New Project wizard** if it isn't selected already and then click "Finish".
 
 ![Eclipse Import: Select a wizard](https://cloud.githubusercontent.com/assets/10100202/12970657/df621a3c-d091-11e5-9e0c-5789ebbd35b5.jpg)
 
