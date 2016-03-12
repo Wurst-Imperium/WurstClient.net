@@ -54,8 +54,6 @@ You might have noticed that the text field in the Session Stealer says the same 
 
 And that's all you need to steal anyone's session! Simple, right? That's because this Session Stealer is designed to be as simple and user-friendly as possible.
 
-{% include adsense.html %}
-
 ### Stealing the Session of a Server Admin
 In order to steal the session of an admin, you need a fresh launcher log from them. Old logs will not work, they have already been invalidated. One good trick to get a fresh log from them might be to pretend that you are a developer and that you need their log to fix a bug they have. Once you have their log, use their token as explained in [Usage](#usage).
 

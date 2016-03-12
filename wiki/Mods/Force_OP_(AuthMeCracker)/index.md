@@ -27,8 +27,6 @@ Force OP (a.k.a. AuthMe Cracker) is a mod that cracks AuthMe passwords. It can b
 ### Step 1: Adding the admins to your alt list
 To add an admin to your alt list, you can simply type `.addalt <name of the admin>` while you are on the server. If the admin is on the server and not in vanish mode, you can press tab to autocomplete the name after you typed `.addalt <first few letters of the admins name>`. You can also type `.addalt all` to add all users on the server to your alt list. If the admins are playing on the server, you have to wait for them to log out before continuing with step 2.
 
-{% include adsense.html %}
-
 ### Step 2: Cracking the AuthMe passwords
 
 #### Preparation

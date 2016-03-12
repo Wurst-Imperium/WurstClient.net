@@ -28,8 +28,6 @@ The nice thing about it is that no one can see that the book text is a link, so 
 
 Thanks to [WiZARDHAX](https://www.youtube.com/user/wizardhaxtube) for making this tutorial.
 
-{% include adsense.html %}
-
 ## Skype Tutorial ;)
 ![someone on Skype complaining about BookHack not working despite never having used it](https://cloud.githubusercontent.com/assets/10100202/7282607/62dfc2c2-e931-11e4-8181-ba33f477849f.jpg)
 

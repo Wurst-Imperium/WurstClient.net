@@ -10,8 +10,6 @@ First off, you will need to manually find one server IP to get started. Just go 
 
 Then paste that IP into Server Finder, optionally configure the maximum amount of threads and press the "Search" button. More threads make it run faster, but also require a faster computer and a faster internet connection. If you're not sure, just leave it at the default value of 128 threads.
 
-{% include adsense.html %}
-
 ![Server Finder](https://cloud.githubusercontent.com/assets/10100202/13251168/d73cac04-da2e-11e5-8227-5c2fc5c40c87.jpg)
 
 Once Server Finder is done, and you go back to the server list, you will notice that some of the servers it found will be broken. Wait until all servers are done loading, so that you can see which ones are working and which ones aren't.
