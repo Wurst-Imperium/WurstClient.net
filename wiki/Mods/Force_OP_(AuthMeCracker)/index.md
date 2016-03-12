@@ -1,5 +1,5 @@
 ---
-title: How to Use AuthMe Cracker (Force OP)
+title: AuthMeCracker Mod (Force OP)
 layout: wiki
 category: Mod
 ---

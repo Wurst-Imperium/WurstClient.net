@@ -1,5 +1,5 @@
 ---
-title: How to Use Liquids (Break Water Blocks & More)
+title: Liquids Mod
 layout: wiki
 category: Mod
 ---

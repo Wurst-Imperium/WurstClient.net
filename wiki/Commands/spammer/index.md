@@ -1,5 +1,5 @@
 ---
-title: How to Use .spammer (Spammer Settings - Run WSPAM Files)
+title: .spammer Command
 layout: wiki
 category: Command
 ---

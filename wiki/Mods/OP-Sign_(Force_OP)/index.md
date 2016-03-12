@@ -1,5 +1,5 @@
 ---
-title: How to Use OP-Sign (Force OP with a Sign)
+title: OP-Sign Mod (Force OP)
 layout: wiki
 category: Mod
 ---

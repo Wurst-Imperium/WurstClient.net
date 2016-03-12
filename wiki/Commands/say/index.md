@@ -1,5 +1,5 @@
 ---
-title: How to Use .say (Command Bypass - Type ".legit" in Chat)
+title: .say Command
 layout: wiki
 category: Command
 ---

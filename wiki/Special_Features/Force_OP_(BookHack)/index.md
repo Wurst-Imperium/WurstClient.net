@@ -1,5 +1,5 @@
 ---
-title: How to Use Book Hack (Force OP with a Book)
+title: BookHack (Force OP)
 layout: wiki
 category: Special Feature
 ---

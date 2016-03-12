@@ -1,5 +1,5 @@
 ---
-title: How to Use .fastbreak (FastBreak Settings - Change FastBreak Mode)
+title: .fastbreak Command
 layout: wiki
 category: Command
 ---

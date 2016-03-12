@@ -1,5 +1,5 @@
 ---
-title: How to Use Flight (with Bypass & Fly-Kick Bypass)
+title: Flight Mod (with Bypass)
 description: The Flight mod allows you to fly. It has a configurable speed and includes bypasses for vanilla Minecraft's "Flying is not enabled on this server" kick, ...
 layout: wiki
 category: Mod

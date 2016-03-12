@@ -1,5 +1,5 @@
 ---
-title: How to Use .path (Find Paths through Labyrinths, etc.)
+title: .path Command
 layout: wiki
 category: Command
 ---

@@ -1,5 +1,5 @@
 ---
-title: How to Use .annoy (Annoy & Troll other Players)
+title: .annoy Command
 layout: wiki
 category: Command
 ---

@@ -1,5 +1,5 @@
 ---
-title: How to Use .enchant (Enchant Items with Level 127!)
+title: .enchant Command
 layout: wiki
 category: Command
 ---

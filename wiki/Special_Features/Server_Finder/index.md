@@ -1,5 +1,5 @@
 ---
-title: How to Use Server Finder (Find Servers without Protection)
+title: Server Finder
 layout: wiki
 category: Special Feature
 ---

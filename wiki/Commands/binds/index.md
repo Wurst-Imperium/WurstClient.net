@@ -1,5 +1,5 @@
 ---
-title: How to Use .binds (List All Keybinds)
+title: .binds Command
 layout: wiki
 category: Command
 ---

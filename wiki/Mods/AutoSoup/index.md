@@ -1,5 +1,5 @@
 ---
-title: How to Use AutoSoup (Eat Mushroom Stew Automatically)
+title: AutoSoup Mod
 description: AutoSoup makes you automatically eat soup whenever your health is below the set value. This is useful for games like KitPVP.
 layout: wiki
 category: Mod

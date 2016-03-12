@@ -1,5 +1,5 @@
 ---
-title: How to Use .nuker (Nuker Settings - Change Mode, ID & More)
+title: .nuker Command
 layout: wiki
 category: Command
 ---

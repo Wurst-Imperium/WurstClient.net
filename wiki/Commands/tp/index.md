@@ -1,5 +1,5 @@
 ---
-title: How to Use .tp (Teleport Command)
+title: .tp Command
 layout: wiki
 category: Command
 ---

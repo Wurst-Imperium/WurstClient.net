@@ -1,5 +1,5 @@
 ---
-title: How to Use .leave (CombatLog Bypass - Leave Instantly)
+title: .leave Command
 layout: wiki
 category: Command
 ---
