@@ -4,7 +4,7 @@ layout: wiki
 category: Tutorial
 ---
 ## Text Tutorial
-1. Download and install the latest <a href="http://java.com/download" target="_blank">Java 8</a>.
+1. Download and install the latest <a href="http://java.com/download" target="_blank">Java Runtime Environment 8</a>.
 
 2. Get rid of your old Java 6 or Java 7 installation.
 
