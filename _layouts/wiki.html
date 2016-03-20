@@ -27,7 +27,6 @@ layout: default
 				<br>
 				<main class="post-content" itemprop="mainContentOfPage">
 					{{ content | markdownify }}
-					<div id="see-also"></div>
 				</main>
 			</div>
 			<div class="hidden-xs col-sm-3">
@@ -62,32 +61,5 @@ layout: default
 </span>
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <script>
-	(adsbygoogle = window.adsbygoogle || []).push({});
+(adsbygoogle = window.adsbygoogle || []).push({});
 </script>
-{% if page.category == "Mod" or page.category == "Command" or page.category == "Special Feature" %}
-<script>
-  $(document).ready(function()
-	{
-	  $.getJSON("/wiki/pages.json", function(data)
-		{
-	    var selectedPages = [];
-	    $("#see-also").append('<h2>See Also</h2><ul></ul>');
-	    var seeAlsoList = $("#see-also>ul");
-
-	    for(i = 0; i < 3; i++)
-	    {
-        var random = Math.floor(Math.random() * data.length);
-
-        if(selectedPages.indexOf(random) == "-1" && random != data.length - 1)
-        {
-          seeAlsoList.append('<li><p><a href="' + data[random].url + '">' + data[random].title + '</a></p></li>');
-          selectedPages.push(random);
-        }
-	    }
-	  }).fail(function(xhr, status, error)
-		{
-      console.log( "Request Failed: " + status + ', ' + error);
-  	});
-  });
-</script>
-{% endif %}
