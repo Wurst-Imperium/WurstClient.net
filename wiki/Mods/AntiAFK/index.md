@@ -4,7 +4,7 @@ layout: wiki
 category: Mod
 media:
   https://cloud.githubusercontent.com/assets/10100202/6399950/133505ea-bdf6-11e4-9fe3-4b0713177ad7.jpg: |
-    The thumbnail of Wurst 1.6, where AntiAFK was added. This update was released on Februrary 26, 2015 and AntiAFK was one of the four main changes in it.
+    The thumbnail of Wurst 1.6, where AntiAFK was added. This update was released on February 26, 2015 and AntiAFK was one of the four main changes in it.
 history:
   v1.6: Added AntiAFK
 ---
