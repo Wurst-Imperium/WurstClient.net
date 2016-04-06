@@ -13,26 +13,17 @@ layout: default
 			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5218363098774955" data-ad-slot="5352619220" data-ad-format="auto"></ins>
 			<br>
 			<div class="post-content">
-				{% for image in page.images limit: 1 %}
-					{% if page.video-id %}
-						<a href="https://www.youtube.com/watch?v={{ page.video-id }}" target="_blank">
-					{% endif %}
-					<div class="thumbnail{% if page.video-id %} thumbnail-video{% endif %}">
-						<img class="img-rounded" src="{{ image.link }}">
-						{% if page.video-id %}
-							<div class="btn btn-video">
-								<span class="glyphicon glyphicon-play"></span>
-							</div>
-						{% endif %}
-					</div>
 				{% if page.video-id %}
-				</a>
-				<a href="https://www.youtube.com/watch?v={{ page.video-id }}" target="_blank">
-					<span class="glyphicon glyphicon-film"></span>
-					Click here to watch the video on YouTube
-				</a>
+					<div class="embed-responsive embed-responsive-16by9">
+					  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/{{ page.video-id }}"></iframe>
+					</div>
+				{% elsif page.images.size > 0 %}
+					{% for image in page.images limit: 1 %}
+						<div class="thumbnail">
+							<img class="img-rounded" src="{{ image.link }}">
+						</div>
+					{% endfor %}
 				{% endif %}
-				{% endfor %}
 				{{ content }}
 				<div class="row">
 					{% for image in page.images offset: 1 %}
