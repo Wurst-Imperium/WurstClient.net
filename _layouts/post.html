@@ -14,9 +14,7 @@ layout: default
 			<br>
 			<div class="post-content">
 				{% if page.video-id %}
-					<div class="embed-responsive embed-responsive-16by9">
-					  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/{{ page.video-id }}"></iframe>
-					</div>
+					{% include video.html id = page.video-id %}
 				{% elsif page.images.size > 0 %}
 					{% for image in page.images limit: 1 %}
 						<div class="thumbnail">
