@@ -44,7 +44,13 @@ description: The Wurst Client is a Hacked Client for Minecraft 1.8.X and 1.7.X. 
 			<article>
 				{% include post-header.html %}
 				<div class="post-content">
-					{% if post.images.size > 0 %}
+					{% if post.video-id %}
+						<div class="thumbnail">
+							<a href="{{ post.url | remove: "index.html" }}">
+								<img class="img-rounded" src="https://i.ytimg.com/vi/{{ post.video-id }}/maxresdefault.jpg">
+							</a>
+						</div>
+					{% elsif post.images.size > 0 %}
 						{% for image in post.images limit: 1 %}
 						<div class="thumbnail">
 							<a href="{{ post.url | remove: "index.html" }}">
