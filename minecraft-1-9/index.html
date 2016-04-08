@@ -1,5 +1,18 @@
 ---
-layout: redirect
-redirect_url: /news/2016-03-25-Wurst-3-0pre2/
-no_index: true
+layout: none
 ---
+{% assign changelogLink = site.posts[0].url | remove: "index.html" %}
+{% for post in site.posts %}
+  {% if post.category == "Wurst Update" %}
+    {% assign changelogLink = post.url | remove: "index.html" %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+  <title>Redirecting...</title>
+  <meta http-equiv="refresh" content="0;url={{ changelogLink }}">
+</head>
+</html>
