@@ -6,9 +6,9 @@ media:
   https://cloud.githubusercontent.com/assets/10100202/14321602/2bcc9ab0-fc1a-11e5-8bf9-47fb2bd164ce.jpg: |
     Using Trajectories with a bow. The green line shows the predicted flight path of the arrow, while the green square at the end of the line shows where the arrow would land.
 history:
-  v3.0pre3: Fixed the green square at the end of the line not being green.
-  v3.0pre2: Fixed Trajectories not working in Minecraft 1.9.
   v2.20: Added Trajectories.
+  v3.0pre2: Fixed Trajectories not working in Minecraft 1.9.
+  v3.0pre3: Fixed the green square at the end of the line not being green.
 ---
 ## Contents
 {:.no_toc}

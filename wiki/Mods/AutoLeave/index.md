@@ -24,8 +24,8 @@ bypasses:
     - "yes"
     - "yes"
 history:
-  v2.19: Added TP mode and SelfHurt mode.
   v1.12: Added AutoLeave.
+  v2.19: Added TP mode and SelfHurt mode.
 ---
 ## Contents
 {:.no_toc}
