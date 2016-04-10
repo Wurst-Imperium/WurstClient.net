@@ -33,7 +33,7 @@ history:
 {:toc}
 
 ## Overview
-AutoLeave is a mod that automtaically makes you leave the server whenever your health is low. It does that by executing the .leave command and it has serveral modes that all leave differently.
+AutoLeave is a mod that automatically makes you leave the server whenever your health is low. It does that by executing the .leave command and it has serveral modes that all leave differently.
 
 ## Usage
 AutoLeave can be used to get an unfair advantage in combat situations. It makes you virtually immortal, as you would just leave the server instead of dying.
