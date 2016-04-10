@@ -27,7 +27,7 @@ It will continue writing that text on all signs that you place until you turn it
 ## Usage
 AutoSign can be used for griefing by placing loads of signs all over a building in order to uglify it. This is especially effective when writing curse words on the signs.
 
-It can also be used for spamming or advertising by writing the URL of a website, the IP of a server or whatever you want to advertise on a sign and then placing as many signs as possible, preferably in areas where the signs are visible to many people. Fun fact: The domain name "wurst-client.tk" was chosen for the Wurst Client website instead of "wurst-imperium.tk/Wurst-client" because it fits better on a sign.
+It can also be used for spamming or advertising by writing the URL of a website, the IP of a server or whatever you want to advertise on a sign and then placing as many signs as possible, preferably in areas where the signs are visible to many people. Fun fact: The domain name "wurst-client.tk" was chosen for the Wurst Client website instead of "wurst-imperium.tk/wurst-client" because it fits better on a sign.
 
 Lastly, AutoSign can be used to cause lag on a server by placing so many signs in one place that everyone who gets too close to the signs experiences FPS lag. This strategy is especially effective on large plot servers. In an experiment done by Alexander01998 and gruenwald32, they were able to reduce people's frame rate to 4 FPS on a 750 slot server.
 
