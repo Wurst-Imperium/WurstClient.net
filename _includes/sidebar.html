@@ -1,6 +1,20 @@
 <div class="panel panel-default">
   <div class="panel-heading">
     <span class="panel-title">
+      Latest News
+    </span>
+  </div>
+  <div class="list-group">
+    {% for item in site.posts | limit: 5 %}
+    <a class="list-group-item" href="{{ item.url | remove: "index.html" }}">
+      {{ item.title }}
+    </a>
+    {% endfor %}
+  </div>
+</div>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <span class="panel-title">
       Want More News?
       <br>
       Follow Me!
@@ -16,7 +30,7 @@
       Twitter
     </a>
     <a class="list-group-item" href="/gplus/" target="_blank">
-			<img alt="Wurst Client on Google+" src="https://cloud.githubusercontent.com/assets/10100202/9079321/2fdc9d5e-3b49-11e5-860a-a5ac94bd3ca0.png">
+			<img alt="Google+" src="https://cloud.githubusercontent.com/assets/10100202/9079321/2fdc9d5e-3b49-11e5-860a-a5ac94bd3ca0.png">
       Google+
     </a>
   </div>
