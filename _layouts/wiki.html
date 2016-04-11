@@ -29,61 +29,8 @@ layout: default
 					{{ content | markdownify }}
 				</main>
 			</div>
-			<div class="hidden-xs col-sm-3">
-				<div class="panel panel-default">
-					<div class="panel-body">
-						{% capture sidebar %}{% include wiki-sidebar.md %}{% endcapture %}
-						{{ sidebar | markdownify }}
-						<a href="https://github.com/Wurst-Imperium/wurst-client.tk/new/gh-pages/wiki" class="btn btn-default">
-							<span class="octicon octicon-plus"></span>
-							Add a Page
-						</a>
-					</div>
-				</div>
-				<div class="panel panel-success">
-					<div class="panel-heading">
-						<span class="panel-title">
-							Contributing
-						</span>
-					</div>
-					<div class="panel-body">
-						<p>
-							You can help us to improve Wurst by submitting a Pull Request on our GitHub page.
-						</p>
-						<p>
-							Read our <a href="/wiki/Contributing/part1/">Contributing Tutorial</a> to learn how get it all set up.
-						</p>
-					</div>
-				</div>
-				<div class="panel panel-default post-content">
-					<div class="panel-heading">
-						<span class="panel-title">
-							Rate this Article
-						</span>
-					</div>
-					<div class="panel-body">
-						<form action="https://docs.google.com/forms/d/1nICi5IdpawsEKdMC0VqCO25ceD2tfnbcqhAfTpHFS1g/formResponse" method="post" target="_blank">
-							<input type="hidden" name="entry.1638351096" value="https://www.wurst-client.tk{{ page.url | remove: "index.html" }}" />
-							<div class="form-group">
-								<label for="feedback-form-rating">Rating</label>
-								<div class="lead">
-									<span class="octicon octicon-star" onclick="$('#feedback-form-rating').val(1);$('#feedback-form-rating-display').text('1 star (very bad)');$('#feedback-form-submit').prop('disabled', false);"></span>
-									<span class="octicon octicon-star" onclick="$('#feedback-form-rating').val(2);$('#feedback-form-rating-display').text('2 stars (bad)');$('#feedback-form-submit').prop('disabled', false);"></span>
-									<span class="octicon octicon-star" onclick="$('#feedback-form-rating').val(3);$('#feedback-form-rating-display').text('3 stars (okay)');$('#feedback-form-submit').prop('disabled', false);"></span>
-									<span class="octicon octicon-star" onclick="$('#feedback-form-rating').val(4);$('#feedback-form-rating-display').text('4 stars (good)');$('#feedback-form-submit').prop('disabled', false);"></span>
-									<span class="octicon octicon-star" onclick="$('#feedback-form-rating').val(5);$('#feedback-form-rating-display').text('5 stars (very good)');$('#feedback-form-submit').prop('disabled', false);"></span>
-								</div>
-								<span class="help-block" id="feedback-form-rating-display">0 stars (not rated)</span>
-								<input id="feedback-form-rating" type="hidden" name="entry.311390593" />
-							</div>
-							<div class="form-group">
-							  <label for="feedback-form-comment">Comment</label>
-								<textarea id="feedback-form-comment" class="form-control" placeholder="Why did you choose that amount of stars?" name="entry.2096942034" style="max-width: 100%;"></textarea>
-							</div>
-							<input class="btn btn-default" id="feedback-form-submit" type="submit" value="Send" disabled>
-						</form>
-					</div>
-				</div>
+			<div class="col-sm-3">
+				{% include wiki/sidebar.html %}
 			</div>
 		</div>
 	</div>
