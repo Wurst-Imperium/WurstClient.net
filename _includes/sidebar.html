@@ -1,6 +1,20 @@
 <div class="panel panel-default">
   <div class="panel-heading">
     <span class="panel-title">
+      Latest News
+    </span>
+  </div>
+  <div class="list-group">
+    {% for item in site.posts | limit: 5 %}
+    <a class="list-group-item" href="{{ item.url | remove: "index.html" }}">
+      {{ item.title }}
+    </a>
+    {% endfor %}
+  </div>
+</div>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <span class="panel-title">
       Want More News?
       <br>
       Follow Me!
