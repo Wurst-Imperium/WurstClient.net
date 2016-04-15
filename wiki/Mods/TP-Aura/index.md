@@ -3,6 +3,8 @@ title: TP-Aura
 layout: wiki
 category: Mod
 media:
+  https://www.youtube.com/watch?v=zDODqsOeGIo: |
+    A video tutorial by Alexander01998 explaining TP-Aura.
   https://cloud.githubusercontent.com/assets/10100202/13008438/9a678df8-d196-11e5-916f-74e1e69bdf65.jpg: |
     The thumbnail of Wurst 2.16, where TP-Aura was added. This update was released on February 12, 2016 and TP-Aura was the main change in it.
 history:

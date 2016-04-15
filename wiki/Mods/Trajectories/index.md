@@ -3,6 +3,8 @@ title: Trajectories
 layout: wiki
 category: Mod
 media:
+  https://www.youtube.com/watch?v=FrsmpiCjV88: |
+    A video tutorial by Alexander01998 explaining Trajectories.
   https://cloud.githubusercontent.com/assets/10100202/14321602/2bcc9ab0-fc1a-11e5-8bf9-47fb2bd164ce.jpg: |
     Using Trajectories with a bow. The green line shows the predicted flight path of the arrow, while the green square at the end of the line shows where the arrow would land.
 history:
