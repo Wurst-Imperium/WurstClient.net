@@ -25,9 +25,44 @@ layout: default
 						{% endfor %}
 					{% endif %}
 					{{ content }}
-					<br>
-					{% include post-footer.html post = page %}
-					<br>
+					<footer class="margin20 no-margin-left no-margin-right">
+						<div class="tile-container bg-grayLighter padding10">
+							{% if post.category == "Wurst-update" %}
+								<div class="tile-group double no-margin-left">
+									<span class="tile-group-title fg-black">Download</span>
+							    <a class="tile tile-wide-x tile-small-y command-button primary no-border" href="https://github.com/Wurst-Imperium/Wurst-Client/releases/download/{{ page.Wurst-version }}/Wurst-Client-{{ page.Wurst-version }}.zip">
+							      <span class="icon mif-cloud-download"></span>
+							      Download
+										<small>Wurst Client {{ post.Wurst-version }}</small>
+							    </a>
+								</div>
+							{% endif %}
+							<div class="tile-group double no-margin-left">
+								<span class="tile-group-title fg-black">Share</span>
+								<a href="https://twitter.com/intent/tweet?text={{ page.title | uri_escape }}&url=https%3A//www.wurst-client.tk{{ page.url | remove: "index.html" | uri_escape }}&via=Wurst_Imperium" target="_blank">
+									<div class="tile-small bg-cyan fg-white">
+										<div class="tile-content iconic">
+											<span class="icon mif-twitter"></span>
+										</div>
+									</div>
+								</a>
+								<a href="https://plus.google.com/share?url=https%3A//www.wurst-client.tk{{ page.url | remove: "index.html" | uri_escape }}" target="_blank">
+									<div class="tile-small bg-red fg-white">
+										<div class="tile-content iconic">
+											<span class="icon mif-google"></span>
+										</div>
+									</div>
+								</a>
+								<a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//www.wurst-client.tk{{ page.url | remove: "index.html" | uri_escape }}" target="_blank">
+									<div class="tile-small bg-darkBlue fg-white">
+										<div class="tile-content iconic">
+											<span class="icon mif-facebook"></span>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</footer>
 					<div id="disqus_thread"></div>
 					<noscript>
 						Please enable JavaScript to view the
@@ -55,4 +90,3 @@ layout: default
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
 </script>
-<script src="//load.sumome.com/" data-sumo-site-id="afb9b2ec1a409937f7d82c7d9608e5b3eb9fff83e198fe4dc0222db718ac3f83" async="async"></script>
