@@ -10,57 +10,58 @@ layout: default
 		<div class="row cells4">
 			<div class="cell colspan3">
 				<!-- Wurst News top -->
-				<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5218363098774955" data-ad-slot="5352619220" data-ad-format="auto"></ins>
-				<br>
+				<div class="shadow padding10 margin20 no-margin-left no-margin-right no-margin-top">
+					<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5218363098774955" data-ad-slot="5352619220" data-ad-format="auto"></ins>
+				</div>
 				<div class="post-content">
-					{% if page.video-id %}
-						{% include video.html id = page.video-id %}
-					{% elsif page.images.size > 0 %}
-						{% for image in page.images limit: 1 %}
-							<div class="image-container bordered">
-								<div class="frame">
-									<img src="{{ image.link }}" alt="{{ page.title }}">
+					<div class="margin20 no-margin-left no-margin-right no-margin-top padding10 shadow">
+						{% if page.video-id %}
+							{% include video.html id = page.video-id %}
+						{% elsif page.images.size > 0 %}
+							{% for image in page.images limit: 1 %}
+								<div class="image-container">
+									<div class="frame">
+										<img src="{{ image.link }}" alt="{{ page.title }}">
+									</div>
 								</div>
-							</div>
-						{% endfor %}
-					{% endif %}
+							{% endfor %}
+						{% endif %}
+					</div>
 					{{ content }}
-					<footer class="margin20 no-margin-left no-margin-right">
-						<div class="tile-container bg-grayLighter padding10">
-							{% if post.category == "Wurst-update" %}
-								<div class="tile-group double no-margin-left">
-									<span class="tile-group-title fg-black">Download</span>
-							    <a class="tile tile-wide-x tile-small-y command-button primary no-border" href="https://github.com/Wurst-Imperium/Wurst-Client/releases/download/{{ page.Wurst-version }}/Wurst-Client-{{ page.Wurst-version }}.zip">
-							      <span class="icon mif-cloud-download"></span>
-							      Download
-										<small>Wurst Client {{ post.Wurst-version }}</small>
-							    </a>
-								</div>
-							{% endif %}
+					<footer class="tile-container bg-grayLighter margin20 no-margin-left no-margin-right padding10 shadow">
+						{% if post.category == "Wurst-update" %}
 							<div class="tile-group double no-margin-left">
-								<span class="tile-group-title fg-black">Share</span>
-								<a href="https://twitter.com/intent/tweet?text={{ page.title | uri_escape }}&url=https%3A//www.wurst-client.tk{{ page.url | remove: "index.html" | uri_escape }}&via=Wurst_Imperium" target="_blank">
-									<div class="tile-small bg-cyan fg-white">
-										<div class="tile-content iconic">
-											<span class="icon mif-twitter"></span>
-										</div>
-									</div>
-								</a>
-								<a href="https://plus.google.com/share?url=https%3A//www.wurst-client.tk{{ page.url | remove: "index.html" | uri_escape }}" target="_blank">
-									<div class="tile-small bg-red fg-white">
-										<div class="tile-content iconic">
-											<span class="icon mif-google"></span>
-										</div>
-									</div>
-								</a>
-								<a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//www.wurst-client.tk{{ page.url | remove: "index.html" | uri_escape }}" target="_blank">
-									<div class="tile-small bg-darkBlue fg-white">
-										<div class="tile-content iconic">
-											<span class="icon mif-facebook"></span>
-										</div>
-									</div>
-								</a>
+								<span class="tile-group-title fg-black">Download</span>
+						    <a class="tile tile-wide-x tile-small-y command-button primary no-border" href="https://github.com/Wurst-Imperium/Wurst-Client/releases/download/{{ page.Wurst-version }}/Wurst-Client-{{ page.Wurst-version }}.zip">
+						      <span class="icon mif-cloud-download"></span>
+						      Download
+									<small>Wurst Client {{ post.Wurst-version }}</small>
+						    </a>
 							</div>
+						{% endif %}
+						<div class="tile-group double no-margin-left">
+							<span class="tile-group-title fg-black">Share</span>
+							<a href="https://twitter.com/intent/tweet?text={{ page.title | uri_escape }}&url=https%3A//www.wurst-client.tk{{ page.url | remove: "index.html" | uri_escape }}&via=Wurst_Imperium" target="_blank">
+								<div class="tile-small bg-cyan fg-white">
+									<div class="tile-content iconic">
+										<span class="icon mif-twitter"></span>
+									</div>
+								</div>
+							</a>
+							<a href="https://plus.google.com/share?url=https%3A//www.wurst-client.tk{{ page.url | remove: "index.html" | uri_escape }}" target="_blank">
+								<div class="tile-small bg-red fg-white">
+									<div class="tile-content iconic">
+										<span class="icon mif-google"></span>
+									</div>
+								</div>
+							</a>
+							<a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//www.wurst-client.tk{{ page.url | remove: "index.html" | uri_escape }}" target="_blank">
+								<div class="tile-small bg-darkBlue fg-white">
+									<div class="tile-content iconic">
+										<span class="icon mif-facebook"></span>
+									</div>
+								</div>
+							</a>
 						</div>
 					</footer>
 					<div id="disqus_thread"></div>
