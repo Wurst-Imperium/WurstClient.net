@@ -16,7 +16,7 @@ layout: default
 				<div class="post-content">
 					<div class="margin20 no-margin-left no-margin-right no-margin-top padding10 shadow">
 						{% if page.video-id %}
-							{% include video.html id = page.video-id %}
+							{% include video.html id = page.video-id onclick = "ga('send', 'event', 'post', 'watch');" %}
 						{% elsif page.images.size > 0 %}
 							{% for image in page.images limit: 1 %}
 								<div class="image-container">
@@ -41,21 +41,21 @@ layout: default
 						{% endif %}
 						<div class="tile-group double no-margin-left">
 							<span class="tile-group-title fg-black">Share</span>
-							<a href="https://twitter.com/intent/tweet?text={{ page.title | uri_escape }}&url=https%3A//www.wurst-client.tk{{ page.url | remove: "index.html" | uri_escape }}&via=Wurst_Imperium" target="_blank">
+							<a href="https://twitter.com/intent/tweet?text={{ page.title | uri_escape }}&url=https%3A//www.wurst-client.tk{{ page.url | remove: "index.html" | uri_escape }}&via=Wurst_Imperium" target="_blank" onclick="ga('send', 'event', 'post', 'share', 'twitter');">
 								<div class="tile-small bg-cyan fg-white">
 									<div class="tile-content iconic">
 										<span class="icon mif-twitter"></span>
 									</div>
 								</div>
 							</a>
-							<a href="https://plus.google.com/share?url=https%3A//www.wurst-client.tk{{ page.url | remove: "index.html" | uri_escape }}" target="_blank">
+							<a href="https://plus.google.com/share?url=https%3A//www.wurst-client.tk{{ page.url | remove: "index.html" | uri_escape }}" target="_blank" onclick="ga('send', 'event', 'post', 'share', 'google');">
 								<div class="tile-small bg-red fg-white">
 									<div class="tile-content iconic">
 										<span class="icon mif-google"></span>
 									</div>
 								</div>
 							</a>
-							<a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//www.wurst-client.tk{{ page.url | remove: "index.html" | uri_escape }}" target="_blank">
+							<a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//www.wurst-client.tk{{ page.url | remove: "index.html" | uri_escape }}" target="_blank" onclick="ga('send', 'event', 'post', 'share', 'facebook');">
 								<div class="tile-small bg-darkBlue fg-white">
 									<div class="tile-content iconic">
 										<span class="icon mif-facebook"></span>

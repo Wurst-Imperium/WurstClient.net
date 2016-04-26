@@ -1,4 +1,4 @@
-<a href="https://www.youtube.com/watch?v={{ include.id }}" target="_blank">
+<a href="https://www.youtube.com/watch?v={{ include.id }}" target="_blank"{% if include.onclick %} onclick="{{ include.onclick }}"{% endif %}>
   <div class="image-container">
     <div class="frame no-padding tile-content iconic">
       <img src="https://i.ytimg.com/vi/{{ include.id }}/maxresdefault.jpg">
