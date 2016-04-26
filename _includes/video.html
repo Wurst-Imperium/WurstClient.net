@@ -1,3 +1,8 @@
-<div class="video-container">
-  <iframe src="https://www.youtube.com/embed/{{ include.id }}" frameborder="0" allowfullscreen></iframe>
-</div>
+<a href="https://www.youtube.com/watch?v={{ include.id }}" target="_blank">
+  <div class="image-container">
+    <div class="frame no-padding tile-content iconic">
+      <img src="https://i.ytimg.com/vi/{{ include.id }}/maxresdefault.jpg">
+      <span class="icon mif-play op-dark bg-hover-red fg-white shadow"></span>
+    </div>
+  </div>
+</a>
