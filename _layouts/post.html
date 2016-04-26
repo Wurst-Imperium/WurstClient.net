@@ -16,7 +16,7 @@ layout: default
 				<div class="post-content">
 					<div class="margin20 no-margin-left no-margin-right no-margin-top padding10 shadow">
 						{% if page.video-id %}
-							{% include video.html id = page.video-id onclick = "ga('send', 'event', 'post', 'watch');" %}
+							{% include video.html id = page.video-id onclick = "ga('send', 'event', 'post', 'watch video');" %}
 						{% elsif page.images.size > 0 %}
 							{% for image in page.images limit: 1 %}
 								<div class="image-container">
