@@ -38,19 +38,19 @@
     <div class="grid">
       <div class="row {% if video-id %}cells2{% endif %}">
         <div class="cell">
-          <a class="command-button {% if pre-release %}warning{% else %}primary{% endif %}" href="{{ downloadlink }}">
+          <a class="command-button {% if pre-release %}warning{% else %}primary{% endif %}" href="{{ downloadlink }}" onclick="ga('send', 'event', 'downloads', 'download', '{{ version }}');">
             <span class="icon mif-cloud-download"></span>
             Download Wurst
             <small>{{ version }} for Minecraft {{ version-range }}</small>
           </a>
           <br>
-          <a class="button large-button" href="{{ include.post.url | remove: "index.html" }}">
+          <a class="button large-button" href="{{ include.post.url | remove: "index.html" }}" onclick="ga('send', 'event', 'downloads', 'view changelog', '{{ version }}');">
             <span class="mif-list"></span>
             &nbsp;
             View Changelog
           </a>
           <br>
-          <a class="button large-button" href="/wiki/Installation/">
+          <a class="button large-button" href="/wiki/Installation/" onclick="ga('send', 'event', 'downloads', ' view installation tutorial', '{{ version }}');">
             <span class="mif-school"></span>
             &nbsp;
             How to Install
@@ -58,14 +58,8 @@
         </div>
         {% if video-id %}
           <div class="cell">
-            <a href="https://www.youtube.com/watch?v={{ video-id }}" target="_blank">
-              <div class="image-container">
-                <div class="frame no-padding tile-content iconic">
-                  <img src="https://i.ytimg.com/vi/{{ video-id }}/maxresdefault.jpg">
-                  <span class="icon mif-play op-dark bg-hover-red fg-white shadow"></span>
-                </div>
-              </div>
-            </a>
+            {% capture onclick %}ga('send', 'event', 'downloads', 'watch video', '{{ version }}');{% endcapture %}
+  					{% include video.html id = video-id onclick = onclick %}
           </div>
         {% endif %}
       </div>

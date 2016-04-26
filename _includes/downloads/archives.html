@@ -7,7 +7,7 @@
           <p class="margin10 no-margin-left no-margin-right no-margin-bottom text-accent">
             {{ archive.label }}:
           </p>
-          <a class="command-button fg-dark" href="{{ archive.link }}">
+          <a class="command-button fg-dark" href="{{ archive.link }}" onclick="ga('send', 'event', 'downloads', 'browse archive', '{{ archive.link }}');">
             <span class="icon mif-cabinet"></span>
             Browse Archive
             <small>
