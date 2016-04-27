@@ -2,35 +2,54 @@
 layout: default
 ---
 <span itemscope itemtype="http://schema.org/WebPage">
-	<div class="page-header">
-		<div class="container">
-			<h1 itemprop="headline" class="visible-xs-inline visible-sm-inline visible-md-inline visible-lg-inline">
-				<span class="mega-octicon octicon-book hidden-xs"></span>
+	<div class="container">
+		<header>
+			<h1 itemprop="headline">
 				{{ page.title }}
 			</h1>
-			<a href="https://github.com/Wurst-Imperium/wurst-client.tk/edit/gh-pages/{{ page.path }}" class="pull-right btn btn-default hidden-print">
-				<span class="hidden-xs">
-					<span class="octicon octicon-pencil"></span>
-					Edit
-				</span>
-				<span class="visible-xs">
-					<span class="octicon octicon-pencil" data-toggle="tooltip" data-placement="left" data-container="body" title="Edit"></span>
-				</span>
-			</a>
-		</div>
+			<ul class="inline-list">
+		    <li>
+					<a class="fg-grayLight fg-hover-lightBlue" href="https://github.com/Wurst-Imperium/wurst-client.tk/edit/gh-pages/{{ page.path }}">
+			      <span class="mif-pencil"></span>
+			      Edit
+					</a>
+				</li>
+				<li>
+					<a class="fg-grayLight fg-hover-lightBlue" href="https://github.com/Wurst-Imperium/wurst-client.tk/new/gh-pages/wiki">
+			      <span class="mif-file-empty"></span>
+			      New Page
+					</a>
+		    </li>
+		  </ul>
+		</header>
 	</div>
+	<hr>
 	<div class="container">
-		<div class="row">
-			<div class="col-sm-9">
-				<!-- Wurst Wiki top -->
-				<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5218363098774955" data-ad-slot="3736285228" data-ad-format="auto"></ins>
-				<br>
-				<main class="post-content" itemprop="mainContentOfPage">
-					{{ content | markdownify }}
-				</main>
-			</div>
-			<div class="col-sm-3">
-				{% include wiki/sidebar.html %}
+		<div class="grid">
+			<div class="row cells4">
+				<div class="cell colspan3">
+					<!-- Wurst Wiki top -->
+					<div class="shadow padding10 margin20 no-margin-left no-margin-right no-margin-top">
+						<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5218363098774955" data-ad-slot="3736285228" data-ad-format="auto"></ins>
+					</div>
+					<main class="post-content" itemprop="mainContentOfPage">
+						{{ content | markdownify }}
+					</main>
+				</div>
+				<div class="cell">
+					<nav>
+						<ul class="v-menu no-float shadow">
+							<li class="menu-title">Wiki Navigation</li>
+							<li><a href="/wiki/Main_Page/">Main Page</a></li>
+							<li><a href="/wiki/Mods/">Mods</a></li>
+							<li><a href="/wiki/Commands/">Commands</a></li>
+							<li><a href="/wiki/Special_Features/">Special Features</a></li>
+							<li><a href="/wiki/Installation/">Installation</a></li>
+							<li><a href="/wiki/Contributing/part1/">Contributing</a></li>
+							<li><a href="/wiki/Tutorials/How_to_Update_to_Java_8/">Java 8</a></li>
+						</ul>
+					</nav>
+				</div>
 			</div>
 		</div>
 	</div>
