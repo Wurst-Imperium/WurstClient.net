@@ -16,7 +16,7 @@ layout: default
 				<div class="post-content">
 					<div class="margin20 no-margin-left no-margin-right no-margin-top padding10 shadow">
 						{% if page.video-id %}
-							{% include video.html id = page.video-id onclick = "ga('send', 'event', 'post', 'watch video');" %}
+							{% include video.html id = page.video-id onclick = "ga('send', 'event', 'news', 'watch video');" %}
 						{% elsif page.images.size > 0 %}
 							{% for image in page.images limit: 1 %}
 								<div class="image-container">
@@ -32,7 +32,7 @@ layout: default
 						{% if post.category == "Wurst-update" or post.category == "Wurst Update" %}
 							<div class="tile-group double no-margin-left">
 								<span class="tile-group-title fg-black">Download</span>
-						    <a class="tile tile-wide-x tile-small-y command-button primary no-border" href="https://github.com/Wurst-Imperium/Wurst-Client{% if post.category == "Wurst Update" %}-for-MC-1.9.X{% endif %}/releases/download/{{ page.Wurst-version }}/Wurst-Client-{{ page.Wurst-version }}.zip" onclick="ga('send', 'event', 'post', 'download');">
+						    <a class="tile tile-wide-x tile-small-y command-button primary no-border" href="https://github.com/Wurst-Imperium/Wurst-Client{% if post.category == "Wurst Update" %}-for-MC-1.9.X{% endif %}/releases/download/{{ page.Wurst-version }}/Wurst-Client-{{ page.Wurst-version }}.zip" onclick="ga('send', 'event', 'news', 'download');">
 						      <span class="icon mif-cloud-download"></span>
 						      Download
 									<small>Wurst Client {{ post.Wurst-version }}</small>
@@ -41,21 +41,21 @@ layout: default
 						{% endif %}
 						<div class="tile-group double no-margin-left">
 							<span class="tile-group-title fg-black">Share</span>
-							<a href="https://twitter.com/intent/tweet?text={{ page.title | uri_escape }}&url=https%3A//www.wurst-client.tk{{ page.url | remove: "index.html" | uri_escape }}&via=Wurst_Imperium" target="_blank" onclick="ga('send', 'event', 'post', 'share', 'twitter');">
+							<a href="https://twitter.com/intent/tweet?text={{ page.title | uri_escape }}&url=https%3A//www.wurst-client.tk{{ page.url | remove: "index.html" | uri_escape }}&via=Wurst_Imperium" target="_blank" onclick="ga('send', 'event', 'news', 'share', 'twitter');">
 								<div class="tile-small bg-cyan fg-white">
 									<div class="tile-content iconic">
 										<span class="icon mif-twitter"></span>
 									</div>
 								</div>
 							</a>
-							<a href="https://plus.google.com/share?url=https%3A//www.wurst-client.tk{{ page.url | remove: "index.html" | uri_escape }}" target="_blank" onclick="ga('send', 'event', 'post', 'share', 'google');">
+							<a href="https://plus.google.com/share?url=https%3A//www.wurst-client.tk{{ page.url | remove: "index.html" | uri_escape }}" target="_blank" onclick="ga('send', 'event', 'news', 'share', 'google');">
 								<div class="tile-small bg-red fg-white">
 									<div class="tile-content iconic">
 										<span class="icon mif-google"></span>
 									</div>
 								</div>
 							</a>
-							<a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//www.wurst-client.tk{{ page.url | remove: "index.html" | uri_escape }}" target="_blank" onclick="ga('send', 'event', 'post', 'share', 'facebook');">
+							<a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//www.wurst-client.tk{{ page.url | remove: "index.html" | uri_escape }}" target="_blank" onclick="ga('send', 'event', 'news', 'share', 'facebook');">
 								<div class="tile-small bg-darkBlue fg-white">
 									<div class="tile-content iconic">
 										<span class="icon mif-facebook"></span>
