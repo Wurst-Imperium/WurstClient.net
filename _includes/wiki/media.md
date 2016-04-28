@@ -1,10 +1,9 @@
 ## Media
 {% for media in page.media %}
-  <figure class="thumbnail">
+  <figure class="margin20 no-margin-left no-margin-right no-margin-top padding10 shadow">
     {% if media[0] contains "https://www.youtube.com/watch?v=" %}
-      <div class="embed-responsive embed-responsive-16by9">
-        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/{{ media[0] | remove: "https://www.youtube.com/watch?v=" }}" allowfullscreen></iframe>
-      </div>
+      {% assign video-id = media[0] | remove: "https://www.youtube.com/watch?v=" %}
+      {% include video.html id = video-id onclick = "ga('send', 'event', 'wiki', 'watch video');" %}
     {% elsif media[0] contains "https://cloud.githubusercontent.com/assets/" %}
     <a href="{{ media[0] }}" target="_blank">
       <img src="{{ media[0] }}"{% if media[1] %} alt="{{ media[1] }}"{% endif %}>
@@ -15,7 +14,7 @@
       </div>
     {% endif %}
     {% if media[1] %}
-      <figcaption class="caption">
+      <figcaption>
         {{ media[1] | markdownify }}
       </figcaption>
     {% endif %}
