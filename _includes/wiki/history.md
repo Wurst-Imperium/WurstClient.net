@@ -1,5 +1,5 @@
 ## History
-<table class="table table-bordered">
+<table class="table border bordered hovered cell-hovered">
   <thead>
     <tr>
       <th>Version</th>
