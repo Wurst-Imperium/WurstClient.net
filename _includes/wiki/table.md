@@ -1,4 +1,4 @@
-<table class="table table-bordered">
+<table class="table border bordered hovered cell-hovered">
   {% for row in include.table %}
   {% if forloop.first %}
   <thead>

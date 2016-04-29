@@ -1,3 +1,10 @@
-<div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/{{ include.id }}" allowfullscreen></iframe>
+<div>
+  <a href="https://www.youtube.com/watch?v={{ include.id }}" target="_blank"{% if include.onclick %} onclick="{{ include.onclick }}"{% endif %}>
+    <div class="image-container">
+      <div class="frame no-padding tile-content iconic">
+        <img src="https://i.ytimg.com/vi/{{ include.id }}/maxresdefault.jpg">
+        <span class="icon mif-play op-dark bg-hover-red fg-white shadow"></span>
+      </div>
+    </div>
+  </a>
 </div>

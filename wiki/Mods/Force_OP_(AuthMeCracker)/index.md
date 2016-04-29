@@ -8,14 +8,16 @@ Force OP (a.k.a. AuthMe Cracker) is a mod that cracks AuthMe passwords. It can b
 
 ## Presentation Tutorial
 
-<div class="thumbnail">
-  <div class="embed-responsive embed-responsive-16by9">
-    <iframe class="embed-responsive-item" src="/forceop-tutorial/impress.html"></iframe>
+<figure class="margin20 no-margin-left no-margin-right no-margin-top padding10 shadow">
+  <div class="video-container">
+    <iframe frameborder="0" src="/forceop-tutorial/impress.html"></iframe>
   </div>
-  <div class="caption">
-    This is an impress.js presentation. Use the space bar or arrow keys to navigate. if that doesn't work, click on the presentation so that it becomes focused.
-  </div>
-</div>
+  <figcaption>
+    <p>
+      This is an impress.js presentation. Use the space bar or arrow keys to navigate. if that doesn't work, click on the presentation so that it becomes focused.
+    </p>
+  </figcaption>
+</figure>
 
 ## Text Tutorial
 

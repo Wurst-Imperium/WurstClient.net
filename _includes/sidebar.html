@@ -1,52 +1,8 @@
-<div class="panel panel-default">
-  <div class="panel-heading">
-    <span class="panel-title">
-      Latest News
-    </span>
-  </div>
-  <div class="list-group">
+<div class="padding10 shadow">
+  <span class="sub-header">Latest Posts</span>
+  <ul class="simple-list blue-bullet">
     {% for item in site.posts | limit: 5 %}
-    <a class="list-group-item" href="{{ item.url | remove: "index.html" }}">
-      {{ item.title }}
-    </a>
+    <li class="margin10 no-margin-left no-margin-right"><a href="{{ item.url | remove: "index.html" }}">{{ item.title }}</a></li>
     {% endfor %}
-  </div>
-</div>
-<div class="panel panel-default">
-  <div class="panel-heading">
-    <span class="panel-title">
-      Want More News?
-      <br>
-      Follow Me!
-    </span>
-  </div>
-  <div class="list-group">
-    <a class="list-group-item" href="/youtube/" target="_blank">
-      <img alt="YouTube" src="https://cloud.githubusercontent.com/assets/10100202/8556919/5068feb0-24fa-11e5-896f-88ed64ccedba.png">
-      YouTube
-    </a>
-    <a class="list-group-item" href="/twitter/" target="_blank">
-			<img alt="Twitter" src="https://cloud.githubusercontent.com/assets/10100202/8556918/5067f56a-24fa-11e5-9e45-4d271be6e1ad.png">
-      Twitter
-    </a>
-    <a class="list-group-item" href="/gplus/" target="_blank">
-			<img alt="Google+" src="https://cloud.githubusercontent.com/assets/10100202/9079321/2fdc9d5e-3b49-11e5-860a-a5ac94bd3ca0.png">
-      Google+
-    </a>
-  </div>
-</div>
-<div class="panel panel-success">
-  <div class="panel-heading">
-    <span class="panel-title">
-      Contributing
-    </span>
-  </div>
-  <div class="panel-body">
-    <p>
-      You can help us to improve Wurst by submitting a Pull Request on our GitHub page.
-    </p>
-    <p>
-      Read our <a href="/wiki/Contributing/part1/">Contributing Tutorial</a> to learn how get it all set up.
-    </p>
-  </div>
+  </ul>
 </div>

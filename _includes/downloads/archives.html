@@ -1,0 +1,27 @@
+<div class="margin20 no-margin-left no-margin-right no-margin-top">
+  <h2>Other Versions</h2>
+  <div class="grid">
+    <div class="row">
+      <div class="cell">
+        {% for archive in include.archives %}
+          <p class="margin10 no-margin-left no-margin-right no-margin-bottom text-accent">
+            {{ archive.label }}:
+          </p>
+          <a class="command-button fg-dark" href="{{ archive.link }}" onclick="ga('send', 'event', 'downloads', 'browse archive', '{{ archive.link }}');">
+            <span class="icon mif-cabinet"></span>
+            Browse Archive
+            <small>
+              {{ archive.min-version }}
+              -
+              {% if archive.max-version %}
+                {{ archive.max-version }}
+              {% else %}
+                {{ include.max-version }}
+              {% endif %}
+            </small>
+          </a>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
