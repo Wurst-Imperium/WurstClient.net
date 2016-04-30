@@ -3,12 +3,13 @@ title: How to Install the Wurst Client for Minecraft
 layout: wiki
 category: Installation
 ---
-## Video Tutorial
+## Video Tutorial (Windows)
 {% include video.html id = "GH6xD_BGsLw" %}
 
-## Text Tutorial
+## Text Tutorial (Windows+Mac OSX)
 First off, if you haven't already, [download Wurst](/download/) and save it somewhere on your computer.
 
+## Windows (Scroll down for Mac OSX)
 Then open the Windows Explorer and type `%appdata%` into the address bar, as shown below:
 
 ![%appdata%](https://cloud.githubusercontent.com/assets/10100202/13546898/69717bf0-e2bc-11e5-82a2-735a988fe721.png)
@@ -37,8 +38,19 @@ Now that you have the "Wurst" folder, you won't need the other folder anymore. Y
 
 ![delete extracted folder](https://cloud.githubusercontent.com/assets/10100202/13546903/698a86b8-e2bc-11e5-9c00-dc8f8d0d0b8b.png)
 
-That is it in terms of the files and folders. The only thing that's left is adding a Wurst profile in the Minecraft launcher.
+That is it in terms of the files and folders. The only thing that's left is adding a Wurst profile in the Minecraft launcher (Scroll Down to Setting up Profile).
 
+## Mac OSX
+Drag the .zip File from your Downloads Folder to the Desktop.
+Dobble-Klick this File to get a Folder Called "Wurst-Client-v(Current Wurst Version)".
+Delete the .zip File.
+Klick on the "Go to" Tab on your upper Bar.
+Klick on Go to Folder... and paste that in the Window:"~/Library/Application Support/Minecraft/Versions"(Whitout the ").
+Then Open the "Wurst-Client-v(Current Wurst Version)" Folder and drag the Folder called "Wurst" in the /Versions Folder.
+Close all Finder Windows and Delete the Wurst Files on your Desktop.
+Now You need to Set up the Profile.
+
+## Setting up Profile
 Start the Minecraft launcher (or restart it if it's already open) and click the "New Profile" button.
 
 ![Minecraft launcher > New Profile](https://cloud.githubusercontent.com/assets/10100202/13546904/698f4496-e2bc-11e5-909c-9c65e916caec.png)
@@ -53,7 +65,7 @@ All of the other settings are optional, but some of them are quite useful:
 
 - Set "Launcher Visibility" to "Hide launcher and re-open when game closes". That will bring you back to the launcher when you close Minecraft.
 
-- In "JVM Arguments", replace `-Xmx1G` with `-Xmx4G` so that Minecraft gets more RAM and runs faster.
+- In "JVM Arguments", replace `-Xmx1G` with `-Xmx4G` so that Minecraft gets more RAM and runs faster (If you have a PC with only 4 GB RAM replace it with `-Xmx2G`).
 
 Lastly, don't forget to save the new profile.
 
