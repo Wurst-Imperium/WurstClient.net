@@ -17,18 +17,26 @@ permalink: /news/:year-:month-:day-:title/index.html
 
 excerpt_separator: <!--read more-->
 
+collections:
+  wiki:
+    output: true
+    permalink: /wiki/:path/
+
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
-      type: "pages"
+      type: pages
     values:
-      layout: "default"
-      author: "Alexander01998"
-  -
-    scope:
+      layout: default
+      author: Alexander01998
+  - scope:
       path: ""
-      type: "posts"
+      type: posts
     values:
-      layout: "post"
-      author: "Alexander01998"
+      layout: post
+      author: Alexander01998
+  - scope:
+      path: ""
+      type: wiki
+    values:
+      layout: wiki
