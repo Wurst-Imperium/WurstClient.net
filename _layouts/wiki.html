@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+{% capture editLink %}https://github.com/Wurst-Imperium/wurst-client.tk/edit/gh-pages/{{ page.path }}{% endcapture %}
 <span itemscope itemtype="http://schema.org/WebPage">
 	<div class="container">
 		<header>
@@ -9,7 +10,7 @@ layout: default
 			</h1>
 			<ul class="inline-list">
 		    <li>
-					<a class="fg-grayLight fg-hover-lightBlue" href="https://github.com/Wurst-Imperium/wurst-client.tk/edit/gh-pages/{{ page.path }}">
+					<a class="fg-grayLight fg-hover-lightBlue" href="{{ editLink }}">
 			      <span class="mif-pencil"></span>
 			      Edit
 					</a>
@@ -32,6 +33,21 @@ layout: default
 					<div class="shadow padding10 margin20 no-margin-left no-margin-right no-margin-top">
 						<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5218363098774955" data-ad-slot="3736285228" data-ad-format="auto"></ins>
 					</div>
+					{% for label in page.labels %}
+						<div class="shadow padding20 margin20 no-margin-left no-margin-right no-margin-top bg-grayLighter">
+							{% case label %}
+								{% when "stub" %}
+									<span class="mif-enlarge mif-lg fg-gray"></span>
+									This article is a stub. You can help us by <a href="{{ editLink }}">expanding it</a>.
+								{% when "messy" %}
+									<span class="mif-bin mif-lg fg-gray"></span>
+									This article is a bit messy. You can help us by <a href="{{ editLink }}">cleaning it up</a>.
+								{% when "outdated" %}
+									<span class="mif-history mif-lg fg-gray"></span>
+									This article is outdated. You can help us by <a href="{{ editLink }}">updating it</a>.
+							{% endcase %}
+						</div>
+					{% endfor %}
 					<main class="post-content" itemprop="mainContentOfPage">
 						{{ content | markdownify }}
 					</main>
