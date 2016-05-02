@@ -2,6 +2,8 @@
 title: .enchant Command
 layout: wiki
 category: Command
+labels:
+  - messy
 ---
 Enchants items with everything (except for Silk Touch) at level 127.
 

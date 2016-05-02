@@ -3,6 +3,8 @@ title: .potion Command
 layout: wiki
 description: Adds, sets or removes the effects of the held potion. Can modify multiple effects at once in the `add` and `set` modes.
 category: Command
+labels:
+  - messy
 ---
 Adds, sets or removes the effects of the held potion. Accepts arguments in groups of 3 for the `add` and `set` modes. Can set multiple effects to one potion. Make sure it fits into the chat bar, or use Spammer to bypass this limit.
 

@@ -2,6 +2,8 @@
 title: .rename Command
 layout: wiki
 category: Command
+labels:
+  - messy
 ---
 Renames the item in your hand. Requires creative mode.
 

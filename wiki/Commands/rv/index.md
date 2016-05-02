@@ -2,6 +2,8 @@
 title: .rv Command
 layout: wiki
 category: Command
+labels:
+  - messy
 ---
 Toggles RemoteView or makes it target a specific entity.
 

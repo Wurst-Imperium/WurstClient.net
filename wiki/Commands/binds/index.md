@@ -2,6 +2,8 @@
 title: .binds Command
 layout: wiki
 category: Command
+labels:
+  - messy
 ---
 Shows the keybind list. The keybind list is divided into pages that each contain up to eight keybinds.
 

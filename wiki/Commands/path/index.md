@@ -2,6 +2,8 @@
 title: .path Command
 layout: wiki
 category: Command
+labels:
+  - messy
 ---
 Shows the shortest path to a specific point. Useful for labyrinths and caves.
 

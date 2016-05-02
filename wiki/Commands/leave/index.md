@@ -2,6 +2,8 @@
 title: .leave Command
 layout: wiki
 category: Command
+labels:
+  - outdated
 ---
 Leaves the current server or changes the mode of AutoLeave.
 
