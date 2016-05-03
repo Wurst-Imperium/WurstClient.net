@@ -18,6 +18,8 @@ media:
     Building the &quot;Wall&quot; template.
   https://cloud.githubusercontent.com/assets/10100202/14953633/9de178e0-106b-11e6-8872-4cbbd5de5e04.jpg: |
     Building the &quot;Wurst&quot; template.
+labels:
+  - missing history
 ---
 ## Contents
 {:.no_toc}

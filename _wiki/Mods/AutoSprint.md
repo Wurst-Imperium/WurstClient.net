@@ -4,6 +4,8 @@ category: Mod
 media:
   https://cloud.githubusercontent.com/assets/10100202/14958694/32ba9de6-108c-11e6-8d20-cbcfd94315a8.jpg: |
     Walking with AutoSprint.
+labels:
+  - missing history
 ---
 ## Contents
 {:.no_toc}

@@ -2,6 +2,8 @@
 title: AutoSplashPot Mod
 description: AutoSplashPot makes you automatically throw splash potions of healing whenever your health is below the set value. This is useful for PVP games.
 category: Mod
+labels:
+- missing history
 ---
 ## Overview
 AutoSplashPot makes you automatically throw splash potions of healing whenever your health is below the set value. This is useful for PVP games where you are equipped with an entire inventory full of potions.

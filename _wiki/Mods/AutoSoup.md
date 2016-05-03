@@ -2,6 +2,8 @@
 title: AutoSoup Mod
 description: AutoSoup makes you automatically eat soup whenever your health is below the set value. This is useful for games like KitPVP.
 category: Mod
+labels:
+- missing history
 ---
 ## Overview
 AutoSoup makes you automatically eat soup whenever your health is below the set value. This is useful for games like KitPVP, where you are equipped with an entire inventory full of soups.

@@ -6,6 +6,8 @@ media:
     Playing the ArenaBrawl game with the ArenaBrawl hack.
   https://cloud.githubusercontent.com/assets/10100202/14948712/c108edee-1043-11e6-9cd6-bb20c01aca64.jpg: |
     This picture technically has nothing to do with the ArenaBrawl hack, but it's a good joke on the topic.
+labels:
+  - missing history
 ---
 ## Contents
 {:.no_toc}

@@ -41,6 +41,9 @@ layout: default
 								{% when "outdated" %}
 									<span class="mif-history mif-lg fg-gray"></span>
 									This article is outdated. You can help us by <a href="{{ editLink }}">updating it</a>.
+								{% when "missing history" %}
+									<span class="mif-library mif-lg fg-gray"></span>
+									This article is missing a history section. You can help us by <a href="{{ editLink }}">adding one</a>.
 							{% endcase %}
 						</div>
 					{% endfor %}
