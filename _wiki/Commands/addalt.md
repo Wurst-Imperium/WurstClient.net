@@ -2,6 +2,7 @@
 title: .addalt
 category: Command
 ---
+## Overview
 Adds a specific player or all players on a server to your alt list. Meant to be used together with [Force OP (AuthMeCracker)](/wiki/Mods/Force_OP_(AuthMeCracker)).
 
 Alts are "alternative" player names that you can use on servers. There is a difference between cracked Alts, which you can only use on cracked servers and premium Alts, which you can use everywhere. The `.addalt` command can only be used to add cracked Alts.

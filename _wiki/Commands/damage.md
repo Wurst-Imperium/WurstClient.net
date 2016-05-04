@@ -4,6 +4,7 @@ category: Command
 labels:
   - messy
 ---
+## Overview
 Applies the given amount of damage. The amount of damage must be a number between 1 and 40. This works on both normal servers and NoCheat+ servers, as long as they have fall damage enabled.
 
 ## Syntax

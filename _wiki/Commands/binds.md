@@ -4,6 +4,7 @@ category: Command
 labels:
   - messy
 ---
+## Overview
 Shows the keybind list. The keybind list is divided into pages that each contain up to eight keybinds.
 
 ## Syntax

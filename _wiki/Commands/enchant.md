@@ -4,6 +4,7 @@ category: Command
 labels:
   - messy
 ---
+## Overview
 Enchants items with everything (except for Silk Touch) at level 127.
 
 ## Syntax
