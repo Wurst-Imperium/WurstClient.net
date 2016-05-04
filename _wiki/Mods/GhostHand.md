@@ -10,4 +10,4 @@ labels:
 {:toc}
 
 ## Overview
-GhostHand is a mod that Allows you to reach specific blocks through walls. Use `.ghosthand id <block_id>` or `.ghosthand name <block_name>` to specify it.
+GhostHand is a mod that allows you to reach specific blocks through walls. Use `.ghosthand id <block_id>` or `.ghosthand name <block_name>` to specify it.
