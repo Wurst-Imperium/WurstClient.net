@@ -2,6 +2,8 @@
 title: Flight Mod (with Bypass)
 description: The Flight mod allows you to fly. It has a configurable speed and includes bypasses for vanilla Minecraft's "Flying is not enabled on this server" kick, ...
 category: Mod
+labels:
+  - messy
 ---
 ## Overview
 The Flight mod allows you to fly. It has a configurable speed and includes bypasses for vanilla Minecraft's "Flying is not enabled on this server" kick, the Mineplex AntiCheat system and certain versions of NoCheat+.
