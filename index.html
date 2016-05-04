@@ -14,7 +14,7 @@ description: The Wurst Client is a Hacked Client for Minecraft 1.8.X and 1.7.X. 
 							{% if post.video-id %}
 								<div class="image-container padding10 shadow">
 									<div class="frame">
-										<a href="{{ post.url | remove: "index.html" }}">
+										<a href="{{ post.url }}">
 											<img src="https://i.ytimg.com/vi/{{ post.video-id }}/maxresdefault.jpg">
 										</a>
 									</div>
@@ -23,7 +23,7 @@ description: The Wurst Client is a Hacked Client for Minecraft 1.8.X and 1.7.X. 
 								{% for image in post.images limit: 1 %}
 									<div class="image-container bordered">
 										<div class="frame">
-											<a href="{{ post.url | remove: "index.html" }}">
+											<a href="{{ post.url }}">
 												<img src="{{ image.link }}">
 											</a>
 										</div>
@@ -33,7 +33,7 @@ description: The Wurst Client is a Hacked Client for Minecraft 1.8.X and 1.7.X. 
 							{{ post.excerpt | replace: ":new", "<img class='emoji' src='https://assets.github.com/images/icons/emoji/new.png' height='20' width='20' align='absmiddle'>:" | replace: ":star", "<img class='emoji' src='https://assets.github.com/images/icons/emoji/star.png' height='20' width='20' align='absmiddle'>:" | replace: ":bug", "<img class='emoji' src='https://assets.github.com/images/icons/emoji/bug.png' height='20' width='20' align='absmiddle'>:" | replace: ":rocket", "<img class='emoji' src='https://assets.github.com/images/icons/emoji/rocket.png' height='20' width='20' align='absmiddle'>:" | replace: ":gem", "<img class='emoji' src='https://assets.github.com/images/icons/emoji/gem.png' height='20' width='20' align='absmiddle'>:" | replace: "::", "" }}
 						</div>
 						<footer>
-					    <a href="{{ post.url | remove: "index.html" }}" class="button primary">
+					    <a href="{{ post.url }}" class="button primary">
 					      Read More
 					    </a>
 						</footer>
@@ -43,13 +43,13 @@ description: The Wurst Client is a Hacked Client for Minecraft 1.8.X and 1.7.X. 
 				{% endfor %}
 				<nav>
 					{% if paginator.previous_page %}
-						<a class="button place-left" href="{{ paginator.previous_page_path | remove: "index.html" }}">
+						<a class="button place-left" href="{{ paginator.previous_page_path }}">
 							<span class="mif-chevron-thin-left"></span>
 							Newer News
 						</a>
 					{% endif %}
 					{% if paginator.next_page %}
-						<a class="button place-right" href="{{ paginator.next_page_path | remove: "index.html" }}">
+						<a class="button place-right" href="{{ paginator.next_page_path }}">
 							Older News
 							<span class="mif-chevron-thin-right"></span>
 						</a>

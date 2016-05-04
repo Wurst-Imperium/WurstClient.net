@@ -2,7 +2,7 @@
   <span class="sub-header">Latest Posts</span>
   <ul class="simple-list blue-bullet">
     {% for item in site.posts | limit: 5 %}
-    <li class="margin10 no-margin-left no-margin-right"><a href="{{ item.url | remove: "index.html" }}">{{ item.title }}</a></li>
+    <li class="margin10 no-margin-left no-margin-right"><a href="{{ item.url }}">{{ item.title }}</a></li>
     {% endfor %}
   </ul>
 </div>

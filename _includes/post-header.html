@@ -4,7 +4,7 @@
     <h1>{{ post.title }}</h1>
   {% else %}
     <h1>
-      <a href="{{ post.url | remove: "index.html" }}">
+      <a href="{{ post.url }}">
         {{ post.title }}
       </a>
     </h1>
