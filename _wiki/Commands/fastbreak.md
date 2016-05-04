@@ -1,5 +1,5 @@
 ---
-title: .fastbreak Command
+title: .fastbreak
 category: Command
 ---
 Changes the settings of FastBreak.

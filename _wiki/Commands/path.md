@@ -1,5 +1,5 @@
 ---
-title: .path Command
+title: .path
 category: Command
 labels:
   - messy

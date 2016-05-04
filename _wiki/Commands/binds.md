@@ -1,5 +1,5 @@
 ---
-title: .binds Command
+title: .binds
 category: Command
 labels:
   - messy

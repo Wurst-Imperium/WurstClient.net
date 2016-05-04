@@ -1,5 +1,5 @@
 ---
-title: .friends Command
+title: .friends
 category: Command
 ---
 Manages your friends list. Friends won't be attacked by Killaura and have a special color in Tracers and PlayerESP.

@@ -1,5 +1,5 @@
 ---
-title: .nuker Command
+title: .nuker
 category: Command
 ---
 Changes the settings of Nuker.

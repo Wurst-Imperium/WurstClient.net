@@ -1,5 +1,5 @@
 ---
-title: .say Command
+title: .say
 category: Command
 ---
 ## Overview

@@ -1,5 +1,5 @@
 ---
-title: .xray Command
+title: .xray
 category: Command
 ---
 Manages or toggles X-Ray.

@@ -1,5 +1,5 @@
 ---
-title: .vclip Command
+title: .vclip
 category: Command
 labels:
   - stub

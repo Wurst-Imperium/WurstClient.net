@@ -1,5 +1,5 @@
 ---
-title: .rv Command
+title: .rv
 category: Command
 labels:
   - messy

@@ -1,5 +1,5 @@
 ---
-title: .tp Command
+title: .tp
 category: Command
 ---
 Teleports you up to 100 blocks away. Only works on vanilla servers.

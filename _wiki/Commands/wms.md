@@ -1,5 +1,5 @@
 ---
-title: .wms Command
+title: .wms
 category: Command
 labels:
   - messy

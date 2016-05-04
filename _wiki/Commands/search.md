@@ -1,5 +1,5 @@
 ---
-title: .search Command
+title: .search
 category: Command
 ---
 Changes the settings of Search or toggles it.

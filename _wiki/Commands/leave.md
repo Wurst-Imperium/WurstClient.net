@@ -1,5 +1,5 @@
 ---
-title: .leave Command
+title: .leave
 category: Command
 labels:
   - outdated

@@ -1,5 +1,5 @@
 ---
-title: .damage Command
+title: .damage
 category: Command
 labels:
   - messy

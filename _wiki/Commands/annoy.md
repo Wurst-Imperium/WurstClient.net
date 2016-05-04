@@ -1,5 +1,5 @@
 ---
-title: .annoy Command
+title: .annoy
 category: Command
 labels:
   - messy

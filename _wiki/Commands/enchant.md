@@ -1,5 +1,5 @@
 ---
-title: .enchant Command
+title: .enchant
 category: Command
 labels:
   - messy

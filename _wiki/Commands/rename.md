@@ -1,5 +1,5 @@
 ---
-title: .rename Command
+title: .rename
 category: Command
 labels:
   - messy
