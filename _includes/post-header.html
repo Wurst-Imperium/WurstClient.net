@@ -1,5 +1,5 @@
 {% assign post = include.post %}
-<header>
+<header{% if page == post %} class="margin30 no-margin-left no-margin-right"{% endif %}>
   {% if page == post %}
     <h1>{{ post.title }}</h1>
   {% else %}
