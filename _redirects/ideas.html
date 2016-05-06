@@ -1,0 +1,17 @@
+---
+layout: none
+---
+{% assign update-posts = site.posts | where: "category", "Wurst Update" %}
+{% if update-posts[0].video-id %}
+  {% capture link %}https://www.youtube.com/watch?v={{ update-posts[0].video-id }}{% endcapture %}
+{% else %}
+  {% assign link = update-posts[0].url %}
+{% endif %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+  <title>Redirecting...</title>
+  <meta http-equiv="refresh" content="0;url={{ link }}">
+</head>
+</html>

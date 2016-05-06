@@ -21,6 +21,9 @@ collections:
   wiki:
     output: true
     permalink: /wiki/:path/
+  redirects:
+    output: true
+    permalink: /:path/
 
 defaults:
   - scope:
@@ -40,3 +43,8 @@ defaults:
       type: wiki
     values:
       layout: wiki
+  - scope:
+      path: ""
+      type: redirects
+    values:
+      layout: redirect
