@@ -1,7 +1,5 @@
 ---
-title: Wurst Client - A Minecraft Hacked Client by Alexander01998
-exacttitle: true
-description: The Wurst Client is a Hacked Client for Minecraft 1.8.X and 1.7.X. It contains over 130 of the best Minecraft hacks out there (95+ mods and 35+ commands).
+title: Wurst News
 ---
 <div class="container">
 	<div class="grid">
@@ -43,7 +41,7 @@ description: The Wurst Client is a Hacked Client for Minecraft 1.8.X and 1.7.X. 
 				{% endfor %}
 				<nav>
 					{% if paginator.previous_page %}
-						<a class="button place-left" href="{{ paginator.previous_page_path }}">
+						<a class="button place-left" href="{{ paginator.previous_page_path | remove: "index.html" }}">
 							<span class="mif-chevron-thin-left"></span>
 							Newer News
 						</a>
