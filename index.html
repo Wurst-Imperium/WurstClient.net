@@ -1,64 +1,113 @@
 ---
-title: Wurst Client - A Minecraft Hacked Client by Alexander01998
-exacttitle: true
-description: The Wurst Client is a Hacked Client for Minecraft 1.8.X and 1.7.X. It contains over 130 of the best Minecraft hacks out there (95+ mods and 35+ commands).
+title: Cheat Like A Pro
 ---
+<div class="carousel" data-role="carousel" data-height="540" data-stop="false" data-effect="fade">
+  <div class="slide">
+    <div style="width: 100%; height: 100%; border-radius: 0px; background-image: url('https://cloud.githubusercontent.com/assets/10100202/6089229/e431ed1c-ae5f-11e4-8887-99bca8bfe033.jpg'); background-size: cover; background-repeat: no-repeat;background-position: center center;"></div>
+    <!-- TODO: more & better background images -->
+  </div>
+  <div class="padding10" style="position: absolute;width: 100%;height: 100%;">
+    <div class="container">
+      <div class="grid">
+        <div class="row cells2">
+          <div class="cell op-lightBlue fg-white padding20 shadow text-shadow">
+            <h1 class="fg-orange uppercase">
+              <strong>Cheat Like A Pro</strong>
+            </h1>
+            <ul class="text-accent">
+              <li>
+                <p>
+                  Win in PVP games
+                </p>
+              </li>
+              <li>
+                <p>
+                  Grief entire servers
+                </p>
+              </li>
+              <li>
+                <p>
+                  Bypass AntiCheat plugins
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="cell align-center">
+            <img class="padding10 no-padding-top no-phone" src="https://cloud.githubusercontent.com/assets/10100202/15098190/ae6e3e58-1536-11e6-825c-ed527bc737a7.png" alt="Wurst Client">
+            <a class="command-button warning shadow text-shadow" style="padding: 8px 3rem 4px 3rem;text-align: center;" href="/download/" onclick="ga('send', 'event', 'main page', 'download', 'first button');">
+              <strong class="uppercase">Download Wurst</strong>
+              <small>(It's free!)</small>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 <div class="container">
-	<div class="grid">
-		<div class="row cells4">
-			<div class="cell colspan3">
-				{% for post in paginator.posts %}
-					<article>
-						{% include post-header.html %}
-						<div class="post-content">
-							{% if post.video-id %}
-								<div class="image-container padding10 shadow">
-									<div class="frame">
-										<a href="{{ post.url }}">
-											<img src="https://i.ytimg.com/vi/{{ post.video-id }}/maxresdefault.jpg">
-										</a>
-									</div>
-								</div>
-							{% elsif post.images.size > 0 %}
-								{% for image in post.images limit: 1 %}
-									<div class="image-container bordered">
-										<div class="frame">
-											<a href="{{ post.url }}">
-												<img src="{{ image.link }}">
-											</a>
-										</div>
-									</div>
-								{% endfor %}
-							{% endif %}
-							{{ post.excerpt | replace: ":new", "<img class='emoji' src='https://assets.github.com/images/icons/emoji/new.png' height='20' width='20' align='absmiddle'>:" | replace: ":star", "<img class='emoji' src='https://assets.github.com/images/icons/emoji/star.png' height='20' width='20' align='absmiddle'>:" | replace: ":bug", "<img class='emoji' src='https://assets.github.com/images/icons/emoji/bug.png' height='20' width='20' align='absmiddle'>:" | replace: ":rocket", "<img class='emoji' src='https://assets.github.com/images/icons/emoji/rocket.png' height='20' width='20' align='absmiddle'>:" | replace: ":gem", "<img class='emoji' src='https://assets.github.com/images/icons/emoji/gem.png' height='20' width='20' align='absmiddle'>:" | replace: "::", "" }}
-						</div>
-						<footer>
-					    <a href="{{ post.url }}" class="button primary">
-					      Read More
-					    </a>
-						</footer>
-					</article>
-					<br>
-					<hr>
-				{% endfor %}
-				<nav>
-					{% if paginator.previous_page %}
-						<a class="button place-left" href="{{ paginator.previous_page_path }}">
-							<span class="mif-chevron-thin-left"></span>
-							Newer News
-						</a>
-					{% endif %}
-					{% if paginator.next_page %}
-						<a class="button place-right" href="{{ paginator.next_page_path }}">
-							Older News
-							<span class="mif-chevron-thin-right"></span>
-						</a>
-					{% endif %}
-				</nav>
-			</div>
-			<div class="cell">
-				{% include sidebar.html %}
-			</div>
-		</div>
-	</div>
+  <div class="grid">
+    <div class="row cells3">
+      <div class="cell">
+        <div class="align-center fg-lightBlue">
+          <span class="mif-apps mif-6x padding10"></span>
+          <h2>170+ Cheats</h2>
+        </div>
+        <p class="text-accent">
+          The Wurst Client has everything you need to kick ass in both griefing and PVP, from AntiAFK to YesCheat+!
+        </p>
+      </div>
+      <div class="cell">
+        <div class="align-center fg-lightBlue">
+          <span class="mif-gamepad mif-6x padding10"></span>
+          <h2>Easy To Use</h2>
+        </div>
+        <p class="text-accent">
+          Everything that Wurst can do is documented and explained on the Wurst Wiki, so you don't have to be an expert in order to use it like an expert.
+        </p>
+      </div>
+      <div class="cell">
+        <div class="align-center fg-lightBlue">
+          <span class="mif-unlock mif-6x padding10"></span>
+          <h2>Force OP</h2>
+        </div>
+        <p class="text-accent">
+          You can even use Wurst to cheat yourself admin permissions! We currently have four differnt methods to do that.
+        </p>
+      </div>
+    </div>
+    <div class="row cells2">
+      <div class="cell">
+        <div class="align-center fg-lightBlue">
+          <span class="mif-download2 mif-6x padding10"></span>
+          <h2>Over 4,000,000 Downloads</h2>
+        </div>
+        <p class="text-accent">
+          Wurst is trusted and loved by millions of users all over the world and thousands of new users download it every day.
+        </p>
+        <p class="align-center">
+          <img src="https://drive.google.com/uc?id=0B2YeSS9tm5zLMF9NWjNZYnNqSTA" alt="downloads counter" style="height: 40px;">
+        </p>
+      </div>
+      <div class="cell">
+        <div class="align-center fg-lightBlue">
+          <span class="mif-trophy mif-6x padding10"></span>
+          <h2>Rated #1 On WiZARDHAX</h2>
+        </div>
+        <p class="text-accent">
+          Wurst has been rated the most popular Minecraft hacked client of 2016 by the world's largest video game hacking network WiZARDHAX.com.
+        </p>
+        <p class="align-center">
+          <img src="https://cloud.githubusercontent.com/assets/10100202/15135883/cb96ce50-167b-11e6-8b3e-dd488d057adf.png" alt="downloads counter" style="height: 56px;">
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="bg-lightBlue padding20 no-padding-left no-padding-right">
+  <div class="container align-center">
+    <a class="command-button warning shadow text-shadow" style="padding: 8px 3rem 4px 3rem;text-align: center;" href="/download/" onclick="ga('send', 'event', 'main page', 'download', 'second button');">
+      <strong class="uppercase">Download Wurst</strong>
+      <small>(It's free!)</small>
+    </a>
+  </div>
 </div>
