@@ -16,7 +16,7 @@ labels:
 FastLadder is a mod that allows you to climb up ladders faster.
 
 ## Usage
-Wheter it has a use or not, it's nice to have. Ladders are always annoying.
+Whether it has a use or not, it's nice to have. Ladders are always annoying.
 
 ## Bypass
 FastLadder bypasses everything.
