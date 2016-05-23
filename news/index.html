@@ -19,7 +19,7 @@ title: Wurst News
 								</div>
 							{% elsif post.images.size > 0 %}
 								{% for image in post.images limit: 1 %}
-									<div class="image-container bordered">
+									<div class="image-container padding10 shadow">
 										<div class="frame">
 											<a href="{{ post.url }}">
 												<img src="{{ image.link }}">
