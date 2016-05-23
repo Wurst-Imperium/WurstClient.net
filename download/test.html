@@ -36,7 +36,6 @@ archives:
 r17x:
   url: https://old.wurst-client.tk/news/wurst131-tooltipupdate
   Wurst-version: v1.3.1
-split-test: 88581240-5
 ---
 <div class="container">
   <h1>Wurst Client Downloads</h1>
@@ -60,8 +59,8 @@ split-test: 88581240-5
           {% endif %}
         {% endfor %}
 
-        {% include downloads/section.html post = post-r19x mcversion = "1.9.X" %}
-        {% include downloads/section.html post = post-l19x mcversion = "1.9.X" %}
+        {% include downloads/section-test.html post = post-r19x mcversion = "1.9.X" %}
+        {% include downloads/section-test.html post = post-l19x mcversion = "1.9.X" %}
         {% if post-l19x != null %}
           {% include downloads/archives.html archives = page.archives.19x max-version = post-l19x.Wurst-version %}
         {% else %}
@@ -81,8 +80,8 @@ split-test: 88581240-5
           {% endif %}
         {% endfor %}
 
-        {% include downloads/section.html post = post-r18x mcversion = "1.8.X" %}
-        {% include downloads/section.html post = post-l18x mcversion = "1.8.X" %}
+        {% include downloads/section-test.html post = post-r18x mcversion = "1.8.X" %}
+        {% include downloads/section-test.html post = post-l18x mcversion = "1.8.X" %}
         {% if post-l18x != null %}
           {% include downloads/archives.html archives = page.archives.18x max-version = post-l18x.Wurst-version %}
         {% else %}
@@ -90,7 +89,7 @@ split-test: 88581240-5
         {% endif %}
       </div>
       <div class="frame" id="mc17x">
-        {% include downloads/section.html post = page.r17x mcversion = "1.7.X" %}
+        {% include downloads/section-test.html post = page.r17x mcversion = "1.7.X" %}
         {% include downloads/archives.html archives = page.archives.17x max-version = page.r17x.Wurst-version %}
       </div>
     </div>
