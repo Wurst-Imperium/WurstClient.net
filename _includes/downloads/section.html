@@ -7,6 +7,7 @@
     {% assign pre-release = false %}
   {% endif %}
   {% assign video-id = include.post.video-id %}
+  {% assign thumbnail = include.post.images[0].link %}
   {% case include.mcversion %}
     {% when "1.9.X" %}
       {% assign version-range = "1.9 - 1.9.4" %}
@@ -33,7 +34,7 @@
       </div>
     {% endif %}
     <div class="grid">
-      <div class="row {% if video-id %}cells2{% endif %}">
+      <div class="row {% if video-id or thumbnail %}cells2{% endif %}">
         <div class="cell">
           <a class="command-button {% if pre-release %}warning{% else %}primary{% endif %}" href="{{ include.post.url }}" onclick="ga('send', 'event', 'downloads', 'download', '{{ version }}');">
             <span class="icon mif-cloud-download"></span>
@@ -57,6 +58,12 @@
           <div class="cell">
             {% capture onclick %}ga('send', 'event', 'downloads', 'watch video', '{{ version }}');{% endcapture %}
   					{% include video.html id = video-id onclick = onclick %}
+          </div>
+        {% elsif thumbnail %}
+          <div class="cell">
+            <a href="{{ include.post.url }}">
+              <img src="{{ thumbnail }}" alt="Wurst {{ version | remove: "v" }}">
+            </a>
           </div>
         {% endif %}
       </div>
