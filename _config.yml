@@ -38,11 +38,13 @@ defaults:
     values:
       layout: post
       author: Alexander01998
+      secondarytitle: Wurst Client News
   - scope:
       path: ""
       type: wiki
     values:
       layout: wiki
+      secondarytitle: Wurst Client Wiki
   - scope:
       path: ""
       type: redirects
