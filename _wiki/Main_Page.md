@@ -1,5 +1,5 @@
 ---
-title: Welcome to the Wurst Client wiki!
+title: Main Page
 ---
 ![Wurst Client logo](https://cloud.githubusercontent.com/assets/10100202/8269115/0df480ba-179c-11e5-9eb9-30ce637a0827.png)
 
