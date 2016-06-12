@@ -35,23 +35,14 @@
     {% endif %}
     <div class="grid">
       <div class="row {% if video-id or thumbnail %}cells2{% endif %}">
-        <div class="cell">
+        <div class="cell padding20">
+          <span class="mif-arrow-right mif-4x {% if pre-release %}fg-cyan{% else %}fg-orange{% endif %} no-tablet"></span>
+          <span class="mif-arrow-down-right mif-4x {% if pre-release %}fg-cyan{% else %}fg-orange{% endif %} no-pc"></span>
+          <br class="no-pc">
           <a class="command-button {% if pre-release %}warning{% else %}primary{% endif %}" href="{{ include.post.url }}" onclick="ga('send', 'event', 'downloads', 'download', '{{ version }}');">
             <span class="icon mif-cloud-download"></span>
             Download Wurst
             <small>{{ version }} for Minecraft {{ version-range }}</small>
-          </a>
-          <br>
-          <a class="button large-button" href="{{ include.post.url }}" onclick="ga('send', 'event', 'downloads', 'view changelog', '{{ version }}');">
-            <span class="mif-list"></span>
-            &nbsp;
-            View Changelog
-          </a>
-          <br>
-          <a class="button large-button" href="/wiki/Installation/" onclick="ga('send', 'event', 'downloads', ' view installation tutorial', '{{ version }}');">
-            <span class="mif-school"></span>
-            &nbsp;
-            How to Install
           </a>
         </div>
         {% if video-id %}
