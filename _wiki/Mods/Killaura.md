@@ -1,8 +1,6 @@
 ---
 title: Killaura
 category: Mod
-labels:
-  - stub
 ---
 ## Contents
 {:.no_toc}
