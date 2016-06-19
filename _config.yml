@@ -3,7 +3,7 @@ exclude:
 
 gems:
   - jekyll-sitemap
-  - jemoji
+  - jekyll-paginate
 
 timezone: Europe/Berlin
 
