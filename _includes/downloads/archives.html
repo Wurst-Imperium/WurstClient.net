@@ -1,5 +1,8 @@
-<div class="margin20 no-margin-left no-margin-right no-margin-top">
-  <h2>Other Versions</h2>
+<div class="margin20 align-center">
+  <a onclick="$(this).parent().slideUp();$('#archive-{{ include.id }}').slideDown();">show older versions</a>
+</div>
+<div id="archive-{{ include.id }}" class="margin20 no-margin-left no-margin-right no-margin-top" style="display: none;">
+  <h2>Older Versions</h2>
   <div class="grid">
     <div class="row">
       <div class="cell">
