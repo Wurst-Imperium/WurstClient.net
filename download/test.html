@@ -36,7 +36,6 @@ archives:
 r17x:
   url: https://old.wurst-client.tk/news/wurst131-tooltipupdate
   Wurst-version: v1.3.1
-split-test: 88581240-10
 ---
 <div class="container">
   <h1 class="align-center margin20 no-margin-left no-margin-right">
@@ -44,13 +43,25 @@ split-test: 88581240-10
     <br>
     <small>(Choose A Version)</small>
   </h1>
-  <div class="tabcontrol2" data-role="tabcontrol">
+  <div class="tabcontrol2" data-role="tabcontrol" data-open-target="#mc19x">
     <ul class="tabs">
+      <li><a href="#mc110x">Minecraft 1.10.X</a></li>
       <li><a href="#mc19x">Minecraft 1.9.X</a></li>
       <li><a href="#mc18x">Minecraft 1.8.X</a></li>
       <li><a href="#mc17x">Minecraft 1.7.X</a></li>
     </ul>
     <div class="frames">
+      <div class="frame" id="mc110x" style="display: none;">
+        <div class="align-center padding40 no-padding-left no-padding-right">
+          <h2>Coming Soon!</h2>
+          <p>
+            Wurst 4.0 for Minecraft 1.10.X will be awesome, but it's not ready to be released yet.
+          </p>
+          <p>
+            You can speed up the process by <u>patiently waiting</u> for it and NOT asking us when it will be finished.
+          </p>
+        </div>
+      </div>
       <div class="frame" id="mc19x">
         {% assign update-posts = site.posts | where: "category", "Wurst Update" %}
         {% for post in update-posts %}
