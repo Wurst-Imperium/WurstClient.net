@@ -2,6 +2,7 @@ exclude:
 - README.md
 
 gems:
+  - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-paginate
 
