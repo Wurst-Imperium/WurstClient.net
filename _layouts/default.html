@@ -28,6 +28,11 @@
 	{% endif %}
 	<link rel="shortcut icon" href="/favicon.ico">
 	<link href="/css/metro.all.min.css" rel="stylesheet">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@Wurst_Imperium">
+	<meta name="twitter:title" content="{{ page.title }}">
+	<meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ page.content | strip_html | strip_newlines | truncate: 256 }}{% endif %}">
+	<meta name="twitter:image" content="{% if page.images[0] %}{{ page.images[0] }}{% elsif page.video-id %}https://i.ytimg.com/vi/{{ page.video-id }}/maxresdefault.jpg{% endif %}">
 	{% include analytics.html %}
 </head>
 <body>
