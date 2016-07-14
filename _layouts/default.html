@@ -32,7 +32,7 @@
 	<meta name="twitter:site" content="@Wurst_Imperium">
 	<meta name="twitter:title" content="{{ page.title }}">
 	<meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ page.content | strip_html | strip_newlines | truncate: 256 }}{% endif %}">
-	<meta name="twitter:image" content="{% if page.images[0].link %}{{ page.images[0].link }}{% elsif page.video-id %}https://i.ytimg.com/vi/{{ page.video-id }}/maxresdefault.jpg{% endif %}">
+	<meta name="twitter:image" content="{% if page.image %}{{ page.image }}{% elsif page.video %}https://i.ytimg.com/vi/{{ page.video }}/maxresdefault.jpg{% endif %}">
 	{% include analytics.html %}
 </head>
 <body>

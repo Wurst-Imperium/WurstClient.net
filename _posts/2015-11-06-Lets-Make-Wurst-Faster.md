@@ -1,9 +1,8 @@
 ---
 title: Let's Make Wurst Faster - Performance Experts Wanted
 description: I've tried so many things to make Wurst faster and never had much success with it, but now I want to see what YOU can come up with!
-video-id: E67n4TGrbco
-images:
-  - link: https://cloud.githubusercontent.com/assets/10100202/10998844/78fb9e7a-8498-11e5-9a1f-6804cace2ed4.jpg
+video: E67n4TGrbco
+image: https://cloud.githubusercontent.com/assets/10100202/10998844/78fb9e7a-8498-11e5-9a1f-6804cace2ed4.jpg
 ---
 I've tried so many things to make Wurst faster and never had much success with it, but now I want to see what YOU can come up with!
 

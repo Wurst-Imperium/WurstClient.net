@@ -1,7 +1,6 @@
 ---
 title: WURST CAPE GIVEAWAY - grief a server and win a Wurst cape!
-images:
-  - link: https://cloud.githubusercontent.com/assets/10100202/6630150/f5b723c4-c915-11e4-9d4a-c7abc73874fb.jpg
+image: https://cloud.githubusercontent.com/assets/10100202/6630150/f5b723c4-c915-11e4-9d4a-c7abc73874fb.jpg
 ---
 We're giving away 10 HD Wurst capes! Watch this video to find out how YOU can win one.
 

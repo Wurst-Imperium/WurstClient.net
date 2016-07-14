@@ -15,16 +15,14 @@ layout: default
 				</div>
 				<div class="post-content">
 					<div class="margin20 no-margin-left no-margin-right no-margin-top padding10 shadow">
-						{% if page.video-id %}
-							{% include video.html id = page.video-id onclick = "ga('send', 'event', 'news', 'watch video');" %}
-						{% elsif page.images.size > 0 %}
-							{% for image in page.images limit: 1 %}
-								<div class="image-container">
-									<div class="frame">
-										<img src="{{ image.link }}" alt="{{ page.title }}">
-									</div>
+						{% if page.video %}
+							{% include video.html id = page.video onclick = "ga('send', 'event', 'news', 'watch video');" %}
+						{% elsif page.image %}
+							<div class="image-container">
+								<div class="frame">
+									<img src="{{ page.image }}" alt="{{ page.title }}">
 								</div>
-							{% endfor %}
+							</div>
 						{% endif %}
 					</div>
 					{{ content }}

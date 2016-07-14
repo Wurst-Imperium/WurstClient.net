@@ -1,6 +1,6 @@
 ---
 title: "Coding With Alex: Bugfixes for Wurst 3.0"
-video-id: fVxNyx3fakk
+video: fVxNyx3fakk
 ---
 This video shows how I made some of the bugfixes in Wurst 3.0 for Minecraft 1.9. It covers the following:
 

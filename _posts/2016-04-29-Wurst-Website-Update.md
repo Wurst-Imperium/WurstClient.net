@@ -1,6 +1,6 @@
 ---
 title: Wurst Website Update - Faster, Prettier, Easier
-video-id: hfgFNtkseqg
+video: hfgFNtkseqg
 ---
 This week, instead of a Wurst update, we have a Wurst website update. I've been working on this new design for a couple of weeks now and I am very pleased with the results.
 

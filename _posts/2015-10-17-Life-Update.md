@@ -2,9 +2,8 @@
 title: Life Update - What's Been Going on This Week
 description: There hasn't been a Wurst update last Friday, as I've been working on some other things this week.
 category: Video
-video-id: RZz9iCkmAxE
-images:
-  - link: https://cloud.githubusercontent.com/assets/10100202/10558234/325f28b2-74c9-11e5-92c9-1a2be479dfd9.jpg
+video: RZz9iCkmAxE
+image: https://cloud.githubusercontent.com/assets/10100202/10558234/325f28b2-74c9-11e5-92c9-1a2be479dfd9.jpg
 ---
 There hasn't been a Wurst update last Friday, as I've been working on some other things this week. So instead of a Wurst update video, I'll tell you what I've been working on. I'm mainly working on the [Wurst website](/) right now, redesigning it and changing up a few things.
 

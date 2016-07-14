@@ -1,13 +1,12 @@
 ---
 title: How to Use Survival OP-Sign (Detailed Tutorial)
 description: After the release of Wurst 2.5, a lot of people asked me how to use the new Survival OP-Sign mod. So today I'm going to explain that.
-video-id: JAhcIuu9myE
-images:
-  - link: https://cloud.githubusercontent.com/assets/10100202/10245628/887a70f6-6909-11e5-8678-3e95936d71a1.jpg
+video: JAhcIuu9myE
+image: https://cloud.githubusercontent.com/assets/10100202/10245628/887a70f6-6909-11e5-8678-3e95936d71a1.jpg
 ---
 After the release of Wurst 2.5, a lot of people asked me how to use the new Survival OP-Sign mod. So today I'm going to explain that.
 
-In [this video](https://www.youtube.com/watch?v={{ page.video-id }}), I'm going to walk you through the entire process of using OP-Sign, with everything explained in detail and no step skipped.
+In [this video](https://www.youtube.com/watch?v={{ page.video }}), I'm going to walk you through the entire process of using OP-Sign, with everything explained in detail and no step skipped.
 
 <!--read more-->
 

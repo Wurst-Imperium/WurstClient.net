@@ -1,9 +1,7 @@
 ---
 title: Introducing Hook Manager
 category: side projects
-images:
-  - link: https://cloud.githubusercontent.com/assets/10100202/7994159/7cb66bb4-0b0b-11e5-9f1d-0e8a6becd5fc.jpg
-    text: <p class="text-center">A sreenshot of Hook Manager, version 0.2</p>
+image: https://cloud.githubusercontent.com/assets/10100202/7994159/7cb66bb4-0b0b-11e5-9f1d-0e8a6becd5fc.jpg
 ---
 <a href="https://www.hook-manager.tk/">Hook Manager</a>
 is an MCP alternative modding tool that will be powering Wurst 2.0 and later versions.

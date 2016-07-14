@@ -1,6 +1,6 @@
 ---
 title: "[DE] Force OP: 750 Slot Server gegrieft"
-video-id: LyE2BKM5aL8
+video: LyE2BKM5aL8
 ---
 **Note: This is a German post.**
 

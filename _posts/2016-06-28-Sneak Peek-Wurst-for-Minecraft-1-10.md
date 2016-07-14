@@ -1,6 +1,6 @@
 ---
 title: "Sneak Peek: Wurst for Minecraft 1.10"
-video-id: c-KUB89DgkQ
+video: c-KUB89DgkQ
 ---
 Big news: Wurst will finally get an ASM injection system!
 
