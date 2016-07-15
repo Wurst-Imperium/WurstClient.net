@@ -1,7 +1,12 @@
 ---
-title: Wurst Client Download for Minecraft 1.9, 1.8 &amp; 1.7
+title: Wurst Client Download (Minecraft Hacked Client)
 exacttitle: true
 archives:
+  110x:
+    -
+      label: Open Source versions
+      link: https://github.com/Wurst-Imperium/Wurst-Client-for-MC-1.10.X/releases
+      min-version: v4.0
   19x:
     -
       label: Open Source versions
@@ -45,12 +50,34 @@ r17x:
   </h1>
   <div class="tabcontrol2" data-role="tabcontrol">
     <ul class="tabs">
+      <li><a href="#mc110x">Minecraft 1.10.X</a></li>
       <li><a href="#mc19x">Minecraft 1.9.X</a></li>
       <li><a href="#mc18x">Minecraft 1.8.X</a></li>
       <li><a href="#mc17x">Minecraft 1.7.X</a></li>
     </ul>
     <div class="frames">
-      <div class="frame" id="mc19x">
+      <div class="frame" id="mc110x">
+        {% assign update-posts = site.posts | where: "category", "Wurst Update (MC 1.10.X)" %}
+        {% for post in update-posts %}
+          {% if post.Wurst-version contains "pre" %}
+            {% if post-l110x == null %}
+              {% assign post-l110x = post %}
+            {% endif %}
+          {% else %}
+            {% assign post-r110x = post %}
+            {% break %}
+          {% endif %}
+        {% endfor %}
+
+        {% include downloads/section.html post = post-r110x mcversion = "1.10.X" %}
+        {% include downloads/section.html post = post-l110x mcversion = "1.10.X" %}
+        {% if post-l110x != null %}
+          {% include downloads/archives.html id = "110x" archives = page.archives.110x max-version = post-l110x.Wurst-version %}
+        {% else %}
+          {% include downloads/archives.html id = "110x" archives = page.archives.110x max-version = post-r110x.Wurst-version %}
+        {% endif %}
+      </div>
+      <div class="frame" id="mc19x" style="display: none;">
         {% assign update-posts = site.posts | where: "category", "Wurst Update" %}
         {% for post in update-posts %}
           {% if post.Wurst-version contains "pre" %}
