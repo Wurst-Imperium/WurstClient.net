@@ -1,7 +1,6 @@
 ---
 title: The brand new Wurst Wiki (version 3)
-images:
-  - link: https://cloud.githubusercontent.com/assets/10100202/8271100/09451ef8-1805-11e5-8b57-d7aab04561ad.jpg
+image: https://cloud.githubusercontent.com/assets/10100202/8271100/09451ef8-1805-11e5-8b57-d7aab04561ad.jpg
 ---
 The new Wurst Client wiki makes it easier than ever to find information about Wurst. And if there is something you can't find, you can add it!
 

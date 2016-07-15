@@ -3,7 +3,7 @@ exclude:
 
 gems:
   - jekyll-sitemap
-  - jemoji
+  - jekyll-paginate
 
 timezone: Europe/Berlin
 
@@ -13,17 +13,17 @@ paginate: 10
 
 paginate_path: "/news/:num/"
 
-permalink: /news/:year-:month-:day-:title/
+permalink: /news/:year-:month-:day-:title
 
 excerpt_separator: <!--read more-->
 
 collections:
   wiki:
     output: true
-    permalink: /wiki/:path/
+    permalink: /wiki/:path
   redirects:
     output: true
-    permalink: /:path/
+    permalink: /:path
 
 defaults:
   - scope:
@@ -38,11 +38,13 @@ defaults:
     values:
       layout: post
       author: Alexander01998
+      secondarytitle: Wurst Client News
   - scope:
       path: ""
       type: wiki
     values:
       layout: wiki
+      secondarytitle: Wurst Client Wiki
   - scope:
       path: ""
       type: redirects

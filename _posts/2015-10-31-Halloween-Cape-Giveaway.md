@@ -2,8 +2,7 @@
 title: Halloween Wurst Cape Giveaway
 description: We're giving away 7 Halloween themed Wurst capes to 7 randomly chosen winners. All you need to do to participate is take this quick survey and answer a few questions.
 category: Giveaway
-images:
-  - link: https://cloud.githubusercontent.com/assets/10100202/10862692/28a7f638-7fb3-11e5-9f61-594315fe08fa.jpg
+image: https://cloud.githubusercontent.com/assets/10100202/10862692/28a7f638-7fb3-11e5-9f61-594315fe08fa.jpg
 ---
 We're giving away 7 Halloween themed Wurst capes to 7 randomly chosen winners. All you need to do to participate is take this quick survey and answer a few questions.
 

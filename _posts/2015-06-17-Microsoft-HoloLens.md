@@ -1,7 +1,6 @@
 ---
 title: Microsoft HoloLens - Minecraft on your frikken Table!
-images:
-  - link: https://cloud.githubusercontent.com/assets/10100202/8216894/cc6f5d0e-1539-11e5-9d33-58ec41750e6c.jpg
+image: https://cloud.githubusercontent.com/assets/10100202/8216894/cc6f5d0e-1539-11e5-9d33-58ec41750e6c.jpg
 ---
 For those who haven't seen it yet, Microsoft made these super awesome hologram magic glasses that allow you to play Minecraft in REAL LIFE!
 <!--read more-->

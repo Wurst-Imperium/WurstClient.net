@@ -4,7 +4,7 @@
   <thead>
     <tr>
       {% for col in row %}
-      <th>{{ col }}</th>
+      <th class="no-padding-top no-padding-bottom">{{ col | markdownify }}</th>
       {% endfor %}
     </tr>
   </thead>
@@ -12,7 +12,7 @@
     {% else %}
     <tr>
       {% for col in row %}
-      <td>{{ col }}</td>
+      <td class="no-padding-top no-padding-bottom">{{ col | markdownify }}</td>
       {% endfor %}
     </tr>
     {% endif %}

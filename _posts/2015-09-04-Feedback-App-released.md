@@ -1,8 +1,7 @@
 ---
 title: Help Me Shape the Future of Wurst! - Feedback App Released
 description: Let's get your voices heard.
-images:
-  - link: https://cloud.githubusercontent.com/assets/10100202/9668326/3a7e0370-5281-11e5-8813-9956759272d6.png
+image: https://cloud.githubusercontent.com/assets/10100202/9668326/3a7e0370-5281-11e5-8813-9956759272d6.png
 ---
 Let's get your voices heard.
 

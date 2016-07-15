@@ -2,9 +2,8 @@
 title: WiZARD and Alexander01998 Talking About the Recent Wurst Updates
 description: I've recorded a video with WiZARD again. This time we talk about some the new features that were added in the last couple of Wurst updates.
 category: Video
-video-id: fGjJ5mZcxvs
-images:
-  - link: https://cloud.githubusercontent.com/assets/10100202/13374970/0960ef7a-dd94-11e5-90e2-38ec5c511504.jpg
+video: fGjJ5mZcxvs
+image: https://cloud.githubusercontent.com/assets/10100202/13374970/0960ef7a-dd94-11e5-90e2-38ec5c511504.jpg
 ---
 It's been a while, hasn't it?
 

@@ -1,8 +1,7 @@
 ---
 title: Wurst Fan Shop - T-Shirts, Mouse Pads and More
 description: Today I'm very happy to announce that we now have a Wurst Client Fan Shop. I have been working on this fan shop for quite some time, and now it's finally up and running.
-images:
-  - link: https://cloud.githubusercontent.com/assets/10100202/9937357/b17e72c2-5d60-11e5-9321-d56e902389c0.jpg
+image: https://cloud.githubusercontent.com/assets/10100202/9937357/b17e72c2-5d60-11e5-9321-d56e902389c0.jpg
 ---
 Today I'm very happy to announce that we now have a Wurst Client Fan Shop. I have been working on this fan shop for quite some time, and now it's finally up and running.
 
