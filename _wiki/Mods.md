@@ -1,6 +1,5 @@
 ---
 title: Mods
-permalink: /wiki/Mods/
 ---
 ## Definition
 A mod in Wurst is a feature that can be toggled using the `.t` command. It is also possible (and usually preferred) to toggle a mod through the Navigator or a keybind instead.
