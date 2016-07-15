@@ -16,7 +16,7 @@ layout: default
 				<div class="post-content">
 					<div class="margin20 no-margin-left no-margin-right no-margin-top padding10 shadow">
 						{% if page.video %}
-							{% include video.html id = page.video onclick = "ga('send', 'event', 'news', 'watch video');" %}
+							{% include video.html id = page.video thumbnail = page.image onclick = "ga('send', 'event', 'news', 'watch video');" %}
 						{% elsif page.image %}
 							<div class="image-container">
 								<div class="frame">
