@@ -9,6 +9,8 @@
   {% assign video-id = include.post.video-id %}
   {% assign thumbnail = include.post.images[0].link %}
   {% case include.mcversion %}
+    {% when "1.10.X" %}
+      {% assign version-range = "1.10 - 1.10.2" %}
     {% when "1.9.X" %}
       {% assign version-range = "1.9 - 1.9.4" %}
     {% when "1.8.X" %}
