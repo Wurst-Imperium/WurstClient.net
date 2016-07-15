@@ -27,10 +27,10 @@ layout: default
 					</div>
 					{{ content }}
 					<footer class="tile-container bg-grayLighter margin20 no-margin-left no-margin-right padding10 shadow">
-						{% if post.category == "Wurst-update" or post.category == "Wurst Update" %}
+						{% if post.category == "Wurst-update" or post.category == "Wurst Update" or post.category == "Wurst Update (MC 1.10.X)" %}
 							<div class="tile-group double no-margin-left">
 								<span class="tile-group-title fg-black">Download</span>
-						    <a class="tile tile-wide-x tile-small-y command-button primary no-border" href="https://github.com/Wurst-Imperium/Wurst-Client{% if post.category == "Wurst Update" %}-for-MC-1.9.X{% endif %}/releases/download/{{ page.Wurst-version }}/Wurst-Client-{{ page.Wurst-version }}.zip" onclick="ga('send', 'event', 'news', 'download');">
+						    <a class="tile tile-wide-x tile-small-y command-button primary no-border" href="https://github.com/Wurst-Imperium/Wurst-Client{% if post.category == "Wurst Update" %}-for-MC-1.9.X{% elsif post.category == "Wurst Update (MC 1.10.X)" %}-for-MC-1.10.X{% endif %}/releases/download/{{ page.Wurst-version }}/Wurst-Client-{{ page.Wurst-version }}.zip" onclick="ga('send', 'event', 'news', 'download');">
 						      <span class="icon mif-cloud-download"></span>
 						      Download
 									<small>Wurst Client {{ post.Wurst-version }}</small>
