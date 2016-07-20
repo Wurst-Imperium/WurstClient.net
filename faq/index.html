@@ -1,0 +1,18 @@
+---
+title: Frequently Asked Questions
+---
+<div class="container">
+	<h1 class="align-center margin20 no-margin-left no-margin-right">{{ page.title }}</h1>
+</div>
+<hr>
+<div class="container">
+  {% assign faq = site.questions | group_by: "category" %}
+  {% for category in faq %}
+    <h2>{{ category.name }}</h2>
+    <ul class="simple-list dark-bullet">
+      {% for question in category.items %}
+        <li><a href="{{ question.url }}">{{ question.title }}</a></li>
+      {% endfor %}
+    </ul>
+  {% endfor %}
+</div>
