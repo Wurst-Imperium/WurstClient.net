@@ -36,6 +36,6 @@ He got himself an [Alienware 15](http://amzn.to/29Vx9pz) laptop, through which h
 
 As far as I can tell he is very happy with that thing, but I can't personally recommend it to you because I don't use it myself.
 
-My personal recommendation to you is to use a dektop PC, as that allows you to build a very fast computer very inexpensively - plus you can easily upgrade it later instread of having to get a new one.
+My personal recommendation to you is to use a desktop PC, as that allows you to build a very fast computer very inexpensively - plus you can easily upgrade it later instead of having to get a new one.
 
 Anyways, hope this helps you and thanks for reading!
