@@ -5,7 +5,7 @@ title: Can you please add OptiFine to Wurst?
 
 There are three primary reasons why we never added OptiFine and never will:
 
-1. It's quite buggy , at least it was the last time I used it. For instance, it often causes a crash when opening the Options screen and sometimes it breaks your singleplayer worlds.
+1. It's quite buggy, at least it was the last time I used it. For instance, it often causes a crash when opening the Options screen and sometimes it breaks your singleplayer worlds.
 
 2. There is a lot of false hype around it. Too many people think that it's some sort of magic solution to stop lag on crappy computers, but the only real solution is to upgrade your computer or to get a better one. Not to mention that OptiFine prevents many people from getting a better computer and thereby slows down technical progress altogether.
 
@@ -36,6 +36,6 @@ He got himself an [Alienware 15](http://amzn.to/29Vx9pz) laptop, through which h
 
 As far as I can tell he is very happy with that thing, but I can't personally recommend it to you because I don't use it myself.
 
-My personal recommendation to you is to use a dektop PC, as that allows you to build a very fast computer very inexpensively - plus you can easily upgrade it later instread of having to get a new one.
+My personal recommendation to you is to use a desktop PC, as that allows you to build a very fast computer very inexpensively - plus you can easily upgrade it later instead of having to get a new one.
 
 Anyways, hope this helps you and thanks for reading!
