@@ -65,3 +65,9 @@ Step 2 is basically the same fair chance for the hosting provider. Most hosting 
 Step 3 is a very expensive and time consuming process (which is why we are posting this warning), but if necessary, we are willing to go through this to protect our users.
 
 We are hoping that this loss of time won't get in the way of the regular Wurst updates, but because we were able to resolve all previous cases of copyright infringement through either step 1 or step 2, we don't know exactly how much time and money this is going to cost us.
+
+## Update: A Small Victory
+
+A few hours after this warning was published, the person responsible for the scam finally removed the fake version of Wurst from their website as we had requested. Thanks to everyone who supported us! They were definitely messing with the wrong community and we are glad that they finally decided to do the right thing.
+
+They are still performing the same scam using the other two clients that we mentioned and they have made some fairly ridiculous claims to try and cover up what we have revealed about their business, but that is both outside of our control and outside of our interest.
