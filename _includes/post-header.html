@@ -1,15 +1,19 @@
 {% assign post = include.post %}
-<header{% if page == post %} class="margin30 no-margin-left no-margin-right"{% endif %}>
+<header>
   {% if page == post %}
+		<ul class="breadcrumbs">
+		  <li><a href="/news/">News</a></li>
+		  <li><span>{{ page.title }}</span></li>
+		</ul>
     <h1>{{ post.title }}</h1>
   {% else %}
-    <h1>
-      <a href="{{ post.url }}">
+    <h1 class="sub-leader">
+      <a href="{{ post.url }}" class="fg-dark">
         {{ post.title }}
       </a>
     </h1>
   {% endif %}
-  <ul class="inline-list fg-grayLight">
+  <ul class="inline-list fg-grayLight{% if page != post %} text-secondary no-margin-top no-margin-bottom{% endif %}">
     <li data-role="hint" data-hint="Author|{{ post.author }}" data-hint-mode="2" data-hint-background="bg-grayLighter">
       <span class="mif-user"></span>
       {{ post.author }}
