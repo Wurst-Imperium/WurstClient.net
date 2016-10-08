@@ -2,49 +2,40 @@
 title: Wurst News
 ---
 <div class="container">
-	<div class="grid">
-		<div class="row cells4">
-			<div class="cell colspan3">
-				{% for post in paginator.posts %}
-					<article>
-						{% include post-header.html %}
-						<p class="align-center">
-				      <div class="padding10 shadow">
-								<a href="{{ post.url }}">
-				          <img src="{% if post.image %}{{ post.image }}{% elsif post.video %}https://i.ytimg.com/vi/{{ post.video }}/maxresdefault.jpg{% endif %}" alt="{{ post.title }}">
-								</a>
-							</div>
-						</p>
-						{{ post.excerpt | replace: ":new", "<img class='emoji' src='https://assets.github.com/images/icons/emoji/new.png' height='20' width='20' align='absmiddle'>:" | replace: ":star", "<img class='emoji' src='https://assets.github.com/images/icons/emoji/star.png' height='20' width='20' align='absmiddle'>:" | replace: ":bug", "<img class='emoji' src='https://assets.github.com/images/icons/emoji/bug.png' height='20' width='20' align='absmiddle'>:" | replace: ":rocket", "<img class='emoji' src='https://assets.github.com/images/icons/emoji/rocket.png' height='20' width='20' align='absmiddle'>:" | replace: ":gem", "<img class='emoji' src='https://assets.github.com/images/icons/emoji/gem.png' height='20' width='20' align='absmiddle'>:" | replace: "::", "" }}
-						<footer>
-							<p>
-						    <a href="{{ post.url }}" class="button primary">
-						      Read More
-						    </a>
-							</p>
-						</footer>
-					</article>
-					<br>
-					<hr>
-				{% endfor %}
-				<nav>
-					{% if paginator.previous_page %}
-						<a class="button place-left" href="{{ paginator.previous_page_path | remove: "index.html" }}">
-							<span class="mif-chevron-thin-left"></span>
-							Newer News
-						</a>
-					{% endif %}
-					{% if paginator.next_page %}
-						<a class="button place-right" href="{{ paginator.next_page_path }}">
-							Older News
-							<span class="mif-chevron-thin-right"></span>
-						</a>
-					{% endif %}
-				</nav>
-			</div>
-			<div class="cell">
-				{% include sidebar.html %}
-			</div>
-		</div>
-	</div>
+	{% for post in paginator.posts %}
+		<article>
+			{% include post-header.html %}
+			<p class="align-center">
+	      <div class="padding10 shadow">
+					<a href="{{ post.url }}">
+	          <img src="{% if post.image %}{{ post.image }}{% elsif post.video %}https://i.ytimg.com/vi/{{ post.video }}/maxresdefault.jpg{% endif %}" alt="{{ post.title }}">
+					</a>
+				</div>
+			</p>
+			{{ post.excerpt | replace: ":new", "<img class='emoji' src='https://assets.github.com/images/icons/emoji/new.png' height='20' width='20' align='absmiddle'>:" | replace: ":star", "<img class='emoji' src='https://assets.github.com/images/icons/emoji/star.png' height='20' width='20' align='absmiddle'>:" | replace: ":bug", "<img class='emoji' src='https://assets.github.com/images/icons/emoji/bug.png' height='20' width='20' align='absmiddle'>:" | replace: ":rocket", "<img class='emoji' src='https://assets.github.com/images/icons/emoji/rocket.png' height='20' width='20' align='absmiddle'>:" | replace: ":gem", "<img class='emoji' src='https://assets.github.com/images/icons/emoji/gem.png' height='20' width='20' align='absmiddle'>:" | replace: "::", "" }}
+			<footer>
+				<p>
+			    <a href="{{ post.url }}" class="button primary">
+			      Read More
+			    </a>
+				</p>
+			</footer>
+		</article>
+		<br>
+		<hr>
+	{% endfor %}
+	<nav>
+		{% if paginator.previous_page %}
+			<a class="button place-left" href="{{ paginator.previous_page_path | remove: "index.html" }}">
+				<span class="mif-chevron-thin-left"></span>
+				Newer News
+			</a>
+		{% endif %}
+		{% if paginator.next_page %}
+			<a class="button place-right" href="{{ paginator.next_page_path }}">
+				Older News
+				<span class="mif-chevron-thin-right"></span>
+			</a>
+		{% endif %}
+	</nav>
 </div>
