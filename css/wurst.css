@@ -26265,7 +26265,7 @@ video::-webkit-media-controls-enclosure {
 }
 
 @media screen and (min-width:1401px) {
-    .container {
+    .container.wide {
         width: 1200px
     }
 }
