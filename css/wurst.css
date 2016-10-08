@@ -276,7 +276,7 @@ html {
 
 body {
     font-family: "Segoe UI", "Open Sans", sans-serif, serif;
-    font-size: .875rem;
+    font-size: 1rem;
     line-height: 1.1;
     font-weight: 400
 }
@@ -458,20 +458,20 @@ h6 small {
 }
 
 .text-secondary {
-    font-size: .75rem
+    font-size: .857rem
 }
 
 .text-accent,
 .text-enlarged {
-    font-size: 1.1rem
+    font-size: 1.257rem
 }
 
 .text-default {
-    font-size: .875rem
+    font-size: 1rem
 }
 
 .text-small {
-    font-size: .625rem
+    font-size: .715rem
 }
 
 .text-light {
