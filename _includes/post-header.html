@@ -1,11 +1,9 @@
-{% assign post = include.post %}
+{% unless post %}
+  {% assign post = page %}
+{% endunless %}
 <header>
   {% if page == post %}
-		<ul class="breadcrumbs">
-		  <li><a href="/news/">News</a></li>
-		  <li><span>{{ page.title }}</span></li>
-		</ul>
-    <h1>{{ post.title }}</h1>
+    <h1 class="align-center">{{ post.title }}</h1>
   {% else %}
     <h1 class="sub-leader">
       <a href="{{ post.url }}" class="fg-dark">
@@ -13,17 +11,17 @@
       </a>
     </h1>
   {% endif %}
-  <ul class="inline-list fg-grayLight{% if page != post %} text-secondary no-margin-top no-margin-bottom{% endif %}">
-    <li data-role="hint" data-hint="Author|{{ post.author }}" data-hint-mode="2" data-hint-background="bg-grayLighter">
+  <ul class="inline-list fg-grayLight {% if page == post %}align-center margin10 no-margin-left no-margin-right{% else %}text-secondary no-margin{% endif %}">
+    <li title="author: {{ post.author }}">
       <span class="mif-user"></span>
       {{ post.author }}
     </li>
-    <li data-role="hint" data-hint="Date|{{ post.date | date: "%B %-d, %Y" }}" data-hint-mode="2" data-hint-background="bg-grayLighter">
-      <span class="mif-alarm"></span>
-      {{ post.date | date: "%B %-d, %Y" }}
-    </li>
+  <li title="date posted: {{ post.date | date: "%Y-%m-%d" }}">
+    <span class="mif-calendar"></span>
+    {{ post.date | date: "%Y-%m-%d" }}
+  </li>
     {% if post.category %}
-      <li data-role="hint" data-hint="Category|{{ post.category }}" data-hint-mode="2" data-hint-background="bg-grayLighter">
+      <li title="category: {{ post.category }}">
         <span class="mif-cabinet"></span>
         {{ post.category }}
       </li>
