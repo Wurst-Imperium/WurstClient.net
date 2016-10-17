@@ -18,7 +18,7 @@ layout: default
 			{% elsif page.image %}
 				<div class="image-container">
 					<div class="frame">
-						<img src="https://res.cloudinary.com/demo/image/fetch/w_960,ar_16:9,f_auto/{{ page.image }}" alt="{{ page.title }}">
+						<img src="{{ page.image }}" alt="{{ page.title }}">
 					</div>
 				</div>
 			{% endif %}
