@@ -26902,7 +26902,7 @@ blockquote[dir=rtl] {
 }
 
 .app-bar.darcula {
-    background-color: #3c3f41
+    background-color: #222
 }
 
 .app-bar.darcula .app-bar-element:active,
@@ -26911,16 +26911,16 @@ blockquote[dir=rtl] {
 .app-bar.darcula .app-bar-menu>li:hover,
 .app-bar.darcula .app-bar-menu>li>a:active,
 .app-bar.darcula .app-bar-menu>li>a:hover {
-    background-color: #1d1d1d
+    background-color: #111
 }
 
 .app-bar.darcula .app-bar-divider {
-    background-color: #616162
+    background-color: #666
 }
 
 .app-bar.darcula .app-bar-element .d-menu,
 .app-bar.darcula .app-bar-menu>li .d-menu {
-    background-color: #3c3f41;
+    background-color: #222;
     border-color: transparent
 }
 
@@ -26928,7 +26928,7 @@ blockquote[dir=rtl] {
 .app-bar.darcula .app-bar-element .d-menu li>a,
 .app-bar.darcula .app-bar-menu>li .d-menu li:not(.disabled)>a,
 .app-bar.darcula .app-bar-menu>li .d-menu li>a {
-    background-color: #3c3f41;
+    background-color: #222;
     color: #fff
 }
 
@@ -26936,20 +26936,20 @@ blockquote[dir=rtl] {
 .app-bar.darcula .app-bar-element .d-menu li>a:hover,
 .app-bar.darcula .app-bar-menu>li .d-menu li:not(.disabled)>a:hover,
 .app-bar.darcula .app-bar-menu>li .d-menu li>a:hover {
-    background-color: #1d1d1d;
+    background-color: #111;
     color: #fff
 }
 
 .app-bar.darcula .app-bar-element .d-menu li:hover>a,
 .app-bar.darcula .app-bar-menu>li .d-menu li:hover>a {
-    background-color: #1d1d1d
+    background-color: #111
 }
 
 .app-bar.darcula .app-bar-element .d-menu .divider,
 .app-bar.darcula .app-bar-element .d-menu .divider:hover,
 .app-bar.darcula .app-bar-menu>li .d-menu .divider,
 .app-bar.darcula .app-bar-menu>li .d-menu .divider:hover {
-    background-color: #616162
+    background-color: #666
 }
 
 .app-bar.darcula .app-bar-element .dropdown-toggle:before,
@@ -26972,31 +26972,31 @@ blockquote[dir=rtl] {
 }
 
 .app-bar.darcula .app-bar-pullbutton:hover {
-    background-color: #1d1d1d
+    background-color: #111
 }
 
 .app-bar.darcula .app-bar-drop-container {
-    border: 2px solid #3c3f41;
-    background-color: #3c3f41;
+    border: 2px solid #222;
+    background-color: #222;
     color: #fff
 }
 
 .app-bar.darcula .app-bar-drop-container:before {
-    background-color: #3c3f41;
-    border-color: #3c3f41
+    background-color: #222;
+    border-color: #222
 }
 
 .app-bar.darcula .app-bar-pullmenu .app-bar-menu {
-    border-top: 1px solid #616162;
-    background-color: #616162
+    border-top: 1px solid #666;
+    background-color: #666
 }
 
 .app-bar.darcula .app-bar-pullmenu .app-bar-menu li:hover {
-    background-color: #3c3f41
+    background-color: #222
 }
 
 .app-bar.darcula .app-bar-pullmenu .app-bar-menu li:hover a {
-    background-color: #1d1d1d;
+    background-color: #111;
     color: #fff
 }
 
@@ -27413,12 +27413,12 @@ blockquote[dir=rtl] {
 
 .d-menu.darcula,
 .v-menu.darcula {
-    background: #3c3f41
+    background: #222
 }
 
 .d-menu.darcula li>a,
 .v-menu.darcula li>a {
-    background: #3c3f41;
+    background: #222;
     color: #fff
 }
 
@@ -27429,7 +27429,7 @@ blockquote[dir=rtl] {
 
 .d-menu.darcula li>a:hover,
 .v-menu.darcula li>a:hover {
-    background: #1d1d1d;
+    background: #111;
     color: #fff
 }
 
@@ -27445,7 +27445,7 @@ blockquote[dir=rtl] {
 
 .d-menu.darcula li.disabled>a,
 .v-menu.darcula li.disabled>a {
-    background: #3c3f41;
+    background: #222;
     color: #555
 }
 
@@ -27457,7 +27457,7 @@ blockquote[dir=rtl] {
 
 .d-menu.darcula li.divider,
 .v-menu.darcula li.divider {
-    background: #616162
+    background: #666
 }
 
 .d-menu.pink,
@@ -27727,32 +27727,32 @@ blockquote[dir=rtl] {
 
 .t-menu.darcula,
 .t-menu.darcula .t-menu {
-    background-color: #3c3f41
+    background-color: #222
 }
 
 .t-menu.darcula li>a {
-    background: #3c3f41;
+    background: #222;
     color: #fff;
-    border-bottom-color: #616162
+    border-bottom-color: #666
 }
 
 .t-menu.darcula li:hover>a {
-    background: #1d1d1d;
+    background: #111;
     color: #fff
 }
 
 .t-menu.darcula li.disabled>a {
-    background: #3c3f41;
+    background: #222;
     color: #555
 }
 
 .t-menu.darcula li.disabled>a:hover {
-    background: #3c3f41
+    background: #222
 }
 
 .t-menu.darcula .horizontal>li>a,
 .t-menu.darcula.horizontal>li>a {
-    border-right-color: #616162
+    border-right-color: #666
 }
 
 .t-menu.pink,
@@ -27910,11 +27910,11 @@ blockquote[dir=rtl] {
 }
 
 .sidebar.darcula {
-    background: #3c3f41
+    background: #222
 }
 
 .sidebar.darcula li>a {
-    background: #3c3f41;
+    background: #222;
     color: #fff
 }
 
@@ -27924,12 +27924,12 @@ blockquote[dir=rtl] {
 }
 
 .sidebar.darcula li.active>a {
-    background: #1d1d1d;
+    background: #111;
     color: #fff
 }
 
 .sidebar.darcula li.disabled>a {
-    background: #3c3f41;
+    background: #222;
     color: #555
 }
 
@@ -28074,7 +28074,7 @@ blockquote[dir=rtl] {
 }
 
 .calendar.darcula {
-    background: #3c3f41
+    background: #222
 }
 
 .calendar.darcula a:hover {
@@ -28082,7 +28082,7 @@ blockquote[dir=rtl] {
 }
 
 .calendar.darcula .calendar-header {
-    background: #3c3f41
+    background: #222
 }
 
 .calendar.darcula .today a {
@@ -28101,8 +28101,8 @@ blockquote[dir=rtl] {
 }
 
 .calendar.darcula .calendar-actions .calendar-btn-today {
-    background: #1d1d1d;
-    border-color: #1d1d1d
+    background: #111;
+    border-color: #111
 }
 
 .calendar.darcula .calendar-actions .calendar-btn-today:active {
