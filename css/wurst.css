@@ -26988,11 +26988,11 @@ blockquote[dir=rtl] {
 
 .app-bar.darcula .app-bar-pullmenu .app-bar-menu {
     border-top: 1px solid #666;
-    background-color: #666
+    background-color: #222
 }
 
 .app-bar.darcula .app-bar-pullmenu .app-bar-menu li:hover {
-    background-color: #222
+    background-color: #111
 }
 
 .app-bar.darcula .app-bar-pullmenu .app-bar-menu li:hover a {
