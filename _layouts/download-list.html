@@ -27,7 +27,7 @@ layout: default
 						<a href="{{ update.url }}">
 							<div class="image-container">
 								<div class="frame{% unless update.image or update.video %} bg-grayLighter set-border tile-content iconic{% endunless %}">
-									<img src="{% if update.image %}{{ update.image | replace: "w1280-h720-no", "w320-h180-s-l75" }}{% elsif update.video %}https://i.ytimg.com/vi/{{ update.video }}/mqdefault.jpg{% else %}https://cloud.githubusercontent.com/assets/10100202/19655746/6eea9706-9a1d-11e6-8fbc-0a8d25f7a2fd.jpg{% endif %}"{% unless update.image or update.video %} class="no-visible"{% endunless %} alt="{{ update.title }}">
+									<img src="{% if update.image %}{{ update.image | replace: "w1280-h720-no", "w320-h180-s-l75-e8" }}{% elsif update.video %}https://i.ytimg.com/vi/{{ update.video }}/mqdefault.jpg{% else %}https://cloud.githubusercontent.com/assets/10100202/19655746/6eea9706-9a1d-11e6-8fbc-0a8d25f7a2fd.jpg{% endif %}"{% unless update.image or update.video %} class="no-visible"{% endunless %} alt="{{ update.title }}">
 									{% unless update.image or update.video %}
 										<span class="icon mif-file-picture fg-grayLight" style="margin-top: -32px;"></span>
 									{% endunless %}
