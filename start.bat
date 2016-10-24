@@ -1,2 +1,2 @@
-jekyll serve -w --incremental
+jekyll serve -w
 pause
