@@ -1,30 +1,41 @@
 ---
 layout: default
 ---
-<h1 class="align-center">{{ page.title }}</h1>
-<hr>
-<div class="container">
-  <div class="grid">
-    {% assign updates = site.posts | where: "minecraft-version", page.mcversion %}
-    {% for update in updates %}
-      {% assign modulo = forloop.index0 | modulo: 4 %}
-      {% if modulo == 0 %}<div class="row cells4">{% endif %}
-        <div class="cell">
-          <a href="{{ update.url }}">
-            <div class="image-container">
-              <div class="frame">
-                <img src="{% if update.image %}{{ update.image }}{% else %}https://i.ytimg.com/vi/{{ update.video }}/mqdefault.jpg{% endif %}" alt="{{ update.title }}">
-              </div>
-              <div class="image-overlay" style="background-color: rgba(0, 0, 0, .8);">
-                <div class="leader text-shadow" style="width: 100%;height: 100%;display: table;">
-                  <span class="mif-link fg-white" style="display: table-cell;vertical-align: middle;"></span>
-                </div>
-              </div>
-            </div>
-          </a>
-          <h4><a href="{{ update.url }}">{{ update.title }}</a></h4>
-        </div>
-      {% if modulo == 3 or forloop.last %}</div>{% endif %}
-    {% endfor %}
-  </div>
+<header class="bg-gray fg-white">
+	<div class="container padding40 no-padding-left no-padding-right">
+    <h1 class="align-center text-shadow">
+      {{ page.title }}
+      {% if page.notice %}
+        <br>
+        <small class="fg-grayLighter">{{ page.notice }}</small>
+      {% endif %}
+    </h1>
+	</div>
+</header>
+<div class="padding20 no-padding-left no-padding-right">
+	<div class="container">
+	  <div class="grid">
+	    {% assign updates = site.posts | where: "minecraft-version", page.mcversion %}
+	    {% for update in updates %}
+	      {% assign modulo = forloop.index0 | modulo: 4 %}
+	      {% if modulo == 0 %}<div class="row cells4">{% endif %}
+	        <div class="cell">
+	          <a href="{{ update.url }}">
+	            <div class="image-container">
+	              <div class="frame">
+	                <img src="{% if update.image %}{{ update.image }}{% else %}https://i.ytimg.com/vi/{{ update.video }}/mqdefault.jpg{% endif %}" alt="{{ update.title }}">
+	              </div>
+	              <div class="image-overlay" style="background-color: rgba(0, 0, 0, .8);">
+	                <div class="leader text-shadow" style="width: 100%;height: 100%;display: table;">
+	                  <span class="mif-link fg-white" style="display: table-cell;vertical-align: middle;"></span>
+	                </div>
+	              </div>
+	            </div>
+	          </a>
+	          <h4><a href="{{ update.url }}">{{ update.title }}</a></h4>
+	        </div>
+	      {% if modulo == 3 or forloop.last %}</div>{% endif %}
+	    {% endfor %}
+	  </div>
+	</div>
 </div>
