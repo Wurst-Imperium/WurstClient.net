@@ -1,6 +1,6 @@
 ---
 title: The Auto-Updater is broken! Please manually update to Wurst v2.0.1!
-category: Wurst-update
+category: Wurst Update
 Wurst-version: v2.0.1
 minecraft-version: 1.8.X
 ---

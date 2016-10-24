@@ -1,7 +1,7 @@
 ---
 title: Wurst 2.4 - Better Target, Proxy Support, Bugfixes
 description: This update makes PVPing with Wurst more convenient and less suspicious, and also makes it impossible for cracked servers to ban you.
-category: Wurst-update
+category: Wurst Update
 Wurst-version: v2.4
 minecraft-version: 1.8.X
 image: https://cloud.githubusercontent.com/assets/10100202/9791205/2d643a02-57da-11e5-908f-5944cddf57b6.png
