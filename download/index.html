@@ -29,8 +29,11 @@ mcversions:
             <div class="cell">
               <a href="{{ update.url }}">
                 <div class="image-container">
-                  <div class="frame">
-                    <img src="{% if update.image %}{{ update.image }}{% else %}https://i.ytimg.com/vi/{{ update.video }}/mqdefault.jpg{% endif %}" alt="{{ update.title }}">
+                  <div class="frame{% unless update.image or update.video %} bg-grayLighter set-border tile-content iconic{% endunless %}">
+                    <img src="{% if update.image %}{{ update.image }}{% elsif update.video %}https://i.ytimg.com/vi/{{ update.video }}/mqdefault.jpg{% else %}https://cloud.githubusercontent.com/assets/10100202/19655746/6eea9706-9a1d-11e6-8fbc-0a8d25f7a2fd.jpg{% endif %}"{% unless update.image or update.video %} class="no-visible"{% endunless %} alt="{{ update.title }}">
+                    {% unless update.image or update.video %}
+                      <span class="icon mif-file-picture fg-grayLight" style="margin-top: -32px;"></span>
+                    {% endunless %}
                   </div>
                   <div class="image-overlay" style="background-color: rgba(0, 0, 0, .8);">
                     <div class="leader text-shadow" style="width: 100%;height: 100%;display: table;">
@@ -48,7 +51,7 @@ mcversions:
             <a href="minecraft-{{ mcversion | slugify }}/">
               <div class="image-container">
                 <div class="frame bg-grayLighter set-border tile-content iconic">
-                  <img src="{% if updates[0].image %}{{ updates[0].image }}{% else %}https://i.ytimg.com/vi/{{ updates[0].video }}/mqdefault.jpg{% endif %}" alt="{{ updates[0].title }}" class="no-visible">
+                  <img src="https://cloud.githubusercontent.com/assets/10100202/19655746/6eea9706-9a1d-11e6-8fbc-0a8d25f7a2fd.jpg" alt="(placeholder)" class="no-visible">
                   <span class="icon mif-folder-open fg-grayLight" style="margin-top: -32px;"></span>
                 </div>
                 <div class="image-overlay" style="background-color: rgba(0, 0, 0, .8);">
