@@ -4,7 +4,7 @@ description: This update makes PVPing with Wurst more convenient and less suspic
 category: Wurst Update
 Wurst-version: v2.4
 minecraft-version: 1.8.X
-image: https://cloud.githubusercontent.com/assets/10100202/9791205/2d643a02-57da-11e5-908f-5944cddf57b6.png
+image: https://lh3.googleusercontent.com/NN8TD-SCvA4U-e26qsOabwzpZn_E3sIeKMHwUWE7rpmHQTZAyD40PP0VvThw80SZ25DlggfLGxuOfWzv6xDazy_Ku2U7G0uxk8_jiWJ9T0NLyT_zKFPYdYcAlOCUQJXaSPjY61pd7-TSQBbBf3DbCzcZwMs2CX40fqPeQgPksP0_MpQQVWxlr_2sEUTo93t-tiDljya2csfRPp4DC1TEyX6FvECtcrUEOYr5-ROUwPhFvoCUcAUqFSJaQ9dUCfLmwfuBhOWgF0MqKprCNlQj6Q2ubhNHtUoZXKBKV68gHOILi3oa3GiqTAyIef2i6zf4D-E0XqeBScSPRedOQlBRf51cfI1JFLOfGCI-haPPeeheW-aBrIrnjgr4hmYpmDRalVJiUj-BI7sMvJnzWIf56xzBh3TPh_nRcjUKT_TkPednujsh_2SDDsEa1KTPHW-xMJ0EeCBxd6QSJWO4nsu3GSt4NC3E-UoLmLeEn9qwZhPWmtzZKOWXZZ39B6ZbOHtRj-Y0mgLBCs6-8lv09WOOaLDeBB_X8gr9s1GmeMtVg6kXcYc1EpnI4NHctIRVPOhSv5_-k8MHSyRHnaARJQjRxRxAnHysuSYjTDwgD0HgODrer9rv=w1280-h720-no
 ---
 This update makes PVPing with Wurst more convenient and less suspicious, and also makes it impossible for cracked servers to ban you.
 
