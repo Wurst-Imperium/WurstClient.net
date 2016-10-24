@@ -2,6 +2,8 @@
 title: How to Contribute to the Wurst-Client project - Part 2
 layout: wiki
 category: Contributing
+labels:
+- outdated
 ---
 <a href="/wiki/Contributing/part1/" class="btn btn-default">
   <span class="octicon octicon-arrow-left"></span>

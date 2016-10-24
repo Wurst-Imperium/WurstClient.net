@@ -2,6 +2,8 @@
 title: How to Contribute to the Wurst-Client project - Part 1
 layout: wiki
 category: Contributing
+labels:
+- outdated
 ---
 So you want to contribute to Wurst, eh?
 
