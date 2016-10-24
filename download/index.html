@@ -7,79 +7,60 @@ mcversions:
   - "1.8.X"
   - "1.7.X"
 ---
-<header class="bg-grayLighter fg-gray">
+<header class="bg-gray fg-white">
 	<div class="container padding40 no-padding-left no-padding-right">
-    <h1 class="align-center">
+    <h1 class="align-center text-shadow">
       {{ page.title }}
       <br>
-      <small class="fg-grayLight">Wurst Client downloads for all Minecraft versions</small>
+      <small class="fg-grayLighter">Wurst Client downloads for all Minecraft versions</small>
     </h1>
 	</div>
 </header>
-<div class="container">
-  <div class="accordion large-heading" data-role="accordion" data-close-any="true">
+<div class="padding20 no-padding-left no-padding-right">
+  <div class="container">
     {% for mcversion in page.mcversions %}
       {% assign updates = site.posts | where: "minecraft-version", mcversion %}
-      <div class="frame{% if forloop.first %} active{% endif %}">
-        <h2 class="heading" style="text-transform: none;">Wurst for Minecraft {{ mcversion }}</h2>
-        <div class="content">
-          <h3>Latest Version</h3>
-          <div class="grid">
-            <div class="row cells3">
-              <div class="cell">
-                <a href="{{ updates[0].url }}">
-                  <div class="image-container">
-                    <div class="frame">
-                      <img src="{% if updates[0].image %}{{ updates[0].image }}{% else %}https://i.ytimg.com/vi/{{ updates[0].video }}/mqdefault.jpg{% endif %}" alt="{{ updates[0].title }}">
-                    </div>
-                    <div class="image-overlay" style="background-color: rgba(0, 0, 0, .8);">
-                      <div class="leader text-shadow" style="width: 100%;height: 100%;display: table;">
-                        <span class="mif-link fg-white" style="display: table-cell;vertical-align: middle;"></span>
-                      </div>
+      <div class="margin10 no-margin-left no-margin-right padding10 no-padding-top no-padding-bottom bg-grayLighter fg-gray set-border text-light">
+        <h2 class="text-light">Wurst for Minecraft {{ mcversion }}</h2>
+      </div>
+      <div class="grid padding10">
+        <div class="row cells4">
+          {% for update in updates limit: 3 %}
+            <div class="cell">
+              <a href="{{ update.url }}">
+                <div class="image-container">
+                  <div class="frame">
+                    <img src="{% if update.image %}{{ update.image }}{% else %}https://i.ytimg.com/vi/{{ update.video }}/mqdefault.jpg{% endif %}" alt="{{ update.title }}">
+                  </div>
+                  <div class="image-overlay" style="background-color: rgba(0, 0, 0, .8);">
+                    <div class="leader text-shadow" style="width: 100%;height: 100%;display: table;">
+                      <span class="mif-link fg-white" style="display: table-cell;vertical-align: middle;"></span>
                     </div>
                   </div>
-                </a>
-                <h4><a href="{{ updates[0].url }}">{{ updates[0].title }}</a></h4>
-              </div>
-            </div>
-          </div>
-          <h3>Older Versions</h3>
-          <div class="grid">
-            <div class="row cells4">
-              {% for update in updates limit: 3 offset: 1 %}
-                <div class="cell">
-                  <a href="{{ update.url }}">
-                    <div class="image-container">
-                      <div class="frame">
-                        <img src="{% if update.image %}{{ update.image }}{% else %}https://i.ytimg.com/vi/{{ update.video }}/mqdefault.jpg{% endif %}" alt="{{ update.title }}">
-                      </div>
-                      <div class="image-overlay" style="background-color: rgba(0, 0, 0, .8);">
-                        <div class="leader text-shadow" style="width: 100%;height: 100%;display: table;">
-                          <span class="mif-link fg-white" style="display: table-cell;vertical-align: middle;"></span>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                  <h4><a href="{{ update.url }}">{{ update.title }}</a></h4>
                 </div>
-              {% endfor %}
-              <div class="cell">
-                <a href="minecraft-{{ mcversion | slugify }}/">
-                  <div class="image-container">
-                    <div class="frame bg-grayLighter tile-content iconic">
-                      <img src="{% if updates[0].image %}{{ updates[0].image }}{% else %}https://i.ytimg.com/vi/{{ updates[0].video }}/mqdefault.jpg{% endif %}" alt="{{ updates[0].title }}" class="no-visible">
-                      <span class="icon mif-folder-open fg-grayLight" style="margin-top: -32px;"></span>
-                    </div>
-                    <div class="image-overlay" style="background-color: rgba(0, 0, 0, .8);">
-                      <div class="leader text-shadow" style="width: 100%;height: 100%;display: table;">
-                        <span class="mif-link fg-white" style="display: table-cell;vertical-align: middle;"></span>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-                <h4><a href="minecraft-{{ updates[0].minecraft-version | slugify }}/">All Versions</a></h4>
-              </div>
+              </a>
+              <h3 class="sub-header">
+                <a href="{{ update.url }}">{{ update.title }}</a>
+              </h3>
             </div>
+          {% endfor %}
+          <div class="cell">
+            <a href="minecraft-{{ mcversion | slugify }}/">
+              <div class="image-container">
+                <div class="frame bg-grayLighter set-border tile-content iconic">
+                  <img src="{% if updates[0].image %}{{ updates[0].image }}{% else %}https://i.ytimg.com/vi/{{ updates[0].video }}/mqdefault.jpg{% endif %}" alt="{{ updates[0].title }}" class="no-visible">
+                  <span class="icon mif-folder-open fg-grayLight" style="margin-top: -32px;"></span>
+                </div>
+                <div class="image-overlay" style="background-color: rgba(0, 0, 0, .8);">
+                  <div class="leader text-shadow" style="width: 100%;height: 100%;display: table;">
+                    <span class="mif-link fg-white" style="display: table-cell;vertical-align: middle;"></span>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <h3 class="sub-header">
+              <a href="minecraft-{{ updates[0].minecraft-version | slugify }}/">All Versions</a>
+            </h3>
           </div>
         </div>
       </div>
