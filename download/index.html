@@ -7,8 +7,15 @@ mcversions:
   - "1.8.X"
   - "1.7.X"
 ---
-<h1 class="align-center">{{ page.title }}</h1>
-<hr>
+<header class="bg-grayLighter fg-gray">
+	<div class="container padding40 no-padding-left no-padding-right">
+    <h1 class="align-center">
+      {{ page.title }}
+      <br>
+      <small class="fg-grayLight">Wurst Client downloads for all Minecraft versions</small>
+    </h1>
+	</div>
+</header>
 <div class="container">
   <div class="accordion large-heading" data-role="accordion" data-close-any="true">
     {% for mcversion in page.mcversions %}
