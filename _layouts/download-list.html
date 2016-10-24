@@ -15,7 +15,11 @@ layout: default
 <div class="padding20 no-padding-left no-padding-right">
 	<div class="container">
 	  <div class="grid">
-	    {% assign updates = site.posts | where: "minecraft-version", page.mcversion %}
+			{% if page.mcversion == "all" %}
+				{% assign updates = site.posts | where: "category", "Wurst Update" %}
+			{% else %}
+		    {% assign updates = site.posts | where: "minecraft-version", page.mcversion %}
+			{% endif %}
 	    {% for update in updates %}
 	      {% assign modulo = forloop.index0 | modulo: 4 %}
 	      {% if modulo == 0 %}<div class="row cells4">{% endif %}
