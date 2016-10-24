@@ -14,11 +14,18 @@ layout: default
 		</div>
 		<div class="margin20 no-margin-left no-margin-right no-margin-top padding10 bg-grayDarker">
 			{% if page.video %}
-				{% include video.html id = page.video thumbnail = page.image onclick = "ga('send', 'event', 'news', 'watch video');" %}
+				<a href="https://www.youtube.com/watch?v={{ page.video }}" target="_blank">
+					<div class="image-container">
+						<div class="frame no-padding tile-content iconic">
+							<img src="{% if page.image %}{{ page.image | replace: "w1280-h720-no", "w960-h540-s-l85" }}{% else %}https://i.ytimg.com/vi/{{ page.video }}/maxresdefault.jpg{% endif %}">
+							<span class="icon mif-play op-dark bg-hover-red fg-white shadow"></span>
+						</div>
+					</div>
+				</a>
 			{% elsif page.image %}
 				<div class="image-container">
 					<div class="frame">
-						<img src="{{ page.image }}" alt="{{ page.title }}">
+						<img src="{{ page.image | replace: "w1280-h720-no", "w960-h540-s-l85" }}" alt="{{ page.title }}">
 					</div>
 				</div>
 			{% endif %}
