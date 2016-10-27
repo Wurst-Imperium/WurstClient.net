@@ -37,7 +37,7 @@ layout: default
 			</div>
 			{{ content }}
 		</div>
-		{% if page.Wurst-version and page.minecraft-version %}
+		{% if page.Wurst-version and page.minecraft-version and page.minecraft-version != "1.7.X" %}
 			<div class="margin20 no-margin-left no-margin-right no-margin-top">
 				<h2>Downloads</h2>
 				{% capture baselink %}http://go.wurst-client.tk/10371505/github.com/Wurst-Imperium/Wurst-Client{% if post.minecraft-version == "1.9.X" %}-for-MC-1.9.X{% elsif post.minecraft-version == "1.10.X" %}-for-MC-1.10.X{% endif %}{% endcapture %}
