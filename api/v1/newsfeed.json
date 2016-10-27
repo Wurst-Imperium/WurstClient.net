@@ -1,0 +1,9 @@
+---
+layout: none
+no_index: true
+---
+{
+  {% for post in site.posts limit: 3 %}
+    {{ post.title | jsonify }}: "{{ site.url }}{{ post.url | remove: "index.html" }}"{% unless forloop.last %},{% endunless %}
+  {% endfor %}
+}
