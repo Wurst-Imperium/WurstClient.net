@@ -28,6 +28,13 @@ layout: default
 						<img src="{{ page.image | replace: "w1280-h720-no", "w960-h540-s-l85-e8" }}" alt="{{ page.title }}">
 					</div>
 				</div>
+			{% else %}
+				<div class="image-container full-size">
+					<div class="frame bg-grayLighter set-border tile-content iconic">
+						<img src="https://cloud.githubusercontent.com/assets/10100202/19655746/6eea9706-9a1d-11e6-8fbc-0a8d25f7a2fd.jpg" class="no-visible" alt="{{ page.title }}">
+						<span class="icon mif-file-picture fg-grayLight" style="margin-top: -32px;"></span>
+					</div>
+				</div>
 			{% endif %}
 		</div>
 		<div class="margin20 no-margin-left no-margin-right no-margin-top">
