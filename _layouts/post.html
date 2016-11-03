@@ -37,32 +37,32 @@ layout: default
 			</div>
 			{{ content }}
 		</div>
-		{% if  page.minecraft-version == "1.7.X" %}
-      <div class="ribbed-amber padding5">
-        <p class="bg-white padding10 no-margin">
-					<strong>Warning:</strong> Wurst for Minecraft 1.7 is closed source. It may only be downloaded from the links provided here, and may not be redistributed in any form, modified or otherwise, without express permission. Decompilation or reverse-engineering is strictly prohibited. All rights not explicitly granted are reserved.
-				</p>
-			</div>
-		{% endif %}
-		{% if page.Wurst-version and page.minecraft-version and page.minecraft-version != "1.7.X" %}
+		{% if page.Wurst-version and page.minecraft-version %}
 			<div class="margin20 no-margin-left no-margin-right no-margin-top">
 				<h2>Downloads</h2>
+				{% if  page.minecraft-version == "1.7.X" %}
+				<p>
+					<strong>Warning:</strong> Wurst for Minecraft 1.7 is closed source. It may only be downloaded from the links provided here, and may not be redistributed in any form, modified or otherwise, without express permission. Decompilation or reverse-engineering is strictly prohibited. All rights not explicitly granted are reserved.
+				</p>
+				{% endif %}
 				{% capture baselink %}http://go.wurst-client.tk/10371505/github.com/Wurst-Imperium/Wurst-MC-{{ page.minecraft-version | remove: ".X" }}{% endcapture %}
 				<a class="command-button primary no-border" href="{{ baselink }}/releases/download/{{ page.Wurst-version }}/Wurst-Client-{{ page.Wurst-version }}.zip" rel="nofollow" target="_blank">
 					<span class="icon mif-file-binary"></span>
 					Compiled Jar
 					<small>Wurst {{ post.Wurst-version }} for Minecraft {{ page.minecraft-version }}</small>
 				</a>
-				<a class="command-button primary no-border" href="{{ baselink }}/archive/{{ page.Wurst-version }}.zip" rel="nofollow" target="_blank">
-					<span class="icon mif-file-zip"></span>
-					Source Code (zip)
-					<small>Wurst {{ post.Wurst-version }} for Minecraft {{ page.minecraft-version }}</small>
-				</a>
-				<a class="command-button primary no-border" href="{{ baselink }}/archive/{{ page.Wurst-version }}.tar.gz" rel="nofollow" target="_blank">
-					<span class="icon mif-file-archive"></span>
-					Source Code (tar.gz)
-					<small>Wurst {{ post.Wurst-version }} for Minecraft {{ page.minecraft-version }}</small>
-				</a>
+				{% unless  page.minecraft-version == "1.7.X" %}
+					<a class="command-button primary no-border" href="{{ baselink }}/archive/{{ page.Wurst-version }}.zip" rel="nofollow" target="_blank">
+						<span class="icon mif-file-zip"></span>
+						Source Code (zip)
+						<small>Wurst {{ post.Wurst-version }} for Minecraft {{ page.minecraft-version }}</small>
+					</a>
+					<a class="command-button primary no-border" href="{{ baselink }}/archive/{{ page.Wurst-version }}.tar.gz" rel="nofollow" target="_blank">
+						<span class="icon mif-file-archive"></span>
+						Source Code (tar.gz)
+						<small>Wurst {{ post.Wurst-version }} for Minecraft {{ page.minecraft-version }}</small>
+					</a>
+				{% endunless %}
 			</div>
 		{% endif %}
 		<div class="margin20 no-margin-left no-margin-right no-margin-top">
