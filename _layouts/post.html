@@ -17,7 +17,7 @@ layout: default
 				<a href="https://www.youtube.com/watch?v={{ page.video }}" target="_blank">
 					<div class="image-container">
 						<div class="frame no-padding tile-content iconic">
-							<img src="{% if page.image %}{{ page.image | replace: "w1280-h720-no", "w960-h540-s-l85-e8" }}{% else %}https://i.ytimg.com/vi/{{ page.video }}/maxresdefault.jpg{% endif %}">
+							<img src="{% if page.image %}{{ page.image | replace: "w1280-h720-no", "w960-h540-s-l90-e8" }}{% else %}https://i.ytimg.com/vi/{{ page.video }}/maxresdefault.jpg{% endif %}">
 							<span class="icon mif-play op-dark bg-hover-red fg-white shadow"></span>
 						</div>
 					</div>
@@ -25,7 +25,7 @@ layout: default
 			{% elsif page.image %}
 				<div class="image-container">
 					<div class="frame">
-						<img src="{{ page.image | replace: "w1280-h720-no", "w960-h540-s-l85-e8" }}" alt="{{ page.title }}">
+						<img src="{{ page.image | replace: "w1280-h720-no", "w960-h540-s-l90-e8" }}" alt="{{ page.title }}">
 					</div>
 				</div>
 			{% else %}
