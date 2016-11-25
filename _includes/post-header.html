@@ -1,16 +1,17 @@
 {% unless post %}
   {% assign post = page %}
 {% endunless %}
-<header>
-  {% if page == post %}
-    <h1 class="align-center">{{ post.title }}</h1>
-  {% else %}
+{% if page == post %}
+  <div>
+    <h1 class="align-center text-shadow">{{ post.title }}</h1>
+{% else %}
+  <header>
     <h1 class="sub-leader">
       <a href="{{ post.url }}" class="fg-dark">
         {{ post.title }}
       </a>
     </h1>
-  {% endif %}
+{% endif %}
   <ul class="inline-list fg-grayLight {% if page == post %}align-center margin10 no-margin-left no-margin-right{% else %}text-secondary no-margin{% endif %}">
     <li title="author: {{ post.author }}">
       <span class="mif-user"></span>
@@ -27,4 +28,8 @@
       </li>
     {% endif %}
   </ul>
-</header>
+{% if page == post %}
+  </div>
+{% else %}
+  </header>
+{% endif %}
