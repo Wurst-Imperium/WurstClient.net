@@ -12,7 +12,7 @@
       </a>
     </h1>
 {% endif %}
-  <ul class="inline-list fg-grayLight {% if page == post %}align-center margin10 no-margin-left no-margin-right{% else %}text-secondary no-margin{% endif %}">
+  <ul class="inline-list fg-grayLight{% if page == post %}er align-center margin10 no-margin-left no-margin-right{% else %} text-secondary no-margin{% endif %}">
     <li title="author: {{ post.author }}">
       <span class="mif-user"></span>
       {{ post.author }}
