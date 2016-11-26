@@ -1,18 +1,3 @@
 ---
-layout: none
+redirect_url: /download/all/
 ---
-{% assign changelogLink = site.posts[0].url | remove: "index.html" %}
-{% for post in site.posts %}
-  {% if post.minecraft-version == "1.10.X" %}
-    {% assign changelogLink = post.url | remove: "index.html" %}
-    {% break %}
-  {% endif %}
-{% endfor %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-  <title>Redirecting...</title>
-  <meta http-equiv="refresh" content="0;url={{ changelogLink }}">
-</head>
-</html>
