@@ -3,6 +3,7 @@ exclude:
 - start.bat
 
 gems:
+  - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-paginate
 
