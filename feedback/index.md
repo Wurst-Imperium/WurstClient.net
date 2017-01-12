@@ -1,0 +1,5 @@
+---
+layout: redirect
+redirect_url: https://feedback.wurst-client.tk
+no_index: true
+---
