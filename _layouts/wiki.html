@@ -1,95 +1,55 @@
 ---
 layout: default
 ---
-{% capture editLink %}https://github.com/Wurst-Imperium/wurst-client.tk/edit/gh-pages/{{ page.path }}{% endcapture %}
-<span itemscope itemtype="http://schema.org/WebPage">
-	<div class="container wide">
-		<header>
-			<h1 itemprop="headline">
-				{{ page.title }}
-			</h1>
-			<ul class="inline-list">
-		    <li>
-					<a class="fg-grayLight fg-hover-lightBlue" href="{{ editLink }}">
-			      <span class="mif-pencil"></span>
-			      Edit
-					</a>
-				</li>
-				<li>
-					<a class="fg-grayLight fg-hover-lightBlue" href="https://github.com/Wurst-Imperium/wurst-client.tk/new/gh-pages/wiki">
-			      <span class="mif-file-empty"></span>
-			      New Page
-					</a>
-		    </li>
-		  </ul>
-		</header>
-	</div>
-	<hr>
-	<div class="container wide">
-		<div class="grid">
-			<div class="row cells4">
-				<div class="cell colspan3">
-					{% for label in page.labels %}
-						<div class="shadow padding20 margin20 no-margin-left no-margin-right no-margin-top bg-grayLighter">
-							{% case label %}
-								{% when "stub" %}
-									<span class="mif-enlarge mif-lg fg-gray"></span>
-									This article is a stub. You can help us by <a href="{{ editLink }}">expanding it</a>.
-								{% when "messy" %}
-									<span class="mif-bin mif-lg fg-gray"></span>
-									This article is a bit messy. You can help us by <a href="{{ editLink }}">cleaning it up</a>.
-								{% when "outdated" %}
-									<span class="mif-history mif-lg fg-gray"></span>
-									This article is outdated. You can help us by <a href="{{ editLink }}">updating it</a>.
-								{% when "missing history" %}
-									<span class="mif-library mif-lg fg-gray"></span>
-									This article is missing a history section. You can help us by <a href="{{ editLink }}">adding one</a>.
-							{% endcase %}
-						</div>
-					{% endfor %}
-					<!-- Wurst Wiki top -->
-					<div class="margin20 no-margin-left no-margin-right no-margin-top">
-						<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5218363098774955" data-ad-slot="3736285228" data-ad-format="auto"></ins>
-					</div>
-					<main class="post-content" itemprop="mainContentOfPage">
-						{{ content | markdownify }}
-					</main>
-				</div>
-				<div class="cell">
-					<nav>
-						<ul class="v-menu no-float shadow">
-							<li class="menu-title">Wiki Navigation</li>
-							<li><a href="/wiki/Main_Page/">Main Page</a></li>
-							<li><a href="/wiki/Mods/">Mods</a></li>
-							<li><a href="/wiki/Commands/">Commands</a></li>
-							<li><a href="/wiki/Special_Features/">Special Features</a></li>
-							<li><a href="/wiki/Installation/">Installation</a></li>
-							<li><a href="/wiki/Contributing/part1/">Contributing</a></li>
-							<li><a href="/wiki/Java_8/">Java 8</a></li>
-						</ul>
-					</nav>
-				</div>
-			</div>
+{% include title.html l1 = page.title %}
+
+<div class="padding20 no-padding-left no-padding-right">
+	<div class="container post-content">
+
+		<!-- Wurst Wiki -->
+		<div class="margin20 no-margin-left no-margin-right no-margin-top">
+			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5218363098774955" data-ad-slot="3736285228" data-ad-format="auto"></ins>
 		</div>
-		<hr>
-		<div id="disqus_thread"></div>
-		<noscript>
-			Please enable JavaScript to view the
-			<a href="https://disqus.com/?ref_noscript" rel="nofollow">
-				comments section.
-			</a>
-		</noscript>
+
+		{% if page.labels != empty %}
+			{% capture editLink %}https://github.com/Wurst-Imperium/wurst-client.tk/edit/gh-pages/{{ page.path }}{% endcapture %}
+			{% for label in page.labels %}
+				<div class="shadow padding20 margin20 no-margin-left no-margin-right no-margin-top bg-grayLighter">
+					{% case label %}
+						{% when "stub" %}
+							<span class="mif-enlarge mif-lg fg-gray"></span>
+							This article is a stub. You can help us by <a href="{{ editLink }}" target="_blank">expanding it</a>.
+						{% when "messy" %}
+							<span class="mif-bin mif-lg fg-gray"></span>
+							This article is a bit messy. You can help us by <a href="{{ editLink }}" target="_blank">cleaning it up</a>.
+						{% when "outdated" %}
+							<span class="mif-history mif-lg fg-gray"></span>
+							This article is outdated. You can help us by <a href="{{ editLink }}" target="_blank">updating it</a>.
+						{% when "missing history" %}
+							<span class="mif-library mif-lg fg-gray"></span>
+							This article is missing a history section. You can help us by <a href="{{ editLink }}" target="_blank">adding one</a>.
+					{% endcase %}
+				</div>
+			{% endfor %}
+		{% endif %}
+
+		<main class="margin20 no-margin-left no-margin-right no-margin-top">
+			{{ content }}
+		</main>
+
+		<div class="margin20 no-margin-left no-margin-right no-margin-top">
+			{% include share-buttons.html %}
+		</div>
+
+		<div class="margin20 no-margin-left no-margin-right no-margin-top">
+			<h2>Comments</h2>
+			{% include comments.html %}
+		</div>
+
 	</div>
-</span>
+</div>
+
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <script>
 (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<script type="text/javascript">
-    var disqus_shortname = 'wurst-client';
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
 </script>
