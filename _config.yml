@@ -8,7 +8,7 @@ gems:
 
 timezone: Europe/Berlin
 
-title: Wurst Client
+title: Wurst-Client.tk
 
 paginate: 10
 
@@ -42,19 +42,19 @@ defaults:
     values:
       layout: post
       author: Alexander01998
-      secondarytitle: Wurst Client News
+      secondarytitle: Wurst News
   - scope:
       path: ""
       type: wiki
     values:
       layout: wiki
-      secondarytitle: Wurst Client Wiki
+      secondarytitle: Wurst Wiki
   - scope:
       path: ""
       type: questions
     values:
       layout: question
-      secondarytitle: Wurst Client FAQ
+      secondarytitle: Wurst FAQ
       category: Miscellaneous
   - scope:
       path: ""
