@@ -10,15 +10,16 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>{% if page.title %}{{ page.title }}{% unless page.exacttitle %} - {% endunless %}{% endif %}{% unless page.exacttitle %}{% if page.secondarytitle %}{{ page.secondarytitle }}{% else %}{{ site.title }}{% endif %}{% endunless %}</title>
-	{% if page.description %}
-		<meta name="description" content="{{ page.description }}">
+	{% capture description %}{% if page.description %}{{ page.description }}{% else %}{{ page.content | strip_html | strip_newlines | truncate: 256 | escape }}{% endif %}{% endcapture %}
+	{% if description %}
+		<meta name="description" content="{{ description }}">
 	{% endif %}
 	<link rel="shortcut icon" href="/favicon.ico">
 	<link href="/css/wurst.css" rel="stylesheet">
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:site" content="@Wurst_Imperium">
 	<meta name="twitter:title" content="{{ page.title }}">
-	<meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ page.content | strip_html | strip_newlines | truncate: 256 | escape }}{% endif %}">
+	<meta name="twitter:description" content="{{ description }}">
 	<meta name="twitter:image" content="{% if page.image %}{{ page.image }}{% elsif page.video %}https://i.ytimg.com/vi/{{ page.video }}/maxresdefault.jpg{% endif %}">
 	{% include analytics.html %}
 </head>
