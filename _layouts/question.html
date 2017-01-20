@@ -1,68 +1,33 @@
 ---
 layout: default
 ---
-<div class="container">
-	<header class="margin20 no-margin-left no-margin-right no-margin-top">
-		<ul class="breadcrumbs">
-		  <li><a href="/faq/">FAQ</a></li>
-		  <li><span>{{ page.category }}</span></li>
-		  <li><span>{{ page.title }}</span></li>
-		</ul>
-		<h1>{{ page.title }}</h1>
-	</header>
-</div>
-<hr>
-<div class="container">
-	<!-- Wurst FAQ -->
-	<div class="margin20 no-margin-left no-margin-right no-margin-top">
-		<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5218363098774955" data-ad-slot="3363091221" data-ad-format="auto"></ins>
-	</div>
-	<div class="post-content">
-		{{ content }}
-		<footer class="tile-container bg-grayLighter margin20 no-margin-left no-margin-right padding10 shadow">
-			<div class="tile-group double no-margin-left">
-				<span class="tile-group-title fg-black">Share</span>
-				<a href="https://twitter.com/intent/tweet?text={{ page.title | uri_escape }}&url=https%3A//www.wurst-client.tk{{ page.url | remove: "index.html" | uri_escape }}&via=Wurst_Imperium" target="_blank" onclick="ga('send', 'event', 'news', 'share', 'twitter');">
-					<div class="tile-small bg-cyan fg-white">
-						<div class="tile-content iconic">
-							<span class="icon mif-twitter"></span>
-						</div>
-					</div>
-				</a>
-				<a href="https://plus.google.com/share?url=https%3A//www.wurst-client.tk{{ page.url | remove: "index.html" | uri_escape }}" target="_blank" onclick="ga('send', 'event', 'news', 'share', 'google');">
-					<div class="tile-small bg-red fg-white">
-						<div class="tile-content iconic">
-							<span class="icon mif-google-plus"></span>
-						</div>
-					</div>
-				</a>
-				<a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//www.wurst-client.tk{{ page.url | remove: "index.html" | uri_escape }}" target="_blank" onclick="ga('send', 'event', 'news', 'share', 'facebook');">
-					<div class="tile-small bg-darkBlue fg-white">
-						<div class="tile-content iconic">
-							<span class="icon mif-facebook"></span>
-						</div>
-					</div>
-				</a>
-			</div>
-		</footer>
-		<div id="disqus_thread"></div>
-		<noscript>
-			Please enable JavaScript to view the
-			<a href="https://disqus.com/?ref_noscript" rel="nofollow">
-				comments section.
-			</a>
-		</noscript>
+{% include title.html l1 = page.title %}
+
+<div class="padding20 no-padding-left no-padding-right">
+	<div class="container post-content">
+
+		<!-- Wurst FAQ -->
+		<div class="margin20 no-margin-left no-margin-right no-margin-top">
+			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5218363098774955" data-ad-slot="3363091221" data-ad-format="auto"></ins>
+		</div>
+
+		<div class="margin20 no-margin-left no-margin-right no-margin-top">
+			{{ content }}
+		</div>
+
+		<div class="margin20 no-margin-left no-margin-right no-margin-top">
+			{% include share-buttons.html %}
+		</div>
+		
+		<div class="margin20 no-margin-left no-margin-right no-margin-top">
+			<h2>Comments</h2>
+			{% include comments.html %}
+		</div>
+
 	</div>
 </div>
+
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <script>
 	(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<script type="text/javascript">
-    var disqus_shortname = 'wurst-client';
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
 </script>
