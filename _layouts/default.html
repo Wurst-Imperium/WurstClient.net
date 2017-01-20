@@ -10,7 +10,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>{% if page.title %}{{ page.title }}{% unless page.exacttitle %} - {% endunless %}{% endif %}{% unless page.exacttitle %}{% if page.secondarytitle %}{{ page.secondarytitle }}{% else %}{{ site.title }}{% endif %}{% endunless %}</title>
-	{% capture description %}{% if page.description %}{{ page.description }}{% else %}{{ page.content | strip_html | strip_newlines | truncate: 256 | escape }}{% endif %}{% endcapture %}
+	{% capture description %}{% if page.description %}{{ page.description }}{% else %}{{ page.content | strip_html | strip_newlines | truncate: 200 | escape }}{% endif %}{% endcapture %}
 	{% if description %}
 		<meta name="description" content="{{ description }}">
 	{% endif %}
