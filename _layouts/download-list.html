@@ -1,17 +1,7 @@
 ---
 layout: default
 ---
-<header class="bg-gray fg-white">
-	<div class="container padding40 no-padding-left no-padding-right">
-    <h1 class="align-center text-shadow">
-      {{ page.title }}
-      {% if page.notice %}
-        <br>
-        <small class="fg-grayLighter">{{ page.notice }}</small>
-      {% endif %}
-    </h1>
-	</div>
-</header>
+{% include title.html l1 = page.title l2 = page.description %}
 <div class="padding20 no-padding-left no-padding-right">
 	<div class="container post-content">
 		<!-- Wurst Downloads -->
