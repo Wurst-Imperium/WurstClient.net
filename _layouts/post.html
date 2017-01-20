@@ -38,29 +38,7 @@ layout: default
 			{% endif %}
 		</div>
 		<div class="margin20 no-margin-left no-margin-right no-margin-top">
-			<nav class="tile-container">
-				<a href="https://twitter.com/intent/tweet?text={{ page.title | uri_escape }}&url=https%3A//www.wurst-client.tk{{ page.url | remove: "index.html" | uri_escape }}&via=Wurst_Imperium" target="_blank" onclick="ga('send', 'event', 'news', 'share', 'twitter');">
-					<div class="tile-small bg-cyan fg-white">
-						<div class="tile-content iconic">
-							<span class="icon mif-twitter"></span>
-						</div>
-					</div>
-				</a>
-				<a href="https://plus.google.com/share?url=https%3A//www.wurst-client.tk{{ page.url | remove: "index.html" | uri_escape }}" target="_blank" onclick="ga('send', 'event', 'news', 'share', 'google');">
-					<div class="tile-small bg-red fg-white">
-						<div class="tile-content iconic">
-							<span class="icon mif-google-plus"></span>
-						</div>
-					</div>
-				</a>
-				<a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//www.wurst-client.tk{{ page.url | remove: "index.html" | uri_escape }}" target="_blank" onclick="ga('send', 'event', 'news', 'share', 'facebook');">
-					<div class="tile-small bg-darkBlue fg-white">
-						<div class="tile-content iconic">
-							<span class="icon mif-facebook"></span>
-						</div>
-					</div>
-				</a>
-			</nav>
+			{% include share-buttons.html %}
 		</div>
 		<div class="margin20 no-margin-left no-margin-right no-margin-top">
 			{{ content }}

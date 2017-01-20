@@ -1,0 +1,25 @@
+{% assign share-title = page.title | cgi_escape %}
+{% assign share-url = "https://www.wurst-client.tk" | append: page.url | remove: "index.html" | uri_escape %}
+<nav class="tile-container">
+  <a href="https://twitter.com/intent/tweet?text={{ share-title }}&amp;url={{ share-url }}&amp;via=Wurst_Imperium" target="_blank">
+    <div class="tile-small bg-cyan fg-white">
+      <div class="tile-content iconic">
+        <span class="icon mif-twitter"></span>
+      </div>
+    </div>
+  </a>
+  <a href="https://plus.google.com/share?url={{ share-url }}" target="_blank">
+    <div class="tile-small bg-red fg-white">
+      <div class="tile-content iconic">
+        <span class="icon mif-google-plus"></span>
+      </div>
+    </div>
+  </a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u={{ share-url }}" target="_blank">
+    <div class="tile-small bg-darkBlue fg-white">
+      <div class="tile-content iconic">
+        <span class="icon mif-facebook"></span>
+      </div>
+    </div>
+  </a>
+</nav>
