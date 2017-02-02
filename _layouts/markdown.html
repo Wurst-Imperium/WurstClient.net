@@ -1,0 +1,54 @@
+---
+layout: default
+---
+{% include title.html l1 = page.title %}
+<div class="padding20 no-padding-left no-padding-right">
+	<div class="container post-content">
+		<!-- Wurst News -->
+		<div class="margin20 no-margin-left no-margin-right no-margin-top">
+			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5218363098774955" data-ad-slot="5352619220" data-ad-format="auto"></ins>
+		</div>
+		<div class="margin20 no-margin-left no-margin-right no-margin-top padding10 bg-grayDarker">
+			{% if page.video %}
+				<a href="https://www.youtube.com/watch?v={{ page.video }}" target="_blank">
+					<div class="image-container">
+						<div class="frame no-padding tile-content iconic">
+							<img src="{% if page.image %}{{ page.image | replace: "w1280-h720-no", "w960-h540-s-l90-e8" }}{% else %}https://i.ytimg.com/vi/{{ page.video }}/maxresdefault.jpg{% endif %}">
+							<span class="icon mif-play op-dark bg-hover-red fg-white shadow"></span>
+						</div>
+					</div>
+				</a>
+			{% elsif page.image %}
+				<div class="image-container">
+					<div class="frame">
+						<img src="{{ page.image | replace: "w1280-h720-no", "w960-h540-s-l90-e8" }}" alt="{{ page.title }}">
+					</div>
+				</div>
+			{% else %}
+				<div class="image-container full-size">
+					<div class="frame bg-grayLighter set-border tile-content iconic">
+						<img src="https://cloud.githubusercontent.com/assets/10100202/19655746/6eea9706-9a1d-11e6-8fbc-0a8d25f7a2fd.jpg" class="no-visible" alt="{{ page.title }}">
+						<span class="icon mif-file-picture fg-grayLight" style="margin-top: -32px;"></span>
+					</div>
+				</div>
+			{% endif %}
+		</div>
+		<div class="margin20 no-margin-left no-margin-right no-margin-top">
+			{% include share-buttons.html %}
+		</div>
+		<div class="margin20 no-margin-left no-margin-right no-margin-top">
+			{{ content }}
+		</div>
+		<!-- Wurst News -->
+		<div class="margin20 no-margin-left no-margin-right no-margin-top">
+			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5218363098774955" data-ad-slot="5352619220" data-ad-format="auto"></ins>
+		</div>
+		<h2>Comments</h2>
+		{% include comments.html %}
+	</div>
+</div>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+	(adsbygoogle = window.adsbygoogle || []).push({});
+	(adsbygoogle = window.adsbygoogle || []).push({});
+</script>

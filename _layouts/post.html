@@ -55,31 +55,48 @@ layout: default
 		</p>
 		{% endif %}
 		{% capture baselink %}http://go.wurst-client.tk/10371505/github.com/Wurst-Imperium/Wurst-MC-{{ page.minecraft-version | remove: ".X" }}{% endcapture %}
-		<ul class="unstyled-list">
-			<li>
-				<a class="tile inline-block no-float bg-grayDark command-button primary no-border" href="{{ baselink }}/releases/download/{{ page.Wurst-version }}/Wurst-Client-{{ page.Wurst-version }}.zip" rel="nofollow" target="_blank" style="width: auto;height: auto;">
-					<span class="icon mif-file-download"></span>
-					Download Wurst
-					<small>version {{ post.Wurst-version }} for Minecraft {{ page.minecraft-version }}</small>
-				</a>
-			</li>
-			{% unless  page.minecraft-version == "1.7.X" %}
-				<li>
-					<a class="tile inline-block no-float bg-white fg-gray bd-grayLight command-button primary" href="{{ baselink }}/archive/{{ page.Wurst-version }}.zip" rel="nofollow" target="_blank" style="width: auto;height: auto;">
-						<span class="icon mif-file-zip"></span>
-						Source Code (zip)
-						<small>version {{ post.Wurst-version }} for Minecraft {{ page.minecraft-version }}</small>
-					</a>
-				</li>
-				<li>
-					<a class="tile inline-block no-float bg-white fg-gray bd-grayLight command-button primary" href="{{ baselink }}/archive/{{ page.Wurst-version }}.tar.gz" rel="nofollow" target="_blank" style="width: auto;height: auto;">
-						<span class="icon mif-file-zip"></span>
-						Source Code (tar.gz)
-						<small>version {{ post.Wurst-version }} for Minecraft {{ page.minecraft-version }}</small>
-					</a>
-				</li>
-			{% endunless %}
-		</ul>
+		<div class="grid">
+			<div class="row cells2">
+				<div class="cell">
+					<ul class="unstyled-list">
+						<li>
+							<a class="tile inline-block no-float bg-grayDark command-button primary no-border" href="{{ baselink }}/releases/download/{{ page.Wurst-version }}/Wurst-Client-{{ page.Wurst-version }}.zip" rel="nofollow" target="_blank" style="width: auto;height: auto;">
+								<span class="icon mif-file-download"></span>
+								Download Wurst
+								<small>version {{ post.Wurst-version }} for Minecraft {{ page.minecraft-version }}</small>
+							</a>
+						</li>
+						{% unless  page.minecraft-version == "1.7.X" %}
+						<li>
+							<a class="tile inline-block no-float bg-white fg-gray bd-grayLight command-button primary" href="{{ baselink }}/archive/{{ page.Wurst-version }}.zip" rel="nofollow" target="_blank" style="width: auto;height: auto;">
+								<span class="icon mif-file-zip"></span>
+								Source Code (zip)
+								<small>version {{ post.Wurst-version }} for Minecraft {{ page.minecraft-version }}</small>
+							</a>
+						</li>
+						<li>
+							<a class="tile inline-block no-float bg-white fg-gray bd-grayLight command-button primary" href="{{ baselink }}/archive/{{ page.Wurst-version }}.tar.gz" rel="nofollow" target="_blank" style="width: auto;height: auto;">
+								<span class="icon mif-file-zip"></span>
+								Source Code (tar.gz)
+								<small>version {{ post.Wurst-version }} for Minecraft {{ page.minecraft-version }}</small>
+							</a>
+						</li>
+						{% endunless %}
+					</ul>
+				</div>
+				<div class="cell align-right">
+					<ul class="unstyled-list">
+						<li>
+							<a class="tile inline-block no-float bg-white fg-gray bd-grayLight command-button primary" href="/how-to-install/" style="width: auto;height: auto;">
+								<span class="icon mif-info"></span>
+								How To Install
+								<small>version {{ post.Wurst-version }} for Minecraft {{ page.minecraft-version }}</small>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
 <div class="padding20 no-padding-left no-padding-right">
