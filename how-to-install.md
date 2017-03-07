@@ -6,7 +6,7 @@ video: Pjw1wYSRKMU
 ## Text Version
 Before you can install Wurst, you will obviously need to download it.
 
-To do that, go to [wurst-client.tk/download](https://www.wurst-client.tk/download/), select the Minecraft version and Wurst version that you want, then download that version and save it on your computer.
+To do that, go to [wurstclient.net/download](/download/), select the Minecraft version and Wurst version that you want, then download that version and save it on your computer.
 
 Once you have that file, the next step is to extract it.
 

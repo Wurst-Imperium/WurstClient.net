@@ -1,42 +1,42 @@
 add-ons:
   wspam:
     -
-      link: https://github.com/Wurst-Imperium/files/releases/download/wurst-client.tk/wspam-bob.zip
+      link: https://github.com/Wurst-Imperium/files/releases/download/wurstclient.net/wspam-bob.zip
       image: https://cloud.githubusercontent.com/assets/10100202/6287384/668d3a8a-b911-11e4-81d5-e2d73fd8099d.jpg
       id: wspam-bob
       title: Bob
       description: Bob and his tank are not only against Google+, but also against Pay2Win servers.
       lines: 8
     -
-      link: https://github.com/Wurst-Imperium/files/releases/download/wurst-client.tk/wspam-christmas-tree.zip
+      link: https://github.com/Wurst-Imperium/files/releases/download/wurstclient.net/wspam-christmas-tree.zip
       image: https://cloud.githubusercontent.com/assets/10100202/6287385/66a7898a-b911-11e4-957c-e450c746fb80.jpg
       id: wspam-christmas-tree
       title: Christmas Tree
       description: When y0y0y0 turns into h0h0h0... Merry Christmas!
       lines: 17
     -
-      link: https://github.com/Wurst-Imperium/files/releases/download/wurst-client.tk/wspam-illuminati.zip
+      link: https://github.com/Wurst-Imperium/files/releases/download/wurstclient.net/wspam-illuminati.zip
       image: https://cloud.githubusercontent.com/assets/10100202/6287386/66b42f64-b911-11e4-80ce-c70c8a68cf4c.jpg
       id: wspam-illuminati
       title: Illuminati
       description: They are arising! Sort of.
       lines: 16
     -
-      link: https://github.com/Wurst-Imperium/files/releases/download/wurst-client.tk/wspam-middle-finger.zip
+      link: https://github.com/Wurst-Imperium/files/releases/download/wurstclient.net/wspam-middle-finger.zip
       image: https://cloud.githubusercontent.com/assets/10100202/6287387/66ba03f8-b911-11e4-88e1-dee76422efa4.jpg
       id: wspam-middle-finger
       title: Middle Finger
       description: Nothing can say "Fuck you!" better than this.
       lines: 18
     -
-      link: https://github.com/Wurst-Imperium/files/releases/download/wurst-client.tk/wspam-peace-sign.zip
+      link: https://github.com/Wurst-Imperium/files/releases/download/wurstclient.net/wspam-peace-sign.zip
       image: https://cloud.githubusercontent.com/assets/10100202/6287388/66be7df2-b911-11e4-856a-0252e2f18918.jpg
       id: wspam-peace-sign
       title: Peace Sign
       description: "The opposite of the Middle Finger: Nothing can say \"Peace bro!\" better than this."
       lines: 15
     -
-      link: https://github.com/Wurst-Imperium/files/releases/download/wurst-client.tk/wspam-swastika.zip
+      link: https://github.com/Wurst-Imperium/files/releases/download/wurstclient.net/wspam-swastika.zip
       image: https://cloud.githubusercontent.com/assets/10100202/6287389/66c3309a-b911-11e4-887d-7b21fad5c714.jpg
       id: wspam-swastika
       title: Swastika

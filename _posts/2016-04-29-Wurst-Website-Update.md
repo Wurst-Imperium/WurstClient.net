@@ -8,8 +8,8 @@ The best part is that this new design not only looks better, but it also makes t
 
 Here are some links to the parts of the site that have changed:
 
-- [Wurst News](https://www.wurst-client.tk/)
+- [Wurst News](/)
 
-- [Wurst Wiki](https://www.wurst-client.tk/wiki/Main_Page/)
+- [Wurst Wiki](/wiki/Main_Page/)
 
-- [Downloads Page](https://www.wurst-client.tk/download/)
+- [Downloads Page](/download/)

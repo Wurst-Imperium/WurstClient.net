@@ -26,7 +26,7 @@ If it works so well for a company as big as Microsoft, then sure it will do wond
 
 If it works well, I will integrate this app into the Wurst Client itself. But first I need to make sure that the server can actually handle the traffic and won't go down after a few days.
 
-So for now, you can only get to the app using this link: [https://feedback.wurst-client.tk/](https://feedback.wurst-client.tk/)
+So for now, you can only get to the app using this link: [https://feedback.wurstclient.net/](https://feedback.wurstclient.net/)
 
 Please note that you do need to register an account before you can submit feedback or votes. This is meant to prevent spam and to ensure that everyone can only vote once.
 

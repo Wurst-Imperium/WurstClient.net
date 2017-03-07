@@ -11,7 +11,7 @@ This website is where people go to download Wurst, so it's important that I work
 
 I'm also working on the Wurst Feedback App and the Fan Shop, so pretty much all the other websites about Wurst. You will now be able to sort feedback on the Feedback App based on popularity, date posted and amount of votes (and yes, pages/infinite scrolling will be added soon).
 
-While we're at it, if there's a feature that you want to see in the next Wurst update, be sure to vote for it on the [Wurst Feedback App](https://feedback.wurst-client.tk/). Or if you have nothing to do, give me some feedback about the [Wurst YouTube Channel](/youtube) or the [Wurst Fan Shop](/fanshop). These two are still relatively new and I need some feedback to improve them.
+While we're at it, if there's a feature that you want to see in the next Wurst update, be sure to vote for it on the [Wurst Feedback App](https://feedback.wurstclient.net/). Or if you have nothing to do, give me some feedback about the [Wurst YouTube Channel](/youtube) or the [Wurst Fan Shop](/fanshop). These two are still relatively new and I need some feedback to improve them.
 <!--read more-->
 
 Additionally, I've recorded for WiZARDHAX.com another time. You can watch that video here: <a href="https://www.youtube.com/watch?v=12R6o7xBBT0" target="_blank">https://www.youtube.com/watch?v=12R6o7xBBT0</a>

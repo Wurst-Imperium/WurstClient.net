@@ -15,4 +15,4 @@ When I got started with Minecraft, I wanted to be an expert at it from the begin
 
 This wiki should also significantly reduce the amount of questions that we get on the Wurst Client GitHub page, meaning less hard work for me and the people who have decided to voluntarily answer some of the questions for me (they are awesome!).
 
-The new wiki can be found at [Wurst-Client.tk/wiki](https://www.wurst-client.tk/wiki/). Check it out!
+The new wiki can be found at [wurstclient.net/wiki](/wiki/). Check it out!

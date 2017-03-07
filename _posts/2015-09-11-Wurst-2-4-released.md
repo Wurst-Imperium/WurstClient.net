@@ -19,7 +19,7 @@ While we're at it, I also fixed the "Monsters" Target option not selecting Ghast
 ## Proxy Support
 Proxies allow you to change your IP address, so that you can join servers that have banned your IP. This is especially useful for cracked servers, as the combination of cracked alts and proxies makes it completely impossible for them to ban you permanently.
 
-Proxy Support was one of the top suggestions in the [Wurst Feedback App](https://feedback.wurst-client.tk/). The Wurst-Bot has already had this feature for quite a while, and now the normal Wurst has it too. Please note that you need to use SOCKS proxies, not HTTP proxies.
+Proxy Support was one of the top suggestions in the [Wurst Feedback App](https://feedback.wurstclient.net/). The Wurst-Bot has already had this feature for quite a while, and now the normal Wurst has it too. Please note that you need to use SOCKS proxies, not HTTP proxies.
 
 ## Better BowAimbot & Blink
 BowAimbot will now aim at moving targets with much better accuracy. It will predict the next position of its target and use that instead of the current position. I found this to be very helpful in PVP situations, as it allows you to accurately aim at running players, which would normally be really hard to do.
