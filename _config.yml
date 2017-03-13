@@ -1,5 +1,4 @@
 exclude:
-- README.md
 - start.bat
 
 gems:
