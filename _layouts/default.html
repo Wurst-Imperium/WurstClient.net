@@ -15,7 +15,7 @@
 		{% capture description %}{% if page.description %}{{ page.description }}{% else %}{{ page.content | strip_html | strip_newlines | strip | replace: "        ", " " | replace: "    ", " " | replace: "  ", " " | truncate: 160 }}{% endif %}{% endcapture %}
 		{% if description %}<meta name="description" content="{{ description }}">{% endif %}
 
-		<link href="/css/wurst.css" rel="stylesheet">
+		<link href="/css/wi.css" rel="stylesheet">
 
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:site" content="@Wurst_Imperium">
@@ -32,6 +32,6 @@
 
 		{% unless page.no_footer %}{% include footer.html %}{% endunless %}
 
-		<script src="/js/metro.min.js"></script>
+		<script src="/js/wi.js"></script>
 	</body>
 </html>
