@@ -1,5 +1,5 @@
 /*
-  Wurst-Imperium JS v1.0
+  Wurst-Imperium JS v1.1
   © 2017 Wurst-Imperium
 
   Based on Metro UI CSS v3.0.17
@@ -11412,12 +11412,10 @@ $.widget( "metro.wizard2" , {
 
 // Anti-AdBlock script
 $(function() {
-
   var ad = $('[data-ad-client="ca-pub-5218363098774955"]');
-
   if(!ad.length)
     return;
-
-  if(ad.css('display') === 'none')
-    $('.post-content').html("Turn off AdBlock.");
+  if(ad.css('display') === 'none') {
+    $('.post-content').html("You must disable AdBlock to view this content.");
+  }
 });
