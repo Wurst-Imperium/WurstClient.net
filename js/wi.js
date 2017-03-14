@@ -1,5 +1,5 @@
 /*
-  Wurst-Imperium JS v1.1
+  Wurst-Imperium JS v1.2
   © 2017 Wurst-Imperium
 
   Based on Metro UI CSS v3.0.17

@@ -1,5 +1,5 @@
 /*
-  Wurst-Imperium CSS v1.1
+  Wurst-Imperium CSS v1.2
   © 2017 Wurst-Imperium
 
   Based on Metro UI CSS v3.0.17
@@ -4318,6 +4318,11 @@ a.square-button:hover {
   background: #2086bf;
   color: #ffffff;
   border-color: #2086bf;
+}
+/* EDIT: added :hover style to .command-button.primary */
+.command-button.primary:hover {
+  background: #1d7ab6;
+  color: #ffffff;
 }
 .command-button.primary:active {
   background: #1b6eae;
