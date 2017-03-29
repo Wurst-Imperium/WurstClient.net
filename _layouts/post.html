@@ -1,17 +1,17 @@
 ---
 layout: default
 ---
-<header class="bg-gray fg-white">
-	<div class="container padding40 no-padding-left no-padding-right">
-		{% include post-header.html %}
-	</div>
-</header>
+{% assign date = page.date | date: "%Y-%m-%d" %}
+{% include title.html l1 = page.title l2 = date %}
+
 <div class="padding20 no-padding-left no-padding-right">
 	<div class="container post-content">
+
 		<!-- Wurst News -->
 		<div class="margin20 no-margin-left no-margin-right no-margin-top">
 			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5218363098774955" data-ad-slot="5352619220" data-ad-format="auto"></ins>
 		</div>
+
 		<div class="margin20 no-margin-left no-margin-right no-margin-top padding10 bg-grayDarker">
 			{% if page.video %}
 				<a href="https://www.youtube.com/watch?v={{ page.video }}" target="_blank">
@@ -37,77 +37,72 @@ layout: default
 				</div>
 			{% endif %}
 		</div>
+
 		<div class="margin20 no-margin-left no-margin-right no-margin-top">
 			{% include share-buttons.html %}
 		</div>
+
 		<div class="margin20 no-margin-left no-margin-right no-margin-top">
 			{{ content }}
 		</div>
-{% if page.Wurst-version and page.minecraft-version %}
-	</div>
-</div>
-<div class="bg-grayLighter padding20 no-padding-left no-padding-right">
-	<div class="container post-content">
-		<h2>Downloads</h2>
-		{% if  page.minecraft-version == "1.7.X" %}
-		<p>
-			<strong>Warning:</strong> Wurst for Minecraft 1.7 is closed source. It may only be downloaded from the links provided here, and may not be redistributed in any form, modified or otherwise, without express permission. Decompilation or reverse-engineering is strictly prohibited. All rights not explicitly granted are reserved.
-		</p>
-		{% endif %}
-		{% capture baselink %}http://adf.ly/10371505/github.com/Wurst-Imperium/Wurst-MC-{{ page.minecraft-version | remove: ".X" }}{% endcapture %}
-		<div class="grid">
-			<div class="row cells2">
-				<div class="cell">
-					<ul class="unstyled-list">
-						<li>
-							<a class="tile inline-block no-float bg-grayDark command-button primary no-border" href="{{ baselink }}/releases/download/{{ page.Wurst-version }}/Wurst-Client-{{ page.Wurst-version }}.zip" rel="nofollow" target="_blank" style="width: auto;height: auto;">
-								<span class="icon mif-file-download"></span>
-								Download Wurst
-								<small>version {{ post.Wurst-version }} for Minecraft {{ page.minecraft-version }}</small>
-							</a>
-						</li>
-						{% unless  page.minecraft-version == "1.7.X" %}
-						<li>
-							<a class="tile inline-block no-float bg-white fg-gray bd-grayLight command-button primary" href="{{ baselink }}/archive/{{ page.Wurst-version }}.zip" rel="nofollow" target="_blank" style="width: auto;height: auto;">
-								<span class="icon mif-file-zip"></span>
-								Source Code (zip)
-								<small>version {{ post.Wurst-version }} for Minecraft {{ page.minecraft-version }}</small>
-							</a>
-						</li>
-						<li>
-							<a class="tile inline-block no-float bg-white fg-gray bd-grayLight command-button primary" href="{{ baselink }}/archive/{{ page.Wurst-version }}.tar.gz" rel="nofollow" target="_blank" style="width: auto;height: auto;">
-								<span class="icon mif-file-zip"></span>
-								Source Code (tar.gz)
-								<small>version {{ post.Wurst-version }} for Minecraft {{ page.minecraft-version }}</small>
-							</a>
-						</li>
-						{% endunless %}
-					</ul>
-				</div>
-				<div class="cell align-right">
-					<ul class="unstyled-list">
-						<li>
-							<a class="tile inline-block no-float bg-white fg-gray bd-grayLight command-button primary" href="/how-to-install/" style="width: auto;height: auto;">
-								<span class="icon mif-info"></span>
-								How To Install
-								<small>version {{ post.Wurst-version }} for Minecraft {{ page.minecraft-version }}</small>
-							</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="padding20 no-padding-left no-padding-right">
-	<div class="container post-content">
-{% endif %}
+
 		<!-- Wurst News -->
 		<div class="margin20 no-margin-left no-margin-right no-margin-top">
 			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5218363098774955" data-ad-slot="5352619220" data-ad-format="auto"></ins>
 		</div>
+
 	</div>
 </div>
+
+{% if page.Wurst-version and page.minecraft-version %}
+	<div class="bg-grayLighter padding20 no-padding-left no-padding-right">
+		<div class="container post-content">
+
+			<h2>Downloads</h2>
+			{% assign mcversion = page.minecraft-version | remove: ".X" %}
+			{% capture baselink %}http://adf.ly/10371505/github.com/Wurst-Imperium/Wurst-MC-{{ mcversion }}{% endcapture %}
+			<ul class="unstyled-list">
+				<li>
+					<a class="tile inline-block no-float bg-grayDark command-button primary no-border" href="{{ baselink }}/releases/download/{{ page.Wurst-version }}/Wurst-Client-{{ page.Wurst-version }}.zip" rel="nofollow" target="_blank" style="width: auto;height: auto;">
+						<span class="icon mif-file-download"></span>
+						Wurst Client {{ page.Wurst-version }}
+						<small>for Minecraft {{ site.mcversions[mcversion] }}</small>
+					</a>
+				</li>
+				{% unless  page.minecraft-version == "1.7.X" %}
+				<li>
+					<a class="tile inline-block no-float bg-white fg-gray bd-grayLight command-button primary" href="{{ baselink }}/archive/{{ page.Wurst-version }}.zip" rel="nofollow" target="_blank" style="width: auto;height: auto;">
+						<span class="icon mif-file-zip"></span>
+						Source Code (zip)
+						<small>Wurst Client {{ page.Wurst-version }}</small>
+					</a>
+				</li>
+				<li>
+					<a class="tile inline-block no-float bg-white fg-gray bd-grayLight command-button primary" href="{{ baselink }}/archive/{{ page.Wurst-version }}.tar.gz" rel="nofollow" target="_blank" style="width: auto;height: auto;">
+						<span class="icon mif-file-zip"></span>
+						Source Code (tar.gz)
+						<small>Wurst Client {{ page.Wurst-version }}</small>
+					</a>
+				</li>
+				{% endunless %}
+			</ul>
+
+		</div>
+	</div>
+{% endif %}
+
+<div class="padding20 no-padding-left no-padding-right">
+	<div class="container post-content">
+
+		<h2>Related Tutorials</h2>
+		<ul>
+			<li><p><a href="/tutorials/how-to-install/">How to install Wurst</a></p></li>
+			<li><p><a href="/tutorials/how-to-update/">How to (manually) update Wurst</a></p></li>
+		</ul>
+
+	</div>
+</div>
+
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <script>
 	(adsbygoogle = window.adsbygoogle || []).push({});
