@@ -1,37 +1,55 @@
 ---
 ---
+{% if page.title %}
+	{% capture page_title %}{{ page.title }} - {{ site.title }}{% endcapture %}
+{% else %}
+	{% assign page_title = "ERROR: This page has no title!" %}
+{% endif %}
+
+{% if page.description %}
+	{% assign page_description = page.description %}
+{% else %}
+	{% capture page_description %}{{ page.content | strip_html | strip_newlines | strip | replace: "        ", " " | replace: "    ", " " | replace: "  ", " " | truncate: 160 }}{% endcapture %}
+{% endif %}
+
+{% if page.image %}
+	{% assign page_image = page.image %}
+{% elsif page.video %}
+	{% capture page_image %}https://i.ytimg.com/vi/{{ page.video }}/maxresdefault.jpg{% endcapture %}
+{% else %}
+	{% assign page_image = "https://cloud.githubusercontent.com/assets/10100202/24450367/ef3c0796-147a-11e7-99a9-404bc0deeb3d.jpg" %}
+{% endif %}
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		{% if page.split-test %}{% include split-test.html %}{% endif %}
 
 		<meta charset="utf-8">
 		<link rel="shortcut icon" href="/favicon.ico">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<title>{% if page.title %}{{ page.title }}{% unless page.exacttitle %} - {% endunless %}{% endif %}{% unless page.exacttitle %}{% if page.secondarytitle %}{{ page.secondarytitle }}{% else %}{{ site.title }}{% endif %}{% endunless %}</title>
-
-		{% capture description %}{% if page.description %}{{ page.description }}{% else %}{{ page.content | strip_html | strip_newlines | strip | replace: "        ", " " | replace: "    ", " " | replace: "  ", " " | truncate: 160 }}{% endif %}{% endcapture %}
-		{% if description %}<meta name="description" content="{{ description }}">{% endif %}
+		<title>{{ page_title }}</title>
+		<meta name="description" content="{{ page_description }}">
 
 		<link href="/css/wi.css" rel="stylesheet">
 
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:site" content="@Wurst_Imperium">
-		<meta name="twitter:title" content="{{ page.title }}">
-		<meta name="twitter:description" content="{{ description }}">
-		<meta name="twitter:image" content="{% if page.image %}{{ page.image }}{% elsif page.video %}https://i.ytimg.com/vi/{{ page.video }}/maxresdefault.jpg{% endif %}">
+		<meta name="twitter:title" content="{{ page_title }}">
+		<meta name="twitter:description" content="{{ page_description }}">
+		<meta name="twitter:image" content="{{ page_image }}">
 
 		{% include analytics.html %}
+
 	</head>
 	<body>
-		{% unless page.no_header %}{% include header.html %}{% endunless %}
 
+		{% include header.html %}
 		{{ content }}
-
-		{% unless page.no_footer %}{% include footer.html %}{% endunless %}
+		{% include footer.html %}
 
 		<script src="/js/wi.js"></script>
+
 	</body>
 </html>
