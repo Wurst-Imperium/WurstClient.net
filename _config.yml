@@ -14,13 +14,17 @@ mcversions:
   "1.10": "1.10 - 1.10.2"
   "1.9": "1.9 - 1.9.2"
   "1.8": "1.8 - 1.8.9"
+  "1.7": "1.7.2 - 1.7.10"
 
 paginate: 10
 paginate_path: "/news/:num/"
 permalink: /news/:year-:month-:day-:title/
-excerpt_separator: <!--read more-->
+excerpt_separator:
 
 collections:
+  updates:
+    output: true
+    permalink: /updates/:slug/
   wiki:
     output: true
     permalink: /wiki/:path/
@@ -40,11 +44,9 @@ defaults:
       author: Alexander01998
   - scope:
       path: ""
-      type: posts
+      type: updates
     values:
-      layout: post
-      author: Alexander01998
-      secondarytitle: Wurst News
+      layout: update
   - scope:
       path: ""
       type: wiki

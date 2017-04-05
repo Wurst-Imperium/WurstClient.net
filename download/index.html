@@ -3,38 +3,45 @@ title: Minecraft Wurst Hacked Client Downloads
 description: Wurst Client downloads for all Minecraft versions
 permalink: /download/
 mcversions:
-  - "1.11.X"
-  - "1.10.X"
-  - "1.9.X"
-  - "1.8.X"
-  - "1.7.X"
+  - "1.11"
+  - "1.10"
+  - "1.9"
+  - "1.8"
+  - "1.7"
   - "all"
 ---
 {% include title.html l1 = page.title l2 = page.description %}
+
 <div class="padding20 no-padding-left no-padding-right">
   <div class="container post-content">
+
 		<!-- Wurst Downloads -->
 		<div class="margin20 no-margin-left no-margin-right no-margin-top">
 			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5218363098774955" data-ad-slot="6065673627" data-ad-format="auto"></ins>
 		</div>
+
     {% for mcversion in page.mcversions %}
-      {% if mcversion == "all" %}
-        {% assign updates = site.posts | where: "category", "Wurst Update" %}
-      {% else %}
-        {% assign updates = site.posts | where: "minecraft-version", mcversion %}
-      {% endif %}
+
       <div class="margin10 no-margin-left no-margin-right padding10 no-padding-top no-padding-bottom bg-grayLighter fg-gray set-border text-light">
         <h2 class="text-light">{% if mcversion == "all" %}Latest Updates{% else %}Wurst for Minecraft {{ mcversion }}{% endif %}</h2>
       </div>
+
       <div class="grid padding10">
         <div class="row cells4">
-          {% for update in updates limit: 3 %}
+
+          {% assign i = 0 %}
+          {% for update in site.updates reversed %}
+
+            {% unless mcversion == "all" or update.minecraft-versions contains mcversion %}
+              {% continue %}
+            {% endunless %}
+
             <div class="cell">
               <a href="{{ update.url }}">
                 <div class="image-container">
-                  <div class="frame{% unless update.image or update.video %} bg-grayLighter set-border tile-content iconic{% endunless %}">
-                    <img src="{% if update.image %}{{ update.image | replace: "w1280-h720-no", "w320-h180-s-l75-e8" }}{% elsif update.video %}https://i.ytimg.com/vi/{{ update.video }}/mqdefault.jpg{% else %}https://cloud.githubusercontent.com/assets/10100202/19655746/6eea9706-9a1d-11e6-8fbc-0a8d25f7a2fd.jpg{% endif %}"{% unless update.image or update.video %} class="no-visible"{% endunless %} alt="{{ update.title }}">
-                    {% unless update.image or update.video %}
+                  <div class="frame{% unless update.image %} bg-grayLighter set-border tile-content iconic{% endunless %}">
+                    <img src="{% if update.image %}{{ update.image }}{% else %}https://cloud.githubusercontent.com/assets/10100202/19655746/6eea9706-9a1d-11e6-8fbc-0a8d25f7a2fd.jpg{% endif %}"{% unless update.image %} class="no-visible"{% endunless %} alt="Wurst v{{ update.wurst-version }} MC{{ update.minecraft-version }}">
+                    {% unless update.image %}
                       <span class="icon mif-file-picture fg-grayLight" style="margin-top: -32px;"></span>
                     {% endunless %}
                   </div>
@@ -49,12 +56,19 @@ mcversions:
                 <a href="{{ update.url }}">{{ update.title }}</a>
               </h3>
             </div>
+
+            {% assign i = i | plus: 1 %}
+            {% if i >= 3 %}
+              {% break %}
+            {% endif %}
+
           {% endfor %}
+
           <div class="cell">
             {% if mcversion == "all" %}
               {% capture allversions %}all/{% endcapture %}
             {% else %}
-              {% capture allversions %}minecraft-{{ updates[0].minecraft-version | slugify }}/{% endcapture %}
+              {% capture allversions %}minecraft-{{ mcversion | slugify }}/{% endcapture %}
             {% endif %}
             <a href="{{ allversions }}">
               <div class="image-container">
@@ -73,11 +87,15 @@ mcversions:
               <a href="{{ allversions }}">All Versions</a>
             </h3>
           </div>
+
         </div>
       </div>
+
     {% endfor %}
+
   </div>
 </div>
+
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <script>
 	(adsbygoogle = window.adsbygoogle || []).push({});
