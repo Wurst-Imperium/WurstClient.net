@@ -23,7 +23,16 @@ mcversions:
     {% for mcversion in page.mcversions %}
 
       <div class="margin10 no-margin-left no-margin-right padding10 no-padding-top no-padding-bottom bg-grayLighter fg-gray set-border text-light">
-        <h2 class="text-light">{% if mcversion == "all" %}Latest Updates{% else %}Wurst for Minecraft {{ mcversion }}{% endif %}</h2>
+        <h2 class="text-light">
+          {% if mcversion == "all" %}
+            Latest Updates
+          {% else %}
+            Wurst for Minecraft {{ site.mcversions[mcversion] }}
+            {% if mcversion == "1.7" %}
+              <span class="tag fg-white bg-amber" style="cursor: help;vertical-align: baseline;" title="We are no longer maintaining this version. You can still use it, but any bugs or missing features will not be fixed.">OLD</span>
+            {% endif %}
+          {% endif %}
+        </h2>
       </div>
 
       <div class="grid padding10">
