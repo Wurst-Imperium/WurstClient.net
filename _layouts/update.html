@@ -67,10 +67,20 @@ layout: default
 					</a>
 				{% endunless %}
 
-			{% else %}
+			{% elsif page.old-mcx %}
 
 				{% for mcversion in page.minecraft-versions %}
 					<a class="tile inline-block no-float bg-grayDark command-button primary no-border" href="https://github.com/Wurst-Imperium/Wurst-MCX/releases/download/v{{ page.wurst-version }}/Wurst-Client-v{{ page.wurst-version }}-MC{{ mcversion | replace: " ", "-" }}.zip" rel="nofollow" target="_blank" style="width: auto;height: auto;">
+						<span class="icon mif-file-download"></span>
+						Wurst Client v{{ page.wurst-version }} MC{{ mcversion }}
+						<small>for Minecraft {{ site.mcversions[mcversion] }}</small>
+					</a>
+				{% endfor %}
+
+			{% else %}
+
+				{% for mcversion in page.minecraft-versions %}
+					<a class="tile inline-block no-float bg-grayDark command-button primary no-border" href="https://github.com/Wurst-Imperium/Wurst-MCX2/releases/download/v{{ page.wurst-version }}/Wurst-Client-v{{ page.wurst-version }}-MC{{ mcversion | replace: " ", "-" }}.jar" rel="nofollow" target="_blank" style="width: auto;height: auto;">
 						<span class="icon mif-file-download"></span>
 						Wurst Client v{{ page.wurst-version }} MC{{ mcversion }}
 						<small>for Minecraft {{ site.mcversions[mcversion] }}</small>
