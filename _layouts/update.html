@@ -50,32 +50,11 @@ layout: default
 		<div class="container post-content">
 
 			<h2>Downloads</h2>
-			{% if page.old-downloads %}
+			{% if page.old-downloads or page.old-mcx %}
 
-				{% assign mcversion = page.minecraft-versions[0] %}
-				{% capture baselink %}http://adf.ly/10371505/github.com/Wurst-Imperium/Wurst-MC-{{ mcversion }}{% endcapture %}
-				<a class="tile inline-block no-float bg-grayDark command-button primary no-border" href="{{ baselink }}/releases/download/v{{ page.wurst-version }}/Wurst-Client-v{{ page.wurst-version }}.zip" rel="nofollow" target="_blank" style="width: auto;height: auto;">
-					<span class="icon mif-file-download"></span>
-					Wurst Client v{{ page.wurst-version }}
-					<small>for Minecraft {{ site.mcversions[mcversion] }}</small>
-				</a>
-				{% unless  page.minecraft-versions contains "1.7" %}
-					<a class="tile inline-block no-float bg-white fg-gray bd-grayLight command-button primary" href="{{ baselink }}/archive/v{{ page.wurst-version }}.zip" rel="nofollow" target="_blank" style="width: auto;height: auto;">
-						<span class="icon mif-file-zip"></span>
-						Source Code
-						<small>Wurst Client v{{ page.wurst-version }}</small>
-					</a>
-				{% endunless %}
-
-			{% elsif page.old-mcx %}
-
-				{% for mcversion in page.minecraft-versions %}
-					<a class="tile inline-block no-float bg-grayDark command-button primary no-border" href="https://github.com/Wurst-Imperium/Wurst-MCX/releases/download/v{{ page.wurst-version }}/Wurst-Client-v{{ page.wurst-version }}-MC{{ mcversion | replace: " ", "-" }}.zip" rel="nofollow" target="_blank" style="width: auto;height: auto;">
-						<span class="icon mif-file-download"></span>
-						Wurst Client v{{ page.wurst-version }} MC{{ mcversion }}
-						<small>for Minecraft {{ site.mcversions[mcversion] }}</small>
-					</a>
-				{% endfor %}
+				<p>
+					Downloads for this version are no longer available.
+				</p>
 
 			{% else %}
 
