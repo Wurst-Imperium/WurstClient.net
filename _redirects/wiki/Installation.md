@@ -1,3 +1,3 @@
 ---
-redirect_url: /how-to-install/
+redirect_url: /tutorials/how-to-install/
 ---
