@@ -29,7 +29,7 @@ labels:
 ## Overview
 AutoBuild allows you to build things instantly and automatically. It works in all four directions (north, south, east and west) and can bypass NoCheat+.
 
-The templates are saved as JSON files in `%appdata%/.minecraft/wurst/autobuild`. You can make your own templates and save them there, edit the existing ones, or [download some pre-made templates](/downloads/autobuild/) from the Wurst Client website.
+The templates are saved as JSON files in `%appdata%/.minecraft/wurst/autobuild`. You can make your own templates and save them there, or edit the existing ones.
 
 ## Usage
 AutoBuild can be used to quickly and easily make a giant mess or to actually build something fancy much more easily.
