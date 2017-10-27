@@ -42,6 +42,7 @@ cheats:
   - Criticals
   - Derp
   - Dolphin
+  - Excavator
   - ExtraElytra
   - FancyChat
   - FastBow
@@ -137,6 +138,7 @@ commands:
   - .damage
   - .drop
   - .enchant
+  - .excavate
   - .features
   - .follow
   - .friends
