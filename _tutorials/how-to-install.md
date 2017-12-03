@@ -3,7 +3,7 @@ title: How To Install Wurst
 ---
 1. [Download Wurst](/download/).
 
-2. Double-click on the Wurst installer (.JAR file) that you just downloaded and click <kbd>Install</kbd>.
+2. Run the Wurst installer (.JAR file) that you just downloaded and click <kbd>Install</kbd>.
 
    ![](https://cloud.githubusercontent.com/assets/10100202/26763657/98f53de2-4956-11e7-8ec1-27a8d617f972.png)
    
