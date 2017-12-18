@@ -9,6 +9,8 @@ title: How To Install Wurst
    
 3. You will get a message telling you that Wurst has been successfully installed.
 
+   **Notice:** Wurst MC 1.12 requires Minecraft 1.12 (not 1.12.2) to be installed.
+
    ![](https://cloud.githubusercontent.com/assets/10100202/26763699/4fe1afd6-4957-11e7-93d5-cc8bc4bba856.png)
 
 4. Open the Minecraft launcher. (Close and re-open the launcher if it was already open.)
