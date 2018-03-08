@@ -2,6 +2,7 @@
 title: Wurst Tutorials
 layout: tutorial
 permalink: /tutorials/
+google_auto_ads: true
 ---
 ## Installation & Updates
 

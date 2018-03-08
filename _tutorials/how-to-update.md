@@ -1,5 +1,6 @@
 ---
 title: How To Manually Update Wurst
+google_auto_ads: true
 ---
 Note: Wurst will usually update itself automatically. You will only need to follow this tutorial if you can't auto-update for some reason.
 

@@ -1,12 +1,13 @@
 ---
 title: How To Install Wurst
+google_auto_ads: true
 ---
 1. [Download Wurst](/download/).
 
 2. Run the Wurst installer (.JAR file) that you just downloaded and click <kbd>Install</kbd>.
 
    ![](https://cloud.githubusercontent.com/assets/10100202/26763657/98f53de2-4956-11e7-8ec1-27a8d617f972.png)
-   
+
 3. You will get a message telling you that Wurst has been successfully installed.
 
    **Notice:** Wurst MC 1.12 requires Minecraft 1.12 (not 1.12.2) to be installed.
