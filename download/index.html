@@ -108,5 +108,12 @@ mcversions:
 
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <script>
+	var npa = getCookie("npa");
+	if(npa === "1"){
+		(adsbygoogle=window.adsbygoogle||[]).requestNonPersonalizedAds=1
+	}else if(npa === "0"){
+		(adsbygoogle=window.adsbygoogle||[]).requestNonPersonalizedAds=0
+	}
+
 	(adsbygoogle = window.adsbygoogle || []).push({});
 </script>

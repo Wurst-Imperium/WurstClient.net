@@ -11419,3 +11419,38 @@ $(function() {
     $('.post-content').html("You must disable AdBlock to view this content.");
   }
 });
+
+// GDPR script
+$(function(){
+  var npa = getCookie("npa");
+  if(npa === "1"){
+    $('#npa').html("OFF");
+    setCookie("npa", 1, 365);
+  }else if(npa === "0" || npa === "" || npa === null){
+    $('#npa').html("ON");
+    setCookie("npa", 0, 365);
+  }
+
+  $("#npa-toggle").click(function(){
+    var npa = getCookie("npa");
+    if(npa === "1"){
+      $('#npa').html("ON");
+      setCookie("npa", 0, 365);
+      $.Notify({
+        caption: 'Personalized Ads ON',
+        content: 'Big brother is watching you... 👀',
+        icon: "<span class='mif-heart'></span>",
+        type: 'success'
+      });
+    }else if(npa === "0" || npa === "" || npa === null){
+      $('#npa').html("OFF");
+      setCookie("npa", 1, 365);
+      $.Notify({
+        caption: 'Personalized Ads OFF',
+        content: 'Now don\'t blame me if you get crappy ads! 💩',
+        icon: "<span class='mif-heart-broken'></span>",
+        type: 'alert'
+      });
+    }
+  })
+});
