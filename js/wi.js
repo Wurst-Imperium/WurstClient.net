@@ -11426,12 +11426,19 @@ $(function(){
   if(npa === "1"){
     $('#npa').html("OFF");
     setCookie("npa", 1, 365);
+    $.Notify({
+      caption: 'Personalized Ads OFF',
+      content: 'Don\'t blame me if you get crappy ads! 💩<br><br><span class="button npa-toggle" onClick="$(\'.notify-closer\').click();">Re-Enable</span>',
+      icon: "<span class='mif-heart-broken'></span>",
+      type: 'alert',
+      keepOpen: true
+    });
   }else if(npa === "0" || npa === "" || npa === null){
     $('#npa').html("ON");
     setCookie("npa", 0, 365);
   }
 
-  $("#npa-toggle").click(function(){
+  $(".npa-toggle").click(function(){
     var npa = getCookie("npa");
     if(npa === "1"){
       $('#npa').html("ON");
