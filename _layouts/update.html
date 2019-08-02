@@ -50,12 +50,25 @@ google_auto_ads: true
 	<div class="bg-grayLighter padding40 no-padding-left no-padding-right">
 		<div class="container post-content">
 
-			<h2>Downloads</h2>
+			<h2 id="downloads">Downloads</h2>
 			{% if page.old-downloads or page.old-mcx %}
 
 				<p>
 					Downloads for this version are no longer available.
 				</p>
+
+			{% elsif page.fabric %}
+
+				<div class="padding10 no-padding-left no-padding-right">
+					<h3>Wurst Client Fabric Mod <span class="tag fg-white bg-grayLight" style="cursor: help;vertical-align: baseline;" title="Requires Java 8 to be installed and properly configured.">.JAR</span></h3>
+					{% for mcversion in page.minecraft-versions %}
+						<a class="tile inline-block no-float bg-grayDark command-button primary no-border" href="https://github.com/Wurst-Imperium/Wurst-MCX2/releases/download/v{{ page.wurst-version }}/Wurst-Client-v{{ page.wurst-version }}-MC{{ mcversion | replace: " ", "-" }}.jar" rel="nofollow" target="_blank" style="width: auto;height: auto;">
+							<span class="icon mif-file-download"></span>
+							Wurst Client v{{ page.wurst-version }} MC{{ mcversion }}
+							<small>for Minecraft {{ site.mcversions[mcversion] }}</small>
+						</a>
+					{% endfor %}
+				</div>
 
 			{% else %}
 
