@@ -6,9 +6,11 @@ google_auto_ads: true
 ---
 ## Installation & Updates
 
-1. [How to install Wurst](how-to-install/)
+1. [How to install Wurst for Minecraft 1.14.4](/updates/wurst-7-0pre1/#installation)
 
-2. [How to manually update Wurst](how-to-update/)
+1. [How to install Wurst for Minecraft 1.8 - 1.12](how-to-install/)
+
+1. [How to manually update Wurst (for Minecraft 1.8 - 1.12)](how-to-update/)
 
 ## Troubleshooting
 
