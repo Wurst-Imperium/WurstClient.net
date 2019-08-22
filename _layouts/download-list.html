@@ -16,10 +16,30 @@ layout: default
       {% assign i = 0 %}
 	    {% for update in site.updates reversed %}
 
-				{% unless page.mcversion == "all" or update.minecraft-versions contains page.mcversion %}
-					{% if forloop.last %}</div>{% endif %}
-					{% continue %}
-				{% endunless %}
+				{% if page.mcversion == "all" %}
+
+				{% elsif page.mcversion == "snapshots" %}
+
+					{% assign snapshot = false %}
+					{% for mcversion2 in update.minecraft-versions %}
+						{% if mcversion2 contains "w" %}
+							{% assign snapshot = true %}
+						{% endif %}
+					{% endfor %}
+
+					{% unless snapshot %}
+						{% if forloop.last %}</div>{% endif %}
+						{% continue %}
+					{% endunless %}
+
+				{% else %}
+
+					{% unless update.minecraft-versions contains page.mcversion %}
+						{% if forloop.last %}</div>{% endif %}
+						{% continue %}
+					{% endunless %}
+
+				{% endif %}
 
 	      {% assign modulo = i | modulo: 4 %}
 

@@ -3,6 +3,7 @@ title: Minecraft Wurst Hacked Client Downloads
 description: Wurst Client downloads for all Minecraft versions
 permalink: /download/
 mcversions:
+  - "snapshots"
   - "1.14.4"
   - "1.12"
   - "1.11"
@@ -43,9 +44,28 @@ mcversions:
           {% assign i = 0 %}
           {% for update in site.updates reversed %}
 
-            {% unless mcversion == "all" or update.minecraft-versions contains mcversion %}
-              {% continue %}
-            {% endunless %}
+    				{% if mcversion == "all" %}
+
+    				{% elsif mcversion == "snapshots" %}
+
+    					{% assign snapshot = false %}
+    					{% for mcversion2 in update.minecraft-versions %}
+    						{% if mcversion2 contains "w" %}
+    							{% assign snapshot = true %}
+    						{% endif %}
+    					{% endfor %}
+
+    					{% unless snapshot %}
+    						{% continue %}
+    					{% endunless %}
+
+    				{% else %}
+
+    					{% unless update.minecraft-versions contains mcversion %}
+    						{% continue %}
+    					{% endunless %}
+
+    				{% endif %}
 
             <div class="cell">
               <a href="{{ update.url }}">

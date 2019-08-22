@@ -6,6 +6,7 @@ timezone: Europe/Berlin
 title: WurstClient.net
 
 mcversions:
+  "snapshots": "Snapshots"
   "1.14.4": "1.14.4"
   "1.12": "1.12 - 1.12.2"
   "1.12 OF": "1.12 - 1.12.2 + OptiFine"
