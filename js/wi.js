@@ -11445,7 +11445,7 @@ $(function(){
       setCookie("npa", 0, 365);
       $.Notify({
         caption: 'Personalized Ads ON',
-        content: 'Big brother is watching you... 👀',
+        content: 'Yay! :)',
         icon: "<span class='mif-heart'></span>",
         type: 'success'
       });
@@ -11454,7 +11454,7 @@ $(function(){
       setCookie("npa", 1, 365);
       $.Notify({
         caption: 'Personalized Ads OFF',
-        content: 'Now don\'t blame me if you get crappy ads! 💩',
+        content: 'Aww! :(',
         icon: "<span class='mif-heart-broken'></span>",
         type: 'alert'
       });
