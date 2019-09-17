@@ -9,6 +9,7 @@ cheats:
   - AntiSpam
   - AutoArmor
   - AutoBuild
+  - AutoDrop
   - AutoEat
   - AutoFarm
   - AutoFish
@@ -67,6 +68,7 @@ cheats:
   - InstantBunker
   - InvWalk
   - ItemESP
+  - ItemGenerator
   - Jesus
   - Jetpack
   - Kaboom
