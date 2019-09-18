@@ -1,23 +1,69 @@
 ---
-title: Wurst Tutorials
-layout: tutorial
+title: Wurst Client Tutorials
+description: How to use Wurst like a BOSS!
 permalink: /tutorials/
 google_auto_ads: true
 ---
-## Installation & Updates
+{% include title.html l1 = page.title l2 = page.description %}
 
-1. [How to install Wurst for Minecraft 1.14.4](/updates/wurst-7-0pre1/#installation)
+<div class="padding20 no-padding-left no-padding-right bg-grayLighter">
+	<div class="container">
+		<h2 class="text-normal">Installation</h2>
+		<div class="grid no-margin">
+			<div class="row cells2">
+				<div class="cell">
+					<h3 class="text-normal">for Minecraft <b>1.14+</b></h3>
+					<ul>
+						<li><p><a href="/updates/wurst-7-0pre1/#installation">How to install Wurst</a></p></li>
+						<li><p><a href="https://www.youtube.com/watch?v=BrRbD5_0kkA" target="_blank" rel="nofollow">Video Tutorial: How to install Wurst</a></p></li>
+					</ul>
+				</div>
+				<div class="cell">
+					<h3 class="text-normal">for Minecraft <b>1.8.x - 1.12.x</b></h3>
+					<ul>
+						<li><p><a href="how-to-install/">How to install Wurst</a></p></li>
+						<li><p><a href="how-to-update/">How to update Wurst</a></p></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
-1. <a href="https://www.youtube.com/watch?v=BrRbD5_0kkA" target="_blank" rel="nofollow">Video Tutorial: How to install Wurst for Minecraft 1.14.4</a>
+<div class="padding20 no-padding-left no-padding-right">
+	<div class="container">
+		<h2 class="text-normal">Using Features</h2>
+		<ul>
+			<li><p><a href="/wiki/Special_Features/Server_Finder/">How to use ServerFinder</a></p></li>
+			<li><p><a href="/wiki/Mods/ExtraElytra/">How to use ExtraElytra</a></p></li>
+		</ul>
+	</div>
+</div>
 
-1. [How to install Wurst for Minecraft 1.8 - 1.12](how-to-install/)
+<div class="padding20 no-padding-left no-padding-right bg-grayLighter">
+	<div class="container">
+		<h2 class="text-normal">Force OP</h2>
+		<ul>
+			<li><p><a href="/wiki/Mods/Force_OP_(AuthMeCracker)/">How to use ForceOP (AuthMe Cracker)</a></p></li>
+			<li><p><a href="/wiki/Mods/OP-Sign_(Force_OP)/">How to use OP-Sign</a></p></li>
+			<li><p><a href="/wiki/Special_Features/Force_OP_(BookHack)/">How to use BookHack</a></p></li>
+		</ul>
+	</div>
+</div>
 
-1. [How to manually update Wurst (for Minecraft 1.8 - 1.12)](how-to-update/)
+<div class="padding20 no-padding-left no-padding-right">
+	<div class="container">
+		<h2 class="text-normal">Troubleshooting</h2>
+		<ul>
+			<li><p><a href="gui-keybind-fix/">What to do if you can't open the GUI</a></p></li>
+			<li><p><a href="https://bugs.mojang.com/browse/MC-112780">How to fix crashes with <code>exit code -1073740791</code></a></p></li>
+			<li><p><a href="major-minor-52/">How to fix crashes with <code>Unsupported major.minor version 52.0</code></a></p></li>
+		</ul>
+	</div>
+</div>
 
-## Troubleshooting
-
-1. [How to fix crashes with `exit code -1073740791`](https://bugs.mojang.com/browse/MC-112780)
-
-2. [How to fix crashes with `Unsupported major.minor version 52.0`](major-minor-52/)
-
-3. [What to do if you can't open the GUI](gui-keybind-fix/)
+<div class="padding40 no-padding-left no-padding-right bg-grayLighter">
+	<div class="container">
+		<h2 class="align-center text-light">Need help with something else? <a class="fg-cobalt" href="/contact/">Contact us!</a></h2>
+	</div>
+</div>
