@@ -4,6 +4,13 @@ no_index: true
 capes:
   wurst: "https://cloud.githubusercontent.com/assets/10100202/6376589/200f00ae-bd1f-11e4-9ed9-64b9586cd3fb.png"
   wizhax2015: "https://cloud.githubusercontent.com/assets/10100202/6558136/715f8a82-c67a-11e4-8922-7f8e9b8311cd.png"
+  halloween1: "https://user-images.githubusercontent.com/10100202/66271220-c1a51400-e85b-11e9-830a-87fd8c9ba170.png"
+  halloween2: "https://user-images.githubusercontent.com/10100202/66271221-c1a51400-e85b-11e9-98bd-f7f7e2d16b6e.png"
+  halloween3: "https://user-images.githubusercontent.com/10100202/66271215-c073e700-e85b-11e9-96e8-2ded99d26cd8.png"
+  halloween4: "https://user-images.githubusercontent.com/10100202/66271216-c073e700-e85b-11e9-8f94-d7f1468c4680.png"
+  halloween5: "https://user-images.githubusercontent.com/10100202/66271217-c10c7d80-e85b-11e9-8fdb-a7a2ec6ed8b8.png"
+  halloween6: "https://user-images.githubusercontent.com/10100202/66271218-c10c7d80-e85b-11e9-89d6-427a5f068df2.png"
+  halloween7: "https://user-images.githubusercontent.com/10100202/66271219-c10c7d80-e85b-11e9-94d4-f6b9d3ed96f9.png"
 ---
 {
   "Alexander01998": "{{ page.capes.wurst }}",
@@ -22,6 +29,14 @@ capes:
   "Huggan40": "{{ page.capes.wizhax2015 }}",
   "heafie": "{{ page.capes.wizhax2015 }}",
   "_37_": "{{ page.capes.wizhax2015 }}",
+  
+  "Coolgamer1210": "{{ page.capes.halloween1 }}",
+  "That1Weeb": "{{ page.capes.halloween2 }}",
+  "EnteRobert": "{{ page.capes.halloween3 }}",
+  "Harrryy8i8": "{{ page.capes.halloween4 }}",
+  "poors": "{{ page.capes.halloween5 }}",
+  "Packesl": "{{ page.capes.halloween6 }}",
+  "Fantakuchen": "{{ page.capes.halloween7 }}",
 
   "use_new_server": false
 }
