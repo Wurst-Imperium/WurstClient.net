@@ -14,15 +14,16 @@ google_auto_ads: true
 				<div class="cell">
 					<h3 class="text-normal">for Minecraft <b>1.14+</b></h3>
 					<ul>
-						<li><p><a href="/updates/wurst-7-0pre1/#installation">How to install Wurst</a></p></li>
-						<li><p><a href="https://www.youtube.com/watch?v=BrRbD5_0kkA" target="_blank" rel="nofollow">Video Tutorial: How to install Wurst</a></p></li>
+						<li><p><a href="/updates/wurst-7-0pre1/#installation">How to install Wurst 7</a></p></li>
+						<li><p><a href="wurst-7-optifine">How to install Wurst 7 with OptiFine</a></p></li>
+						<li><p><a href="https://www.youtube.com/watch?v=BrRbD5_0kkA" target="_blank" rel="nofollow">Video Tutorial: How to install Wurst 7</a></p></li>
 					</ul>
 				</div>
 				<div class="cell">
 					<h3 class="text-normal">for Minecraft <b>1.8.x - 1.12.x</b></h3>
 					<ul>
-						<li><p><a href="how-to-install/">How to install Wurst</a></p></li>
-						<li><p><a href="how-to-update/">How to update Wurst</a></p></li>
+						<li><p><a href="how-to-install/">How to install Wurst 6</a></p></li>
+						<li><p><a href="how-to-update/">How to update Wurst 6</a></p></li>
 					</ul>
 				</div>
 			</div>
