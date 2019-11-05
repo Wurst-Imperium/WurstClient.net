@@ -63,7 +63,9 @@ See above (1.4.) for how to get to this folder.
 
 ### 3.1. Download <a href="https://optifine.net/downloads" target="_blank" rel="nofollow">OptiFine</a>.
 
-Again, use the **latest version** and make sure that it **matches your Minecraft version**.
+Again, ~~use the latest version and~~ make sure that it **matches your Minecraft version**.
+
+There is currently a problem with OptiFine version "HD U F4" that prevents X-Ray from working. Please use **version "HD U F3"** instead.
 
 ### 3.2. Download <a href="https://www.curseforge.com/minecraft/mc-mods/optifabric" target="_blank" rel="nofollow">OptiFabric</a>.
 
