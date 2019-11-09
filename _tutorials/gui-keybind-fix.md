@@ -1,6 +1,7 @@
 ---
 title: What To Do If You Can't Open The GUI
 google_auto_ads: true
+cleanmedia_ads: true
 ---
 If you can no longer open the GUI, it's because you have removed the keybind(s) for it. There are two ways how you can fix this problem.
 

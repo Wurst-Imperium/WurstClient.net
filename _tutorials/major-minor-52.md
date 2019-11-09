@@ -1,6 +1,7 @@
 ---
 title: How To Fix Crashes With "Unsupported major.minor version 52.0"
 google_auto_ads: true
+cleanmedia_ads: true
 ---
 This crash happens when trying to launch Minecraft with an outdated Java version.
 

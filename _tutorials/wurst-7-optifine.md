@@ -1,6 +1,7 @@
 ---
 title: How To Install Wurst 7 with OptiFine
 google_auto_ads: true
+cleanmedia_ads: true
 ---
 ## Setp 1: Install Fabric
 

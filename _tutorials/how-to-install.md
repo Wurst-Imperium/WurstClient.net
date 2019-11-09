@@ -1,6 +1,7 @@
 ---
 title: How To Install Wurst
 google_auto_ads: true
+cleanmedia_ads: true
 ---
 ## Using the Wurst installer for Windows (.ZIP)
 
