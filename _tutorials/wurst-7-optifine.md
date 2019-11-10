@@ -3,7 +3,7 @@ title: How To Install Wurst 7 with OptiFine
 google_auto_ads: true
 cleanmedia_ads: true
 ---
-## Setp 1: Install Fabric
+## Step 1: Install Fabric
 
 ### 1.1. Download the <a href="https://fabricmc.net/use/" target="_blank" rel="nofollow">Fabric installer</a>.
 
