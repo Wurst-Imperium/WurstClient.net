@@ -53,7 +53,7 @@ cleanmedia_ads: true
 
     					{% assign snapshot = false %}
     					{% for mcversion2 in update.minecraft-versions %}
-    						{% if mcversion2 contains "w" %}
+    						{% if mcversion2 contains "w" or mcversion2 contains "pre" %}
     							{% assign snapshot = true %}
     						{% endif %}
     					{% endfor %}
