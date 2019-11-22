@@ -7,6 +7,7 @@ cheats:
   - AntiKnockback
   - AntiPotion
   - AntiSpam
+  - AntiWaterPush
   - AutoArmor
   - AutoBuild
   - AutoDrop
@@ -107,6 +108,7 @@ cheats:
   - Protect
   - Radar
   - RainbowUI
+  - Reach
   - Regen
   - RemoteView
   - SafeWalk
