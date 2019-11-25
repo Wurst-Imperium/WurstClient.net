@@ -188,9 +188,14 @@ other:
   - BookHack
   - Changelog
   - Disable Wurst
-  - ModList
+  - HackList
+  - Keybind Manager
+  - Middle Click Friends
   - ServerFinder
+  - Server Clean Up
   - TabGui
   - Target
   - Wurst-Bot
+  - Wurst Logo (can be disabled)
   - YesCheat+
+  - Zoom
