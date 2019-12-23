@@ -1,7 +1,7 @@
 google.com, pub-5218363098774955, DIRECT, f08c47fec0942fa0
 
 #CleanMedia.net begin
-cleanmedia.net, 000-117-20191001T151957933, DIRECT
+cleanmedia.net, 862-574-20191104T174807650, DIRECT
 #CMNVideo
 sekindo.com, 24072, DIRECT, b6b21d256ef43532
 spotxchange.com, 84294, RESELLER, 7842df1d2fe2db34
@@ -18,11 +18,5 @@ freewheel.tv, 19133, RESELLER
 tremorhub.com, mb9eo-oqsbf, RESELLER, 1a4e959a1b50034a
 telaria.com, mb9eo-oqsbf, RESELLER, 1a4e959a1b50034a
 smartadserver.com, 3436, RESELLER
-appnexus.com, 9382, RESELLER,f5ab79cb980f11d1
-google.com, pub-6254331789601537, DIRECT, f08c47fec0942fa0
-rubiconproject.com, 19292, DIRECT, 0bfd66d529a55807
-adtech.com, 11455, DIRECT
-aolcloud.net, 11455, DIRECT
-openx.com, 540156784, DIRECT, 6a698e2ec38604c6
 indexexchange.com, 189623, DIRECT
 #CleanMedia.net end
