@@ -115,6 +115,7 @@ cheats:
   - SafeWalk
   - ScaffoldWalk
   - Search
+  - ServerCrasher
   - SkinDerp
   - Sneak
   - Spammer
@@ -180,6 +181,7 @@ commands:
   - .throw
   - .tp
   - .vclip
+  - .viewnbt
   - .wms
   - .xray
 
