@@ -47,7 +47,7 @@ cleanmedia_ads: false
 <div class="padding20 no-padding-left no-padding-right">
   <div class="container">
 		<h2 class="text-normal">Google AdSense</h2>
-    <p>I use Google AdSense to place ads on this website. They have their own privacy policy which you can view here: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></p>
+    <p>I use Google AdSense to place ads on this website. They have their own privacy policy which you can view here: <a href="https://policies.google.com/technologies/ads" target="_blank">https://policies.google.com/technologies/ads</a></p>
     <p>While I don't sell any data to them, they may use data that they already have to "personalize" their ads. You can turn this off by scrolling all the way down and setting the "Personalized Ads" option to "OFF".</p>
     <p>Note that this won't turn off the ads, it just stops them from being personalized.</p>
 	</div>
