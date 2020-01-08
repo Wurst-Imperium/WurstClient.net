@@ -16,6 +16,11 @@ mcversions:
   - "1.8"
   - "1.7"
   - "all"
+old_mcversions:
+  - "1.7"
+  - "1.9"
+  - "1.10"
+  - "1.11"
 cleanmedia_ads: true
 ---
 {% include title.html l1 = page.title l2 = page.description %}
@@ -36,8 +41,8 @@ cleanmedia_ads: true
             Latest Updates
           {% else %}
             Wurst for Minecraft {{ site.mcversions[mcversion] }}
-            {% if mcversion == "1.7" %}
-              <span class="tag fg-white bg-amber" style="cursor: help;vertical-align: baseline;" title="We are no longer maintaining this version. You can still use it, but any bugs or missing features will not be fixed.">OLD</span>
+            {% if page.old_mcversions contains mcversion %}
+              <span class="tag fg-white bg-amber" style="cursor: help;vertical-align: baseline;" title="I'm no longer maintaining this version. You can still use it, but any bugs or missing features will not be fixed.">OLD</span>
             {% endif %}
           {% endif %}
         </h2>
