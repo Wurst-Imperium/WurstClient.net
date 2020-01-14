@@ -50,6 +50,7 @@ cleanmedia_ads: false
     <p>I use Google AdSense to place ads on this website. They have their own privacy policy which you can view here: <a href="https://policies.google.com/technologies/ads" target="_blank">https://policies.google.com/technologies/ads</a></p>
     <p>While I don't sell any data to them, they may use data that they already have to "personalize" their ads. You can turn this off by visiting <a href="https://www.google.com/settings/ads" target="_blank">Google Ads Settings</a> or <a href="http://www.aboutads.info/choices/" target="_blank">www.aboutads.info</a>.</p>
     <p>Note that this won't turn off the ads, it just stops them from being personalized.</p>
+    <p>See also: <a href="https://howwemakemoney.withgoogle.com/" target="_blank">How Google Ads work</a></p>
 	</div>
 </div>
 
