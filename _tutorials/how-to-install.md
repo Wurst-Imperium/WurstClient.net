@@ -1,8 +1,11 @@
 ---
-title: How To Install Wurst
+title: How To Install Wurst 6
+description: For Minecraft 1.18 - 1.12
 google_auto_ads: true
 cleanmedia_ads: true
 ---
+See also: <a href="/tutorials/wurst-7-optifine">How To Install Wurst 7 for Minecraft 1.14+</a>
+
 ## Using the Wurst installer for Windows (.ZIP)
 
 1. [Download Wurst](/download/).
