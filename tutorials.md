@@ -17,7 +17,8 @@ cleanmedia_ads: true
 					<ul>
 						<li><p><a href="wurst-7-optifine">How to install Wurst 7</a></p></li>
 						<li><p><a href="wurst-7-baritone">How to add Baritone to Wurst 7</a></p></li>
-						<li><p><a href="https://www.youtube.com/watch?v=BrRbD5_0kkA" target="_blank" rel="nofollow">Video Tutorial: How to install Wurst 7</a></p></li>
+						<li><p><a href="https://www.youtube.com/watch?v=4ehYzP6b_C8" target="_blank" rel="nofollow">Video Tutorial by Favores: How to install Wurst 7</a></p></li>
+						<li><p><a href="https://www.youtube.com/watch?v=BrRbD5_0kkA" target="_blank" rel="nofollow">Video Tutorial by Udisen: How to install Wurst 7</a></p></li>
 					</ul>
 				</div>
 				<div class="cell">
