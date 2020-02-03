@@ -108,8 +108,11 @@ cleanmedia_ads: true
             </div>
 
             {% assign i = i | plus: 1 %}
-            {% if i >= 3 %}
+            {% if i >= 7 %}
               {% break %}
+            {% elsif i == 4 %}
+            </div>
+            <div class="row cells4">
             {% endif %}
 
           {% endfor %}
