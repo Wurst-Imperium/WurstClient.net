@@ -36,18 +36,26 @@ cleanmedia_ads: true
 
     {% for mcversion in page.mcversions %}
 
-      <div class="margin10 no-margin-left no-margin-right padding10 no-padding-top no-padding-bottom bg-grayLighter fg-gray set-border text-light">
-        <h2 class="text-light">
-          {% if mcversion == "all" %}
-            Latest Updates
-          {% else %}
-            Wurst for Minecraft {{ site.mcversions[mcversion] }}
-            {% if page.old_mcversions contains mcversion %}
-              <span class="tag fg-white bg-amber" style="cursor: help;vertical-align: baseline;" title="I'm no longer maintaining this version. You can still use it, but any bugs or missing features will not be fixed.">OLD</span>
+      {% if mcversion == "all" %}
+        {% capture allversions %}all/{% endcapture %}
+      {% else %}
+        {% capture allversions %}minecraft-{{ mcversion | slugify }}/{% endcapture %}
+      {% endif %}
+
+      <a href="{{ allversions }}" class="fg-gray">
+        <div class="margin10 no-margin-left no-margin-right padding10 no-padding-top no-padding-bottom bg-grayLighter fg-gray set-border text-light">
+          <h2 class="text-light">
+            {% if mcversion == "all" %}
+              Latest Updates
+            {% else %}
+              Wurst for Minecraft {{ site.mcversions[mcversion] }}
+              {% if page.old_mcversions contains mcversion %}
+                <span class="tag fg-white bg-amber" style="cursor: help;vertical-align: baseline;" title="I'm no longer maintaining this version. You can still use it, but any bugs or missing features will not be fixed.">OLD</span>
+              {% endif %}
             {% endif %}
-          {% endif %}
-        </h2>
-      </div>
+          </h2>
+        </div>
+      </a>
 
       <div class="grid padding10">
         <div class="row cells4">
@@ -107,11 +115,6 @@ cleanmedia_ads: true
           {% endfor %}
 
           <div class="cell">
-            {% if mcversion == "all" %}
-              {% capture allversions %}all/{% endcapture %}
-            {% else %}
-              {% capture allversions %}minecraft-{{ mcversion | slugify }}/{% endcapture %}
-            {% endif %}
             <a href="{{ allversions }}">
               <div class="image-container">
                 <div class="frame bg-grayLighter set-border tile-content iconic">
