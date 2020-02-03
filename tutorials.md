@@ -68,6 +68,6 @@ cleanmedia_ads: true
 
 <div class="padding40 no-padding-left no-padding-right bg-grayLighter">
 	<div class="container">
-		<h2 class="align-center text-light">Need help with something else? <a href="/contact/">Contact us!</a></h2>
+		<h2 class="align-center text-light">Need help with something else? <a href="/contact/">Contact me!</a></h2>
 	</div>
 </div>
