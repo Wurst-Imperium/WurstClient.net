@@ -38,102 +38,95 @@ cleanmedia_ads: true
         {% capture allversions %}minecraft-{{ mcversion | slugify }}/{% endcapture %}
       {% endif %}
 
-      <a href="{{ allversions }}" class="fg-gray">
-        <div class="margin10 no-margin-left no-margin-right padding10 no-padding-top no-padding-bottom bg-grayLighter fg-gray set-border text-light">
-          <h2 class="text-light">
-            {% if mcversion == "all" %}
-              Latest Updates
-            {% else %}
-              Wurst for Minecraft {{ site.mcversions[mcversion] }}
-              {% if page.old_mcversions contains mcversion %}
-                <span class="tag fg-white bg-amber" style="cursor: help;vertical-align: baseline;" title="I'm no longer maintaining this version. You can still use it, but any bugs or missing features will not be fixed.">OLD</span>
+      <section class="padding10 no-padding-left no-padding-right">
+        <a href="{{ allversions }}" class="fg-gray">
+          <div class="margin10 no-margin-left no-margin-right padding10 no-padding-top no-padding-bottom bg-grayLighter fg-gray set-border text-light">
+            <h2 class="text-light">
+              {% if mcversion == "all" %}
+                Latest Updates
+              {% else %}
+                Wurst for Minecraft {{ site.mcversions[mcversion] }}
+                {% if page.old_mcversions contains mcversion %}
+                  <span class="tag fg-white bg-amber" style="cursor: help;vertical-align: baseline;" title="I'm no longer maintaining this version. You can still use it, but any bugs or missing features will not be fixed.">OLD</span>
+                {% endif %}
               {% endif %}
-            {% endif %}
-          </h2>
-        </div>
-      </a>
+            </h2>
+          </div>
+        </a>
+        <div class="grid padding10">
+          <div class="row cells4">
 
-      <div class="grid padding10">
-        <div class="row cells4">
+            {% assign i = 0 %}
+            {% for update in site.updates reversed %}
 
-          {% assign i = 0 %}
-          {% for update in site.updates reversed %}
+              {% if mcversion == "all" %}
 
-    				{% if mcversion == "all" %}
+              {% elsif mcversion == "snapshots" %}
 
-    				{% elsif mcversion == "snapshots" %}
+                {% assign snapshot = false %}
+                {% for mcversion2 in update.minecraft-versions %}
+                  {% if mcversion2 contains "w" or mcversion2 contains "pre" %}
+                    {% assign snapshot = true %}
+                  {% endif %}
+                {% endfor %}
 
-    					{% assign snapshot = false %}
-    					{% for mcversion2 in update.minecraft-versions %}
-    						{% if mcversion2 contains "w" or mcversion2 contains "pre" %}
-    							{% assign snapshot = true %}
-    						{% endif %}
-    					{% endfor %}
+                {% unless snapshot %}
+                  {% continue %}
+                {% endunless %}
 
-    					{% unless snapshot %}
-    						{% continue %}
-    					{% endunless %}
+              {% else %}
 
-    				{% else %}
+                {% unless update.minecraft-versions contains mcversion %}
+                  {% continue %}
+                {% endunless %}
 
-    					{% unless update.minecraft-versions contains mcversion %}
-    						{% continue %}
-    					{% endunless %}
+              {% endif %}
 
-    				{% endif %}
+              <div class="cell">
+                <a href="{{ update.url }}">
+                  <div class="image-container">
+                    <div class="frame{% unless update.image %} bg-grayLighter set-border tile-content iconic{% endunless %}">
+                      <img src="{% if update.image %}{{ update.image }}{% else %}https://cloud.githubusercontent.com/assets/10100202/19655746/6eea9706-9a1d-11e6-8fbc-0a8d25f7a2fd.jpg{% endif %}"{% unless update.image %} class="no-visible"{% endunless %} alt="Wurst v{{ update.wurst-version }} MC{{ update.minecraft-version }}">
+                      {% unless update.image %}
+                        <span class="icon mif-file-picture fg-grayLight" style="margin-top: -32px;"></span>
+                      {% endunless %}
+                    </div>
+                    <div class="image-overlay" style="background-color: rgba(0, 0, 0, .8);">
+                      <h3 class="sub-alt-header">{{ update.title }}</h3>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              {% assign i = i | plus: 1 %}
+              {% if i >= 11 %}
+                {% break %}
+              {% elsif i == 4 or i == 8 %}
+              </div>
+              <div class="row cells4">
+              {% endif %}
+
+            {% endfor %}
 
             <div class="cell">
-              <a href="{{ update.url }}">
+              <a href="{{ allversions }}">
                 <div class="image-container">
-                  <div class="frame{% unless update.image %} bg-grayLighter set-border tile-content iconic{% endunless %}">
-                    <img src="{% if update.image %}{{ update.image }}{% else %}https://cloud.githubusercontent.com/assets/10100202/19655746/6eea9706-9a1d-11e6-8fbc-0a8d25f7a2fd.jpg{% endif %}"{% unless update.image %} class="no-visible"{% endunless %} alt="Wurst v{{ update.wurst-version }} MC{{ update.minecraft-version }}">
-                    {% unless update.image %}
-                      <span class="icon mif-file-picture fg-grayLight" style="margin-top: -32px;"></span>
-                    {% endunless %}
+                  <div class="frame bg-grayLighter set-border tile-content iconic">
+                    <img src="https://cloud.githubusercontent.com/assets/10100202/19655746/6eea9706-9a1d-11e6-8fbc-0a8d25f7a2fd.jpg" alt="(placeholder)" class="no-visible">
+                    <span class="icon mif-folder-open fg-grayLight" style="margin-top: -32px;"></span>
                   </div>
                   <div class="image-overlay" style="background-color: rgba(0, 0, 0, .8);">
                     <div class="leader text-shadow" style="width: 100%;height: 100%;display: table;">
-                      <span class="mif-link fg-white" style="display: table-cell;vertical-align: middle;"></span>
+                      <h3 style="display: table-cell;vertical-align: middle;">View All</h3 style="display: table-cell;vertical-align: middle;">
                     </div>
                   </div>
                 </div>
               </a>
-              <h3 class="sub-header">
-                <a href="{{ update.url }}">{{ update.title }}</a>
-              </h3>
             </div>
 
-            {% assign i = i | plus: 1 %}
-            {% if i >= 7 %}
-              {% break %}
-            {% elsif i == 4 %}
-            </div>
-            <div class="row cells4">
-            {% endif %}
-
-          {% endfor %}
-
-          <div class="cell">
-            <a href="{{ allversions }}">
-              <div class="image-container">
-                <div class="frame bg-grayLighter set-border tile-content iconic">
-                  <img src="https://cloud.githubusercontent.com/assets/10100202/19655746/6eea9706-9a1d-11e6-8fbc-0a8d25f7a2fd.jpg" alt="(placeholder)" class="no-visible">
-                  <span class="icon mif-folder-open fg-grayLight" style="margin-top: -32px;"></span>
-                </div>
-                <div class="image-overlay" style="background-color: rgba(0, 0, 0, .8);">
-                  <div class="leader text-shadow" style="width: 100%;height: 100%;display: table;">
-                    <span class="mif-link fg-white" style="display: table-cell;vertical-align: middle;"></span>
-                  </div>
-                </div>
-              </div>
-            </a>
-            <h3 class="sub-header">
-              <a href="{{ allversions }}">All Versions</a>
-            </h3>
           </div>
-
         </div>
-      </div>
+      </section class="padding20 no-padding-left no-padding-right">
 
     {% endfor %}
 
