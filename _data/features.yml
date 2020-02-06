@@ -17,10 +17,10 @@ cheats:
   - AutoFish
   - AutoLeave
   - AutoMine
+  - AutoPotion
   - AutoRespawn
   - AutoSign
   - AutoSoup
-  - AutoSplashPot
   - AutoSprint
   - AutoSteal
   - AutoSwim
@@ -62,8 +62,8 @@ cheats:
   - ForcePush
   - Freecam
   - Fullbright
-  - GhostHand
   - Glide
+  - HandNoClip
   - Headless
   - HeadRoll
   - HealthTags
