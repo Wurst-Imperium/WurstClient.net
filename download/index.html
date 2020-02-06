@@ -83,17 +83,17 @@ cleanmedia_ads: true
               {% endif %}
 
               <div class="cell">
-                  <div class="image-container">
-                    <div class="frame{% unless update.image %} bg-grayLighter set-border tile-content iconic{% endunless %}">
+                  <span class="image-container">
+                    <span class="frame{% unless update.image %} bg-grayLighter set-border tile-content iconic{% endunless %}">
                       <img src="{% if update.image %}{{ update.image }}{% else %}https://cloud.githubusercontent.com/assets/10100202/19655746/6eea9706-9a1d-11e6-8fbc-0a8d25f7a2fd.jpg{% endif %}"{% unless update.image %} class="no-visible"{% endunless %} alt="Wurst v{{ update.wurst-version }} MC{{ update.minecraft-version }}">
                       {% unless update.image %}
                         <span class="icon mif-file-picture fg-grayLight" style="margin-top: -32px;"></span>
                       {% endunless %}
-                    </div>
-                    <div class="image-overlay" style="background-color: rgba(0, 0, 0, .8);">
+                    </span>
+                    <span class="image-overlay" style="background-color: rgba(0, 0, 0, .8);">
                       <h3 class="sub-alt-header">{{ update.title }}</h3>
-                    </div>
-                  </div>
+                    </span>
+                  </span>
               </div>
 
               {% assign i = i | plus: 1 %}
@@ -108,17 +108,17 @@ cleanmedia_ads: true
 
             <div class="cell">
               <a href="{{ allversions }}">
-                <div class="image-container">
-                  <div class="frame bg-grayLighter set-border tile-content iconic">
+                <span class="image-container">
+                  <span class="frame bg-grayLighter set-border tile-content iconic">
                     <img src="https://cloud.githubusercontent.com/assets/10100202/19655746/6eea9706-9a1d-11e6-8fbc-0a8d25f7a2fd.jpg" alt="(placeholder)" class="no-visible">
                     <span class="icon mif-folder-open fg-grayLight" style="margin-top: -32px;"></span>
-                  </div>
-                  <div class="image-overlay" style="background-color: rgba(0, 0, 0, .8);">
-                    <div class="leader text-shadow" style="width: 100%;height: 100%;display: table;">
+                  </span>
+                  <span class="image-overlay" style="background-color: rgba(0, 0, 0, .8);">
+                    <span class="leader text-shadow" style="width: 100%;height: 100%;display: table;">
                       <h3 style="display: table-cell;vertical-align: middle;">View All</h3 style="display: table-cell;vertical-align: middle;">
-                    </div>
-                  </div>
-                </div>
+                    </span>
+                  </span>
+                </span>
               </a>
             </div>
 

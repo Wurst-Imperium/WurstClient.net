@@ -40,19 +40,19 @@ cleanmedia_ads: true
 			{% if modulo == 0 %}<div class="row cells6">{% endif %}
 				<div class="cell">
 					<a href="{{ update.url }}">
-						<div class="image-container">
-							<div class="frame{% unless update.image %} bg-grayLighter set-border tile-content iconic{% endunless %}">
+						<span class="image-container">
+							<span class="frame{% unless update.image %} bg-grayLighter set-border tile-content iconic{% endunless %}">
 								<img src="{% if update.image %}{{ update.image }}{% else %}https://cloud.githubusercontent.com/assets/10100202/19655746/6eea9706-9a1d-11e6-8fbc-0a8d25f7a2fd.jpg{% endif %}"{% unless update.image %} class="no-visible"{% endunless %} alt="Wurst v{{ update.wurst-version }} MC{{ update.minecraft-version }}">
 								{% unless update.image %}
 									<span class="icon mif-file-picture fg-grayLight" style="margin-top: -32px;"></span>
 								{% endunless %}
-							</div>
-							<div class="image-overlay" style="background-color: rgba(0, 0, 0, .8);">
-								<div class="leader text-shadow" style="width: 100%;height: 100%;display: table;">
+							</span>
+							<span class="image-overlay" style="background-color: rgba(0, 0, 0, .8);">
+								<span class="leader text-shadow" style="width: 100%;height: 100%;display: table;">
 									<span class="mif-link fg-white" style="display: table-cell;vertical-align: middle;"></span>
-								</div>
-							</div>
-						</div>
+								</span>
+							</span>
+						</span>
 					</a>
 					<h2 class="sub-header">
 						<a href="{{ update.url }}">{{ update.title }}</a>
