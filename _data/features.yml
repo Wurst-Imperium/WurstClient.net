@@ -18,6 +18,7 @@ cheats:
   - AutoLeave
   - AutoMine
   - AutoPotion
+  - AutoReconnect
   - AutoRespawn
   - AutoSign
   - AutoSoup
@@ -68,6 +69,7 @@ cheats:
   - HeadRoll
   - HealthTags
   - HighJump
+  - InfiniChat
   - InstantBunker
   - InvWalk
   - ItemESP
@@ -91,8 +93,10 @@ cheats:
   - Navigator
   - NoClip
   - NoFall
+  - NoFireOverlay
   - NoHurtcam
   - NoOverlay
+  - NoPumpkin
   - NoSlowdown
   - NoWeather
   - NoWeb
@@ -193,12 +197,15 @@ other:
   - Disable Wurst
   - HackList
   - Keybind Manager
+  - Last Server
   - Middle Click Friends
+  - Reconnect
   - ServerFinder
-  - Server Clean Up
+  - Server CleanUp
   - TabGui
   - Target
   - Wurst-Bot
+  - Wurst Capes
   - Wurst Logo (can be disabled)
   - YesCheat+
   - Zoom
