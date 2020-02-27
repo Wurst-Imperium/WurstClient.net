@@ -132,6 +132,7 @@ cheats:
   - Throw
   - Timer
   - Tired
+  - TooManyHax
   - TP-Aura
   - Trajectories
   - TriggerBot
@@ -144,12 +145,14 @@ commands:
   - .addalt
   - .annoy
   - .author
+  - .bind
   - .binds
   - .blink
   - .clear
   - .copyitem
   - .damage
   - .drop
+  - .enabledhax
   - .enchant
   - .excavate
   - .features
@@ -179,12 +182,15 @@ commands:
   - .setcheckbox
   - .setmode
   - .setslider
+  - .settings
   - .spammer
   - .sv
   - .t
   - .taco
   - .throw
+  - .toomanyhax
   - .tp
+  - .unbind
   - .vclip
   - .viewnbt
   - .wms
