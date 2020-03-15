@@ -114,13 +114,39 @@ cleanmedia_ads: true
 <div class="padding20 no-padding-left no-padding-right bg-grayLighter">
 	<div class="container">
 		<h2 class="text-normal">Step 3 (Optional): Install OptiFine</h2>
+        <span class="block ribbed-amber padding5">
+            <span class="block bg-white padding10">
+                <p class="no-margin-top">
+                    <b>Notice:</b> I no longer recommend using OptiFine in Minecraft 1.15.x.
+                </p>
+                <ol>
+                    <li>
+                        <p>
+                            OptiFine versions since "HD U F4" prevent X-Ray mods from working, including the X-Ray hack in Wurst.
+                            <a href="https://github.com/sp614x/optifine/issues/3482#issuecomment-593921599" target="_blank" rel="nofollow">The creator of OptiFine has simply dismissed the issue</a> as "we don't support hacked clients".
+                            OptiFine "HD U F3", the last version that didn't have this problem, is not available for Minecraft 1.15.x.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            OptiFine version "HD U G1 pre9", currently the only version available for Minecraft 1.15.x, freezes the game whenever there is a text field on the screen, thereby breaking many of Wurst's and Minecraft's settings. It is currently unclear when OptiFine is going to fix this and whether or not they are even aware of the issue.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Minecraft 1.15 has drastically improved chunk loading performance. OptiFine doesn't really do anything anymore, as its chunk loading improvements are now part of vanilla Minecraft. <a href="https://www.curseforge.com/minecraft/mc-mods/wi-zoom" target="_blank">Wurst has its own zoom</a> that works much better than OptiFine's. The only thing that OptiFine is still needed for is using shaders.
+                        </p>
+                    </li>
+                </ol>
+            </span>
+        </span>
         <ol class="step-list">
             <li>
                 <p>
                     Download <a href="https://optifine.net/downloads" target="_blank" rel="nofollow">OptiFine</a>.
                     <ul>
                         <li>Again, make sure that it matches your Minecraft version.</li>
-                        <li>There is a bug in OptiFine version "HD U F4" that prevents X-Ray from working. Please use version "HD U F3" instead.</li>
+                        <li>Please use OptiFine version "HD U F3", as newer versions have a bug that prevents X-Ray from working.</li>
                     </ul>
                 </p>
             </li>
