@@ -22467,6 +22467,14 @@ kbd {
   box-shadow: inset 0 -1px 0 #959da5;
 }
 
+/* Fix for Google Auto Ads looking like steps in .step-list */
+.step-list li.google-auto-placed {
+  border-left: none;
+}
+.step-list li.google-auto-placed::before {
+  content: none;
+}
+
 /* embedded CookieConsent styes from https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css */
 .cc-window{opacity:1;-webkit-transition:opacity 1s ease;transition:opacity 1s ease}.cc-window.cc-invisible{opacity:0}.cc-animate.cc-revoke{-webkit-transition:transform 1s ease;-webkit-transition:-webkit-transform 1s ease;transition:-webkit-transform 1s ease;transition:transform 1s ease;transition:transform 1s ease,-webkit-transform 1s ease}.cc-animate.cc-revoke.cc-top{-webkit-transform:translateY(-2em);transform:translateY(-2em)}.cc-animate.cc-revoke.cc-bottom{-webkit-transform:translateY(2em);transform:translateY(2em)}.cc-animate.cc-revoke.cc-active.cc-top{-webkit-transform:translateY(0);transform:translateY(0)}.cc-animate.cc-revoke.cc-active.cc-bottom{-webkit-transform:translateY(0);transform:translateY(0)}.cc-revoke:hover{-webkit-transform:translateY(0);transform:translateY(0)}.cc-grower{max-height:0;overflow:hidden;-webkit-transition:max-height 1s;transition:max-height 1s}
 .cc-revoke,.cc-window{position:fixed;overflow:hidden;-webkit-box-sizing:border-box;box-sizing:border-box;font-family:Helvetica,Calibri,Arial,sans-serif;font-size:16px;line-height:1.5em;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:nowrap;flex-wrap:nowrap;z-index:9999}.cc-window.cc-static{position:static}.cc-window.cc-floating{padding:2em;max-width:24em;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}.cc-window.cc-banner{padding:1em 1.8em;width:100%;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row}.cc-revoke{padding:.5em}.cc-revoke:hover{text-decoration:underline}.cc-header{font-size:18px;font-weight:700}.cc-btn,.cc-close,.cc-link,.cc-revoke{cursor:pointer}.cc-link{opacity:.8;display:inline-block;padding:.2em;text-decoration:underline}.cc-link:hover{opacity:1}.cc-link:active,.cc-link:visited{color:initial}.cc-btn{display:block;padding:.4em .8em;font-size:.9em;font-weight:700;border-width:2px;border-style:solid;text-align:center;white-space:nowrap}.cc-highlight .cc-btn:first-child{background-color:transparent;border-color:transparent}.cc-highlight .cc-btn:first-child:focus,.cc-highlight .cc-btn:first-child:hover{background-color:transparent;text-decoration:underline}.cc-close{display:block;position:absolute;top:.5em;right:.5em;font-size:1.6em;opacity:.9;line-height:.75}.cc-close:focus,.cc-close:hover{opacity:1}
