@@ -4,7 +4,8 @@ google.com, pub-5218363098774955, DIRECT, f08c47fec0942fa0
 cleanmedia.net, 862-574-20191104T174807650, DIRECT
 indexexchange.com, 189623, DIRECT
 appnexus.com, 11642, DIRECT
-
+rhythmone.com, 2146735984, DIRECT, a670c89d4a324e47
+video.unrulymedia.com, 2146735984, DIRECT
 #CMNVideo
 sekindo.com, 24072, DIRECT, b6b21d256ef43532
 spotxchange.com, 84294, RESELLER, 7842df1d2fe2db34
