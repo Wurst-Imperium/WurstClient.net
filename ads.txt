@@ -6,6 +6,8 @@ indexexchange.com, 189623, DIRECT
 appnexus.com, 11642, DIRECT
 rhythmone.com, 2146735984, DIRECT, a670c89d4a324e47
 video.unrulymedia.com, 2146735984, DIRECT
+openx.com, 541034057, DIRECT, 6a698e2ec38604c6
+openx.com, 541039090, DIRECT, 6a698e2ec38604c6 
 #CMNVideo
 sekindo.com, 24072, DIRECT, b6b21d256ef43532
 spotxchange.com, 84294, RESELLER, 7842df1d2fe2db34
@@ -25,4 +27,11 @@ smartadserver.com, 3436, RESELLER
 sovrn.com, 270173, RESELLER, fafdf38b16bf6b2b
 lijit.com, 270173, RESELLER, fafdf38b16bf6b2b
 indexexchange.com, 189623, DIRECT
+
+adtelligent.com, 306585, DIRECT
+appnexus.com, 3153, RESELLER, f5ab79cb980f11d1
+adtech.com, 12069, RESELLER
+advertising.com, 28246, RESELLER
+rubiconproject.com, 11006, RESELLER, 0bfd66d529a55807
+onetag.com, 59a18369e249bfb, DIRECT
 #CleanMedia.net end
