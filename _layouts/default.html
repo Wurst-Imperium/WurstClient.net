@@ -84,8 +84,11 @@
 	</head>
 	<body>
 
-		{% include header.html %}
-		{{ content }}
+		<div style="min-height: 100%">
+			{% include header.html %}
+			{{ content }}
+			<div style="height: 100px;"></div>
+		</div>
 		{% include footer.html %}
 
 		<script src="/js/wi.js"></script>
