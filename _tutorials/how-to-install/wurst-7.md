@@ -113,7 +113,7 @@ cleanmedia_ads: true
 
 <div class="padding20 no-padding-left no-padding-right bg-grayLighter">
 	<div class="container">
-		<h2 class="text-normal">Step 3 (Optional): Install OptiFine</h2>
+		<h2 id="optifine" class="text-normal">Step 3 (Optional): Install OptiFine</h2>
         <span class="block ribbed-amber padding5">
             <span class="block bg-white padding10">
                 <p class="no-margin-top">

@@ -33,7 +33,7 @@ collections:
     permalink: /wiki/:path/
   tutorials:
     output: true
-    permalink: /tutorials/:slug/
+    permalink: /tutorials/:path/
   redirects:
     output: true
     permalink: /:path/

@@ -1,9 +1,9 @@
 ---
-title: How To Manually Update Wurst
+title: How To Manually Update Wurst 6
 google_auto_ads: true
 cleanmedia_ads: true
 ---
-Note: Wurst will usually update itself automatically. You will only need to follow this tutorial if you can't auto-update for some reason.
+Note: Wurst 6 will usually update itself automatically. You will only need to follow this tutorial if you can't auto-update for some reason.
 
 1. [Download the new version of Wurst](/download/).
 
