@@ -20,8 +20,8 @@ cleanmedia_ads: true
                 <p>
                 Download the <a href="https://fabricmc.net/use/" target="_blank" rel="nofollow">Fabric installer</a>.
                 <ul>
-                    <li>Change the "installation for" box to "Vanilla".</li>
-                    <li>Make sure that "Installer version" is set to the latest version.</li>
+		    <li><del>Change the "installation for" box to "Vanilla".</del> This is no longer required. Just click the download button.</li>
+		    <li><del>Make sure that "Installer version" is set to the latest version.</del> It now does that automatically.</li>
                     <li>Click one of the download buttons. It doesn't matter whether you choose ".EXE" or ".JAR".</li>
                 </ul>
                 </p>
