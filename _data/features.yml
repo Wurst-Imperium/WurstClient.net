@@ -39,6 +39,7 @@ cheats:
   - BunnyHop
   - CameraNoClip
   - CaveFinder
+  - ChatTranslator
   - ChestESP
   - ClickAura
   - ClickGUI
@@ -151,6 +152,7 @@ commands:
   - .clear
   - .copyitem
   - .damage
+  - .dig
   - .drop
   - .enabledhax
   - .enchant
