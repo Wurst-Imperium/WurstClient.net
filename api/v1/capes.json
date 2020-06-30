@@ -11,6 +11,7 @@ capes:
   halloween5: "https://user-images.githubusercontent.com/10100202/66271217-c10c7d80-e85b-11e9-8fdb-a7a2ec6ed8b8.png"
   halloween6: "https://user-images.githubusercontent.com/10100202/66271218-c10c7d80-e85b-11e9-89d6-427a5f068df2.png"
   halloween7: "https://user-images.githubusercontent.com/10100202/66271219-c10c7d80-e85b-11e9-94d4-f6b9d3ed96f9.png"
+  mosscow: "https://i.imgur.com/frgxD0r.png"
 ---
 {
   "Alexander01998": "{{ page.capes.wurst }}",
@@ -37,6 +38,7 @@ capes:
   "poors": "{{ page.capes.halloween5 }}",
   "Packesl": "{{ page.capes.halloween6 }}",
   "Fantakuchen": "{{ page.capes.halloween7 }}",
-
+  "DankCode": "{{ page.capes.mosscow }}",
+  "DikButt7": "{{ page.capes.mosscow }}",
   "use_new_server": false
 }
