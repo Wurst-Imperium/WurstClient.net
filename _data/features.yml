@@ -28,6 +28,7 @@ cheats:
   - AutoSwitch
   - AutoSword
   - AutoTool
+  - AutoTotem
   - AutoWalk
   - BaseFinder
   - Blink
@@ -88,6 +89,7 @@ cheats:
   - MileyCyrus
   - MobESP
   - MobSpawnESP
+  - MountBypass
   - MultiAura
   - NameProtect
   - NameTags
