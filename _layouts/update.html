@@ -67,6 +67,9 @@ cleanmedia_ads: true
 							Wurst Client v{{ page.wurst-version }} MC{{ mcversion }}
 							<small>for Minecraft {% if mcversion contains "w" or mcversion contains "pre" %}{{ mcversion }}{% else %}{{ site.mcversions[mcversion] }}{% endif %}</small>
 						</a>
+						{% if page.fabric-api %}
+							<a href="{{ page.fabric-api[mcversion] }}" target="_blank" rel="nofollow">(Fabric API for MC {{ mcversion }})</a>
+						{% endif %}
 						<br>
 					{% endfor %}
 				</div>
