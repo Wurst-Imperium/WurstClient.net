@@ -3,8 +3,9 @@ title: Minecraft Wurst Hacked Client Downloads
 description: Wurst Client downloads for all Minecraft versions
 permalink: /download/
 mcversions:
-  - "1.16.3"
+  - "all"
   - "snapshots"
+  - "1.16.3"
   - "1.16.2"
   - "1.16.1"
   - "1.16"
@@ -20,12 +21,16 @@ mcversions:
   - "1.9"
   - "1.8"
   - "1.7"
-  - "all"
 old_mcversions:
   - "1.7"
   - "1.9"
   - "1.10"
   - "1.11"
+  - "1.14.2"
+  - "1.14.3"
+  - "1.15"
+  - "1.15.1"
+  - "1.16"
 google_auto_ads: true
 cleanmedia_ads: true
 ---
@@ -33,6 +38,11 @@ cleanmedia_ads: true
 
 <div class="padding20 no-padding-left no-padding-right">
   <div class="container">
+    
+    <!-- Wurst Downloads -->
+    <div class="margin20 no-margin-left no-margin-right no-margin-top">
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5218363098774955" data-ad-slot="6065673627" data-ad-format="auto"></ins>
+    </div>
 
     {% for mcversion in page.mcversions %}
 
@@ -42,17 +52,14 @@ cleanmedia_ads: true
         {% capture allversions %}minecraft-{{ mcversion | slugify }}/{% endcapture %}
       {% endif %}
 
-      <!-- Wurst Downloads -->
-      <div class="margin20 no-margin-left no-margin-right no-margin-top">
-        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5218363098774955" data-ad-slot="6065673627" data-ad-format="auto"></ins>
-      </div>
-
       <section class="padding10 no-padding-left no-padding-right">
         <a href="{{ allversions }}" class="fg-gray">
-          <div class="margin10 no-margin-left no-margin-right padding10 no-padding-top no-padding-bottom bg-grayLighter fg-gray set-border text-light">
-            <h2 class="text-light">
+          <div class="margin10 no-margin-left no-margin-right padding10 no-padding-top no-padding-bottom bg-grayLighter {% if page.old_mcversions contains mcversion %}fg-grayLight{% else %}fg-gray{% endif %} set-border">
+            <h2 class="{% if page.old_mcversions contains mcversion %}text-light{% endif %}">
               {% if mcversion == "all" %}
-                Latest Updates
+                Latest Wurst Updates
+              {% elsif mcversion == "snapshots" %}
+                Snapshots, Pre-Releases, etc.
               {% else %}
                 Wurst for Minecraft {{ site.mcversions[mcversion] }}
                 {% if page.old_mcversions contains mcversion %}
@@ -62,7 +69,7 @@ cleanmedia_ads: true
             </h2>
           </div>
         </a>
-        <div class="grid padding10">
+        <!--<div class="grid padding10">
           <div class="row cells4">
 
             {% assign i = 0 %}
@@ -132,7 +139,7 @@ cleanmedia_ads: true
             </div>
 
           </div>
-        </div>
+        </div>-->
       </section class="padding20 no-padding-left no-padding-right">
 
     {% endfor %}
