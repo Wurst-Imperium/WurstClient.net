@@ -549,37 +549,6 @@ a.tag {
 .pos-fix {
   position: fixed !important;
 }
-.dropdown-toggle {
-  position: relative;
-  cursor: pointer;
-}
-.dropdown-toggle:before {
-  display: block;
-  position: absolute;
-  vertical-align: middle;
-  color: transparent;
-  font-size: 0;
-  content: "";
-  height: 5px;
-  width: 5px;
-  background-color: transparent;
-  border-left: 1px solid;
-  border-bottom: 1px solid;
-  border-color: #1d1d1d;
-  top: 50%;
-  left: 100%;
-  margin-left: -1rem;
-  margin-top: -0.1625rem;
-  z-index: 2;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-.dropdown-toggle.drop-marker-light:before {
-  border-color: #ffffff;
-}
-*.dropdown-toggle {
-  padding-right: 1.625rem;
-}
 .flush-list {
   padding: 0;
   margin: 0;
