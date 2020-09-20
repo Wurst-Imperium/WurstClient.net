@@ -184,18 +184,21 @@ a {
   font-style: normal;
   font-weight: 300;
   src: local("Segoe UI Light"), local("Open Sans Light"), local("OpenSans-Light"), url(https://themes.googleusercontent.com/static/fonts/opensans/v8/DXI1ORHCpsQm3Vp6mXoaTZ1r3JsPcQLi8jytr04NNhU.woff) format('woff');
+  font-display: swap;
 }
 @font-face {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
   src: local("Segoe UI"), local("Open Sans"), local("OpenSans"), url(https://themes.googleusercontent.com/static/fonts/opensans/v8/K88pR3goAWT7BTt32Z01mz8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+  font-display: swap;
 }
 @font-face {
   font-family: "Open Sans Bold";
   font-style: normal;
   font-weight: 700;
   src: local("Segoe UI Bold"), local("Open Sans Bold"), local("OpenSans-Bold"), url(https://themes.googleusercontent.com/static/fonts/opensans/v8/k3k702ZOKiLJc3WVjuplzJ1r3JsPcQLi8jytr04NNhU.woff) format('woff');
+  font-display: swap;
 }
 html {
   font-size: 100%;
@@ -18365,6 +18368,7 @@ video::-webkit-media-controls-enclosure {
   font-family: 'metro';
   src: url('../fonts/metro.eot');
   src: url('../fonts/metro.eot') format('embedded-opentype'), url('../fonts/metro.woff') format('woff'), url('../fonts/metro.ttf') format('truetype'), url('../fonts/metro.svg') format('svg');
+  font-display: swap;
   font-weight: normal;
   font-style: normal;
 }
