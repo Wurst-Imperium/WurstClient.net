@@ -25,6 +25,8 @@
 	<head>
 
 		<meta charset="utf-8">
+		<link rel="preload" href="/fonts/metro.woff" as="font" href="font/woff">
+
 		<link rel="shortcut icon" href="/favicon.ico">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -66,14 +68,8 @@
 		</script>
 
 		{% if page.google_auto_ads or layout.google_auto_ads %}
-			<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+			<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 			<script>
-				var npa = getCookie("npa");
-				if(npa === "1"){
-					(adsbygoogle=window.adsbygoogle||[]).requestNonPersonalizedAds=1
-				}else if(npa === "0"){
-					(adsbygoogle=window.adsbygoogle||[]).requestNonPersonalizedAds=0
-				}
 				(adsbygoogle = window.adsbygoogle || []).push({
 			    google_ad_client: "ca-pub-5218363098774955",
 			    enable_page_level_ads: true
@@ -95,7 +91,7 @@
 
 		{% if page.cleanmedia_ads or layout.cleanmedia_ads %}
 			<ins class="CANBMDDisplayAD" data-bmd-ad-unit="57486220191104T1748341403949ADD50F5D4DDF90B1F232C17A6D88" style="display: block"></ins>
-			<script src="//secureaddisplay.com/au/bmd/"></script>
+			<script async src="https://secureaddisplay.com/au/bmd/"></script>
 		{% endif %}
 
 		<script>
