@@ -51,7 +51,7 @@ cleanmedia_ads: true
 						<a href="{{ update.url }}">
 							<span class="image-container">
 								<span class="frame{% unless update.image %} bg-grayLighter set-border tile-content iconic{% endunless %}">
-									<img src="{% if update.image %}{{ update.image }}{% else %}https://cloud.githubusercontent.com/assets/10100202/19655746/6eea9706-9a1d-11e6-8fbc-0a8d25f7a2fd.jpg{% endif %}"{% unless update.image %} class="no-visible"{% endunless %} alt="Wurst v{{ update.wurst-version }} MC{{ update.minecraft-version }}">
+									<img data-src="{% if update.image-small %}{{ update.image-small }}{% elsif update.image %}{{ update.image }}{% else %}https://cloud.githubusercontent.com/assets/10100202/19655746/6eea9706-9a1d-11e6-8fbc-0a8d25f7a2fd.jpg{% endif %}" class="lazyload{% unless update.image %} no-visible{% endunless %}" alt="Wurst v{{ update.wurst-version }} MC{{ update.minecraft-version }}">
 									{% unless update.image %}
 										<span class="icon mif-file-picture fg-grayLight" style="margin-top: -32px;"></span>
 									{% endunless %}
@@ -74,6 +74,8 @@ cleanmedia_ads: true
 		</div>
 	</div>
 </div>
+
+<script src="/js/lazysizes.min.js" async></script>
 
 <!-- Google AdSense -->
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
