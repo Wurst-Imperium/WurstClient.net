@@ -59,13 +59,7 @@ cleanmedia_ads: false
 		<script src="/js/wi.js"></script>
 
 		{% if page.google_auto_ads or layout.google_auto_ads %}
-			<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-			<script>
-				(adsbygoogle = window.adsbygoogle || []).push({
-			    google_ad_client: "ca-pub-5218363098774955",
-			    enable_page_level_ads: true
-				});
-			</script>
+			<script data-ad-client="ca-pub-5218363098774955" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 		{% endif %}
 
 		{% if page.cleanmedia_ads or layout.cleanmedia_ads %}
