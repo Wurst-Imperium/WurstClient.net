@@ -20,8 +20,8 @@ cleanmedia_ads: true
                 <p>
                 Download the <a href="https://fabricmc.net/use/" target="_blank" rel="nofollow">Fabric installer</a>.
                 <ul>
-		    <li><del>Change the "installation for" box to "Vanilla".</del> This is no longer required. Just click the download button.</li>
-		    <li><del>Make sure that "Installer version" is set to the latest version.</del> It now does that automatically.</li>
+                    <li><del>Change the "installation for" box to "Vanilla".</del> This is no longer required. Just click the download button.</li>
+                    <li><del>Make sure that "Installer version" is set to the latest version.</del> It now does that automatically.</li>
                     <li>Click one of the download buttons. It doesn't matter whether you choose ".EXE" or ".JAR".</li>
                 </ul>
                 </p>
@@ -68,7 +68,7 @@ cleanmedia_ads: true
                     Place the Fabric API in your <code>.minecraft/mods</code> folder.
                     <ul>
                         <li>To get to your <code>.minecraft</code> folder, open Windows Explorer and type/copy the following into the address bar: <code>%appdata%/.minecraft</code></li>
-                        <li>(If you are using Linux or Mac then the path to your <code>.minecraft</code> folder will be different. Please Google that part.)</li>
+                        <li>(If you are using Linux or Mac then the path to your <code>.minecraft</code> folder will be different. Please <a href="https://minecraft.gamepedia.com/.minecraft" target="_blank">check the Minecraft Wiki</a> for that part.)</li>
                         <li>Create a <code>mods</code> folder if it doesn't exist already, then place the Fabric API file inside.</code></li>
                     </ul>
                 </p>
