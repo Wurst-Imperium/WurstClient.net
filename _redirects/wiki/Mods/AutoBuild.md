@@ -1,3 +1,3 @@
 ---
-redirect_url: https://wiki.wurstclient.net/hack/autobuild
+redirect_url: https://wiki.wurstclient.net/autobuild
 ---
