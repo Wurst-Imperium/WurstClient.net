@@ -49,7 +49,7 @@ cleanmedia_ads: true
 		<h2 class="text-normal">Force OP</h2>
 		<ul>
 			<li><p><a href="/wiki/Mods/Force_OP_(AuthMeCracker)/">How to use ForceOP (AuthMe Cracker)</a></p></li>
-			<li><p><a href="/wiki/Mods/OP-Sign_(Force_OP)/">How to use OP-Sign</a></p></li>
+			<li><p><a href="https://wiki.wurstclient.net/op-sign">How to use OP-Sign</a></p></li>
 			<li><p><a href="/wiki/Special_Features/Force_OP_(BookHack)/">How to use BookHack</a></p></li>
 		</ul>
 	</div>
