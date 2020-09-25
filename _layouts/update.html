@@ -11,11 +11,7 @@ cleanmedia_ads: true
 
 		<div class="margin20 no-margin-left no-margin-right no-margin-top padding10 bg-grayDarker">
 			{% if page.image %}
-				<div class="image-container">
-					<div class="frame">
-						<img src="{{ page.image }}" alt="{{ page.title }}">
-					</div>
-				</div>
+				<img src="{{ page.image }}" alt="{{ page.title }}" width="960" height="540">
 			{% else %}
 				<div class="image-container full-size">
 					<div class="frame bg-grayLighter set-border tile-content iconic">
