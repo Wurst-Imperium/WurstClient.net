@@ -15,6 +15,6 @@ window.cookieconsent.initialise({
     },
     "position": "bottom-left",
     "content": {
-        "message": "This website uses cookies to ensure you get the best experience. If you don't want that, please turn off cookies in your browser settings."
+        "message": "This website uses cookies to ensure you get the best experience. If you don't want cookies, please turn them off in your browser settings."
     }
 });
