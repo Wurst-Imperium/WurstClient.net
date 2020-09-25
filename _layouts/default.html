@@ -56,7 +56,7 @@ cleanmedia_ads: false
 		</div>
 		{% include footer.html %}
 
-		<script src="/js/wi.js"></script>
+		<script async src="/js/wi.js"></script>
 
 		{% if page.google_auto_ads or layout.google_auto_ads %}
 			<script data-ad-client="ca-pub-5218363098774955" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -66,25 +66,8 @@ cleanmedia_ads: false
 			<ins class="CANBMDDisplayAD" data-bmd-ad-unit="57486220191104T1748341403949ADD50F5D4DDF90B1F232C17A6D88" style="display: block"></ins>
 			<script async src="https://secureaddisplay.com/au/bmd/"></script>
 		{% endif %}
-
-		<script>
-			window.cookieconsent.initialise({
-				"palette": {
-					"popup": {
-					"background": "#202020",
-					"text": "#ffffff"
-					},
-					"button": {
-					"background": "#a95300",
-					"text": "#000000"
-					}
-				},
-				"position": "bottom-left",
-				"content": {
-					"message": "This website uses cookies to ensure you get the best experience. If you don't want that, please turn off cookies in your browser settings."
-				}
-			});
-		</script>
+		
+		<script async src="/js/cookieconsent.js"></script>
 
 	</body>
 </html>
