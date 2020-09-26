@@ -3,7 +3,7 @@ title: .friends
 category: Command
 ---
 ## Overview
-Manages your friends list. Friends won't be attacked by Killaura and have a special color in Tracers and PlayerESP.
+Manages your friends list. Friends won't be attacked by [Killaura](https://wiki.wurstclient.net/killaura) and have a special color in Tracers and PlayerESP.
 
 ## Syntax
 `.friends (add|remove) <player>` adds or removes the given player from your friends list.
