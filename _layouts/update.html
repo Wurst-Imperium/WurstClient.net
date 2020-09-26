@@ -11,7 +11,13 @@ cleanmedia_ads: true
 
 		<div class="margin20 no-margin-left no-margin-right no-margin-top padding10 bg-grayDarker">
 			{% if page.image %}
-				<img src="{{ page.image }}" alt="{{ page.title }}" width="960" height="540">
+				{% if page.image contains "https://wiki.wurstclient.net/_media/update/" %}
+					<a href="{{ page.image | replace: '_540p.webp', '.jpg'}}" target="_blank" title="{{ page.image | replace: '_540p.webp', '.jpg' | replace: 'https://wiki.wurstclient.net/_media/update/', 'File: '}}">
+						<img src="{{ page.image }}" alt="{{ page.title }}" width="960" height="540">
+					</a>
+				{% else %}
+					<img src="{{ page.image }}" alt="{{ page.title }}" width="960" height="540">
+				{% endif %}
 			{% else %}
 				<div class="image-container full-size">
 					<div class="frame bg-grayLighter set-border tile-content iconic">
