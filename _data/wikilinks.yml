@@ -1,0 +1,20 @@
+hacks:
+  AntiBlind: https://wiki.wurstclient.net/antiblind
+  AutoBuild: https://wiki.wurstclient.net/autobuild
+  AutoSprint: https://wiki.wurstclient.net/autosprint
+  AutoTotem: https://wiki.wurstclient.net/autototem
+  AutoWalk: https://wiki.wurstclient.net/autowalk
+  BowAimbot: https://wiki.wurstclient.net/bowaimbot
+  BuildRandom: https://wiki.wurstclient.net/buildrandom
+  BunnyHop: https://wiki.wurstclient.net/bunnyhop
+  ChestESP: https://wiki.wurstclient.net/chestesp
+  /home: https://wiki.wurstclient.net/home
+  Killaura: https://wiki.wurstclient.net/killaura
+  OP-Sign: https://wiki.wurstclient.net/op-sign
+
+commands:
+  .gm: https://wiki.wurstclient.net/cmd/gm
+  .help: https://wiki.wurstclient.net/cmd/help
+  .taco: https://wiki.wurstclient.net/cmd/taco
+
+other:
