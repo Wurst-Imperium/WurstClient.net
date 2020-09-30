@@ -1,5 +1,6 @@
 {% assign wiki = site.data.wikilinks %}
 
+{% if page.hacks %}
 <details>
     <summary class="padding10">Hacks: (click to expand)</summary>
     <ul>
@@ -14,7 +15,9 @@
         {% endfor %}
     </ul>
 </details>
+{% endif %}
 
+{% if page.commands %}
 <details>
     <summary class="padding10">Commands: (click to expand)</summary>
     <ul>
@@ -29,7 +32,9 @@
         {% endfor %}
     </ul>
 </details>
+{% endif %}
 
+{% if page.other %}
 <details>
     <summary class="padding10">Other Features: (click to expand)</summary>
     <ul>
@@ -44,5 +49,6 @@
         {% endfor %}
     </ul>
 </details>
+{% endif %}
 
 <p><b>Want a different feature to be added? <a href="/contact/">Let me know!</a></b></p>
