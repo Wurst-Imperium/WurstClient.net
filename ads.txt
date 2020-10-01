@@ -9,7 +9,6 @@ video.unrulymedia.com, 2146735984, DIRECT
 rubiconproject.com, 22342, DIRECT, 0bfd66d529a55807 
 openx.com, 541034057, DIRECT, 6a698e2ec38604c6
 openx.com, 541039090, DIRECT, 6a698e2ec38604c6 
-
 #CMNCedato
 cedato.com, 998274662, DIRECT, 609e732d22edadf4
 rhythmone.com,420551443,DIRECT,a670c89d4a324e47
@@ -26,7 +25,7 @@ synacor.com, 82180, RESELLER, e108f11b2cdf7d5b
 google.com, pub-3980300725513096, DIRECT
 google.com, pub-1995032544933848, RESELLER
 google.com, pub-3746578658400510, RESELLER, f08c47fec0942fa0
-#CMNVideo
+#CMNVideo 1.0
 Sekindo.com, 24072, DIRECT, b6b21d256ef43532
 spotxchange.com, 84294, RESELLER, 7842df1d2fe2db34
 spotx.tv, 84294, RESELLER, 7842df1d2fe2db34
@@ -93,12 +92,38 @@ spotxchange.com, 71451, RESELLER, 7842df1d2fe2db34 # Taboola
 tremorhub.com, z87wm, RESELLER, 1a4e959a1b50034a # Taboola
 aralego.com, par-488A3E6BD8D997D0ED8B3BD34D8BA4B, RESELLER # ucFunnel
 ucfunnel.com, par-488A3E6BD8D997D0ED8B3BD34D8BA4B, RESELLER # ucFunnel
-
-#
+#Adtelligent
 adtelligent.com, 306585, DIRECT
+33across.com, 0010b00002SlIKjAAN, RESELLER, bbea06d9c4d2853c
+advertising.com, 7574, RESELLER
+appnexus.com, 1360, RESELLER, f5ab79cb980f11d1
 appnexus.com, 3153, RESELLER, f5ab79cb980f11d1
-adtech.com, 12069, RESELLER
-advertising.com, 28246, RESELLER
-rubiconproject.com, 11006, RESELLER, 0bfd66d529a55807
-onetag.com, 59a18369e249bfb, DIRECT
+appnexus.com, 8233, RESELLER, f5ab79cb980f11d1
+appnexus.com, 9565, DIRECT, f5ab79cb980f11d1
+axonix.com, 56222, RESELLER
+contextweb.com, 560941, RESELLER, 89ff185a4c4e857c
+conversantmedia.com, 100066, RESELLER, 03113cd04947736d
+e-planning.net, 42ba3e7a9745b591, DIRECT, c1ba615865ed87b2
+gumgum.com, 11645, RESELLER, ffdef49475d318a9
+improvedigital.com, 1556, RESELLER
+improvedigital.com, 1628, DIRECT
+indexexchange.com, 190243, RESELLER, 50b1c356f2c5c8fc
+lijit.com, 268876, RESELLER, fafdf38b16bf6b2b
+lijit.com, 310770-eb, DIRECT, fafdf38b16bf6b2b
+lijit.com, 310770, DIRECT, fafdf38b16bf6b2b
+openx.com, 538959099, RESELLER, 6a698e2ec38604c6
+openx.com, 539924617, RESELLER, 6a698e2ec38604c6
+openx.com, 541031350, RESELLER, 6a698e2ec38604c6
+openx.com, 541177116, DIRECT, 6a698e2ec38604c6
+pubmatic.com, 137711, RESELLER, 5d62403b186f2ace
+pubmatic.com, 156212, RESELLER, 5d62403b186f2ace
+pubmatic.com, 156631, RESELLER, 5d62403b186f2ace
+pubmatic.com, 156700, RESELLER, 5d62403b186f2ace
+rhythmone.com, 1767353092, RESELLER, a670c89d4a324e47
+richaudience.com, 25BiP9IMgN, RESELLER
+rubiconproject.com, 12186, RESELLER, 0bfd66d529a55807
+rubiconproject.com, 13510, RESELLER, 0bfd66d529a55807
+rubiconproject.com, 17960, RESELLER, 0bfd66d529a55807
+sovrn.com, 268876, RESELLER, fafdf38b16bf6b2b
+sovrn.com, 310770, DIRECT, fafdf38b16bf6b2b
 #CleanMedia.net end
