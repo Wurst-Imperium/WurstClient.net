@@ -1,5 +1,7 @@
 hacks:
   AntiBlind: https://wiki.wurstclient.net/antiblind
+  AntiCactus: https://wiki.wurstclient.net/anticactus
+  AntiWaterPush: https://wiki.wurstclient.net/antiwaterpush
   AutoBuild: https://wiki.wurstclient.net/autobuild
   AutoSprint: https://wiki.wurstclient.net/autosprint
   AutoTotem: https://wiki.wurstclient.net/autototem
@@ -8,8 +10,10 @@ hacks:
   BuildRandom: https://wiki.wurstclient.net/buildrandom
   BunnyHop: https://wiki.wurstclient.net/bunnyhop
   ChestESP: https://wiki.wurstclient.net/chestesp
+  FastLadder: https://wiki.wurstclient.net/fastladder
   /home: https://wiki.wurstclient.net/home
   Killaura: https://wiki.wurstclient.net/killaura
+  MountBypass: https://wiki.wurstclient.net/mountbypass
   OP-Sign: https://wiki.wurstclient.net/op-sign
 
 commands:
