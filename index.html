@@ -24,6 +24,7 @@ title: Minecraft Wurst Hacked Client
 <div class="padding40 no-padding-left no-padding-right bg-grayLighter">
 	<div class="container align-center">
 		{% assign features = site.data.features %}
+		{% assign wiki = site.data.wikilinks %}
 		<h2>Features ({{ features.cheats.size | plus: features.commands.size | plus: features.other.size }})</h2>
 		<p class="text-secondary">Note: Not all features are available in all Minecraft versions.</p>
 	</div>
@@ -44,7 +45,14 @@ title: Minecraft Wurst Hacked Client
 								{% if i3 >= features.cheats.size %}
 									{% break %}
 								{% endif %}
-								<li>{{ features.cheats[i3] }}</li>
+								{% assign hack = features.cheats[i3] %}
+								<li>
+									{% if wiki.hacks[hack] %}
+										<a href="{{ wiki.hacks[hack] }}">{{ hack }}</a>
+									{% else %}
+										{{ hack }}
+									{% endif %}
+								</li>
 							{% endfor %}
 						</ul>
 					</div>
@@ -69,7 +77,14 @@ title: Minecraft Wurst Hacked Client
 								{% if i3 >= features.commands.size %}
 									{% break %}
 								{% endif %}
-								<li>{{ features.commands[i3] }}</li>
+								{% assign cmd = features.commands[i3] %}
+								<li>
+									{% if wiki.commands[cmd] %}
+										<a href="{{ wiki.commands[cmd] }}">{{ cmd }}</a>
+									{% else %}
+										{{ cmd }}
+									{% endif %}
+								</li>
 							{% endfor %}
 						</ul>
 					</div>
@@ -94,7 +109,14 @@ title: Minecraft Wurst Hacked Client
 								{% if i3 >= features.other.size %}
 									{% break %}
 								{% endif %}
-								<li>{{ features.other[i3] }}</li>
+								{% assign other = features.other[i3] %}
+								<li>
+									{% if wiki.other[other] %}
+										<a href="{{ wiki.other[other] }}">{{ other }}</a>
+									{% else %}
+										{{ other }}
+									{% endif %}
+								</li>
 							{% endfor %}
 						</ul>
 					</div>
@@ -108,6 +130,10 @@ title: Minecraft Wurst Hacked Client
 		<div class="grid">
 			<div class="row">
 				<h2 class="align-center">Default Keybinds (15)</h2>
+				<p class="text-secondary align-center">
+					Note: Keybinds are slightly different depending on your Minecraft version.
+					Check the <a href="https://wiki.wurstclient.net/keybinds">Wurst Wiki</a> for details.
+				</p>
 			</div>
 			<div class="row cells3">
 				<div class="cell">
