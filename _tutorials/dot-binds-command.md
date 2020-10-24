@@ -31,7 +31,7 @@ After typing that command, you will get a message like this to confirm that your
 
 The syntax to remove a keybind is <code>.binds&nbsp;remove&nbsp;&lt;key&gt;</code>. Note that this command requires the `<key>`, but not the `<action>`.
 
-For example, let's say we want to remove the default keybind for N, which toggles Nuker. The `<key>` for this keybind is N, so the command is <code>.binds&nbsp;remove&nbsp;N</code> (but **not** <code>.binds&nbsp;remove&nbsp;Nuker</code>).
+For example, let's say we want to remove the default keybind for N, which toggles [Nuker](https://wiki.wurstclient.net/nuker). The `<key>` for this keybind is N, so the command is <code>.binds&nbsp;remove&nbsp;N</code> (but **not** <code>.binds&nbsp;remove&nbsp;Nuker</code>).
 
 ![Keybind removed N Nuker](https://user-images.githubusercontent.com/10100202/66140754-f36f6e00-e602-11e9-8445-ad1a50fdee39.jpg)
 

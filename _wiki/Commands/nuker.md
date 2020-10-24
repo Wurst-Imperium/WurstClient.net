@@ -2,7 +2,7 @@
 title: .nuker
 category: Command
 ---
-Changes the settings of Nuker.
+Changes the settings of [Nuker](https://wiki.wurstclient.net/nuker).
 
 ## Syntax
 - `.nuker mode (normal|id|flat|smash)` changes the mode for Nuker to the given one.
