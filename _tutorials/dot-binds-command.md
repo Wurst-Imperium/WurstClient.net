@@ -39,7 +39,7 @@ Again, we get a chat message to confirm that this keybind has been deleted.
 
 ## Help! I deleted something important! - <code>.binds&nbsp;reset</code>
 
-A common beginner's mistake is to accidentally delete the ClickGUI / Navigator keybinds and then panic because they can't open the GUI anymore.
+A common beginner's mistake is to accidentally delete the ClickGUI / [Navigator](https://wiki.wurstclient.net/navigator) keybinds and then panic because they can't open the GUI anymore.
 
 Don't worry! There is a good reason why `.binds` uses the chat instead of the GUI and it's very easy to restore those keybinds.
 
