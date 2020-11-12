@@ -19,7 +19,7 @@ cleanmedia_ads: false
 		<ul>
       <li><p>Use Google Analytics to see how many people are using my stuff</p></li>
       <li><p>Use Sentry to find and fix bugs more quickly</p></li>
-      <li><p>Place ads on this website</p></li>
+      <li><p>Sell ads on this website</p></li>
 		</ul>
 	</div>
 </div>
@@ -51,18 +51,21 @@ cleanmedia_ads: false
 <div class="padding20 no-padding-left no-padding-right">
   <div class="container">
 		<h2 class="text-normal">Google AdSense</h2>
-    <p>I use Google AdSense to place ads on this website. They have their own privacy policy which you can view here: <a href="https://policies.google.com/technologies/ads" target="_blank">https://policies.google.com/technologies/ads</a></p>
-    <p>While I don't sell any data to them, they may use data that they already have to "personalize" their ads. You can turn this off by visiting <a href="https://www.google.com/settings/ads" target="_blank">Google Ads Settings</a> or <a href="http://www.aboutads.info/choices/" target="_blank">www.aboutads.info</a>.</p>
-    <p>Note that this won't turn off the ads, it just stops them from being personalized.</p>
+    <p>I use Google AdSense to sell ads on this website. <strong>I don't sell data and <a href="https://safety.google/privacy/ads-and-data/" target="_blank">neither does Google</a>!</strong></p>
+    <p>They have their own privacy policy which you can view here: <a href="https://policies.google.com/technologies/ads" target="_blank">https://policies.google.com/technologies/ads</a></p>
+    <p>Google can use data that they already have to "personalize" their ads. You can turn off personalized ads by visiting <a href="https://www.google.com/settings/ads" target="_blank">Google Ads Settings</a> or <a href="https://optout.aboutads.info/" target="_blank">https://optout.aboutads.info/</a>. Google Ads Settings also lets you see everything that Google knows about you and allows you to edit that data.</p>
+    <p>Note that turning off personalization won't turn off the ads, it just stops them from being personalized.</p>
     <p>See also: <a href="https://howwemakemoney.withgoogle.com/" target="_blank">How Google Ads work</a></p>
+    <p>Google AdSense uses cookies to keep track of things like how often each ad is seen and how often each ad is clicked on. See <a href="https://support.google.com/adsense/answer/7549925?hl=en" class="urlextern" target="_blank" title="https://support.google.com/adsense/answer/7549925?hl=en" rel="ugc nofollow noopener">https://support.google.com/adsense/answer/7549925?hl=en</a> for more details.</p>
+    <p>Individual ads and advertisers might also use their own cookies. I have no control over that.</p>
 	</div>
 </div>
 
 <div class="padding20 no-padding-left no-padding-right bg-grayLighter">
   <div class="container">
 		<h2 class="text-normal">CleanMedia</h2>
-    <p>I also use CleanMedia to place ads on this website. They have their own privacy policy which you can view here: <a href="http://cleanmedia.net/company/PrivacyPolicy/" target="_blank">http://cleanmedia.net/company/PrivacyPolicy/</a></p>
-    <p>You <i>should</i> be able to turn off personalization for these ads using <a href="http://www.aboutads.info/choices/" target="_blank">www.aboutads.info</a> as well, but I'm not entirely sure since their privacy policy doesn't mention it.</p>
+    <p>I also use CleanMedia to sell ads on this website. They have their own privacy policy which you can view here: <a href="http://cleanmedia.net/company/PrivacyPolicy/" target="_blank">http://cleanmedia.net/company/PrivacyPolicy/</a></p>
+    <p>You <i>should</i> be able to turn off personalization for these ads using <a href="https://optout.aboutads.info/" target="_blank">https://optout.aboutads.info/</a> as well, but I'm not entirely sure since their privacy policy doesn't mention it.</p>
 	</div>
 </div>
 
