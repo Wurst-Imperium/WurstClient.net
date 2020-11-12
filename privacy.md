@@ -6,12 +6,6 @@ cleanmedia_ads: false
 ---
 {% include title.html l1 = page.title l2 = page.description %}
 
-<div class="padding10 no-padding-left no-padding-right bg-red">
-	<div class="container align-center">
-    <p class="text-accent"><b>Disclaimer:</b> I'm not a lawyer and this is not a legal document.<br>I'm just a guy who made a Minecraft mod. Please understand.</p>
-	</div>
-</div>
-
 <div class="padding20 no-padding-left no-padding-right bg-grayLighter">
 	<div class="container">
 		<h2 class="text-normal">What I DON'T do:</h2>
