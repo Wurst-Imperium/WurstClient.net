@@ -8,18 +8,14 @@ cleanmedia_ads: false
 
 <div class="padding20 no-padding-left no-padding-right bg-grayLighter">
 	<div class="container">
-		<h2 class="text-normal">What I DON'T do:</h2>
+		<h2><abbr title="Too long; Didn't read. (basically a short summary of this page)">TL;DR:</abbr></h2>
+		<h3 class="text-normal">What I DON'T do:</h3>
 		<ul>
       <li><p>Collect your Minecraft usernames and/or passwords</p></li>
       <li><p>Distribute malware (or "potentially unwanted programs") with Wurst</p></li>
       <li><p>Sell your data</p></li>
 		</ul>
-	</div>
-</div>
-
-<div class="padding20 no-padding-left no-padding-right">
-	<div class="container">
-		<h2 class="text-normal">What I DO:</h2>
+		<h3 class="text-normal">What I DO:</h3>
 		<ul>
       <li><p>Use Google Analytics to see how many people are using my stuff</p></li>
       <li><p>Use Sentry to find and fix bugs more quickly</p></li>
@@ -28,7 +24,7 @@ cleanmedia_ads: false
 	</div>
 </div>
 
-<div class="padding20 no-padding-left no-padding-right bg-grayLighter">
+<div class="padding20 no-padding-left no-padding-right">
   <div class="container">
 		<h2 class="text-normal">Google Analytics</h2>
     <p>You know how YouTube videos always have that view counter under them? You might be surprised to hear that, by default, websites don't have anything like that. So if I want to know how many people visit my website, then I have to install a plugin for that. The plugin I use is called Google Analytics. As you may have guessed, it's made by Google.</p>
@@ -39,7 +35,7 @@ cleanmedia_ads: false
 	</div>
 </div>
 
-<div class="padding20 no-padding-left no-padding-right">
+<div class="padding20 no-padding-left no-padding-right bg-grayLighter">
   <div class="container">
 		<h2 class="text-normal">Sentry</h2>
     <p>The Wurst Client, starting with v7.7, uses <a href="https://sentry.io/welcome/">Sentry.io</a> to automatically report crashes. This makes it easier for me to find and fix bugs, which then makes the Wurst Client better for everyone.</p>
@@ -52,7 +48,7 @@ cleanmedia_ads: false
 	</div>
 </div>
 
-<div class="padding20 no-padding-left no-padding-right bg-grayLighter">
+<div class="padding20 no-padding-left no-padding-right">
   <div class="container">
 		<h2 class="text-normal">Google AdSense</h2>
     <p>I use Google AdSense to place ads on this website. They have their own privacy policy which you can view here: <a href="https://policies.google.com/technologies/ads" target="_blank">https://policies.google.com/technologies/ads</a></p>
@@ -62,7 +58,7 @@ cleanmedia_ads: false
 	</div>
 </div>
 
-<div class="padding20 no-padding-left no-padding-right">
+<div class="padding20 no-padding-left no-padding-right bg-grayLighter">
   <div class="container">
 		<h2 class="text-normal">CleanMedia</h2>
     <p>I also use CleanMedia to place ads on this website. They have their own privacy policy which you can view here: <a href="http://cleanmedia.net/company/PrivacyPolicy/" target="_blank">http://cleanmedia.net/company/PrivacyPolicy/</a></p>
@@ -70,7 +66,7 @@ cleanmedia_ads: false
 	</div>
 </div>
 
-<div class="padding20 no-padding-left no-padding-right bg-grayLighter">
+<div class="padding20 no-padding-left no-padding-right">
   <div class="container">
 		<h2 class="text-normal">Other Stuff</h2>
     <p>Since I don't have your email address, I can't send you one of those annoying "we have updated our privacy policy" e-mails. Instead, I have a GitHub repository where you can see how this page has changed over time: <a href="https://github.com/Wurst-Imperium/WurstClient.net/commits/gh-pages/privacy.md" target="_blank">https://github.com/Wurst-Imperium/WurstClient.net/commits/gh-pages/privacy.md</a></p>
