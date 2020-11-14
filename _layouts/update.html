@@ -68,33 +68,39 @@ cleanmedia_ads: true
 
 			{% else %}
 
-			{% unless page.no-zip %}
+				{% if page.mc-1-7-remake %}
+					<p><b>Note:</b> The original downloads for this version had to be removed because they contained copyrighted code from Minecraft 1.7.2. This is a remake that doesn't contain the copyrighted code. Once installed, this version looks and feels exactly like the original. The only difference is that this version uses a modern Wurst 6 installer and creates a Minecraft launcher profile with a different name.</p>
+					<p>The installer contains the Wurst Client, but with all of the Minecraft code stripped out. This file would not work on its own, but when you run the installer, it takes your existing Minecraft installation and combines it with this file to create a working Wurst installation. This way, the file you download doesn't actually contain any copyrighted code.</p>
+					<p>You must have Minecraft 1.7.2 (not 1.7.10) installed in order for the Wurst installer to work. Even if you plan to use Wurst on 1.7.10 servers, it still needs the code from Minecraft 1.7.2 because that's what this Wurst version is based on.</p>
+				{% endif %}
+
+				{% unless page.no-zip %}
+					<div class="padding10 no-padding-left no-padding-right">
+						<h3>
+							Wurst installer for Windows
+							<span class="tag fg-white bg-grayLight" style="cursor: help;vertical-align: baseline;" title="Recommended if you don't have Java installed.
+	Just extract it and run the 'Wurst Installer.cmd' file.">.ZIP</span>
+						</h3>
+						{% for mcversion in page.minecraft-versions %}
+							<a class="tile inline-block no-float bg-grayDark command-button primary no-border" href="https://github.com/Wurst-Imperium/Wurst-MCX2/releases/download/v{{ page.wurst-version }}/Wurst-Client-v{{ page.wurst-version }}-MC{{ mcversion | replace: " ", "-" }}.zip" rel="nofollow" target="_blank" style="width: auto;height: auto;">
+								<span class="icon mif-file-download"></span>
+								Wurst Client v{{ page.wurst-version }} MC{{ mcversion }}
+								<small>for Minecraft {{ site.mcversions[mcversion] }}</small>
+							</a>
+						{% endfor %}
+					</div>
+				{% endunless %}
+
 				<div class="padding10 no-padding-left no-padding-right">
-					<h3>
-						Wurst installer for Windows
-						<span class="tag fg-white bg-grayLight" style="cursor: help;vertical-align: baseline;" title="Recommended if you don't have Java installed.
-Just extract it and run the 'Wurst Installer.cmd' file.">.ZIP</span>
-					</h3>
+					<h3>Cross-platform Wurst installer <span class="tag fg-white bg-grayLight" style="cursor: help;vertical-align: baseline;" title="Requires Java 8 to be installed and properly configured.">.JAR</span></h3>
 					{% for mcversion in page.minecraft-versions %}
-						<a class="tile inline-block no-float bg-grayDark command-button primary no-border" href="https://github.com/Wurst-Imperium/Wurst-MCX2/releases/download/v{{ page.wurst-version }}/Wurst-Client-v{{ page.wurst-version }}-MC{{ mcversion | replace: " ", "-" }}.zip" rel="nofollow" target="_blank" style="width: auto;height: auto;">
+						<a class="tile inline-block no-float bg-grayDark command-button primary no-border" href="https://github.com/Wurst-Imperium/Wurst-MCX2/releases/download/v{{ page.wurst-version }}/Wurst-Client-v{{ page.wurst-version }}-MC{{ mcversion | replace: " ", "-" }}.jar" rel="nofollow" target="_blank" style="width: auto;height: auto;">
 							<span class="icon mif-file-download"></span>
 							Wurst Client v{{ page.wurst-version }} MC{{ mcversion }}
-							<small>for Minecraft {{ site.mcversions[mcversion] }}</small>
+							<small>for Minecraft {% if mcversion contains "w" or mcversion contains "pre" %}{{ mcversion }}{% else %}{{ site.mcversions[mcversion] }}{% endif %}</small>
 						</a>
 					{% endfor %}
 				</div>
-			{% endunless %}
-
-			<div class="padding10 no-padding-left no-padding-right">
-				<h3>Cross-platform Wurst installer <span class="tag fg-white bg-grayLight" style="cursor: help;vertical-align: baseline;" title="Requires Java 8 to be installed and properly configured.">.JAR</span></h3>
-				{% for mcversion in page.minecraft-versions %}
-					<a class="tile inline-block no-float bg-grayDark command-button primary no-border" href="https://github.com/Wurst-Imperium/Wurst-MCX2/releases/download/v{{ page.wurst-version }}/Wurst-Client-v{{ page.wurst-version }}-MC{{ mcversion | replace: " ", "-" }}.jar" rel="nofollow" target="_blank" style="width: auto;height: auto;">
-						<span class="icon mif-file-download"></span>
-						Wurst Client v{{ page.wurst-version }} MC{{ mcversion }}
-						<small>for Minecraft {% if mcversion contains "w" or mcversion contains "pre" %}{{ mcversion }}{% else %}{{ site.mcversions[mcversion] }}{% endif %}</small>
-					</a>
-				{% endfor %}
-			</div>
 
 			{% endif %}
 
