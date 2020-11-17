@@ -2,8 +2,11 @@ exclude:
 - start.bat
 
 timezone: Europe/Berlin
-
 title: WurstClient.net
+url: "https://www.wurstclient.net"
+
+plugins:
+  - jekyll-sitemap
 
 mcversions:
   "snapshots": "Snapshots"
