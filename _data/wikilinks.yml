@@ -27,10 +27,12 @@ hacks:
   HealthTags: https://wiki.wurstclient.net/healthtags
   /home: https://wiki.wurstclient.net/home
   Killaura: https://wiki.wurstclient.net/killaura
+  MobSpawnESP: https://wiki.wurstclient.net/mobspawnesp
   MountBypass: https://wiki.wurstclient.net/mountbypass
   Navigator: https://wiki.wurstclient.net/navigator
   Nuker: https://wiki.wurstclient.net/nuker
   OP-Sign: https://wiki.wurstclient.net/op-sign
+  PlayerESP: https://wiki.wurstclient.net/playeresp
   Spider: https://wiki.wurstclient.net/spider
 
 commands:
