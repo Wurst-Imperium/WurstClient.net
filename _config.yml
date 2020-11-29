@@ -7,6 +7,13 @@ url: "https://www.wurstclient.net"
 
 plugins:
   - jekyll-sitemap
+  - jekyll-feed
+
+feed:
+  posts_limit: 20
+  collections:
+    updates:
+      path: "/updates/feed/"
 
 mcversions:
   "snapshots": "Snapshots"
