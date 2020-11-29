@@ -9,6 +9,8 @@ plugins:
   - jekyll-sitemap
   - jekyll-feed
 
+author: Alexander01998
+
 feed:
   posts_limit: 20
   collections:
