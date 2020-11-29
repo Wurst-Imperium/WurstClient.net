@@ -13,7 +13,7 @@ feed:
   posts_limit: 20
   collections:
     updates:
-      path: "/updates/feed/"
+      path: "/wurst-updates.xml"
 
 mcversions:
   "snapshots": "Snapshots"
