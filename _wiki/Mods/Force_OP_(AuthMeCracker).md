@@ -52,6 +52,6 @@ If you got a success message that tells you the AuthMe password, you have succes
 Once you're done with that, you can either give OP to your own account (using the normal `/op <username>` command) or grief the server as the admin. Happy griefing!
 
 ## Tips
-- **Turn AntiSpam on** and you won't see all the annoying `Wrong password!` messages from AuthMe.
+- **Turn [AntiSpam](https://wiki.wurstclient.net/antispam) on** and you won't see all the annoying `Wrong password!` messages from AuthMe.
 
 - You can also **do this with normal users** to get access to their plots, items, etc.
