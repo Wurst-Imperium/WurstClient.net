@@ -17,7 +17,7 @@ cleanmedia_ads: false
 		</ul>
 		<h3 class="text-normal">What I DO:</h3>
 		<ul>
-      <li><p>Use Google Analytics to see how many people are using my stuff</p></li>
+      <li><p>Use Google Analytics to see how many people are using Wurst</p></li>
       <li><p>Sell ads on this website</p></li>
 		</ul>
 	</div>
@@ -26,11 +26,12 @@ cleanmedia_ads: false
 <div class="padding20 no-padding-left no-padding-right">
   <div class="container">
 		<h2 class="text-normal">Google Analytics</h2>
-    <p>You know how YouTube videos always have that view counter under them? You might be surprised to hear that, by default, websites don't have anything like that. So if I want to know how many people visit my website, then I have to install a plugin for that. The plugin I use is called Google Analytics. As you may have guessed, it's made by Google.</p>
-    <p>Aside from the website, I also want to know how many people are using the Wurst Client itself. And for that I use Google Analytics as well.</p>
-    <p>Google Analytics has to collect some anonymized data to make the view counting work. They have their own privacy policy which you can view here: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></p>
-    <p>Since Google Analytics doesn't collect any personal data, there is no good reason to turn it off (aside from saving a tiny bit of internet bandwidth, I guess), but you <i>can</i> turn it off if you want to. To turn off Google Analytics on this website, you will need to install the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank">GA Opt-Out Browser Plugin</a>. Note that this will turn off Google Analytics on all websites. As far as I know, there is no way to turn it off on just one website.</p>
-    <p>Since the Wurst Client can't tell what browser plugins you have installed (and it would be a privacy concern if it could), this plugin won't disable Google Analytics in the Wurst Client. Instead, you can turn it off by going to "Wurst Options" > "Analytics" and setting it to "OFF".</p>
+    <p>I use Google Analytics to see how many people are using Wurst and which versions are the most popular. I use this data to decide when to stop supporting old Minecraft versions. <b>There is no Google Analytics on this website, it's only in the Wurst Client itself.</b></p>
+    <p>When you launch Wurst, it only sends a single message to the Google Analytics server saying which Wurst version and Minecraft version was just launched. It doesn't track what you do with Wurst or how long you use it for.</p>
+    <p>Google Analytics uses a random ID to tell the difference between one computer launching Wurst twice and two computers each launching Wurst once. Wurst generates this ID on its own and changes it every 3 days. This ensures that Google can't do anything sneaky and try use this data for ads.</p>
+    <p>Unfortunately I can't seem to get the "anonymizeIp" option working with this highly customized Google Analytics setup, so Google does still store your IP address. You are welcome to have a look at the <a href="https://github.com/Wurst-Imperium/Wurst7/tree/master/src/main/java/net/wurstclient/analytics">source code</a> to see if you can figure this out. (Of course I am also considering to ditch Google Analytics altogether, but setting up my own analytics server is no small feat.)</p>
+    <p>You can turn off Google Analytics by going to "Wurst Options" > "Count Users" and setting it to "OFF".</p>
+    <p>You can view Google's privacy policy here: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></p>
 	</div>
 </div>
 
