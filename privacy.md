@@ -18,7 +18,6 @@ cleanmedia_ads: false
 		<h3 class="text-normal">What I DO:</h3>
 		<ul>
       <li><p>Use Google Analytics to see how many people are using my stuff</p></li>
-      <li><p>Use Sentry to find and fix bugs more quickly</p></li>
       <li><p>Sell ads on this website</p></li>
 		</ul>
 	</div>
@@ -37,19 +36,6 @@ cleanmedia_ads: false
 
 <div class="padding20 no-padding-left no-padding-right bg-grayLighter">
   <div class="container">
-		<h2 class="text-normal">Sentry</h2>
-    <p>The Wurst Client, starting with v7.7, uses <a href="https://sentry.io/welcome/">Sentry.io</a> to automatically report crashes. This makes it easier for me to find and fix bugs, which then makes the Wurst Client better for everyone.</p>
-    <p>Sentry has their own privacy policy which you can read here: <a href="https://sentry.io/privacy/" target="_blank">https://sentry.io/privacy/</a></p>
-    <p>Sentry also has extremely good security measures and has been certified for all kinds of things: <a href="https://sentry.io/security/" target="_blank">https://sentry.io/security/</a></p>
-    <p>I have configured Sentry in such a way that it reports crashes anonymously. After all, I don't really care <i>who</i> got the crash, only <i>how</i> it happened and how I can fix it.</p>
-    <p>Due to the unpredictable nature of bugs, it's always possible that some personal information might make it into a crash report. Sentry has a built-in data-scrubbing tool that tries to delete such information automatically, but there is no guarantee that it will catch everything.</p>
-    <p>Sentry does not store your IP address and automatically deletes reports after 30 days, even if I haven't fixed the bug by then.</p>
-    <p>You can always turn Sentry off in the Wurst Options. (If you don't see the "Sentry: ON/OFF" button in the Wurst Options, that means your Wurst version doesn't have Sentry. It's still fairly new and not all versions have it.)</p>
-	</div>
-</div>
-
-<div class="padding20 no-padding-left no-padding-right">
-  <div class="container">
 		<h2 class="text-normal">Google AdSense</h2>
     <p>I use Google AdSense to sell ads on this website. <strong>I don't sell data and <a href="https://safety.google/privacy/ads-and-data/" target="_blank">neither does Google</a>!</strong></p>
     <p>They have their own privacy policy which you can view here: <a href="https://policies.google.com/technologies/ads" target="_blank">https://policies.google.com/technologies/ads</a></p>
@@ -61,7 +47,7 @@ cleanmedia_ads: false
 	</div>
 </div>
 
-<div class="padding20 no-padding-left no-padding-right bg-grayLighter">
+<div class="padding20 no-padding-left no-padding-right">
   <div class="container">
 		<h2 class="text-normal">CleanMedia</h2>
     <p>I also use CleanMedia to sell ads on this website. They have their own privacy policy which you can view here: <a href="http://cleanmedia.net/company/PrivacyPolicy/" target="_blank">http://cleanmedia.net/company/PrivacyPolicy/</a></p>
@@ -69,7 +55,7 @@ cleanmedia_ads: false
 	</div>
 </div>
 
-<div class="padding20 no-padding-left no-padding-right">
+<div class="padding20 no-padding-left no-padding-right bg-grayLighter">
   <div class="container">
 		<h2 class="text-normal">Other Stuff</h2>
     <p>Since I don't have your email address, I can't send you one of those annoying "we have updated our privacy policy" e-mails. Instead, I have a GitHub repository where you can see how this page has changed over time: <a href="https://github.com/Wurst-Imperium/WurstClient.net/commits/gh-pages/privacy.md" target="_blank">https://github.com/Wurst-Imperium/WurstClient.net/commits/gh-pages/privacy.md</a></p>
