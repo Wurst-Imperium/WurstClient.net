@@ -1,14 +1,10 @@
-<footer class="align-center bg-grayDarker fg-grayLighter text-small padding10 no-padding-left no-padding-right" style="height: 100px;margin-top: -100px;">
+<footer class="align-center bg-grayDarker fg-grayLighter text-small padding10 no-padding-left no-padding-right" style="height: 80px;margin-top: -80px;">
 	<div class="container">
 		Copyright &#169; 2014 - {{ site.time | date: '%Y' }} | Alexander01998 | All rights reserved.
-		<ul class="inline-list no-margin">
-			<li><a href="/safety/" class="fg-grayLight">Safety</a></li>
-			<li><a href="/privacy/" class="fg-grayLight">Privacy Policy</a></li>
-			<li><a href="https://www.google.com/settings/ads" target="_blank" class="fg-grayLight">Google Ads Settings</a></li>
-			<li><a href="http://www.aboutads.info/choices/" target="_blank" class="fg-grayLight">Other Ads Settings</a></li>
-		</ul>
 		{% assign repo = "https://github.com/Wurst-Imperium/wurstclient.net" %}
 		<ul class="inline-list no-margin">
+			<li><a href="/safety/" class="fg-grayLight">Safety</a></li>
+			<li><a href="/privacy/" class="fg-grayLight">Privacy</a></li>
 			<li><a href="{{ repo }}/edit/gh-pages/{{ page.path }}" target="_blank" class="fg-grayLight">Edit Page</a></li>
 			<li><a href="{{ repo }}/blob/gh-pages/{{ page.path }}" target="_blank" class="fg-grayLight">View Source</a></li>
 		</ul>

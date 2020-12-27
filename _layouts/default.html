@@ -50,12 +50,12 @@ cleanmedia_ads: false
 		<div style="min-height: 100%">
 			{% include header.html %}
 			{{ content }}
-			<div style="height: 100px;"></div>
+			<div style="height: 80px;"></div>
 		</div>
 		{% include footer.html %}
-
+		
 		<script async src="/js/wi.js"></script>
-
+		
 		{% if page.google_auto_ads or layout.google_auto_ads %}
 			<script data-ad-client="ca-pub-5218363098774955" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 		{% endif %}
@@ -64,8 +64,6 @@ cleanmedia_ads: false
 			<ins class="CANBMDDisplayAD" data-bmd-ad-unit="57486220191104T1748341403949ADD50F5D4DDF90B1F232C17A6D88" style="display: block"></ins>
 			<script async src="https://secureaddisplay.com/au/bmd/"></script>
 		{% endif %}
-		
-		<script async src="/js/cookieconsent.js"></script>
 
 	</body>
 </html>

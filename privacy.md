@@ -40,11 +40,14 @@ cleanmedia_ads: false
 		<h2 class="text-normal">Google AdSense</h2>
     <p>I use Google AdSense to sell ads on this website. <strong>I don't sell data and <a href="https://safety.google/privacy/ads-and-data/" target="_blank">neither does Google</a>!</strong></p>
     <p>They have their own privacy policy which you can view here: <a href="https://policies.google.com/technologies/ads" target="_blank">https://policies.google.com/technologies/ads</a></p>
-    <p>Google can use data that they already have to "personalize" their ads. You can turn off personalized ads by visiting <a href="https://www.google.com/settings/ads" target="_blank">Google Ads Settings</a> or <a href="https://optout.aboutads.info/" target="_blank">https://optout.aboutads.info/</a>. Google Ads Settings also lets you see everything that Google knows about you and allows you to edit that data.</p>
-    <p>Note that turning off personalization won't turn off the ads, it just stops them from being personalized.</p>
-    <p>See also: <a href="https://howwemakemoney.withgoogle.com/" target="_blank">How Google Ads work</a></p>
-    <p>Google AdSense uses cookies to keep track of things like how often each ad is seen and how often each ad is clicked on. See <a href="https://support.google.com/adsense/answer/7549925?hl=en" class="urlextern" target="_blank" title="https://support.google.com/adsense/answer/7549925?hl=en" rel="ugc nofollow noopener">https://support.google.com/adsense/answer/7549925?hl=en</a> for more details.</p>
-    <p>Individual ads and advertisers might also use their own cookies. I have no control over that.</p>
+    <p>I have configured Google AdSense so that it won't show any personalized ads to visitors in the EU or California.</p>
+    <p>I have also <b>disabled</b> the following Google AdSense options worldwide:</p>
+    <ul>
+      <li>"User-based ads" (personalization based on Google Account information)</li>
+      <li>"Additional ad technology vendors" (personalization based on third party ad technology)</li>
+      <li>"First-party cookies" (bypasses privacy tools that block third-party cookies)</li>
+    </ul>
+    <p>Google AdSense uses <a href="https://support.google.com/adsense/answer/7549925?hl=en" target="_blank">third-party cookies</a> to keep track of things like how often each ad is seen and how often each ad is clicked on. I have turned off Google's personalization and first-party cookies, as stated above.</p>
 	</div>
 </div>
 
@@ -52,7 +55,7 @@ cleanmedia_ads: false
   <div class="container">
 		<h2 class="text-normal">CleanMedia</h2>
     <p>I also use CleanMedia to sell ads on this website. They have their own privacy policy which you can view here: <a href="http://cleanmedia.net/company/PrivacyPolicy/" target="_blank">http://cleanmedia.net/company/PrivacyPolicy/</a></p>
-    <p>You <i>should</i> be able to turn off personalization for these ads using <a href="https://optout.aboutads.info/" target="_blank">https://optout.aboutads.info/</a> as well, but I'm not entirely sure since their privacy policy doesn't mention it.</p>
+    <p>CleanMedia does not collect any personal data from visitors in the EU or California.</p>
 	</div>
 </div>
 
