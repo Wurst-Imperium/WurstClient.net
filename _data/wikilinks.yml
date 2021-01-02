@@ -11,6 +11,10 @@ hacks:
   ArenaBrawl: https://wiki.wurstclient.net/arenabrawl
   AutoArmor: https://wiki.wurstclient.net/autoarmor
   AutoBuild: https://wiki.wurstclient.net/autobuild
+  AutoDrop: https://wiki.wurstclient.net/autodrop
+  AutoEat: https://wiki.wurstclient.net/autoeat
+  AutoFarm: https://wiki.wurstclient.net/autofarm
+  AutoFish: https://wiki.wurstclient.net/autofish
   AutoMine: https://wiki.wurstclient.net/automine
   AutoSprint: https://wiki.wurstclient.net/autosprint
   AutoSteal: https://wiki.wurstclient.net/autosteal
@@ -28,6 +32,7 @@ hacks:
   FeedAura: https://wiki.wurstclient.net/feedaura
   Flight: https://wiki.wurstclient.net/flight
   Freecam: https://wiki.wurstclient.net/freecam
+  Fullbright: https://wiki.wurstclient.net/fullbright
   HealthTags: https://wiki.wurstclient.net/healthtags
   /home: https://wiki.wurstclient.net/home
   Killaura: https://wiki.wurstclient.net/killaura
@@ -46,6 +51,8 @@ commands:
   .gm: https://wiki.wurstclient.net/cmd/gm
   .help: https://wiki.wurstclient.net/cmd/help
   .rename: https://wiki.wurstclient.net/cmd/rename
+  .RenameForceOPEvenThoughTheNameIsTechnicallyCorrect: https://wiki.wurstclient.net/cmd/renameforceopeventhoughthenameistechnicallycorrect
+  .spammer: https://wiki.wurstclient.net/cmd/spammer
   .taco: https://wiki.wurstclient.net/cmd/taco
 
 other:
