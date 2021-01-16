@@ -44,6 +44,7 @@ hacks:
   MountBypass: https://wiki.wurstclient.net/mountbypass
   Navigator: https://wiki.wurstclient.net/navigator
   Nuker: https://wiki.wurstclient.net/nuker
+  OpenWaterESP: https://wiki.wurstclient.net/openwateresp
   OP-Sign: https://wiki.wurstclient.net/op-sign
   PlayerESP: https://wiki.wurstclient.net/playeresp
   Search: https://wiki.wurstclient.net/search
@@ -60,4 +61,6 @@ commands:
   .taco: https://wiki.wurstclient.net/cmd/taco
 
 other:
+  AltManager: https://wiki.wurstclient.net/altmanager
+  Alt Manager: https://wiki.wurstclient.net/altmanager
   VanillaSpoof: https://wiki.wurstclient.net/vanillaspoof
