@@ -14,49 +14,65 @@ cleanmedia_ads: true
             <li>
                 <p>
                     <a href="https://fabricmc.net/use/" target="_blank" rel="nofollow">
-                        <img src="https://user-images.githubusercontent.com/10100202/62377125-7b24f780-b542-11e9-815b-df6340ede28c.png" alt="Fabric installer download instructions">
+                        <img src="https://wiki.wurstclient.net/_media/install_fabric_download.webp" alt="Fabric installer download instructions">
                     </a>
                 </p>
                 <p>
                 Download the <a href="https://fabricmc.net/use/" target="_blank" rel="nofollow">Fabric installer</a>.
                 <ul>
-                    <li><del>Change the "installation for" box to "Vanilla".</del> This is no longer required. Just click the download button.</li>
-                    <li><del>Make sure that "Installer version" is set to the latest version.</del> It now does that automatically.</li>
-                    <li>Click one of the download buttons. It doesn't matter whether you choose ".EXE" or ".JAR".</li>
+                    <li>It is recommended to use the Universal/.JAR version.</li>
                 </ul>
                 </p>
             </li>
             <div class="padding5 no-padding-left no-padding-right"></div>
             <li>
                 <p>
-                    <a href="https://fabricmc.net/use/" target="_blank" rel="nofollow">
-                        <img src="https://user-images.githubusercontent.com/10100202/62378409-0dc69600-b545-11e9-8431-af64d13bc308.png" alt="Fabric installer usage instructions">
-                    </a>
+                    <img src="https://wiki.wurstclient.net/_media/install_fabric_run_with_java.webp" alt="how to run the Fabric installer with Java">
                 </p>
                 <p>
-                    Run the Fabric installer.
+                Right-click the Fabric installer, select "Open with" and then choose Java.
+                <ul>
+                    <li>Depending on your system, you will see either "Java(TM)&nbsp;Platform&nbsp;SE&nbsp;binary", "OpenJDK&nbsp;Platform&nbsp;binary", or both.</li>
+                    <li>It doesn't matter which Java binary you use, just don't use WinRAR. WinRAR is not Java.</li>
+                    <li>If you don't see Java in the list, select "Choose another app".</li>
+                    <li>If you can't find Java at all, <a href="https://www.youtube.com/watch?v=Wv0vPUwitJs" target="_blank" rel="nofollow">install Java</a> first.</li>
+                </ul>
+                </p>
+            </li>
+            <div class="padding5 no-padding-left no-padding-right"></div>
+            <li>
+                <p>
+                    <img src="https://wiki.wurstclient.net/_media/install_use_fabric_installer.webp" alt="Fabric installer usage instructions">
+                </p>
+                <p>
+                    In the Fabric installer, select the Minecraft version you want to use and press "Install".
                     <ul>
-                        <li>Set "Minecraft Version" to the Minecraft version you want to use.</li>
-                        <li>Check "Show snapshots" if you plan to use them.</li>
-                        <li>Make sure "Loader Version" is set to the latest one.</li>
+                        <li>If you want to use snapshots, make sure that "Show snapshots" is checked first.</li>
                         <li>Leave "Select Install Location" at the default value. Changing this can sometimes cause problems.</li>
-                        <li>I recommend leaving "Create profile" checked. That way you don't have to make your own profile.</li>
-                        <li>Don't forget to press "Install". :)</li>
+                        <li>Leave "Create profile" checked. That way you don't have to make your own profile.</li>
                     </ul>
                 </p>
             </li>
             <div class="padding5 no-padding-left no-padding-right"></div>
             <li>
                 <p>
-                    <a href="https://www.curseforge.com/minecraft/mc-mods/fabric-api" target="_blank" rel="nofollow">
-                        <img src="https://user-images.githubusercontent.com/10100202/68168208-b9321d00-ff70-11e9-867e-2b2f20dc9969.png" alt="Fabric API download instructions">
+                    <a href="https://www.curseforge.com/minecraft/mc-mods/fabric-api/files/all" target="_blank" rel="nofollow">
+                        <img src="https://wiki.wurstclient.net/_media/install_fabric_api_version.webp" alt="Fabric API download instructions">
                     </a>
                 </p>
                 <p>
-                    Download the <a href="https://www.curseforge.com/minecraft/mc-mods/fabric-api" target="_blank" rel="nofollow">Fabric API</a>.
-                    <ul>
-                        <li>Check the "Recent Files" tab at the bottom right, then download the latest version that matches your Minecraft version.</li>
-                    </ul>
+                    Go to the <a href="https://www.curseforge.com/minecraft/mc-mods/fabric-api/files/all" target="_blank" rel="nofollow">Fabric API page</a> and select your Minecraft version at the top right.
+                </p>
+            </li>
+            <div class="padding5 no-padding-left no-padding-right"></div>
+            <li>
+                <p>
+                    <a href="https://www.curseforge.com/minecraft/mc-mods/fabric-api/files/all" target="_blank" rel="nofollow">
+                        <img src="https://wiki.wurstclient.net/_media/install_fabric_api_version_2.webp" alt="more Fabric API download instructions">
+                    </a>
+                </p>
+                <p>
+                    Then download the latest (top-most) version of the Fabric API for that Minecraft version.
                 </p>
             </li>
             <div class="padding5 no-padding-left no-padding-right"></div>
