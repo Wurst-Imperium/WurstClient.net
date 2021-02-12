@@ -39,7 +39,9 @@ hacks:
   Glide: https://wiki.wurstclient.net/glide
   HealthTags: https://wiki.wurstclient.net/healthtags
   /home: https://wiki.wurstclient.net/home
+  ItemESP: https://wiki.wurstclient.net/itemesp
   Killaura: https://wiki.wurstclient.net/killaura
+  MobESP: https://wiki.wurstclient.net/mobesp
   MobSpawnESP: https://wiki.wurstclient.net/mobspawnesp
   MountBypass: https://wiki.wurstclient.net/mountbypass
   Navigator: https://wiki.wurstclient.net/navigator
@@ -51,6 +53,7 @@ hacks:
   SnowShoe: https://wiki.wurstclient.net/snowshoe
   Spider: https://wiki.wurstclient.net/spider
   Tillaura: https://wiki.wurstclient.net/tillaura
+  Tunneller: https://wiki.wurstclient.net/tunneller
 
 commands:
   .gm: https://wiki.wurstclient.net/cmd/gm
