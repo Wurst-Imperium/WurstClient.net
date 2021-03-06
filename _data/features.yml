@@ -167,7 +167,6 @@ commands:
   - .follow
   - .friends
   - .getpos
-  - .ghosthand
   - .give
   - .gm
   - .goto
