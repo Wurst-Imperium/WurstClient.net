@@ -95,6 +95,7 @@ cheats:
   - NameProtect
   - NameTags
   - Navigator
+  - NoBackground
   - NoClip
   - NoFall
   - NoFireOverlay
@@ -114,6 +115,7 @@ cheats:
   - Phase
   - PlayerESP
   - PlayerFinder
+  - PortalGUI
   - PotionSaver
   - ProphuntESP
   - Protect
