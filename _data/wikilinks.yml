@@ -65,6 +65,7 @@ commands:
   .RenameForceOPEvenThoughTheNameIsTechnicallyCorrect: https://wiki.wurstclient.net/cmd/renameforceopeventhoughthenameistechnicallycorrect
   .spammer: https://wiki.wurstclient.net/cmd/spammer
   .taco: https://wiki.wurstclient.net/cmd/taco
+  .xray: https://wiki.wurstclient.net/cmd/xray
 
 other:
   AltManager: https://wiki.wurstclient.net/altmanager
