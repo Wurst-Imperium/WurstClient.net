@@ -50,11 +50,13 @@ hacks:
   OpenWaterESP: https://wiki.wurstclient.net/openwateresp
   OP-Sign: https://wiki.wurstclient.net/op-sign
   PlayerESP: https://wiki.wurstclient.net/playeresp
+  PortalGUI: https://wiki.wurstclient.net/portalgui
   Search: https://wiki.wurstclient.net/search
   SnowShoe: https://wiki.wurstclient.net/snowshoe
   Spider: https://wiki.wurstclient.net/spider
   Tillaura: https://wiki.wurstclient.net/tillaura
   Tunneller: https://wiki.wurstclient.net/tunneller
+  X-Ray: https://wiki.wurstclient.net/x-ray
 
 commands:
   .gm: https://wiki.wurstclient.net/cmd/gm

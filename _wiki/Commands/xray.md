@@ -2,7 +2,7 @@
 title: .xray
 category: Command
 ---
-Manages or toggles X-Ray.
+Manages or toggles [X-Ray](https://wiki.wurstclient.net/x-ray).
 
 ## Syntax
 `.xray add (id <block_id>|name <block_name>)` adds the given ID/block to your X-Ray blocks list.
