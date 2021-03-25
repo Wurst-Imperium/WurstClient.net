@@ -162,6 +162,7 @@ commands:
   - .damage
   - .dig
   - .drop
+  - .dupe
   - .enabledhax
   - .enchant
   - .excavate

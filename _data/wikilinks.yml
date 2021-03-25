@@ -62,6 +62,7 @@ hacks:
   X-Ray: https://wiki.wurstclient.net/x-ray
 
 commands:
+  .dupe: https://wiki.wurstclient.net/cmd/dupe
   .gm: https://wiki.wurstclient.net/cmd/gm
   .help: https://wiki.wurstclient.net/cmd/help
   .rename: https://wiki.wurstclient.net/cmd/rename
