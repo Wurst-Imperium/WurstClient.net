@@ -10,6 +10,31 @@ rubiconproject.com, 22342, DIRECT, 0bfd66d529a55807
 openx.com, 541034057, DIRECT, 6a698e2ec38604c6
 openx.com, 541039090, DIRECT, 6a698e2ec38604c6 
 pubmatic.com, 160041, RESELLER, 5d62403b186f2ace
+quantumdex.io, EXU5953, RESELLER
+interdogmedia.com, EXU5953, RESELLER
+apacdex.com, EXU5953, RESELLER
+appnexus.com, 10273, RESELLER, f5ab79cb980f11d1
+appnexus.com, 11395, RESELLER, f5ab79cb980f11d1
+appnexus.com, 11711, DIRECT, f5ab79cb980f11d1
+indexexchange.com, 192922, RESELLER, 50b1c356f2c5c8fc
+advertising.com, 28643, RESELLER #VerizonVideo
+yahoo.com, 58754, RESELLER, e1a5b5b6e3255540
+aol.com, 58754, RESELLER, e1a5b5b6e3255540
+pubmatic.com, 157940, RESELLER, 5d62403b186f2ace
+sovrn.com, 278426, DIRECT, fafdf38b16bf6b2b
+lijit.com, 278426, DIRECT, fafdf38b16bf6b2b
+lijit.com, 278426-eb, DIRECT, fafdf38b16bf6b2b
+appnexus.com, 1360, RESELLER, f5ab79cb980f11d1
+gumgum.com, 11645, RESELLER, ffdef49475d318a9
+openx.com, 538959099, RESELLER, 6a698e2ec38604c6
+openx.com, 539924617, RESELLER, 6a698e2ec38604c6
+pubmatic.com, 137711, RESELLER, 5d62403b186f2ace
+pubmatic.com, 156212, RESELLER, 5d62403b186f2ace
+pubmatic.com, 156700, RESELLER, 5d62403b186f2ace
+rubiconproject.com, 17960, RESELLER, 0bfd66d529a55807
+onetag.com, 2bb78272a859ca6, DIRECT
+sonobi.com, f5d517e1b9, RESELLER, d1a215d9eb5aee9e
+sonobi.com, 4d443a3ea2, RESELLER, d1a215d9eb5aee9e
 #CMNVideo 1.0
 Sekindo.com, 24072, DIRECT, b6b21d256ef43532
 spotxchange.com, 84294, RESELLER, 7842df1d2fe2db34
