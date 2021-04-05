@@ -23,7 +23,7 @@ cleanmedia_ads: false
 {% endif %}
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{% if page.lang %}{{ page.lang }}{% else %}en{% endif %}">
 	<head>
 
 		<meta charset="utf-8">
@@ -43,6 +43,11 @@ cleanmedia_ads: false
 		<meta name="twitter:title" content="{{ page_title }}">
 		<meta name="twitter:description" content="{{ page_description }}">
 		<meta name="twitter:image" content="{{ page_image }}">
+
+		<link rel="canonical" href="https://www.wurstclient.net{{ page.url }}">
+		{% for tr in page.translations %}
+			<link rel="alternate" hreflang="{{ tr[0] }}" href="https://www.wurstclient.net{{ tr[1] }}">
+		{% endfor %}
 
 	</head>
 	<body>

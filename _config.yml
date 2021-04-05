@@ -52,6 +52,9 @@ collections:
   tutorials:
     output: true
     permalink: /tutorials/:path/
+  tutorials_de:
+    output: true
+    permalink: /de/tutorials/:path/
   redirects:
     output: true
     permalink: /:path/

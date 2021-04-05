@@ -1,0 +1,15 @@
+{% if page.lang %}
+  {% assign currentlang = page.lang %}
+{% else %}
+  {% assign currentlang = "en" %}
+{% endif %}
+
+<nav>
+  {{ site.data.lang.translations-of-this-page[currentlang] }}
+  
+  {% for tr in page.translations %}
+    {% assign langcode = tr[0] %}
+    <a href="{{ tr[1] }}" lang="{{ langcode }}" hreflang="{{ langcode }}">{{ site.data.lang.languages[langcode] }}</a>{% unless forloop.last %}, {% endunless %}
+  {% endfor %}
+
+</nav>
