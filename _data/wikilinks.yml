@@ -68,6 +68,7 @@ hacks:
 
 commands:
   .dupe: https://wiki.wurstclient.net/cmd/dupe
+  .enabledhax: https://wiki.wurstclient.net/cmd/enabledhax
   .gm: https://wiki.wurstclient.net/cmd/gm
   .help: https://wiki.wurstclient.net/cmd/help
   .rename: https://wiki.wurstclient.net/cmd/rename
