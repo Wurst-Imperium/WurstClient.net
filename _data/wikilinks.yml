@@ -29,7 +29,8 @@ hacks:
   AutoTool: https://wiki.wurstclient.net/autotool
   AutoTotem: https://wiki.wurstclient.net/autototem
   AutoWalk: https://wiki.wurstclient.net/autowalk
-  BaseFidner: https://wiki.wurstclient.net/basefinder
+  BaseFinder: https://wiki.wurstclient.net/basefinder
+  Blink: https://wiki.wurstclient.net/blink
   BonemealAura: https://wiki.wurstclient.net/bonemealaura
   BowAimbot: https://wiki.wurstclient.net/bowaimbot
   BuildRandom: https://wiki.wurstclient.net/buildrandom
@@ -69,6 +70,7 @@ hacks:
   X-Ray: https://wiki.wurstclient.net/x-ray
 
 commands:
+  .blink: https://wiki.wurstclient.net/cmd/blink
   .dupe: https://wiki.wurstclient.net/cmd/dupe
   .enabledhax: https://wiki.wurstclient.net/cmd/enabledhax
   .gm: https://wiki.wurstclient.net/cmd/gm
