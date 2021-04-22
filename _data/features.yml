@@ -1,5 +1,5 @@
 cheats:
-  - /home
+  - AnchorAura
   - AntiAFK
   - AntiBlind
   - AntiCactus
@@ -72,6 +72,7 @@ cheats:
   - HeadRoll
   - HealthTags
   - HighJump
+  - /home
   - InfiniChat
   - InstantBunker
   - InvWalk
