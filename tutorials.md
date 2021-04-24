@@ -16,20 +16,41 @@ cleanmedia_ads: true
 					<h3 class="text-normal">for Minecraft <b>1.14+</b></h3>
 					<ul>
 						<li><p><a href="how-to-install/wurst-7/">How to install Wurst 7</a></p></li>
+						<li><p><a href="how-to-uninstall/wurst-7/">How to uninstall Wurst 7</a></p></li>
 						<li><p><a href="wurst-7-baritone">How to add Baritone to Wurst 7</a></p></li>
-						<li><p><a href="https://www.youtube.com/watch?v=4ehYzP6b_C8" target="_blank" rel="nofollow">Video Tutorial by Favores: How to install Wurst 7</a></p></li>
-						<li><p><a href="https://www.youtube.com/watch?v=BrRbD5_0kkA" target="_blank" rel="nofollow">Video Tutorial by Udisen: How to install Wurst 7</a></p></li>
 					</ul>
 				</div>
 				<div class="cell">
 					<h3 class="text-normal">for Minecraft <b>1.8.x - 1.12.x</b></h3>
 					<ul>
 						<li><p><a href="how-to-install/wurst-6/">How to install Wurst 6</a></p></li>
+						<li><p><a href="how-to-uninstall/wurst-6/">How to uninstall Wurst 6</a></p></li>
 						<li><p><a href="how-to-update/">How to update Wurst 6</a></p></li>
 					</ul>
 				</div>
 			</div>
 		</div>
+	</div>
+</div>
+
+<div class="padding20 no-padding-left no-padding-right">
+	<div class="container">
+		<h2 class="text-normal">Item Duplication</h2>
+		<ul>
+			<li><p><a href="https://wiki.wurstclient.net/cmd/dupe">How to duplicate items with .dupe (1.16+ servers)</a></p></li>
+			<li><p><a href="https://wiki.wurstclient.net/mountbypass">How to duplicate items with MountBypass (1.15.2 servers)</a></p></li>
+		</ul>
+	</div>
+</div>
+
+<div class="padding20 no-padding-left no-padding-right bg-grayLighter">
+	<div class="container">
+		<h2 class="text-normal">Force OP</h2>
+		<ul>
+			<li><p><a href="/wiki/Mods/Force_OP_(AuthMeCracker)/">How to use the ForceOP hack (AuthMe servers)</a></p></li>
+			<li><p><a href="https://wiki.wurstclient.net/op-sign">How to use the OP-Sign hack (1.8 servers)</a></p></li>
+			<li><p><a href="/wiki/Special_Features/Force_OP_(BookHack)/">How to use BookHack (1.8 servers)</a></p></li>
+		</ul>
 	</div>
 </div>
 
@@ -46,27 +67,16 @@ cleanmedia_ads: true
 
 <div class="padding20 no-padding-left no-padding-right bg-grayLighter">
 	<div class="container">
-		<h2 class="text-normal">Force OP</h2>
-		<ul>
-			<li><p><a href="/wiki/Mods/Force_OP_(AuthMeCracker)/">How to use ForceOP (AuthMe Cracker)</a></p></li>
-			<li><p><a href="https://wiki.wurstclient.net/op-sign">How to use OP-Sign</a></p></li>
-			<li><p><a href="/wiki/Special_Features/Force_OP_(BookHack)/">How to use BookHack</a></p></li>
-		</ul>
-	</div>
-</div>
-
-<div class="padding20 no-padding-left no-padding-right">
-	<div class="container">
 		<h2 class="text-normal">Troubleshooting</h2>
 		<ul>
-			<li><p><a href="gui-keybind-fix/">What to do if you can't open the GUI</a></p></li>
+			<li><p><a href="https://www.youtube.com/watch?v=rEA1CKR60z8">What to do if you can't open the GUI</a></p></li>
 			<li><p><a href="https://bugs.mojang.com/browse/MC-112780">How to fix crashes with <code>exit code -1073740791</code></a></p></li>
 			<li><p><a href="major-minor-52/">How to fix crashes with <code>Unsupported major.minor version 52.0</code></a></p></li>
 		</ul>
 	</div>
 </div>
 
-<div class="padding40 no-padding-left no-padding-right bg-grayLighter">
+<div class="padding40 no-padding-left no-padding-right">
 	<div class="container">
 		<h2 class="align-center text-light">Need help with something else? <a href="/contact/">Contact me!</a></h2>
 	</div>
