@@ -79,6 +79,7 @@ commands:
   .enabledhax: https://wiki.wurstclient.net/cmd/enabledhax
   .gm: https://wiki.wurstclient.net/cmd/gm
   .help: https://wiki.wurstclient.net/cmd/help
+  .potion: https://wiki.wurstclient.net/cmd/potion
   .rename: https://wiki.wurstclient.net/cmd/rename
   .RenameForceOPEvenThoughTheNameIsTechnicallyCorrect: https://wiki.wurstclient.net/cmd/renameforceopeventhoughthenameistechnicallycorrect
   .spammer: https://wiki.wurstclient.net/cmd/spammer
