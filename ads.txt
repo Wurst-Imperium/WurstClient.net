@@ -32,31 +32,6 @@ smaato.com, 1100044045, RESELLER, 07bcf65f187117b4
 pubnative.net, 1006576, RESELLER, d641df8625486a7b
 adyoulike.com, b4bf4fdd9b0b915f746f6747ff432bde, RESELLER
 axonix.com, 57264, RESELLER
-quantumdex.io, EXU5953, RESELLER
-interdogmedia.com, EXU5953, RESELLER
-apacdex.com, EXU5953, RESELLER
-appnexus.com, 10273, RESELLER, f5ab79cb980f11d1
-appnexus.com, 11395, RESELLER, f5ab79cb980f11d1
-appnexus.com, 11711, DIRECT, f5ab79cb980f11d1
-indexexchange.com, 192922, RESELLER, 50b1c356f2c5c8fc
-advertising.com, 28643, RESELLER #VerizonVideo
-yahoo.com, 58754, RESELLER, e1a5b5b6e3255540
-aol.com, 58754, RESELLER, e1a5b5b6e3255540
-pubmatic.com, 157940, RESELLER, 5d62403b186f2ace
-sovrn.com, 278426, DIRECT, fafdf38b16bf6b2b
-lijit.com, 278426, DIRECT, fafdf38b16bf6b2b
-lijit.com, 278426-eb, DIRECT, fafdf38b16bf6b2b
-appnexus.com, 1360, RESELLER, f5ab79cb980f11d1
-gumgum.com, 11645, RESELLER, ffdef49475d318a9
-openx.com, 538959099, RESELLER, 6a698e2ec38604c6
-openx.com, 539924617, RESELLER, 6a698e2ec38604c6
-pubmatic.com, 137711, RESELLER, 5d62403b186f2ace
-pubmatic.com, 156212, RESELLER, 5d62403b186f2ace
-pubmatic.com, 156700, RESELLER, 5d62403b186f2ace
-rubiconproject.com, 17960, RESELLER, 0bfd66d529a55807
-onetag.com, 2bb78272a859ca6, DIRECT
-sonobi.com, f5d517e1b9, RESELLER, d1a215d9eb5aee9e
-sonobi.com, 4d443a3ea2, RESELLER, d1a215d9eb5aee9e
 #Consumable 1.1
 consumable.com, 2001129, DIRECT
 adtech.com, 10947, DIRECT
@@ -79,6 +54,7 @@ yahoo.com, 55104, DIRECT
 pubmatic.com, 159117, DIRECT
 tremorhub.com, vtrdn-ysjam, DIRECT
 telaria.com, vtrdn-ysjam, DIRECT
+#Advangelists 1.0
 advangelists.com, 3435c378bb76d4357324dd7e69f3cd18, DIRECT, 60d26397ec060f98
 #CMNVideo 1.0
 Sekindo.com, 24072, DIRECT, b6b21d256ef43532
