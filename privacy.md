@@ -39,8 +39,9 @@ cleanmedia_ads: false
   <div class="container">
 		<h2 class="text-normal">Google AdSense</h2>
     <p>I use Google AdSense to sell ads on this website. <strong>I don't sell data and <a href="https://safety.google/privacy/ads-and-data/" target="_blank">neither does Google</a>!</strong></p>
-    <p>They have their own privacy policy which you can view here: <a href="https://policies.google.com/technologies/ads" target="_blank">https://policies.google.com/technologies/ads</a></p>
-    <p>I have configured Google AdSense so that it won't show any personalized ads to visitors in the EU or California.</p>
+    <p>Google has their own privacy policy which you can view here: <a href="https://policies.google.com/technologies/ads" target="_blank">https://policies.google.com/technologies/ads</a></p>
+    <p>I have configured Google AdSense so that it won't show any personalized ads to visitors in the EU or California. However, I am still required by Google to show a consent popup that allows users to make their own choice about personalized ads.</p>
+    <p>I am not sure what happens if you use the consent popup to try and enable personalized ads. I have done everything I can on my end to disable them.</p>
     <p>I have also <b>disabled</b> the following Google AdSense options worldwide:</p>
     <ul>
       <li>"User-based ads" (personalization based on Google Account information)</li>
