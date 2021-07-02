@@ -54,8 +54,15 @@ yahoo.com, 55104, DIRECT
 pubmatic.com, 159117, DIRECT
 tremorhub.com, vtrdn-ysjam, DIRECT
 telaria.com, vtrdn-ysjam, DIRECT
-#Advangelists 1.0
-advangelists.com, 3435c378bb76d4357324dd7e69f3cd18, DIRECT, 60d26397ec060f98
+google.com,pub-6694481294649483,DIRECT
+indexexchange.com,184914,RESELLER
+indexexchange.com,186248,RESELLER
+openx.com,537150004,RESELLER
+rubiconproject.com,17632,RESELLER
+openx.com,539699341,RESELLER
+rubiconproject.com,18890,RESELLER
+indexexchange.com,187454,RESELLER
+yahoo.com,57695,DIRECT
 #CMNVideo 1.0
 Sekindo.com, 24072, DIRECT, b6b21d256ef43532
 spotxchange.com, 84294, RESELLER, 7842df1d2fe2db34
