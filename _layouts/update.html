@@ -33,6 +33,10 @@ cleanmedia_ads: true
 		</div>
 
 		<div class="margin20 no-margin-left no-margin-right no-margin-top">
+			{% if page.auto-list-mcversions %}
+				This version of the Wurst Hacked Client is available for Minecraft
+				{{ page.minecraft-versions | array_to_sentence_string }}.
+			{% endif %}
 			{{ content }}
 		</div>
 
