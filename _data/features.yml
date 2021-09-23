@@ -194,6 +194,7 @@ commands:
   - .say
   - .search
   - .setcheckbox
+  - .setcolor
   - .setmode
   - .setslider
   - .settings

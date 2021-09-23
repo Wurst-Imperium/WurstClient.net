@@ -92,6 +92,7 @@ commands:
   .potion: https://wiki.wurstclient.net/cmd/potion
   .rename: https://wiki.wurstclient.net/cmd/rename
   .RenameForceOPEvenThoughTheNameIsTechnicallyCorrect: https://wiki.wurstclient.net/cmd/renameforceopeventhoughthenameistechnicallycorrect
+  .setcolor: https://wiki.wurstclient.net/cmd/setcolor
   .spammer: https://wiki.wurstclient.net/cmd/spammer
   .taco: https://wiki.wurstclient.net/cmd/taco
   .xray: https://wiki.wurstclient.net/cmd/xray
@@ -99,4 +100,5 @@ commands:
 other:
   AltManager: https://wiki.wurstclient.net/altmanager
   Alt Manager: https://wiki.wurstclient.net/altmanager
+  HackList: https://wiki.wurstclient.net/hacklist
   VanillaSpoof: https://wiki.wurstclient.net/vanillaspoof
