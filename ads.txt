@@ -37,6 +37,7 @@ districtm.io, 100600, RESELLER
 #OFTMedia
 152media.com, 152, DIRECT
 appnexus.com, 11924, RESELLER, f5ab79cb980f11d1
+152media.info, 152M38, DIRECT 
 #CMNUnderdog 7_8_21
 
 ### UDM START ###
