@@ -5,6 +5,7 @@ permalink: /download/
 mcversions:
   - "all"
   - "snapshots"
+  - "1.18"
   - "1.17.1"
   - "1.17"
   - "1.16.5"
@@ -70,7 +71,7 @@ cleanmedia_ads: true
               {% elsif mcversion == "snapshots" %}
                 Snapshots, Pre-Releases, etc.
               {% else %}
-                Wurst for Minecraft {{ site.mcversions[mcversion] }}
+                Wurst for Minecraft {% if site.mcversions[mcversion] %}{{ site.mcversions[mcversion] }}{% else %}{{ mcversion }}{% endif %}
                 {% if page.old_mcversions contains mcversion %}
                   <span class="tag fg-white bg-amber" style="cursor: help;vertical-align: baseline;" title="I'm no longer maintaining this version. You can still use it, but any bugs or missing features will not be fixed.">OLD</span>
                 {% endif %}
