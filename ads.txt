@@ -85,6 +85,7 @@ spotxchange.com, 238463, RESELLER, 7842df1d2fe2db34
 synacor.com, 82078, RESELLER
 ucfunnel.com, par-488A3E6BD8D997D0ED8B3BD34D8BA4B, RESELLER
 yahoo.com, 56692, RESELLER
+rubiconproject.com, 24042, RESELLER, 0bfd66d529a55807
 ### UDM END ###
 
 #Consumable 1.1
