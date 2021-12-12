@@ -33,11 +33,23 @@ cleanmedia_ads: true
 		</div>
 
 		<div class="margin20 no-margin-left no-margin-right no-margin-top">
-			{% if page.auto-list-mcversions %}
-				This version of the Wurst Hacked Client is available for Minecraft
-				{{ page.minecraft-versions | array_to_sentence_string }}.
+			
+			{% if page.fabric == null and page.log4shell-patched == null %}
+				<p><b>WARNING:</b> This old version is vulnerable to the <a href="https://wiki.wurstclient.net/log4shell">Log4Shell</a> exploit. Do not use this in multiplayer without a patch.</p>
+			{% elsif page.fabric and page.log4shell-patched == null %}
+				{% if page.wurst-version == "7.18" %}
+					<p><b>WARNING:</b> Minecraft versions older than 1.18.1-rc3 can be vulnerable to the <a href="https://wiki.wurstclient.net/log4shell">Log4Shell</a> exploit if paired with an outdated version of Fabric Loader. New installations automatically get the patched version, but if you installed this some time ago, you might need to reinstall Fabric to get the patch.</p>
+				{% else %}
+					<p><b>WARNING:</b> This version can be vulnerable to the <a href="https://wiki.wurstclient.net/log4shell">Log4Shell</a> exploit if paired with an outdated version of Fabric Loader. New installations automatically get the patched version, but if you installed this some time ago, you might need to reinstall Fabric to get the patch.</p>
+				{% endif %}
 			{% endif %}
+
+			{% if page.auto-list-mcversions %}
+				<p>This version of the Wurst Hacked Client is available for Minecraft {{ page.minecraft-versions | array_to_sentence_string }}.</p>
+			{% endif %}
+
 			{{ content }}
+
 		</div>
 
 	</div>
