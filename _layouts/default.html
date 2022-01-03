@@ -1,6 +1,5 @@
 ---
 google_auto_ads: false
-cleanmedia_ads: false
 ---
 {% if page.title %}
 	{% capture page_title %}{{ page.title }} - {{ site.title }}{% endcapture %}
@@ -65,11 +64,6 @@ cleanmedia_ads: false
 		
 		{% if page.google_auto_ads or layout.google_auto_ads %}
 			<script data-ad-client="ca-pub-5218363098774955" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-		{% endif %}
-
-		{% if page.cleanmedia_ads or layout.cleanmedia_ads %}
-			<ins class="CANBMDDisplayAD" data-bmd-ad-unit="57486220191104T1748341403949ADD50F5D4DDF90B1F232C17A6D88" style="display: block"></ins>
-			<script async src="https://secureaddisplay.com/au/bmd/"></script>
 		{% endif %}
 
 	</body>

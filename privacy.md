@@ -2,7 +2,6 @@
 title: Privacy Policy
 permalink: /privacy/
 google_auto_ads: false
-cleanmedia_ads: false
 ---
 {% include title.html l1 = page.title l2 = page.description %}
 
@@ -49,14 +48,6 @@ cleanmedia_ads: false
       <li>"First-party cookies" (bypasses privacy tools that block third-party cookies)</li>
     </ul>
     <p>Google AdSense uses <a href="https://support.google.com/adsense/answer/7549925?hl=en" target="_blank">third-party cookies</a> to keep track of things like how often each ad is seen and how often each ad is clicked on. I have turned off Google's personalization and first-party cookies, as stated above.</p>
-	</div>
-</div>
-
-<div class="padding20 no-padding-left no-padding-right">
-  <div class="container">
-		<h2 class="text-normal">CleanMedia</h2>
-    <p>I also use CleanMedia to sell ads on this website. They have their own privacy policy which you can view here: <a href="http://cleanmedia.net/company/PrivacyPolicy/" target="_blank">http://cleanmedia.net/company/PrivacyPolicy/</a></p>
-    <p>CleanMedia does not collect any personal data from visitors in the EU or California.</p>
 	</div>
 </div>
 

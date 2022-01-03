@@ -3,7 +3,6 @@ title: How To Add Baritone To Wurst 7
 description: It's super easy!
 image: https://user-images.githubusercontent.com/10100202/68545490-48f32380-03d6-11ea-85bb-1dfffcf433d5.jpg
 google_auto_ads: true
-cleanmedia_ads: true
 ---
 ## Step 1: Install Wurst
 

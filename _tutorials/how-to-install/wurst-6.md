@@ -3,7 +3,6 @@ title: How To Install Wurst 6
 description: For Minecraft 1.8.x - 1.12.x
 layout: default
 google_auto_ads: true
-cleanmedia_ads: true
 ---
 {% include title.html l1 = page.title l2 = page.description %}
 

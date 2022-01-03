@@ -1,7 +1,6 @@
 ---
 title: How To Use The .binds Command
 google_auto_ads: true
-cleanmedia_ads: true
 ---
 `.binds` is a powerful command that lets you view, edit, add, remove and reset your keybinds directly from the chat. Unlike the Keybind Manager, `.binds` is available in all versions of Wurst, including Wurst 6, Wurst 7 and ForgeWurst.
 

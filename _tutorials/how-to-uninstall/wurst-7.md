@@ -3,7 +3,6 @@ title: How To Uninstall Wurst 7
 description: A step-by-step guide that works on Windows, Linux and Mac!
 layout: default
 google_auto_ads: true
-cleanmedia_ads: true
 ---
 {% include title.html l1 = page.title l2 = page.description %}
 

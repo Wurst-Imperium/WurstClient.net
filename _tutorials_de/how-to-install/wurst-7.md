@@ -7,7 +7,6 @@ translations:
   de: /de/tutorials/how-to-install/wurst-7/
 layout: default
 google_auto_ads: true
-cleanmedia_ads: true
 ---
 {% include title.html l1 = page.title l2 = page.description %}
 

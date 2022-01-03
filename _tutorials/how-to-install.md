@@ -1,7 +1,6 @@
 ---
 title: How To Install Wurst
 google_auto_ads: true
-cleanmedia_ads: true
 ---
 <div class="grid no-margin">
    <div class="row cells2">
