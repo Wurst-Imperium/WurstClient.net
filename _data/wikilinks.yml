@@ -86,6 +86,7 @@ hacks:
   X-Ray: https://wiki.wurstclient.net/x-ray
 
 commands:
+  .addalt: https://wiki.wurstclient.net/cmd/addalt
   .blink: https://wiki.wurstclient.net/cmd/blink
   .dupe: https://wiki.wurstclient.net/cmd/dupe
   .enabledhax: https://wiki.wurstclient.net/cmd/enabledhax
