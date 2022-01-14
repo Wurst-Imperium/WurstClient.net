@@ -87,6 +87,7 @@ hacks:
 
 commands:
   .addalt: https://wiki.wurstclient.net/cmd/addalt
+  .annoy: https://wiki.wurstclient.net/cmd/annoy
   .blink: https://wiki.wurstclient.net/cmd/blink
   .dupe: https://wiki.wurstclient.net/cmd/dupe
   .enabledhax: https://wiki.wurstclient.net/cmd/enabledhax
