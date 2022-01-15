@@ -89,6 +89,7 @@ commands:
   .addalt: https://wiki.wurstclient.net/cmd/addalt
   .annoy: https://wiki.wurstclient.net/cmd/annoy
   .author: https://wiki.wurstclient.net/cmd/author
+  .bind: https://wiki.wurstclient.net/cmd/bind
   .blink: https://wiki.wurstclient.net/cmd/blink
   .dupe: https://wiki.wurstclient.net/cmd/dupe
   .enabledhax: https://wiki.wurstclient.net/cmd/enabledhax
