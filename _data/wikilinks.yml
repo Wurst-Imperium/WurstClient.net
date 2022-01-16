@@ -102,6 +102,7 @@ commands:
   .setcolor: https://wiki.wurstclient.net/cmd/setcolor
   .spammer: https://wiki.wurstclient.net/cmd/spammer
   .taco: https://wiki.wurstclient.net/cmd/taco
+  .unbind: https://wiki.wurstclient.net/cmd/unbind
   .xray: https://wiki.wurstclient.net/cmd/xray
 
 other:
