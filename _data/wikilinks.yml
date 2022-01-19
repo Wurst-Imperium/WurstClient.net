@@ -92,6 +92,7 @@ commands:
   .bind: https://wiki.wurstclient.net/cmd/bind
   .binds: https://wiki.wurstclient.net/cmd/binds
   .blink: https://wiki.wurstclient.net/cmd/blink
+  .clear: https://wiki.wurstclient.net/cmd/clear
   .dupe: https://wiki.wurstclient.net/cmd/dupe
   .enabledhax: https://wiki.wurstclient.net/cmd/enabledhax
   .friends: https://wiki.wurstclient.net/cmd/friends
