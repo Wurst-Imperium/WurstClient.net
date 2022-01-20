@@ -103,6 +103,7 @@ commands:
   .potion: https://wiki.wurstclient.net/cmd/potion
   .rename: https://wiki.wurstclient.net/cmd/rename
   .RenameForceOPEvenThoughTheNameIsTechnicallyCorrect: https://wiki.wurstclient.net/cmd/renameforceopeventhoughthenameistechnicallycorrect
+  .setblock: https://wiki.wurstclient.net/cmd/setblock
   .setcolor: https://wiki.wurstclient.net/cmd/setcolor
   .spammer: https://wiki.wurstclient.net/cmd/spammer
   .taco: https://wiki.wurstclient.net/cmd/taco
