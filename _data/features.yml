@@ -161,6 +161,7 @@ commands:
   - .bind
   - .binds
   - .blink
+  - .blocklist
   - .clear
   - .copyitem
   - .damage
@@ -180,6 +181,7 @@ commands:
   - .help
   - .invsee
   - .ip
+  - .itemlist
   - .jump
   - .leave
   - .modify
@@ -193,6 +195,7 @@ commands:
   - .rv
   - .say
   - .search
+  - .setblock
   - .setcheckbox
   - .setcolor
   - .setmode

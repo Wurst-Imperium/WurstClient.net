@@ -92,12 +92,14 @@ commands:
   .bind: https://wiki.wurstclient.net/cmd/bind
   .binds: https://wiki.wurstclient.net/cmd/binds
   .blink: https://wiki.wurstclient.net/cmd/blink
+  .blocklist: https://wiki.wurstclient.net/cmd/blocklist
   .clear: https://wiki.wurstclient.net/cmd/clear
   .dupe: https://wiki.wurstclient.net/cmd/dupe
   .enabledhax: https://wiki.wurstclient.net/cmd/enabledhax
   .friends: https://wiki.wurstclient.net/cmd/friends
   .gm: https://wiki.wurstclient.net/cmd/gm
   .help: https://wiki.wurstclient.net/cmd/help
+  .itemlist: https://wiki.wurstclient.net/cmd/itemlist
   .potion: https://wiki.wurstclient.net/cmd/potion
   .rename: https://wiki.wurstclient.net/cmd/rename
   .RenameForceOPEvenThoughTheNameIsTechnicallyCorrect: https://wiki.wurstclient.net/cmd/renameforceopeventhoughthenameistechnicallycorrect
