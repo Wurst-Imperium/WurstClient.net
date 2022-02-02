@@ -10,7 +10,7 @@ google_auto_ads: true
 ---
 {% include title.html l1 = page.title l2 = page.description %}
 
-<div class="padding20 no-padding-left no-padding-right bg-grayLighter">
+<div id="step1" class="padding20 no-padding-left no-padding-right bg-grayLighter">
 	<div class="container">
         {% include lang-select.html %}
 		<h2 class="text-normal">Schritt 1: Fabric installieren</h2>
@@ -98,7 +98,7 @@ google_auto_ads: true
 	</div>
 </div>
 
-<div class="padding20 no-padding-left no-padding-right">
+<div id="step2" class="padding20 no-padding-left no-padding-right">
 	<div class="container">
 		<h2 class="text-normal">Schritt 2: Wurst installieren</h2>
         <ol class="step-list">
@@ -131,7 +131,7 @@ google_auto_ads: true
 	</div>
 </div>
 
-<div class="padding20 no-padding-left no-padding-right bg-grayLighter">
+<div id="step3" class="padding20 no-padding-left no-padding-right bg-grayLighter">
 	<div class="container">
 		<h2 class="text-normal">Schritt 3: Starte das Spiel</h2>
         <ol class="step-list">
