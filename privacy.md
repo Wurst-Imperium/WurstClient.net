@@ -51,6 +51,13 @@ google_auto_ads: false
 	</div>
 </div>
 
+<div class="padding20 no-padding-left no-padding-right">
+  <div class="container">
+		<h2 class="text-normal">PurifyDigital</h2>
+    <p>I also use PurifyDigital to sell ads on this website. They have confirmed in writing that all of their ads are compliant with the GDPR and other data protection laws.</p>
+	</div>
+</div>
+
 <div class="padding20 no-padding-left no-padding-right bg-grayLighter">
   <div class="container">
 		<h2 class="text-normal">Other Stuff</h2>
