@@ -58,6 +58,12 @@ google_auto_ads: true
 	</div>
 </div>
 
+{% if page.minecraft-versions contains "1.18.1" %}
+	{% assign use-admaven = false %}
+{% else %}
+	{% assign use-admaven = true %}
+{% endif %}
+
 {% if page.wurst-version and page.minecraft-versions %}
 	<div class="bg-grayLighter padding40 no-padding-left no-padding-right">
 		<div class="container post-content">
@@ -69,7 +75,7 @@ google_auto_ads: true
 
 			{% elsif page.fabric %}
 
-				{% if page.use-admaven %}
+				{% if use-admaven %}
 					<div class="padding10 no-padding-left no-padding-right">
 						<h3 title="NOT an installer!">Wurst Client Fabric Mod <span class="tag fg-white bg-grayLight" style="cursor: help;vertical-align: baseline;">.JAR</span></h3>
 						{% for mcversion in page.minecraft-versions %}
@@ -119,7 +125,7 @@ google_auto_ads: true
 				{% endif %}
 
 				{% unless page.no-zip %}
-					{% if page.use-admaven %}
+					{% if use-admaven %}
 						<div class="padding10 no-padding-left no-padding-right">
 							<h3>
 								Wurst installer for Windows
@@ -159,7 +165,7 @@ Just extract it and run the 'Wurst Installer.cmd' file.">.ZIP</span>
 					{% endif %}
 				{% endunless %}
 
-				{% if page.use-admaven %}
+				{% if use-admaven %}
 					<div class="padding10 no-padding-left no-padding-right">
 						<h3>Cross-platform Wurst installer <span class="tag fg-white bg-grayLight" style="cursor: help;vertical-align: baseline;" title="Requires Java 8 to be installed and properly configured.">.JAR</span></h3>
 						{% for mcversion in page.minecraft-versions %}
