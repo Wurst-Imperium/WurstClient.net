@@ -58,7 +58,18 @@ google_auto_ads: true
 	</div>
 </div>
 
-{% assign use-admaven = false %}
+{% for update in site.updates reversed %}
+	{% assign latest = update.wurst-version %}
+	{% break %}
+{% endfor %}
+
+{% if page.wurst-version == latest %}
+	{% assign use-admaven = false %}
+{% elsif page.minecraft-versions contains "1.18.1" %}
+	{% assign use-admaven = false %}
+{% else %}
+	{% assign use-admaven = true %}
+{% endif %}
 
 {% if page.wurst-version and page.minecraft-versions %}
 	<div class="bg-grayLighter padding40 no-padding-left no-padding-right">
