@@ -61,7 +61,7 @@ google_auto_ads: false
 <div class="padding20 no-padding-left no-padding-right bg-grayLighter">
   <div class="container">
 		<h2 class="text-normal">AdMaven</h2>
-    <p>I also partner with AdMaven to sell ads on the files.wurstclient.net website. They have their own privacy policy which you can view here: <a href="https://ad-maven.com/privacy-policy/" target="_blank" rel="nofollow">https://ad-maven.com/privacy-policy/</a></p>
+    <p>I also partner with AdMaven to sell ads on the files.wurstimperium.net website. They have their own privacy policy which you can view here: <a href="https://ad-maven.com/privacy-policy/" target="_blank" rel="nofollow">https://ad-maven.com/privacy-policy/</a></p>
     <p>I know these ads can be annoying so I've made them completely optional. Every download link that shows AdMaven ads also has a "direct link" option next to it that doesn't show these ads.</p>
     <p>I hope that this provides an acceptable compromise but I am <a href="/contact/">open to feedback</a> about it. I am aware that going too far with ads would only hurt Wurst in the long run, so if it turns out that this solution is not acceptable then I will remove these ads again.</p>
 	</div>
