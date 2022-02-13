@@ -63,9 +63,9 @@ google_auto_ads: true
 	{% break %}
 {% endfor %}
 
-{% if page.wurst-version == latest %}
-	{% assign use-admaven = false %}
-{% elsif page.minecraft-versions contains "1.18.1" %}
+{% if page.use-admaven != nil %}
+	{% assign use-admaven = page.use-admaven %}
+{% elsif page.wurst-version == latest %}
 	{% assign use-admaven = false %}
 {% else %}
 	{% assign use-admaven = true %}
