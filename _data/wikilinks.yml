@@ -102,11 +102,13 @@ commands:
   .gm: https://wiki.wurstclient.net/cmd/gm
   .help: https://wiki.wurstclient.net/cmd/help
   .itemlist: https://wiki.wurstclient.net/cmd/itemlist
+  .modify: https://wiki.wurstclient.net/cmd/modify
   .potion: https://wiki.wurstclient.net/cmd/potion
   .rename: https://wiki.wurstclient.net/cmd/rename
   .RenameForceOPEvenThoughTheNameIsTechnicallyCorrect: https://wiki.wurstclient.net/cmd/renameforceopeventhoughthenameistechnicallycorrect
   .setblock: https://wiki.wurstclient.net/cmd/setblock
   .setcolor: https://wiki.wurstclient.net/cmd/setcolor
+  .setmode: https://wiki.wurstclient.net/cmd/setmode
   .spammer: https://wiki.wurstclient.net/cmd/spammer
   .taco: https://wiki.wurstclient.net/cmd/taco
   .unbind: https://wiki.wurstclient.net/cmd/unbind
