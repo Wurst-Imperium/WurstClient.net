@@ -1,0 +1,5 @@
+---
+layout: none
+---
+{% for update in site.updates %}{% if update.torrent == nil %}{% continue %}{% endif %}{{ update.torrent }}
+{% endfor %}
