@@ -10,37 +10,58 @@ google_auto_ads: true
 ---
 {% include title.html l1 = page.title l2 = page.description %}
 
-<div id="step1" class="padding20 no-padding-left no-padding-right bg-grayLighter">
+<div id="fabric-loader" class="padding20 no-padding-left no-padding-right bg-grayLighter">
 	<div class="container">
         {% include lang-select.html %}
-		<h2 class="text-normal">Schritt 1: Fabric installieren</h2>
+		<h2 class="text-normal">Schritt 1: Fabric(-Loader) installieren</h2>
         <ol class="step-list">
             <li>
+                <p>
+                    Downloade und starte den <a href="https://fabricmc.net/use/" target="_blank" rel="nofollow">Fabric-Installer</a>.
+                </p>
                 <p>
                     <a href="https://fabricmc.net/use/" target="_blank" rel="nofollow">
                         <img src="https://wiki.wurstclient.net/_media/install_fabric_download.webp" alt="Fabric installer download instructions">
                     </a>
                 </p>
                 <p>
-                Lade den <a href="https://fabricmc.net/use/" target="_blank" rel="nofollow">Fabric installer</a> herunter.
-                <ul>
-                    <li>Es wird empfohlen, die "Universal/.JAR"-Version zu benutzen.</li>
-                </ul>
-                </p>
-            </li>
-            <div class="padding5 no-padding-left no-padding-right"></div>
-            <li>
-                <p>
-                    <img src="https://wiki.wurstclient.net/_media/install_fabric_run_with_java.webp" alt="how to run the Fabric installer with Java">
-                </p>
-                <p>
-                Klicke mit der rechten Maustaste auf den Fabric-Installer, gehe auf "Öffnen mit" und wähle dann Java aus.
-                <ul>
-                    <li>Je nachdem was du installiert hast, siehst du hier entweder "Java(TM)&nbsp;Platform&nbsp;SE&nbsp;binary" oder "OpenJDK&nbsp;Platform&nbsp;binary" (oder beides).</li>
-                    <li>Es ist egal, welche Java-Version du hier auswählst. Pass nur auf dass du auch wirklich Java und nicht z.B. WinRAR auswählst.</li>
-                    <li>Wenn du Java in der Liste nicht finden kannst, klicke unten auf "Anderes Programm auswählen".</li>
-                    <li>Wenn du Java dann immer noch nicht finden kannst, ist es wahrscheinlich nicht installiert. In diesem Fall musst du erstmal <a href="https://www.youtube.com/watch?v=Wv0vPUwitJs" target="_blank" rel="nofollow">Java installieren</a>.</li>
-                </ul>
+                    <h3>Problembehandlung</h3>
+                    <details class="padding5">
+                        <summary>Mein Antivirus meint, dass der Fabric-Installer bösartig sei.</summary>
+                        <p>
+                            Das kann mit dem Fabric-Installer "for Windows" passieren (weil es eine .exe-Datei ist), ist aber mit ziemlicher Sicherheit ein Fehlalarm. Du kannst die Warnung entweder ignorieren oder statt der .exe die Universal/.jar-Version benutzen. Die .jar-Version wird nicht als Virus erkannt.
+                        </p>
+                    </details>
+                    <details class="padding5">
+                        <summary>Wenn ich versuche den Fabric-Installer zu starten, passiert nichts.</summary>
+                        <p>
+                            Das kann passieren wenn du kein Java installiert hast. Hier ist ein <a href="https://www.youtube.com/watch?v=Wv0vPUwitJs" target="_blank" rel="nofollow">Video das erklärt wie man Java installiert</a> (auf Englisch). (Der Author von diesem Video kann dir bei Wurst-Problemen nicht helfen. Wenn du Hilfe brauchst, <a href="/contact">frag mich</a>.)
+                        </p>
+                    </details>
+                    <details class="padding5">
+                        <summary>Wenn ich versuche den Fabric-Installer zu starten, öffnet sich stattdessen WinRAR / 7-zip / etc.</summary>
+                        <p>
+                            Das passiert wenn dein Computer darauf eingestellt ist, .jar-Dateien mit einem anderen Programm als Java zu öffnen.
+                            In Windows gibt es eine Einstellung namens "Standard-Apps nach Dateityp auswählen", mit der du das ändern kannst.
+                        </p>
+                        <p>
+                            Alternativ kannst du Rechtsklick > "Öffnen mit" benutzen um die Datei mit Java zu öffnen, etwa so:
+                        </p>
+                        <p>
+                            <img src="https://wiki.wurstclient.net/_media/install_fabric_run_with_java.webp" alt="how to run the Fabric installer with Java">
+                            <ul>
+                                <li>Wenn du Java in der Liste nicht finden kannst, klicke unten auf "Anderes Programm auswählen".</li>
+                                <li>Je nachdem was du installiert hast, siehst du hier entweder "Java(TM)&nbsp;Platform&nbsp;SE&nbsp;binary" oder "OpenJDK&nbsp;Platform&nbsp;binary" (oder beides). Es ist egal, welche Java-Version du hier auswählst.</li>
+                                <li>Wenn du Java gar nicht finden kannst, ist es wahrscheinlich nicht installiert. In diesem Fall musst du erstmal <a href="https://www.youtube.com/watch?v=Wv0vPUwitJs" target="_blank" rel="nofollow">Java installieren</a> (englischsprachiges Video-Tutorial). (Der Author von diesem Video kann dir bei Wurst-Problemen nicht helfen. Wenn du Hilfe brauchst, <a href="/contact">frag mich</a>.)</li>
+                            </ul>
+                        </p>
+                    </details>
+                    <details class="padding5">
+                        <summary>Wenn ich versuche den Fabric-Installer zu starten, bekomme ich eine Fehlermeldung die sagt dass ich kein Java habe.</summary>
+                        <p>
+                            Das bedeutet (selbstverständlich) dass du kein Java installiert hast. Hier ist ein <a href="https://www.youtube.com/watch?v=Wv0vPUwitJs" target="_blank" rel="nofollow">Video das erklärt wie man Java installiert</a> (auf Englisch). (Der Author von diesem Video kann dir bei Wurst-Problemen nicht helfen. Wenn du Hilfe brauchst, <a href="/contact">frag mich</a>.)
+                        </p>
+                    </details>
                 </p>
             </li>
             <div class="padding5 no-padding-left no-padding-right"></div>
@@ -57,7 +78,14 @@ google_auto_ads: true
                     </ul>
                 </p>
             </li>
-            <div class="padding5 no-padding-left no-padding-right"></div>
+        </ol>
+	</div>
+</div>
+
+<div id="fabric-api" class="padding20 no-padding-left no-padding-right">
+	<div class="container">
+		<h2 class="text-normal">Schritt 2: Fabric-API installieren</h2>
+        <ol class="step-list">
             <li>
                 <p>
                     <a href="https://www.curseforge.com/minecraft/mc-mods/fabric-api/files/all" target="_blank" rel="nofollow">
@@ -90,7 +118,7 @@ google_auto_ads: true
                         <li>Um in deinen .minecraft-Ordner zu gelangen, öffne den Windows Explorer und gib dann Folgendes oben in die Adressleiste ein: <code>%appdata%/.minecraft</code></li>
                         <li>(Enter drücken nicht vergessen!)</li>
                         <li>Erstelle hier einen "mods"-Ordner, wenn der nicht schon existiert, und lege dann die Fabric-API-Datei hinein.</li>
-                        <li>(Wenn du Linux oder Mac benutzt, wirst du deinen .minecraft-Ordner woanders finden. Schau mal auf dem <a href="https://minecraft.gamepedia.com/.minecraft" target="_blank">Minecraft Wiki</a> nach, da findest du den genauen Pfad.)</li>
+                        <li>(Wenn du Linux oder Mac benutzt, wirst du deinen .minecraft-Ordner woanders finden. Schau mal auf dieser <a href="https://minecraft.fandom.com/de/wiki/.minecraft" target="_blank">Minecraft Wiki-Seite</a> nach, da findest du den genauen Pfad.)</li>
                     </ul>
                 </p>
             </li>
@@ -98,9 +126,9 @@ google_auto_ads: true
 	</div>
 </div>
 
-<div id="step2" class="padding20 no-padding-left no-padding-right">
+<div id="wurst" class="padding20 no-padding-left no-padding-right bg-grayLighter">
 	<div class="container">
-		<h2 class="text-normal">Schritt 2: Wurst installieren</h2>
+		<h2 class="text-normal">Schritt 3: Wurst installieren</h2>
         <ol class="step-list">
             <li>
                 <p>
@@ -131,9 +159,9 @@ google_auto_ads: true
 	</div>
 </div>
 
-<div id="step3" class="padding20 no-padding-left no-padding-right bg-grayLighter">
+<div id="launch" class="padding20 no-padding-left no-padding-right">
 	<div class="container">
-		<h2 class="text-normal">Schritt 3: Starte das Spiel</h2>
+		<h2 class="text-normal">Schritt 4: Starte das Spiel</h2>
         <ol class="step-list">
             <li>
                 <p>
