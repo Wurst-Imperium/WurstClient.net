@@ -16,10 +16,10 @@ google_auto_ads: true
         <ol class="step-list">
             <li>
                 <p>
-                    Download and run the <a href="https://fabricmc.net/use/" target="_blank" rel="nofollow">Fabric installer</a>.
+                    Download and run the <a href="https://fabricmc.net/use/installer/" target="_blank" rel="nofollow">Fabric installer</a>.
                 </p>
                 <p>
-                    <a href="https://fabricmc.net/use/" target="_blank" rel="nofollow">
+                    <a href="https://fabricmc.net/use/installer/" target="_blank" rel="nofollow">
                         <img src="https://wiki.wurstclient.net/_media/install_fabric_download.webp" alt="Fabric installer download instructions">
                     </a>
                 </p>
