@@ -110,7 +110,7 @@ google_auto_ads: true
             <div class="padding5 no-padding-left no-padding-right"></div>
             <li>
                 <p>
-                    <img src="https://user-images.githubusercontent.com/10100202/68168623-12e71700-ff72-11e9-9206-b82a254dbffc.png" alt=".minecraft/mods folder with Fabric API">
+                    <img src="https://wiki.wurstclient.net/_media/install_fabric_api_mods_folder.webp" alt=".minecraft/mods folder with Fabric API">
                 </p>
                 <p>
                     Platziere die Fabric-API-Datei in deinem <code>.minecraft/mods</code>-Ordner.
