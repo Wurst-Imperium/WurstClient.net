@@ -66,10 +66,12 @@ google_auto_ads: true
             <div class="padding5 no-padding-left no-padding-right"></div>
             <li>
                 <p>
+                    In the Fabric installer, select your Minecraft version and press "Install".
+                </p>
+                <p>
                     <img src="https://wiki.wurstclient.net/_media/install_use_fabric_installer.webp" alt="Fabric installer usage instructions">
                 </p>
                 <p>
-                    In the Fabric installer, select your Minecraft version and press "Install".
                     <ul>
                         <li>If you want to use snapshots, make sure that "Show snapshots" is checked first.</li>
                         <li>Leave "Select Install Location" at the default value. Changing this can sometimes cause problems.</li>
@@ -87,37 +89,82 @@ google_auto_ads: true
         <ol class="step-list">
             <li>
                 <p>
+                    Go to the <a href="https://www.curseforge.com/minecraft/mc-mods/fabric-api/files/all" target="_blank" rel="nofollow">Fabric API page</a> and select your Minecraft version at the top right.
+                </p>
+                <p>
                     <a href="https://www.curseforge.com/minecraft/mc-mods/fabric-api/files/all" target="_blank" rel="nofollow">
                         <img src="https://wiki.wurstclient.net/_media/install_fabric_api_version.webp" alt="Fabric API download instructions">
                     </a>
                 </p>
                 <p>
-                    Go to the <a href="https://www.curseforge.com/minecraft/mc-mods/fabric-api/files/all" target="_blank" rel="nofollow">Fabric API page</a> and select your Minecraft version at the top right.
+                    Then download the latest (top-most) version of Fabric API for that Minecraft version.
                 </p>
-            </li>
-            <div class="padding5 no-padding-left no-padding-right"></div>
-            <li>
                 <p>
                     <a href="https://www.curseforge.com/minecraft/mc-mods/fabric-api/files/all" target="_blank" rel="nofollow">
                         <img src="https://wiki.wurstclient.net/_media/install_fabric_api_version_2.webp" alt="more Fabric API download instructions">
                     </a>
                 </p>
                 <p>
-                    Then download the latest (top-most) version of the Fabric API for that Minecraft version.
+                    <h3>Troubleshooting</h3>
+                    <details class="padding5">
+                        <summary>I can't find the Fabric API download button.</summary>
+                        <p>
+                            Ahem...
+                        </p>
+                        <p>
+                            <img src="https://wiki.wurstclient.net/_media/install_fabric_api_download_button.webp" alt="lots of arrows pointing at the Fabric API download button :)">
+                        </p>
+                    </details>
+                    <details class="padding5">
+                        <summary>When I try to download Fabric API, Chrome warns me that the file "isn't commonly downloaded".</summary>
+                        <p>
+                            This can happen when a new version has just been released.
+                            It just means that you're one of the first people to download that specific version of Fabric API.
+                            You can safely ignore this warning and download the file anyways.
+                        </p>
+                    </details>
+                    <details class="padding5">
+                        <summary>My Fabric API file doesn't have the Java icon on it. It has a WinRAR logo instead.</summary>
+                        <p>
+                            Check the file extension. As long as it ends with <code>.jar</code>, everything is fine.
+                            It simply means that your computer is configured to open .jar files with WinRAR instead of Java.
+                        </p>
+                        <p>
+                            It doesn't matter for the Fabric API, since it's still a .jar file and will still work,
+                            but if you want to fix it there is a setting in Windows called "Choose default apps by file type" that lets you change this.
+                        </p>
+                    </details>
                 </p>
             </li>
             <div class="padding5 no-padding-left no-padding-right"></div>
             <li>
                 <p>
+                    Place the Fabric API in your <code>.minecraft/mods</code> folder.
+                </p>
+                <p>
                     <img src="https://wiki.wurstclient.net/_media/install_fabric_api_mods_folder.webp" alt=".minecraft/mods folder with Fabric API">
                 </p>
                 <p>
-                    Place the Fabric API in your <code>.minecraft/mods</code> folder.
-                    <ul>
-                        <li>To get to your .minecraft folder, open Windows Explorer and type/copy <code>%appdata%/.minecraft</code> into the address bar.</li>
-                        <li>Create a "mods" folder if it doesn't already exist, then place the Fabric API file inside.</li>
-                        <li>(If you are using Linux or Mac then the path to your .minecraft folder will be different. Check <a href="https://minecraft.gamepedia.com/.minecraft" target="_blank">this useful Minecraft Wiki page</a> to get the correct path for your OS.)</li>
-                    </ul>
+                    <h3>Troubleshooting</h3>
+                    <details class="padding5">
+                        <summary>Where do I find my <code>.minecraft</code> folder?</summary>
+                        <p>
+                            <b>Windows:</b> Open your Windows Explorer and type <code>%appdata%/.minecraft</code> into the address bar.<br>
+                            (Alternatively you can press Win+R and type in the same thing.)
+                        </p>
+                        <p>
+                            <b>Linux:</b> Open your File Explorer and type <code>~/.minecraft</code> into the address bar.
+                        </p>
+                        <p>
+                            <b>Mac:</b> Open your Finder and type <code>~/Library/Application Support/minecraft</code> into the address bar.
+                        </p>
+                    </details>
+                    <details class="padding5">
+                        <summary>There is no <code>mods</code> folder in my <code>.minecraft</code> folder.</summary>
+                        <p>
+                            No problem, just create the folder manually. Make sure you name it exactly <code>mods</code> (all lowercase).
+                        </p>
+                    </details>
                 </p>
             </li>
         </ol>
