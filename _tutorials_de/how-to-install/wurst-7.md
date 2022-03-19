@@ -35,7 +35,10 @@ google_auto_ads: true
                     <details class="padding5">
                         <summary>Wenn ich versuche den Fabric-Installer zu starten, passiert nichts.</summary>
                         <p>
-                            Das kann passieren wenn du kein Java installiert hast. Hier ist ein <a href="https://www.youtube.com/watch?v=Wv0vPUwitJs" target="_blank" rel="nofollow">Video das erklärt wie man Java installiert</a> (auf Englisch). (Der Author von diesem Video kann dir bei Wurst-Problemen nicht helfen. Wenn du Hilfe brauchst, <a href="/contact">frag mich</a>.)
+                            Das kann passieren wenn du kein Java installiert hast. Hier ist ein <a href="https://www.youtube.com/watch?v=Wv0vPUwitJs" target="_blank" rel="nofollow">Video das erklärt wie man Java installiert</a> (auf Englisch).
+                        </p>
+                        <p>
+                            (Der Author von diesem Video kann dir bei Wurst-Problemen nicht helfen. Wenn du Hilfe brauchst, <a href="/contact">frag mich</a>.)
                         </p>
                     </details>
                     <details class="padding5">
@@ -52,14 +55,18 @@ google_auto_ads: true
                             <ul>
                                 <li>Wenn du Java in der Liste nicht finden kannst, klicke unten auf "Anderes Programm auswählen".</li>
                                 <li>Je nachdem was du installiert hast, siehst du hier entweder "Java(TM)&nbsp;Platform&nbsp;SE&nbsp;binary" oder "OpenJDK&nbsp;Platform&nbsp;binary" (oder beides). Es ist egal, welche Java-Version du hier auswählst.</li>
-                                <li>Wenn du Java gar nicht finden kannst, ist es wahrscheinlich nicht installiert. In diesem Fall musst du erstmal <a href="https://www.youtube.com/watch?v=Wv0vPUwitJs" target="_blank" rel="nofollow">Java installieren</a> (englischsprachiges Video-Tutorial). (Der Author von diesem Video kann dir bei Wurst-Problemen nicht helfen. Wenn du Hilfe brauchst, <a href="/contact">frag mich</a>.)</li>
+                                <li>Wenn du Java gar nicht finden kannst, ist es wahrscheinlich nicht installiert. In diesem Fall musst du erstmal <a href="https://www.youtube.com/watch?v=Wv0vPUwitJs" target="_blank" rel="nofollow">Java installieren</a> (englischsprachiges Video-Tutorial).<br>
+                                (Der Author von diesem Video kann dir bei Wurst-Problemen nicht helfen. Wenn du Hilfe brauchst, <a href="/contact">frag mich</a>.)</li>
                             </ul>
                         </p>
                     </details>
                     <details class="padding5">
                         <summary>Wenn ich versuche den Fabric-Installer zu starten, bekomme ich eine Fehlermeldung die sagt dass ich kein Java habe.</summary>
                         <p>
-                            Das bedeutet (selbstverständlich) dass du kein Java installiert hast. Hier ist ein <a href="https://www.youtube.com/watch?v=Wv0vPUwitJs" target="_blank" rel="nofollow">Video das erklärt wie man Java installiert</a> (auf Englisch). (Der Author von diesem Video kann dir bei Wurst-Problemen nicht helfen. Wenn du Hilfe brauchst, <a href="/contact">frag mich</a>.)
+                            Das bedeutet (selbstverständlich) dass du kein Java installiert hast. Hier ist ein <a href="https://www.youtube.com/watch?v=Wv0vPUwitJs" target="_blank" rel="nofollow">Video das erklärt wie man Java installiert</a> (auf Englisch).
+                        </p>
+                        <p>
+                            (Der Author von diesem Video kann dir bei Wurst-Problemen nicht helfen. Wenn du Hilfe brauchst, <a href="/contact">frag mich</a>.)
                         </p>
                     </details>
                 </p>
@@ -124,17 +131,6 @@ google_auto_ads: true
                             Du kannst diese Warnung getrost ignorieren und die Datei einfach trotzdem herunterladen.
                         </p>
                     </details>
-                    <details class="padding5">
-                        <summary>Meine Fabric-API-Datei hat kein Java-Icon. Stattdessen ist da so ein WinRAR-Logo drauf.</summary>
-                        <p>
-                            Überprüfe die Dateiendung. Wenn die Datei in <code>.jar</code> endet, ist alles gut.
-                            Das bedeutet einfach, dass dein Computer darauf eingestellt ist, .jar-Dateien mit WinRAR statt Java zu öffnen.
-                        </p>
-                        <p>
-                            Das spielt für die Fabric API keine Rolle, da es immer noch eine .jar-Datei ist und weiterhin funktionieren wird,
-                            aber wenn dich das "falsche" Icon stört gibt es in Windows eine Einstellung namens "Standard-Apps nach Dateityp auswählen", mit der du das ändern kannst.
-                        </p>
-                    </details>
                 </p>
             </li>
             <div class="padding5 no-padding-left no-padding-right"></div>
@@ -166,6 +162,17 @@ google_auto_ads: true
                             Kein Problem, du kannst den Ordner einfach selbst erstellen. Pass auf das du den Ordner genau <code>mods</code> nennst (alles kleingeschrieben, nicht "Mods").
                         </p>
                     </details>
+                    <details class="padding5">
+                        <summary>Meine Fabric-API-Datei hat kein Java-Icon. Stattdessen ist da so ein WinRAR-Logo drauf.</summary>
+                        <p>
+                            Überprüfe die Dateiendung. Wenn die Datei in <code>.jar</code> endet, ist alles gut.
+                            Das bedeutet einfach, dass dein Computer darauf eingestellt ist, .jar-Dateien mit WinRAR statt Java zu öffnen.
+                        </p>
+                        <p>
+                            Das spielt für die Fabric API keine Rolle, da es immer noch eine .jar-Datei ist und weiterhin funktionieren wird,
+                            aber wenn dich das "falsche" Icon stört gibt es in Windows eine Einstellung namens "Standard-Apps nach Dateityp auswählen", mit der du das ändern kannst.
+                        </p>
+                    </details>
                 </p>
             </li>
         </ol>
@@ -178,27 +185,66 @@ google_auto_ads: true
         <ol class="step-list">
             <li>
                 <p>
+                    <a href="/download/" target="_blank">Lade den Wurst Client herunter</a>, wenn du das nicht schon getan hast.
+                    Pass auf dass du die neuste Version hast, die mit deiner Minecraft-Version kompatibel ist.
+                </p>
+                <p>
                     <a href="/download/" target="_blank">
-                        <img src="https://cloud.githubusercontent.com/assets/10100202/24450367/ef3c0796-147a-11e7-99a9-404bc0deeb3d.jpg" alt="Wurst Client download instructions">
+                        <img src="https://wiki.wurstclient.net/_media/install_wurst_download.webp" alt="Wurst Client download instructions">
                     </a>
                 </p>
                 <p>
-                    Lade den <a href="/download/" target="_blank">Wurst Client</a> herunter, wenn du das nicht schon getan hast.
-                    <ul>
-                        <li>Pass auf dass du die neuste Version hast, die mit deiner Minecraft-Version kompatibel ist.</li>
-                    </ul>
+                    <h3>Problembehandlung</h3>
+                    <details class="padding5">
+                        <summary>Wenn ich versuche den Wurst Client herunterzuladen, warnt mich Chrome dass die Datei "selten heruntergeladen" wird.</summary>
+                        <p>
+                            Das kann passieren wenn gerade eine neue Version released wurde.
+                            Es bedeutet einfach nur, dass du einer der ersten Leute bist, die genau diese Version von Wurst herunterladen.
+                            Du kannst diese Warnung getrost ignorieren und die Datei einfach trotzdem herunterladen.
+                        </p>
+                    </details>
                 </p>
             </li>
             <div class="padding5 no-padding-left no-padding-right"></div>
             <li>
                 <p>
-                    <img src="https://user-images.githubusercontent.com/10100202/62378000-1ec2d780-b544-11e9-97e2-cf9827900993.png" alt=".minecraft/mods folder with Fabric and Wurst">
+                    Platziere die Wurst-Client-Datei in deinem <code>.minecraft/mods</code>-Ordner.
                 </p>
                 <p>
-                    Lege auch die Wurst-Client-Datei in deinem <code>.minecraft/mods</code>-Ordner.
-                    <ul>
-                        <li>Siehe oben, wie man diesen Ordner findet. Es ist der selbe Ordner wo du vorhin auch die Fabric-API hingetan hast.</li>
-                    </ul>
+                    <img src="https://wiki.wurstclient.net/_media/install_wurst_mods_folder.webp" alt=".minecraft/mods folder with Fabric and Wurst">
+                </p>
+                <p>
+                    <h3>Problembehandlung</h3>
+                    <details class="padding5">
+                        <summary>Wo finde ich meinen <code>.minecraft</code>-Ordner?</summary>
+                        <p>
+                            <b>Windows:</b> Öffne den Windows Explorer und gib dann <code>%appdata%/.minecraft</code> oben in die Adressleiste ein.<br>
+                            (Alternativ kannst du auch Win+R drücken das da eingeben.)
+                        </p>
+                        <p>
+                            <b>Linux:</b> Öffne den File Explorer und gib dann <code>~/.minecraft</code> in die Adressleiste ein.
+                        </p>
+                        <p>
+                            <b>Mac:</b> Öffne den Finder und gib dann <code>~/Library/Application Support/minecraft</code> in die Adressleiste ein.
+                        </p>
+                    </details>
+                    <details class="padding5">
+                        <summary>Da ist kein <code>mods</code>-Ordner in meinem <code>.minecraft</code>-Ordner.</summary>
+                        <p>
+                            Du hast den vorherigen Schritt übersprungen. Du solltest <a href="#fabric-api">zurück zu Schritt 2 gehen</a> und erstmal die Fabric API installieren.
+                        </p>
+                    </details>
+                    <details class="padding5">
+                        <summary>Meine Wurst-Client-Datei hat kein Java-Icon. Stattdessen ist da so ein WinRAR-Logo drauf.</summary>
+                        <p>
+                            Überprüfe die Dateiendung. Wenn die Datei in <code>.jar</code> endet, ist alles gut.
+                            Das bedeutet einfach, dass dein Computer darauf eingestellt ist, .jar-Dateien mit WinRAR statt Java zu öffnen.
+                        </p>
+                        <p>
+                            Das spielt für diese Datei keine Rolle, da es immer noch eine .jar-Datei ist und weiterhin funktionieren wird,
+                            aber wenn dich das "falsche" Icon stört gibt es in Windows eine Einstellung namens "Standard-Apps nach Dateityp auswählen", mit der du das ändern kannst.
+                        </p>
+                    </details>
                 </p>
             </li>
         </ol>

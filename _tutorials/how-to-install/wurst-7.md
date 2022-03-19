@@ -34,7 +34,10 @@ google_auto_ads: true
                     <details class="padding5">
                         <summary>When I try to run the Fabric installer, nothing happens.</summary>
                         <p>
-                            This can happen when you don't have Java installed. Here is a <a href="https://www.youtube.com/watch?v=Wv0vPUwitJs" target="_blank" rel="nofollow">video on how to install Java</a>. (The author of the video cannot help you with Wurst-related questions. If you need help, <a href="/contact">contact me</a> instead.)
+                            This can happen when you don't have Java installed. Here is a <a href="https://www.youtube.com/watch?v=Wv0vPUwitJs" target="_blank" rel="nofollow">video on how to install Java</a>.
+                        </p>
+                        <p>
+                            (The author of the video cannot help you with Wurst-related questions. If you need help, <a href="/contact">contact me</a> instead.)
                         </p>
                     </details>
                     <details class="padding5">
@@ -51,14 +54,18 @@ google_auto_ads: true
                             <ul>
                                 <li>If you don't see Java in the list, select "Choose another app" at the bottom.</li>
                                 <li>Depending on your system, you will see either "Java(TM)&nbsp;Platform&nbsp;SE&nbsp;binary", "OpenJDK&nbsp;Platform&nbsp;binary", or both. It doesn't matter which one you use.</li>
-                                <li>If you can't find Java at all, you need to <a href="https://www.youtube.com/watch?v=Wv0vPUwitJs" target="_blank" rel="nofollow">install Java</a> first. (The author of the video cannot help you with Wurst-related questions. If you need help, <a href="/contact">contact me</a> instead.)</li>
+                                <li>If you can't find Java at all, you need to <a href="https://www.youtube.com/watch?v=Wv0vPUwitJs" target="_blank" rel="nofollow">install Java</a> first.<br>
+                                (The author of the video cannot help you with Wurst-related questions. If you need help, <a href="/contact">contact me</a> instead.)</li>
                             </ul>
                         </p>
                     </details>
                     <details class="padding5">
                         <summary>When I try to run the Fabric installer, I get a message saying I don't have Java.</summary>
                         <p>
-                            Unsurprisingly, this means you don't have Java installed. Here is a <a href="https://www.youtube.com/watch?v=Wv0vPUwitJs" target="_blank" rel="nofollow">video on how to install Java</a>. (The author of the video cannot help you with Wurst-related questions. If you need help, <a href="/contact">contact me</a> instead.)
+                            Unsurprisingly, this means you don't have Java installed. Here is a <a href="https://www.youtube.com/watch?v=Wv0vPUwitJs" target="_blank" rel="nofollow">video on how to install Java</a>.
+                        </p>
+                        <p>
+                            (The author of the video cannot help you with Wurst-related questions. If you need help, <a href="/contact">contact me</a> instead.)
                         </p>
                     </details>
                 </p>
@@ -123,17 +130,6 @@ google_auto_ads: true
                             You can safely ignore this warning and download the file anyways.
                         </p>
                     </details>
-                    <details class="padding5">
-                        <summary>My Fabric API file doesn't have the Java icon on it. It has a WinRAR logo instead.</summary>
-                        <p>
-                            Check the file extension. As long as it ends with <code>.jar</code>, everything is fine.
-                            It simply means that your computer is configured to open .jar files with WinRAR instead of Java.
-                        </p>
-                        <p>
-                            It doesn't matter for the Fabric API, since it's still a .jar file and will still work,
-                            but if you want to fix it there is a setting in Windows called "Choose default apps by file type" that lets you change this.
-                        </p>
-                    </details>
                 </p>
             </li>
             <div class="padding5 no-padding-left no-padding-right"></div>
@@ -165,6 +161,17 @@ google_auto_ads: true
                             No problem, just create the folder manually. Make sure you name it exactly <code>mods</code> (all lowercase).
                         </p>
                     </details>
+                    <details class="padding5">
+                        <summary>My Fabric API file doesn't have the Java icon on it. It has a WinRAR logo instead.</summary>
+                        <p>
+                            Check the file extension. As long as it ends with <code>.jar</code>, everything is fine.
+                            It simply means that your computer is configured to open .jar files with WinRAR instead of Java.
+                        </p>
+                        <p>
+                            It doesn't matter for the Fabric API, since it's still a .jar file and will still work,
+                            but if you want to fix it there is a setting in Windows called "Choose default apps by file type" that lets you change this.
+                        </p>
+                    </details>
                 </p>
             </li>
         </ol>
@@ -177,27 +184,66 @@ google_auto_ads: true
         <ol class="step-list">
             <li>
                 <p>
+                    <a href="/download/" target="_blank">Download the Wurst Client</a>, if you haven't already.
+                    Make sure to get the latest version that is compatible with your Minecraft version.
+                </p>
+                <p>
                     <a href="/download/" target="_blank">
-                        <img src="https://cloud.githubusercontent.com/assets/10100202/24450367/ef3c0796-147a-11e7-99a9-404bc0deeb3d.jpg" alt="Wurst Client download instructions">
+                        <img src="https://wiki.wurstclient.net/_media/install_wurst_download.webp" alt="Wurst Client download instructions">
                     </a>
                 </p>
                 <p>
-                    Download the <a href="/download/" target="_blank">Wurst Client</a>, if you haven't already.
-                    <ul>
-                        <li>Again, use the latest version and make sure that it matches your Minecraft version.</li>
-                    </ul>
+                    <h3>Troubleshooting</h3>
+                    <details class="padding5">
+                        <summary>When I try to download Wurst, Chrome warns me that the file "isn't commonly downloaded".</summary>
+                        <p>
+                            This can happen when a new version has just been released.
+                            It just means that you're one of the first people to download that specific version of Wurst.
+                            You can safely ignore this warning and download the file anyways.
+                        </p>
+                    </details>
                 </p>
             </li>
             <div class="padding5 no-padding-left no-padding-right"></div>
             <li>
                 <p>
-                    <img src="https://user-images.githubusercontent.com/10100202/62378000-1ec2d780-b544-11e9-97e2-cf9827900993.png" alt=".minecraft/mods folder with Fabric and Wurst">
+                    Place the Wurst Client in your <code>.minecraft/mods</code> folder.
                 </p>
                 <p>
-                    Add Wurst to your <code>.minecraft/mods</code> folder.
-                    <ul>
-                        <li>See above for how to find this folder. It is the same folder where you placed the Fabric API earlier.</li>
-                    </ul>
+                    <img src="https://wiki.wurstclient.net/_media/install_wurst_mods_folder.webp" alt=".minecraft/mods folder with Fabric and Wurst">
+                </p>
+                <p>
+                    <h3>Troubleshooting</h3>
+                    <details class="padding5">
+                        <summary>Where do I find my <code>.minecraft</code> folder?</summary>
+                        <p>
+                            <b>Windows:</b> Open your Windows Explorer and type <code>%appdata%/.minecraft</code> into the address bar.<br>
+                            (Alternatively you can press Win+R and type in the same thing.)
+                        </p>
+                        <p>
+                            <b>Linux:</b> Open your File Explorer and type <code>~/.minecraft</code> into the address bar.
+                        </p>
+                        <p>
+                            <b>Mac:</b> Open your Finder and type <code>~/Library/Application Support/minecraft</code> into the address bar.
+                        </p>
+                    </details>
+                    <details class="padding5">
+                        <summary>There is no <code>mods</code> folder in my <code>.minecraft</code> folder.</summary>
+                        <p>
+                            You have skipped the previous step. You should <a href="#fabric-api">go back to step 2</a> and install the Fabric API first.
+                        </p>
+                    </details>
+                    <details class="padding5">
+                        <summary>My Wurst Client file doesn't have the Java icon on it. It has a WinRAR logo instead.</summary>
+                        <p>
+                            Check the file extension. As long as it ends with <code>.jar</code>, everything is fine.
+                            It simply means that your computer is configured to open .jar files with WinRAR instead of Java.
+                        </p>
+                        <p>
+                            It doesn't matter for this file, since it's still a .jar file and will still work,
+                            but if you want to fix it there is a setting in Windows called "Choose default apps by file type" that lets you change this.
+                        </p>
+                    </details>
                 </p>
             </li>
         </ol>
