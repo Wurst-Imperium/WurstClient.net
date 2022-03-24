@@ -10,6 +10,13 @@ google_auto_ads: true
 ---
 {% include title.html l1 = page.title l2 = page.description %}
 
+<div class="padding20 no-padding-left no-padding-right bg-amber">
+	<div class="container text-accent">
+        <b>Achtung:</b> In der deutschen Übersetzung dieser Seite fehlen momentan einige Details.
+        Schau bei Problemen am Besten in der englischen Originalversion nach.
+    </div>
+</div>
+
 <div id="fabric-loader" class="padding20 no-padding-left no-padding-right bg-grayLighter">
 	<div class="container">
         {% include lang-select.html %}
