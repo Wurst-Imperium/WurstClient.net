@@ -356,7 +356,7 @@ google_auto_ads: true
                 </p>
                 <h3>Troubleshooting</h3>
                 <details class="padding5">
-                    <summary>OK great, but now how do I open Wurst's GUI?</summary>
+                    <summary id="open-gui">OK great, but now how do I open Wurst's GUI?</summary>
                     <p>
                         Wurst actually has three different GUIs that you can choose from:
                     </p>
@@ -383,7 +383,7 @@ google_auto_ads: true
                     </p>
                 </details>
                 <details class="padding5">
-                    <summary>I see an error message saying "Incompatible mod set!" or "Failed to launch!".</summary>
+                    <summary id="launch-fabric-error">I see an error message saying "Incompatible mod set!" or "Failed to launch!".</summary>
                     <p>
                         Generally speaking, this means you didn't follow the tutorial properly.
                         Fabric's error messages are usually really good at explaining what's wrong and the "potential" solution that it gives you is almost always the correct solution.
@@ -463,7 +463,7 @@ google_auto_ads: true
                     </div>
                 </details>
                 <details class="padding5">
-                    <summary>I see an error message saying "An unexpected issue occurred and the game has crashed".</summary>
+                    <summary id="launch-just-crashes">I see an error message saying "An unexpected issue occurred and the game has crashed".</summary>
                     <p>
                         Like "Incompatible mod set!", this error message usually means that you didn't follow the tutorial properly.
                         Unfortunately the official Minecraft launcher sucks at providing useful error messages, so the usual "Exit Code: 1" can mean almost anything.
