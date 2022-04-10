@@ -82,83 +82,65 @@ google_auto_ads: true
 
 			{% elsif page.fabric %}
 
-				{% if use-admaven %}
-					<div class="padding10 no-padding-left no-padding-right">
-						<h3 title="NOT an installer!">Wurst Client Fabric Mod <span class="tag fg-white bg-grayLight" style="cursor: help;vertical-align: baseline;">.JAR</span></h3>
-						{% for mcversion in page.minecraft-versions %}
-							<h4 class="no-margin-bottom">for Minecraft {% unless site.mcversions[mcversion] %}{{ mcversion }}{% else %}{{ site.mcversions[mcversion] }}{% endunless %}</h4>
-							<p class="no-margin-top">
-								{% capture version %}v{{ page.wurst-version }} MC{{ mcversion }}{% endcapture %}
-								{% capture basepath %}v{{ page.wurst-version }}/Wurst-Client-v{{ page.wurst-version }}-MC{{ mcversion | replace: " ", "-" }}{% endcapture %}
-								{% capture mcx2base %}https://github.com/Wurst-Imperium/Wurst-MCX2/releases/download/{{ basepath }}{% endcapture %}
-								
-								{% capture directlink %}{{ mcx2base }}.jar{% endcapture %}
-								{% capture srclink %}{{ mcx2base }}-sources.jar{% endcapture %}
-								{% capture devlink %}{{ mcx2base }}-dev.jar{% endcapture %}
-								{% capture srcdevlink %}{{ mcx2base }}-sources-dev.jar{% endcapture %}
-								
-								{% capture adlink %}https://files.wurstimperium.net/?version={{ version | urlencode }}&path={{ basepath }}.jar{% endcapture %}
-								
-								{% if mcversion contains "w" or mcversion contains "r" or page.no-admaven contains mcversion %}
-								<a class="tile inline-block no-float bg-grayDark command-button primary no-border no-margin-left" href="{{ directlink }}" rel="nofollow" target="_blank" style="width: auto;height: auto;">
-									<span class="icon mif-file-download"></span>
-									Wurst Client {{ version }}
-									<small>direct link</small>
-								</a>
-								<span class="inline-block margin20 no-margin-right">
-									<a href="{{ srclink }}" rel="nofollow" target="_blank">(sources)</a>
-								</span>
-								<span class="inline-block margin20 no-margin-right">
-									<a href="{{ devlink }}" rel="nofollow" target="_blank">(dev)</a>
-								</span>
-								<span class="inline-block margin20 no-margin-right">
-									<a href="{{ srcdevlink }}" rel="nofollow" target="_blank">(sources-dev)</a>
-								</span>
-								{% else %}
-								<a class="tile inline-block no-float bg-grayDark command-button primary no-border no-margin-left" href="{{ adlink }}" rel="nofollow" target="_blank" style="width: auto;height: auto;">
-									<span class="icon mif-file-download"></span>
-									Wurst Client {{ version }}
-									<small>ad-supported link</small>
-								</a>
-								<span class="inline-block margin20 no-margin-right">
-									<a href="{{ directlink }}" rel="nofollow" target="_blank">(direct link)</a>
-								</span>
-								<span class="inline-block margin20 no-margin-right">
-									<a href="{{ srclink }}" rel="nofollow" target="_blank">(sources)</a>
-								</span>
-								<span class="inline-block margin20 no-margin-right">
-									<a href="{{ devlink }}" rel="nofollow" target="_blank">(dev)</a>
-								</span>
-								<span class="inline-block margin20 no-margin-right">
-									<a href="{{ srcdevlink }}" rel="nofollow" target="_blank">(sources-dev)</a>
-								</span>
-								{% endif %}
-
-								{% if page.fabric-api %}
-								<span class="inline-block margin20 no-margin-right">
-									<a href="{{ page.fabric-api[mcversion] }}" target="_blank" rel="nofollow">(Fabric API)</a>
-								</span>
-								{% endif %}
-							</p>
-						{% endfor %}
-					</div>
-				{% else %}
-					<div class="padding10 no-padding-left no-padding-right">
-						<h3 title="NOT an installer!">Wurst Client Fabric Mod <span class="tag fg-white bg-grayLight" style="cursor: help;vertical-align: baseline;">.JAR</span></h3>
-						<p><a href="https://www.curseforge.com/minecraft/mc-mods/fabric-api" target="_blank" rel="nofollow"><strong><img src="https://user-images.githubusercontent.com/10100202/93722968-0aec9180-fb9b-11ea-9983-bc0fc51b47ab.png" alt="Requires Fabric API" width="149" height="50"></strong></a></p>
-						{% for mcversion in page.minecraft-versions %}
-							<a class="tile inline-block no-float bg-grayDark command-button primary no-border" href="https://github.com/Wurst-Imperium/Wurst-MCX2/releases/download/v{{ page.wurst-version }}/Wurst-Client-v{{ page.wurst-version }}-MC{{ mcversion | replace: " ", "-" }}.jar" rel="nofollow" target="_blank" style="width: auto;height: auto;">
+				<div class="padding10 no-padding-left no-padding-right">
+					<h3 title="NOT an installer!">Wurst Client Fabric Mod <span class="tag fg-white bg-grayLight" style="cursor: help;vertical-align: baseline;">.JAR</span></h3>
+					{% for mcversion in page.minecraft-versions %}
+						<h4 class="no-margin-bottom">for Minecraft {% unless site.mcversions[mcversion] %}{{ mcversion }}{% else %}{{ site.mcversions[mcversion] }}{% endunless %}</h4>
+						<p class="no-margin-top">
+							{% capture version %}v{{ page.wurst-version }} MC{{ mcversion }}{% endcapture %}
+							{% capture basepath %}v{{ page.wurst-version }}/Wurst-Client-v{{ page.wurst-version }}-MC{{ mcversion | replace: " ", "-" }}{% endcapture %}
+							{% capture mcx2base %}https://github.com/Wurst-Imperium/Wurst-MCX2/releases/download/{{ basepath }}{% endcapture %}
+							
+							{% capture directlink %}{{ mcx2base }}.jar{% endcapture %}
+							{% capture srclink %}{{ mcx2base }}-sources.jar{% endcapture %}
+							{% capture devlink %}{{ mcx2base }}-dev.jar{% endcapture %}
+							{% capture srcdevlink %}{{ mcx2base }}-sources-dev.jar{% endcapture %}
+							
+							{% capture adlink %}https://files.wurstimperium.net/?version={{ version | urlencode }}&path={{ basepath }}.jar{% endcapture %}
+							
+							{% if mcversion contains "w" or mcversion contains "r" or page.no-admaven contains mcversion or use-admaven == false %}
+							<a class="tile inline-block no-float bg-grayDark command-button primary no-border no-margin-left" href="{{ directlink }}" rel="nofollow" target="_blank" style="width: auto;height: auto;">
 								<span class="icon mif-file-download"></span>
-								Wurst Client v{{ page.wurst-version }} MC{{ mcversion }}
-								<small>for Minecraft {% unless site.mcversions[mcversion] %}{{ mcversion }}{% else %}{{ site.mcversions[mcversion] }}{% endunless %}</small>
+								Wurst Client {{ version }}
+								<small>direct link</small>
 							</a>
-							{% if page.fabric-api %}
-								<a href="{{ page.fabric-api[mcversion] }}" target="_blank" rel="nofollow">(Fabric API for MC {{ mcversion }})</a>
+							<span class="inline-block margin20 no-margin-right">
+								<a href="{{ srclink }}" rel="nofollow" target="_blank">(sources)</a>
+							</span>
+							<span class="inline-block margin20 no-margin-right">
+								<a href="{{ devlink }}" rel="nofollow" target="_blank">(dev)</a>
+							</span>
+							<span class="inline-block margin20 no-margin-right">
+								<a href="{{ srcdevlink }}" rel="nofollow" target="_blank">(sources-dev)</a>
+							</span>
+							{% else %}
+							<a class="tile inline-block no-float bg-grayDark command-button primary no-border no-margin-left" href="{{ adlink }}" rel="nofollow" target="_blank" style="width: auto;height: auto;">
+								<span class="icon mif-file-download"></span>
+								Wurst Client {{ version }}
+								<small>ad-supported link</small>
+							</a>
+							<span class="inline-block margin20 no-margin-right">
+								<a href="{{ directlink }}" rel="nofollow" target="_blank">(direct link)</a>
+							</span>
+							<span class="inline-block margin20 no-margin-right">
+								<a href="{{ srclink }}" rel="nofollow" target="_blank">(sources)</a>
+							</span>
+							<span class="inline-block margin20 no-margin-right">
+								<a href="{{ devlink }}" rel="nofollow" target="_blank">(dev)</a>
+							</span>
+							<span class="inline-block margin20 no-margin-right">
+								<a href="{{ srcdevlink }}" rel="nofollow" target="_blank">(sources-dev)</a>
+							</span>
 							{% endif %}
-							<br>
-						{% endfor %}
-					</div>
-				{% endif %}
+
+							{% if page.fabric-api %}
+							<span class="inline-block margin20 no-margin-right">
+								<a href="{{ page.fabric-api[mcversion] }}" target="_blank" rel="nofollow">(Fabric API)</a>
+							</span>
+							{% endif %}
+						</p>
+					{% endfor %}
+				</div>
 
 			{% else %}
 
