@@ -383,7 +383,7 @@ google_auto_ads: true
                     </p>
                 </details>
                 <details class="padding5">
-                    <summary id="launch-fabric-error">I see an error message saying "Incompatible mod set!" or "Failed to launch!".</summary>
+                    <summary id="launch-fabric-error">I see an error message saying <code>Incompatible mod set!</code> or <code>Failed to launch!</code>.</summary>
                     <p>
                         Generally speaking, this means you didn't follow the tutorial properly.
                         Fabric's error messages are usually really good at explaining what's wrong and the "potential" solution that it gives you is almost always the correct solution.
@@ -463,7 +463,26 @@ google_auto_ads: true
                     </div>
                 </details>
                 <details class="padding5">
-                    <summary id="launch-just-crashes">I see an error message saying "An unexpected issue occurred and the game has crashed".</summary>
+                    <summary id="launch-error-sources">I see an error message saying <code>Uncaught exception in thread "main"</code>.</summary>
+                    <p>
+                        Generally speaking, this means you didn't follow the tutorial properly.
+                    </p>
+                    <p>
+                        <img src="https://wiki.wurstclient.net/_media/install_error_wurst_sources.webp" alt="the error you get when you put raw source code into your mods folder">
+                    </p>
+                    <p>
+                        If the error message contains <code>MixinApplyError: Mixin ... from mod [wurst] FAILED during PREPARE</code>, then you have placed the "-sources.jar" file in your mods folder instead of using the normal, compiled version of Wurst.
+                    </p>
+                    <p>
+                        <img src="https://wiki.wurstclient.net/_media/install_error_wurst_sources_folder.webp" alt=".minecraft/mods folder with the source code of Wurst, which will not work">
+                    </p>
+                    <p>
+                        You should <a href="#wurst">go back to step 3</a> and install the normal, compiled version of Wurst without any "sources" or "dev" at the end.
+                        <a href="https://forms.gle/zgvde4m1TBpDM9Vq8" target="_blank">Also, I have some questions for you...</a>
+                    </p>
+                </details>
+                <details class="padding5">
+                    <summary id="launch-just-crashes">I see an error message saying <code>An unexpected issue occurred and the game has crashed</code>.</summary>
                     <p>
                         Like "Incompatible mod set!", this error message usually means that you didn't follow the tutorial properly.
                         Unfortunately the official Minecraft launcher sucks at providing useful error messages, so the usual "Exit Code: 1" can mean almost anything.
