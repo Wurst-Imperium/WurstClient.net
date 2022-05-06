@@ -20,7 +20,7 @@ google_auto_ads: true
                 </p>
                 <p>
                     <a href="https://fabricmc.net/use/installer/" target="_blank" rel="nofollow">
-                        <img src="https://wiki.wurstclient.net/_media/install_fabric_download.webp" alt="Fabric installer download instructions">
+                        <img src="https://images.wurstclient.net/_media/install_fabric_download.webp" alt="Fabric installer download instructions">
                     </a>
                 </p>
                 <h3>Troubleshooting</h3>
@@ -49,7 +49,7 @@ google_auto_ads: true
                         Alternatively, you can also use "right click" > "open with" to open the file with Java, like so:<br>
                     </p>
                     <p>
-                        <img src="https://wiki.wurstclient.net/_media/install_fabric_run_with_java.webp" alt="how to run the Fabric installer with Java">
+                        <img src="https://images.wurstclient.net/_media/install_fabric_run_with_java.webp" alt="how to run the Fabric installer with Java">
                         <ul>
                             <li>If you don't see Java in the list, select "Choose another app" at the bottom.</li>
                             <li>Depending on your system, you will see either "Java(TM)&nbsp;Platform&nbsp;SE&nbsp;binary", "OpenJDK&nbsp;Platform&nbsp;binary", or both. It doesn't matter which one you use.</li>
@@ -74,7 +74,7 @@ google_auto_ads: true
                     In the Fabric installer, select your Minecraft version and press "Install".
                 </p>
                 <p>
-                    <img src="https://wiki.wurstclient.net/_media/install_use_fabric_installer.webp" alt="Fabric installer usage instructions">
+                    <img src="https://images.wurstclient.net/_media/install_use_fabric_installer.webp" alt="Fabric installer usage instructions">
                 </p>
                 <p>
                     <ul>
@@ -98,7 +98,7 @@ google_auto_ads: true
                 </p>
                 <p>
                     <a href="https://www.curseforge.com/minecraft/mc-mods/fabric-api/files/all" target="_blank" rel="nofollow">
-                        <img src="https://wiki.wurstclient.net/_media/install_fabric_api_version.webp" alt="Fabric API download instructions">
+                        <img src="https://images.wurstclient.net/_media/install_fabric_api_version.webp" alt="Fabric API download instructions">
                     </a>
                 </p>
                 <p>
@@ -106,7 +106,7 @@ google_auto_ads: true
                 </p>
                 <p>
                     <a href="https://www.curseforge.com/minecraft/mc-mods/fabric-api/files/all" target="_blank" rel="nofollow">
-                        <img src="https://wiki.wurstclient.net/_media/install_fabric_api_version_2.webp" alt="more Fabric API download instructions">
+                        <img src="https://images.wurstclient.net/_media/install_fabric_api_version_2.webp" alt="more Fabric API download instructions">
                     </a>
                 </p>
                 <h3>Troubleshooting</h3>
@@ -116,7 +116,7 @@ google_auto_ads: true
                         Ahem...
                     </p>
                     <p>
-                        <img src="https://wiki.wurstclient.net/_media/install_fabric_api_download_button.webp" alt="lots of arrows pointing at the Fabric API download button :)">
+                        <img src="https://images.wurstclient.net/_media/install_fabric_api_download_button.webp" alt="lots of arrows pointing at the Fabric API download button :)">
                     </p>
                 </details>
                 <details class="padding5">
@@ -134,7 +134,7 @@ google_auto_ads: true
                     Place the Fabric API in your <code>.minecraft/mods</code> folder.
                 </p>
                 <p>
-                    <img src="https://wiki.wurstclient.net/_media/install_fabric_api_mods_folder.webp" alt=".minecraft/mods folder with Fabric API">
+                    <img src="https://images.wurstclient.net/_media/install_fabric_api_mods_folder.webp" alt=".minecraft/mods folder with Fabric API">
                 </p>
                 <h3>Troubleshooting</h3>
                 <details class="padding5">
@@ -183,7 +183,7 @@ google_auto_ads: true
                 </p>
                 <p>
                     <a href="/download/" target="_blank">
-                        <img src="https://wiki.wurstclient.net/_media/install_wurst_download.webp" alt="Wurst Client download instructions">
+                        <img src="https://images.wurstclient.net/_media/install_wurst_download.webp" alt="Wurst Client download instructions">
                     </a>
                 </p>
                 <h3>Troubleshooting</h3>
@@ -202,7 +202,7 @@ google_auto_ads: true
                     Place the Wurst Client in your <code>.minecraft/mods</code> folder.
                 </p>
                 <p>
-                    <img src="https://wiki.wurstclient.net/_media/install_wurst_mods_folder.webp" alt=".minecraft/mods folder with Fabric and Wurst">
+                    <img src="https://images.wurstclient.net/_media/install_wurst_mods_folder.webp" alt=".minecraft/mods folder with Fabric and Wurst">
                 </p>
                 <h3>Troubleshooting</h3>
                 <details class="padding5">
@@ -249,7 +249,7 @@ google_auto_ads: true
                     In the Minecraft Launcher, open the <code>Installations</code> tab and then launch your new <code>fabric-loader-...</code> installation.
                 </p>
                 <p>
-                    <img src="https://wiki.wurstclient.net/_media/install_press_play.webp" alt="how to launch a modded fabric profile">
+                    <img src="https://images.wurstclient.net/_media/install_press_play.webp" alt="how to launch a modded fabric profile">
                 </p>
                 <h3>Troubleshooting</h3>
                 <details class="padding5">
@@ -264,7 +264,7 @@ google_auto_ads: true
                         You can safely disable these warnings and launch the game.
                     </p>
                     <p>
-                        <img src="https://wiki.wurstclient.net/_media/install_safety_nonsense.webp" alt="how to disable the Minecraft launcher's incredibly stupid 'player safety' warning">
+                        <img src="https://images.wurstclient.net/_media/install_safety_nonsense.webp" alt="how to disable the Minecraft launcher's incredibly stupid 'player safety' warning">
                     </p>
                     <p>
                         Or alternatively, switch to a <a href="https://multimc.org/" target="_blank">better launcher</a> that respects your freedom and doesn't lie about safety.
@@ -276,7 +276,7 @@ google_auto_ads: true
                         First make sure that the "Modded" checkbox is enabled. Modded installations like Fabric are invisible without it.
                     </p>
                     <p>
-                        <img src="https://wiki.wurstclient.net/_media/install_modded_checkbox.webp" alt='where to find the "modded" checkbox in the Minecraft launcher'>
+                        <img src="https://images.wurstclient.net/_media/install_modded_checkbox.webp" alt='where to find the "modded" checkbox in the Minecraft launcher'>
                     </p>
                     <p>
                         If you already had the Minecraft launcher open while you were installing Fabric (Loader), it is possible that you need to restart the Minecraft Launcher to make it "realize" that there is a new installation.
@@ -293,7 +293,7 @@ google_auto_ads: true
                         The installer won't complain that you already did this.
                     </p>
                     <p>
-                        <img src="https://wiki.wurstclient.net/_media/install_use_fabric_installer.webp" alt="Fabric installer usage instructions">
+                        <img src="https://images.wurstclient.net/_media/install_use_fabric_installer.webp" alt="Fabric installer usage instructions">
                     </p>
                 </details>
                 <details class="padding5">
@@ -308,7 +308,7 @@ google_auto_ads: true
                         First press the "New installation" button.
                     </p>
                     <p>
-                        <img src="https://wiki.wurstclient.net/_media/install_new_profile.webp" alt='where to find the "new installation" button in the Minecraft launcher'>
+                        <img src="https://images.wurstclient.net/_media/install_new_profile.webp" alt='where to find the "new installation" button in the Minecraft launcher'>
                     </p>
                     <p>
                         Then change <code>VERSION</code> to <code>release fabric-loader-...</code>. You can also customize the installation's name and icon if you like. When done, press "Create" to save your installation.
@@ -317,7 +317,7 @@ google_auto_ads: true
                         <b>WARNING:</b> Don't touch the <code>GAME DIRECTORY</code> option unless you know what you're doing!
                     </p>
                     <p>
-                        <img src="https://wiki.wurstclient.net/_media/install_manual_profile_settings.webp" alt="how to manually create a Fabric Loader installation in the Minecraft launcher">
+                        <img src="https://images.wurstclient.net/_media/install_manual_profile_settings.webp" alt="how to manually create a Fabric Loader installation in the Minecraft launcher">
                     </p>
                     <div style="padding-left: 0.625rem;border-left: 1px #ccc solid;">
                         <h4>Meta-Troubleshooting (because manual installations can get complicated)</h4>
@@ -330,7 +330,7 @@ google_auto_ads: true
                                 The Minecraft version is the part that matters. If this is wrong, your installation won't launch.
                             </p>
                             <p>
-                                <img src="https://wiki.wurstclient.net/_media/install_loader_version.webp" alt="how to read a Fabric Loader version">
+                                <img src="https://images.wurstclient.net/_media/install_loader_version.webp" alt="how to read a Fabric Loader version">
                             </p>
                             <p>
                                 Now with that knowledge, choose any <code>release fabric-loader-...</code> option for the Minecraft version you plan to use. (I'm using Minecraft 1.18.2 in the above example.)
@@ -352,7 +352,7 @@ google_auto_ads: true
                     That's it! You are now using Wurst.
                 </p>
                 <p>
-                    <img src="https://wiki.wurstclient.net/_media/install_successful_launch.webp" alt="Minecraft 1.18.2 title screen with Wurst 7 installed">
+                    <img src="https://images.wurstclient.net/_media/install_successful_launch.webp" alt="Minecraft 1.18.2 title screen with Wurst 7 installed">
                 </p>
                 <h3>Troubleshooting</h3>
                 <details class="padding5">
@@ -361,7 +361,7 @@ google_auto_ads: true
                         Wurst actually has three different GUIs that you can choose from:
                     </p>
                     <p>
-                        <img src="https://wiki.wurstclient.net/_media/gui_keybinds.webp" alt="visualization of Wurst's GUI keybinds" title="Thanks to keyboard-layout-editor.com for this image!">
+                        <img src="https://images.wurstclient.net/_media/gui_keybinds.webp" alt="visualization of Wurst's GUI keybinds" title="Thanks to keyboard-layout-editor.com for this image!">
                     </p>
                     <ul>
                         <li>
@@ -404,7 +404,7 @@ google_auto_ads: true
                                 You should <a href="#fabric-api">go back to step 2</a> and install the Fabric API.
                             </p>
                             <p>
-                                <img src="https://wiki.wurstclient.net/_media/install_error_missing_fabric_api.webp" alt="the error you get when you forget to install Fabric API">
+                                <img src="https://images.wurstclient.net/_media/install_error_missing_fabric_api.webp" alt="the error you get when you forget to install Fabric API">
                             </p>
                         </details>
                         <details class="padding5">
@@ -413,7 +413,7 @@ google_auto_ads: true
                                 This is talking about Fabric API, not Fabric Loader!
                             </p>
                             <p>
-                                <img src="https://wiki.wurstclient.net/_media/install_error_wrong_fabric_api.webp" alt="the error you get when you install the wrong version of Fabric API">
+                                <img src="https://images.wurstclient.net/_media/install_error_wrong_fabric_api.webp" alt="the error you get when you install the wrong version of Fabric API">
                             </p>
                             <p>
                                 If you see a message like this, you installed the wrong version of Fabric API.
@@ -429,7 +429,7 @@ google_auto_ads: true
                                 If you see a message like this, you either launched the wrong <code>fabric-loader-...</code> installation (if you have multiple), or selected the wrong Minecraft version in the Fabric installer.
                             </p>
                             <p>
-                                <img src="https://wiki.wurstclient.net/_media/install_error_wrong_minecraft_version.webp" alt="the error you get when you use the wrong Minecraft version with your Wurst installation">
+                                <img src="https://images.wurstclient.net/_media/install_error_wrong_minecraft_version.webp" alt="the error you get when you use the wrong Minecraft version with your Wurst installation">
                             </p>
                             <p>
                                 You should first go back to the Minecraft launcher and double-check which installation you just launched.
@@ -448,7 +448,7 @@ google_auto_ads: true
                                 If you see a message like this, you either launched the wrong <code>fabric-loader-...</code> installation (if you have multiple), or you selected an older Fabric Loader version in the Fabric installer.
                             </p>
                             <p>
-                                <img src="https://wiki.wurstclient.net/_media/install_error_wrong_fabric_loader.webp" alt="the error you get when you use the wrong Fabric Loader version with your Wurst installation">
+                                <img src="https://images.wurstclient.net/_media/install_error_wrong_fabric_loader.webp" alt="the error you get when you use the wrong Fabric Loader version with your Wurst installation">
                             </p>
                             <p>
                                 You should first go back to the Minecraft launcher and double-check which installation you just launched.
@@ -468,13 +468,13 @@ google_auto_ads: true
                         Generally speaking, this means you didn't follow the tutorial properly.
                     </p>
                     <p>
-                        <img src="https://wiki.wurstclient.net/_media/install_error_wurst_sources.webp" alt="the error you get when you put raw source code into your mods folder">
+                        <img src="https://images.wurstclient.net/_media/install_error_wurst_sources.webp" alt="the error you get when you put raw source code into your mods folder">
                     </p>
                     <p>
                         If the error message contains <code>MixinApplyError: Mixin ... from mod [wurst] FAILED during PREPARE</code>, then you have placed the "-sources.jar" file in your mods folder instead of using the normal, compiled version of Wurst.
                     </p>
                     <p>
-                        <img src="https://wiki.wurstclient.net/_media/install_error_wurst_sources_folder.webp" alt=".minecraft/mods folder with the source code of Wurst, which will not work">
+                        <img src="https://images.wurstclient.net/_media/install_error_wurst_sources_folder.webp" alt=".minecraft/mods folder with the source code of Wurst, which will not work">
                     </p>
                     <p>
                         You should <a href="#wurst">go back to step 3</a> and install the normal, compiled version of Wurst without any "sources" or "dev" at the end.
@@ -488,7 +488,7 @@ google_auto_ads: true
                         Unfortunately the official Minecraft launcher sucks at providing useful error messages, so the usual "Exit Code: 1" can mean almost anything.
                     </p>
                     <p>
-                        <img src="https://wiki.wurstclient.net/_media/install_error_generic_crash.webp" alt="the Minecraft launcher's useless error message">
+                        <img src="https://images.wurstclient.net/_media/install_error_generic_crash.webp" alt="the Minecraft launcher's useless error message">
                     </p>
                     <p>
                         A common cause of this error is that you installed a version of Wurst that is not compatible with your Minecraft version.
@@ -497,7 +497,7 @@ google_auto_ads: true
                         Double-check which Wurst version is in your mods folder (the "MC" part indicates which Minecraft version it's intended for) and <a href="#wurst">go back to step 3</a> if it's the wrong version.
                     </p>
                     <p>
-                        <img src="https://wiki.wurstclient.net/_media/install_error_wrong_wurst_version.webp" alt="an example of using the wrong Wurst version (MC1.16.5) in a Minecraft 1.18.2 installation">
+                        <img src="https://images.wurstclient.net/_media/install_error_wrong_wurst_version.webp" alt="an example of using the wrong Wurst version (MC1.16.5) in a Minecraft 1.18.2 installation">
                     </p>
                     <p>
                         Another possible cause is that you selected a very old version of Fabric Loader in the Fabric installer.
@@ -507,7 +507,7 @@ google_auto_ads: true
                         You should <a href="#fabric-loader">go back to step 1</a> and this time leave the "Loader Version" at its default value.
                     </p>
                     <p>
-                        <img src="https://wiki.wurstclient.net/_media/install_error_very_old_fabric_loader.webp" alt="an example of a very old Fabric Loader version that will crash a Minecraft 1.18.2 installation">
+                        <img src="https://images.wurstclient.net/_media/install_error_very_old_fabric_loader.webp" alt="an example of a very old Fabric Loader version that will crash a Minecraft 1.18.2 installation">
                     </p>
                     <p>
                         If all of your mod versions and Fabric Loader are correct but the game is still crashing, it is possible that you have found a bug.
@@ -523,7 +523,7 @@ google_auto_ads: true
                         Look closely. Is it really vanilla or is it Fabric without Wurst? You will see "Fabric (Modded)" at the bottom if it's Fabric.
                     </p>
                     <p>
-                        <img src="https://wiki.wurstclient.net/_media/install_error_fabric_without_wurst.webp" alt="a Minecraft 1.18.2 installation with Fabric, but without Wurst">
+                        <img src="https://images.wurstclient.net/_media/install_error_fabric_without_wurst.webp" alt="a Minecraft 1.18.2 installation with Fabric, but without Wurst">
                     </p>
                     <div style="padding-left: 0.625rem;border-left: 1px #ccc solid;">
                         <details class="padding5">
@@ -552,7 +552,7 @@ google_auto_ads: true
                                 If the folder name and location are correct but you still have this issue, you probably changed the the <code>GAME DIRECTORY</code> option in your <code>fabric-loader-...</code> installation.
                             </p>
                             <p>
-                                <img src="https://wiki.wurstclient.net/_media/install_error_wrong_game_directory.webp" alt="example of a changed game directory that can prevent Fabric from finding your mods">
+                                <img src="https://images.wurstclient.net/_media/install_error_wrong_game_directory.webp" alt="example of a changed game directory that can prevent Fabric from finding your mods">
                             </p>
                             <p>
                                 You should go back to the Minecraft launcher, edit your installation and change <code>GAME DIRECTORY</code> back to its default value.

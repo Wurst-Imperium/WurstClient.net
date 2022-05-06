@@ -12,7 +12,7 @@ google_auto_ads: true
         <ol class="step-list">
             <li>
                 <p>
-                    <img src="https://wiki.wurstclient.net/_media/uninstall-delete-wurst7.webp" alt="Wurst Client jar file in .minecraft/mods folder">
+                    <img src="https://images.wurstclient.net/_media/uninstall-delete-wurst7.webp" alt="Wurst Client jar file in .minecraft/mods folder">
                 </p>
                 <p>
                     Remove Wurst from your <code>.minecraft/mods</code> folder.
@@ -34,7 +34,7 @@ google_auto_ads: true
             <li>
                 <p>
                     <a href="/download/" target="_blank">
-                        <img src="https://wiki.wurstclient.net/_media/uninstall-delete-mods-folder.webp" alt=".minecraft/wurst folder">
+                        <img src="https://images.wurstclient.net/_media/uninstall-delete-mods-folder.webp" alt=".minecraft/wurst folder">
                     </a>
                 </p>
                 <p>

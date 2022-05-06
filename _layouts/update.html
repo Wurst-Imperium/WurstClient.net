@@ -10,8 +10,8 @@ google_auto_ads: true
 
 		<div class="margin20 no-margin-left no-margin-right no-margin-top padding10 bg-grayDarker">
 			{% if page.image %}
-				{% if page.image contains "https://wiki.wurstclient.net/_media/update/" %}
-					<a href="{{ page.image | replace: '_540p.webp', '.jpg'}}" target="_blank" title="{{ page.image | replace: '_540p.webp', '.jpg' | replace: 'https://wiki.wurstclient.net/_media/update/', 'File: '}}">
+				{% if page.image contains "https://images.wurstclient.net/_media/update/" %}
+					<a href="{{ page.image | replace: '_540p.webp', '.jpg'}}" target="_blank" title="{{ page.image | replace: '_540p.webp', '.jpg' | replace: 'https://images.wurstclient.net/_media/update/', 'File: '}}">
 						<img src="{{ page.image }}" alt="{{ page.title }}" width="960" height="540">
 					</a>
 				{% else %}
