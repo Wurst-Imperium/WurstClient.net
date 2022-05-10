@@ -463,23 +463,49 @@ google_auto_ads: true
                     </div>
                 </details>
                 <details class="padding5">
-                    <summary id="launch-error-sources">I see an error message saying <code>Uncaught exception in thread "main"</code>.</summary>
+                    <summary id="launch-error-uncaught">I see an error message saying <code>Uncaught exception in thread "main"</code>.</summary>
                     <p>
-                        Generally speaking, this means you didn't follow the tutorial properly.
+                        Look closely at the error message and select which of the following errors it contains:
                     </p>
-                    <p>
-                        <img src="https://images.wurstclient.net/_media/install_error_wurst_sources.webp" alt="the error you get when you put raw source code into your mods folder">
-                    </p>
-                    <p>
-                        If the error message contains <code>MixinApplyError: Mixin ... from mod [wurst] FAILED during PREPARE</code>, then you have placed the "-sources.jar" file in your mods folder instead of using the normal, compiled version of Wurst.
-                    </p>
-                    <p>
-                        <img src="https://images.wurstclient.net/_media/install_error_wurst_sources_folder.webp" alt=".minecraft/mods folder with the source code of Wurst, which will not work">
-                    </p>
-                    <p>
-                        You should <a href="#wurst">go back to step 3</a> and install the normal, compiled version of Wurst without any "sources" or "dev" at the end.
-                        <a href="https://forms.gle/zgvde4m1TBpDM9Vq8" target="_blank">Also, I have some questions for you...</a>
-                    </p>
+                    <div style="padding-left: 0.625rem;border-left: 1px #ccc solid;">
+                        <details class="padding5">
+                            <summary id="launch-error-sources"><code>MixinApplyError: Mixin ... from mod [wurst] FAILED during PREPARE</code></summary>
+                            <p>
+                                <img src="https://images.wurstclient.net/_media/install_error_wurst_sources.webp" alt="the error you get when you put raw source code into your mods folder">
+                            </p>
+                            <p>
+                                This error happens when you have placed the "-sources.jar" file in your mods folder instead of using the normal, compiled version of Wurst.
+                            </p>
+                            <p>
+                                <img src="https://images.wurstclient.net/_media/install_error_wurst_sources_folder.webp" alt=".minecraft/mods folder with the source code of Wurst, which will not work">
+                            </p>
+                            <p>
+                                You should <a href="#wurst">go back to step 3</a> and install the normal, compiled version of Wurst without any "sources" or "dev" at the end.
+                            </p>
+                        </details>
+                        <details class="padding5">
+                            <summary id="launch-error-major63"><code>Unsupported class file major version 63</code></summary>
+                            <p>
+                                <img src="https://images.wurstclient.net/_media/install_error_major_version_63.webp" alt="the major version 63 error">
+                            </p>
+                            <p>
+                                This error happens when you use a Fabric Loader version older than 0.14 with a Minecraft 1.19 snapshot.
+                            </p>
+                            <p>
+                                Minecraft 1.19 snapshots require Fabric Loader 0.14.0 or newer, but for some reason the Fabric installer selects 0.13.3 by default.
+                            </p>
+                            <p>
+                                <img src="https://images.wurstclient.net/_media/install_fabric_loader_014.webp" alt="manually selecting loader 0.14.x in the Fabric installer">
+                            </p>
+                            <p>
+                                You should <a href="#fabric-loader">run the Fabric installer again</a> and this time manually select the latest Fabric Loader version.
+                            </p>
+                            <p>
+                                After doing this, you will have multiple <code>fabric-loader-...</code> installations in your Minecraft Launcher.
+                                Make sure to select the correct one so you don't get the same error again.
+                            </p>
+                        </details>
+                    </div>
                 </details>
                 <details class="padding5">
                     <summary id="launch-just-crashes">I see an error message saying <code>An unexpected issue occurred and the game has crashed</code>.</summary>
