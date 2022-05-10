@@ -1,0 +1,15 @@
+{% if page.fabric == null and page.log4shell-patched == null %}
+    <p>
+        <b>WARNING:</b> This old version is vulnerable to the <a href="https://wiki.wurstclient.net/log4shell">Log4Shell</a> exploit. Do not use this in multiplayer without a patch.
+    </p>
+{% elsif page.fabric and page.log4shell-patched == null %}
+    <p>
+        <b>WARNING:</b>
+        {% if page.wurst-version == "7.18" %}
+            Minecraft versions older than 1.18.1-rc3
+        {% else %}
+            This version
+        {% endif %}
+        can be vulnerable to the <a href="https://wiki.wurstclient.net/log4shell">Log4Shell</a> exploit if paired with an outdated version of Fabric Loader. New installations automatically get the patched version, but if you installed this some time ago, you might need to reinstall Fabric to get the patch.
+    </p>
+{% endif %}
