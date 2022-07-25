@@ -225,6 +225,8 @@ other:
   - Keybind Manager
   - Last Server
   - Middle Click Friends
+  - NoChatReports
+  - NoTelemetry
   - Reconnect
   - ServerFinder
   - Server CleanUp
