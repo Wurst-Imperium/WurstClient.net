@@ -31,14 +31,14 @@ google_auto_ads: false
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<title>{{ page_title }}</title>
-		<meta name="description" content="{{ page_description }}">
+		{% if page_description %}<meta name="description" content="{{ page_description }}">{% endif %}
 
 		<link href="/css/wi.css" rel="stylesheet">
 
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:site" content="@Wurst_Imperium">
 		<meta name="twitter:title" content="{{ page_title }}">
-		<meta name="twitter:description" content="{{ page_description }}">
+		{% if page_description %}<meta name="twitter:description" content="{{ page_description }}">{% endif %}
 		<meta name="twitter:image" content="{{ page_image }}">
 
 		<link rel="canonical" href="https://www.wurstclient.net{{ page.url }}">
