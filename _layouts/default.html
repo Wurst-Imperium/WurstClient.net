@@ -9,8 +9,6 @@ google_auto_ads: false
 
 {% if page.description %}
 	{% assign page_description = page.description %}
-{% else %}
-	{% capture page_description %}{{ page.content | strip_html | strip_newlines | strip | replace: "        ", " " | replace: "    ", " " | replace: "  ", " " | truncate: 160 }}{% endcapture %}
 {% endif %}
 
 {% if page.image %}
