@@ -18,7 +18,7 @@
 		<h4 class="no-margin-bottom">for Minecraft {{ mcversion-range }}</h4>
 		<p class="no-margin-top">
 
-			{% if mcversion contains "w" or mcversion contains "r" or page.no-admaven contains mcversion or use-admaven == false %}
+			{% if page.no-admaven contains mcversion or use-admaven == false %}
 				<a class="tile inline-block no-float bg-grayDark command-button primary no-border no-margin-left" href="{{ directlink }}" rel="nofollow" target="_blank" style="width: auto;height: auto;">
 					<span class="icon mif-file-download"></span>
 					Wurst Client {{ full-version }}
