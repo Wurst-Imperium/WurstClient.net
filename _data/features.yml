@@ -99,12 +99,14 @@ cheats:
   - NameProtect
   - NameTags
   - Navigator
+  - NewChunks
   - NoBackground
   - NoClip
   - NocomCrash
   - NoFall
   - NoFireOverlay
   - NoHurtcam
+  - NoLevitation
   - NoOverlay
   - NoPumpkin
   - NoSlowdown
