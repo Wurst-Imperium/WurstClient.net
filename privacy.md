@@ -53,13 +53,6 @@ google_auto_ads: false
 
 <div class="padding20 no-padding-left no-padding-right">
   <div class="container">
-		<h2 class="text-normal">PurifyDigital</h2>
-    <p>I also partner with PurifyDigital to sell ads on this website. They have confirmed in writing that all of their ads are compliant with the GDPR and other data protection laws.</p>
-	</div>
-</div>
-
-<div class="padding20 no-padding-left no-padding-right bg-grayLighter">
-  <div class="container">
 		<h2 class="text-normal">AdMaven</h2>
     <p>I also partner with AdMaven to sell ads on the files.wurstimperium.net website. They have their own privacy policy which you can view here: <a href="https://ad-maven.com/privacy-policy/" target="_blank" rel="nofollow">https://ad-maven.com/privacy-policy/</a></p>
     <p>I know these ads can be annoying so I've made them completely optional. Every download link that shows AdMaven ads also has a "direct link" option next to it that doesn't show these ads.</p>
@@ -67,7 +60,7 @@ google_auto_ads: false
 	</div>
 </div>
 
-<div class="padding20 no-padding-left no-padding-right">
+<div class="padding20 no-padding-left no-padding-right bg-grayLighter">
   <div class="container">
 		<h2 class="text-normal">Other Stuff</h2>
     <p>Since I don't have your email address, I can't send you one of those annoying "we have updated our privacy policy" e-mails. Instead, I have a GitHub repository where you can see how this page has changed over time: <a href="https://github.com/Wurst-Imperium/WurstClient.net/commits/gh-pages/privacy.md" target="_blank">https://github.com/Wurst-Imperium/WurstClient.net/commits/gh-pages/privacy.md</a></p>
