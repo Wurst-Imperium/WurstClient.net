@@ -36,6 +36,13 @@ google_auto_ads: false
 
 <div class="padding20 no-padding-left no-padding-right bg-grayLighter">
   <div class="container">
+		<h2 class="text-normal">Plausible Analytics</h2>
+    <p>I am currently experimenting with using <a href="https://plausible.io/" target="_blank">Plausible</a> as a more privacy-friendly alternative to Google Analytics. Plausible is only on this website, not in the Wurst Client itself.</p>
+	</div>
+</div>
+
+<div class="padding20 no-padding-left no-padding-right">
+  <div class="container">
 		<h2 class="text-normal">Google AdSense</h2>
     <p>I use Google AdSense to sell ads on this website. <strong>I don't sell data and <a href="https://safety.google/privacy/ads-and-data/" target="_blank">neither does Google</a>!</strong></p>
     <p>Google has their own privacy policy which you can view here: <a href="https://policies.google.com/technologies/ads" target="_blank">https://policies.google.com/technologies/ads</a></p>
@@ -51,7 +58,7 @@ google_auto_ads: false
 	</div>
 </div>
 
-<div class="padding20 no-padding-left no-padding-right">
+<div class="padding20 no-padding-left no-padding-right bg-grayLighter">
   <div class="container">
 		<h2 class="text-normal">AdMaven</h2>
     <p>I also partner with AdMaven to sell ads on the files.wurstimperium.net website. They have their own privacy policy which you can view here: <a href="https://ad-maven.com/privacy-policy/" target="_blank" rel="nofollow">https://ad-maven.com/privacy-policy/</a></p>
@@ -60,7 +67,7 @@ google_auto_ads: false
 	</div>
 </div>
 
-<div class="padding20 no-padding-left no-padding-right bg-grayLighter">
+<div class="padding20 no-padding-left no-padding-right">
   <div class="container">
 		<h2 class="text-normal">Other Stuff</h2>
     <p>Since I don't have your email address, I can't send you one of those annoying "we have updated our privacy policy" e-mails. Instead, I have a GitHub repository where you can see how this page has changed over time: <a href="https://github.com/Wurst-Imperium/WurstClient.net/commits/gh-pages/privacy.md" target="_blank">https://github.com/Wurst-Imperium/WurstClient.net/commits/gh-pages/privacy.md</a></p>
