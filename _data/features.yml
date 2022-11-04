@@ -1,8 +1,10 @@
 cheats:
+  - AirPlace
   - AnchorAura
   - AntiAFK
   - AntiBlind
   - AntiCactus
+  - AntiHunger
   - AntiFire
   - AntiKnockback
   - AntiPotion
@@ -39,6 +41,7 @@ cheats:
   - BowAimbot
   - BuildRandom
   - BunnyHop
+  - CameraDistance
   - CameraNoClip
   - CaveFinder
   - ChatTranslator
