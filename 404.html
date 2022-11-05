@@ -4,3 +4,7 @@ description: This page does not exist.
 permalink: /404.html
 ---
 {% include title.html l1 = page.title l2 = page.description %}
+<script>
+    window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) };
+    plausible("404",{ props: { path: document.location.pathname } });
+</script>
