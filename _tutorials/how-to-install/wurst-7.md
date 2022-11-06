@@ -94,10 +94,10 @@ google_auto_ads: true
         <ol class="step-list">
             <li>
                 <p>
-                    Go to the <a href="https://www.curseforge.com/minecraft/mc-mods/fabric-api/files/all" target="_blank" rel="nofollow">Fabric API page</a> and select your Minecraft version at the top right.
+                    Go to the <a href="https://www.curseforge.com/minecraft/mc-mods/fabric-api/files/all" target="_blank" rel="nofollow" data-analytics='"Download Fabric API", {"props": {"url": "https://www.curseforge.com/minecraft/mc-mods/fabric-api/files/all"}}'>Fabric API page</a> and select your Minecraft version at the top right.
                 </p>
                 <p>
-                    <a href="https://www.curseforge.com/minecraft/mc-mods/fabric-api/files/all" target="_blank" rel="nofollow">
+                    <a href="https://www.curseforge.com/minecraft/mc-mods/fabric-api/files/all" target="_blank" rel="nofollow" data-analytics='"Download Fabric API", {"props": {"url": "https://www.curseforge.com/minecraft/mc-mods/fabric-api/files/all"}}'>
                         <img src="https://images.wurstclient.net/_media/install_fabric_api_version.webp" alt="Fabric API download instructions">
                     </a>
                 </p>
@@ -105,7 +105,7 @@ google_auto_ads: true
                     Then download the latest (top-most) version of Fabric API for that Minecraft version.
                 </p>
                 <p>
-                    <a href="https://www.curseforge.com/minecraft/mc-mods/fabric-api/files/all" target="_blank" rel="nofollow">
+                    <a href="https://www.curseforge.com/minecraft/mc-mods/fabric-api/files/all" target="_blank" rel="nofollow" data-analytics='"Download Fabric API", {"props": {"url": "https://www.curseforge.com/minecraft/mc-mods/fabric-api/files/all"}}'>
                         <img src="https://images.wurstclient.net/_media/install_fabric_api_version_2.webp" alt="more Fabric API download instructions">
                     </a>
                 </p>
