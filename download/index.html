@@ -55,121 +55,45 @@ old_mcversions:
   - "1.19.1"
 google_auto_ads: true
 ---
-{% include title.html l1 = page.title l2 = page.description %}
+{%- include title.html l1 = page.title l2 = page.description -%}
 
 <div class="padding20 no-padding-left no-padding-right">
   <div class="container">
     
     <!-- Wurst Downloads -->
     <div class="margin20 no-margin-left no-margin-right no-margin-top">
-      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5218363098774955" data-ad-slot="6065673627" data-ad-format="auto"></ins>
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5218363098774955" data-ad-slot="6065673627" data-ad-format="auto" data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
     </div>
 
-    {% for mcversion in page.mcversions %}
+    {%- for mcversion in page.mcversions -%}
 
-      {% if mcversion == "all" %}
+      {%- if mcversion == "all" -%}
         {% capture allversions %}all/{% endcapture %}
-      {% else %}
+      {%- else -%}
         {% capture allversions %}minecraft-{{ mcversion | slugify }}/{% endcapture %}
-      {% endif %}
+      {%- endif -%}
 
       <section class="padding10 no-padding-left no-padding-right">
         <a href="{{ allversions }}" class="fg-gray">
           <div class="margin10 no-margin-left no-margin-right padding10 no-padding-top no-padding-bottom bg-grayLighter {% if page.old_mcversions contains mcversion %}fg-grayLight{% else %}fg-gray{% endif %} set-border">
             <h2 class="{% if page.old_mcversions contains mcversion %}text-light{% endif %}">
-              {% if mcversion == "all" %}
+              {%- if mcversion == "all" -%}
                 Latest Wurst Updates
-              {% elsif mcversion == "snapshots" %}
+              {%- elsif mcversion == "snapshots" -%}
                 Snapshots, Pre-Releases, etc.
-              {% else %}
+              {%- else -%}
                 Wurst for Minecraft {% if site.mcversions[mcversion] %}{{ site.mcversions[mcversion] }}{% else %}{{ mcversion }}{% endif %}
-                {% if page.old_mcversions contains mcversion %}
+                {%- if page.old_mcversions contains mcversion %}
                   <span class="tag fg-white bg-amber" style="cursor: help;vertical-align: baseline;" title="I'm no longer maintaining this version. You can still use it, but any bugs or missing features will not be fixed.">OLD</span>
-                {% endif %}
-              {% endif %}
+                {%- endif -%}
+              {%- endif -%}
             </h2>
           </div>
         </a>
-        <!--<div class="grid padding10">
-          <div class="row cells4">
+      </section>
 
-            {% assign i = 0 %}
-            {% for update in site.updates reversed %}
-
-              {% if mcversion == "all" %}
-
-              {% elsif mcversion == "snapshots" %}
-
-                {% assign snapshot = false %}
-                {% for mcversion2 in update.minecraft-versions %}
-                  {% if mcversion2 contains "w" or mcversion2 contains "pre" %}
-                    {% assign snapshot = true %}
-                  {% endif %}
-                {% endfor %}
-
-                {% unless snapshot %}
-                  {% continue %}
-                {% endunless %}
-
-              {% else %}
-
-                {% unless update.minecraft-versions contains mcversion %}
-                  {% continue %}
-                {% endunless %}
-
-              {% endif %}
-
-              <div class="cell">
-                  <span class="image-container">
-                    <span class="frame{% unless update.image %} bg-grayLighter set-border tile-content iconic{% endunless %}">
-                      <img src="{% if update.image %}{{ update.image }}{% else %}https://cloud.githubusercontent.com/assets/10100202/19655746/6eea9706-9a1d-11e6-8fbc-0a8d25f7a2fd.jpg{% endif %}"{% unless update.image %} class="no-visible"{% endunless %} alt="Wurst v{{ update.wurst-version }} MC{{ update.minecraft-version }}">
-                      {% unless update.image %}
-                        <span class="icon mif-file-picture fg-grayLight" style="margin-top: -32px;"></span>
-                      {% endunless %}
-                    </span>
-                    <span class="image-overlay" style="background-color: rgba(0, 0, 0, .8);">
-                      <h3 class="sub-alt-header">{{ update.title }}</h3>
-                    </span>
-                  </span>
-              </div>
-
-              {% assign i = i | plus: 1 %}
-              {% if i >= 11 %}
-                {% break %}
-              {% elsif i == 4 or i == 8 %}
-              </div>
-              <div class="row cells4">
-              {% endif %}
-
-            {% endfor %}
-
-            <div class="cell">
-              <a href="{{ allversions }}">
-                <span class="image-container">
-                  <span class="frame bg-grayLighter set-border tile-content iconic">
-                    <img src="https://cloud.githubusercontent.com/assets/10100202/19655746/6eea9706-9a1d-11e6-8fbc-0a8d25f7a2fd.jpg" alt="(placeholder)" class="no-visible">
-                    <span class="icon mif-folder-open fg-grayLight" style="margin-top: -32px;"></span>
-                  </span>
-                  <span class="image-overlay" style="background-color: rgba(0, 0, 0, .8);">
-                    <span class="leader text-shadow" style="width: 100%;height: 100%;display: table;">
-                      <h3 style="display: table-cell;vertical-align: middle;">View All</h3 style="display: table-cell;vertical-align: middle;">
-                    </span>
-                  </span>
-                </span>
-              </a>
-            </div>
-
-          </div>
-        </div>-->
-      </section class="padding20 no-padding-left no-padding-right">
-
-    {% endfor %}
+    {%- endfor -%}
 
   </div>
 </div>
-
-<!-- Google AdSense -->
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-	(adsbygoogle = window.adsbygoogle || []).push({});
-</script>

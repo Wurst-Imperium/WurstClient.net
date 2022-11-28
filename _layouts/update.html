@@ -2,62 +2,65 @@
 layout: default
 google_auto_ads: true
 ---
-{% assign date = page.date | date: "%Y-%m-%d" %}
-{% include title.html l1 = page.title l2 = date %}
+{%- assign date = page.date | date: "%Y-%m-%d" -%}
+{%- include title.html l1 = page.title l2 = date -%}
 
 <div class="padding20 no-padding-left no-padding-right">
 	<div class="container post-content">
 
 		<div class="margin20 no-margin-left no-margin-right no-margin-top padding10 bg-grayDarker">
-			{% include update/image.html %}
+			{%- include update/image.html -%}
 		</div>
 
 		<div class="margin20 no-margin-left no-margin-right no-margin-top">
-			{% include share-buttons.html %}
+			{%- include share-buttons.html -%}
 		</div>
 
 		<div class="margin20 no-margin-left no-margin-right no-margin-top">
 			
-			{% include update/log4shell-warnings.html %}
+			{%- include update/log4shell-warnings.html -%}
 			
-			{% if page.auto-list-mcversions %}
+			{%- if page.auto-list-mcversions -%}
 				<p>This version of the Wurst Hacked Client is available for Minecraft {{ page.minecraft-versions | array_to_sentence_string }}.</p>
-			{% endif %}
+			{%- endif -%}
 			
-			{% if page.log4shell-patched %}
+			{%- if page.log4shell-patched -%}
 				<p>✔ This version is safe from the <a href="https://wiki.wurstclient.net/log4shell">Log4Shell</a> exploit.</p>
-			{% endif %}
+			{%- endif -%}
 
-			{{ content }}
+			<ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-5218363098774955" data-ad-slot="8153296574"></ins>
+			<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+
+			{{- content -}}
 
 		</div>
 
 	</div>
 </div>
 
-{% if page.wurst-version and page.minecraft-versions %}
+{%- if page.wurst-version and page.minecraft-versions -%}
 	<div class="bg-grayLighter padding40 no-padding-left no-padding-right">
 		<div class="container post-content">
 
 			<h2 id="downloads">Downloads</h2>
-			{% include update/downloads.html %}
+			{%- include update/downloads.html -%}
 
 		</div>
 	</div>
-{% endif %}
+{%- endif -%}
 
 <div class="padding20 no-padding-left no-padding-right">
 	<div class="container post-content">
 
 		<h2>Related Tutorials</h2>
 		<ul>
-			{% if page.fabric %}
+			{%- if page.fabric -%}
 				<li><p><a href="/tutorials/wurst-7-optifine/">How To Install Wurst 7</a></p></li>
 				<li><p><a href="/tutorials/wurst-7-baritone/">How To Add Baritone To Wurst 7</a></p></li>
-			{% else %}
+			{%- else -%}
 				<li><p><a href="/tutorials/how-to-install/">How to install Wurst 6 for Minecraft 1.8 - 1.12</a></p></li>
 				<li><p><a href="/tutorials/how-to-update/">How to manually update Wurst 6 for Minecraft 1.8 - 1.12</a></p></li>
-			{% endif %}
+			{%- endif -%}
 		</ul>
 
 	</div>
