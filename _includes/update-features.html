@@ -1,56 +1,56 @@
-{% assign wiki = site.data.wikilinks %}
+{%- assign wiki = site.data.wikilinks -%}
 
-{% if page.hacks %}
+{%- if page.hacks -%}
 <details>
     <summary class="padding10">Hacks, Cheats, and Mods: (click to expand)</summary>
     <ul>
-        {% for hack in page.hacks %}
+        {%- for hack in page.hacks -%}
             <li>
-                {% if wiki.hacks[hack] %}
+                {%- if wiki.hacks[hack] -%}
                     <a href="{{ wiki.hacks[hack] }}">{{ hack }}</a>
-                {% else %}
+                {%- else -%}
                     {{ hack }}
-                {% endif %}
+                {%- endif -%}
             </li>
-        {% endfor %}
+        {%- endfor -%}
     </ul>
 </details>
-{% endif %}
+{%- endif -%}
 
-{% if page.commands %}
+{%- if page.commands -%}
 <details>
     <summary class="padding10">Chat Commands: (click to expand)</summary>
     <ul>
-        {% for cmd in page.commands %}
+        {%- for cmd in page.commands -%}
             <li>
-                {% if wiki.commands[cmd] %}
+                {%- if wiki.commands[cmd] -%}
                     <a href="{{ wiki.commands[cmd] }}"><code>{{ cmd }}</code></a>
-                {% else %}
+                {%- else -%}
                     <code>{{ cmd }}</code>
-                {% endif %}
+                {%- endif -%}
             </li>
-        {% endfor %}
+        {%- endfor -%}
     </ul>
 </details>
-{% endif %}
+{%- endif -%}
 
-{% if page.other %}
+{%- if page.other -%}
 <details>
     <summary class="padding10">Other Features: (click to expand)</summary>
     <ul>
-        {% for other in page.other %}
+        {%- for other in page.other -%}
             <li>
-                {% if wiki.other[other] %}
+                {%- if wiki.other[other] -%}
                     <a href="{{ wiki.other[other] }}">{{ other }}</a>
-                {% else %}
+                {%- else -%}
                     {{ other }}
-                {% endif %}
+                {%- endif -%}
             </li>
-        {% endfor %}
+        {%- endfor -%}
     </ul>
 </details>
-{% endif %}
+{%- endif -%}
 
-{% unless page.mc-1-7-remake %}
+{%- unless page.mc-1-7-remake -%}
 <p><b>Want more? <a href="/contact/">Suggest new features!</a></b></p>
-{% endunless %}
+{%- endunless -%}
