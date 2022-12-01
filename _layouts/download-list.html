@@ -5,17 +5,9 @@ google_auto_ads: true
 {%- include title.html l1 = page.title l2 = page.description -%}
 
 <div class="padding20 no-padding-left no-padding-right">
-	<div class="container">
-		<div class="grid">
+	<main class="container">
+		<div style="display: grid;grid-template-columns: 1fr 1fr 1fr;gap: 20px;">
 			
-			<!-- Wurst Downloads -->
-			<div class="margin20 no-margin-left no-margin-right no-margin-top">
-				<div class="container">
-					<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5218363098774955" data-ad-slot="6065673627" data-ad-format="auto" data-full-width-responsive="true"></ins>
-					<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-				</div>
-			</div>
-
 			{%- assign i = 0 -%}
 			{%- for update in site.updates reversed -%}
 
@@ -31,48 +23,50 @@ google_auto_ads: true
 					{%- endfor -%}
 
 					{%- unless snapshot -%}
-						{%- if forloop.last -%}</div>{%- endif -%}
 						{%- continue -%}
 					{%- endunless -%}
 
 				{%- else -%}
 
 					{%- unless update.minecraft-versions contains page.mcversion -%}
-						{%- if forloop.last -%}</div>{%- endif -%}
 						{%- continue -%}
 					{%- endunless -%}
 
 				{%- endif -%}
 
-				{%- assign modulo = i | modulo: 3 -%}
+				{%- assign modulo = i | modulo: 13 -%}
+				{%- if modulo == 0 -%}
+				<div>
+					<ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-6l+d4-6+3m+4o" data-ad-client="ca-pub-5218363098774955" data-ad-slot="3234682827"></ins>
+					<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+				</div>
+				{%- endif -%}
 
-				{%- if modulo == 0 -%}<div class="row cells3">{%- endif -%}
-					<div class="cell">
-						<a href="{{ update.url }}">
-							<span class="image-container">
-								<span class="frame{% unless update.image %} bg-grayLighter set-border tile-content iconic{% endunless %}">
-									<img data-src="{% if update.image %}{{ update.image }}{% else %}https://cloud.githubusercontent.com/assets/10100202/19655746/6eea9706-9a1d-11e6-8fbc-0a8d25f7a2fd.jpg{% endif %}" class="lazyload{% unless update.image %} no-visible{% endunless %}" alt="Wurst v{{ update.wurst-version }} MC{{ update.minecraft-version }}" width="640" height="360" style="height: auto;">
-									{%- unless update.image -%}
-										<span class="icon mif-file-picture fg-grayLight" style="margin-top: -32px;"></span>
-									{%- endunless -%}
-								</span>
-								<span class="image-overlay" style="background-color: rgba(0, 0, 0, .8);">
-									<span class="leader text-shadow" style="width: 100%;height: 100%;display: table;">
-										<span class="mif-link fg-white" style="display: table-cell;vertical-align: middle;"></span>
-									</span>
+				<article>
+					<a href="{{ update.url }}">
+						<span class="image-container">
+							<span class="frame{% unless update.image %} bg-grayLighter set-border tile-content iconic{% endunless %}">
+								<img src="https://images.wurstclient.net/_media/placeholder-320x180.webp" data-src="{% if update.image %}{{ update.image }}{% else %}https://images.wurstclient.net/_media/placeholder-320x180.webp{% endif %}" class="lazyload{% unless update.image %} no-visible{% endunless %}" alt="Wurst v{{ update.wurst-version }} MC{{ update.minecraft-version }}" width="640" height="360" style="height: auto;">
+								{%- unless update.image -%}
+									<span class="icon mif-file-picture fg-grayLight" style="margin-top: -32px;"></span>
+								{%- endunless -%}
+							</span>
+							<span class="image-overlay" style="background-color: rgba(0, 0, 0, .8);">
+								<span class="leader text-shadow" style="width: 100%;height: 100%;display: table;">
+									<span class="mif-link fg-white" style="display: table-cell;vertical-align: middle;"></span>
 								</span>
 							</span>
-						</a>
-						<h2 class="sub-header">
-							<a href="{{ update.url }}">{{ update.title }}</a>
-						</h2>
-					</div>
-				{%- if modulo == 2 or forloop.last -%}</div>{%- endif -%}
+						</span>
+					</a>
+					<h2 class="sub-header">
+						<a href="{{ update.url }}">{{ update.title }}</a>
+					</h2>
+				</article>
 
 				{%- assign i = i | plus: 1 -%}
 			{%- endfor -%}
 		</div>
-	</div>
+	</main>
 </div>
 
 <script src="/js/lazysizes.min.js" async></script>
