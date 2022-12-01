@@ -46,9 +46,8 @@ google_auto_ads: false
 			<link rel="alternate" hreflang="{{ tr[0] }}" href="https://www.wurstclient.net{{ tr[1] }}">
 		{%- endfor -%}
 
-		{%- include quantcast-choice.html -%}
-		
 		{%- if page.google_auto_ads or layout.google_auto_ads -%}
+			<script async src="/js/quantcast-choice.js"></script>
 			<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5218363098774955" crossorigin="anonymous"></script>
 		{%- endif -%}
 
