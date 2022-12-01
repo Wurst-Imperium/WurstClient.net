@@ -3,10 +3,28 @@ layout: default
 google_auto_ads: true
 ---
 {%- include title.html l1 = page.title l2 = page.description -%}
-
+<style>
+	.wurst-grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 20px;
+	}
+	
+	@media screen and (min-width: 801px) {
+		.wurst-grid {
+			grid-template-columns: 1fr 1fr 1fr;
+		}
+	}
+	
+	@media screen and (max-width: 800px) {
+		.wurst-grid {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>
 <div class="padding20 no-padding-left no-padding-right">
 	<main class="container">
-		<div style="display: grid;grid-template-columns: 1fr 1fr 1fr;gap: 20px;">
+		<div class="wurst-grid">
 			
 			{%- assign i = 0 -%}
 			{%- for update in site.updates reversed -%}
