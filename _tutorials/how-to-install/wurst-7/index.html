@@ -1,0 +1,36 @@
+---
+title: How To Install Wurst 7
+description: A step-by-step guide that works on Windows, Linux and Mac!
+permalink: /tutorials/how-to-install/wurst-7/
+translations:
+  en: /tutorials/how-to-install/wurst-7/
+  de: /de/tutorials/how-to-install/wurst-7/
+layout: default
+google_auto_ads: true
+---
+{% include title.html l1 = page.title l2 = page.description %}
+
+<section id="fabric-loader" class="padding20 no-padding-left no-padding-right bg-grayLighter">
+	<div class="container">
+        {%- include lang-select.html -%}
+        {%- include_relative step1.html -%}
+	</div>
+</section>
+
+<section id="fabric-api" class="padding20 no-padding-left no-padding-right">
+	<div class="container">
+        {%- include_relative step2.html -%}
+	</div>
+</section>
+
+<section id="wurst" class="padding20 no-padding-left no-padding-right bg-grayLighter">
+	<div class="container">
+        {%- include_relative step3.html -%}
+	</div>
+</section>
+
+<section id="launch" class="padding20 no-padding-left no-padding-right">
+	<div class="container">
+        {%- include_relative step4.html -%}
+	</div>
+</section>
