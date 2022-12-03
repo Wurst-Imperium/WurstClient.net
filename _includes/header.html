@@ -1,7 +1,12 @@
 <nav class="app-bar darcula" data-role="appbar" style="position: absolute;">
 	<div class="container">
 		<a class="app-bar-element branding" href="/">
-			<img src="https://images.wurstclient.net/_media/logo/wurst_253x64_ll.webp" width="253" height="64" alt="Wurst Client" style="height: 2rem;width: auto">
+			{%- assign month = site.time | date: '%m' | plus: 0 -%}
+			{%- if month == 12 -%}
+				<img src="https://wiki.wurstclient.net/_media/logo/wurst_xmas_253x96_ll.webp" width="253" height="96" alt="Wurst Client logo with santa hat" style="height: 2.5rem;width: auto;vertical-align: baseline">
+			{%- else -%}
+				<img src="https://images.wurstclient.net/_media/logo/wurst_253x64_ll.webp" width="253" height="64" alt="Wurst Client logo" style="height: 2rem;width: auto">
+			{%- endif -%}
 		</a>
 		<ul class="app-bar-menu">
 			<li><a href="/download/">Download</a></li>
