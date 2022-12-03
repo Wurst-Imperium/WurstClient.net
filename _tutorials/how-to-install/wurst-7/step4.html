@@ -9,7 +9,7 @@
 		</p>
 		<h3>Troubleshooting</h3>
 		<details>
-			<summary>The Minecraft launcher is warning me about "player safety features".</summary>
+			<summary id="launch-player-safety-warning">The Minecraft launcher is warning me about "player safety features".</summary>
 			<p>
 				This is normal, unfortunately. Microsoft has decided to try and scare people away from modding by adding these "player safety" warnings to all modded installations.
 			</p>
@@ -27,7 +27,7 @@
 			</p>
 		</details>
 		<details>
-			<summary>I can't see the <code>fabric-loader-...</code> installation.</summary>
+			<summary id="launch-cant-see-loader-installation">I can't see the <code>fabric-loader-...</code> installation.</summary>
 			<p>
 				First make sure that the "Modded" checkbox is enabled. Modded installations like Fabric are invisible without it.
 			</p>
@@ -53,7 +53,7 @@
 			</p>
 		</details>
 		<details>
-			<summary>I don't like that my Wurst installation is named <code>fabric-loader-...</code>. Can I rename it?</summary>
+			<summary id="rename-loader-installation">I don't like that my Wurst installation is named <code>fabric-loader-...</code>. Can I rename it?</summary>
 			<p>
 				Yes. You can even change the icon if you want.
 			</p>
@@ -78,7 +78,7 @@
 			<div style="padding-left: 0.625rem;border-left: 1px #ccc solid;">
 				<h4>Meta-Troubleshooting (because manual installations can get complicated)</h4>
 				<details>
-					<summary>I see multiple <code>release fabric-loader-...</code> options and I don't know which one to choose.</summary>
+					<summary id="create-profile-choose-loader-release">I see multiple <code>release fabric-loader-...</code> options and I don't know which one to choose.</summary>
 					<p>
 						Okay, let me explain to you how these versions work. If you look closely, you will see that there are two versions after the <code>fabric-loader-</code> part, separated by a dash. The first one is the Fabric Loader version itself, the second one is the Minecraft version that it's for.
 					</p>
@@ -93,7 +93,7 @@
 					</p>
 				</details>
 				<details>
-					<summary>I don't see a <code>release fabric-loader-...</code> option for my Minecraft version.</summary>
+					<summary id="create-profile-loader-release-missing">I don't see a <code>release fabric-loader-...</code> option for my Minecraft version.</summary>
 					<p>
 						Try restarting your Minecraft launcher.
 						If that doesn't fix it, you forgot to install Fabric (Loader) and should go back to <a href="#fabric-loader">step 1</a>.
@@ -151,7 +151,7 @@
 			<div style="padding-left: 0.625rem;border-left: 1px #ccc solid;">
 				<h4>Meta-Troubleshooting (because some people seemingly can't read)</h4>
 				<details>
-					<summary><code>Install fabric, version X or later.</code></summary>
+					<summary id="error-install-fabric-version-x-or-later"><code>Install fabric, version X or later.</code></summary>
 					<p>
 						This is talking about Fabric API, not Fabric Loader!
 					</p>
@@ -164,7 +164,7 @@
 					</p>
 				</details>
 				<details>
-					<summary><code>Replace mod fabric X with version Y or later.</code></summary>
+					<summary id="error-replace-fabric-x-with-version-y-or-later"><code>Replace mod fabric X with version Y or later.</code></summary>
 					<p>
 						This is talking about Fabric API, not Fabric Loader!
 					</p>
@@ -180,7 +180,7 @@
 					</p>
 				</details>
 				<details>
-					<summary><code>Replace minecraft X with version Y.</code></summary>
+					<summary id="error-replace-minecraft-x-with-version-y"><code>Replace minecraft X with version Y.</code></summary>
 					<p>
 						If you see a message like this, you either launched the wrong <code>fabric-loader-...</code> installation (if you have multiple), or selected the wrong Minecraft version in the Fabric installer.
 					</p>
@@ -199,7 +199,7 @@
 					</p>
 				</details>
 				<details>
-					<summary><code>Replace mod fabricloader X with version Y.</code></summary>
+					<summary id="error-replace-loader-x-with-version-y"><code>Replace mod fabricloader X with version Y.</code></summary>
 					<p>
 						If you see a message like this, you either launched the wrong <code>fabric-loader-...</code> installation (if you have multiple), or you selected an older Fabric Loader version in the Fabric installer.
 					</p>
@@ -309,14 +309,14 @@
 			</p>
 			<div style="padding-left: 0.625rem;border-left: 1px #ccc solid;">
 				<details>
-					<summary>It's just vanilla Minecraft.</summary>
+					<summary id="actually-launches-just-vanilla">It's just vanilla Minecraft.</summary>
 					<p>
 						Most likely, you simply launched the wrong installation.
 						You should go back to the Minecraft launcher and double-check which installation you just launched.
 					</p>
 				</details>
 				<details>
-					<summary>It's Fabric, but without Wurst.</summary>
+					<summary id="launches-fabric-without-wurst">It's Fabric, but without Wurst.</summary>
 					<p>
 						Most likely, you placed your <code>mods</code> folder in the wrong location.
 						Make sure that the folder is called exactly <code>mods</code> and that its location is exactly as follows:

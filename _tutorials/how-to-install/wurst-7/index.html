@@ -40,3 +40,28 @@ google_auto_ads: true
         {%- include_relative step4.html -%}
 	</div>
 </section>
+
+<script>
+    const detailsElements = document.querySelectorAll('details');
+    detailsElements.forEach((details) => {
+        details.addEventListener('toggle', (event) => {
+            if(event.target.hasAttribute('open'))
+            {
+                const summaryElement = event.target.querySelector('summary');
+                const summaryText = summaryElement.textContent;
+                const summaryId = summaryElement.getAttribute('id');
+
+                const sectionElement = event.target.closest('section');
+                const sectionId = sectionElement.getAttribute('id');
+
+                plausible('Open Troubleshooter', {
+                    props: {
+                        question: summaryText,
+                        question_id: summaryId,
+                        section_id: sectionId
+                    }
+                });
+            }
+        });
+    });
+</script>
