@@ -1,0 +1,34 @@
+{%- if fullsize-image -%}
+	{%- assign schemaImage = fullsize-image -%}
+{%- else -%}
+	{%- assign schemaImage = page.image -%}
+{%- endif -%}
+
+{%- if page.modified_date -%}
+	{%- assign dateModified = page.modified_date -%}
+{%- else -%}
+	{%- assign dateModified = page.date -%}
+{%- endif -%}
+
+<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "Article",
+		"headline": "{{ page.title }}",
+		"image": "{{ schemaImage }}",
+		"datePublished": "{{ page.date | date_to_xmlschema }}",
+		"dateModified": "{{ dateModified | date_to_xmlschema }}",
+		"author": [
+			{
+				"@type": "Person",
+				"name": "Alexander01998",
+				"url": "https://github.com/Alexander01998"
+			},
+			{
+				"@type": "Organization",
+				"name": "Wurst-Imperium",
+				"url": "https://www.wurstimperium.net/"
+			}
+		]
+	}
+</script>
