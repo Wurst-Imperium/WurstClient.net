@@ -1,3 +1,3 @@
 ---
-redirect_url: https://wiki.wurstclient.net/handnoclip
+redirect_url: https://wurst.wiki/handnoclip
 ---

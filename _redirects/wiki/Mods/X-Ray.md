@@ -1,3 +1,3 @@
 ---
-redirect_url: https://wiki.wurstclient.net/x-ray
+redirect_url: https://wurst.wiki/x-ray
 ---

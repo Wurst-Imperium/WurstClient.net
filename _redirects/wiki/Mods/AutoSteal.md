@@ -1,3 +1,3 @@
 ---
-redirect_url: https://wiki.wurstclient.net/autosteal
+redirect_url: https://wurst.wiki/autosteal
 ---

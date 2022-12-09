@@ -1,3 +1,3 @@
 ---
-redirect_url: https://wiki.wurstclient.net/remoteview
+redirect_url: https://wurst.wiki/remoteview
 ---

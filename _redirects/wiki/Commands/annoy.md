@@ -1,3 +1,3 @@
 ---
-redirect_url: https://wiki.wurstclient.net/cmd/annoy
+redirect_url: https://wurst.wiki/cmd/annoy
 ---

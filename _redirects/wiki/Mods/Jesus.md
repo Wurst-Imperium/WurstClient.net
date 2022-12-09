@@ -1,3 +1,3 @@
 ---
-redirect_url: https://wiki.wurstclient.net/jesus
+redirect_url: https://wurst.wiki/jesus
 ---

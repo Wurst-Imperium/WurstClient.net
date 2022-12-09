@@ -1,3 +1,3 @@
 ---
-redirect_url: https://wiki.wurstclient.net/home
+redirect_url: https://wurst.wiki/home
 ---

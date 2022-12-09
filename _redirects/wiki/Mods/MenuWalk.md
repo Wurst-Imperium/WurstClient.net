@@ -1,3 +1,3 @@
 ---
-redirect_url: https://wiki.wurstclient.net/invwalk
+redirect_url: https://wurst.wiki/invwalk
 ---

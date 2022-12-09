@@ -5,4 +5,4 @@ labels:
   - stub
 ---
 ## Overview
-Target is a special feature that controls what entities will be targeted by other features like [Killaura](https://wiki.wurstclient.net/killaura) and [BowAimbot](https://wiki.wurstclient.net/bowaimbot).
+Target is a special feature that controls what entities will be targeted by other features like [Killaura](https://wurst.wiki/killaura) and [BowAimbot](https://wurst.wiki/bowaimbot).

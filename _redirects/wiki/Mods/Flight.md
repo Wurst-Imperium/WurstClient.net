@@ -1,3 +1,3 @@
 ---
-redirect_url: https://wiki.wurstclient.net/flight
+redirect_url: https://wurst.wiki/flight
 ---

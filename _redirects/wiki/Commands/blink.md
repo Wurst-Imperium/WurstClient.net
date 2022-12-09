@@ -1,3 +1,3 @@
 ---
-redirect_url: https://wiki.wurstclient.net/cmd/blink
+redirect_url: https://wurst.wiki/cmd/blink
 ---

@@ -1,3 +1,3 @@
 ---
-redirect_url: https://wiki.wurstclient.net/autopotion
+redirect_url: https://wurst.wiki/autopotion
 ---

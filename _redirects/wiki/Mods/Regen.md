@@ -1,3 +1,3 @@
 ---
-redirect_url: https://wiki.wurstclient.net/regen
+redirect_url: https://wurst.wiki/regen
 ---

@@ -1,3 +1,3 @@
 ---
-redirect_url: https://wiki.wurstclient.net/noweb
+redirect_url: https://wurst.wiki/noweb
 ---

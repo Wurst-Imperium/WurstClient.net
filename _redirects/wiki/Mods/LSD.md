@@ -1,3 +1,3 @@
 ---
-redirect_url: https://wiki.wurstclient.net/lsd
+redirect_url: https://wurst.wiki/lsd
 ---

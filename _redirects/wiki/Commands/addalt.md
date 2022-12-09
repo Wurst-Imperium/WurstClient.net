@@ -1,3 +1,3 @@
 ---
-redirect_url: https://wiki.wurstclient.net/cmd/addalt
+redirect_url: https://wurst.wiki/cmd/addalt
 ---

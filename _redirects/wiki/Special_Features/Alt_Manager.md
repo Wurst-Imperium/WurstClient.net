@@ -1,3 +1,3 @@
 ---
-redirect_url: https://wiki.wurstclient.net/altmanager
+redirect_url: https://wurst.wiki/altmanager
 ---

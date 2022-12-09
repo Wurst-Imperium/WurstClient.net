@@ -1,3 +1,3 @@
 ---
-redirect_url: https://wiki.wurstclient.net/protect
+redirect_url: https://wurst.wiki/protect
 ---

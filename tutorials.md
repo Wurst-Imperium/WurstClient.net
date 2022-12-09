@@ -36,8 +36,8 @@ google_auto_ads: true
 	<div class="container">
 		<h2 class="text-normal">Item Duplication</h2>
 		<ul>
-			<li><p><a href="https://wiki.wurstclient.net/cmd/dupe">How to duplicate items with .dupe (1.16+ servers)</a></p></li>
-			<li><p><a href="https://wiki.wurstclient.net/mountbypass">How to duplicate items with MountBypass (1.15.2 servers)</a></p></li>
+			<li><p><a href="https://wurst.wiki/cmd/dupe">How to duplicate items with .dupe (1.16+ servers)</a></p></li>
+			<li><p><a href="https://wurst.wiki/mountbypass">How to duplicate items with MountBypass (1.15.2 servers)</a></p></li>
 		</ul>
 	</div>
 </div>
@@ -46,8 +46,8 @@ google_auto_ads: true
 	<div class="container">
 		<h2 class="text-normal">Force OP</h2>
 		<ul>
-			<li><p><a href="https://wiki.wurstclient.net/forceop">How to use the ForceOP hack (AuthMe servers)</a></p></li>
-			<li><p><a href="https://wiki.wurstclient.net/op-sign">How to use the OP-Sign hack (1.8 servers)</a></p></li>
+			<li><p><a href="https://wurst.wiki/forceop">How to use the ForceOP hack (AuthMe servers)</a></p></li>
+			<li><p><a href="https://wurst.wiki/op-sign">How to use the OP-Sign hack (1.8 servers)</a></p></li>
 			<li><p><a href="/wiki/Special_Features/Force_OP_(BookHack)/">How to use BookHack (1.8 servers)</a></p></li>
 		</ul>
 	</div>

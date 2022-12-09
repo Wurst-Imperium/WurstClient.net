@@ -1,3 +1,3 @@
 ---
-redirect_url: https://wiki.wurstclient.net/fastbreak
+redirect_url: https://wurst.wiki/fastbreak
 ---

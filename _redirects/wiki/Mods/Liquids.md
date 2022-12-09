@@ -1,3 +1,3 @@
 ---
-redirect_url: https://wiki.wurstclient.net/liquids
+redirect_url: https://wurst.wiki/liquids
 ---

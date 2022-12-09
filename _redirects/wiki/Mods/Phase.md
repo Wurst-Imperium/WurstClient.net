@@ -1,3 +1,3 @@
 ---
-redirect_url: https://wiki.wurstclient.net/phase
+redirect_url: https://wurst.wiki/phase
 ---

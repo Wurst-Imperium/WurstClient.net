@@ -1,3 +1,3 @@
 ---
-redirect_url: https://wiki.wurstclient.net/fasteat
+redirect_url: https://wurst.wiki/fasteat
 ---

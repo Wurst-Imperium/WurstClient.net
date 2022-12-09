@@ -1,3 +1,3 @@
 ---
-redirect_url: https://wiki.wurstclient.net/fancychat
+redirect_url: https://wurst.wiki/fancychat
 ---

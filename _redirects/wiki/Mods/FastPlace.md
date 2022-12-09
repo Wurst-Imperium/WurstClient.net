@@ -1,3 +1,3 @@
 ---
-redirect_url: https://wiki.wurstclient.net/fastplace
+redirect_url: https://wurst.wiki/fastplace
 ---

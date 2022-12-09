@@ -1,3 +1,3 @@
 ---
-redirect_url: https://wiki.wurstclient.net/crashtag
+redirect_url: https://wurst.wiki/crashtag
 ---

@@ -30,7 +30,7 @@ After typing that command, you will get a message like this to confirm that your
 
 The syntax to remove a keybind is <code>.binds&nbsp;remove&nbsp;&lt;key&gt;</code>. Note that this command requires the `<key>`, but not the `<action>`.
 
-For example, let's say we want to remove the default keybind for N, which toggles [Nuker](https://wiki.wurstclient.net/nuker). The `<key>` for this keybind is N, so the command is <code>.binds&nbsp;remove&nbsp;N</code> (but **not** <code>.binds&nbsp;remove&nbsp;Nuker</code>).
+For example, let's say we want to remove the default keybind for N, which toggles [Nuker](https://wurst.wiki/nuker). The `<key>` for this keybind is N, so the command is <code>.binds&nbsp;remove&nbsp;N</code> (but **not** <code>.binds&nbsp;remove&nbsp;Nuker</code>).
 
 ![Keybind removed N Nuker](https://user-images.githubusercontent.com/10100202/66140754-f36f6e00-e602-11e9-8445-ad1a50fdee39.jpg)
 
@@ -38,7 +38,7 @@ Again, we get a chat message to confirm that this keybind has been deleted.
 
 ## Help! I deleted something important! - <code>.binds&nbsp;reset</code>
 
-A common beginner's mistake is to accidentally delete the ClickGUI / [Navigator](https://wiki.wurstclient.net/navigator) keybinds and then panic because they can't open the GUI anymore.
+A common beginner's mistake is to accidentally delete the ClickGUI / [Navigator](https://wurst.wiki/navigator) keybinds and then panic because they can't open the GUI anymore.
 
 Don't worry! There is a good reason why `.binds` uses the chat instead of the GUI and it's very easy to restore those keybinds.
 
