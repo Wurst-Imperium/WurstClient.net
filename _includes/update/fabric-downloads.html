@@ -34,7 +34,7 @@
 				<a class="tile inline-block no-float bg-grayDark command-button primary no-border no-margin-left" href="{{ directlink }}" rel="nofollow" target="_blank" style="width: auto;height: auto;">
 					<span class="icon mif-file-download"></span>
 					Wurst Client {{ full-version }}
-					<small>direct link</small>
+					<small>File: {{ directlink | split: '/' | last }}</small>
 				</a>
 			{% endif %}
 
