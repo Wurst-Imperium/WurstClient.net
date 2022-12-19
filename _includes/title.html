@@ -1,4 +1,4 @@
-<header class="bg-gray fg-white">
+<header class="bg-{% if include.bg %}{{ include.bg }}{% else %}gray{% endif %} fg-white">
 	<div class="container padding40 no-padding-left no-padding-right">
     <h1 class="align-center text-shadow">
       {{ include.l1 }}

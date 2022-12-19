@@ -1,8 +1,48 @@
 ---
 title: Donate
 permalink: /donate/
+paypal-id: FDQ7BMPSLHPBJ
+crypto:
+  - id: xmr
+    name: Monero / XMR
+    address: 83mqnpVY5dwJDFTi63xSkZTUcGidcYw9h1Z2GkH8hfTKBbTQDuhcxZZAKy1zpBjALUA93BNrJAHfJaNkJtRex2XVCWZeJf3
+    qr-size: 215
+  - id: btc
+    name: Bitcoin / BTC
+    address: bc1qnvgrts8ulv9lan8ahus3mkd95ddxyzaqme0hpj
+    qr-size: 155
+  - id: ltc
+    name: Litecoin / LTC
+    address: LNqkf5vU5Tbdf19xDhtTBwkhof7otxUgwQ
+    qr-size: 155
+  - id: eth
+    name: Etherium / ETH
+    address: "0x270e539cB57D0A7a3d9fFd83374FFf3Fd8C3A313"
+    qr-size: 155
+  - id: doge
+    name: Dogecoin / DOGE
+    address: DBuFqyN6C5FjrT1WYBdMU4wsPsFwfzH29x
+    qr-size: 155
+  - id: wow
+    name: Wownero / WOW
+    address: WW3mRA2HdhCSnjjUgEVsrMERLUZ3dqCiVciF17jKmNVScHqzUJRw5iSZb9iiUnN1F1fLdiR8tiAg68EKWfwhgabj1GwqLRHmq
+    qr-size: 256
 ---
-{% include title.html l1 = page.title l2 = page.description %}
+{% include title.html l1 = page.title l2 = page.description bg = "lightBlue" %}
+
+<style>
+    details {
+        padding: 10px;
+    }
+</style>
+
+<div class="padding20 no-padding-left no-padding-right">
+    <div class="container">
+        <p>
+            Your donation helps to ensure the future of Wurst. Whether you're a casual player or a dedicated fan, your support helps to keep Wurst free and open source for everyone to use. Thank you for your contribution!
+        </p>
+    </div>
+</div>
 
 <div class="padding20 no-padding-left no-padding-right bg-grayLighter">
     <div class="container">
@@ -10,10 +50,12 @@ permalink: /donate/
     <div class="margin20 no-margin-left no-margin-right no-margin-top">
         <h2>Donate via PayPal</h2>
         <p>
-            <a href="https://www.paypal.com/biz/fund?id=FDQ7BMPSLHPBJ" target="_blank">https://www.paypal.com/biz/fund?id=FDQ7BMPSLHPBJ</a>
+            <a class="command-button bg-lightBlue fg-white text-shadow shadow bd-lightBlue" href="https://www.paypal.com/biz/fund?id={{ page.paypal-id }}" target="_blank" data-analytics='"Donate via PayPal"'>
+                <span class="icon mif-paypal"></span>
+                Donate via PayPal
+                <small>Also accepts Debit or Credit Cards</small>
+            </a>
         </p>
-        <p><b>NOTE:</b> PayPal charges a minimum transaction fee of 0.30&dollar; / 0.35&euro; / 0.20&pound; / <a href="https://www.paypal.com/webapps/mpp/paypal-fees" target="_blank">check here</a> for other currencies. Donations below that amount will not arrive! PayPal will simply take the entire amount.</p>
-        <p><b>TIP:</b> If you wish to donate smaller amounts, consider using Monero instead of PayPal. Transaction fees are usually less than 0.01&dollar; and donations below that amount will still arrive.</p>
     </div>
 
     </div>
@@ -24,36 +66,39 @@ permalink: /donate/
 
     <div class="margin20 no-margin-left no-margin-right no-margin-top">
         <h2>Donate via Cryptocurrency</h2>
-        <ul style="word-break: break-all;">
-            
-            <li><p><b>Monero / XMR:</b> 83mqnpVY5dwJDFTi63xSkZTUcGidcYw9h1Z2GkH8hfTKBbTQDuhcxZZAKy1zpBjALUA93BNrJAHfJaNkJtRex2XVCWZeJf3<br>
-            <img src="https://images.wurstclient.net/_media/crypto/xmr.png" w="215" h="215"></p></li>
-            
-            <li><p><b>Bitcoin / BTC:</b> bc1qnvgrts8ulv9lan8ahus3mkd95ddxyzaqme0hpj<br>
-            <img src="https://images.wurstclient.net/_media/crypto/btc.png" w="155" h="155"></p></li>
-            
-            <li><p><b>Litecoin / LTC:</b> LNqkf5vU5Tbdf19xDhtTBwkhof7otxUgwQ<br>
-            <img src="https://images.wurstclient.net/_media/crypto/ltc.png" w="155" h="155"></p></li>
-            
-            <li><p><b>Etherium / ETH:</b> 0x270e539cB57D0A7a3d9fFd83374FFf3Fd8C3A313<br>
-            <img src="https://images.wurstclient.net/_media/crypto/eth.png" w="155" h="155"></p></li>
-            
-            <li><p><b>Dogecoin / DOGE:</b> DBuFqyN6C5FjrT1WYBdMU4wsPsFwfzH29x<br>
-            <img src="https://images.wurstclient.net/_media/crypto/doge.png" w="155" h="155"><br>
-            wow! much donate! very thanks!</p></li>
-            
-            <li><p><b>Wownero / WOW:</b> WW3mRA2HdhCSnjjUgEVsrMERLUZ3dqCiVciF17jKmNVScHqzUJRw5iSZb9iiUnN1F1fLdiR8tiAg68EKWfwhgabj1GwqLRHmq<br>
-            <img src="https://images.wurstclient.net/_media/crypto/wow.png" w="256" h="256"><br>
-            wow! wuch donate! wery thanks!</p></li>
-            
-        </ul>
+        {%- for crypto in page.crypto -%}
+            <details>
+                <summary id="donate-{{ crypto.id }}">{{ crypto.name }} (click to expand)</summary>
+                <p>Address: <code style="word-break: break-all">{{ crypto.address }}</code></p>
+                <p>
+                    <img src="https://images.wurstclient.net/_media/crypto/{{ crypto.id }}.png" w="{{ crypto.qr-size }}" h="{{ crypto.qr-size }}" alt="QR code for {{ crypto.name }} donation wallet">
+                </p>
+            </details>
+        {%- endfor -%}
+        <details>
+            <summary id="donate-other-crypto">Other (click to expand)</summary>
+            <p>If you want to use a different crypto, <a href="/contact/">just let me know</a>! I can generate an address for almost any coin.</p>
+        </details>
     </div>
 
     </div>
 </div>
 
-<div class="padding40 no-padding-left no-padding-right bg-grayLighter">
-	<div class="container">
-		<p class="align-center header text-light">Want to use a different cryptocurrency? <a href="/contact/">Let me know!</a></p>
-	</div>
-</div>
+<script>
+    const detailsElements = document.querySelectorAll('details');
+    detailsElements.forEach((details) => {
+        details.addEventListener('toggle', (event) => {
+            if(event.target.hasAttribute('open'))
+            {
+                const summaryElement = event.target.querySelector('summary');
+                const summaryId = summaryElement.getAttribute('id');
+
+                plausible('Reveal Crypto Address', {
+                    props: {
+                        id: summaryId
+                    }
+                });
+            }
+        });
+    });
+</script>
