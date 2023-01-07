@@ -34,6 +34,11 @@ crypto:
     details {
         padding: 10px;
     }
+
+    .copy-code button {
+        font-size: 0.715rem;
+        margin-left: 5px;
+    }
 </style>
 
 <div class="padding20 no-padding-left no-padding-right">
@@ -47,16 +52,25 @@ crypto:
 <div class="padding20 no-padding-left no-padding-right bg-grayLighter">
     <div class="container">
 
-    <div class="margin20 no-margin-left no-margin-right no-margin-top">
-        <h2>Donate via PayPal</h2>
-        <p>
-            <a class="command-button bg-lightBlue fg-white text-shadow shadow bd-lightBlue" href="https://www.paypal.com/biz/fund?id={{ page.paypal-id }}" target="_blank" data-analytics='"Donate via PayPal"'>
-                <span class="icon mif-paypal"></span>
-                Donate via PayPal
-                <small>Also accepts Debit or Credit Cards</small>
-            </a>
-        </p>
-    </div>
+        <div class="margin20 no-margin-left no-margin-right no-margin-top">
+            <h2>Donate via PayPal</h2>
+            <p>
+                <a class="command-button bg-lightBlue fg-white text-shadow shadow bd-lightBlue" href="https://www.paypal.com/biz/fund?id={{ page.paypal-id }}" target="_blank" data-analytics='"Donate via PayPal", {"props": {"method": "biz-fund"}}'>
+                    <span class="icon mif-paypal"></span>
+                    Donate via PayPal
+                    <small>Also accepts Debit or Credit Cards</small>
+                </a>
+            </p>
+            <details class="paypal-details">
+                <summary id="donate-paypal-me">PayPal.Me link (click to expand)</summary>
+                <p><a href="https://paypal.me/WurstImperium" target="_blank" data-analytics='"Donate via PayPal", {"props": {"method": "paypal-me"}}'>PayPal.Me/WurstImperium</a></p>
+            </details>
+            <details class="paypal-details">
+                <summary id="donate-paypal-email">PayPal email (click to expand)</summary>
+                <p><span class="copy-code"><code>donate@wurstimperium.net</code><button onclick="copyPayPalEmail(this)">Copy</button></span></p>
+                <p>or <span class="copy-code"><code>contact.wurstimperium@gmail.com</code><button onclick="copyPayPalEmail(this)">Copy</button></span></p>
+            </details>
+        </div>
 
     </div>
 </div>
@@ -64,29 +78,85 @@ crypto:
 <div class="padding20 no-padding-left no-padding-right">
     <div class="container">
 
-    <div class="margin20 no-margin-left no-margin-right no-margin-top">
-        <h2>Donate via Cryptocurrency</h2>
-        {%- for crypto in page.crypto -%}
-            <details>
-                <summary id="donate-{{ crypto.id }}">{{ crypto.name }} (click to expand)</summary>
-                <p>Address: <code style="word-break: break-all">{{ crypto.address }}</code></p>
-                <p>
-                    <img src="https://images.wurstclient.net/_media/crypto/{{ crypto.id }}.png" w="{{ crypto.qr-size }}" h="{{ crypto.qr-size }}" alt="QR code for {{ crypto.name }} donation wallet">
-                </p>
+        <div class="margin20 no-margin-left no-margin-right no-margin-top">
+            <h2>Donate via Cryptocurrency</h2>
+            {%- for crypto in page.crypto -%}
+                <details class="crypto-details" style="max-width: 600px">
+                    <summary id="donate-{{ crypto.id }}">{{ crypto.name }} (click to expand)</summary>
+                    <p>Address: <span class="copy-code"><code style="word-break: break-all">{{ crypto.address }}</code><button onclick="copyCryptoAddress(this)">Copy</button></span></p>
+                    <p>
+                        <img src="https://images.wurstclient.net/_media/crypto/{{ crypto.id }}.png" w="{{ crypto.qr-size }}" h="{{ crypto.qr-size }}" alt="QR code for {{ crypto.name }} donation wallet">
+                    </p>
+                </details>
+            {%- endfor -%}
+            <details class="crypto-details">
+                <summary id="donate-other-crypto">Other Crypto (click to expand)</summary>
+                <p>If you want to use a different crypto, <a href="/contact/">just let me know</a>! I can generate an address for almost any coin.</p>
             </details>
-        {%- endfor -%}
-        <details>
-            <summary id="donate-other-crypto">Other (click to expand)</summary>
-            <p>If you want to use a different crypto, <a href="/contact/">just let me know</a>! I can generate an address for almost any coin.</p>
-        </details>
-    </div>
+        </div>
 
     </div>
 </div>
 
 <script>
-    const detailsElements = document.querySelectorAll('details');
-    detailsElements.forEach((details) => {
+    function copyPayPalEmail(button) {
+        copyCode(button);
+        
+        var code = button.parentElement.querySelector('code');
+        const codeText = code.textContent;
+
+        plausible('Copy PayPal Email', {
+            props: {
+                id: codeText
+            }
+        });
+    }
+
+    function copyCryptoAddress(button) {
+        copyCode(button);
+        
+        const detailsElement = button.closest('details');
+        const summaryElement = detailsElement.querySelector('summary');
+        const summaryId = summaryElement.getAttribute('id');
+
+        plausible('Copy Crypto Address', {
+            props: {
+                id: summaryId
+            }
+        });
+    }
+
+    function copyCode(button) {
+        var code = button.parentElement.querySelector('code');
+
+        var range = document.createRange();
+        range.selectNodeContents(code);
+
+        var selection = window.getSelection();
+        selection.removeAllRanges();
+        selection.addRange(range);
+
+        document.execCommand('copy');
+        selection.removeAllRanges();
+    }
+
+    document.querySelectorAll('details.paypal-details').forEach((details) => {
+        details.addEventListener('toggle', (event) => {
+            if(event.target.hasAttribute('open'))
+            {
+                const summaryElement = event.target.querySelector('summary');
+                const summaryId = summaryElement.getAttribute('id');
+
+                plausible('Reveal PayPal Details', {
+                    props: {
+                        id: summaryId
+                    }
+                });
+            }
+        });
+    });
+
+    document.querySelectorAll('details.crypto-details').forEach((details) => {
         details.addEventListener('toggle', (event) => {
             if(event.target.hasAttribute('open'))
             {
