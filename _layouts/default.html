@@ -45,6 +45,8 @@ google_auto_ads: false
 		{%- for tr in page.translations -%}
 			<link rel="alternate" hreflang="{{ tr[0] }}" href="https://www.wurstclient.net{{ tr[1] }}">
 		{%- endfor -%}
+		
+		{%- include plausible.html -%}
 
 		{%- if page.google_auto_ads or layout.google_auto_ads -%}
 			<script async src="/js/quantcast-choice.js"></script>
@@ -62,7 +64,6 @@ google_auto_ads: false
 		{%- include footer.html -%}
 		
 		<script async src="/js/wi.js"></script>
-		{%- include plausible.html -%}
 
 	</body>
 </html>
