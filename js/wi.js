@@ -2638,6 +2638,8 @@ function handleLinkEvent(event) {
             }
         }
         plausible(eventName, {props: eventProps});
+        if (/^localhost$|^127(\.[0-9]+){0,2}\.[0-9]+$|^\[::1?\]$/.test(window.location.hostname) || "file:" === window.location.protocol)
+            console.log(eventName, {props: eventProps});
     }
     if (!link.target) {
         if (!(event.ctrlKey || event.metaKey || event.shiftKey) && click) {
