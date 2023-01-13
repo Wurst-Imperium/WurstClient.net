@@ -1,5 +1,9 @@
+---
+layout: none
+permalink: "/js/wi-v2023.01.13.js"
+---
 /*
-  Wurst-Imperium JS v2023.01.13
+  Wurst-Imperium JS
 
   Based on Metro UI CSS v3.0.17
   © 2012 - 2016 Sergey Pimenov
