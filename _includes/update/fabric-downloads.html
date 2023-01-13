@@ -56,7 +56,7 @@
 
 			{% if page.fabric-api %}
 				<span class="inline-block margin20 no-margin-right">
-					<a href="{{ page.fabric-api[mcversion] }}" rel="nofollow" target="_blank" data-analytics='"Download Fabric API", {"props": {"url": "{{ page.fabric-api[mcversion] }}", "mcversion": "{{ mcversion }}"}}'>(Fabric API)</a>
+					<a href="{{ page.fabric-api[mcversion] }}" rel="nofollow" target="_blank" data-analytics="Download Fabric API" data-analytics-url="{{ page.fabric-api[mcversion] }}" data-analytics-mcversion="{{ mcversion }}">(Fabric API)</a>
 				</span>
 			{% endif %}
 
