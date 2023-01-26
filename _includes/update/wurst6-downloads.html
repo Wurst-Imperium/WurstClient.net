@@ -24,28 +24,13 @@ Just extract it and run the 'Wurst Installer.cmd' file.{% endcapture %}
 		{% capture mcversion-range %}{% unless site.mcversions[mcversion] %}{{ mcversion }}{% else %}{{ site.mcversions[mcversion] }}{% endunless %}{% endcapture %}
 		{% capture basepath %}v{{ page.wurst-version }}/Wurst-Client-v{{ page.wurst-version }}-MC{{ mcversion | replace: " ", "-" }}{% endcapture %}
 
-		{% capture adlink %}{{ adbase }}?version={{ full-version | urlencode }}&path={{ basepath }}{{ ext }}{% endcapture %}
 		{% capture directlink %}{{ mcxbase }}{{ basepath }}{{ ext }}{% endcapture %}
 
-		{% if use-admaven %}
-			<h4 class="no-margin-bottom">for Minecraft {{ mcversion-range }}</h4>
-			<p class="no-margin-top">
-				<a class="tile inline-block no-float bg-grayDark command-button primary no-border no-margin-left" href="{{ adlink }}" rel="nofollow noopener" target="_blank" style="width: auto;height: auto;">
-					<span class="icon mif-file-download"></span>
-					Wurst Client {{ full-version }}
-					<small>ad-supported link</small>
-				</a>
-				<span class="inline-block margin20 no-margin-right">
-					<a href="{{ directlink }}" rel="nofollow" target="_blank">(direct link)</a>
-				</span>
-			</p>
-		{% else %}
-			<a class="tile inline-block no-float bg-grayDark command-button primary no-border" href="{{ directlink }}" rel="nofollow" target="_blank" style="width: auto;height: auto;">
-				<span class="icon mif-file-download"></span>
-				Wurst Client {{ full-version }}
-				<small>for Minecraft {{ mcversion-range }}</small>
-			</a>
-		{% endif %}
+		<a class="tile inline-block no-float bg-grayDark command-button primary no-border" href="{{ directlink }}" rel="nofollow" target="_blank" style="width: auto;height: auto;">
+			<span class="icon mif-file-download"></span>
+			Wurst Client {{ full-version }}
+			<small>for Minecraft {{ mcversion-range }}</small>
+		</a>
 
 	{% endfor %}
 </div>

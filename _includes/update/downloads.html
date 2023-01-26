@@ -4,22 +4,6 @@
 {% endfor %}
 
 {% assign mcxbase = "https://github.com/Wurst-Imperium/Wurst-MCX2/releases/download/" %}
-{% assign adbase = "https://files.wurstimperium.net/wurst/" %}
-
-{% if page.admaven != nil %}
-	{% if page.admaven == "safe-mode" %}
-		{% assign use-admaven = true %}
-		{% assign adbase = "https://files.wurstimperium.net/safe-mode/" %}
-	{% else %}
-		{% assign use-admaven = page.admaven %}
-	{% endif %}
-{% elsif page.wurst-version == latest %}
-	{% assign use-admaven = false %}
-{% else %}
-	{% assign use-admaven = true %}
-{% endif %}
-
-{% assign use-admaven = false %}
 
 {% if page.old-downloads or page.old-mcx %}
 
