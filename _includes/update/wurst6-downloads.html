@@ -1,36 +1,51 @@
-{% if include.mode == "zip" %}
+{%- if include.mode == "zip" -%}
 
-	{% assign title = "Wurst installer for Windows" %}
-	{% assign ext = ".zip" %}
-	{% capture tooltip %}Recommended if you don't have Java installed.
-Just extract it and run the 'Wurst Installer.cmd' file.{% endcapture %}
+	{%- assign title = "Wurst installer for Windows" -%}
+	{%- assign ext = ".zip" -%}
+	{%- capture tooltip -%}Recommended if you don't have Java installed.
+Just extract it and run the 'Wurst Installer.cmd' file.{%- endcapture -%}
 
-{% elsif include.mode == "jar" %}
+{%- elsif include.mode == "jar" -%}
 
-	{% assign title = "Cross-platform Wurst installer" %}
-	{% assign ext = ".jar" %}
-	{% capture tooltip %}Requires Java 8 to be installed and properly configured.{% endcapture %}
+	{%- assign title = "Cross-platform Wurst installer" -%}
+	{%- assign ext = ".jar" -%}
+	{%- capture tooltip -%}Requires Java 8 to be installed and properly configured.{%- endcapture -%}
 
-{% endif %}
+{%- endif -%}
 
 <div class="padding10 no-padding-left no-padding-right">
 	<h3>
 		{{ title }}
 		<span class="tag fg-white bg-grayLight" style="cursor: help;vertical-align: baseline;" title="{{ tooltip }}">{{ ext | upcase }}</span>
 	</h3>
-	{% for mcversion in page.minecraft-versions %}
+	{%- for mcversion in page.minecraft-versions -%}
 
-		{% capture full-version %}v{{ page.wurst-version }} MC{{ mcversion }}{% endcapture %}
-		{% capture mcversion-range %}{% unless site.mcversions[mcversion] %}{{ mcversion }}{% else %}{{ site.mcversions[mcversion] }}{% endunless %}{% endcapture %}
-		{% capture basepath %}v{{ page.wurst-version }}/Wurst-Client-v{{ page.wurst-version }}-MC{{ mcversion | replace: " ", "-" }}{% endcapture %}
+		{%- capture full-version %}v{{ page.wurst-version }} MC{{ mcversion }}{% endcapture -%}
+		{%- capture mcversion-range %}{% unless site.mcversions[mcversion] %}{{ mcversion }}{% else %}{{ site.mcversions[mcversion] }}{% endunless %}{% endcapture -%}
+		{%- capture basepath %}v{{ page.wurst-version }}/Wurst-Client-v{{ page.wurst-version }}-MC{{ mcversion | replace: " ", "-" }}{% endcapture -%}
 
-		{% capture directlink %}{{ mcxbase }}{{ basepath }}{{ ext }}{% endcapture %}
+		{%- capture mainlink %}{{ mcxbase }}{{ basepath }}{{ ext }}{% endcapture -%}
+		{% assign mainfile = mainlink | split: '/' | last %}
+		{%- if mcversion contains "OF" -%}
+			{%- assign modloader = "MCP with OptiFine" -%}
+		{%- else -%}
+			{%- assign modloader = "MCP" -%}
+		{%- endif -%}
 
-		<a class="tile inline-block no-float bg-grayDark command-button primary no-border" href="{{ directlink }}" rel="nofollow" target="_blank" style="width: auto;height: auto;">
+		<a class="command-button download"
+			href="{{ mainlink }}" rel="nofollow" target="_blank"
+			data-analytics="Download Wurst"
+			data-analytics-version="{{ page.wurst-version }}"
+			data-analytics-mcversion="{{ mcversion | remove: ' OF' }}"
+			data-analytics-modloader="{{ modloader }}"
+			data-analytics-type="installer-{{ include.mode }}"
+			data-analytics-mirror="GitHub"
+			data-analytics-file="{{ mainfile }}"
+		>
 			<span class="icon mif-file-download"></span>
 			Wurst Client {{ full-version }}
 			<small>for Minecraft {{ mcversion-range }}</small>
 		</a>
 
-	{% endfor %}
+	{%- endfor -%}
 </div>

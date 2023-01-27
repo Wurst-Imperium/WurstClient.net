@@ -9,33 +9,86 @@
 		{% capture mcversion-range %}{% unless site.mcversions[mcversion] %}{{ mcversion }}{% else %}{{ site.mcversions[mcversion] }}{% endunless %}{% endcapture %}
 		{% capture basepath %}v{{ page.wurst-version }}/Wurst-Client-v{{ page.wurst-version }}-MC{{ mcversion | replace: " ", "-" }}{% endcapture %}
 
-		{% capture mainlink %}{{ mcxbase }}{{ basepath }}.jar{% endcapture %}
-		{% capture srclink %}{{ mcxbase }}{{ basepath }}-sources.jar{% endcapture %}
-		{% capture devlink %}{{ mcxbase }}{{ basepath }}-dev.jar{% endcapture %}
-		{% capture srcdevlink %}{{ mcxbase }}{{ basepath }}-sources-dev.jar{% endcapture %}
-
 		<h4 class="no-margin-bottom">for Minecraft {{ mcversion-range }}</h4>
 		<p class="no-margin-top">
 
-			<a class="tile inline-block no-float bg-grayDark command-button primary no-border no-margin-left" href="{{ mainlink }}" rel="nofollow" target="_blank" style="width: auto;height: auto;">
+			{% capture mainlink %}{{ mcxbase }}{{ basepath }}.jar{% endcapture %}
+			{% assign mainfile = mainlink | split: '/' | last %}
+			<a class="command-button download"
+				href="{{ mainlink }}" rel="nofollow" target="_blank"
+				data-analytics="Download Wurst"
+				data-analytics-version="{{ page.wurst-version }}"
+				data-analytics-mcversion="{{ mcversion }}"
+				data-analytics-modloader="Fabric"
+				data-analytics-type="main"
+				data-analytics-mirror="GitHub"
+				data-analytics-file="{{ mainfile }}"
+			>
 				<span class="icon mif-file-download"></span>
 				Wurst Client {{ full-version }}
-				<small>File: {{ mainlink | split: '/' | last }}</small>
+				<small>File: {{ mainfile }}</small>
 			</a>
 
+			{% capture srclink %}{{ mcxbase }}{{ basepath }}-sources.jar{% endcapture %}
+			{% assign srcfile = srclink | split: '/' | last %}
 			<span class="inline-block margin20 no-margin-right">
-				<a href="{{ srclink }}" rel="nofollow" target="_blank">(sources)</a>
+				<a href="{{ srclink }}" rel="nofollow" target="_blank"
+					data-analytics="Download Wurst"
+					data-analytics-version="{{ page.wurst-version }}"
+					data-analytics-mcversion="{{ mcversion }}"
+					data-analytics-modloader="Fabric"
+					data-analytics-type="sources"
+					data-analytics-mirror="GitHub"
+					data-analytics-file="{{ srcfile }}"
+				>
+					(sources)
+				</a>
 			</span>
+			
+			{% capture devlink %}{{ mcxbase }}{{ basepath }}-dev.jar{% endcapture %}
+			{% assign devfile = devlink | split: '/' | last %}
 			<span class="inline-block margin20 no-margin-right">
-				<a href="{{ devlink }}" rel="nofollow" target="_blank">(dev)</a>
+				<a href="{{ devlink }}" rel="nofollow" target="_blank"
+					data-analytics="Download Wurst"
+					data-analytics-version="{{ page.wurst-version }}"
+					data-analytics-mcversion="{{ mcversion }}"
+					data-analytics-modloader="Fabric"
+					data-analytics-type="dev"
+					data-analytics-mirror="GitHub"
+					data-analytics-file="{{ devfile }}"
+				>
+					(dev)
+				</a>
 			</span>
+			
+			{% capture srcdevlink %}{{ mcxbase }}{{ basepath }}-sources-dev.jar{% endcapture %}
+			{% assign srcdevfile = srcdevlink | split: '/' | last %}
 			<span class="inline-block margin20 no-margin-right">
-				<a href="{{ srcdevlink }}" rel="nofollow" target="_blank">(sources-dev)</a>
+				<a href="{{ srcdevlink }}" rel="nofollow" target="_blank"
+					data-analytics="Download Wurst"
+					data-analytics-version="{{ page.wurst-version }}"
+					data-analytics-mcversion="{{ mcversion }}"
+					data-analytics-modloader="Fabric"
+					data-analytics-type="sources-dev"
+					data-analytics-mirror="GitHub"
+					data-analytics-file="{{ srcdevfile }}"
+				>
+					(sources-dev)
+				</a>
 			</span>
 
 			{% if page.fabric-api %}
 				<span class="inline-block margin20 no-margin-right">
-					<a href="{{ page.fabric-api[mcversion] }}" rel="nofollow" target="_blank" data-analytics="Download Fabric API" data-analytics-url="{{ page.fabric-api[mcversion] }}" data-analytics-mcversion="{{ mcversion }}">(Fabric API)</a>
+					<a href="{{ page.fabric-api[mcversion] }}" rel="nofollow" target="_blank"
+						data-analytics="Download Fabric API"
+						data-analytics-mirror="CurseForge"
+						data-analytics-url="{{ page.fabric-api[mcversion] }}"
+						data-analytics-mcversion="{{ mcversion }}"
+						data-analytics-wurstversion="{{ page.wurst-version }}"
+						data-analytics-wurstversionmc="{{ page.wurst-version }} MC{{ mcversion }}"
+					>
+						(Fabric API)
+					</a>
 				</span>
 			{% endif %}
 
