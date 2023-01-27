@@ -1,6 +1,9 @@
+---
+layout: none
+permalink: "/css/wi-v2023.01.18.css"
+---
 /*
-  Wurst-Imperium CSS v1.2
-  © 2017 Wurst-Imperium
+  Wurst-Imperium CSS
 
   Based on Metro UI CSS v3.0.17
   © 2012 - 2016 Sergey Pimenov
@@ -17644,4 +17647,121 @@ kbd {
 }
 .step-list li.google-auto-placed::before {
   content: none;
+}
+
+/* details margin */
+details {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+/* missing image placeholder */
+.missing-image {
+  display: block;
+  position: relative;
+  background-color: #eeeeee;
+}
+
+.missing-image>[class^="mif-"] {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 64px;
+  margin-top: -32px;
+  margin-left: -32px;
+}
+
+/* download buttons */
+.command-button.download {
+  background-color: #333333;
+  color: #ffffff;
+  margin: 5px 5px 5px 0;
+  border: 0;
+}
+
+.command-button.download:hover {
+  outline: #999999 solid 3px;
+}
+
+.button.curseforge {
+  background: #f16436;
+  color: #ffffff;
+  border-color: #f16436;
+  padding: 0.5rem 1rem;
+  height: auto;
+  vertical-align: baseline;
+  margin: 0;
+}
+
+.button.curseforge:hover {
+  outline: #222222 solid 1px;
+}
+
+/* spaced list */
+ul.spaced-list li {
+  margin-block: .5em;
+}
+
+/* wurst-grid */
+.wurst-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+ul.wurst-grid.list {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  margin-left: 0.3125rem;
+  padding-left: 40px;
+}
+
+.wurst-grid.cells5 {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.wurst-grid:not(.list)>li {
+  list-style: none;
+}
+
+.wurst-grid ins.adsbygoogle {
+  min-height: 300px;
+}
+
+.wurst-grid article:hover img {
+  outline: #222222 solid 3px;
+}
+
+@media screen and (min-width: 801px) {
+  .wurst-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .wurst-grid.cells5 {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+@media screen and (max-width: 800px) {
+  .wurst-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .wurst-grid.cells5 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media screen and (max-width: 640px) {
+  .wurst-grid {
+    grid-template-columns: 1fr;
+  }
+  .wurst-grid.cells5 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 320px) {
+  .wurst-grid.cells5 {
+    grid-template-columns: 1fr;
+  }
 }
