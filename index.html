@@ -24,8 +24,13 @@ description: Unleash the full potential of Minecraft with the Wurst Client - fea
 </div>
 <div class="padding40 no-padding-left no-padding-right bg-grayLighter">
 	<div class="container align-center">
-		{% assign features = site.data.features %}
-		{% assign wiki = site.data.wikilinks %}
+		<div>
+			<a class="github-button" href="https://github.com/Wurst-Imperium/Wurst7" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star Wurst-Imperium/Wurst7 on GitHub">Star</a>
+			<a class="github-button" href="https://github.com/Wurst-Imperium/Wurst7/subscription" data-icon="octicon-eye" data-size="large" data-show-count="true" aria-label="Watch Wurst-Imperium/Wurst7 on GitHub">Watch</a>
+			<a class="github-button" href="https://github.com/Wurst-Imperium/Wurst7/fork" data-icon="octicon-repo-forked" data-size="large" data-show-count="true" aria-label="Fork Wurst-Imperium/Wurst7 on GitHub">Fork</a>
+		</div>
+		{%- assign features = site.data.features -%}
+		{%- assign wiki = site.data.wikilinks -%}
 		<h2>Features ({{ features.cheats.size | plus: features.commands.size | plus: features.other.size }})</h2>
 		<p class="text-secondary">Note: Not all features are available in all Minecraft versions.</p>
 	</div>
@@ -182,3 +187,5 @@ description: Unleash the full potential of Minecraft with the Wurst Client - fea
 		</div>
 	</div>
 </div>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
