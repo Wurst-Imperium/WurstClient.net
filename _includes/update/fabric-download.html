@@ -1,0 +1,105 @@
+{%- capture full-version -%}v{{ page.wurst-version }} MC{{ mcversion }}{%- endcapture -%}
+{%- capture basepath -%}v{{ page.wurst-version }}/Wurst-Client-v{{ page.wurst-version }}-MC{{ mcversion | replace: " ", "-" }}{%- endcapture -%}
+
+<p>
+	{%- capture mainlink -%}{{ mcxbase }}{{ basepath }}.jar{%- endcapture -%}
+	{%- assign mainfile = mainlink | split: '/' | last -%}
+	<a class="command-button download"
+		href="{{ mainlink }}" rel="nofollow" target="_blank"
+		data-analytics="Download Wurst"
+		data-analytics-version="{{ page.wurst-version }}"
+		data-analytics-mcversion="{{ mcversion }}"
+		data-analytics-modloader="Fabric"
+		data-analytics-type="main"
+		data-analytics-mirror="GitHub"
+		data-analytics-file="{{ mainfile }}"
+	>
+		<span class="icon mif-file-download"></span>
+		Wurst Client {{ full-version }}
+		<small>File: {{ mainfile }}</small>
+	</a>
+
+	{%- if page.fabric-api -%}
+		{%- assign apiversion = page.fabric-api[mcversion] -%}
+		{%- assign apiversion_short = apiversion | split: '+' | first -%}
+		{%- if apiversion contains "curseforge.com" -%}
+			{%- assign apilink = apiversion -%}
+			{%- assign mirror = "CurseForge" -%}
+		{%- else -%}
+			{%- capture apilink -%}https://github.com/FabricMC/fabric/releases/download/{{ apiversion }}/fabric-api-{{ apiversion }}.jar{%- endcapture -%}
+			{%- assign mirror = "GitHub" -%}
+			{%- assign apifile = apilink | split: '/' | last -%}
+		{%- endif -%}
+		<a class="command-button"
+			href="{{ apilink }}" rel="nofollow" target="_blank"
+			data-analytics="Download Fabric API"
+			data-analytics-mirror="{{ mirror }}"
+			{% if mirror == "GitHub" -%}
+				data-analytics-version="{{ apiversion_short }}"
+				data-analytics-file="{{ apifile }}"
+			{%- else -%}
+				data-analytics-url="{{ apilink }}"
+			{%- endif %}
+			data-analytics-mcversion="{{ mcversion }}"
+			data-analytics-wurstversion="{{ page.wurst-version }}"
+			data-analytics-wurstversionmc="{{ page.wurst-version }} MC{{ mcversion }}"
+		>
+			<img src="https://images.wurstclient.net/_media/icon/fabric.png" width="52" height="56" alt="Fabric icon" class="icon">
+			Fabric API
+			{% if mirror == "GitHub" -%}
+				<small>v{{ apiversion }}</small>
+			{%- else -%}
+				<small>for Minecraft {{ mcversion }}</small>
+			{%- endif -%}
+		</a>
+	{%- endif -%}
+</p>
+
+<p>Additional files:</p>
+<ul class="spaced-list">
+	<li>
+		{%- capture srclink -%}{{ mcxbase }}{{ basepath }}-sources.jar{%- endcapture -%}
+		{%- assign srcfile = srclink | split: '/' | last -%}
+		<a href="{{ srclink }}" rel="nofollow" target="_blank"
+			data-analytics="Download Wurst"
+			data-analytics-version="{{ page.wurst-version }}"
+			data-analytics-mcversion="{{ mcversion }}"
+			data-analytics-modloader="Fabric"
+			data-analytics-type="sources"
+			data-analytics-mirror="GitHub"
+			data-analytics-file="{{ srcfile }}"
+		>
+			{{ srcfile }}
+		</a>
+	</li>
+	<li>
+		{%- capture devlink -%}{{ mcxbase }}{{ basepath }}-dev.jar{%- endcapture -%}
+		{%- assign devfile = devlink | split: '/' | last -%}
+		<a href="{{ devlink }}" rel="nofollow" target="_blank"
+			data-analytics="Download Wurst"
+			data-analytics-version="{{ page.wurst-version }}"
+			data-analytics-mcversion="{{ mcversion }}"
+			data-analytics-modloader="Fabric"
+			data-analytics-type="dev"
+			data-analytics-mirror="GitHub"
+			data-analytics-file="{{ devfile }}"
+		>
+			{{ devfile }}
+		</a>
+	</li>
+	<li>
+		{%- capture srcdevlink -%}{{ mcxbase }}{{ basepath }}-sources-dev.jar{%- endcapture -%}
+		{%- assign srcdevfile = srcdevlink | split: '/' | last -%}
+		<a href="{{ srcdevlink }}" rel="nofollow" target="_blank"
+			data-analytics="Download Wurst"
+			data-analytics-version="{{ page.wurst-version }}"
+			data-analytics-mcversion="{{ mcversion }}"
+			data-analytics-modloader="Fabric"
+			data-analytics-type="sources-dev"
+			data-analytics-mirror="GitHub"
+			data-analytics-file="{{ srcdevfile }}"
+		>
+			{{ srcdevfile }}
+		</a>
+	</li>
+</ul>

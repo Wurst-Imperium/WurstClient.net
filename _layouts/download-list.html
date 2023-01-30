@@ -2,6 +2,12 @@
 layout: default
 google_auto_ads: true
 ---
+{%- if page.mcversion == "snapshots" -%}
+	{%- assign param = "snapshot" -%}
+{%- elsif page.mcversion != "all" -%}
+	{%- assign param = page.mcversion -%}
+{%- endif -%}
+
 {%- include title.html l1 = page.title l2 = page.description -%}
 <div class="padding20 no-padding-left no-padding-right">
 	<main class="container">
@@ -10,27 +16,14 @@ google_auto_ads: true
 			{%- assign i = 0 -%}
 			{%- for update in site.updates reversed -%}
 
-				{%- if page.mcversion == "all" -%}
-
-				{%- elsif page.mcversion == "snapshots" -%}
-
-					{%- assign snapshot = false -%}
-					{%- for mcversion2 in update.minecraft-versions -%}
-						{%- if mcversion2 contains "w" or mcversion2 contains "pre" -%}
-							{%- assign snapshot = true -%}
-						{%- endif -%}
-					{%- endfor -%}
-
-					{%- unless snapshot -%}
+				{%- if page.mcversion == "snapshots" -%}
+					{%- unless update.snapshots -%}
 						{%- continue -%}
 					{%- endunless -%}
-
-				{%- else -%}
-
+				{%- elsif page.mcversion != "all" -%}
 					{%- unless update.minecraft-versions contains page.mcversion -%}
 						{%- continue -%}
 					{%- endunless -%}
-
 				{%- endif -%}
 
 				{%- assign modulo = i | modulo: 7 -%}
@@ -41,27 +34,22 @@ google_auto_ads: true
 				</div>
 				{%- endif -%}
 
-				<article>
-					<a href="{{ update.url }}">
-						<span class="image-container">
-							<span class="frame{% unless update.image %} bg-grayLighter set-border tile-content iconic{% endunless %}">
-								<img src="https://images.wurstclient.net/_media/placeholder-320x180.webp" data-src="{% if update.image %}{{ update.image }}{% else %}https://images.wurstclient.net/_media/placeholder-320x180.webp{% endif %}" class="lazyload{% unless update.image %} no-visible{% endunless %}" alt="Wurst v{{ update.wurst-version }} MC{{ update.minecraft-version }}" width="640" height="360" style="height: auto;">
-								{%- unless update.image -%}
-									<span class="icon mif-file-picture fg-grayLight" style="margin-top: -32px;"></span>
-								{%- endunless -%}
-							</span>
-							<span class="image-overlay" style="background-color: rgba(0, 0, 0, .8);">
-								<span class="leader text-shadow" style="width: 100%;height: 100%;display: table;">
-									<span class="mif-link fg-white" style="display: table-cell;vertical-align: middle;"></span>
-								</span>
-							</span>
+				<div>
+					<a href="{{ update.url }}{% if param %}?mc={{ param }}{% endif %}"><article>
+						{%- assign placeholder = "https://images.wurstclient.net/_media/placeholder-320x180.webp" -%}
+						{%- assign altText = "Wurst v" | append: update.wurst-version | append: " MC" | append: update.minecraft-version -%}
+						{%- if update.image -%}
+						<img src="{{ placeholder }}" data-src="{{ update.image }}" class="lazyload" alt="{{ altText }}" width="640" height="360">
+						{%- else -%}
+						<span class="missing-image set-border">
+							<img src="{{ placeholder }}" data-src="{{ placeholder }}" class="lazyload no-visible" alt="placeholder for {{ altText }} (missing image)" width="640" height="360">
+							<span class="mif-file-picture fg-grayLight"></span>
 						</span>
-					</a>
-					<h2 class="sub-header">
-						<a href="{{ update.url }}">{{ update.title }}</a>
-					</h2>
-				</article>
-
+						{%- endif -%}
+						<h2 class="sub-header">{{ update.title }}</h2>
+					</article></a>
+				</div>
+				
 				{%- assign i = i | plus: 1 -%}
 			{%- endfor -%}
 		</div>
