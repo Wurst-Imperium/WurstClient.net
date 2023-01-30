@@ -1,32 +1,32 @@
-{% for update in site.updates reversed %}
-	{% assign latest = update.wurst-version %}
-	{% break %}
-{% endfor %}
+{%- for update in site.updates reversed -%}
+	{%- assign latest = update.wurst-version -%}
+	{%- break -%}
+{%- endfor -%}
 
-{% assign mcxbase = "https://github.com/Wurst-Imperium/Wurst-MCX2/releases/download/" %}
+{%- assign mcxbase = "https://github.com/Wurst-Imperium/Wurst-MCX2/releases/download/" -%}
 
-{% if page.old-downloads or page.old-mcx %}
+{%- if page.old-downloads or page.old-mcx -%}
 
-	{% include update/dmca-removed.html %}
+	{%- include update/dmca-removed.html -%}
 
-{% elsif page.fabric %}
+{%- elsif page.fabric -%}
 
-	{% include update/fabric-downloads.html %}
+	{%- include update/fabric-downloads.html -%}
 
-{% else %}
+{%- else -%}
 
-	{% if page.mc-1-7-remake %}
-		{% include update/dmca-remade.html %}
-	{% endif %}
+	{%- if page.mc-1-7-remake -%}
+		{%- include update/dmca-remade.html -%}
+	{%- endif -%}
 
-	{% unless page.no-zip %}
-		{% include update/wurst6-downloads.html mode = "zip" %}
-	{% endunless %}
+	{%- unless page.no-zip -%}
+		{%- include update/wurst6-downloads.html mode = "zip" -%}
+	{%- endunless -%}
 
-	{% include update/wurst6-downloads.html mode = "jar" %}
+	{%- include update/wurst6-downloads.html mode = "jar" -%}
 
-{% endif %}
+{%- endif -%}
 
-{% if page.torrent %}
-	{% include update/torrent.html %}
-{% endif %}
+{%- if page.torrent -%}
+	{%- include update/torrent.html -%}
+{%- endif -%}
