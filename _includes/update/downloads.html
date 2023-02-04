@@ -64,20 +64,19 @@
 
 <script>
 	let urlParams = new URLSearchParams(window.location.search);
-	let mc = urlParams.get("mc");
-	let snapshot = urlParams.get("snapshot");
-
-	if (snapshot) {
-		mc = "snapshot";
-		let details = document.querySelectorAll(`details[data-snapshot="${snapshot}"]`);
-		details.forEach(details => {
-			details.style.gridRow = "1";
-			details.open = true;
-		});
-	}
+	let mc = urlParams.get("mc") || urlParams.get("snapshot");
 
 	if (mc) {
-		let elements = document.querySelectorAll(`[data-mcversion="${mc}"]`);
-		elements.forEach(element => element.style.gridRow = "1");
+		let snapshotDetails = document.querySelectorAll(`details[data-snapshot="${mc}"]`);
+		if (snapshotDetails.length > 0) {
+			mc = "snapshot";
+			snapshotDetails.forEach(details => {
+				details.style.gridRow = "1";
+				details.open = true;
+			});
+		}
+
+		let mcversionElements = document.querySelectorAll(`[data-mcversion="${mc}"]`);
+		mcversionElements.forEach(element => element.style.gridRow = "1");
 	}
 </script>
