@@ -57,7 +57,8 @@ google_auto_ads: true
 	<div class="container">
 		<h2 class="text-normal">Using Features</h2>
 		<ul>
-			<li><p><a href="dot-binds-command/">How to use the <code>.binds</code> command</a></p></li>
+			<li><p><a href="https://wurst.wiki/keybind_manager">How to use the Keybind Manager</a></p></li>
+			<li><p><a href="https://wurst.wiki/cmd/binds">How to use the <code>.binds</code> command</a></p></li>
 			<li><p><a href="https://wurst.wiki/serverfinder">How to use ServerFinder</a></p></li>
 			<li><p><a href="/wiki/Mods/ExtraElytra/">How to use ExtraElytra</a></p></li>
 		</ul>
