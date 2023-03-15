@@ -6,8 +6,9 @@ title: WurstClient.net
 url: "https://www.wurstclient.net"
 
 plugins:
-  - jekyll-sitemap
-  - jekyll-feed
+- jekyll-sitemap
+- jekyll-feed
+- jekyll-redirect-from
 
 author: Alexander01998
 
@@ -51,30 +52,30 @@ collections:
     permalink: /:path/
 
 defaults:
-  - scope:
-      path: ""
-      type: pages
-    values:
-      layout: default
-      author: Alexander01998
-  - scope:
-      path: ""
-      type: updates
-    values:
-      layout: update
-  - scope:
-      path: ""
-      type: wiki
-    values:
-      layout: wiki
-      secondarytitle: Wurst Wiki
-  - scope:
-      path: ""
-      type: tutorials
-    values:
-      layout: tutorial
-  - scope:
-      path: ""
-      type: redirects
-    values:
-      layout: redirect
+- scope:
+    path: ""
+    type: pages
+  values:
+    layout: default
+    author: Alexander01998
+- scope:
+    path: ""
+    type: updates
+  values:
+    layout: update
+- scope:
+    path: ""
+    type: wiki
+  values:
+    layout: wiki
+    secondarytitle: Wurst Wiki
+- scope:
+    path: ""
+    type: tutorials
+  values:
+    layout: tutorial
+- scope:
+    path: ""
+    type: redirects
+  values:
+    layout: redirect
