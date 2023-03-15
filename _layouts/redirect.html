@@ -5,6 +5,6 @@
 <head>
 	<meta charset="utf-8">
   <title>Redirecting...</title>
-  <meta http-equiv="refresh" content="0;url={{ page.redirect_url }}">
+  <meta http-equiv="refresh" content="0;url={% if page.redirect_url %}{{ page.redirect_url }}{% else %}{{ page.redirect.to }}{% endif %}">
 </head>
 </html>
