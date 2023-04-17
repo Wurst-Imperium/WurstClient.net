@@ -9,27 +9,42 @@ layout: default
 google_auto_ads: true
 ---
 {% include title.html l1 = "Wie Man Wurst 7 Installiert" l2 = "Eine Schritt-für-Schritt Anleitung mit Bildern und Fehlerbehebungstipps." %}
-<section id="intro" class="padding20 no-padding-left no-padding-right bg-grayLighter">
+
+<style>
+	section {
+		padding: 1.25rem;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	section:nth-of-type(odd) {
+		background-color: #eeeeee;
+	}
+	h2 {
+		font-weight: 400;
+		font-style: normal;
+	}
+	.step-list > li:not(:first-child) {
+		margin-top: 2.5rem;
+	}
+</style>
+
+<section id="intro">
 	<div class="container">
 		<p>
 			Diese Installationsanleitung ist für Minecraft {{ site.latest_mcversion }} - 1.14.2 mit Fabric Loader sowie für Snapshot-Versionen gedacht.
 			Wenn du Wurst für Minecraft 1.12.2 oder ältere Versionen installieren möchtest, folge bitte stattdessen der <a href="/tutorials/how-to-install/wurst-6/">Wurst 6 Installationsanleitung</a>.
 			Wenn du ForgeWurst installieren möchtest, folge bitte stattdessen der <a href="https://forge.wurstclient.net/tutorials/how-to-install/">ForgeWurst Installationsanleitung</a>.
 		</p>
-		<p>
-			{%- include lang-select.html -%}
-		</p>
+		<p>{%- include lang-select.html -%}</p>
 	</div>
 </section>
 
-<section id="fabric-loader" class="padding20 no-padding-left no-padding-right">
+<section id="fabric-loader">
 	<div class="container">
-		<h2 class="text-normal">Schritt 1: Fabric(-Loader) installieren</h2>
+		<h2>Schritt 1: Fabric(-Loader) installieren</h2>
 		<ol class="step-list">
 			<li>
-				<p>
-					Downloade und starte den <a href="https://fabricmc.net/use/installer/" target="_blank" rel="nofollow">Fabric-Installer</a>.
-				</p>
+				<p>Downloade und starte den <a href="https://fabricmc.net/use/installer/" target="_blank" rel="nofollow">Fabric-Installer</a>.</p>
 				<p>
 					<a href="https://fabricmc.net/use/installer/" target="_blank" rel="nofollow">
 						<img src="https://images.wurstclient.net/_media/how-to-install/fabric_download.webp" alt="Fabric installer download instructions">
@@ -41,42 +56,37 @@ google_auto_ads: true
 				{%- include troubleshooting_de/fabric-installer-opens-winrar.html -%}
 				{%- include troubleshooting_de/fabric-installer-no-java-installed.html -%}
 			</li>
-			<div class="padding5 no-padding-left no-padding-right"></div>
 			<li>
-				<p>
-					Wähle im Fabric-Installer deine Minecraft-Version aus und klicke dann auf "Install".
-				</p>
-				<p>
-					<img src="https://images.wurstclient.net/_media/how-to-install/use_fabric_installer.webp" alt="Fabric installer usage instructions">
-				</p>
-				<p>
-					<ul>
-						<li>Wenn du eine Snapshot-Version benutzen willst, musst du vorher bei "Show snapshots" einen Haken setzen.</li>
-						<li>Lass die Option "Select Install Location" am Besten auf dem Standardwert. Änderungen an dieser Einstellung können manchmal Probleme verursachen.</li>
-						<li>Lass den Haken bei "Create profile" am Besten auch da. Dadurch musst du später kein eigenes Profil erstellen und sparst etwas Zeit.</li>
-					</ul>
-				</p>
+				<p>Wähle im Fabric-Installer deine Minecraft-Version aus und klicke dann auf "Install".</p>
+				<p><img src="https://images.wurstclient.net/_media/how-to-install/use_fabric_installer.webp" alt="Fabric installer usage instructions"></p>
+				<ul>
+					<li>Wenn du eine Snapshot-Version benutzen willst, musst du vorher bei "Show snapshots" einen Haken setzen.</li>
+					<li>Lass die Option "Select Install Location" am Besten auf dem Standardwert. Änderungen an dieser Einstellung können manchmal Probleme verursachen.</li>
+					<li>Lass den Haken bei "Create profile" am Besten auch da. Dadurch musst du später kein eigenes Profil erstellen und sparst etwas Zeit.</li>
+				</ul>
 			</li>
 		</ol>
 	</div>
 </section>
 
-<section id="fabric-api" class="padding20 no-padding-left no-padding-right bg-grayLighter">
+<section id="fabric-api">
 	<div class="container">
-		<h2 class="text-normal">Schritt 2: Fabric API installieren</h2>
+		<h2>Schritt 2: Fabric API installieren</h2>
 		<ol class="step-list">
 			<li>
 				<p>
-					Öffne die <a href="https://www.curseforge.com/minecraft/mc-mods/fabric-api/files/all" target="_blank" rel="nofollow" data-analytics="Download Fabric API" data-analytics-url="https://www.curseforge.com/minecraft/mc-mods/fabric-api/files/all">Fabric API-Seite</a> und wähle oben rechts deine Minecraft-Version aus.
+					Öffne die
+					<a href="https://www.curseforge.com/minecraft/mc-mods/fabric-api/files/all" target="_blank" rel="nofollow" data-analytics="Download Fabric API" data-analytics-url="https://www.curseforge.com/minecraft/mc-mods/fabric-api/files/all">
+						Fabric API-Seite
+					</a>
+					und wähle oben rechts deine Minecraft-Version aus.
 				</p>
 				<p>
 					<a href="https://www.curseforge.com/minecraft/mc-mods/fabric-api/files/all" target="_blank" rel="nofollow" data-analytics="Download Fabric API" data-analytics-url="https://www.curseforge.com/minecraft/mc-mods/fabric-api/files/all">
 						<img src="https://images.wurstclient.net/_media/how-to-install/fabric_api_version.webp" alt="Fabric API download instructions">
 					</a>
 				</p>
-				<p>
-					Dann lade die neuste (oberste) Version der Fabric API herunter, die mit deiner Minecraft-Version kompatibel ist.
-				</p>
+				<p>Dann lade die neuste (oberste) Version der Fabric API herunter, die mit deiner Minecraft-Version kompatibel ist.</p>
 				<p>
 					<a href="https://www.curseforge.com/minecraft/mc-mods/fabric-api/files/all" target="_blank" rel="nofollow" data-analytics="Download Fabric API" data-analytics-url="https://www.curseforge.com/minecraft/mc-mods/fabric-api/files/all">
 						<img src="https://images.wurstclient.net/_media/how-to-install/fabric_api_version_2.webp" alt="more Fabric API download instructions">
@@ -86,14 +96,9 @@ google_auto_ads: true
 				{%- include troubleshooting_de/fabric-api-cant-find-download-button.html -%}
 				{%- include troubleshooting_de/fabric-api-not-commonly-downloaded.html -%}
 			</li>
-			<div class="padding5 no-padding-left no-padding-right"></div>
 			<li>
-				<p>
-					Platziere die Fabric API-Datei in deinem <code>.minecraft/mods</code>-Ordner.
-				</p>
-				<p>
-					<img src="https://images.wurstclient.net/_media/how-to-install/fabric_api_mods_folder.webp" alt=".minecraft/mods folder with Fabric API">
-				</p>
+				<p>Platziere die Fabric API-Datei in deinem <code>.minecraft/mods</code>-Ordner.</p>
+				<p><img src="https://images.wurstclient.net/_media/how-to-install/fabric_api_mods_folder.webp" alt=".minecraft/mods folder with Fabric API"></p>
 				<h3>Problembehandlung</h3>
 				{%- include troubleshooting_de/fabric-api-cant-find-minecraft-folder.html -%}
 				{%- include troubleshooting_de/fabric-api-there-is-no-mods-folder.html -%}
@@ -103,9 +108,9 @@ google_auto_ads: true
 	</div>
 </section>
 
-<section id="wurst" class="padding20 no-padding-left no-padding-right">
+<section id="wurst">
 	<div class="container">
-		<h2 class="text-normal">Schritt 3: Wurst installieren</h2>
+		<h2>Schritt 3: Wurst installieren</h2>
 		<ol class="step-list">
 			<li>
 				<p>
@@ -120,14 +125,9 @@ google_auto_ads: true
 				<h3>Problembehandlung</h3>
 				{%- include troubleshooting_de/wurst-not-commonly-downloaded.html -%}
 			</li>
-			<div class="padding5 no-padding-left no-padding-right"></div>
 			<li>
-				<p>
-					Platziere die Wurst-Client-Datei in deinem <code>.minecraft/mods</code>-Ordner.
-				</p>
-				<p>
-					<img src="https://images.wurstclient.net/_media/how-to-install/wurst_mods_folder.webp" alt=".minecraft/mods folder with Fabric and Wurst">
-				</p>
+				<p>Platziere die Wurst-Client-Datei in deinem <code>.minecraft/mods</code>-Ordner.</p>
+				<p><img src="https://images.wurstclient.net/_media/how-to-install/wurst_mods_folder.webp" alt=".minecraft/mods folder with Fabric and Wurst"></p>
 				<p>
 					<h3>Problembehandlung</h3>
 					{%- include troubleshooting_de/wurst-cant-find-minecraft-folder.html -%}
@@ -139,17 +139,13 @@ google_auto_ads: true
 	</div>
 </section>
 
-<section id="launch" class="padding20 no-padding-left no-padding-right bg-grayLighter">
+<section id="launch">
 	<div class="container">
-		<h2 class="text-normal">Schritt 4: Starte das Spiel</h2>
+		<h2>Schritt 4: Starte das Spiel</h2>
 		<ol class="step-list">
 			<li>
-				<p>
-					Im Minecraft Launcher, öffne den <code>Installationen</code> Tab und starte deine neue <code>fabric-loader-...</code> Installation.
-				</p>
-				<p>
-					<img src="https://images.wurstclient.net/_media/how-to-install/press_play.webp" alt="how to launch a modded fabric profile">
-				</p>
+				<p>Im Minecraft Launcher, öffne den <code>Installationen</code> Tab und starte deine neue <code>fabric-loader-...</code> Installation.</p>
+				<p><img src="https://images.wurstclient.net/_media/how-to-install/press_play.webp" alt="how to launch a modded fabric profile"></p>
 				<h3>Problembehandlung</h3>
 				{%- include troubleshooting_de/launch-player-safety-warning.html -%}
 				{%- include troubleshooting_de/launch-cant-see-loader-installation.html -%}
@@ -157,14 +153,9 @@ google_auto_ads: true
 				{%- include troubleshooting_de/rename-loader-installation.html -%}
 				{%- include troubleshooting_de/create-profile-manually.html -%}
 			</li>
-			<div class="padding5 no-padding-left no-padding-right"></div>
 			<li>
-				<p>
-					Das war's! Du benutzt jetzt Wurst.
-				</p>
-				<p>
-					<img src="https://images.wurstclient.net/_media/how-to-install/successful_launch.webp" alt="Minecraft 1.18.2 Titelbildschirm mit Wurst 7 installiert">
-				</p>
+				<p>Das war's! Du benutzt jetzt Wurst.</p>
+				<p><img src="https://images.wurstclient.net/_media/how-to-install/successful_launch.webp" alt="Minecraft 1.18.2 Titelbildschirm mit Wurst 7 installiert"></p>
 				<h3>Problembehandlung</h3>
 				{%- include troubleshooting_de/open-gui.html -%}
 				{%- include troubleshooting_de/launch-fabric-error.html -%}
