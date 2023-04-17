@@ -10,63 +10,192 @@ google_auto_ads: true
 ---
 {% include title.html l1 = "How To Install Wurst 7" l2 = "A step-by-step guide with pictures and troubleshooting tips." %}
 <section id="intro" class="padding20 no-padding-left no-padding-right bg-grayLighter">
-    <div class="container">
-        <p>
-            This installation tutorial is for Minecraft {{ site.latest_mcversion }} - 1.14.2 with Fabric Loader, as well as for snapshot versions.
-            If you want to install Wurst for Minecraft 1.12.2 or older versions, please follow the <a href="/tutorials/how-to-install/wurst-6/">Wurst 6 installation guide</a> instead.
-            If you want to install ForgeWurst, please follow the <a href="https://forge.wurstclient.net/tutorials/how-to-install/">ForgeWurst installation guide</a> instead.
-        </p>
-        <p>
-            {%- include lang-select.html -%}
-        </p>
-    </div>
+	<div class="container">
+		<p>
+			This installation tutorial is for Minecraft {{ site.latest_mcversion }} - 1.14.2 with Fabric Loader, as well as for snapshot versions.
+			If you want to install Wurst for Minecraft 1.12.2 or older versions, please follow the <a href="/tutorials/how-to-install/wurst-6/">Wurst 6 installation guide</a> instead.
+			If you want to install ForgeWurst, please follow the <a href="https://forge.wurstclient.net/tutorials/how-to-install/">ForgeWurst installation guide</a> instead.
+		</p>
+		<p>
+			{%- include lang-select.html -%}
+		</p>
+	</div>
 </section>
 
 <section id="fabric-loader" class="padding20 no-padding-left no-padding-right">
 	<div class="container">
-        {%- include_relative step1.html -%}
+		<h2 class="text-normal">Step 1: Install Fabric (Loader)</h2>
+		<ol class="step-list">
+			<li>
+				<p>
+					Download and run the <a href="https://fabricmc.net/use/installer/" target="_blank" rel="nofollow">Fabric installer</a>.
+				</p>
+				<p>
+					<a href="https://fabricmc.net/use/installer/" target="_blank" rel="nofollow">
+						<img src="https://images.wurstclient.net/_media/how-to-install/fabric_download.webp" alt="Fabric installer download instructions">
+					</a>
+				</p>
+				<h3>Troubleshooting</h3>
+				{%- include troubleshooting/fabric-installer-antivirus.html -%}
+				{%- include troubleshooting/fabric-installer-nothing-happens.html -%}
+				{%- include troubleshooting/fabric-installer-opens-winrar.html -%}
+				{%- include troubleshooting/fabric-installer-no-java-installed.html -%}
+			</li>
+			<div class="padding5 no-padding-left no-padding-right"></div>
+			<li>
+				<p>
+					In the Fabric installer, select your Minecraft version and press "Install".
+				</p>
+				<p>
+					<img src="https://images.wurstclient.net/_media/how-to-install/use_fabric_installer.webp" alt="Fabric installer usage instructions">
+				</p>
+				<p>
+					<ul>
+						<li>If you want to use snapshots, make sure that "Show snapshots" is checked first.</li>
+						<li>Leave "Select Install Location" at the default value. Changing this can sometimes cause problems.</li>
+						<li>Leave "Create profile" checked. That way you don't have to make your own profile.</li>
+					</ul>
+				</p>
+			</li>
+		</ol>
 	</div>
 </section>
 
 <section id="fabric-api" class="padding20 no-padding-left no-padding-right bg-grayLighter">
 	<div class="container">
-        {%- include_relative step2.html -%}
+		<h2 class="text-normal">Step 2: Install Fabric API</h2>
+		<ol class="step-list">
+			<li>
+				<p>
+					Go to the <a href="https://www.curseforge.com/minecraft/mc-mods/fabric-api/files/all" target="_blank" rel="nofollow" data-analytics="Download Fabric API" data-analytics-url="https://www.curseforge.com/minecraft/mc-mods/fabric-api/files/all">Fabric API page</a> and select your Minecraft version at the top right.
+				</p>
+				<p>
+					<a href="https://www.curseforge.com/minecraft/mc-mods/fabric-api/files/all" target="_blank" rel="nofollow" data-analytics="Download Fabric API" data-analytics-url="https://www.curseforge.com/minecraft/mc-mods/fabric-api/files/all">
+						<img src="https://images.wurstclient.net/_media/how-to-install/fabric_api_version.webp" alt="Fabric API download instructions">
+					</a>
+				</p>
+				<p>
+					Then download the latest (top-most) version of Fabric API for that Minecraft version.
+				</p>
+				<p>
+					<a href="https://www.curseforge.com/minecraft/mc-mods/fabric-api/files/all" target="_blank" rel="nofollow" data-analytics="Download Fabric API" data-analytics-url="https://www.curseforge.com/minecraft/mc-mods/fabric-api/files/all">
+						<img src="https://images.wurstclient.net/_media/how-to-install/fabric_api_version_2.webp" alt="more Fabric API download instructions">
+					</a>
+				</p>
+				<h3>Troubleshooting</h3>
+				{%- include troubleshooting/fabric-api-cant-find-download-button.html -%}
+				{%- include troubleshooting/fabric-api-not-commonly-downloaded.html -%}
+			</li>
+			<div class="padding5 no-padding-left no-padding-right"></div>
+			<li>
+				<p>
+					Place the Fabric API in your <code>.minecraft/mods</code> folder.
+				</p>
+				<p>
+					<img src="https://images.wurstclient.net/_media/how-to-install/fabric_api_mods_folder.webp" alt=".minecraft/mods folder with Fabric API">
+				</p>
+				<h3>Troubleshooting</h3>
+				{%- include troubleshooting/fabric-api-cant-find-minecraft-folder.html -%}
+				{%- include troubleshooting/fabric-api-there-is-no-mods-folder.html -%}
+				{%- include troubleshooting/fabric-api-doesnt-have-java-icon.html -%}
+			</li>
+		</ol>
+		
 	</div>
 </section>
 
 <section id="wurst" class="padding20 no-padding-left no-padding-right">
 	<div class="container">
-        {%- include_relative step3.html -%}
+		<h2 class="text-normal">Step 3: Install Wurst</h2>
+		<ol class="step-list">
+			<li>
+				<p>
+					<a href="/download/" target="_blank">Download the Wurst Client</a>, if you haven't already.
+					Make sure to get the latest version that is compatible with your Minecraft version.
+				</p>
+				<p>
+					<a href="/download/" target="_blank">
+						<img src="https://images.wurstclient.net/_media/how-to-install/wurst_download.webp" alt="Wurst Client download instructions">
+					</a>
+				</p>
+				<h3>Troubleshooting</h3>
+				{%- include troubleshooting/wurst-not-commonly-downloaded.html -%}
+			</li>
+			<div class="padding5 no-padding-left no-padding-right"></div>
+			<li>
+				<p>
+					Place the Wurst Client in your <code>.minecraft/mods</code> folder.
+				</p>
+				<p>
+					<img src="https://images.wurstclient.net/_media/how-to-install/wurst_mods_folder.webp" alt=".minecraft/mods folder with Fabric and Wurst">
+				</p>
+				<h3>Troubleshooting</h3>
+				{%- include troubleshooting/wurst-cant-find-minecraft-folder.html -%}
+				{%- include troubleshooting/wurst-there-is-no-mods-folder.html -%}
+				{%- include troubleshooting/wurst-doesnt-have-java-icon.html -%}
+			</li>
+		</ol>
 	</div>
 </section>
 
 <section id="launch" class="padding20 no-padding-left no-padding-right bg-grayLighter">
 	<div class="container">
-        {%- include_relative step4.html -%}
+		<h2 class="text-normal">Step 4: Launch The Game</h2>
+		<ol class="step-list">
+			<li>
+				<p>
+					In the Minecraft Launcher, open the <code>Installations</code> tab and then launch your new <code>fabric-loader-...</code> installation.
+				</p>
+				<p>
+					<img src="https://images.wurstclient.net/_media/how-to-install/press_play.webp" alt="how to launch a modded fabric profile">
+				</p>
+				<h3>Troubleshooting</h3>
+				{%- include troubleshooting/launch-player-safety-warning.html -%}
+				{%- include troubleshooting/launch-cant-see-loader-installation.html -%}
+				{%- include troubleshooting/create-profile-automatically.html -%}
+				{%- include troubleshooting/rename-loader-installation.html -%}
+				{%- include troubleshooting/create-profile-manually.html -%}
+			</li>
+			<div class="padding5 no-padding-left no-padding-right"></div>
+			<li>
+				<p>
+					That's it! You are now using Wurst.
+				</p>
+				<p>
+					<img src="https://images.wurstclient.net/_media/how-to-install/successful_launch.webp" alt="Minecraft 1.18.2 title screen with Wurst 7 installed">
+				</p>
+				<h3>Troubleshooting</h3>
+				{%- include troubleshooting/open-gui.html -%}
+				{%- include troubleshooting/launch-fabric-error.html -%}
+				{%- include troubleshooting/launch-error-uncaught.html -%}
+				{%- include troubleshooting/launch-just-crashes.html -%}
+				{%- include troubleshooting/still-launches-vanilla.html -%}
+			</li>
+		</ol>
 	</div>
 </section>
 
 <script>
-    const detailsElements = document.querySelectorAll('details');
-    detailsElements.forEach((details) => {
-        details.addEventListener('toggle', (event) => {
-            if(event.target.hasAttribute('open'))
-            {
-                const summaryElement = event.target.querySelector('summary');
-                const summaryText = summaryElement.textContent;
-                const summaryId = summaryElement.getAttribute('id');
+	const detailsElements = document.querySelectorAll('details');
+	detailsElements.forEach((details) => {
+		details.addEventListener('toggle', (event) => {
+			if(event.target.hasAttribute('open'))
+			{
+				const summaryElement = event.target.querySelector('summary');
+				const summaryText = summaryElement.textContent;
+				const summaryId = summaryElement.getAttribute('id');
 
-                const sectionElement = event.target.closest('section');
-                const sectionId = sectionElement.getAttribute('id');
+				const sectionElement = event.target.closest('section');
+				const sectionId = sectionElement.getAttribute('id');
 
-                plausible('Open Troubleshooter', {
-                    props: {
-                        question: summaryText,
-                        question_id: summaryId,
-                        section_id: sectionId
-                    }
-                });
-            }
-        });
-    });
+				plausible('Open Troubleshooter', {
+					props: {
+						question: summaryText,
+						question_id: summaryId,
+						section_id: sectionId
+					}
+				});
+			}
+		});
+	});
 </script>
