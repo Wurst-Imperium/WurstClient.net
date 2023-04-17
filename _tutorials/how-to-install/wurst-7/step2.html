@@ -18,23 +18,8 @@
 			</a>
 		</p>
 		<h3>Troubleshooting</h3>
-		<details>
-			<summary id="fabric-api-cant-find-download-button">I can't find the Fabric API download button.</summary>
-			<p>
-				Ahem...
-			</p>
-			<p>
-				<img src="https://images.wurstclient.net/_media/how-to-install/fabric_api_download_button.webp" alt="lots of arrows pointing at the Fabric API download button :)">
-			</p>
-		</details>
-		<details>
-			<summary id="fabric-api-not-commonly-downloaded">When I try to download Fabric API, Chrome warns me that the file "isn't commonly downloaded".</summary>
-			<p>
-				This can happen when a new version has just been released.
-				It just means that you're one of the first people to download that specific version of Fabric API.
-				You can safely ignore this warning and download the file anyways.
-			</p>
-		</details>
+		{%- include troubleshooting/fabric-api-cant-find-download-button.html -%}
+		{%- include troubleshooting/fabric-api-not-commonly-downloaded.html -%}
 	</li>
 	<div class="padding5 no-padding-left no-padding-right"></div>
 	<li>
@@ -45,35 +30,8 @@
 			<img src="https://images.wurstclient.net/_media/how-to-install/fabric_api_mods_folder.webp" alt=".minecraft/mods folder with Fabric API">
 		</p>
 		<h3>Troubleshooting</h3>
-		<details>
-			<summary id="fabric-api-cant-find-minecraft-folder">Where do I find my <code>.minecraft</code> folder?</summary>
-			<p>
-				<b>Windows:</b> Open your Windows Explorer and type <code>%appdata%/.minecraft</code> into the address bar.<br>
-				(Alternatively you can press Win+R and type in the same thing.)
-			</p>
-			<p>
-				<b>Linux:</b> Open your File Explorer and type <code>~/.minecraft</code> into the address bar.
-			</p>
-			<p>
-				<b>Mac:</b> Open your Finder and type <code>~/Library/Application Support/minecraft</code> into the address bar.
-			</p>
-		</details>
-		<details>
-			<summary id="fabric-api-there-is-no-mods-folder">There is no <code>mods</code> folder in my <code>.minecraft</code> folder.</summary>
-			<p>
-				No problem, just create the folder manually. Make sure you name it exactly <code>mods</code> (all lowercase).
-			</p>
-		</details>
-		<details>
-			<summary id="fabric-api-doesnt-have-java-icon">My Fabric API file doesn't have the Java icon on it. It has a WinRAR logo instead.</summary>
-			<p>
-				Check the file extension. As long as it ends with <code>.jar</code>, everything is fine.
-				It simply means that your computer is configured to open .jar files with WinRAR instead of Java.
-			</p>
-			<p>
-				It doesn't matter for the Fabric API, since it's still a .jar file and will still work,
-				but if you want to fix it there is a setting in Windows called "Choose default apps by file type" that lets you change this.
-			</p>
-		</details>
+		{%- include troubleshooting/fabric-api-cant-find-minecraft-folder.html -%}
+		{%- include troubleshooting/fabric-api-there-is-no-mods-folder.html -%}
+		{%- include troubleshooting/fabric-api-doesnt-have-java-icon.html -%}
 	</li>
 </ol>

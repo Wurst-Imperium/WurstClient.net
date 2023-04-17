@@ -1,0 +1,36 @@
+<details>
+	<summary id="launch-just-crashes">I see an error message saying <code>An unexpected issue occurred and the game has crashed</code>.</summary>
+	<p>
+		Like "Incompatible mod set!", this error message usually means that you didn't follow the tutorial properly.
+		Unfortunately the official Minecraft launcher sucks at providing useful error messages, so the usual "Exit Code: 1" can mean almost anything.
+	</p>
+	<p>
+		<img src="https://images.wurstclient.net/_media/how-to-install/error_generic_crash.webp" alt="the Minecraft launcher's useless error message">
+	</p>
+	<p>
+		A common cause of this error is that you installed a version of Wurst that is not compatible with your Minecraft version.
+	</p>
+	<p>
+		Double-check which Wurst version is in your mods folder (the "MC" part indicates which Minecraft version it's intended for) and <a href="#wurst">go back to step 3</a> if it's the wrong version.
+	</p>
+	<p>
+		<img src="https://images.wurstclient.net/_media/how-to-install/error_wrong_wurst_version.webp" alt="an example of using the wrong Wurst version (MC1.16.5) in a Minecraft 1.18.2 installation">
+	</p>
+	<p>
+		Another possible cause is that you selected a very old version of Fabric Loader in the Fabric installer.
+	</p>
+	<p>
+		There is generally no good reason to use anything else than the latest version of Fabric Loader (which is selected by default).
+		You should <a href="#fabric-loader">go back to step 1</a> and this time leave the "Loader Version" at its default value.
+	</p>
+	<p>
+		<img src="https://images.wurstclient.net/_media/how-to-install/error_very_old_fabric_loader.webp" alt="an example of a very old Fabric Loader version that will crash a Minecraft 1.18.2 installation">
+	</p>
+	<p>
+		If all of your mod versions and Fabric Loader are correct but the game is still crashing, it is possible that you have found a bug.
+		Unfortunately it seems like the official Minecraft launcher no longer gives you access to crash report files.
+	</p>
+	<p>
+		Try to get a copy of the stack trace (maybe in the log files?) or see if the same crash also happens with a launcher that doesn't disable crash report files.
+	</p>
+</details>

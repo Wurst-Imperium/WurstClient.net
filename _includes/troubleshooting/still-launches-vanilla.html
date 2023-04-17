@@ -1,0 +1,43 @@
+<details>
+	<summary id="still-launches-vanilla">The game launches, but it's just vanilla Minecraft.</summary>
+	<p>
+		Look closely. Is it really vanilla or is it Fabric without Wurst? You will see "Fabric (Modded)" at the bottom if it's Fabric.
+	</p>
+	<p>
+		<img src="https://images.wurstclient.net/_media/how-to-install/error_fabric_without_wurst.webp" alt="a Minecraft 1.18.2 installation with Fabric, but without Wurst">
+	</p>
+	<div style="padding-left: 0.625rem;border-left: 1px #ccc solid;">
+		<details>
+			<summary id="actually-launches-just-vanilla">It's just vanilla Minecraft.</summary>
+			<p>
+				Most likely, you simply launched the wrong installation.
+				You should go back to the Minecraft launcher and double-check which installation you just launched.
+			</p>
+		</details>
+		<details>
+			<summary id="launches-fabric-without-wurst">It's Fabric, but without Wurst.</summary>
+			<p>
+				Most likely, you placed your <code>mods</code> folder in the wrong location.
+				Make sure that the folder is called exactly <code>mods</code> and that its location is exactly as follows:
+			</p>
+			<p>
+				<b>Windows:</b> <code>C:\Users\YourName\AppData\Roaming\.minecraft\mods</code>
+			</p>
+			<p>
+				<b>Linux:</b> <code>/home/YourName/.minecraft/mods</code>
+			</p>
+			<p>
+				<b>Mac:</b> <code>/home/YourName/Library/Application Support/minecraft/mods</code>
+			</p>
+			<p>
+				If the folder name and location are correct but you still have this issue, you probably changed the the <code>GAME DIRECTORY</code> option in your <code>fabric-loader-...</code> installation.
+			</p>
+			<p>
+				<img src="https://images.wurstclient.net/_media/how-to-install/error_wrong_game_directory.webp" alt="example of a changed game directory that can prevent Fabric from finding your mods">
+			</p>
+			<p>
+				You should go back to the Minecraft launcher, edit your installation and change <code>GAME DIRECTORY</code> back to its default value.
+			</p>
+		</details>
+	</div>
+</details>

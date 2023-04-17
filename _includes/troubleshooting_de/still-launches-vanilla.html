@@ -1,0 +1,43 @@
+<details>
+	<summary id="still-launches-vanilla">Das Spiel startet, aber es ist nur Vanilla-Minecraft.</summary>
+	<p>
+		Schau genau hin. Ist es wirklich nur Vanilla-Minecraft oder ist es Fabric ohne Wurst? Du kannst den Text "Fabric (Modded)" am unteren Rand sehen, wenn es Fabric ist.
+	</p>
+	<p>
+		<img src="https://images.wurstclient.net/_media/how-to-install/error_fabric_without_wurst.webp" alt="eine Minecraft 1.18.2 Installation mit Fabric, aber ohne Wurst">
+	</p>
+	<div style="padding-left: 0.625rem;border-left: 1px #ccc solid;">
+		<details>
+			<summary id="actually-launches-just-vanilla">Es ist nur Vanilla-Minecraft.</summary>
+			<p>
+				Wahrscheinlich hast du einfach die falsche Installation gestartet.
+				Du solltest zurück zum Minecraft-Launcher gehen und überprüfen, welche Installation du gerade gestartet hast.
+			</p>
+		</details>
+		<details>
+			<summary id="launches-fabric-without-wurst">Es ist Fabric, aber ohne Wurst.</summary>
+			<p>
+				Wahrscheinlich hast du deinen <code>mods</code>-Ordner an der falschen Stelle angelegt.
+				Stelle sicher, dass der Ordner genau <code>mods</code> heißt und dass sich der Ordner genau an folgender Stelle befindet:
+			</p>
+			<p>
+				<b>Windows:</b> <code>C:\Users\DeinName\AppData\Roaming\.minecraft\mods</code>
+			</p>
+			<p>
+				<b>Linux:</b> <code>/home/DeinName/.minecraft/mods</code>
+			</p>
+			<p>
+				<b>Mac:</b> <code>/home/DeinName/Library/Application Support/minecraft/mods</code>
+			</p>
+			<p>
+				Wenn der Ordnername und der Speicherort korrekt sind, aber das Problem weiterhin besteht, hast du wahrscheinlich die <code>GAME DIRECTORY</code>-Option in deiner <code>fabric-loader-...</code>-Installation geändert.
+			</p>
+			<p>
+				<img src="https://images.wurstclient.net/_media/how-to-install/error_wrong_game_directory.webp" alt="Beispiel für ein geändertes Game Directory, das verhindern kann, dass Fabric deine Mods findet">
+			</p>
+			<p>
+				Du solltest zurück zum Minecraft-Launcher gehen, deine Installation bearbeiten und die <code>GAME DIRECTORY</code>-Option auf den Standardwert zurücksetzen.
+			</p>
+		</details>
+	</div>
+</details>

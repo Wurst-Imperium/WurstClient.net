@@ -1,0 +1,80 @@
+<details>
+	<summary id="launch-fabric-error">I see an error message saying <code>Incompatible mod set!</code> or <code>Failed to launch!</code>.</summary>
+	<p>
+		Generally speaking, this means you didn't follow the tutorial properly.
+		Fabric's error messages are usually really good at explaining what's wrong and the "potential" solution that it gives you is almost always the correct solution.
+		You should absolutely just follow the instructions listed in the error message.
+	</p>
+	<p>
+		But, *sigh* since I know some of you won't be satisfied with that answer, here is a list of common error messages / solutions and what they mean:
+	</p>
+	<div style="padding-left: 0.625rem;border-left: 1px #ccc solid;">
+		<h4>Meta-Troubleshooting (because some people seemingly can't read)</h4>
+		<details>
+			<summary id="error-install-fabric-version-x-or-later"><code>Install fabric, version X or later.</code></summary>
+			<p>
+				This is talking about Fabric API, not Fabric Loader!
+			</p>
+			<p>
+				If you see a message like this, you skipped step 2.
+				You should <a href="#fabric-api">go back to step 2</a> and install the Fabric API.
+			</p>
+			<p>
+				<img src="https://images.wurstclient.net/_media/how-to-install/error_missing_fabric_api.webp" alt="the error you get when you forget to install Fabric API">
+			</p>
+		</details>
+		<details>
+			<summary id="error-replace-fabric-x-with-version-y-or-later"><code>Replace mod fabric X with version Y or later.</code></summary>
+			<p>
+				This is talking about Fabric API, not Fabric Loader!
+			</p>
+			<p>
+				<img src="https://images.wurstclient.net/_media/how-to-install/error_wrong_fabric_api.webp" alt="the error you get when you install the wrong version of Fabric API">
+			</p>
+			<p>
+				If you see a message like this, you installed the wrong version of Fabric API.
+				You should remove your current Fabric API file from the mods folder, <a href="#fabric-api">go back to step 2</a> and this time pay close attention to the instructions.
+			</p>
+			<p>
+				Step 2 shows you exactly how to find the correct Fabric API version.
+			</p>
+		</details>
+		<details>
+			<summary id="error-replace-minecraft-x-with-version-y"><code>Replace minecraft X with version Y.</code></summary>
+			<p>
+				If you see a message like this, you either launched the wrong <code>fabric-loader-...</code> installation (if you have multiple), or selected the wrong Minecraft version in the Fabric installer.
+			</p>
+			<p>
+				<img src="https://images.wurstclient.net/_media/how-to-install/error_wrong_minecraft_version.webp" alt="the error you get when you use the wrong Minecraft version with your Wurst installation">
+			</p>
+			<p>
+				You should first go back to the Minecraft launcher and double-check which installation you just launched.
+			</p>
+			<p>
+				If you don't have a <code>fabric-loader-...</code> installation for the correct Minecraft version, <a href="#fabric-loader">run the Fabric installer again</a> and this time pay close attention to select the Minecraft version you actually want to use.
+			</p>
+			<p>
+				After doing this, you will have multiple <code>fabric-loader-...</code> installations in your Minecraft Launcher.
+				Make sure to select the correct one so you don't get the same error again.
+			</p>
+		</details>
+		<details>
+			<summary id="error-replace-loader-x-with-version-y"><code>Replace mod fabricloader X with version Y.</code></summary>
+			<p>
+				If you see a message like this, you either launched the wrong <code>fabric-loader-...</code> installation (if you have multiple), or you selected an older Fabric Loader version in the Fabric installer.
+			</p>
+			<p>
+				<img src="https://images.wurstclient.net/_media/how-to-install/error_wrong_fabric_loader.webp" alt="the error you get when you use the wrong Fabric Loader version with your Wurst installation">
+			</p>
+			<p>
+				You should first go back to the Minecraft launcher and double-check which installation you just launched.
+			</p>
+			<p>
+				If you don't have a <code>fabric-loader-...</code> installation with an up-to-date Fabric Loader version, <a href="#fabric-loader">run the Fabric installer again</a> and make sure to leave the "Loader Version" at its default value.
+			</p>
+			<p>
+				There is generally no good reason to use anything else than the latest version of Fabric Loader (which is selected by default).
+			</p>
+		</details>
+	</div>
+</details>

@@ -36,49 +36,10 @@ google_auto_ads: true
 					</a>
 				</p>
 				<h3>Problembehandlung</h3>
-				<details>
-					<summary id="fabric-installer-antivirus">Mein Antivirus meint, dass der Fabric-Installer bösartig sei.</summary>
-					<p>
-						Das kann mit dem Fabric-Installer "for Windows" passieren (weil es eine .exe-Datei ist), ist aber mit ziemlicher Sicherheit ein Fehlalarm. Du kannst die Warnung entweder ignorieren oder statt der .exe die Universal/.jar-Version benutzen. Die .jar-Version wird nicht als Virus erkannt.
-					</p>
-				</details>
-				<details>
-					<summary id="fabric-installer-nothing-happens">Wenn ich versuche den Fabric-Installer zu starten, passiert nichts.</summary>
-					<p>
-						Das kann passieren wenn du kein Java installiert hast. Hier ist ein <a href="https://www.youtube.com/watch?v=Wv0vPUwitJs" target="_blank" rel="nofollow">Video das erklärt wie man Java installiert</a> (auf Englisch).
-					</p>
-					<p>
-						(Der Author von diesem Video kann dir bei Wurst-Problemen nicht helfen. Wenn du Hilfe brauchst, <a href="/contact">frag mich</a>.)
-					</p>
-				</details>
-				<details>
-					<summary id="fabric-installer-opens-winrar">Wenn ich versuche den Fabric-Installer zu starten, öffnet sich stattdessen WinRAR / 7-Zip / etc.</summary>
-					<p>
-						Das passiert wenn dein Computer darauf eingestellt ist, .jar-Dateien mit einem anderen Programm als Java zu öffnen.
-						In Windows gibt es eine Einstellung namens "Standard-Apps nach Dateityp auswählen", mit der du das ändern kannst.
-					</p>
-					<p>
-						Alternativ kannst du Rechtsklick > "Öffnen mit" benutzen um die Datei mit Java zu öffnen, etwa so:
-					</p>
-					<p>
-						<img src="https://images.wurstclient.net/_media/how-to-install/fabric_run_with_java.webp" alt="how to run the Fabric installer with Java">
-						<ul>
-							<li>Wenn du Java in der Liste nicht finden kannst, klicke unten auf "Anderes Programm auswählen".</li>
-							<li>Je nachdem was du installiert hast, siehst du hier entweder "Java(TM)&nbsp;Platform&nbsp;SE&nbsp;binary" oder "OpenJDK&nbsp;Platform&nbsp;binary" (oder beides). Es ist egal, welche Java-Version du hier auswählst.</li>
-							<li>Wenn du Java gar nicht finden kannst, ist es wahrscheinlich nicht installiert. In diesem Fall musst du erstmal <a href="https://www.youtube.com/watch?v=Wv0vPUwitJs" target="_blank" rel="nofollow">Java installieren</a> (englischsprachiges Video-Tutorial).<br>
-							(Der Author von diesem Video kann dir bei Wurst-Problemen nicht helfen. Wenn du Hilfe brauchst, <a href="/contact">frag mich</a>.)</li>
-						</ul>
-					</p>
-				</details>
-				<details>
-					<summary id="fabric-installer-no-java-installed">Wenn ich versuche den Fabric-Installer zu starten, bekomme ich eine Fehlermeldung die sagt dass ich kein Java habe.</summary>
-					<p>
-						Das bedeutet (selbstverständlich) dass du kein Java installiert hast. Hier ist ein <a href="https://www.youtube.com/watch?v=Wv0vPUwitJs" target="_blank" rel="nofollow">Video das erklärt wie man Java installiert</a> (auf Englisch).
-					</p>
-					<p>
-						(Der Author von diesem Video kann dir bei Wurst-Problemen nicht helfen. Wenn du Hilfe brauchst, <a href="/contact">frag mich</a>.)
-					</p>
-				</details>
+				{%- include troubleshooting_de/fabric-installer-antivirus.html -%}
+				{%- include troubleshooting_de/fabric-installer-nothing-happens.html -%}
+				{%- include troubleshooting_de/fabric-installer-opens-winrar.html -%}
+				{%- include troubleshooting_de/fabric-installer-no-java-installed.html -%}
 			</li>
 			<div class="padding5 no-padding-left no-padding-right"></div>
 			<li>
@@ -122,23 +83,8 @@ google_auto_ads: true
 					</a>
 				</p>
 				<h3>Problembehandlung</h3>
-				<details>
-					<summary id="fabric-api-cant-find-download-button">Ich kann den Download-Button für die Fabric API nicht finden.</summary>
-					<p>
-						Ahem...
-					</p>
-					<p>
-						<img src="https://images.wurstclient.net/_media/how-to-install/fabric_api_download_button.webp" alt="lots of arrows pointing at the Fabric API download button :)">
-					</p>
-				</details>
-				<details>
-					<summary id="fabric-api-not-commonly-downloaded">Wenn ich versuche die Fabric API herunterzuladen, warnt mich Chrome dass die Datei "selten heruntergeladen" wird.</summary>
-					<p>
-						Das kann passieren wenn gerade eine neue Version released wurde.
-						Es bedeutet einfach nur, dass du einer der ersten Leute bist, die genau diese Version von der Fabric API herunterladen.
-						Du kannst diese Warnung getrost ignorieren und die Datei einfach trotzdem herunterladen.
-					</p>
-				</details>
+				{%- include troubleshooting_de/fabric-api-cant-find-download-button.html -%}
+				{%- include troubleshooting_de/fabric-api-not-commonly-downloaded.html -%}
 			</li>
 			<div class="padding5 no-padding-left no-padding-right"></div>
 			<li>
@@ -149,36 +95,9 @@ google_auto_ads: true
 					<img src="https://images.wurstclient.net/_media/how-to-install/fabric_api_mods_folder.webp" alt=".minecraft/mods folder with Fabric API">
 				</p>
 				<h3>Problembehandlung</h3>
-				<details>
-					<summary id="fabric-api-cant-find-minecraft-folder">Wo finde ich meinen <code>.minecraft</code>-Ordner?</summary>
-					<p>
-						<b>Windows:</b> Öffne den Windows Explorer und gib dann <code>%appdata%/.minecraft</code> oben in die Adressleiste ein.<br>
-						(Alternativ kannst du auch Win+R drücken das da eingeben.)
-					</p>
-					<p>
-						<b>Linux:</b> Öffne den File Explorer und gib dann <code>~/.minecraft</code> in die Adressleiste ein.
-					</p>
-					<p>
-						<b>Mac:</b> Öffne den Finder und gib dann <code>~/Library/Application Support/minecraft</code> in die Adressleiste ein.
-					</p>
-				</details>
-				<details>
-					<summary id="fabric-api-there-is-no-mods-folder">Da ist kein <code>mods</code>-Ordner in meinem <code>.minecraft</code>-Ordner.</summary>
-					<p>
-						Kein Problem, du kannst den Ordner einfach selbst erstellen. Pass auf das du den Ordner genau <code>mods</code> nennst (alles kleingeschrieben, nicht "Mods").
-					</p>
-				</details>
-				<details>
-					<summary id="fabric-api-doesnt-have-java-icon">Meine Fabric API-Datei hat kein Java-Icon. Stattdessen ist da so ein WinRAR-Logo drauf.</summary>
-					<p>
-						Überprüfe die Dateiendung. Wenn die Datei in <code>.jar</code> endet, ist alles gut.
-						Das bedeutet einfach, dass dein Computer darauf eingestellt ist, .jar-Dateien mit WinRAR statt Java zu öffnen.
-					</p>
-					<p>
-						Das spielt für die Fabric API keine Rolle, da es immer noch eine .jar-Datei ist und weiterhin funktionieren wird,
-						aber wenn dich das "falsche" Icon stört gibt es in Windows eine Einstellung namens "Standard-Apps nach Dateityp auswählen", mit der du das ändern kannst.
-					</p>
-				</details>
+				{%- include troubleshooting_de/fabric-api-cant-find-minecraft-folder.html -%}
+				{%- include troubleshooting_de/fabric-api-there-is-no-mods-folder.html -%}
+				{%- include troubleshooting_de/fabric-api-doesnt-have-java-icon.html -%}
 			</li>
 		</ol>
 	</div>
@@ -199,14 +118,7 @@ google_auto_ads: true
 					</a>
 				</p>
 				<h3>Problembehandlung</h3>
-				<details>
-					<summary id="wurst-not-commonly-downloaded">Wenn ich versuche den Wurst Client herunterzuladen, warnt mich Chrome dass die Datei "selten heruntergeladen" wird.</summary>
-					<p>
-						Das kann passieren wenn gerade eine neue Version released wurde.
-						Es bedeutet einfach nur, dass du einer der ersten Leute bist, die genau diese Version von Wurst herunterladen.
-						Du kannst diese Warnung getrost ignorieren und die Datei einfach trotzdem herunterladen.
-					</p>
-				</details>
+				{%- include troubleshooting_de/wurst-not-commonly-downloaded.html -%}
 			</li>
 			<div class="padding5 no-padding-left no-padding-right"></div>
 			<li>
@@ -218,36 +130,9 @@ google_auto_ads: true
 				</p>
 				<p>
 					<h3>Problembehandlung</h3>
-					<details>
-						<summary id="wurst-cant-find-minecraft-folder">Wo finde ich meinen <code>.minecraft</code>-Ordner?</summary>
-						<p>
-							<b>Windows:</b> Öffne den Windows Explorer und gib dann <code>%appdata%/.minecraft</code> oben in die Adressleiste ein.<br>
-							(Alternativ kannst du auch Win+R drücken das da eingeben.)
-						</p>
-						<p>
-							<b>Linux:</b> Öffne den File Explorer und gib dann <code>~/.minecraft</code> in die Adressleiste ein.
-						</p>
-						<p>
-							<b>Mac:</b> Öffne den Finder und gib dann <code>~/Library/Application Support/minecraft</code> in die Adressleiste ein.
-						</p>
-					</details>
-					<details>
-						<summary id="wurst-there-is-no-mods-folder">Da ist kein <code>mods</code>-Ordner in meinem <code>.minecraft</code>-Ordner.</summary>
-						<p>
-							Du hast den vorherigen Schritt übersprungen. Du solltest <a href="#fabric-api">zurück zu Schritt 2 gehen</a> und erstmal die Fabric API installieren.
-						</p>
-					</details>
-					<details>
-						<summary id="wurst-doesnt-have-java-icon">Meine Wurst-Client-Datei hat kein Java-Icon. Stattdessen ist da so ein WinRAR-Logo drauf.</summary>
-						<p>
-							Überprüfe die Dateiendung. Wenn die Datei in <code>.jar</code> endet, ist alles gut.
-							Das bedeutet einfach, dass dein Computer darauf eingestellt ist, .jar-Dateien mit WinRAR statt Java zu öffnen.
-						</p>
-						<p>
-							Das spielt für diese Datei keine Rolle, da es immer noch eine .jar-Datei ist und weiterhin funktionieren wird,
-							aber wenn dich das "falsche" Icon stört gibt es in Windows eine Einstellung namens "Standard-Apps nach Dateityp auswählen", mit der du das ändern kannst.
-						</p>
-					</details>
+					{%- include troubleshooting_de/wurst-cant-find-minecraft-folder.html -%}
+					{%- include troubleshooting_de/wurst-there-is-no-mods-folder.html -%}
+					{%- include troubleshooting_de/wurst-doesnt-have-java-icon.html -%}
 				</p>
 			</li>
 		</ol>
@@ -266,99 +151,11 @@ google_auto_ads: true
 					<img src="https://images.wurstclient.net/_media/how-to-install/press_play.webp" alt="how to launch a modded fabric profile">
 				</p>
 				<h3>Problembehandlung</h3>
-				<details>
-					<summary id="launch-player-safety-warning">Der Minecraft Launcher warnt mich wegen "Sicherheitsfunktionen für Spieler".</summary>
-					<p>
-						Das ist leider normal. Microsoft hat beschlossen, zu versuchen, die Leute vom Modding abzuschrecken, indem sie allen modifizierten Installationen diese " Spieler-Sicherheits"-Warnungen verpassen.
-					</p>
-					<p>
-						<a href="https://twitter.com/Wurst_Imperium/status/1353927165012811776" target="_blank">Diese Warnungen sind völliger Unsinn und haben nichts mit echter Sicherheit zu tun!</a>
-					</p>
-					<p>
-						Du kannst diese Warnungen bedenkenlos wegklicken.
-					</p>
-					<p>
-						<img src="https://images.wurstclient.net/_media/how-to-install/safety_nonsense.webp" alt="wie man die unglaublich dumme 'Sicherheit für Spieler'-Warnung des Minecraft Launchers deaktiviert">
-					</p>
-					<p>
-						Oder wechsle zu einem <a href="https://multimc.org/" target="_blank">besseren Launcher</a>, der deine Freiheit respektiert und nicht über die Sicherheit lügt.
-					</p>
-				</details>
-				<details>
-					<summary id="launch-cant-see-loader-installation">Ich kann die <code>fabric-loader-...</code> Installation nicht sehen.</summary>
-					<p>
-						Stelle zunächst sicher, dass der Haken bei "Modifiziert" gesetzt ist. Modifizierte Installationen wie Fabric sind ohne diese Einstellung unsichtbar.
-					</p>
-					<p>
-						<img src="https://images.wurstclient.net/_media/how-to-install/modded_checkbox.webp" alt='wo man das "Modifiziert"-Kästchen im Minecraft Launcher findet'>
-					</p>
-					<p>
-						Wenn du den Minecraft Launcher bereits geöffnet hattest, während du Fabric (Loader) installiert hast, kann es sein, dass du den Minecraft Launcher einmal neu starten musst, damit er die neue Installation "erkennt".
-					</p>
-					<p>
-						Wenn das alles nichts hilft, ist die Installation wahrscheinlich wirklich einfach nicht da. Du kannst entweder <a href="#create-profile-automatically">den Fabric Installer erneut ausführen</a> oder <a href="#create-profile-manually">die Installation manuell erstellen</a>.
-					</p>
-				</details>
-				<details>
-					<summary id="create-profile-automatically">Ich hatte "Profil erstellen" vorhin deaktiviert und jetzt habe ich keine <code>fabric-loader-...</code> Installation mehr.</summary>
-					<p>
-						Führe einfach den Fabric-Installer erneut aus, so wie du es in <a href="#fabric-loader">Schritt 1</a> getan hast.
-						Wähle die gleiche Version aus wie zuvor, aber stelle diesmal sicher, dass "Create profile" aktiviert ist, und klicke dann auf "Install".
-						Der Installer wird sich nicht darüber beschweren, dass du das schon getan hast.
-					</p>
-					<p>
-						<img src="https://images.wurstclient.net/_media/how-to-install/use_fabric_installer.webp" alt="Anweisungen zur Verwendung des Fabric-Installers">
-					</p>
-				</details>
-				<details>
-					<summary id="rename-loader-installation">Ich mag es nicht, dass meine Wurst-Installation <code>fabric-loader-...</code> heißt. Kann ich sie umbenennen?</summary>
-					<p>
-						Ja. Du kannst sogar das Symbol ändern, wenn du möchtest.
-					</p>
-				</details>
-				<details>
-					<summary id="create-profile-manually">Ich möchte die <code>fabric-loader-...</code> Installation lieber selbst erstellen. Zeig mir, wie es geht!</summary>
-					<p>
-						Klicke zunächst auf die Schaltfläche "Neue Installation".
-					</p>
-					<p>
-						<img src="https://images.wurstclient.net/_media/how-to-install/new_profile.webp" alt='wo man die Schaltfläche "Neue Installation" im Minecraft Launcher findet'>
-					</p>
-					<p>
-						Ändere dann <code>VERSION</code> zu <code>release fabric-loader-...</code>. Du kannst auch den Namen und das Symbol der Installation anpassen, wenn du möchtest. Wenn du fertig bist, klicke auf "Erstellen", um deine Installation zu speichern.
-					</p>
-					<p>
-						<b>WARNUNG:</b> Lass die Option <code>SPIELVERZEICHNIS</code> unverändert, es sei denn, du weißt, was du tust!
-					</p>
-					<p>
-						<img src="https://images.wurstclient.net/_media/how-to-install/manual_profile_settings.webp" alt="wie man eine Fabric-Loader-Installation manuell im Minecraft Launcher erstellt">
-					</p>
-					<div style="padding-left: 0.625rem;border-left: 1px #ccc solid;">
-						<h4>Meta-Problembehandlung (weil manuelle Installationen kompliziert werden können)</h4>
-						<details>
-							<summary id="create-profile-choose-loader-release">Ich sehe mehrere <code>release fabric-loader-...</code> Optionen und weiß nicht, welche ich wählen soll.</summary>
-							<p>
-								Okay, lass mich dir erklären, wie diese Versionen funktionieren. Wenn du genau hinsiehst, wirst du sehen, dass es zwei Versionen nach dem <code>fabric-loader-</code> Teil gibt, die durch einen Bindestrich voneinander getrennt sind. Die erste Version ist die vom Fabric Loader selbst, die zweite ist die Minecraft-Version, für die diese Fabric-Installation bestimmt ist.
-							</p>
-							<p>
-								Die Minecraft-Version ist der Teil, der zählt. Wenn die falsch ist, wird deine Installation nicht starten können.
-							</p>
-							<p>
-								<img src="https://images.wurstclient.net/_media/how-to-install/loader_version.webp" alt="wie man eine Fabric Loader-Version liest">
-							</p>
-							<p>
-								Wähle nun mit diesem Wissen eine <code>release fabric-loader-...</code> Option für die Minecraft-Version, die du verwenden möchtest. (Im obigen Beispiel verwende ich Minecraft 1.18.2.)
-							</p>
-						</details>
-						<details>
-							<summary id="create-profile-loader-release-missing">Ich sehe keine <code>release fabric-loader-...</code> Option für meine Minecraft-Version.</summary>
-							<p>
-								Versuche, deinen Minecraft Launcher neu zu starten.
-								Wenn das nicht hilft, hast du vergessen Fabric (Loader) zu installieren und solltest zu <a href="#fabric-loader">Schritt 1</a> zurückkehren.
-							</p>
-						</details>
-					</div>
-				</details>
+				{%- include troubleshooting_de/launch-player-safety-warning.html -%}
+				{%- include troubleshooting_de/launch-cant-see-loader-installation.html -%}
+				{%- include troubleshooting_de/create-profile-automatically.html -%}
+				{%- include troubleshooting_de/rename-loader-installation.html -%}
+				{%- include troubleshooting_de/create-profile-manually.html -%}
 			</li>
 			<div class="padding5 no-padding-left no-padding-right"></div>
 			<li>
@@ -369,239 +166,11 @@ google_auto_ads: true
 					<img src="https://images.wurstclient.net/_media/how-to-install/successful_launch.webp" alt="Minecraft 1.18.2 Titelbildschirm mit Wurst 7 installiert">
 				</p>
 				<h3>Problembehandlung</h3>
-				<details>
-					<summary id="open-gui">Okay, toll, aber wie öffne ich jetzt die GUI von Wurst?</summary>
-					<p>
-						Wurst hat tatsächlich drei verschiedene GUIs, aus denen du wählen kannst:
-					</p>
-					<p>
-						<img src="https://images.wurstclient.net/_media/gui_keybinds.webp" alt="Visualisierung von Wurst's GUI-Tastenkombinationen" title="Danke an keyboard-layout-editor.com für dieses Bild!">
-					</p>
-					<ul>
-						<li>
-							<p>Die GUI mit den kleinen Fenstern wird <a href="https://wurst.wiki/clickgui">ClickGUI</a> genannt und öffnet sich standardmäßig mit der rechten STRG-Taste.</p>
-						</li>
-						<li>
-							<p>Die GUI mit der Suchleiste oben heißt <a href="https://wurst.wiki/navigator">Navigator</a> und öffnet sich standardmäßig mit der rechten Umschalttaste.</p>
-						</li>
-						<li>
-							<p>Es gibt auch eine TabGUI, die ich Anfängern aber nicht empfehlen würde und die standardmäßig auch keine Tastenkombination hat. Mehr dazu kannst du <a href="https://wurst.wiki/tabgui">hier</a> lesen.</p>
-						</li>
-					</ul>
-					<p>
-						Bedenke, dass du Wurst's GUI nicht direkt vom Titelbildschirm aus öffnen kannst. Es funktioniert nur, wenn du auf einem Server oder in einer Singleplayer-Welt spielst.
-						Wenn es dort immer noch nicht funktioniert, überprüfe, ob Wurst tatsächlich läuft oder ob du stattdessen <a href="#still-launches-vanilla">normales Minecraft</a> gestartet hast.
-					</p>
-					<p>
-						Vielleicht interessiert dich auch diese Liste von <a href="https://wurst.wiki/keybinds#default_keybinds" target="_blank" >allen Standard-Tastenbelegungen</a> und <a href="https://wurst.wiki/keybind_manager" target="blank">wie du deine Tastenbelegungen anpassen kannst</a>.
-					</p>
-				</details>
-				<details>
-					<summary id="launch-fabric-error">Ich sehe eine Fehlermeldung mit <code>Incompatible mod set!</code> oder <code>Failed to launch!</code>.</summary>
-					<p>
-						Im Allgemeinen bedeutet dies, dass du das Tutorial nicht richtig befolgt hast.
-						Fabrics Fehlermeldungen sind eigentlich recht gut darin, das Problem zumindest auf Englisch zu erklären, und die "potential Solution" ist meistens auch die richtige Lösung.
-					</p>
-					<p>
-						Aber, *seufz* da der Fabric Loader eben komplett auf Englisch ist und manche von euch das nicht verstehen können, ist hier eine Liste der häufigsten Fehlermeldungen / Lösungen und was sie auf Deutsch bedeuten:
-					</p>
-					<div style="padding-left: 0.625rem;border-left: 1px #ccc solid;">
-						<h4>Meta-Problembehandlung (weil manche Leute kein Englisch lesen können)</h4>
-						<details>
-							<summary id="error-install-fabric-version-x-or-later"><code>Install fabric, version X or later.</code></summary>
-							<p>
-								Auf Deutsch: "Installiere Fabric, Version X oder eine neuere".
-								Hier ist die Rede von der Fabric API, nicht vom Fabric Loader!
-							</p>
-							<p>
-								Wenn du eine Nachricht wie diese siehst, hast du Schritt 2 übersprungen.
-								Du solltest also <a href="#fabric-api">zurück zu Schritt 2</a> gehen und die Fabric API installieren.
-							</p>
-							<p>
-								<img src="https://images.wurstclient.net/_media/how-to-install/error_missing_fabric_api.webp" alt="die Fehlermeldung, die man bekommt, wenn man vergisst, Fabric API zu installieren">
-							</p>
-						</details>
-						<details>
-							<summary id="error-replace-fabric-x-with-version-y-or-later"><code>Replace mod fabric X with version Y or later.</code></summary>
-							<p>
-								Auf Deutsch: "Ersetze den Mod Fabric X mit der Version Y oder einer neueren".
-								Hier ist die Rede von der Fabric API, nicht vom Fabric Loader!
-							</p>
-							<p>
-								<img src="https://images.wurstclient.net/_media/how-to-install/error_wrong_fabric_api.webp" alt="die Fehlermeldung, die man bekommt, wenn man die falsche Version von der Fabric API installiert">
-							</p>
-							<p>
-								Wenn du so eine Nachricht siehst, hast du die falsche Version von der Fabric API installiert.
-								Du solltest also deine aktuelle Fabric API-Datei aus dem Mods-Ordner entfernen, <a href="#fabric-api">zurück zu Schritt 2</a> gehen und diesmal genau auf die Anweisungen achten.
-							</p>
-							<p>
-								Schritt 2 zeigt dir ganz genau, wie du die richtige Fabric API-Version finden kannst.
-							</p>
-						</details>
-						<details>
-							<summary id="error-replace-minecraft-x-with-version-y"><code>Replace minecraft X with version Y.</code></summary>
-							<p>
-								Auf Deutsch: "Ersetze Minecraft X mit der Version Y".
-								Wenn du eine Nachricht wie diese siehst, hast du entweder die falsche <code>fabric-loader-...</code> Installation gestartet (wenn du mehrere hast), oder die falsche Minecraft-Version im Fabric-Installer ausgewählt.
-							</p>
-							<p>
-								<img src="https://images.wurstclient.net/_media/how-to-install/error_wrong_minecraft_version.webp" alt="die Fehlermeldung, die man bekommt, wenn man die falsche Minecraft-Version mit seiner Wurst-Installation verwendet">
-							</p>
-							<p>
-								Du solltest erstmal zurück zum Minecraft-Launcher gehen und überprüfen, welche Installation du gerade gestartet hast.
-							</p>
-							<p>
-								Wenn du keine <code>fabric-loader-...</code> Installation für die korrekte Minecraft-Version hast, <a href="#fabric-loader">führe den Fabric-Installer erneut aus</a> und achte diesmal darauf, dass du die Minecraft-Version auswählst, die du tatsächlich verwenden möchtest.
-							</p>
-							<p>
-								Nachdem du dies getan hast, wirst du mehrere <code>fabric-loader-...</code> Installationen in deinem Minecraft-Launcher haben.
-								Achte darauf, die richtige auszuwählen, damit du nicht denselben Fehler noch einmal bekommst.
-							</p>
-						</details>
-						<details>
-							<summary id="error-replace-loader-x-with-version-y"><code>Replace mod fabricloader X with version Y.</code></summary>
-							<p>
-								Auf Deutsch: "Ersetze den Mod Fabric Loader X mit der Version Y".
-								Wenn du eine Nachricht wie diese siehst, hast du entweder die falsche <code>fabric-loader-...</code> Installation gestartet (wenn du mehrere hast), oder du hast eine ältere Version von Fabric Loader im Fabric-Installer ausgewählt.
-							</p>
-							<p>
-								<img src="https://images.wurstclient.net/_media/how-to-install/error_wrong_fabric_loader.webp" alt="die Fehlermeldung, die du bekommst, wenn du die falsche Fabric Loader-Version mit deiner Wurst-Installation verwendest">
-							</p>
-							<p>
-								Du solltest erstmal zurück zum Minecraft-Launcher gehen und überprüfen, welche Installation du gerade gestartet hast.
-							</p>
-							<p>
-								Wenn du keine <code>fabric-loader-...</code> Installation mit einer aktuellen Fabric Loader-Version hast, <a href="#fabric-loader">führe den Fabric-Installer erneut aus</a> und pass auf, dass du die "Loader-Version" auf ihrem Standardwert belässt.
-							</p>
-							<p>
-								Es gibt eigentlich keinen guten Grund, eine andere Version vom Fabric Loader als die neueste zu verwenden (die standardmäßig ausgewählt ist).
-							</p>
-						</details>
-					</div>
-				</details>
-				<details>
-					<summary id="launch-error-uncaught">Ich sehe eine Fehlermeldung mit <code>Uncaught exception in thread "main"</code>.</summary>
-					<p>
-						Schau dir die Fehlermeldung genau an und wähle aus, welcher der folgenden Fehler sie enthält:
-					</p>
-					<div style="padding-left: 0.625rem;border-left: 1px #ccc solid;">
-						<details>
-							<summary id="launch-error-sources"><code>MixinApplyError: Mixin ... from mod [wurst] FAILED during PREPARE</code></summary>
-							<p>
-								<img src="https://images.wurstclient.net/_media/how-to-install/error_wurst_sources.webp" alt="Der Fehler, den man erhält, wenn man die Quellcode-Datei in den Mod-Ordner legt">
-							</p>
-							<p>
-								Dieser Fehler tritt auf, wenn du die "-sources.jar" Datei in deinem Mods-Ordner platzierst, anstatt die normale, kompilierte Version von Wurst zu verwenden.
-							</p>
-							<p>
-								<img src="https://images.wurstclient.net/_media/how-to-install/error_wurst_sources_folder.webp" alt=".minecraft/mods Ordner mit dem unkompilierten Quellcode von Wurst, der so nicht funktionieren kann">
-							</p>
-							<p>
-								Du solltest <a href="#wurst">zurück zu Schritt 3 gehen</a> und die normale, kompilierte Version von Wurst ohne "sources" oder "dev" am Ende installieren.
-							</p>
-						</details>
-						<details>
-							<summary id="launch-error-major63"><code>Unsupported class file major version 63</code></summary>
-							<p>
-								<img src="https://images.wurstclient.net/_media/how-to-install/error_major_version_63.webp" alt="Der major version 63 Fehler">
-							</p>
-							<p>
-								Dieser Fehler tritt auf, wenn du eine Fabric Loader-Version älter als 0.14 mit einem Minecraft 1.19 Snapshot verwendest.
-							</p>
-							<p>
-								Minecraft 1.19 Snapshots erfordern Fabric Loader 0.14.0 oder neuer, aber aus irgendeinem Grund wählt der Fabric-Installer standardmäßig 0.13.3 aus.
-							</p>
-							<p>
-								<img src="https://images.wurstclient.net/_media/how-to-install/fabric_loader_014.webp" alt="Manuelles Auswählen von Loader 0.14.x im Fabric-Installer">
-							</p>
-							<p>
-								Du solltest <a href="#fabric-loader">den Fabric-Installer erneut ausführen</a> und diesmal die neueste Fabric Loader-Version manuell auswählen.
-							</p>
-							<p>
-								Nachdem du das getan hast, wirst du mehrere <code>fabric-loader-...</code> Installationen in deinem Minecraft-Launcher haben.
-								Achte darauf, die richtige Installation auszuwählen, damit du nicht denselben Fehler noch einmal bekommst.
-							</p>
-						</details>
-					</div>
-				</details>
-				<details>
-					<summary id="launch-just-crashes">Ich sehe eine Fehlermeldung, die besagt: <code>Ein unerwartetes Problem ist aufgetreten und das Spiel ist abgestürzt</code>.</summary>
-					<p>
-						Wie bei "Incompatible mod set!" bedeutet diese Fehlermeldung normalerweise, dass du das Tutorial nicht richtig befolgt hast.
-						Leider ist der offizielle Minecraft Launcher ziehmlich schlecht darin, nützliche Fehlermeldungen bereitzustellen, daher kann der übliche "Exit Code: 1" fast alles bedeuten.
-					</p>
-					<p>
-						<img src="https://images.wurstclient.net/_media/how-to-install/error_generic_crash.webp" alt="die nutzlose Fehlermeldung des Minecraft Launchers">
-					</p>
-					<p>
-						Eine häufige Ursache für diesen Fehler ist, dass du eine Version von Wurst installiert hast, die nicht mit deiner Minecraft-Version kompatibel ist.
-					</p>
-					<p>
-						Überprüfe, welche Wurst-Version sich in deinem Mods-Ordner befindet (der "MC"-Teil zeigt an, für welche Minecraft-Version sie vorgesehen ist), und <a href="#wurst">gehe zurück zu Schritt 3</a>, wenn es die falsche Version ist.
-					</p>
-					<p>
-						<img src="https://images.wurstclient.net/_media/how-to-install/error_wrong_wurst_version.webp" alt="ein Beispiel dafür, wie die falsche Wurst-Version (hier MC1.16.5) in einer Minecraft 1.18.2-Installation eingesetzt sein kann">
-					</p>
-					<p>
-						Eine andere mögliche Ursache ist, dass du im Fabric-Installer eine sehr alte Version des Fabric Loaders ausgewählt hast.
-					</p>
-					<p>
-						Es gibt eigentlich keinen guten Grund, eine andere Version vom Fabric Loader als die neueste zu verwenden (die standardmäßig ausgewählt ist). Du solltest daher <a href="#fabric-loader">zurück zu Schritt 1</a> gehen und diesmal die "Loader Version" auf dem Standardwert belassen.
-					</p>
-					<p>
-						<img src="https://images.wurstclient.net/_media/how-to-install/error_very_old_fabric_loader.webp" alt="ein Beispiel für eine sehr alte Fabric Loader-Version, die eine Minecraft 1.18.2-Installation zum Absturz bringt">
-					</p>
-					<p>
-						Wenn alle deine Mod-Versionen und der Fabric Loader korrekt sind, aber das Spiel weiterhin abstürzt, kann es sein, dass du einen Bug gefunden hast.
-						Leider scheint es so, als ob der offizielle Minecraft Launcher es dir nicht mehr ermöglicht, auf die Absturzberichte zuzugreifen.
-					</p>
-					<p>
-						Versuche, eine Kopie der Stack-Trace zu erhalten (vielleicht in den Log-Dateien?) oder prüfe, ob der gleiche Absturz auch bei einem Launcher auftritt, der die Crash Reports nicht vor dir versteckt.
-					</p>
-				</details>
-				<details>
-					<summary id="still-launches-vanilla">Das Spiel startet, aber es ist nur Vanilla-Minecraft.</summary>
-					<p>
-						Schau genau hin. Ist es wirklich nur Vanilla-Minecraft oder ist es Fabric ohne Wurst? Du kannst den Text "Fabric (Modded)" am unteren Rand sehen, wenn es Fabric ist.
-					</p>
-					<p>
-						<img src="https://images.wurstclient.net/_media/how-to-install/error_fabric_without_wurst.webp" alt="eine Minecraft 1.18.2 Installation mit Fabric, aber ohne Wurst">
-					</p>
-					<div style="padding-left: 0.625rem;border-left: 1px #ccc solid;">
-						<details>
-							<summary id="actually-launches-just-vanilla">Es ist nur Vanilla-Minecraft.</summary>
-							<p>
-								Wahrscheinlich hast du einfach die falsche Installation gestartet.
-								Du solltest zurück zum Minecraft-Launcher gehen und überprüfen, welche Installation du gerade gestartet hast.
-							</p>
-						</details>
-						<details>
-							<summary id="launches-fabric-without-wurst">Es ist Fabric, aber ohne Wurst.</summary>
-							<p>
-								Wahrscheinlich hast du deinen <code>mods</code>-Ordner an der falschen Stelle angelegt.
-								Stelle sicher, dass der Ordner genau <code>mods</code> heißt und dass sich der Ordner genau an folgender Stelle befindet:
-							</p>
-							<p>
-								<b>Windows:</b> <code>C:\Users\DeinName\AppData\Roaming\.minecraft\mods</code>
-							</p>
-							<p>
-								<b>Linux:</b> <code>/home/DeinName/.minecraft/mods</code>
-							</p>
-							<p>
-								<b>Mac:</b> <code>/home/DeinName/Library/Application Support/minecraft/mods</code>
-							</p>
-							<p>
-								Wenn der Ordnername und der Speicherort korrekt sind, aber das Problem weiterhin besteht, hast du wahrscheinlich die <code>GAME DIRECTORY</code>-Option in deiner <code>fabric-loader-...</code>-Installation geändert.
-							</p>
-							<p>
-								<img src="https://images.wurstclient.net/_media/how-to-install/error_wrong_game_directory.webp" alt="Beispiel für ein geändertes Game Directory, das verhindern kann, dass Fabric deine Mods findet">
-							</p>
-							<p>
-								Du solltest zurück zum Minecraft-Launcher gehen, deine Installation bearbeiten und die <code>GAME DIRECTORY</code>-Option auf den Standardwert zurücksetzen.
-							</p>
-						</details>
-					</div>
-				</details>
+				{%- include troubleshooting_de/open-gui.html -%}
+				{%- include troubleshooting_de/launch-fabric-error.html -%}
+				{%- include troubleshooting_de/launch-error-uncaught.html -%}
+				{%- include troubleshooting_de/launch-just-crashes.html -%}
+				{%- include troubleshooting_de/still-launches-vanilla.html -%}
 			</li>
 		</ol>
 	</div>

@@ -11,14 +11,7 @@
 			</a>
 		</p>
 		<h3>Troubleshooting</h3>
-		<details>
-			<summary id="wurst-not-commonly-downloaded">When I try to download Wurst, Chrome warns me that the file "isn't commonly downloaded".</summary>
-			<p>
-				This can happen when a new version has just been released.
-				It just means that you're one of the first people to download that specific version of Wurst.
-				You can safely ignore this warning and download the file anyways.
-			</p>
-		</details>
+		{%- include troubleshooting/wurst-not-commonly-downloaded.html -%}
 	</li>
 	<div class="padding5 no-padding-left no-padding-right"></div>
 	<li>
@@ -29,35 +22,8 @@
 			<img src="https://images.wurstclient.net/_media/how-to-install/wurst_mods_folder.webp" alt=".minecraft/mods folder with Fabric and Wurst">
 		</p>
 		<h3>Troubleshooting</h3>
-		<details>
-			<summary id="wurst-cant-find-minecraft-folder">Where do I find my <code>.minecraft</code> folder?</summary>
-			<p>
-				<b>Windows:</b> Open your Windows Explorer and type <code>%appdata%/.minecraft</code> into the address bar.<br>
-				(Alternatively you can press Win+R and type in the same thing.)
-			</p>
-			<p>
-				<b>Linux:</b> Open your File Explorer and type <code>~/.minecraft</code> into the address bar.
-			</p>
-			<p>
-				<b>Mac:</b> Open your Finder and type <code>~/Library/Application Support/minecraft</code> into the address bar.
-			</p>
-		</details>
-		<details>
-			<summary id="wurst-there-is-no-mods-folder">There is no <code>mods</code> folder in my <code>.minecraft</code> folder.</summary>
-			<p>
-				You have skipped the previous step. You should <a href="#fabric-api">go back to step 2</a> and install the Fabric API first.
-			</p>
-		</details>
-		<details>
-			<summary id="wurst-doesnt-have-java-icon">My Wurst Client file doesn't have the Java icon on it. It has a WinRAR logo instead.</summary>
-			<p>
-				Check the file extension. As long as it ends with <code>.jar</code>, everything is fine.
-				It simply means that your computer is configured to open .jar files with WinRAR instead of Java.
-			</p>
-			<p>
-				It doesn't matter for this file, since it's still a .jar file and will still work,
-				but if you want to fix it there is a setting in Windows called "Choose default apps by file type" that lets you change this.
-			</p>
-		</details>
+		{%- include troubleshooting/wurst-cant-find-minecraft-folder.html -%}
+		{%- include troubleshooting/wurst-there-is-no-mods-folder.html -%}
+		{%- include troubleshooting/wurst-doesnt-have-java-icon.html -%}
 	</li>
 </ol>

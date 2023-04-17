@@ -1,0 +1,45 @@
+<details>
+	<summary id="launch-error-uncaught">Ich sehe eine Fehlermeldung mit <code>Uncaught exception in thread "main"</code>.</summary>
+	<p>
+		Schau dir die Fehlermeldung genau an und wähle aus, welcher der folgenden Fehler sie enthält:
+	</p>
+	<div style="padding-left: 0.625rem;border-left: 1px #ccc solid;">
+		<details>
+			<summary id="launch-error-sources"><code>MixinApplyError: Mixin ... from mod [wurst] FAILED during PREPARE</code></summary>
+			<p>
+				<img src="https://images.wurstclient.net/_media/how-to-install/error_wurst_sources.webp" alt="Der Fehler, den man erhält, wenn man die Quellcode-Datei in den Mod-Ordner legt">
+			</p>
+			<p>
+				Dieser Fehler tritt auf, wenn du die "-sources.jar" Datei in deinem Mods-Ordner platzierst, anstatt die normale, kompilierte Version von Wurst zu verwenden.
+			</p>
+			<p>
+				<img src="https://images.wurstclient.net/_media/how-to-install/error_wurst_sources_folder.webp" alt=".minecraft/mods Ordner mit dem unkompilierten Quellcode von Wurst, der so nicht funktionieren kann">
+			</p>
+			<p>
+				Du solltest <a href="#wurst">zurück zu Schritt 3 gehen</a> und die normale, kompilierte Version von Wurst ohne "sources" oder "dev" am Ende installieren.
+			</p>
+		</details>
+		<details>
+			<summary id="launch-error-major63"><code>Unsupported class file major version 63</code></summary>
+			<p>
+				<img src="https://images.wurstclient.net/_media/how-to-install/error_major_version_63.webp" alt="Der major version 63 Fehler">
+			</p>
+			<p>
+				Dieser Fehler tritt auf, wenn du eine Fabric Loader-Version älter als 0.14 mit einem Minecraft 1.19 Snapshot verwendest.
+			</p>
+			<p>
+				Minecraft 1.19 Snapshots erfordern Fabric Loader 0.14.0 oder neuer, aber aus irgendeinem Grund wählt der Fabric-Installer standardmäßig 0.13.3 aus.
+			</p>
+			<p>
+				<img src="https://images.wurstclient.net/_media/how-to-install/fabric_loader_014.webp" alt="Manuelles Auswählen von Loader 0.14.x im Fabric-Installer">
+			</p>
+			<p>
+				Du solltest <a href="#fabric-loader">den Fabric-Installer erneut ausführen</a> und diesmal die neueste Fabric Loader-Version manuell auswählen.
+			</p>
+			<p>
+				Nachdem du das getan hast, wirst du mehrere <code>fabric-loader-...</code> Installationen in deinem Minecraft-Launcher haben.
+				Achte darauf, die richtige Installation auszuwählen, damit du nicht denselben Fehler noch einmal bekommst.
+			</p>
+		</details>
+	</div>
+</details>

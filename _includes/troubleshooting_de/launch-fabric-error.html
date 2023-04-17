@@ -1,0 +1,83 @@
+<details>
+	<summary id="launch-fabric-error">Ich sehe eine Fehlermeldung mit <code>Incompatible mod set!</code> oder <code>Failed to launch!</code>.</summary>
+	<p>
+		Im Allgemeinen bedeutet dies, dass du das Tutorial nicht richtig befolgt hast.
+		Fabrics Fehlermeldungen sind eigentlich recht gut darin, das Problem zumindest auf Englisch zu erklären, und die "potential Solution" ist meistens auch die richtige Lösung.
+	</p>
+	<p>
+		Aber, *seufz* da der Fabric Loader eben komplett auf Englisch ist und manche von euch das nicht verstehen können, ist hier eine Liste der häufigsten Fehlermeldungen / Lösungen und was sie auf Deutsch bedeuten:
+	</p>
+	<div style="padding-left: 0.625rem;border-left: 1px #ccc solid;">
+		<h4>Meta-Problembehandlung (weil manche Leute kein Englisch lesen können)</h4>
+		<details>
+			<summary id="error-install-fabric-version-x-or-later"><code>Install fabric, version X or later.</code></summary>
+			<p>
+				Auf Deutsch: "Installiere Fabric, Version X oder eine neuere".
+				Hier ist die Rede von der Fabric API, nicht vom Fabric Loader!
+			</p>
+			<p>
+				Wenn du eine Nachricht wie diese siehst, hast du Schritt 2 übersprungen.
+				Du solltest also <a href="#fabric-api">zurück zu Schritt 2</a> gehen und die Fabric API installieren.
+			</p>
+			<p>
+				<img src="https://images.wurstclient.net/_media/how-to-install/error_missing_fabric_api.webp" alt="die Fehlermeldung, die man bekommt, wenn man vergisst, Fabric API zu installieren">
+			</p>
+		</details>
+		<details>
+			<summary id="error-replace-fabric-x-with-version-y-or-later"><code>Replace mod fabric X with version Y or later.</code></summary>
+			<p>
+				Auf Deutsch: "Ersetze den Mod Fabric X mit der Version Y oder einer neueren".
+				Hier ist die Rede von der Fabric API, nicht vom Fabric Loader!
+			</p>
+			<p>
+				<img src="https://images.wurstclient.net/_media/how-to-install/error_wrong_fabric_api.webp" alt="die Fehlermeldung, die man bekommt, wenn man die falsche Version von der Fabric API installiert">
+			</p>
+			<p>
+				Wenn du so eine Nachricht siehst, hast du die falsche Version von der Fabric API installiert.
+				Du solltest also deine aktuelle Fabric API-Datei aus dem Mods-Ordner entfernen, <a href="#fabric-api">zurück zu Schritt 2</a> gehen und diesmal genau auf die Anweisungen achten.
+			</p>
+			<p>
+				Schritt 2 zeigt dir ganz genau, wie du die richtige Fabric API-Version finden kannst.
+			</p>
+		</details>
+		<details>
+			<summary id="error-replace-minecraft-x-with-version-y"><code>Replace minecraft X with version Y.</code></summary>
+			<p>
+				Auf Deutsch: "Ersetze Minecraft X mit der Version Y".
+				Wenn du eine Nachricht wie diese siehst, hast du entweder die falsche <code>fabric-loader-...</code> Installation gestartet (wenn du mehrere hast), oder die falsche Minecraft-Version im Fabric-Installer ausgewählt.
+			</p>
+			<p>
+				<img src="https://images.wurstclient.net/_media/how-to-install/error_wrong_minecraft_version.webp" alt="die Fehlermeldung, die man bekommt, wenn man die falsche Minecraft-Version mit seiner Wurst-Installation verwendet">
+			</p>
+			<p>
+				Du solltest erstmal zurück zum Minecraft-Launcher gehen und überprüfen, welche Installation du gerade gestartet hast.
+			</p>
+			<p>
+				Wenn du keine <code>fabric-loader-...</code> Installation für die korrekte Minecraft-Version hast, <a href="#fabric-loader">führe den Fabric-Installer erneut aus</a> und achte diesmal darauf, dass du die Minecraft-Version auswählst, die du tatsächlich verwenden möchtest.
+			</p>
+			<p>
+				Nachdem du dies getan hast, wirst du mehrere <code>fabric-loader-...</code> Installationen in deinem Minecraft-Launcher haben.
+				Achte darauf, die richtige auszuwählen, damit du nicht denselben Fehler noch einmal bekommst.
+			</p>
+		</details>
+		<details>
+			<summary id="error-replace-loader-x-with-version-y"><code>Replace mod fabricloader X with version Y.</code></summary>
+			<p>
+				Auf Deutsch: "Ersetze den Mod Fabric Loader X mit der Version Y".
+				Wenn du eine Nachricht wie diese siehst, hast du entweder die falsche <code>fabric-loader-...</code> Installation gestartet (wenn du mehrere hast), oder du hast eine ältere Version von Fabric Loader im Fabric-Installer ausgewählt.
+			</p>
+			<p>
+				<img src="https://images.wurstclient.net/_media/how-to-install/error_wrong_fabric_loader.webp" alt="die Fehlermeldung, die du bekommst, wenn du die falsche Fabric Loader-Version mit deiner Wurst-Installation verwendest">
+			</p>
+			<p>
+				Du solltest erstmal zurück zum Minecraft-Launcher gehen und überprüfen, welche Installation du gerade gestartet hast.
+			</p>
+			<p>
+				Wenn du keine <code>fabric-loader-...</code> Installation mit einer aktuellen Fabric Loader-Version hast, <a href="#fabric-loader">führe den Fabric-Installer erneut aus</a> und pass auf, dass du die "Loader-Version" auf ihrem Standardwert belässt.
+			</p>
+			<p>
+				Es gibt eigentlich keinen guten Grund, eine andere Version vom Fabric Loader als die neueste zu verwenden (die standardmäßig ausgewählt ist).
+			</p>
+		</details>
+	</div>
+</details>

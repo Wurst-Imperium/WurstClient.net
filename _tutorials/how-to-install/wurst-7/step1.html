@@ -10,49 +10,10 @@
 			</a>
 		</p>
 		<h3>Troubleshooting</h3>
-		<details>
-			<summary id="fabric-installer-antivirus">My antivirus is detecting the Fabric installer as malicious.</summary>
-			<p>
-				This can happen with the Fabric installer "for Windows" (the .exe version), but it's almost certainly a false positive. You can either ignore the warning or use the Universal/.jar version of the Fabric installer, which does not have this problem.
-			</p>
-		</details>
-		<details>
-			<summary id="fabric-installer-nothing-happens">When I try to run the Fabric installer, nothing happens.</summary>
-			<p>
-				This can happen when you don't have Java installed. Here is a <a href="https://www.youtube.com/watch?v=Wv0vPUwitJs" target="_blank" rel="nofollow">video on how to install Java</a>.
-			</p>
-			<p>
-				(The author of the video cannot help you with Wurst-related questions. If you need help, <a href="/contact">contact me</a> instead.)
-			</p>
-		</details>
-		<details>
-			<summary id="fabric-installer-opens-winrar">When I try to run the Fabric installer, WinRAR / 7-Zip / etc. opens instead.</summary>
-			<p>
-				This means your computer is configured to open .jar files with that other program instead of using Java.
-				There is a setting in Windows called "Choose default apps by file type" that lets you change this.
-			</p>
-			<p>
-				Alternatively, you can also use "right click" > "open with" to open the file with Java, like so:
-			</p>
-			<p>
-				<img src="https://images.wurstclient.net/_media/how-to-install/fabric_run_with_java.webp" alt="how to run the Fabric installer with Java">
-				<ul>
-					<li>If you don't see Java in the list, select "Choose another app" at the bottom.</li>
-					<li>Depending on your system, you will see either "Java(TM)&nbsp;Platform&nbsp;SE&nbsp;binary", "OpenJDK&nbsp;Platform&nbsp;binary", or both. It doesn't matter which one you use.</li>
-					<li>If you can't find Java at all, you need to <a href="https://www.youtube.com/watch?v=Wv0vPUwitJs" target="_blank" rel="nofollow">install Java</a> first.<br>
-					(The author of the video cannot help you with Wurst-related questions. If you need help, <a href="/contact">contact me</a> instead.)</li>
-				</ul>
-			</p>
-		</details>
-		<details>
-			<summary id="fabric-installer-no-java-installed">When I try to run the Fabric installer, I get a message saying I don't have Java.</summary>
-			<p>
-				Unsurprisingly, this means you don't have Java installed. Here is a <a href="https://www.youtube.com/watch?v=Wv0vPUwitJs" target="_blank" rel="nofollow">video on how to install Java</a>.
-			</p>
-			<p>
-				(The author of the video cannot help you with Wurst-related questions. If you need help, <a href="/contact">contact me</a> instead.)
-			</p>
-		</details>
+		{%- include troubleshooting/fabric-installer-antivirus.html -%}
+		{%- include troubleshooting/fabric-installer-nothing-happens.html -%}
+		{%- include troubleshooting/fabric-installer-opens-winrar.html -%}
+		{%- include troubleshooting/fabric-installer-no-java-installed.html -%}
 	</li>
 	<div class="padding5 no-padding-left no-padding-right"></div>
 	<li>
