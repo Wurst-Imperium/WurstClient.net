@@ -20,7 +20,7 @@ google_auto_ads: true
 					</ul>
 				</div>
 				<div class="cell">
-					<h3 class="text-normal">for Minecraft <b>1.8 - 1.12.2</b></h3>
+					<h3 class="text-normal">for Minecraft <b>1.7.2 - 1.12.2</b></h3>
 					<ul>
 						<li><p><a href="how-to-install/wurst-6/">How to install Wurst 6</a></p></li>
 						<li><p><a href="how-to-uninstall/wurst-6/">How to uninstall Wurst 6</a></p></li>
