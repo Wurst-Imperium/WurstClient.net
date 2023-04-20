@@ -1,0 +1,163 @@
+---
+title: How To Install Wurst 6 with the MultiMC Launcher
+description: This step-by-step guide explains how to install older MCP-based versions of the Wurst Client for Minecraft 1.12.2 - 1.7.2, by using the Wurst 6 installer.
+layout: default
+google_auto_ads: true
+---
+{% include title.html l1 = page.title l2 = "A step-by-step guide with pictures and troubleshooting tips." %}
+
+<style>
+	section {
+		padding: 1.25rem 0;
+	}
+	section.more-padding {
+		padding: 3.75rem 0;
+	}
+	section:nth-of-type(odd) {
+		background-color: #eeeeee;
+	}
+	h2 {
+		font-weight: 400;
+		font-style: normal;
+	}
+	.step-list > li:not(:first-child) {
+		margin-top: 2.5rem;
+	}
+</style>
+
+<section id="intro">
+	<div class="container">
+		<p>
+			This installation tutorial is only for Wurst 6 (Minecraft versions 1.12.2 - 1.7.2), using the MultiMC launcher or one of its forks (PolyMC, Prism Launcher, etc).
+			If you want to install other versions of the Wurst Client or use different launchers, please follow the appropriate guide below:
+		</p>
+        <ul>
+            <li><a href="/tutorials/how-to-install/wurst-6/">Wurst 6 using the official Minecraft launcher</a></li>
+            <li><a href="/tutorials/how-to-install/wurst-7/">Wurst 7 for Minecraft 1.14.2 and newer versions</a></li>
+            <li><a href="https://forge.wurstclient.net/tutorials/how-to-install/">ForgeWurst for Minecraft 1.12.2 - 1.10.2</a></li>
+        </ul>
+	</div>
+</section>
+
+<section id="create-instance">
+	<div class="container">
+		<h2>Step 1: Create a New Instance in MultiMC</h2>
+		<ol class="step-list">
+			<li>
+				<p>Open MultiMC and click the "Add Instance" button.</p>
+				<p>
+					<img src="https://images.wurstclient.net/_media/how-to-install/wurst-6/multimc_add_instance_ll.webp" width="802" height="632"
+						alt="A screenshot of the MultiMC launcher, with an arrow pointing at the 'Add Instance' button">
+				</p>
+			</li>
+			<li>
+				<p>From the "Vanilla" tab, select the correct Minecraft version for installing your selected version of Wurst. If you don't know which Minecraft version to use, please refer to the table below.</p>
+				{%- include how-to-install/wurst-6/installer-compatibility-table.html -%}
+				<h3>Troubleshooting</h3>
+				{%- include troubleshooting/wurst-6-worried-server-compatability.html -%}
+			</li>
+			<li>
+				<p>Give your instance a name, optionally assign it to a group, and click the "OK" button.</p>
+				<p>
+					<img src="https://images.wurstclient.net/_media/how-to-install/wurst-6/multimc_save_instance_ll.webp" width="732" height="445"
+						alt="A screenshot of a newly created MultiMC instance with the Minecraft version set to 'Vanilla 1.8', the instance name set to 'Wurst MC 1.8', the group set to 'Wurst', and the icon set to a TNT block. An arrow points at the 'OK' button.">
+				</p>
+			</li>
+		</ol>
+	</div>
+</section>
+
+<section id="extract">
+	<div class="container">
+		<h2>Step 2: Extract the Files to a Temporary Folder</h2>
+		<ol class="step-list">
+			<li>
+				<p>
+					<a href="/download/" target="_blank">Download the Wurst Client</a>, if you haven't already.
+					Make sure to get the latest version that is compatible with your Minecraft version.
+				</p>
+				<p>
+					<a href="/download/" target="_blank">
+						<img src="https://images.wurstclient.net/_media/how-to-install/wurst-6/download_installer_jar_ll.webp" width="888" height="207"
+							alt="A screenshot of the downloads section, with an arrow pointing at the download button for the Cross-platform Wurst 6 installer (.JAR)">
+					</a>
+				</p>
+				<h3>Troubleshooting</h3>
+				{%- include troubleshooting/wurst-6-installer-jar-or-zip.html -%}
+				{%- include troubleshooting/wurst-not-commonly-downloaded.html -%}
+			</li>
+			<li>
+				<p>Open the Wurst 6 installer and click the "Extract" button.</p>
+				<p>
+					<img src="https://images.wurstclient.net/_media/how-to-install/wurst-6/installer_extract_ll.webp" width="436" height="293"
+						alt="A screenshot of the Wurst 6 installer, with an arrow pointing at the 'Extract' button">
+				</p>
+				<h3>Troubleshooting</h3>
+				{%- include troubleshooting/wurst-6-installer-wont-open.html -%}
+				{%- include troubleshooting/wurst-6-installer-cant-extract.html -%}
+			</li>
+			<li>
+				<p>Select a temporary folder to extract the files to. Be sure to remember the location for later.</p>
+				<p>
+					<img src="https://images.wurstclient.net/_media/how-to-install/wurst-6/extract_temp_folder_ll.webp" width="680" height="460"
+						alt="A screenshot of the temporary folder created by the Wurst 6 installer">
+				</p>
+			</li>
+		</ol>
+	</div>
+</section>
+
+<section id="edit-instance">
+	<div class="container">
+		<h2>Step 3: Edit the Instance to Use Wurst 6</h2>
+		<ol class="step-list">
+			<li>
+				<p>Select your MultiMC instance and click the "Edit Instance" button.</p>
+				<p>
+					<img src="https://images.wurstclient.net/_media/how-to-install/wurst-6/multimc_edit_instance_ll.webp" width="802" height="632"
+						alt="A screenshot of the MultiMC launcher with a 'Wurst MC 1.8' instance. The instance is selected and an arrow points at the 'Edit Instance' button.">
+				</p>
+			</li>
+			<li>
+				<p>Under the "Version" tab, click the "Replace Minecraft.jar" button.</p>
+				<p>
+					<img src="https://images.wurstclient.net/_media/how-to-install/wurst-6/multimc_replace_minecraft_jar_ll.webp" width="572" height="608"
+						alt="A screenshot of the MultiMC instance editor, with an arrow pointing at the 'Replace Minecraft.jar' button.">
+				</p>
+			</li>
+			<li>
+				<p>Navigate to the temporary folder where you extracted the Wurst 6 files earlier and select the .jar file inside.</p>
+				<p>
+					<img src="https://images.wurstclient.net/_media/how-to-install/wurst-6/multimc_select_replacement_jar_ll.webp" width="614" height="400"
+						alt="A screenshot of MultiMC's 'Select jar' dialog, with the 'Wurst MC 1.8.jar' file inside the temporary folder 'Desktop/Wurst MC 1.8' selected.">
+				</p>
+			</li>
+		</ol>
+	</div>
+</section>
+
+<section id="launch">
+	<div class="container">
+		<h2>Step 4: Launch the Game</h2>
+		<ol class="step-list">
+			<li>
+				<p>Select your MultiMC instance and click the "Launch" button.</p>
+				<p>
+					<img src="https://images.wurstclient.net/_media/how-to-install/wurst-6/multimc_launch_instance_ll.webp" width="802" height="632"
+						alt="A screenshot of the MultiMC launcher with a 'Wurst MC 1.8' instance. The instance is selected and an arrow points at the 'Launch' button.">
+				</p>
+			</li>
+			<li>
+				<p>That's it. Enjoy using Wurst 6 in MultiMC!</p>
+				<p>
+					<img src="https://images.wurstclient.net/_media/how-to-install/wurst-6/successful_launch_1.8.webp" width="856" height="512"
+						alt="A screenshot of the Minecraft 1.8 title screen with Wurst 6.35.3 installed.">
+				</p>
+				<h3>Troubleshooting</h3>
+				{%- include troubleshooting/open-gui.html wurst6 = true -%}
+			</li>
+		</ol>
+	</div>
+</section>
+
+{%- include troubleshooter-tracking.html -%}

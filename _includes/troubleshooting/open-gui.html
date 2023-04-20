@@ -19,7 +19,11 @@
 	</ul>
 	<p>
 		Keep in mind you cannot open Wurst's GUI directly from the title screen. It only works while playing on a server or in a singleplayer world.
-		If it still doesn't work there, double-check if Wurst is actually running or if it's <a href="#still-launches-vanilla">just vanilla Minecraft</a>.
+		{%- if include.wurst6 -%}
+			If it still doesn't work there, double-check if Wurst is actually running or if you acidentally launched vanilla Minecraft instead.
+		{%- else -%}
+			If it still doesn't work there, double-check if Wurst is actually running or if it's <a href="#still-launches-vanilla">just vanilla Minecraft</a>.
+		{%- endif -%}
 	</p>
 	<p>
 		You might also want to look at this list of <a href="https://wurst.wiki/keybinds#default_keybinds" target="_blank">all default keybinds</a> and <a href="https://wurst.wiki/keybind_manager" target="blank">how to customize your keybinds</a>.
