@@ -21,7 +21,7 @@ google_auto_ads: true
 			{%- include update/log4shell-warnings.html -%}
 			
 			{%- if page.auto-list-mcversions -%}
-				<p>This version of the Wurst Hacked Client is available for Minecraft {{ page.minecraft-versions | array_to_sentence_string }}.</p>
+				<p>{%- include update/mcversions.html -%}</p>
 			{%- endif -%}
 			
 			{%- if page.log4shell-patched -%}
