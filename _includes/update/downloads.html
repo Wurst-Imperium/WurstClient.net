@@ -21,6 +21,7 @@
 {%- elsif page.fabric -%}
 	<div class="padding10 no-padding-left no-padding-right" style="display: grid;grid-template-columns: 1fr;">
 
+		{%- assign mcversion-type = "release" -%}
 		{%- for mcversion in page.minecraft-versions -%}
 		<div data-mcversion="{{ mcversion }}" class="padding10 no-padding-left no-padding-right">
 			{%- capture mcversion-range -%}{%- unless site.mcversions[mcversion] -%}{{ mcversion }}{%- else -%}{{ site.mcversions[mcversion] }}{%- endunless -%}{%- endcapture -%}
@@ -33,6 +34,7 @@
 		<div data-mcversion="snapshot" class="padding10 no-padding-left no-padding-right">
 			<h3>for Minecraft Snapshots</h3>
 			<div style="display: grid;grid-template-columns: 1fr;">
+				{%- assign mcversion-type = "snapshot" -%}
 				{%- for mcversion in page.snapshots -%}
 				<details data-snapshot="{{ mcversion }}">
 					<summary>{{ mcversion }} (click to expand)</summary>
