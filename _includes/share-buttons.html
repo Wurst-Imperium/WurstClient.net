@@ -8,9 +8,18 @@
       </div>
     </div>
   </a>
+  {%- if page.reddit -%}
+  <a href="{{ page.reddit }}" target="_blank" title="Discuss this update on our subreddit.">
+    <div class="tile-small bg-orange fg-white">
+      <div class="tile-content iconic">
+        <span class="icon mif-reddit"></span>
+      </div>
+    </div>
+  </a>
+  {%- endif -%}
   <a href="/wurst-updates.xml" target="_blank" title="RSS feed of Wurst updates. (Atom XML format)
 Subscribe with an RSS reader to get notified of new Wurst updates.">
-    <div class="tile-small bg-orange fg-white">
+    <div class="tile-small bg-gray fg-white">
       <div class="tile-content iconic">
         <span class="icon mif-feed3"></span>
       </div>
