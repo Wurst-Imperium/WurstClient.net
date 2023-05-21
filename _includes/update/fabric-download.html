@@ -1,6 +1,35 @@
 {%- capture full-version -%}v{{ page.wurst-version }} MC{{ mcversion }}{%- endcapture -%}
 {%- capture basepath -%}v{{ page.wurst-version }}/Wurst-Client-v{{ page.wurst-version }}-MC{{ mcversion | replace: " ", "-" }}{%- endcapture -%}
 
+{{/*  find the latest version of Wurst for the given Minecraft version  */}}
+{%- for update in site.updates reversed -%}
+	{%- if update.minecraft-versions contains mcversion or update.snapshots contains mcversion -%}
+		{%- assign latest = update -%}
+		{%- break -%}
+	{%- endif -%}
+{%- endfor -%}
+
+{{/*  if there is a newer version of Wurst for the given Minecraft version, display a warning  */}}
+{%- if latest and page != latest -%}
+<div class="bg-amber padding5">
+	<div class="bg-white padding10">
+		<p class="no-margin-top no-margin-bottom">
+			<b>IMPORTANT:</b> You are currently viewing Wurst {{ page.wurst-version }}, which is an older version for Minecraft {{ mcversion }}. For optimal performance and the latest features, we recommend downloading
+			<b><a href="{{ latest.url }}?mc={{ mcversion }}"
+				data-analytics="Old Version Warning: Link Click"
+				data-analytics-oldversion="{{ page.wurst-version }}"
+				data-analytics-newversion="{{ latest.wurst-version }}"
+				data-analytics-mcversion="{{ mcversion }}"
+				data-analytics-mcversiontype="{{ mcversion-type }}"
+			>
+				Wurst {{ latest.wurst-version }} MC{{ mcversion }}
+			</a></b>
+			instead.
+		</p>
+	</div>
+</div>
+{%- endif -%}
+
 <p>
 	{%- capture mainlink -%}{{ mcxbase }}{{ basepath }}.jar{%- endcapture -%}
 	{%- assign mainfile = mainlink | split: '/' | last -%}
