@@ -3,7 +3,13 @@ layout: default
 google_auto_ads: true
 ---
 {%- assign date = page.date | date: "%Y-%m-%d" -%}
-{%- include title.html l1 = page.title l2 = date -%}
+{%- capture l2 -%}
+released {{ date | date: "%B %-d, %Y" }}
+{%- if page.modified_date and page.modified_date != date -%}
+	; updated {{ page.modified_date | date: "%B %-d, %Y" }}
+{%- endif -%}
+{%- endcapture -%}
+{%- include title.html l1 = page.title l2 = l2 -%}
 
 <div class="padding20 no-padding-left no-padding-right">
 	<div class="container post-content">
