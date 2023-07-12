@@ -228,6 +228,7 @@ commands:
 
 other:
   - AltManager
+  - Banned Server Bypass
   - BookHack
   - Changelog
   - Disable Wurst
