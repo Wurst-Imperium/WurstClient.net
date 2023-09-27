@@ -15,7 +15,7 @@ Allows you to give yourself any item in Creative Mode, even if the `/give` comma
 
 `<metadata>` determines the metadata of the item. (e.g. the color of a wool block). Defaults to 0.
 
-`<nbt>` determines the NBT data ([Named Binary Tag](http://minecraft.gamepedia.com/NBT_format)) of the item. Defaults to an empty NBT compound.
+`<nbt>` determines the NBT data ([Named Binary Tag](https://minecraft.wiki/w/NBT_format)) of the item. Defaults to an empty NBT compound.
 
 ### Template Syntax
 

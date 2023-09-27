@@ -26,7 +26,7 @@ history:
 {:toc}
 
 ## Overview
-ExtraElytra is a mod that makes it easier to fly with the <a href="http://minecraft.gamepedia.com/Elytra" target="_blank">Elytra</a> that Mojang added in Minecraft 1.9.
+ExtraElytra is a mod that makes it easier to fly with the <a href="https://minecraft.wiki/w/Elytra" target="_blank">Elytra</a> that Mojang added in Minecraft 1.9.
 
 ## Settings
 ExtraElytra has three different settings to make Elytra flying more enjoyable. They are all compatible to each other, so you can use them in any combination without causing problems.
