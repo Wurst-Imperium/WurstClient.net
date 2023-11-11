@@ -60,5 +60,8 @@ capes:
   "Fantakuchen": "{{ page.capes.halloween7 }}",
   "b20ca858-6212-41bd-8856-e7e50bb499f4": "{{ page.capes.halloween7 }}",
 
+  "ZANXEY": "{{ page.capes.wurst }}",
+  "1fed2286-f703-4ec4-83ce-7b6a6b26e477": "{{ page.capes.wurst }}",
+
   "use_new_server": false
 }
