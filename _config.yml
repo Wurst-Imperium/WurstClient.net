@@ -18,7 +18,7 @@ feed:
     updates:
       path: "/wurst-updates.xml"
 
-latest_mcversion: "1.19.4"
+latest_mcversion: "1.20.4"
 
 mcversions:
   "snapshots": "Snapshots"
