@@ -117,6 +117,7 @@ cheats:
   - NoLevitation
   - NoOverlay
   - NoPumpkin
+  - NoShieldOverlay
   - NoSlowdown
   - NoWeather
   - NoWeb
@@ -130,6 +131,7 @@ cheats:
   - Phase
   - PlayerESP
   - PlayerFinder
+  - PortalESP
   - PortalGUI
   - PotionSaver
   - ProphuntESP
