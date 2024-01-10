@@ -62,6 +62,10 @@ capes:
 
   "ZANXEY": "{{ page.capes.wurst }}",
   "1fed2286-f703-4ec4-83ce-7b6a6b26e477": "{{ page.capes.wurst }}",
+  "tRyexulOv": "{{ page.capes.wurst }}",
+  "5dd101af-109d-4d72-b5d6-acc8ebfc4ce6": "{{ page.capes.wurst }}",
+  "CheifQueefOG": "{{ page.capes.wurst }}",
+  "03ee256e-d601-41a0-9d19-ebaaffda5d36": "{{ page.capes.wurst }}",
 
   "use_new_server": false
 }
