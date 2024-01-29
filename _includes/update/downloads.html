@@ -65,9 +65,9 @@
 {%- endif -%}
 
 <script>
+	// handle mc and snapshot parameters
 	let urlParams = new URLSearchParams(window.location.search);
 	let mc = urlParams.get("mc") || urlParams.get("snapshot");
-
 	if (mc) {
 		let snapshotDetails = document.querySelectorAll(`details[data-snapshot="${mc}"]`);
 		if (snapshotDetails.length > 0) {
@@ -77,8 +77,62 @@
 				details.open = true;
 			});
 		}
-
 		let mcversionElements = document.querySelectorAll(`[data-mcversion="${mc}"]`);
 		mcversionElements.forEach(element => element.style.gridRow = "1");
 	}
+
+	// find download and donation buttons
+	let mainDownloadButtons = document.querySelectorAll('a[data-analytics="Download Wurst"][data-analytics-type="main"]');
+	let donationCTAs = document.querySelectorAll('a[data-analytics="Wurst Update Page: Donate Now CTA Click"]');
+
+	// track download count per visitor (capped at 20 for privacy reasons)
+	let downloadCount = parseInt(localStorage.getItem('WurstDownloadCount')) || 0;
+	downloadCount = Math.max(0, Math.min(downloadCount, 21));
+	function updateDownloadCountAttribute() {
+		const count = downloadCount > 20 ? '>20' : downloadCount;
+		mainDownloadButtons.forEach(button => {
+			button.setAttribute('data-analytics-downloadcount', count);
+		});
+		donationCTAs.forEach(button => {
+			button.setAttribute('data-analytics-prior_wurst_downloads', count);
+		});
+	}
+	updateDownloadCountAttribute();
+	if(downloadCount <= 20) {
+		let clickHandler = function() {
+			localStorage.setItem('WurstDownloadCount', ++downloadCount);
+			updateDownloadCountAttribute();
+			if(downloadCount > 20) {
+				mainDownloadButtons.forEach(button => {
+					button.removeEventListener('click', this);
+					button.removeEventListener('auxclick', this);
+				});
+			}
+		}
+		mainDownloadButtons.forEach(button => {
+			button.addEventListener('click', clickHandler);
+			button.addEventListener('auxclick', clickHandler);
+		});
+	}
+
+	// track whether the visitor uses an adblocker
+	let adBlockerDetected = false;
+	let adSenseScript = document.querySelector('script[src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5218363098774955"]');
+	function updateAdBlockerAttribute() {
+		let setAttr = button => {
+			button.setAttribute('data-analytics-adblocker', adBlockerDetected);
+		};
+		mainDownloadButtons.forEach(setAttr);
+		donationCTAs.forEach(setAttr);
+	}
+	adSenseScript.onload = function() {
+		let firstAd = document.querySelector('ins.adsbygoogle');
+		if(!firstAd || !firstAd.style.height)
+			adBlockerDetected = true;
+		updateAdBlockerAttribute();
+	};
+	adSenseScript.onerror = function() {
+		adBlockerDetected = true;
+		updateAdBlockerAttribute();
+	};
 </script>
