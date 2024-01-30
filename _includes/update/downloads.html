@@ -86,21 +86,43 @@
 	let donationCTAs = document.querySelectorAll('a[data-analytics="Wurst Update Page: Donate Now CTA Click"]');
 
 	// track download count per visitor (capped at 20 for privacy reasons)
+	// and time since first download (rounded for privacy reasons)
 	let downloadCount = parseInt(localStorage.getItem('WurstDownloadCount')) || 0;
 	downloadCount = Math.max(0, Math.min(downloadCount, 21));
+	function getTimeSinceFirstDownload() {
+		const firstDownload = parseInt(localStorage.getItem('FirstWurstDownload')) || Date.now();
+		const timeSince = Date.now() - firstDownload;
+		const days = Math.floor(timeSince / 1000 / 60 / 60 / 24);
+		const weeks = Math.floor(days / 7);
+		const months = Math.floor(days / 30);
+		if(days < 1)
+			return '<1 day';
+		if(weeks < 1)
+			return `${days} day${days === 1 ? '' : 's'}`;
+		if(months < 1)
+			return `${weeks} week${weeks === 1 ? '' : 's'}`;
+		if(months < 12)
+			return `${months} month${months === 1 ? '' : 's'}`;
+		return '>1 year';
+	}
 	function updateDownloadCountAttribute() {
 		const count = downloadCount > 20 ? '>20' : downloadCount;
+		const firstDlTime = getTimeSinceFirstDownload();
 		mainDownloadButtons.forEach(button => {
 			button.setAttribute('data-analytics-downloadcount', count);
+			button.setAttribute('data-analytics-firstdltime', firstDlTime);
 		});
 		donationCTAs.forEach(button => {
 			button.setAttribute('data-analytics-prior_wurst_downloads', count);
+			button.setAttribute('data-analytics-first_wurst_download', firstDlTime);
 		});
 	}
 	updateDownloadCountAttribute();
 	if(downloadCount <= 20) {
 		let clickHandler = function() {
 			localStorage.setItem('WurstDownloadCount', ++downloadCount);
+			if(downloadCount === 1 || !localStorage.getItem('FirstWurstDownload'))
+				localStorage.setItem('FirstWurstDownload', Date.now());
 			updateDownloadCountAttribute();
 			if(downloadCount > 20) {
 				mainDownloadButtons.forEach(button => {
