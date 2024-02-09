@@ -66,6 +66,8 @@ capes:
   "5dd101af-109d-4d72-b5d6-acc8ebfc4ce6": "{{ page.capes.wurst }}",
   "CheifQueefOG": "{{ page.capes.wurst }}",
   "03ee256e-d601-41a0-9d19-ebaaffda5d36": "{{ page.capes.wurst }}",
+  "gmodsans": "{{ page.capes.wurst }}",
+  "9df71575-b9a1-4c24-a9a2-8544d158d999": "{{ page.capes.wurst }}",
 
   "use_new_server": false
 }
