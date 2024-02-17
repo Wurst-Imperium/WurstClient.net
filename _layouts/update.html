@@ -59,18 +59,19 @@ released {{ date | date: "%B %-d, %Y" }}
 
 <div class="padding20 no-padding-left no-padding-right">
 	<div class="container post-content">
-
-		<h2>Related Tutorials</h2>
-		<ul>
-			{%- if page.fabric -%}
-				<li><p><a href="/tutorials/how-to-install/wurst-7/">How To Install Wurst 7</a></p></li>
-				<li><p><a href="/tutorials/wurst-7-baritone/">How To Add Baritone To Wurst 7</a></p></li>
-			{%- else -%}
-				<li><p><a href="/tutorials/how-to-install/wurst-6/">How to install Wurst 6 for Minecraft 1.8 - 1.12</a></p></li>
-				<li><p><a href="/tutorials/how-to-update/">How to manually update Wurst 6 for Minecraft 1.8 - 1.12</a></p></li>
-			{%- endif -%}
-		</ul>
-
+		<h2>Installation</h2>
+		{%- if page.fabric -%}
+			<p>Wurst 7 can be installed just like any other Fabric mod. Here are the basic installation steps:</p>
+			<ol>
+				<li>Run the Fabric installer.</li>
+				<li>Add the Wurst Client and Fabric API to your mods folder.</li>
+			</ol>
+			<p>Please refer to the <a href="/tutorials/how-to-install/wurst-7">full Wurst 7 installation guide</a> if you need more detailed instructions or run into any problems.</p>
+		{%- elsif page.mc-1-7-remake -%}
+			<p>Becuase this is a remake, the installation process is <a href="/tutorials/how-to-install/wurst-6/">the same as Wurst 6</a>. Just make sure that you have Minecraft 1.7.2 (not 1.7.10) installed in order for the Wurst installer to work.</p>
+		{%- else -%}
+			<p>Basically just run the installer. See <a href="/tutorials/how-to-install/wurst-6/">this tutorial</a> for details.</p>
+		{%- endif -%}
 	</div>
 </div>
 
