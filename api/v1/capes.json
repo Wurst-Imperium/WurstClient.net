@@ -70,6 +70,8 @@ capes:
   "9df71575-b9a1-4c24-a9a2-8544d158d999": "{{ page.capes.wurst }}",
   "Koyos_": "{{ page.capes.wurst }}",
   "7b8ffbcf-03d9-468f-8e90-5fda6c81b9e2": "{{ page.capes.wurst }}",
+  "Bonestaple": "{{ page.capes.wurst }}",
+  "d96d152b-45dc-4678-b28f-e4f541115c44": "{{ page.capes.wurst }}",
 
   "use_new_server": false
 }
