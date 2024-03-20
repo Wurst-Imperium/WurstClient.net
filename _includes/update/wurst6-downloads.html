@@ -33,7 +33,8 @@ Just extract it and run the 'Wurst Installer.cmd' file.{%- endcapture -%}
 		{%- endif -%}
 
 		<a class="command-button download"
-			href="{{ mainlink }}" rel="nofollow" target="_blank"
+			href="javascript:void(0)"
+			onclick="window.open('{{ mainlink }}', '_blank')"
 			data-analytics="Download Wurst"
 			data-analytics-version="{{ page.wurst-version }}"
 			data-analytics-mcversion="{{ mcversion | remove: ' OF' }}"
