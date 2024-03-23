@@ -72,6 +72,8 @@ capes:
   "7b8ffbcf-03d9-468f-8e90-5fda6c81b9e2": "{{ page.capes.wurst }}",
   "Bonestaple": "{{ page.capes.wurst }}",
   "d96d152b-45dc-4678-b28f-e4f541115c44": "{{ page.capes.wurst }}",
+  "Reckah": "{{ page.capes.wurst }}",
+  "5be97b0c-657f-4fb9-baa8-b463b3040c28": "{{ page.capes.wurst }}",
 
   "use_new_server": false
 }
