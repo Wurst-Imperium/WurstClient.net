@@ -57,6 +57,7 @@ released {{ date | date: "%B %-d, %Y" }}
 	</div>
 {%- endif -%}
 
+{%- unless page.old-downloads or page.old-mcx -%}
 <div class="padding20 no-padding-left no-padding-right">
 	<div class="container post-content">
 		<h2>Installation</h2>
@@ -72,7 +73,9 @@ released {{ date | date: "%B %-d, %Y" }}
 		{%- else -%}
 			<p>Basically just run the installer. See <a href="/tutorials/how-to-install/wurst-6/">this tutorial</a> for details.</p>
 		{%- endif -%}
+		<p>Also, this should be obvious, but you do need to have a licensed copy of Minecraft Java Edition in order to use Wurst. Wurst is a cheat client, not a pirate client.</p>
 	</div>
 </div>
+{%- endunless -%}
 
 {%- include update/schema.html -%}
