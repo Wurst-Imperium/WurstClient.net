@@ -1,6 +1,6 @@
 ---
 layout: none
-permalink: "/css/wi-v2023.01.18.css"
+permalink: "/css/wi-v2024.03.27.css"
 ---
 /*
   Wurst-Imperium CSS
@@ -17720,6 +17720,9 @@ ul.wurst-grid.list {
   padding-left: 40px;
 }
 
+.wurst-grid.cells2 {
+  grid-template-columns: 1fr 1fr;
+}
 .wurst-grid.cells5 {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
@@ -17740,12 +17743,18 @@ ul.wurst-grid.list {
   .wurst-grid {
     grid-template-columns: 1fr 1fr 1fr;
   }
+  .wurst-grid.cells2 {
+    grid-template-columns: 1fr 1fr;
+  }
   .wurst-grid.cells5 {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
 }
 @media screen and (max-width: 800px) {
   .wurst-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .wurst-grid.cells2 {
     grid-template-columns: 1fr 1fr;
   }
   .wurst-grid.cells5 {
@@ -17756,11 +17765,17 @@ ul.wurst-grid.list {
   .wurst-grid {
     grid-template-columns: 1fr;
   }
+  .wurst-grid.cells2 {
+    grid-template-columns: 1fr;
+  }
   .wurst-grid.cells5 {
     grid-template-columns: 1fr 1fr;
   }
 }
 @media screen and (max-width: 320px) {
+  .wurst-grid.cells2 {
+    grid-template-columns: 1fr;
+  }
   .wurst-grid.cells5 {
     grid-template-columns: 1fr;
   }

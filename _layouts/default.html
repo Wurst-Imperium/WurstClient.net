@@ -33,7 +33,7 @@ google_auto_ads: false
 		<title>{{ page_title }}</title>
 		{%- if page_description -%}<meta name="description" content="{{ page_description }}">{%- endif -%}
 
-		<link href="/css/wi-v2023.01.18.css" rel="stylesheet">
+		<link href="/css/wi-v2024.03.27.css" rel="stylesheet">
 
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:site" content="@Wurst_Imperium">
@@ -53,7 +53,7 @@ google_auto_ads: false
 		{%- for tr in page.translations -%}
 			<link rel="alternate" hreflang="{{ tr[0] }}" href="https://www.wurstclient.net{{ tr[1] }}">
 		{%- endfor -%}
-		
+
 		{%- include plausible.html -%}
 
 		{%- if page.google_auto_ads or layout.google_auto_ads -%}
@@ -70,7 +70,7 @@ google_auto_ads: false
 			<div style="height: 80px;"></div>
 		</div>
 		{%- include footer.html -%}
-		
+
 		<script async src="/js/wi-v2023.01.13.js"></script>
 
 	</body>
