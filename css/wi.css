@@ -1,6 +1,6 @@
 ---
 layout: none
-permalink: "/css/wi-v2024.03.27.css"
+permalink: "/css/wi-v2024.04.09.css"
 ---
 /*
   Wurst-Imperium CSS
@@ -17723,6 +17723,15 @@ ul.wurst-grid.list {
 .wurst-grid.cells2 {
   grid-template-columns: 1fr 1fr;
 }
+.wurst-grid.cells2.centered {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.wurst-grid.cells2.centered > * {
+  grid-column-end: span 2;
+}
+.wurst-grid.cells2.centered :nth-child(odd):last-child {
+  grid-column-start: 2;
+}
 .wurst-grid.cells5 {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
@@ -17746,6 +17755,9 @@ ul.wurst-grid.list {
   .wurst-grid.cells2 {
     grid-template-columns: 1fr 1fr;
   }
+  .wurst-grid.cells2.centered {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
   .wurst-grid.cells5 {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
@@ -17756,6 +17768,9 @@ ul.wurst-grid.list {
   }
   .wurst-grid.cells2 {
     grid-template-columns: 1fr 1fr;
+  }
+  .wurst-grid.cells2.centered {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
   .wurst-grid.cells5 {
     grid-template-columns: 1fr 1fr 1fr;
@@ -17768,6 +17783,12 @@ ul.wurst-grid.list {
   .wurst-grid.cells2 {
     grid-template-columns: 1fr;
   }
+  .wurst-grid.cells2.centered {
+    grid-template-columns: 1fr 1fr;
+  }
+  .wurst-grid.cells2.centered :nth-child(odd):last-child {
+    grid-column-start: 1;
+  }
   .wurst-grid.cells5 {
     grid-template-columns: 1fr 1fr;
   }
@@ -17775,6 +17796,12 @@ ul.wurst-grid.list {
 @media screen and (max-width: 320px) {
   .wurst-grid.cells2 {
     grid-template-columns: 1fr;
+  }
+  .wurst-grid.cells2.centered {
+    grid-template-columns: 1fr 1fr;
+  }
+  .wurst-grid.cells2.centered :nth-child(odd):last-child {
+    grid-column-start: 1;
   }
   .wurst-grid.cells5 {
     grid-template-columns: 1fr;
