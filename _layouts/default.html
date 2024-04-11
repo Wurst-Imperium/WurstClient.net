@@ -19,12 +19,20 @@ google_auto_ads: false
 	{%- assign page_image = "https://cloud.githubusercontent.com/assets/10100202/24450367/ef3c0796-147a-11e7-99a9-404bc0deeb3d.jpg" -%}
 {%- endif -%}
 
+{%- if page.robots -%}
+	{%- assign page_robots = page.robots -%}
+{%- else -%}
+	{%- assign page_robots = "index, follow" -%}
+{%- endif -%}
+
 <!DOCTYPE html>
 <html lang="{% if page.lang %}{{ page.lang }}{% else %}en{% endif %}">
 	<head>
 
 		<meta charset="utf-8">
 		<link rel="preload" href="/fonts/metro.woff" as="font" type="font/woff" crossorigin>
+
+		<meta name="robots" content="{{ page_robots }}">
 
 		<link rel="shortcut icon" href="/favicon.ico">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
