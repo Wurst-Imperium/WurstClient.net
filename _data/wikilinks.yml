@@ -57,7 +57,6 @@ hacks:
   FeedAura: https://wurst.wiki/feedaura
   FightBot: https://wurst.wiki/fightbot
   Flight: https://wurst.wiki/flight
-  ForceOP: https://wurst.wiki/forceop
   Freecam: https://wurst.wiki/freecam
   Fullbright: https://wurst.wiki/fullbright
   Glide: https://wurst.wiki/glide
@@ -129,7 +128,6 @@ commands:
   .setblock: https://wurst.wiki/cmd/setblock
   .setcolor: https://wurst.wiki/cmd/setcolor
   .setmode: https://wurst.wiki/cmd/setmode
-  .spammer: https://wurst.wiki/cmd/spammer
   .taco: https://wurst.wiki/cmd/taco
   .unbind: https://wurst.wiki/cmd/unbind
   .xray: https://wurst.wiki/cmd/xray

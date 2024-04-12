@@ -1,191 +1,217 @@
 ---
 title: Minecraft Wurst Hacked Client
 description: Unleash the full potential of Minecraft with the Wurst Client - featuring over 200 cheats, hacks, commands, and utility mods. Free and open source. Download it now!
+screenshots:
+- https://images.wurstclient.net/_media/update/wurst_7.39_540p.webp
+- https://images.wurstclient.net/_media/update/wurst_7.38_540p.webp
+- https://images.wurstclient.net/_media/update/wurst_7.37.1_540p.webp
+- https://images.wurstclient.net/_media/update/wurst_7.37_540p.webp
+- https://images.wurstclient.net/_media/update/wurst_7.36_540p.webp
+- https://images.wurstclient.net/_media/update/wurst_7.35.2_540p.webp
+- https://images.wurstclient.net/_media/update/wurst_7.31_540p.webp
+- https://images.wurstclient.net/_media/update/wurst_7.29_540p.webp
+- https://images.wurstclient.net/_media/update/wurst_7.28_540p.webp
 ---
-<div style="background-repeat: repeat;background-size: 10.4rem;background-position: center top;background-attachment: fixed;background-image: url('https://user-images.githubusercontent.com/10100202/94212861-9b95db00-fed5-11ea-829b-2bd6cd3444d9.png');padding-top: 9.375rem;padding-bottom: 9.375rem;">
+<section style="background-repeat: repeat;background-size: 10.4rem;background-position: center top;background-attachment: fixed;background-image: url('https://user-images.githubusercontent.com/10100202/94212861-9b95db00-fed5-11ea-829b-2bd6cd3444d9.png');padding-top: 9.375rem;padding-bottom: 9.375rem;">
 	<div class="container align-center">
 		<h1>
-			<img src="https://cloud.githubusercontent.com/assets/10100202/23872350/47e8462e-082e-11e7-8ac2-07a66e4beaaa.png" alt="{{ page.title }}">
+			<img src="https://cloud.githubusercontent.com/assets/10100202/23872350/47e8462e-082e-11e7-8ac2-07a66e4beaaa.png" width="758" height="192" alt="{{ page.title }}">
 		</h1>
 		<p>
-			<a class="command-button primary shadow" href="/download/" style="padding-top: 1rem;padding-bottom: 1rem;">
+			<a class="command-button primary shadow" href="/download/" style="padding-top: 1rem;padding-bottom: 1rem;" data-analytics="Main Page: CTA Click" data-analytics-button="Download Wurst top">
 				<span class="icon mif-download2"></span>
 				Download Wurst
 			</a>
 			<br class="no-pc">
 			<span class="header margin20 fg-white text-shadow">or</span>
 			<br class="no-pc">
-			<a class="command-button shadow bg-green bg-hover-emerald bd-green fg-white" href="https://www.wimods.net/?utm_source=wurstclient.net&utm_content=WurstClient.net+See+Other+Projects+button" style="padding-top: 1rem;padding-bottom: 1rem;overflow: hidden;">
+			<a class="command-button shadow bg-green bg-hover-emerald bd-green fg-white" href="https://www.wimods.net/?utm_source=wurstclient.net&utm_content=WurstClient.net+See+Other+Projects+button" style="padding-top: 1rem;padding-bottom: 1rem;overflow: hidden;" data-analytics="Main Page: CTA Click" data-analytics-button="See Other Projects">
 				<span class="icon mif-rocket"></span>
 				See Other Projects
 			</a>
 		</p>
 	</div>
-</div>
-<div class="padding40 no-padding-left no-padding-right bg-grayLighter">
+</section>
+<section class="padding20 no-padding-left no-padding-right bg-grayLighter">
 	<div class="container align-center">
-		<div>
-			<a class="github-button" href="https://github.com/Wurst-Imperium/Wurst7" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star Wurst-Imperium/Wurst7 on GitHub">Star</a>
-			<a class="github-button" href="https://github.com/Wurst-Imperium/Wurst7/subscription" data-icon="octicon-eye" data-size="large" data-show-count="true" aria-label="Watch Wurst-Imperium/Wurst7 on GitHub">Watch</a>
-			<a class="github-button" href="https://github.com/Wurst-Imperium/Wurst7/fork" data-icon="octicon-repo-forked" data-size="large" data-show-count="true" aria-label="Fork Wurst-Imperium/Wurst7 on GitHub">Fork</a>
+		<p class="text-accent">
+			Wurst is a client-side utility mod designed to supercharge your Minecraft experience. Equipped with a vast arsenal of cheats, hacks, and other utilities, the Wurst Client ensures that you'll always have the upper edge in your Minecraft adventures.
+		</p>
+	</div>
+</section>
+<section class="padding20 no-padding-left no-padding-right" id="screenshots">
+	<div class="container">
+		<div class="padding10 no-padding-left no-padding-right align-center">
+			<h2>Screenshot Gallery</h2>
+			<p>Click on any image to view it in full size.</p>
 		</div>
+		<div class="padding10 no-padding-left no-padding-right">
+			<div class="wurst-grid">
+				{%- for screenshot in page.screenshots -%}
+					{%- assign fullsize-image = screenshot | replace: '_540p.webp', '.jpg' -%}
+					{%- assign filename = fullsize-image | replace: 'https://images.wurstclient.net/_media/update/', '' -%}
+					<article>
+						<a href="{{ fullsize-image }}" target="_blank" title="File: {{ filename }}" data-analytics="Screenshot Gallery: Expand Image" data-analytics-image="{{ filename }}">
+							<img src="{{ screenshot }}" loading="lazy" alt="{{ filename }}" width="640" height="360">
+						</a>
+					</article>
+				{%- endfor -%}
+			</div>
+		</div>
+	</div>
+</section>
+<section class="padding20 no-padding-left no-padding-right bg-grayLighter" id="features">
+	<div class="container align-center">
 		{%- assign features = site.data.features -%}
 		{%- assign wiki = site.data.wikilinks -%}
 		<h2>Features ({{ features.cheats.size | plus: features.commands.size | plus: features.other.size }})</h2>
-		<p class="text-secondary">Note: Not all features are available in all Minecraft versions.</p>
+		<p>
+			A full list of Wurst's features can be found below.<br>
+			Note that not all of these features are available in all Minecraft versions.
+		</p>
 	</div>
-</div>
-<div class="padding20 no-padding-left no-padding-right">
+</section>
+<section class="padding20 no-padding-left no-padding-right">
 	<div class="container">
-		<div class="grid">
-			<div class="row">
-				<h3>Cheats ({{ features.cheats.size }})</h3>
-			</div>
-			<div class="row cells5">
-				{% assign colsize = features.cheats.size | divided_by: 5.0 | ceil %}
-				{% for i in (0..4) %}
-					<div class="cell">
-						<ul>
-							{% for i2 in (1..colsize) %}
-								{% assign i3 = i | times: colsize | plus: i2 | minus: 1 %}
-								{% if i3 >= features.cheats.size %}
-									{% break %}
-								{% endif %}
-								{% assign hack = features.cheats[i3] %}
-								<li>
-									{% if wiki.hacks[hack] %}
-										<a href="{{ wiki.hacks[hack] }}">{{ hack }}</a>
-									{% else %}
-										{{ hack }}
-									{% endif %}
-								</li>
-							{% endfor %}
-						</ul>
-					</div>
+		<div class="padding10 no-padding-left no-padding-right">
+			<h3>Cheats ({{ features.cheats.size }})</h3>
+		</div>
+		<div class="padding10 no-padding-left no-padding-right">
+			<ul class="wurst-grid list cells5" style="gap: 2px 20px">
+				{%- for hack in features.cheats -%}
+					<li>
+						{%- if wiki.hacks[hack] -%}
+							<a href="{{ wiki.hacks[hack] }}">{{ hack }}</a>
+						{%- else -%}
+							{{ hack }}
+						{%- endif -%}
+					</li>
+				{%- endfor -%}
+			</ul>
+		</div>
+	</div>
+</section>
+<section class="padding20 no-padding-left no-padding-right bg-grayLighter">
+	<div class="container">
+		<div class="padding10 no-padding-left no-padding-right">
+			<h3>Commands ({{ features.commands.size }})</h3>
+		</div>
+		<div class="padding10 no-padding-left no-padding-right">
+			<ul class="wurst-grid list cells5" style="gap: 2px 20px">
+				{%- for cmd in features.commands -%}
+					<li>
+						{%- if wiki.commands[cmd] -%}
+							<a href="{{ wiki.commands[cmd] }}">{{ cmd }}</a>
+						{%- else -%}
+							{{ cmd }}
+						{%- endif -%}
+					</li>
+				{%- endfor -%}
+			</ul>
+		</div>
+	</div>
+</section>
+<section class="padding20 no-padding-left no-padding-right">
+	<div class="container">
+		<div class="padding10 no-padding-left no-padding-right">
+			<h3>Other Features ({{ features.other.size }})</h3>
+		</div>
+		<div class="padding10 no-padding-left no-padding-right">
+			<ul class="wurst-grid list" style="gap: 2px 20px">
+				{%- for other in features.other -%}
+					<li>
+						{% if wiki.other[other] %}
+							<a href="{{ wiki.other[other] }}">{{ other }}</a>
+						{% else %}
+							{{ other }}
+						{% endif %}
+					</li>
 				{% endfor %}
-			</div>
+			</ul>
 		</div>
 	</div>
-</div>
-<div class="padding20 no-padding-left no-padding-right bg-grayLighter">
+</section>
+<section class="padding40 no-padding-left no-padding-right bg-grayLighter" id="keybinds">
 	<div class="container">
-		<div class="grid">
-			<div class="row">
-				<h3>Commands ({{ features.commands.size }})</h3>
-			</div>
-			<div class="row cells5">
-				{% assign colsize = features.commands.size | divided_by: 5.0 | ceil %}
-				{% for i in (0..4) %}
-					<div class="cell">
-						<ul>
-							{% for i2 in (1..colsize) %}
-								{% assign i3 = i | times: colsize | plus: i2 | minus: 1 %}
-								{% if i3 >= features.commands.size %}
-									{% break %}
-								{% endif %}
-								{% assign cmd = features.commands[i3] %}
-								<li>
-									{% if wiki.commands[cmd] %}
-										<a href="{{ wiki.commands[cmd] }}">{{ cmd }}</a>
-									{% else %}
-										{{ cmd }}
-									{% endif %}
-								</li>
-							{% endfor %}
-						</ul>
-					</div>
-				{% endfor %}
-			</div>
+		<div class="align-center padding10 no-padding-left no-padding-right no-padding-top">
+			<h2>Default Keybinds (15)</h2>
+			<p>
+				These are the default keybinds when you first install Wurst. All of them are <a href="https://wurst.wiki/keybind_manager">fully&nbsp;customizable</a>!<br>
+				Note that Minecraft versions before 1.14 have slightly different defaults.
+			</p>
 		</div>
+		<ul class="wurst-grid list" style="gap: 2px 20px">
+			<li><kbd>B</kbd> &rarr; FastPlace &amp; FastBreak</li>
+			<li><kbd>C</kbd> &rarr; Fullbright</li>
+			<li><kbd>G</kbd> &rarr; Flight</li>
+			<li><kbd>;</kbd> &rarr; SpeedNuker</li>
+			<li><kbd>H</kbd> &rarr; /home</li>
+			<li><kbd>J</kbd> &rarr; Jesus</li>
+			<li><kbd>K</kbd> &rarr; MultiAura</li>
+			<li><kbd>N</kbd> &rarr; Nuker</li>
+			<li><kbd>R</kbd> &rarr; Killaura</li>
+			<li><kbd>Right CTRL</kbd> &rarr; ClickGUI</li>
+			<li><kbd>Right SHIFT</kbd> &rarr; Navigator</li>
+			<li><kbd>U</kbd> &rarr; Freecam</li>
+			<li><kbd>X</kbd> &rarr; X-Ray</li>
+			<li><kbd>Z</kbd> &rarr; Sneak</li>
+		</ul>
 	</div>
-</div>
-<div class="padding20 no-padding-left no-padding-right">
+</section>
+<section class="padding20 no-padding-left no-padding-right" id="testimonials">
 	<div class="container">
-		<div class="grid">
-			<div class="row">
-				<h3>Other Features ({{ features.other.size }})</h3>
-			</div>
-			<div class="row cells5">
-				{% assign colsize = features.other.size | divided_by: 5.0 | ceil %}
-				{% for i in (0..4) %}
-					<div class="cell">
-						<ul>
-							{% for i2 in (1..colsize) %}
-								{% assign i3 = i | times: colsize | plus: i2 | minus: 1 %}
-								{% if i3 >= features.other.size %}
-									{% break %}
-								{% endif %}
-								{% assign other = features.other[i3] %}
-								<li>
-									{% if wiki.other[other] %}
-										<a href="{{ wiki.other[other] }}">{{ other }}</a>
-									{% else %}
-										{{ other }}
-									{% endif %}
-								</li>
-							{% endfor %}
-						</ul>
-					</div>
-				{% endfor %}
-			</div>
+		<div class="padding10 no-padding-left no-padding-right">
+			<h2 class="align-center">Players Agree: Wurst Changes the Game</h2>
+		</div>
+		<div class="wurst-grid cells2 centered">
+			<figure class="no-margin">
+				<blockquote class="text-accent">
+					<p>The Wurst Hacked Client puts you in the driver's seat!</p>
+				</blockquote>
+				<figcaption>
+					<p>&mdash; <cite>WiZARD HAX</cite></p>
+				</figcaption>
+			</figure>
+			<figure class="no-margin">
+				<blockquote class="text-accent">
+					<p>The Wurst Client is one of, if not the best Minecraft hack.</p>
+				</blockquote>
+				<figcaption>
+					<p>&mdash; <cite>mchacks.net</cite></p>
+				</figcaption>
+			</figure>
+			<figure class="no-margin">
+				<blockquote class="text-accent">
+					<p>For those who relish in survival mode, this client is a godsend!</p>
+				</blockquote>
+				<figcaption>
+					<p>&mdash; <cite>thebluecrusader</cite></p>
+				</figcaption>
+			</figure>
+		</div>
+		<div class="align-center">
+			<p>
+				<a class="github-button" href="https://github.com/Wurst-Imperium/Wurst7" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star Wurst-Imperium/Wurst7 on GitHub">Star</a>
+				<a class="github-button" href="https://github.com/Wurst-Imperium/Wurst7/subscription" data-icon="octicon-eye" data-size="large" data-show-count="true" aria-label="Watch Wurst-Imperium/Wurst7 on GitHub">Watch</a>
+				<a class="github-button" href="https://github.com/Wurst-Imperium/Wurst7/fork" data-icon="octicon-repo-forked" data-size="large" data-show-count="true" aria-label="Fork Wurst-Imperium/Wurst7 on GitHub">Fork</a>
+			</p>
+			<img src="https://api.star-history.com/svg?repos=Wurst-Imperium/Wurst7&type=Date" alt="Star History of Wurst-Imperium/Wurst7" loading="lazy" width="800" height="553">
 		</div>
 	</div>
-</div>
-<div class="padding20 no-padding-left no-padding-right bg-grayLighter">
-	<div class="container">
-		<div class="grid">
-			<div class="row">
-				<h2 class="align-center">Default Keybinds (15)</h2>
-				<p class="text-secondary align-center">
-					Note: Keybinds are slightly different depending on your Minecraft version.
-					Check the <a href="https://wurst.wiki/keybinds">Wurst Wiki</a> for details.
-				</p>
-			</div>
-			<div class="row cells3">
-				<div class="cell">
-					<ul>
-						<li>B -> FastPlace;FastBreak</li>
-						<li>C -> Fullbright</li>
-						<li>G -> Flight</li>
-						<li>GRAVE -> SpeedNuker</li>
-						<li>H -> /home</li>
-					</ul>
-				</div>
-				<div class="cell">
-					<ul>
-						<li>J -> Jesus</li>
-						<li>K -> MultiAura</li>
-						<li>LCONTROL -> Navigator</li>
-						<li>N -> Nuker</li>
-						<li>R -> Killaura</li>
-					</ul>
-				</div>
-				<div class="cell">
-					<ul>
-						<li>RCONTROL -> ClickGUI</li>
-						<li>RSHIFT -> Navigator</li>
-						<li>U -> Freecam</li>
-						<li>X -> X-Ray</li>
-						<li>Z -> Sneak</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="padding20 no-padding-left no-padding-right">
+</section>
+<section class="padding40 no-padding-left no-padding-right bg-grayLighter">
 	<div class="container align-center">
-		<div class="grid">
-			<div class="row">
-				<h2>Review by WiZARDHAX.com</h2>
-			</div>
-			<div class="row">
-				<div class="video-container no-padding-top">
-					<iframe src="https://www.youtube-nocookie.com/embed/zUKeVXhwN6M?rel=0" frameborder="0" allowfullscreen="" loading="lazy"></iframe>
-				</div>
-			</div>
-		</div>
+		<h2>So what are you waiting for?</h2>
+		<p class="text-accent">
+			Download the Wurst Client today and enhance your gameplay like never before!
+		</p>
+		<p>
+			<a class="command-button primary shadow" href="/download/" style="padding-top: 1rem;padding-bottom: 1rem;" data-analytics="Main Page: CTA Click" data-analytics-button="Download Wurst bottom">
+				<span class="icon mif-download2"></span>
+				Download Wurst
+			</a>
+		</p>
 	</div>
-</div>
+</section>
 
 <script async defer src="https://buttons.github.io/buttons.js"></script>
