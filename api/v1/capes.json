@@ -66,14 +66,12 @@ capes:
   "5dd101af-109d-4d72-b5d6-acc8ebfc4ce6": "{{ page.capes.wurst }}",
   "UnderbellyGrease": "{{ page.capes.wurst }}",
   "03ee256e-d601-41a0-9d19-ebaaffda5d36": "{{ page.capes.wurst }}",
-  "gmodsans": "{{ page.capes.wurst }}",
-  "9df71575-b9a1-4c24-a9a2-8544d158d999": "{{ page.capes.wurst }}",
   "Koyos_": "{{ page.capes.wurst }}",
   "7b8ffbcf-03d9-468f-8e90-5fda6c81b9e2": "{{ page.capes.wurst }}",
   "Bonestaple": "{{ page.capes.wurst }}",
   "d96d152b-45dc-4678-b28f-e4f541115c44": "{{ page.capes.wurst }}",
-  "alchamev": "{{ page.capes.wurst }}",
-  "915c4020-08a4-4fe4-9c8a-1ef14e27b827": "{{ page.capes.wurst }}",
+  "smksmk": "{{ page.capes.wurst }}",
+  "1cd0d4da-8d14-4c8d-8739-30c76c1cdd66": "{{ page.capes.wurst }}",
 
   "use_new_server": false
 }
