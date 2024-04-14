@@ -35,7 +35,7 @@
 	{%- assign mainfile = mainlink | split: '/' | last -%}
 	<a class="command-button download"
 		href="javascript:void(0)"
-		onclick="window.open('{{ mainlink }}', '_blank')"
+		data-href="{{ mainlink }}"
 		data-analytics="Download Wurst"
 		data-analytics-version="{{ page.wurst-version }}"
 		data-analytics-mcversion="{{ mcversion }}"
@@ -63,7 +63,7 @@
 		{%- endif -%}
 		<a class="command-button"
 			href="javascript:void(0)"
-			onclick="window.open('{{ apilink }}', '_blank')"
+			data-href="{{ apilink }}"
 			data-analytics="Download Fabric API"
 			data-analytics-mirror="{{ mirror }}"
 			{% if mirror == "GitHub" -%}
@@ -94,7 +94,7 @@
 		{%- capture srclink -%}{{ mcxbase }}{{ basepath }}-sources.jar{%- endcapture -%}
 		{%- assign srcfile = srclink | split: '/' | last -%}
 		<a href="javascript:void(0)"
-			onclick="window.open('{{ srclink }}', '_blank')"
+			data-href="{{ srclink }}"
 			data-analytics="Download Wurst"
 			data-analytics-version="{{ page.wurst-version }}"
 			data-analytics-mcversion="{{ mcversion }}"
@@ -111,7 +111,7 @@
 		{%- capture devlink -%}{{ mcxbase }}{{ basepath }}-dev.jar{%- endcapture -%}
 		{%- assign devfile = devlink | split: '/' | last -%}
 		<a href="javascript:void(0)"
-			onclick="window.open('{{ devlink }}', '_blank')"
+			data-href="{{ devlink }}"
 			data-analytics="Download Wurst"
 			data-analytics-version="{{ page.wurst-version }}"
 			data-analytics-mcversion="{{ mcversion }}"
@@ -128,7 +128,7 @@
 		{%- capture srcdevlink -%}{{ mcxbase }}{{ basepath }}-sources-dev.jar{%- endcapture -%}
 		{%- assign srcdevfile = srcdevlink | split: '/' | last -%}
 		<a href="javascript:void(0)"
-			onclick="window.open('{{ srcdevlink }}', '_blank')"
+			data-href="{{ srcdevlink }}"
 			data-analytics="Download Wurst"
 			data-analytics-version="{{ page.wurst-version }}"
 			data-analytics-mcversion="{{ mcversion }}"

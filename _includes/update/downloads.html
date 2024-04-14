@@ -87,6 +87,17 @@ if (mc) {
 	mcversionElements.forEach(element => element.style.gridRow = "1");
 }
 
+// handle download button clicks
+document.querySelectorAll('a[data-href]').forEach(element => {
+	element.addEventListener('click', e => openDataHref(e, element.getAttribute('data-href')));
+	element.addEventListener('auxclick', e => openDataHref(e, element.getAttribute('data-href')));
+});
+function openDataHref(event, dataHref) {
+	if(event.type === 'auxclick' && event.button !== 1)
+		return;
+	window.open(dataHref, '_blank');
+}
+
 // find download buttons
 let mainDownloadButtons = document.querySelectorAll('a[data-analytics="Download Wurst"][data-analytics-type="main"]');
 
