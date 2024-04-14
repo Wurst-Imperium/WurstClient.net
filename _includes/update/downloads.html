@@ -123,10 +123,10 @@ function getTimeSinceFirstDownload() {
 }
 function updateDownloadCountAttribute() {
 	const count = downloadCount > 20 ? '>20' : downloadCount;
-	const firstDlTime = getTimeSinceFirstDownload();
+	const firstWurstDownload = getTimeSinceFirstDownload();
 	mainDownloadButtons.forEach(button => {
 		button.setAttribute('data-analytics-downloadcount', count);
-		button.setAttribute('data-analytics-firstdltime', firstDlTime);
+		button.setAttribute('data-analytics-first_wurst_download', firstWurstDownload);
 	});
 }
 updateDownloadCountAttribute();
