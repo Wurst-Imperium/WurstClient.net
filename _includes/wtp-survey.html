@@ -1,0 +1,111 @@
+<style>
+#wtp-survey {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 10px;
+}
+
+#wtp-amount-container {
+	display: flex;
+	align-items: baseline;
+}
+
+@media screen and (min-width: 641px) {
+	#wtp-survey {
+		grid-template-columns: max-content max-content max-content;
+		justify-content: center;
+	}
+
+	#wtp-amount-container,
+	#wtp-survey>button[type="submit"] {
+		grid-column: 1 / 4;
+	}
+}
+</style>
+<div class="set-border bd-green align-center padding10 no-padding-top" id="wtp-survey-container" style="display: none;">
+	<p id="wtp-survey-question">
+		<b>Quick question:</b>
+		How much would you be willing to pay to access an ad-free version of this website?
+	</p>
+	<form id="wtp-survey">
+		<span id="wtp-amount-container">
+			<label for="wtp-survey-amount" style="width: 1em">&euro;</label>
+			<input type="number" name="amount" id="wtp-survey-amount" step="0.01" min="0" max="999.99" autocomplete="off" required style="flex-grow: 1">
+		</span>
+		<span>
+			<input type="radio" name="frequency" id="wtp-survey-one-time" value="one-time" required>
+			<label for="wtp-survey-one-time">one time</label>
+		</span>
+		<span>
+			<input type="radio" name="frequency" id="wtp-survey-monthly" value="monthly" required>
+			<label for="wtp-survey-monthly">per&nbsp;month</label>
+		</span>
+		<span>
+			<input type="radio" name="frequency" id="wtp-survey-yearly" value="yearly" required>
+			<label for="wtp-survey-yearly">per&nbsp;year</label>
+		</span>
+		<button type="submit">Submit</button>
+	</form>
+</div>
+<script>
+const form = document.getElementById("wtp-survey");
+form.addEventListener("submit", event => {
+	submitWTPSurvey();
+	event.preventDefault();
+});
+
+// If adblocker status known and survey not already answered, 10% chance to show
+const wtpSurveyContainer = document.getElementById("wtp-survey-container");
+if(localStorage.getItem("WurstAdBlockerDetected") !== null
+	&& !localStorage.getItem("AnsweredWTPSurvey20240414")
+	&& Math.random() < 0.1)
+	wtpSurveyContainer.style.display = "block";
+
+function submitWTPSurvey() {
+	// Build props
+	const amount = document.getElementById("wtp-survey-amount").value;
+	const frequency = document.querySelector('input[name="frequency"]:checked').value;
+	const adblocker = localStorage.getItem("WurstAdBlockerDetected") === "true";
+	const props = {
+		wtp_amount: amount,
+		wtp_frequency: frequency,
+		adblocker: adblocker,
+		prior_wurst_downloads: getPriorWurstDownloads()
+	}
+	if(localStorage.getItem("FirstWurstDownload"))
+		props.first_wurst_download = getTimeSinceFirstDownload();
+
+	// Submit data
+	const eventName = "Submit WTP Survey";
+	plausible(eventName, {props: props});
+	console.log(eventName, props);
+	localStorage.setItem("AnsweredWTPSurvey20240414", "true");
+
+	// Remove form
+	form.remove();
+	const question = document.getElementById("wtp-survey-question");
+	question.textContent = "Thanks for your feedback!";
+}
+
+function getPriorWurstDownloads() {
+	let count = parseInt(localStorage.getItem("WurstDownloadCount")) || 0;
+	count = Math.max(0, Math.min(count, 21));
+	return count > 20 ? '>20' : String(count);
+}
+function getTimeSinceFirstDownload() {
+	const firstDownload = parseInt(localStorage.getItem('FirstWurstDownload')) || Date.now();
+	const timeSince = Date.now() - firstDownload;
+	const days = Math.floor(timeSince / 1000 / 60 / 60 / 24);
+	const weeks = Math.floor(days / 7);
+	const months = Math.floor(days / 30);
+	if(days < 1)
+		return '<1 day';
+	if(weeks < 1)
+		return `${days} day${days === 1 ? '' : 's'}`;
+	if(months < 1)
+		return `${weeks} week${weeks === 1 ? '' : 's'}`;
+	if(months < 12)
+		return `${months} month${months === 1 ? '' : 's'}`;
+	return '>1 year';
+}
+</script>
