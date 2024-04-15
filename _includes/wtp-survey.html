@@ -54,18 +54,33 @@ form.addEventListener("submit", event => {
 	event.preventDefault();
 });
 
-// If adblocker status known and survey not already answered, 10% chance to show
+const adblocker = localStorage.getItem("WurstAdBlockerDetected") === "true";
+
+// Decide whether to show WTP survey
 const wtpSurveyContainer = document.getElementById("wtp-survey-container");
 if(localStorage.getItem("WurstAdBlockerDetected") !== null
-	&& !localStorage.getItem("AnsweredWTPSurvey20240414")
-	&& Math.random() < 0.1)
-	wtpSurveyContainer.style.display = "block";
+	&& !localStorage.getItem("AnsweredWTPSurvey20240414"))
+{
+	const eventName = "See WTP Survey";
+	const props = {
+		adblocker: adblocker,
+		prior_wurst_downloads: getPriorWurstDownloads()
+	}
+	if(localStorage.getItem("FirstWurstDownload"))
+		props.first_wurst_download = getTimeSinceFirstDownload();
+
+	if((props.prior_wurst_downloads > 0 && Math.random() < 0.5) || Math.random() < 0.25)
+	{
+		wtpSurveyContainer.style.display = "block";
+		plausible(eventName, {props: props});
+		console.log(eventName, props);
+	}
+}
 
 function submitWTPSurvey() {
 	// Build props
 	const amount = document.getElementById("wtp-survey-amount").value;
 	const frequency = document.querySelector('input[name="frequency"]:checked').value;
-	const adblocker = localStorage.getItem("WurstAdBlockerDetected") === "true";
 	const props = {
 		wtp_amount: amount,
 		wtp_frequency: frequency,
