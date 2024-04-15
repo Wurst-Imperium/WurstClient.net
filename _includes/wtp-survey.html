@@ -23,9 +23,9 @@
 }
 </style>
 <div class="set-border bd-green align-center padding10 no-padding-top" id="wtp-survey-container" style="display: none;">
-	<p id="wtp-survey-question">
+	<p>
 		<b>Quick question:</b>
-		How much would you be willing to pay to access an ad-free version of this website?
+		<span id="wtp-survey-question"></span>
 	</p>
 	<form id="wtp-survey">
 		<span id="wtp-amount-container">
@@ -50,19 +50,33 @@
 <script>
 const form = document.getElementById("wtp-survey");
 form.addEventListener("submit", event => {
-	submitWTPSurvey();
 	event.preventDefault();
+	submitWTPSurvey();
 });
 
 const adblocker = localStorage.getItem("WurstAdBlockerDetected") === "true";
 
+// Decide which question to ask
+const questionToId = {
+	"How much would you be willing to pay to access an ad-free version of this website?": "AnsweredWTPSurvey20240414",
+	"If Wurst was a paid client, how much would you be willing to pay for it?": "AnsweredWTPSurvey20240415A",
+	"How much would you be willing to pay for a Wurst Cape?": "AnsweredWTPSurvey20240415B"
+}
+let questions = [];
+for(const [key, value] of Object.entries(questionToId))
+	if(localStorage.getItem(value) !== "true")
+		questions.push(key);
+const question = questions.length > 0 ? questions[Math.floor(Math.random() * questions.length)] : null;
+const questionId = question === null ? null : questionToId[question];
+document.getElementById("wtp-survey-question").textContent = question;
+
 // Decide whether to show WTP survey
-const wtpSurveyContainer = document.getElementById("wtp-survey-container");
-if(localStorage.getItem("WurstAdBlockerDetected") !== null
-	&& !localStorage.getItem("AnsweredWTPSurvey20240414"))
+if(question !== null && questionId !== null && localStorage.getItem("WurstAdBlockerDetected") !== null)
 {
+	const wtpSurveyContainer = document.getElementById("wtp-survey-container");
 	const eventName = "See WTP Survey";
 	const props = {
+		question: question,
 		adblocker: adblocker,
 		prior_wurst_downloads: getPriorWurstDownloads()
 	}
@@ -82,6 +96,7 @@ function submitWTPSurvey() {
 	const amount = document.getElementById("wtp-survey-amount").value;
 	const frequency = document.querySelector('input[name="frequency"]:checked').value;
 	const props = {
+		question: question,
 		wtp_amount: amount,
 		wtp_frequency: frequency,
 		adblocker: adblocker,
@@ -94,12 +109,11 @@ function submitWTPSurvey() {
 	const eventName = "Submit WTP Survey";
 	plausible(eventName, {props: props});
 	console.log(eventName, props);
-	localStorage.setItem("AnsweredWTPSurvey20240414", "true");
+	localStorage.setItem(questionId, "true");
 
 	// Remove form
 	form.remove();
-	const question = document.getElementById("wtp-survey-question");
-	question.textContent = "Thanks for your feedback!";
+	document.getElementById("wtp-survey-question").parentElement.textContent = "Thanks for your feedback!";
 }
 
 function getPriorWurstDownloads() {
