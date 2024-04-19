@@ -27,7 +27,15 @@ google_auto_ads: true
 				{%- endif -%}
 
 				{%- assign modulo = i | modulo: 7 -%}
-				{%- if modulo == 0 -%}
+				{%- if forloop.first and page.mcversion == "all" or forloop.first and page.mcversion == "1.20.4" -%}
+				<div>
+					<a href="https://ko-fi.com/Post/Early-Access-Wurst-7-42-pre-release-1-N4N5X3LG9"><article>
+						{%- assign placeholder = "https://images.wurstclient.net/_media/placeholder-320x180.webp" -%}
+						<img src="{{ placeholder }}" data-src="https://storage.ko-fi.com/cdn/useruploads/supporteronly2.png" class="lazyload" alt="Update Image Preview" width="640" height="360" style="aspect-ratio: 16/9">
+						<h2 class="sub-header">Early Access: Wurst 7.42pre1</h2>
+					</article></a>
+				</div>
+				{%- elsif modulo == 0 -%}
 				<div>
 					<ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-6l+d4-6+3m+4o" data-ad-client="ca-pub-5218363098774955" data-ad-slot="3234682827"></ins>
 					<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
