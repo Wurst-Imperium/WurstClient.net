@@ -24,15 +24,15 @@ details {
 			<div class="bg-grayLighter padding20 set-border">
 				<p style="display: flex;align-items: center;justify-content: center">
 					<span class="leader">
-						€<span class="text-bold">15</span>
+						€<span class="text-bold">13.37</span>
 					</span>
 					<span style="margin-left: 0.5rem;">
 						<span style="font-weight: 500;">one-time payment</span>
 						<br>
-						<span class="fg-gray">plus local taxes</span>
+						<span class="fg-gray">taxes included</span>
 					</span>
 				</p>
-				<button id="buy-button" class="button primary full-size">Buy Now</button>
+				<button id="buy-button" class="button primary full-size shadow bg-hover-lightBlue">Get Ad-Free Access</button>
 				<p class="fg-gray text-secondary align-center">Lifetime&nbsp;access. Unlimited&nbsp;downloads. All&nbsp;versions.</p>
 			</div>
 			<div>
@@ -178,6 +178,12 @@ details {
 			</p>
 		</details>
 		<details class="ad-free-faq">
+			<summary id="other-mods">Does the Ad-Free Access Pass also turn off ads for your other mods, like Wolfram or WI Zoom?</summary>
+			<p>
+				No. The Ad-Free Access Pass is only available for Wurst at the moment. If I release Ad-Free Access Passes for other mods in the future, those will be separate products.
+			</p>
+		</details>
+		<details class="ad-free-faq">
 			<summary id="refund-policy">What is your refund policy?</summary>
 			<p>
 				Simple: If you're unhappy with your purchase for any reason, <a href="mailto:refunds@wurstclient.net">contact me</a> within 30 days of payment to receive a full refund.
@@ -200,9 +206,6 @@ details {
 
 <script src="https://cdn.paddle.com/paddle/v2/paddle.js"></script>
 <script>
-// Show alert that this is just a preview
-alert("Hi there! You've found the preview page for the Ad-Free Access Pass. If you aren't the reviewer who is meant to see this page, just be aware that it's an UNRELEASED PRODUCT that you CANNOT BUY yet. Everything you see here might change before launch.")
-
 // Set up Paddle
 Paddle.Environment.set("sandbox");// remove this line in production
 Paddle.Initialize({
@@ -221,6 +224,18 @@ const alreadyPurchased = localStorage.getItem("WurstAdFreeAccess") === "true";
 const priorWurstDownloads = parseInt(localStorage.getItem("WurstDownloadCount")) || 0;
 const firstWurstDownload = parseInt(localStorage.getItem("FirstWurstDownload")) || 0;
 const adBlockerDetected = localStorage.getItem("WurstAdBlockerDetected") === "true" && !alreadyPurchased;
+
+const urlParams = new URLSearchParams(window.location.search);
+if (urlParams.has("token"))
+	if (!alreadyPurchased)
+		validateToken(urlParams.get("token"));
+	else
+		alert("You already have Ad-Free Access. Maybe you wanted to open this link on a different device or browser?");
+else
+{
+	// Show alert that this is just a preview
+	alert("Hi there! You've found the preview page for the Ad-Free Access Pass. If you aren't the reviewer who is meant to see this page, just be aware that it's an UNRELEASED PRODUCT that you CANNOT BUY yet. Everything you see here might change before launch.")
+}
 
 // Switch to already purchased section if purchased
 if(alreadyPurchased)
@@ -253,29 +268,31 @@ let hasLoadedCheckout = false;
 function handleCheckoutEvent(event)
 {
 	console.log(event);
+	const eventProps = {
+		prior_wurst_downloads: priorWurstDownloads,
+		first_wurst_download: firstWurstDownload,
+		adblocker: adBlockerDetected
+	}
 	switch(event.name)
 	{
 		case "checkout.loaded":
 			hasLoadedCheckout = true;
+			plausible("Open Ad-Free Access Pass Checkout", {props: eventProps});
 			break;
 		case "checkout.completed":
 			if(hasLoadedCheckout)
-				activateAdFreeAccess(event);
+			{
+				activateAdFreeAccess(event.data.transaction_id);
+				plausible("Buy Ad-Free Access Pass", {props: eventProps});
+			}
 			break;
 	}
 }
 
 // Handle checkout completion
-function activateAdFreeAccess(event)
+function activateAdFreeAccess(txid)
 {
-	plausible("Buy Ad-Free Access Pass", {
-		props: {
-			prior_wurst_downloads: priorWurstDownloads,
-			first_wurst_download: firstWurstDownload,
-			adblocker: adBlockerDetected
-		}
-	});
-	//localStorage.setItem("WurstAFAPurchaseId", event.data.transaction_id);
+	//localStorage.setItem("WurstAFAPurchaseId", txid);
 	//localStorage.setItem("WurstAdFreeAccess", "true");
 	//alert("Thank you for your purchase! Your Ad-Free Access Pass has been enabled.");
 	alert("Test purchase successful! This is where the Ad-Free Access Pass would be activated. The functionality has been disabled for this preview.")
@@ -292,26 +309,66 @@ form.addEventListener("submit", event => {
 function requestRestoreLink()
 {
 	const email = form.querySelector("input[name=email]").value;
-	fetch("https://api.wurstclient.net/restore", {
+	fetch("https://api.wurstclient.net/afa/restore", {
 		method: "POST",
 		headers: {"Content-Type": "application/json"},
 		body: JSON.stringify({email})
-	}).then(response => {
-		if(response.ok)
+	}).then(handleRestoreResponse).catch(handleFetchError);
+}
+function handleRestoreResponse(response)
+{
+	if(response.ok)
 		alert("Your request has been received. If you've purchased ad-free access, you will get an email with a restore link shortly.");
-		else
-		// parse response body as JSON
+	else
 		response.json().then(data => {
 			console.log(data);
 			alert("Error: " + data.error);
 		});
-		plausible("Request Ad-Free Access Restore Link", {
-			props: {response_code: response.status}
-		});
-	}).catch(error => {
-		console.error(error);
-		alert("Request failed. Either your internet connection or the server is down. Try again later and if the problem persists, contact me.");
+
+	plausible("Request Ad-Free Access Restore Link", {
+		props: {
+			prior_wurst_downloads: priorWurstDownloads,
+			first_wurst_download: firstWurstDownload,
+			adblocker: adBlockerDetected,
+			response_code: response.status
+		}
 	});
+}
+
+// Handle restore token
+function validateToken(token) {
+	fetch("https://api.wurstclient.net/afa/validate", {
+		method: "POST",
+		headers: {"Content-Type": "application/json"},
+		body: JSON.stringify({token})
+	}).then(handleValidateResponse).catch(handleFetchError);
+}
+function handleValidateResponse(response)
+{
+	response.json().then(data => {
+		console.log(data);
+		if(!response.ok)
+		{
+			alert("Error: This restore link has expired or is not valid.");
+			return;
+		}
+
+		activateAdFreeAccess(data.id);
+
+		plausible("Open Ad-Free Access Restore Link", {
+			props: {
+				prior_wurst_downloads: priorWurstDownloads,
+				first_wurst_download: firstWurstDownload,
+				adblocker: adBlockerDetected,
+				response_code: response.status
+			}
+		});
+	})
+}
+
+function handleFetchError(error) {
+	console.error(error);
+	alert("Request failed. Either your internet connection or the server is down. Try again later and if the problem persists, contact me.");
 }
 
 // Track FAQ entries
