@@ -4,7 +4,7 @@
 {{/*  find the latest version of Wurst for the given Minecraft version  */}}
 {%- for update in site.updates reversed -%}
 	{%- if update.minecraft-versions contains mcversion or update.snapshots contains mcversion -%}
-		{%- unless update.redirect_url -%}
+		{%- unless update.wurst-version contains "pre" -%}
 			{%- assign latest = update -%}
 			{%- break -%}
 		{%- endunless -%}
