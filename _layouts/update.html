@@ -12,7 +12,7 @@ released {{ date | date: "%B %-d, %Y" }}
 {%- include title.html l1 = page.title l2 = l2 -%}
 
 <div class="padding20 no-padding-left no-padding-right">
-	<div class="container post-content">
+	<div class="container">
 
 		<div class="margin20 no-margin-left no-margin-right no-margin-top padding10 bg-grayDarker">
 			{%- include update/image.html -%}
@@ -47,7 +47,7 @@ released {{ date | date: "%B %-d, %Y" }}
 
 {%- if page.wurst-version and page.minecraft-versions -%}
 	<div class="bg-grayLighter padding40 no-padding-left no-padding-right">
-		<div class="container post-content">
+		<div class="container">
 
 			<h2 id="downloads">Downloads</h2>
 			<div class="bg-lightGreen padding5" style="display: none" id="afa-prompt">
@@ -101,7 +101,7 @@ else
 
 {%- unless page.old-downloads or page.old-mcx -%}
 <div class="padding20 no-padding-left no-padding-right">
-	<div class="container post-content">
+	<div class="container">
 		<h2>Installation</h2>
 		{%- if page.fabric -%}
 			<p>Wurst 7 can be installed just like any other Fabric mod. Here are the basic installation steps:</p>
