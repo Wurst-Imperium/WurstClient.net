@@ -102,20 +102,7 @@ else
 {%- unless page.old-downloads or page.old-mcx -%}
 <div class="padding20 no-padding-left no-padding-right">
 	<div class="container">
-		<h2>Installation</h2>
-		{%- if page.fabric -%}
-			<p>Wurst 7 can be installed just like any other Fabric mod. Here are the basic installation steps:</p>
-			<ol>
-				<li>Run the Fabric installer.</li>
-				<li>Add the Wurst Client and Fabric API to your mods folder.</li>
-			</ol>
-			<p>Please refer to the <a href="/tutorials/how-to-install/wurst-7">full Wurst 7 installation guide</a> if you need more detailed instructions or run into any problems.</p>
-		{%- elsif page.mc-1-7-remake -%}
-			<p>Because this is a remake, the installation process is <a href="/tutorials/how-to-install/wurst-6/">the same as Wurst 6</a>. Just make sure that you have Minecraft 1.7.2 (not 1.7.10) installed in order for the Wurst installer to work.</p>
-		{%- else -%}
-			<p>Basically just run the installer. See <a href="/tutorials/how-to-install/wurst-6/">this tutorial</a> for details.</p>
-		{%- endif -%}
-		<p>Also, this should be obvious, but you do need to have a licensed copy of Minecraft Java Edition in order to use Wurst. Wurst is a cheat client, not a pirate client.</p>
+		{%- include update/installation.html -%}
 	</div>
 </div>
 {%- endunless -%}
