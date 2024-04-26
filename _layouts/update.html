@@ -23,13 +23,13 @@ released {{ date | date: "%B %-d, %Y" }}
 		</div>
 
 		<div class="margin20 no-margin-left no-margin-right no-margin-top">
-			
+
 			{%- include update/log4shell-warnings.html -%}
-			
+
 			{%- if page.auto-list-mcversions -%}
 				<p>{%- include update/mcversions.html -%}</p>
 			{%- endif -%}
-			
+
 			{%- if page.log4shell-patched -%}
 				<p>✔ This version is safe from the <a href="https://wurst.wiki/log4shell">Log4Shell</a> exploit.</p>
 			{%- endif -%}
@@ -74,29 +74,29 @@ released {{ date | date: "%B %-d, %Y" }}
 {%- endif -%}
 
 <script>
-	let afa = localStorage.getItem("WurstAdFreeAccess") === "true";
-	let h2downloads = document.querySelector("h2#downloads");
-	if(!afa)
-		if(Math.random() < 0.5)
-		{
-			let bottomAd = document.createElement("ins");
-			bottomAd.classList.add("adsbygoogle");
-			bottomAd.style.display = "block";
-			bottomAd.setAttribute("data-ad-client", "ca-pub-5218363098774955");
-			bottomAd.setAttribute("data-ad-slot", "2601356415");
-			bottomAd.setAttribute("data-ad-format", "auto");
-			bottomAd.setAttribute("data-full-width-responsive", "true");
-			h2downloads.insertAdjacentElement("afterend", bottomAd);
-		}else
-		{
-			let afaPrompt = document.querySelector("#afa-prompt");
-			afaPrompt.style.display = "block";
-		}
-	let ads = document.querySelectorAll("ins.adsbygoogle");
-	if(afa)
-		ads.forEach(ad => ad.style.display = "none");
-	else
-		ads.forEach(ad => (adsbygoogle = window.adsbygoogle || []).push({}));
+let afa = localStorage.getItem("WurstAdFreeAccess") === "true";
+let h2downloads = document.querySelector("h2#downloads");
+if(!afa)
+	if(Math.random() < 0.5)
+	{
+		let bottomAd = document.createElement("ins");
+		bottomAd.classList.add("adsbygoogle");
+		bottomAd.style.display = "block";
+		bottomAd.setAttribute("data-ad-client", "ca-pub-5218363098774955");
+		bottomAd.setAttribute("data-ad-slot", "2601356415");
+		bottomAd.setAttribute("data-ad-format", "auto");
+		bottomAd.setAttribute("data-full-width-responsive", "true");
+		h2downloads.insertAdjacentElement("afterend", bottomAd);
+	}else
+	{
+		let afaPrompt = document.querySelector("#afa-prompt");
+		afaPrompt.style.display = "block";
+	}
+let ads = document.querySelectorAll("ins.adsbygoogle");
+if(afa)
+	ads.forEach(ad => ad.style.display = "none");
+else
+	ads.forEach(ad => (adsbygoogle = window.adsbygoogle || []).push({}));
 </script>
 
 {%- unless page.old-downloads or page.old-mcx -%}
