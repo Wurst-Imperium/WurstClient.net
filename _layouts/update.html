@@ -46,31 +46,13 @@ released {{ date | date: "%B %-d, %Y" }}
 </div>
 
 {%- if page.wurst-version and page.minecraft-versions -%}
-	<div class="bg-grayLighter padding40 no-padding-left no-padding-right">
-		<div class="container">
-
-			<h2 id="downloads">Downloads</h2>
-			<div class="bg-lightGreen padding5" style="display: none" id="afa-prompt">
-				<a href="/ad-free/" class="fg-black" data-analytics="Wurst Update Page: Ad-Free CTA Click">
-					<div class="bg-white padding10 align-center">
-						<div class="align-left inline-block">
-							<p>
-								<b>NEW:</b>
-								Enjoy the Wurst Client ad-free!
-							</p>
-							<ul class="unstyled-list">
-								<li>&check; No banner ads</li>
-								<li>&check; No pop-ups</li>
-								<li>&check; No recurring fees</li>
-							</ul>
-						</div>
-					</div>
-				</a>
-			</div>
-			{%- include update/downloads.html -%}
-
-		</div>
+<div class="bg-grayLighter padding40 no-padding-left no-padding-right">
+	<div class="container">
+		<h2 id="downloads">Downloads</h2>
+		{%- include update/ad-free-banner.html -%}
+		{%- include update/downloads.html -%}
 	</div>
+</div>
 {%- endif -%}
 
 <script>
