@@ -1,7 +1,6 @@
 ---
 title: Ad-Free Access Pass
-permalink: /afa-preview-landing-page/
-robots: noindex, nofollow
+permalink: /ad-free/
 ---
 {% include title.html l1 = page.title l2 = page.description %}
 <style>
@@ -33,7 +32,15 @@ details {
 					</span>
 				</p>
 				<button id="buy-button" class="button primary full-size shadow bg-hover-lightBlue">Get Ad-Free Access</button>
-				<p class="fg-gray text-secondary align-center">Lifetime&nbsp;access. Unlimited&nbsp;downloads. All&nbsp;versions.</p>
+				<div class="align-center">
+					<div class="align-left inline-block">
+						<ul class="unstyled-list">
+							<li>&check; No banner ads</li>
+							<li>&check; No pop-ups</li>
+							<li>&check; No recurring fees</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 			<div>
 				<h2 class="text-light">Already purchased?</h2>
@@ -97,7 +104,7 @@ details {
 				Here are some practical reasons why you might want to buy ad-free access instead of blocking ads:
 			</p>
 			<ul>
-				<li><p>Ad blockers still leave ugly white rectangles where the ads used to be. Buying ad-free access lets you experience this website in its cleanest form.</p></li>
+				<li><p>Ad blockers leave a lot of empty rectangles where the ads used to be. Buying ad-free access lets you experience this website in its cleanest form.</p></li>
 				<li><p>After buying ad-free access, you can use it on all of your devices, even the ones that don't let you install browser extensions.</p></li>
 				<li><p>And, of course, buying ad-free access financially supports the project whereas ad blockers financially hurt it. If I can develop Wurst without having to take time off to cover my living expenses, then you get more and better Wurst updates as a result. It's a win-win!</p></li>
 			</ul>
@@ -207,9 +214,8 @@ details {
 <script src="https://cdn.paddle.com/paddle/v2/paddle.js"></script>
 <script>
 // Set up Paddle
-Paddle.Environment.set("sandbox");// remove this line in production
 Paddle.Initialize({
-	token: 'test_1e165051bbf2e1296ef16a4b064',// replace with production token
+	token: 'live_ab76ec9da4495bd6ddd5b14f83b',
 	checkout: {
 		settings: {
 			displayMode: "overlay",
@@ -231,11 +237,6 @@ if (urlParams.has("token"))
 		validateToken(urlParams.get("token"));
 	else
 		alert("You already have Ad-Free Access. Maybe you wanted to open this link on a different device or browser?");
-else
-{
-	// Show alert that this is just a preview
-	alert("Hi there! You've found the preview page for the Ad-Free Access Pass. If you aren't the reviewer who is meant to see this page, just be aware that it's an UNRELEASED PRODUCT that you CANNOT BUY yet. Everything you see here might change before launch.")
-}
 
 // Switch to already purchased section if purchased
 if(alreadyPurchased)
@@ -256,7 +257,7 @@ function openCheckout()
 	Paddle.Checkout.open({
 		items: [
 			{
-				priceId: "pri_01hq9d155743hfvq6x8aw25b7v",
+				priceId: "pri_01hwbajdtqv2x72c4fx3kws2kk",
 				quantity: 1
 			}
 		]
@@ -292,10 +293,9 @@ function handleCheckoutEvent(event)
 // Handle checkout completion
 function activateAdFreeAccess(txid)
 {
-	//localStorage.setItem("WurstAFAPurchaseId", txid);
-	//localStorage.setItem("WurstAdFreeAccess", "true");
-	//alert("Thank you for your purchase! Your Ad-Free Access Pass has been enabled.");
-	alert("Test purchase successful! This is where the Ad-Free Access Pass would be activated. The functionality has been disabled for this preview.")
+	localStorage.setItem("WurstAFAPurchaseId", txid);
+	localStorage.setItem("WurstAdFreeAccess", "true");
+	alert("Thank you for your purchase! Your Ad-Free Access Pass has been enabled.");
 	document.getElementById("purchase").style.display = "none";
 	document.getElementById("already-purchased").style.display = "block";
 }

@@ -71,7 +71,7 @@ const questionId = question === null ? null : questionToId[question];
 document.getElementById("wtp-survey-question").textContent = question;
 
 // Decide whether to show WTP survey
-if(question !== null && questionId !== null && localStorage.getItem("WurstAdBlockerDetected") !== null)
+if(question !== null && questionId !== null && localStorage.getItem("WurstAdBlockerDetected") !== null && localStorage.getItem("WurstAdFreeAccess") !== "true")
 {
 	const wtpSurveyContainer = document.getElementById("wtp-survey-container");
 	const eventName = "See WTP Survey";

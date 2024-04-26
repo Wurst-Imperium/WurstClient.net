@@ -101,8 +101,7 @@ function openDataHref(event, dataHref) {
 // find download buttons
 let mainDownloadButtons = document.querySelectorAll('a[data-analytics="Download Wurst"][data-analytics-type="main"]');
 
-// track download count per visitor (capped at 20 for privacy reasons)
-// and time since first download (rounded for privacy reasons)
+// track download count, first download time and paid/free status
 let downloadCount = parseInt(localStorage.getItem('WurstDownloadCount')) || 0;
 downloadCount = Math.max(0, Math.min(downloadCount, 21));
 function getTimeSinceFirstDownload() {
@@ -121,12 +120,14 @@ function getTimeSinceFirstDownload() {
 		return `${months} month${months === 1 ? '' : 's'}`;
 	return '>1 year';
 }
+const hasAdFreeAccess = localStorage.getItem('WurstAdFreeAccess') === "true";
 function updateDownloadCountAttribute() {
 	const count = downloadCount > 20 ? '>20' : downloadCount;
 	const firstWurstDownload = getTimeSinceFirstDownload();
 	mainDownloadButtons.forEach(button => {
 		button.setAttribute('data-analytics-downloadcount', count);
 		button.setAttribute('data-analytics-first_wurst_download', firstWurstDownload);
+		button.setAttribute('data-analytics-paid', hasAdFreeAccess);
 	});
 }
 updateDownloadCountAttribute();
@@ -150,27 +151,29 @@ if (downloadCount <= 20) {
 }
 
 // track whether the visitor uses an adblocker
-let adBlockerDetected = false;
-let adSenseScript = document.querySelector('script[src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5218363098774955"]');
-function updateAdBlockerAttribute() {
-	localStorage.setItem('WurstAdBlockerDetected', adBlockerDetected);
-	mainDownloadButtons.forEach(button => {
-		button.setAttribute('data-analytics-adblocker', adBlockerDetected);
-	});
-}
-if (adSenseScript) {
-	adSenseScript.onload = function() {
-		let firstAd = document.querySelector('ins.adsbygoogle');
-		if(!firstAd || !firstAd.style.height)
+if (!hasAdFreeAccess) {
+	let adBlockerDetected = false;
+	let adSenseScript = document.querySelector('script[src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5218363098774955"]');
+	function updateAdBlockerAttribute() {
+		localStorage.setItem('WurstAdBlockerDetected', adBlockerDetected);
+		mainDownloadButtons.forEach(button => {
+			button.setAttribute('data-analytics-adblocker', adBlockerDetected);
+		});
+	}
+	if (adSenseScript) {
+		adSenseScript.onload = function() {
+			let firstAd = document.querySelector('ins.adsbygoogle');
+			if(!firstAd || !firstAd.style.height)
+				adBlockerDetected = true;
+			updateAdBlockerAttribute();
+		};
+		adSenseScript.onerror = function() {
 			adBlockerDetected = true;
-		updateAdBlockerAttribute();
-	};
-	adSenseScript.onerror = function() {
+			updateAdBlockerAttribute();
+		};
+	} else {
 		adBlockerDetected = true;
 		updateAdBlockerAttribute();
-	};
-} else {
-	adBlockerDetected = true;
-	updateAdBlockerAttribute();
+	}
 }
 </script>

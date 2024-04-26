@@ -37,7 +37,6 @@ released {{ date | date: "%B %-d, %Y" }}
 			{%- include wtp-survey.html -%}
 
 			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5218363098774955" data-ad-slot="4767558596" data-ad-format="auto" data-full-width-responsive="true"></ins>
-			<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 
 			{{- content -}}
 
@@ -51,13 +50,54 @@ released {{ date | date: "%B %-d, %Y" }}
 		<div class="container post-content">
 
 			<h2 id="downloads">Downloads</h2>
-			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5218363098774955" data-ad-slot="2601356415" data-ad-format="auto" data-full-width-responsive="true"></ins>
-			<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+			<div class="bg-lightGreen padding5" style="display: none" id="afa-prompt">
+				<a href="/ad-free/" class="fg-black" data-analytics="Wurst Update Page: Ad-Free CTA Click">
+					<div class="bg-white padding10 align-center">
+						<div class="align-left inline-block">
+							<p>
+								<b>NEW:</b>
+								Enjoy the Wurst Client ad-free!
+							</p>
+							<ul class="unstyled-list">
+								<li>&check; No banner ads</li>
+								<li>&check; No pop-ups</li>
+								<li>&check; No recurring fees</li>
+							</ul>
+						</div>
+					</div>
+				</a>
+			</div>
 			{%- include update/downloads.html -%}
 
 		</div>
 	</div>
 {%- endif -%}
+
+<script>
+	let afa = localStorage.getItem("WurstAdFreeAccess") === "true";
+	let h2downloads = document.querySelector("h2#downloads");
+	if(!afa)
+		if(Math.random() < 0.5)
+		{
+			let bottomAd = document.createElement("ins");
+			bottomAd.classList.add("adsbygoogle");
+			bottomAd.style.display = "block";
+			bottomAd.setAttribute("data-ad-client", "ca-pub-5218363098774955");
+			bottomAd.setAttribute("data-ad-slot", "2601356415");
+			bottomAd.setAttribute("data-ad-format", "auto");
+			bottomAd.setAttribute("data-full-width-responsive", "true");
+			h2downloads.insertAdjacentElement("afterend", bottomAd);
+		}else
+		{
+			let afaPrompt = document.querySelector("#afa-prompt");
+			afaPrompt.style.display = "block";
+		}
+	let ads = document.querySelectorAll("ins.adsbygoogle");
+	if(afa)
+		ads.forEach(ad => ad.style.display = "none");
+	else
+		ads.forEach(ad => (adsbygoogle = window.adsbygoogle || []).push({}));
+</script>
 
 {%- unless page.old-downloads or page.old-mcx -%}
 <div class="padding20 no-padding-left no-padding-right">

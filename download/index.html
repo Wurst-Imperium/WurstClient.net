@@ -99,7 +99,12 @@ google_auto_ads: true
     
     <div class="margin20 no-margin-left no-margin-right no-margin-top">
       <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5218363098774955" data-ad-slot="6065673627" data-ad-format="auto" data-full-width-responsive="true"></ins>
-      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      <script>
+        if(localStorage.getItem("WurstAdFreeAccess") === "true")
+          document.querySelector("ins.adsbygoogle").parentElement.style.display = "none";
+        else
+          (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
     </div>
 
     {%- for mcversion in page.mcversions -%}

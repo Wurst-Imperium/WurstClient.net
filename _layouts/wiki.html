@@ -9,7 +9,7 @@ google_auto_ads: true
 
 		<!-- Wurst Wiki -->
 		<div class="margin20 no-margin-left no-margin-right no-margin-top">
-			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5218363098774955" data-ad-slot="3736285228" data-ad-format="auto"></ins>
+			<ins class="adsbygoogle bg-grayLighter" style="display:block" data-ad-client="ca-pub-5218363098774955" data-ad-slot="3736285228" data-ad-format="auto"></ins>
 		</div>
 
 		{% if page.labels != empty %}
@@ -45,7 +45,9 @@ google_auto_ads: true
 	</div>
 </div>
 
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <script>
-	(adsbygoogle = window.adsbygoogle || []).push({});
+	if(localStorage.getItem("WurstAdFreeAccess") === "true")
+		document.querySelector("ins.adsbygoogle").parentElement.style.display = "none";
+	else
+		(adsbygoogle = window.adsbygoogle || []).push({});
 </script>
