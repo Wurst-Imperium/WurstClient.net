@@ -1,19 +1,24 @@
-{% assign share-title = page.title | cgi_escape %}
-{% assign share-url = "https://www.wurstclient.net" | append: page.url | remove: "index.html" | uri_escape %}
-<nav class="tile-container">
-  <a href="https://twitter.com/intent/tweet?text={{ share-title }}&amp;url={{ share-url }}&amp;via=Wurst_Imperium" target="_blank" title="Tweet this page.">
-    <div class="tile-small bg-cyan fg-white">
-      <div class="tile-content iconic">
-        <span class="icon mif-twitter"></span>
-      </div>
-    </div>
-  </a>
-  <a href="/wurst-updates.xml" target="_blank" title="RSS feed of Wurst updates. (Atom XML format)
-Subscribe with an RSS reader to get notified of new Wurst updates.">
-    <div class="tile-small bg-gray fg-white">
-      <div class="tile-content iconic">
-        <span class="icon mif-feed3"></span>
-      </div>
-    </div>
-  </a>
-</nav>
+{%- assign share_title = page.title | cgi_escape -%}
+{%- assign share_url = "https://www.wurstclient.net" | append: page.url | remove: "index.html" | uri_escape -%}
+{%- capture twitter_href -%}https://twitter.com/intent/tweet?text={{ share_title }}&amp;url={{ share_url }}&amp;via=Wurst_Imperium{% endcapture -%}
+{%- capture rss_title -%}RSS feed of Wurst updates. (Atom XML format)
+Subscribe with an RSS reader to get notified of new Wurst updates.{%- endcapture -%}
+
+<div class="margin20 no-margin-left no-margin-right no-margin-top">
+	<nav class="tile-container">
+		<a href="{{ twitter_href }}" target="_blank" title="Tweet this page.">
+			<div class="tile-small bg-cyan fg-white">
+				<div class="tile-content iconic">
+					<span class="icon mif-twitter"></span>
+				</div>
+			</div>
+		</a>
+		<a href="/wurst-updates.xml" target="_blank" title="{{ rss_title }}">
+			<div class="tile-small bg-gray fg-white">
+				<div class="tile-content iconic">
+					<span class="icon mif-feed3"></span>
+				</div>
+			</div>
+		</a>
+	</nav>
+</div>
