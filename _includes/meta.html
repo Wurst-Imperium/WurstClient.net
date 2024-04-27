@@ -1,0 +1,64 @@
+{{/*  General meta tags  */}}
+<meta charset="utf-8">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+{{/*  Robots  */}}
+<meta name="robots" content="{% if page.robots %}{{ page.robots }}{% else %}index, follow{% endif %}">
+
+{{/*  Styles  */}}
+<link rel="preload" href="/fonts/metro.woff" as="font" type="font/woff" crossorigin>
+<link href="/css/wi-v2024.04.09.css" rel="stylesheet">
+
+{{/*  Title  */}}
+{%- if page.title -%}
+	{%- capture page_title -%}{{ page.title }} - {{ site.title }}{%- endcapture -%}
+{%- else -%}
+	{%- assign page_title = "🚨 ERROR 🚨 This page has no title!" -%}
+{%- endif -%}
+<title>{{ page_title }}</title>
+<meta name="twitter:title" content="{{ page_title }}">
+<meta property="og:title" content="{{ page_title }}">
+
+{{/*  Description  */}}
+{%- if page.description -%}
+<meta name="description" content="{{ page.description }}">
+<meta name="twitter:description" content="{{ page.description }}">
+<meta property="og:description" content="{{ page.description }}">
+{%- endif -%}
+
+{{/*  Image  */}}
+{%- if page.image -%}
+	{%- assign page_image = page.image -%}
+{%- elsif page.video -%}
+	{% capture page_image %}https://i.ytimg.com/vi/{{ page.video }}/maxresdefault.jpg{% endcapture %}
+{%- else -%}
+	{%- assign page_image = "https://cloud.githubusercontent.com/assets/10100202/24450367/ef3c0796-147a-11e7-99a9-404bc0deeb3d.jpg" -%}
+{%- endif -%}
+<meta name="twitter:image" content="{{ page_image }}">
+<meta property="og:image" content="{{ page_image }}">
+
+{{/*  Other Twitter / OpenGraph tags  */}}
+<meta name="twitter:site" content="@Wurst_Imperium">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:type" content="website">
+
+{{/*  Canonical URL  */}}
+<link rel="canonical" href="https://www.wurstclient.net{{ page.url }}">
+<meta property="og:url" content="https://www.wurstclient.net{{ page.url }}">
+
+{{/*  Language  */}}
+<meta property="og:locale" content="{% if page.lang %}{{ page.lang }}{% else %}en{% endif %}">
+{%- for tr in page.translations -%}
+	<link rel="alternate" hreflang="{{ tr[0] }}" href="https://www.wurstclient.net{{ tr[1] }}">
+{%- endfor -%}
+
+{{/*  Analytics  */}}
+{%- include meta/plausible.html -%}
+
+{{/*  Google Adsense  */}}
+{%- if page.google_adsense or layout.google_adsense -%}
+	{%- include meta/adsense.html -%}
+{%- endif -%}

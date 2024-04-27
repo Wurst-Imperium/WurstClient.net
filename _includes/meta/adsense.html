@@ -1,0 +1,13 @@
+<script>
+	if (localStorage.getItem("WurstAdFreeAccess") !== "true") {
+		let script1 = document.createElement("script");
+		script1.src = "/js/quantcast-choice.js";
+		script1.async = true;
+		document.head.appendChild(script1);
+		let script2 = document.createElement("script");
+		script2.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5218363098774955";
+		script2.async = true;
+		script2.crossorigin = "anonymous";
+		document.head.appendChild(script2);
+	}
+</script>

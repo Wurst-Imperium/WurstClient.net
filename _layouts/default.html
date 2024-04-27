@@ -1,96 +1,18 @@
 ---
 google_adsense: false
 ---
-{%- if page.title -%}
-	{% capture page_title %}{{ page.title }} - {{ site.title }}{% endcapture %}
-{%- else -%}
-	{%- assign page_title = "ERROR: This page has no title!" -%}
-{%- endif -%}
-
-{%- if page.description -%}
-	{%- assign page_description = page.description -%}
-{%- endif -%}
-
-{%- if page.image -%}
-	{%- assign page_image = page.image -%}
-{%- elsif page.video -%}
-	{% capture page_image %}https://i.ytimg.com/vi/{{ page.video }}/maxresdefault.jpg{% endcapture %}
-{%- else -%}
-	{%- assign page_image = "https://cloud.githubusercontent.com/assets/10100202/24450367/ef3c0796-147a-11e7-99a9-404bc0deeb3d.jpg" -%}
-{%- endif -%}
-
-{%- if page.robots -%}
-	{%- assign page_robots = page.robots -%}
-{%- else -%}
-	{%- assign page_robots = "index, follow" -%}
-{%- endif -%}
-
 <!DOCTYPE html>
 <html lang="{% if page.lang %}{{ page.lang }}{% else %}en{% endif %}">
-	<head>
-
-		<meta charset="utf-8">
-		<link rel="preload" href="/fonts/metro.woff" as="font" type="font/woff" crossorigin>
-
-		<meta name="robots" content="{{ page_robots }}">
-
-		<link rel="shortcut icon" href="/favicon.ico">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-
-		<title>{{ page_title }}</title>
-		{%- if page_description -%}<meta name="description" content="{{ page_description }}">{%- endif -%}
-
-		<link href="/css/wi-v2024.04.09.css" rel="stylesheet">
-
-		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:site" content="@Wurst_Imperium">
-		<meta name="twitter:title" content="{{ page_title }}">
-		{%- if page_description -%}<meta name="twitter:description" content="{{ page_description }}">{%- endif -%}
-		<meta name="twitter:image" content="{{ page_image }}">
-
-		<meta property="og:site_name" content="{{ site.title }}">
-		<meta property="og:title" content="{{ page_title }}">
-		{%- if page_description -%}<meta property="og:description" content="{{ page_description }}">{%- endif -%}
-		<meta property="og:image" content="{{ page_image }}">
-		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://www.wurstclient.net{{ page.url }}">
-		<meta property="og:locale" content="{% if page.lang %}{{ page.lang }}{% else %}en{% endif %}">
-
-		<link rel="canonical" href="https://www.wurstclient.net{{ page.url }}">
-		{%- for tr in page.translations -%}
-			<link rel="alternate" hreflang="{{ tr[0] }}" href="https://www.wurstclient.net{{ tr[1] }}">
-		{%- endfor -%}
-
-		{%- include plausible.html -%}
-
-		{%- if page.google_adsense or layout.google_adsense -%}
-		<script>
-			if (localStorage.getItem("WurstAdFreeAccess") !== "true") {
-				let script1 = document.createElement("script");
-				script1.src = "/js/quantcast-choice.js";
-				script1.async = true;
-				document.head.appendChild(script1);
-				let script2 = document.createElement("script");
-				script2.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5218363098774955";
-				script2.async = true;
-				script2.crossorigin = "anonymous";
-				document.head.appendChild(script2);
-			}
-		</script>
-		{%- endif -%}
-
-	</head>
-	<body>
-
-		<div style="min-height: 100%">
-			{%- include header.html -%}
-			{{- content -}}
-			<div style="height: 80px;"></div>
-		</div>
-		{%- include footer.html -%}
-
-		<script async src="/js/wi-v2023.01.13.js"></script>
-
-	</body>
+<head>
+	{%- include meta.html -%}
+</head>
+<body>
+	<div style="min-height: 100%">
+		{%- include header.html -%}
+		{{- content -}}
+		<div style="height: 80px;"></div>
+	</div>
+	{%- include footer.html -%}
+	<script async src="/js/wi-v2023.01.13.js"></script>
+</body>
 </html>
