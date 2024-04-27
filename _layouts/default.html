@@ -1,5 +1,5 @@
 ---
-google_auto_ads: false
+google_adsense: false
 ---
 {%- if page.title -%}
 	{% capture page_title %}{{ page.title }} - {{ site.title }}{% endcapture %}
@@ -64,7 +64,7 @@ google_auto_ads: false
 
 		{%- include plausible.html -%}
 
-		{%- if page.google_auto_ads or layout.google_auto_ads -%}
+		{%- if page.google_adsense or layout.google_adsense -%}
 		<script>
 			if (localStorage.getItem("WurstAdFreeAccess") !== "true") {
 				let script1 = document.createElement("script");

@@ -1,6 +1,6 @@
 ---
 title: How To Manually Update Wurst 6
-google_auto_ads: true
+google_adsense: true
 ---
 Note: Wurst 6 will usually update itself automatically. You will only need to follow this tutorial if you can't auto-update for some reason.
 

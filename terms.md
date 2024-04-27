@@ -1,7 +1,7 @@
 ---
 title: Terms of Service
 permalink: /terms/
-google_auto_ads: false
+google_adsense: false
 ---
 {% include title.html l1 = page.title l2 = page.description %}
 
