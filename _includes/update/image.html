@@ -1,17 +1,19 @@
-{% if page.image %}
-    {% if page.image contains "https://images.wurstclient.net/_media/update/" %}
-        {% assign fullsize-image = page.image | replace: '_540p.webp', '.jpg' %}
-        <a href="{{ fullsize-image }}" target="_blank" title="{{ fullsize-image | replace: 'https://images.wurstclient.net/_media/update/', 'File: '}}">
-            <img src="{{ page.image }}" alt="{{ page.title }}" width="960" height="540">
-        </a>
-    {% else %}
-        <img src="{{ page.image }}" alt="{{ page.title }}" width="960" height="540">
-    {% endif %}
-{% else %}
-    <div class="image-container full-size">
-        <div class="frame bg-grayLighter set-border tile-content iconic">
-            <img src="https://cloud.githubusercontent.com/assets/10100202/19655746/6eea9706-9a1d-11e6-8fbc-0a8d25f7a2fd.jpg" class="no-visible" alt="{{ page.title }}">
-            <span class="icon mif-file-picture fg-grayLight" style="margin-top: -32px;"></span>
-        </div>
-    </div>
-{% endif %}
+{%- assign update_images_folder = "https://images.wurstclient.net/_media/update/" -%}
+{%- assign placeholder = "https://images.wurstclient.net/_media/placeholder-320x180.webp" -%}
+
+<div class="margin20 no-margin-left no-margin-right no-margin-top padding10 bg-grayDarker">
+{%- if page.image contains update_images_folder -%}
+	{%- assign full_size_image = page.image | replace: '_540p.webp', '.jpg' -%}
+	{%- assign filename = full_size_image | replace: update_images_folder, '' -%}
+	<a href="{{ full_size_image }}" target="_blank" title="File: {{ filename }}">
+		<img src="{{ page.image }}" alt="{{ page.title }}" width="960" height="540">
+	</a>
+{%- elsif page.image -%}
+	<img src="{{ page.image }}" alt="{{ page.title }}" width="960" height="540">
+{%- else -%}
+	<div class="missing-image set-border">
+		<img src="{{ placeholder }}" loading="lazy" class="no-visible" alt="placeholder for {{ page.title }} (missing image)" width="960" height="540">
+		<span class="mif-file-picture fg-grayLight"></span>
+	</div>
+{%- endif -%}
+</div>
