@@ -1,18 +1,27 @@
+{%- if page.auto-list-mcversions -%}
+
 {%- assign mcversions = page.minecraft-versions -%}
 {%- assign snapshots = page.snapshots -%}
 
-This version of the Wurst Hacked Client is available for Minecraft {% for mcversion in mcversions -%}
-{%- if forloop.last and forloop.length > 1 %} and {% elsif forloop.index > 1 and forloop.length != forloop.index %}, {% endif -%}
-{{- mcversion -}}
-{%- endfor -%}
+<p>
+	{{- "This version of the Wurst Hacked Client is available for Minecraft " -}}
+	{%- for mcversion in mcversions -%}
+		{%- if forloop.length <= 1 %}{% elsif forloop.last %} and {% elsif forloop.index > 1 %}, {% endif -%}
+		{{- mcversion -}}
+	{%- endfor -%}
+	{%- if snapshots.size > 0 -%}
+		{%- if snapshots.size < 10 -%}
+			, as well as snapshot{%- if snapshots.size > 1 -%}s{% endif %}
+			{{- " " -}}
+			{% for snapshot in snapshots -%}
+				{%- if forloop.length <= 1 %}{% elsif forloop.last %} and {% elsif forloop.index > 1 %}, {% endif -%}
+				{{- snapshot -}}
+			{%- endfor -%}
+		{%- else -%}
+			, as well as {{ snapshots.size }} different snapshots ranging from {{ snapshots.first }} to {{ snapshots.last }}
+		{%- endif -%}
+	{%- endif -%}
+	{{- "." -}}
+</p>
 
-{%- if snapshots.size > 0 -%}
-    {%- if snapshots.size < 10 -%}
-        , as well as snapshot{% if snapshots.size > 1 %}s{% endif %} {% for snapshot in snapshots -%}
-            {%- if forloop.last and forloop.length > 1 %} and {% elsif forloop.index > 1 and forloop.length != forloop.index %}, {% endif -%}
-            {{- snapshot -}}
-        {%- endfor -%}
-    {%- else -%}
-        , as well as {{ snapshots.size }} different snapshots ranging from {{ snapshots.first }} to {{ snapshots.last }}
-    {%- endif -%}
-{%- endif -%}.
+{%- endif -%}

@@ -16,14 +16,10 @@ released {{ date | date: "%B %-d, %Y" }}
 
 		{%- include update/image.html -%}
 		{%- include share-buttons.html -%}
+		{%- include update/log4shell-warnings.html -%}
+		{%- include update/mcversions.html -%}
 
 		<div class="margin20 no-margin-left no-margin-right no-margin-top">
-
-			{%- include update/log4shell-warnings.html -%}
-
-			{%- if page.auto-list-mcversions -%}
-				<p>{%- include update/mcversions.html -%}</p>
-			{%- endif -%}
 
 			{%- if page.log4shell-patched -%}
 				<p>✔ This version is safe from the <a href="https://wurst.wiki/log4shell">Log4Shell</a> exploit.</p>
