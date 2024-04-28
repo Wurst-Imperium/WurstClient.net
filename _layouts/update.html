@@ -40,7 +40,6 @@ released {{ date | date: "%B %-d, %Y" }}
 	</div>
 </div>
 
-{%- if page.wurst-version and page.minecraft-versions -%}
 <div class="bg-grayLighter padding40 no-padding-left no-padding-right">
 	<div class="container">
 		<h2 id="downloads">Downloads</h2>
@@ -48,7 +47,6 @@ released {{ date | date: "%B %-d, %Y" }}
 		{%- include update/downloads.html -%}
 	</div>
 </div>
-{%- endif -%}
 
 <script>
 let afa = localStorage.getItem("WurstAdFreeAccess") === "true";
