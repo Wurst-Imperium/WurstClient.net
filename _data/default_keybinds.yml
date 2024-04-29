@@ -1,0 +1,32 @@
+since_v6:
+  B: FastPlace &amp; FastBreak
+  C: Fullbright
+  G: Flight
+  Ö: SpeedNuker
+  H: /home
+  J: Jesus
+  K: MultiAura
+  Left CTRL: Navigator
+  N: Nuker
+  R: Killaura
+  Right CTRL: ClickGUI
+  Right SHIFT: Navigator
+  U: Freecam
+  X: X-Ray
+  Z: Sneak
+
+since_v7:
+  B: FastPlace &amp; FastBreak
+  C: Fullbright
+  G: Flight
+  ";": SpeedNuker
+  H: /home
+  J: Jesus
+  K: MultiAura
+  N: Nuker
+  R: Killaura
+  Right CTRL: ClickGUI
+  Right SHIFT: Navigator
+  U: Freecam
+  X: X-Ray
+  Z: Sneak
