@@ -50,15 +50,15 @@ screenshots:
 		</div>
 		<div class="padding10 no-padding-left no-padding-right">
 			<div class="wurst-grid">
-				{%- for screenshot in page.screenshots -%}
-					{%- assign fullsize-image = screenshot | replace: '_540p.webp', '.jpg' -%}
-					{%- assign filename = fullsize-image | replace: 'https://images.wurstclient.net/_media/update/', '' -%}
-					<article>
-						<a href="{{ fullsize-image }}" target="_blank" title="File: {{ filename }}" data-analytics="Screenshot Gallery: Expand Image" data-analytics-image="{{ filename }}">
-							<img src="{{ screenshot }}" loading="lazy" alt="{{ filename }}" width="640" height="360">
-						</a>
-					</article>
-				{%- endfor -%}
+			{%- for screenshot in page.screenshots -%}
+				{%- assign fullsize-image = screenshot | replace: '_540p.webp', '.jpg' -%}
+				{%- assign filename = fullsize-image | replace: 'https://images.wurstclient.net/_media/update/', '' -%}
+				<article>
+					<a href="{{ fullsize-image }}" target="_blank" title="File: {{ filename }}" data-analytics="Screenshot Gallery: Expand Image" data-analytics-image="{{ filename }}">
+						<img src="{{ screenshot }}" loading="lazy" alt="{{ filename }}" width="640" height="360">
+					</a>
+				</article>
+			{%- endfor -%}
 			</div>
 		</div>
 	</div>
@@ -79,15 +79,15 @@ screenshots:
 		</div>
 		<div class="padding10 no-padding-left no-padding-right">
 			<ul class="wurst-grid list cells5" style="gap: 2px 20px">
-				{%- for hack in features.cheats -%}
-					<li>
-						{%- if wiki.hacks[hack] -%}
-							<a href="{{ wiki.hacks[hack] }}">{{ hack }}</a>
-						{%- else -%}
-							{{ hack }}
-						{%- endif -%}
-					</li>
-				{%- endfor -%}
+			{%- for hack in features.cheats -%}
+				<li>
+				{%- if wiki.hacks[hack] -%}
+					<a href="{{ wiki.hacks[hack] }}">{{ hack }}</a>
+				{%- else -%}
+					{{ hack }}
+				{%- endif -%}
+				</li>
+			{%- endfor -%}
 			</ul>
 		</div>
 	</div>
@@ -99,15 +99,15 @@ screenshots:
 		</div>
 		<div class="padding10 no-padding-left no-padding-right">
 			<ul class="wurst-grid list cells5" style="gap: 2px 20px">
-				{%- for cmd in features.commands -%}
-					<li>
-						{%- if wiki.commands[cmd] -%}
-							<a href="{{ wiki.commands[cmd] }}">{{ cmd }}</a>
-						{%- else -%}
-							{{ cmd }}
-						{%- endif -%}
-					</li>
-				{%- endfor -%}
+			{%- for cmd in features.commands -%}
+				<li>
+				{%- if wiki.commands[cmd] -%}
+					<a href="{{ wiki.commands[cmd] }}">{{ cmd }}</a>
+				{%- else -%}
+					{{ cmd }}
+				{%- endif -%}
+				</li>
+			{%- endfor -%}
 			</ul>
 		</div>
 	</div>
@@ -119,15 +119,15 @@ screenshots:
 		</div>
 		<div class="padding10 no-padding-left no-padding-right">
 			<ul class="wurst-grid list" style="gap: 2px 20px">
-				{%- for other in features.other -%}
-					<li>
-						{%- if wiki.other[other] -%}
-							<a href="{{ wiki.other[other] }}">{{ other }}</a>
-						{%- else -%}
-							{{ other }}
-						{%- endif -%}
-					</li>
-				{%- endfor -%}
+			{%- for other in features.other -%}
+				<li>
+				{%- if wiki.other[other] -%}
+					<a href="{{ wiki.other[other] }}">{{ other }}</a>
+				{%- else -%}
+					{{ other }}
+				{%- endif -%}
+				</li>
+			{%- endfor -%}
 			</ul>
 		</div>
 	</div>
