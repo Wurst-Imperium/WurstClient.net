@@ -120,13 +120,13 @@ screenshots:
 			<ul class="wurst-grid list" style="gap: 2px 20px">
 				{%- for other in features.other -%}
 					<li>
-						{% if wiki.other[other] %}
+						{%- if wiki.other[other] -%}
 							<a href="{{ wiki.other[other] }}">{{ other }}</a>
-						{% else %}
+						{%- else -%}
 							{{ other }}
-						{% endif %}
+						{%- endif -%}
 					</li>
-				{% endfor %}
+				{%- endfor -%}
 			</ul>
 		</div>
 	</div>
