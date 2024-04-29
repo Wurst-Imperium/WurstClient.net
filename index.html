@@ -135,14 +135,14 @@ screenshots:
 <section class="padding40 no-padding-left no-padding-right bg-grayLighter" id="keybinds">
 	<div class="container">
 		<div class="align-center padding10 no-padding-left no-padding-right no-padding-top">
-			<h2>Default Keybinds ({{ default_keybinds.size }})</h2>
+			<h2>Default Keybinds ({{ default_keybinds.binds.size }})</h2>
 			<p>
-				These are the default keybinds when you first install Wurst. All of them are <a href="https://wurst.wiki/keybind_manager">fully&nbsp;customizable</a>!<br>
+				{{ default_keybinds.preface }}<br>
 				Note that Minecraft versions before 1.14 have slightly different defaults.
 			</p>
 		</div>
 		<ul class="wurst-grid list" style="gap: 2px 20px">
-		{%- for keybind in default_keybinds -%}
+		{%- for keybind in default_keybinds.binds -%}
 			<li><kbd>{{ keybind[0] }}</kbd> &rarr; {{ keybind[1] }}</li>
 		{%- endfor -%}
 		</ul>

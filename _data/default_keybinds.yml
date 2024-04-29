@@ -1,32 +1,52 @@
+v1_1_beta:
+  preface: |-
+    In this ancient version, keybinds cannot be changed. You're stuck with the default keybinds.
+  binds:
+    C: Fullbright
+    F: FastPlace
+    G: Flight
+    Left CTRL: ClickGUI
+    R: Killaura
+    X: X-Ray
+    Z: Sneak
+
 since_v6:
-  B: FastPlace &amp; FastBreak
-  C: Fullbright
-  G: Flight
-  Ö: SpeedNuker
-  H: /home
-  J: Jesus
-  K: MultiAura
-  Left CTRL: Navigator
-  N: Nuker
-  R: Killaura
-  Right CTRL: ClickGUI
-  Right SHIFT: Navigator
-  U: Freecam
-  X: X-Ray
-  Z: Sneak
+  preface: |-
+    These are the default keybinds when you first install Wurst.
+    All of them are <a href="https://wurst.wiki/keybind_manager">fully&nbsp;customizable</a>!
+  binds:
+    B: FastPlace &amp; FastBreak
+    C: Fullbright
+    G: Flight
+    Ö: SpeedNuker
+    H: /home
+    J: Jesus
+    K: MultiAura
+    Left CTRL: Navigator
+    N: Nuker
+    R: Killaura
+    Right CTRL: ClickGUI
+    Right SHIFT: Navigator
+    U: Freecam
+    X: X-Ray
+    Z: Sneak
 
 since_v7:
-  B: FastPlace &amp; FastBreak
-  C: Fullbright
-  G: Flight
-  ";": SpeedNuker
-  H: /home
-  J: Jesus
-  K: MultiAura
-  N: Nuker
-  R: Killaura
-  Right CTRL: ClickGUI
-  Right SHIFT: Navigator
-  U: Freecam
-  X: X-Ray
-  Z: Sneak
+  preface: |-
+    These are the default keybinds when you first install Wurst.
+    All of them are <a href="https://wurst.wiki/keybind_manager">fully&nbsp;customizable</a>!
+  binds:
+    B: FastPlace &amp; FastBreak
+    C: Fullbright
+    G: Flight
+    ";": SpeedNuker
+    H: /home
+    J: Jesus
+    K: MultiAura
+    N: Nuker
+    R: Killaura
+    Right CTRL: ClickGUI
+    Right SHIFT: Navigator
+    U: Freecam
+    X: X-Ray
+    Z: Sneak

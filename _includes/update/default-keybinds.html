@@ -1,11 +1,8 @@
 <details>
 	<summary>Default Keybinds: (click to expand)</summary>
-	<p>
-		These are the default keybinds when you first install Wurst.
-		All of them are <a href="https://wurst.wiki/keybind_manager">fully&nbsp;customizable</a>!
-	</p>
+	<p>{{ include.keybinds.preface }}</p>
 	<ul>
-	{% for keybind in include.keybinds %}
+	{% for keybind in include.keybinds.binds %}
 		<li><kbd>{{ keybind[0] }}</kbd> &rarr; {{ keybind[1] }}</li>
 	{% endfor %}
 	</ul>
