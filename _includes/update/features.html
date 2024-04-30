@@ -17,11 +17,11 @@
 </details>
 {%- endif -%}
 
-{%- if page.commands -%}
+{%- if include.commands -%}
 <details>
 	<summary>Chat Commands: (click to expand)</summary>
 	<ul>
-	{%- for cmd in page.commands -%}
+	{%- for cmd in include.commands -%}
 		<li>
 		{%- if wiki.commands[cmd] -%}
 			<a href="{{ wiki.commands[cmd] }}"><code>{{ cmd }}</code></a>
