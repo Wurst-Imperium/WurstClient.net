@@ -2,51 +2,51 @@
 
 {%- if page.hacks -%}
 <details>
-    <summary>Hacks, Cheats, and Mods: (click to expand)</summary>
-    <ul>
-        {%- for hack in page.hacks -%}
-            <li>
-                {%- if wiki.hacks[hack] -%}
-                    <a href="{{ wiki.hacks[hack] }}">{{ hack }}</a>
-                {%- else -%}
-                    {{ hack }}
-                {%- endif -%}
-            </li>
-        {%- endfor -%}
-    </ul>
+	<summary>Hacks, Cheats, and Mods: (click to expand)</summary>
+	<ul>
+	{%- for hack in page.hacks -%}
+		<li>
+		{%- if wiki.hacks[hack] -%}
+			<a href="{{ wiki.hacks[hack] }}">{{ hack }}</a>
+		{%- else -%}
+			{{ hack }}
+		{%- endif -%}
+		</li>
+	{%- endfor -%}
+	</ul>
 </details>
 {%- endif -%}
 
 {%- if page.commands -%}
 <details>
-    <summary>Chat Commands: (click to expand)</summary>
-    <ul>
-        {%- for cmd in page.commands -%}
-            <li>
-                {%- if wiki.commands[cmd] -%}
-                    <a href="{{ wiki.commands[cmd] }}"><code>{{ cmd }}</code></a>
-                {%- else -%}
-                    <code>{{ cmd }}</code>
-                {%- endif -%}
-            </li>
-        {%- endfor -%}
-    </ul>
+	<summary>Chat Commands: (click to expand)</summary>
+	<ul>
+	{%- for cmd in page.commands -%}
+		<li>
+		{%- if wiki.commands[cmd] -%}
+			<a href="{{ wiki.commands[cmd] }}"><code>{{ cmd }}</code></a>
+		{%- else -%}
+			<code>{{ cmd }}</code>
+		{%- endif -%}
+		</li>
+	{%- endfor -%}
+	</ul>
 </details>
 {%- endif -%}
 
 {%- if page.other -%}
 <details>
-    <summary>Other Features: (click to expand)</summary>
-    <ul>
-        {%- for other in page.other -%}
-            <li>
-                {%- if wiki.other[other] -%}
-                    <a href="{{ wiki.other[other] }}">{{ other }}</a>
-                {%- else -%}
-                    {{ other }}
-                {%- endif -%}
-            </li>
-        {%- endfor -%}
-    </ul>
+	<summary>Other Features: (click to expand)</summary>
+	<ul>
+	{%- for other in page.other -%}
+		<li>
+		{%- if wiki.other[other] -%}
+			<a href="{{ wiki.other[other] }}">{{ other }}</a>
+		{%- else -%}
+			{{ other }}
+		{%- endif -%}
+		</li>
+	{%- endfor -%}
+	</ul>
 </details>
 {%- endif -%}
