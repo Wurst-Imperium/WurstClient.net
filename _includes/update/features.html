@@ -34,11 +34,11 @@
 </details>
 {%- endif -%}
 
-{%- if page.other -%}
+{%- if include.other -%}
 <details>
 	<summary>Other Features: (click to expand)</summary>
 	<ul>
-	{%- for other in page.other -%}
+	{%- for other in include.other -%}
 		<li>
 		{%- if wiki.other[other] -%}
 			<a href="{{ wiki.other[other] }}">{{ other }}</a>
