@@ -11,34 +11,35 @@ released {{ date | date: "%B %-d, %Y" }}
 {%- endcapture -%}
 {%- include title.html l1 = page.title l2 = l2 -%}
 
-<div class="padding20 no-padding-left no-padding-right">
+<section class="padding20 no-padding-left no-padding-right">
 	<div class="container">
-
 		{%- include update/image.html -%}
 		{%- include share-buttons.html -%}
 		{%- include update/log4shell-warnings.html -%}
-		{%- include update/mcversions.html -%}
-
-		<div class="margin20 no-margin-left no-margin-right no-margin-top">
-
-			{%- include wtp-survey.html -%}
-
-			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5218363098774955" data-ad-slot="4767558596" data-ad-format="auto" data-full-width-responsive="true"></ins>
-
+		{%- include wtp-survey.html -%}
+		<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5218363098774955" data-ad-slot="4767558596" data-ad-format="auto" data-full-width-responsive="true"></ins>
+		<main class="margin20 no-margin-left no-margin-right no-margin-top">
+			{%- include update/mcversions.html -%}
 			{{- content -}}
-
-		</div>
-
+		</main>
 	</div>
-</div>
+</section>
 
-<div class="bg-grayLighter padding40 no-padding-left no-padding-right">
+<section class="padding40 no-padding-left no-padding-right bg-grayLighter">
 	<div class="container">
 		<h2 id="downloads">Downloads</h2>
 		{%- include update/ad-free-banner.html -%}
 		{%- include update/downloads.html -%}
 	</div>
-</div>
+</section>
+
+{%- unless page.old-downloads or page.old-mcx -%}
+<section class="padding20 no-padding-left no-padding-right">
+	<div class="container">
+		{%- include update/installation.html -%}
+	</div>
+</section>
+{%- endunless -%}
 
 <script>
 let afa = localStorage.getItem("WurstAdFreeAccess") === "true";
@@ -65,13 +66,5 @@ if(afa)
 else
 	ads.forEach(ad => (adsbygoogle = window.adsbygoogle || []).push({}));
 </script>
-
-{%- unless page.old-downloads or page.old-mcx -%}
-<div class="padding20 no-padding-left no-padding-right">
-	<div class="container">
-		{%- include update/installation.html -%}
-	</div>
-</div>
-{%- endunless -%}
 
 {%- include update/schema.html -%}
