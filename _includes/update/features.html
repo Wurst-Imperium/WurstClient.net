@@ -15,21 +15,6 @@
 	{%- endfor -%}
 	</ul>
 </details>
-{%- elsif page.hacks -%}
-<details>
-	<summary>Hacks, Cheats, and Mods: (click to expand)</summary>
-	<ul>
-	{%- for hack in page.hacks -%}
-		<li>
-		{%- if wiki.hacks[hack] -%}
-			<a href="{{ wiki.hacks[hack] }}">{{ hack }}</a>
-		{%- else -%}
-			{{ hack }}
-		{%- endif -%}
-		</li>
-	{%- endfor -%}
-	</ul>
-</details>
 {%- endif -%}
 
 {%- if include.commands -%}
