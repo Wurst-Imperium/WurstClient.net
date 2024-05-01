@@ -1,6 +1,21 @@
 {%- assign wiki = site.data.wikilinks -%}
 
-{%- if page.hacks -%}
+{%- if include.hacks -%}
+<details>
+	<summary>Hacks, Cheats, and Mods: (click to expand)</summary>
+	<ul>
+	{%- for hack in include.hacks -%}
+		<li>
+		{%- if wiki.hacks[hack] -%}
+			<a href="{{ wiki.hacks[hack] }}">{{ hack }}</a>
+		{%- else -%}
+			{{ hack }}
+		{%- endif -%}
+		</li>
+	{%- endfor -%}
+	</ul>
+</details>
+{%- elsif page.hacks -%}
 <details>
 	<summary>Hacks, Cheats, and Mods: (click to expand)</summary>
 	<ul>
