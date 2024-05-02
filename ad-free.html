@@ -1,6 +1,10 @@
 ---
 title: Ad-Free Access Pass
 permalink: /ad-free/
+screenshots:
+- https://images.wurstclient.net/_media/afa/afa1_540p.webp
+- https://images.wurstclient.net/_media/afa/afa2_540p.webp
+- https://images.wurstclient.net/_media/afa/afa3_540p.webp
 ---
 {% include title.html l1 = page.title l2 = page.description %}
 <style>
@@ -50,6 +54,24 @@ details {
 					<button class="button">Send Link</button>
 				</form>
 				<p>Simply enter your email address above and click on the link we send you.</p>
+			</div>
+		</div>
+		<div class="padding20 no-padding-left no-padding-right"></div>
+		<div class="padding10 no-padding-left no-padding-right align-center">
+			<h2>See For Yourself</h2>
+			<p>Click on any screenshot to view it in full size.</p>
+		</div>
+		<div class="padding10 no-padding-left no-padding-right">
+			<div class="wurst-grid">
+			{%- for screenshot in page.screenshots -%}
+				{%- assign fullsize-image = screenshot | replace: '_540p.webp', '.jpg' -%}
+				{%- assign filename = fullsize-image | replace: 'https://images.wurstclient.net/_media/afa/', '' -%}
+				<article>
+					<a href="{{ fullsize-image }}" target="_blank" title="File: {{ filename }}" data-analytics="Screenshot Gallery: Expand Image" data-analytics-image="{{ filename }}">
+						<img src="{{ screenshot }}" loading="lazy" alt="{{ filename }}" width="640" height="360">
+					</a>
+				</article>
+			{%- endfor -%}
 			</div>
 		</div>
 		<div class="padding20 no-padding-left no-padding-right"></div>
