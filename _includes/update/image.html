@@ -1,7 +1,7 @@
 {%- assign update_images_folder = "https://images.wurstclient.net/_media/update/" -%}
 {%- assign placeholder = "https://images.wurstclient.net/_media/placeholder-320x180.webp" -%}
 
-<div class="margin20 no-margin-left no-margin-right no-margin-top padding10 bg-grayDarker">
+<div class="padding10 bg-grayDarker">
 {%- if page.image contains update_images_folder -%}
 	{%- assign full_size_image = page.image | replace: '_540p.webp', '.jpg' -%}
 	{%- assign filename = full_size_image | replace: update_images_folder, '' -%}
