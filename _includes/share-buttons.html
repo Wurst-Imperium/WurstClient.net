@@ -20,5 +20,15 @@ Subscribe with an RSS reader to get notified of new Wurst updates.{%- endcapture
 				</div>
 			</div>
 		</a>
+		{%- if page.wurstforum_thread -%}
+		{%- capture forum_href -%}https://wurstforum.net/d/{{ page.wurstforum_thread }}?utm_source=wurstclient.net&utm_medium=Wurst+update&utm_content=Wurst+{{ page.wurst-version }}{% endcapture -%}
+		<a href="{{ forum_href }}" target="_blank" title="Discuss this update on our forum." data-analytics="View Comments">
+			<div class="tile-small bg-lightBlue fg-white">
+				<div class="tile-content iconic">
+					<span class="icon mif-bubbles"></span>
+				</div>
+			</div>
+		</a>
+		{%- endif -%}
 	</nav>
 </div>
