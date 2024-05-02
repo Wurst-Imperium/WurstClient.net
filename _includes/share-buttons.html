@@ -6,14 +6,14 @@ Subscribe with an RSS reader to get notified of new Wurst updates.{%- endcapture
 
 <div class="margin20 no-margin-left no-margin-right no-margin-top">
 	<nav class="tile-container">
-		<a href="{{ twitter_href }}" target="_blank" title="Tweet this page.">
+		<a href="{{ twitter_href }}" target="_blank" title="Tweet this page." data-analytics="Tweet Page">
 			<div class="tile-small bg-cyan fg-white">
 				<div class="tile-content iconic">
 					<span class="icon mif-twitter"></span>
 				</div>
 			</div>
 		</a>
-		<a href="/wurst-updates.xml" target="_blank" title="{{ rss_title }}">
+		<a href="/wurst-updates.xml" target="_blank" title="{{ rss_title }}" data-analytics="Open RSS Feed">
 			<div class="tile-small bg-orange fg-white">
 				<div class="tile-content iconic">
 					<span class="icon mif-feed3"></span>
@@ -30,7 +30,7 @@ Subscribe with an RSS reader to get notified of new Wurst updates.{%- endcapture
 			</div>
 		</a>
 		{%- endif -%}
-		<a href="https://github.com/Wurst-Imperium/Wurst7" target="_blank" title="Star the project on GitHub.">
+		<a href="https://github.com/Wurst-Imperium/Wurst7" target="_blank" title="Star the project on GitHub." data-analytics="Press Star Button">
 			<div class="tile-small bg-gray fg-white">
 				<div class="tile-content iconic">
 					<span class="icon mif-star-full"></span>
