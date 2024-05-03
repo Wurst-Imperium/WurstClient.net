@@ -33,8 +33,9 @@
 - BunnyHop
 - CameraNoClip
 - CaveFinder
-- ClickAura
 - ChestESP
+- ClickAura
+- ClickGUI
 - CrashChest
 - Criticals
 - Derp
@@ -74,6 +75,7 @@
 - MultiAura
 - NameProtect
 - NameTags
+- Navigator
 - NoClip
 - NoFall
 - NoHurtcam

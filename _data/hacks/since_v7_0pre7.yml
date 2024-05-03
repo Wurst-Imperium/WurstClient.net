@@ -7,6 +7,7 @@
 - AutoSwim
 - AutoWalk
 - BunnyHop
+- ClickGUI
 - Dolphin
 - FastBreak
 - FastPlace
@@ -18,6 +19,7 @@
 - ItemGenerator
 - MobESP
 - MobSpawnESP
+- Navigator
 - NoFall
 - Nuker
 - PlayerESP

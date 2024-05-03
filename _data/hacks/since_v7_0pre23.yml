@@ -22,8 +22,9 @@
 - BonemealAura
 - BuildRandom
 - BunnyHop
-- ClickAura
 - ChestESP
+- ClickAura
+- ClickGUI
 - Dolphin
 - ExtraElytra
 - FancyChat
@@ -43,6 +44,7 @@
 - Liquids
 - MobESP
 - MobSpawnESP
+- Navigator
 - NoFall
 - NoWeb
 - Nuker

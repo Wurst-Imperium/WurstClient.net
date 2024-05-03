@@ -26,8 +26,9 @@
 - BonemealAura
 - BuildRandom
 - BunnyHop
-- ClickAura
 - ChestESP
+- ClickAura
+- ClickGUI
 - CrashChest
 - Derp
 - Dolphin
@@ -53,6 +54,7 @@
 - MileyCyrus
 - MobESP
 - MobSpawnESP
+- Navigator
 - NoFall
 - NoWeb
 - Nuker
