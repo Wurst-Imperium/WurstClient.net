@@ -2,6 +2,7 @@
 {%- capture basepath -%}v{{ page.wurst-version }}/Wurst-Client-v{{ page.wurst-version }}-MC{{ mcversion | replace: " ", "-" }}{%- endcapture -%}
 
 {{/*  find the latest version of Wurst for the given Minecraft version  */}}
+{%- assign latest = null -%}
 {%- for update in site.updates reversed -%}
 	{%- if update.minecraft-versions contains mcversion or update.snapshots contains mcversion -%}
 		{%- unless update.wurst-version contains "pre" -%}
