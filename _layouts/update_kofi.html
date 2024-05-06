@@ -7,6 +7,16 @@ google_adsense: false
 		{%- include update/image.html -%}
 		{%- include share-buttons.html -%}
 		{%- include update/log4shell-warnings.html -%}
+		<p class="align-center text-accent">
+			This pre-release version is available to my supporters on Ko-fi.
+		</p>
+		<p class="align-center">
+			<a class="command-button bg-lightBlue fg-white text-shadow shadow bd-lightBlue" href="{{ page.kofi_url }}" style="padding-top: 1rem;padding-bottom: 1rem;padding-left: 5rem;" data-analytics="View on Ko-fi" data-analytics-id="top button">
+				<img src="https://storage.ko-fi.com/cdn/cup-border.png" class="icon" style="width: auto;">
+				View on Ko-fi
+			</a>
+		</p>
+		<div class="padding40 no-padding-left no-padding-right"></div>
 		<main class="margin20 no-margin-left no-margin-right no-margin-top">
 			{%- include update/mcversions.html -%}
 			{{- content -}}
@@ -21,7 +31,7 @@ google_adsense: false
 			This pre-release version is available to my supporters on Ko-fi.
 		</p>
 		<p class="align-center">
-			<a class="command-button bg-lightBlue fg-white text-shadow shadow bd-lightBlue" href="{{ page.kofi_url }}" style="padding-top: 1rem;padding-bottom: 1rem;padding-left: 5rem;" data-analytics="View on Ko-fi">
+			<a class="command-button bg-lightBlue fg-white text-shadow shadow bd-lightBlue" href="{{ page.kofi_url }}" style="padding-top: 1rem;padding-bottom: 1rem;padding-left: 5rem;" data-analytics="View on Ko-fi" data-analytics-id="bottom button">
 				<img src="https://storage.ko-fi.com/cdn/cup-border.png" class="icon" style="width: auto;">
 				View on Ko-fi
 			</a>
