@@ -13,7 +13,7 @@ google_adsense: true
 <div class="padding20 no-padding-left no-padding-right">
 	<main class="container">
 		<div class="wurst-grid">
-			
+
 			{%- assign i = 0 -%}
 			{%- for update in site.updates reversed -%}
 
@@ -28,10 +28,8 @@ google_adsense: true
 				{%- endif -%}
 				{%- if update.redirect_url -%}
 					{%- assign update_url = update.redirect_url -%}
-					{%- assign early_access = true -%}
 				{%- else -%}
 					{%- capture update_url -%}{{ update.url }}{% if param %}?mc={{ param }}{% endif -%}{%- endcapture -%}
-					{%- assign early_access = false -%}
 				{%- endif -%}
 
 				{%- assign modulo = i | modulo: 7 -%}
@@ -41,7 +39,7 @@ google_adsense: true
 				</div>
 				{%- endif -%}
 
-				<div {%- if early_access %} class="early-access"{% endif %}>
+				<div {%- if update.kofi_url %} class="early-access"{% endif %}>
 					<a href="{{ update_url }}"><article>
 						{%- assign altText = "Wurst v" | append: update.wurst-version -%}
 						{%- if update.image -%}
@@ -52,10 +50,15 @@ google_adsense: true
 							<span class="mif-file-picture fg-grayLight"></span>
 						</span>
 						{%- endif -%}
-						<h2 class="sub-header">{{ update.title }}</h2>
+						<h2 class="sub-header">
+							{{- update.title -}}
+							{%- if update.kofi_url -%}
+							<span class="tag bg-darkGreen fg-white" title="For monthly subscribers.">Members Only</span>
+							{%- endif -%}
+						</h2>
 					</article></a>
 				</div>
-				
+
 				{%- assign i = i | plus: 1 -%}
 			{%- endfor -%}
 		</div>
@@ -66,10 +69,8 @@ google_adsense: true
 	let ads = document.querySelectorAll("div > ins.adsbygoogle");
 	let adDivs = Array.from(ads).map(ad => ad.parentElement);
 	if(localStorage.getItem("WurstAdFreeAccess") === "true")
-	{
 		adDivs.forEach(adDiv => adDiv.style.display = "none");
-		document.querySelectorAll("div.early-access").forEach(div => div.style.display = "none");
-	}else
+	else
 		adDivs.forEach(adDiv => {
 			adDiv.style.display = "block";
 			(adsbygoogle = window.adsbygoogle || []).push({});

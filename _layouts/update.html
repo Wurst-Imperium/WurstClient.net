@@ -1,16 +1,7 @@
 ---
-layout: default
+layout: update_base
 google_adsense: true
 ---
-{%- assign date = page.date | date: "%Y-%m-%d" -%}
-{%- capture l2 -%}
-released {{ date | date: "%B %-d, %Y" }}
-{%- if page.modified_date and page.modified_date != date -%}
-	; updated {{ page.modified_date | date: "%B %-d, %Y" }}
-{%- endif -%}
-{%- endcapture -%}
-{%- include title.html l1 = page.title l2 = l2 -%}
-
 <section class="padding20 no-padding-left no-padding-right">
 	<div class="container">
 		{%- include update/image.html -%}
@@ -65,23 +56,4 @@ if(afa)
 	ads.forEach(ad => ad.style.display = "none");
 else
 	ads.forEach(ad => (adsbygoogle = window.adsbygoogle || []).push({}));
-
-// Track opening included features
-document.querySelectorAll("details.included-features").forEach((details) => {
-	details.addEventListener("toggle", (event) => {
-		if(event.target.hasAttribute("open"))
-		{
-			const summaryElement = event.target.querySelector("summary");
-			const summaryId = summaryElement.getAttribute("id");
-
-			plausible("Included Features: Open", {
-				props: {
-					id: summaryId
-				}
-			});
-		}
-	});
-});
 </script>
-
-{%- include update/schema.html -%}

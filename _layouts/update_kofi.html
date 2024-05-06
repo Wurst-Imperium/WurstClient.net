@@ -1,0 +1,39 @@
+---
+layout: update_base
+google_adsense: false
+---
+<section class="padding20 no-padding-left no-padding-right">
+	<div class="container">
+		{%- include update/image.html -%}
+		{%- include share-buttons.html -%}
+		{%- include update/log4shell-warnings.html -%}
+		<main class="margin20 no-margin-left no-margin-right no-margin-top">
+			{%- include update/mcversions.html -%}
+			{{- content -}}
+		</main>
+	</div>
+</section>
+
+<section class="padding40 no-padding-left no-padding-right bg-grayLighter">
+	<div class="container">
+		<h2 id="downloads">Downloads</h2>
+		<p class="align-center text-accent">
+			This pre-release version is available to my supporters on Ko-fi.
+		</p>
+		<p class="align-center">
+			<a class="command-button bg-lightBlue fg-white text-shadow shadow bd-lightBlue" href="{{ page.kofi_url }}" style="padding-top: 1rem;padding-bottom: 1rem;padding-left: 5rem;">
+				<img src="https://storage.ko-fi.com/cdn/cup-border.png" class="icon" style="width: auto;">
+				View on Ko-fi
+			</a>
+		</p>
+		<iframe id='kofiframe' src='https://ko-fi.com/wurst/?hidefeed=true&widget=true&embed=true&preview=true' style='border:none;width:100%;padding:4px;background:#f9f9f9;' height='712' title='wurst'></iframe>
+	</div>
+</section>
+
+{%- unless page.old-downloads or page.old-mcx -%}
+<section class="padding20 no-padding-left no-padding-right">
+	<div class="container">
+		{%- include update/installation.html -%}
+	</div>
+</section>
+{%- endunless -%}
