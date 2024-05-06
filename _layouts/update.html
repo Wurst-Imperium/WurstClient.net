@@ -65,6 +65,23 @@ if(afa)
 	ads.forEach(ad => ad.style.display = "none");
 else
 	ads.forEach(ad => (adsbygoogle = window.adsbygoogle || []).push({}));
+
+// Track opening included features
+document.querySelectorAll("details.included-features").forEach((details) => {
+	details.addEventListener("toggle", (event) => {
+		if(event.target.hasAttribute("open"))
+		{
+			const summaryElement = event.target.querySelector("summary");
+			const summaryId = summaryElement.getAttribute("id");
+
+			plausible("Included Features: Open", {
+				props: {
+					id: summaryId
+				}
+			});
+		}
+	});
+});
 </script>
 
 {%- include update/schema.html -%}

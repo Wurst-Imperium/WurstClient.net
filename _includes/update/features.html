@@ -1,8 +1,8 @@
 {%- assign wiki = site.data.wikilinks -%}
 
 {%- if include.hacks -%}
-<details>
-	<summary>Hacks, Cheats, and Mods: (click to expand)</summary>
+<details class="included-features">
+	<summary id="hacks">Hacks, Cheats, and Mods ({{ include.hacks.size }})</summary>
 	<ul>
 	{%- for hack in include.hacks -%}
 		<li>
@@ -18,8 +18,8 @@
 {%- endif -%}
 
 {%- if include.commands -%}
-<details>
-	<summary>Chat Commands: (click to expand)</summary>
+<details class="included-features">
+	<summary id="commands">Chat Commands ({{ include.commands.size }})</summary>
 	<ul>
 	{%- for cmd in include.commands -%}
 		<li>
@@ -35,8 +35,8 @@
 {%- endif -%}
 
 {%- if include.other -%}
-<details>
-	<summary>Other Features: (click to expand)</summary>
+<details class="included-features">
+	<summary id="other">Other Features ({{ include.other.size }})</summary>
 	<ul>
 	{%- for other in include.other -%}
 		<li>
@@ -52,8 +52,8 @@
 {%- endif -%}
 
 {%- if page.log4shell-patched -%}
-<details>
-	<summary>Safety: (click to expand)</summary>
+<details class="included-features">
+	<summary id="safety">Safety</summary>
 	<p>&check; This version is safe from the <a href="https://wurst.wiki/log4shell">Log4Shell</a> exploit.</p>
 </details>
 {%- endif -%}
