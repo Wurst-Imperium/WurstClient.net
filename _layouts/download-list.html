@@ -40,7 +40,7 @@ google_adsense: true
 				{%- endif -%}
 
 				<div {%- if update.kofi_url %} class="early-access"{% endif %}>
-					<a href="{{ update_url }}"><article>
+					<a href="{{ update_url }}" data-analytics="Choose Wurst Version" data-analytics-wurstversion="{{ update.wurst-version }}" {% if param %} data-analytics-mcversion="{{ param }}"{% endif %} data-analytics-early_access="{% if update.kofi_url %}true{% else %}false{% endif %}"><article>
 						{%- assign altText = "Wurst v" | append: update.wurst-version -%}
 						{%- if update.image -%}
 						<img src="{{ placeholder }}" data-src="{{ update.image }}" class="lazyload" alt="{{ altText }}" width="640" height="360">
