@@ -73,6 +73,8 @@ capes:
   "1cd0d4da-8d14-4c8d-8739-30c76c1cdd66": "{{ page.capes.wurst }}",
   "ipaqmaster": "{{ page.capes.jj }}",
   "de037b8a-4dba-4880-9f94-663ab3dac5e3": "{{ page.capes.jj }}",
+  "Ivantot": "{{ page.capes.wurst }}",
+  "c31449de-c257-47e9-bd0d-2c5e53979e38": "{{ page.capes.wurst }}",
 
   "use_new_server": false
 }
