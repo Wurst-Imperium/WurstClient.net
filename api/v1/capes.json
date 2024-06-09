@@ -77,6 +77,8 @@ capes:
   "c31449de-c257-47e9-bd0d-2c5e53979e38": "{{ page.capes.wurst }}",
   "yinhzccxm": "{{ page.capes.wurst }}",
   "099a282f-760e-4ffb-b765-59836b57da10": "{{ page.capes.wurst }}",
+  "CureSaba": "{{ page.capes.wurst }}",
+  "201ac3d0-5601-4129-9877-d9d7a65d6887": "{{ page.capes.wurst }}",
 
   "use_new_server": false
 }
