@@ -36,7 +36,11 @@ google_adsense: true
 let afa = localStorage.getItem("WurstAdFreeAccess") === "true";
 let h2downloads = document.querySelector("h2#downloads");
 if(!afa)
-	if(Math.random() < 0.3)
+	if(Math.random() < 0.5)
+	{
+		let afaPrompt = document.querySelector("#afa-prompt");
+		afaPrompt.style.display = "block";
+	}else
 	{
 		let bottomAd = document.createElement("ins");
 		bottomAd.classList.add("adsbygoogle");
@@ -46,10 +50,6 @@ if(!afa)
 		bottomAd.setAttribute("data-ad-format", "auto");
 		bottomAd.setAttribute("data-full-width-responsive", "true");
 		h2downloads.insertAdjacentElement("afterend", bottomAd);
-	}else
-	{
-		let afaPrompt = document.querySelector("#afa-prompt");
-		afaPrompt.style.display = "block";
 	}
 let ads = document.querySelectorAll("ins.adsbygoogle");
 if(afa)
