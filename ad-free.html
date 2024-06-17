@@ -274,6 +274,8 @@ if(adBlockerDetected)
 // Open the checkout
 const buyButton = document.getElementById("buy-button");
 buyButton.addEventListener("click", event => openCheckout());
+if (urlParams.get("open") === "true")
+	openCheckout();
 function openCheckout()
 {
 	Paddle.Checkout.open({
