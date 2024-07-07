@@ -1,23 +1,46 @@
-<nav class="app-bar darcula" data-role="appbar" style="position: absolute;">
-	<div class="container">
-		<a class="app-bar-element branding" href="/">
-			{%- assign month = site.time | date: '%m' | plus: 0 -%}
+<header class="wi-header">
+	<nav class="wi-navbar container">
+		<div class="wi-logo">
+			<a class="wi-nav-link" href="/">
+			{%- assign month = site.time | date: "%m" | plus: 0 -%}
 			{%- if month == 12 -%}
 				<img src="https://images.wurstclient.net/_media/logo/wurst_xmas_253x96_ll.webp" width="253" height="96" alt="Wurst Client logo with santa hat" style="height: 2.5rem;width: auto;vertical-align: baseline">
 			{%- else -%}
 				<img src="https://images.wurstclient.net/_media/logo/wurst_253x64_ll.webp" width="253" height="64" alt="Wurst Client logo" style="height: 2rem;width: auto">
 			{%- endif -%}
-		</a>
-		<ul class="app-bar-menu">
-			<li><a href="/download/">Download</a></li>
-			<li><a href="/tutorials/how-to-install/">Install</a></li>
-			<li><a href="https://wurst.wiki/" target="_blank">Wiki</a></li>
-			<li><a href="https://wurstforum.net/" target="_blank">Forum</a></li>
-			<li><a href="https://github.com/Wurst-Imperium/Wurst7" target="_blank">Source Code</a></li>
-			<li><a href="/tutorials/">Tutorials</a></li>
-			<li><a href="/contact/">Contact</a></li>
-			<li><a href="/donate/">Donate</a></li>
+			</a>
+		</div>
+		<ul class="wi-nav-list">
+			<li class="wi-nav-item">
+				<a href="/download/" class="wi-nav-link">Download</a>
+			</li>
+			<li class="wi-nav-item">
+				<span class="wi-nav-link">Resources</span>
+				<div class="wi-submenu">
+					<a href="/tutorials/how-to-install/">How&nbsp;to&nbsp;Install</a>
+					<a href="/tutorials/">Tutorials</a>
+					<a href="https://wurst.wiki/" target="_blank">Wurst&nbsp;Wiki</a>
+					<a href="https://github.com/Wurst-Imperium/Wurst7" target="_blank">Source&nbsp;Code</a>
+				</div>
+			</li>
+			<li class="wi-nav-item">
+				<span class="wi-nav-link">Community</span>
+				<div class="wi-submenu">
+					<a href="https://wurstforum.net/" target="_blank">WurstForum</a>
+					<a href="https://github.com/Wurst-Imperium" target="_blank">GitHub</a>
+					<a href="https://ko-fi.com/wurst" target="_blank">Ko-fi</a>
+					<a href="https://www.youtube.com/@Alexander01998" target="_blank">YouTube</a>
+					<a href="https://x.com/Wurst_Imperium" target="_blank">Twitter (X)</a>
+				</div>
+			</li>
+			<li class="wi-nav-item">
+				<a href="/contact/">Contact</a>
+			</li>
+			<li class="wi-nav-item">
+				<a href="/donate/" class="wi-nav-link">Donate</a>
+			</li>
 		</ul>
-	</div>
-</nav>
-<div style="height: 45px;"></div>
+		<div class="wi-spacer"></div>
+		<button class="wi-menu-toggle">☰</button>
+	</nav>
+</header>

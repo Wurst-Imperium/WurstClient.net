@@ -1,6 +1,6 @@
 ---
 layout: none
-permalink: "/css/wi-v2024.04.09.css"
+permalink: "/css/wi-v2024.07.07.css"
 ---
 /*
   Wurst-Imperium CSS
@@ -1989,550 +1989,6 @@ a.tag {
 }
 .table tbody tr.info:hover {
   background-color: #59cde2;
-}
-.app-bar {
-  display: block;
-  width: 100%;
-  position: relative;
-  background-color: #0072c6;
-  color: #ffffff;
-  height: 3.125rem;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-}
-.app-bar:before,
-.app-bar:after {
-  display: table;
-  content: "";
-}
-.app-bar:after {
-  clear: both;
-}
-.app-bar .app-bar-element {
-  line-height: 3.125rem;
-  padding: 0 .625rem;
-  font-size: 1rem;
-  cursor: pointer;
-  color: inherit;
-  display: block;
-  float: left;
-  position: relative;
-  vertical-align: middle;
-  height: 3.125rem;
-  background-color: inherit;
-}
-.app-bar .app-bar-element:hover,
-.app-bar .app-bar-element:active {
-  background-color: #005696;
-}
-.app-bar .app-bar-element.branding {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-.app-bar .app-bar-element.branding.no-hover:hover,
-.app-bar .app-bar-element.branding.no-hover:active {
-  background-color: #0072c6;
-}
-.app-bar .app-bar-element .d-menu {
-  top: 100%;
-  border: 2px solid #005696;
-}
-.app-bar .app-bar-element .d-menu li:not(.disabled):hover {
-  background-color: #eee;
-}
-.app-bar .app-bar-element .d-menu li:not(.disabled):hover > a {
-  color: #1d1d1d;
-}
-.app-bar .app-bar-element .d-menu .d-menu {
-  top: -0.625rem;
-  left: 100%;
-}
-.app-bar .app-bar-element .d-menu .dropdown-toggle:before {
-  border-color: #1d1d1d;
-}
-.app-bar .app-bar-divider {
-  display: block;
-  float: left;
-  line-height: 3.125rem;
-  height: 3.125rem;
-  width: 1px;
-  background-color: #4c9cd7;
-  padding: 0;
-}
-.app-bar .dropdown-toggle:before {
-  border-color: #ffffff;
-}
-.app-bar .app-bar-menu {
-  display: block;
-  float: left;
-  margin: 0;
-  padding: 0;
-}
-.app-bar .app-bar-menu > li,
-.app-bar .app-bar-menu > li > a {
-  line-height: 3.125rem;
-  padding: 0 .625rem;
-  font-size: 1rem;
-  cursor: pointer;
-  color: inherit;
-  display: block;
-  float: left;
-  position: relative;
-  vertical-align: middle;
-  height: 3.125rem;
-  background-color: inherit;
-}
-.app-bar .app-bar-menu > li:hover,
-.app-bar .app-bar-menu > li > a:hover,
-.app-bar .app-bar-menu > li:active,
-.app-bar .app-bar-menu > li > a:active {
-  background-color: #005696;
-}
-.app-bar .app-bar-menu > li.branding,
-.app-bar .app-bar-menu > li > a.branding {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-.app-bar .app-bar-menu > li.branding.no-hover:hover,
-.app-bar .app-bar-menu > li > a.branding.no-hover:hover,
-.app-bar .app-bar-menu > li.branding.no-hover:active,
-.app-bar .app-bar-menu > li > a.branding.no-hover:active {
-  background-color: #0072c6;
-}
-.app-bar .app-bar-menu > li .d-menu,
-.app-bar .app-bar-menu > li > a .d-menu {
-  top: 100%;
-  border: 2px solid #005696;
-}
-.app-bar .app-bar-menu > li .d-menu li:not(.disabled):hover,
-.app-bar .app-bar-menu > li > a .d-menu li:not(.disabled):hover {
-  background-color: #eee;
-}
-.app-bar .app-bar-menu > li .d-menu li:not(.disabled):hover > a,
-.app-bar .app-bar-menu > li > a .d-menu li:not(.disabled):hover > a {
-  color: #1d1d1d;
-}
-.app-bar .app-bar-menu > li .d-menu .d-menu,
-.app-bar .app-bar-menu > li > a .d-menu .d-menu {
-  top: -0.625rem;
-  left: 100%;
-}
-.app-bar .app-bar-menu > li .d-menu .dropdown-toggle:before,
-.app-bar .app-bar-menu > li > a .d-menu .dropdown-toggle:before {
-  border-color: #1d1d1d;
-}
-.app-bar .app-bar-menu > li:before,
-.app-bar .app-bar-menu > li > a:before,
-.app-bar .app-bar-menu > li:after,
-.app-bar .app-bar-menu > li > a:after {
-  display: table;
-  content: "";
-}
-.app-bar .app-bar-menu > li:after,
-.app-bar .app-bar-menu > li > a:after {
-  clear: both;
-}
-.app-bar .app-bar-menu > li > .input-control.text,
-.app-bar .app-bar-menu > li > a > .input-control.text,
-.app-bar .app-bar-menu > li > .input-control.password,
-.app-bar .app-bar-menu > li > a > .input-control.password {
-  margin-top: .55rem;
-  font-size: .875rem;
-  line-height: 1.8rem;
-  display: block;
-}
-.app-bar .app-bar-menu > li > .input-control.text input,
-.app-bar .app-bar-menu > li > a > .input-control.text input,
-.app-bar .app-bar-menu > li > .input-control.password input,
-.app-bar .app-bar-menu > li > a > .input-control.password input {
-  border-color: transparent;
-}
-.app-bar .app-bar-menu > li > .button,
-.app-bar .app-bar-menu > li > a > .button {
-  margin-top: -0.15rem;
-}
-.app-bar .app-bar-menu > li > .image-button,
-.app-bar .app-bar-menu > li > a > .image-button {
-  margin: 0;
-  background-color: transparent;
-  color: #ffffff;
-  font-size: inherit;
-}
-.app-bar .app-bar-menu > li > .image-button img.icon,
-.app-bar .app-bar-menu > li > a > .image-button img.icon {
-  padding: 0;
-}
-.app-bar .app-bar-menu > li .dropdown-toggle:before,
-.app-bar .app-bar-menu > li > a .dropdown-toggle:before {
-  transition: all 0.3s ease;
-}
-.app-bar .app-bar-menu > li .dropdown-toggle.active-toggle:before,
-.app-bar .app-bar-menu > li > a .dropdown-toggle.active-toggle:before {
-  -webkit-transform: rotate(135deg);
-          transform: rotate(135deg);
-  transition: all 0.3s ease;
-}
-.app-bar .app-bar-menu > li .d-menu .dropdown-toggle.active-toggle:before,
-.app-bar .app-bar-menu > li > a .d-menu .dropdown-toggle.active-toggle:before {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-.app-bar .app-bar-menu > li.dropdown-toggle,
-.app-bar .app-bar-menu > li > a.dropdown-toggle {
-  padding-right: 1.5rem;
-}
-.app-bar .app-bar-menu > li.dropdown-toggle:before,
-.app-bar .app-bar-menu > li > a.dropdown-toggle:before {
-  border-color: #ffffff;
-  display: block;
-}
-.app-bar .app-bar-menu > li {
-  padding: 0;
-}
-.app-bar .app-bar-menu > li .d-menu {
-  top: 100%;
-  border: 2px solid #005696;
-}
-.app-bar .app-bar-menu > li .d-menu li:not(.disabled):hover {
-  background-color: #eee;
-}
-.app-bar .app-bar-menu > li .d-menu li:not(.disabled):hover > a {
-  color: #1d1d1d;
-}
-.app-bar .app-bar-menu > li .d-menu .d-menu {
-  top: -0.625rem;
-  left: 100%;
-}
-.app-bar .app-bar-menu > li .d-menu .dropdown-toggle:before {
-  border-color: #1d1d1d;
-}
-.app-bar .app-bar-menu.small-dropdown .d-menu li > a {
-  font-size: .8em;
-  padding: .325rem 1.2rem .325rem 1.8rem;
-}
-.app-bar .app-bar-pullbutton {
-  float: right;
-}
-.app-bar .app-bar-pullbutton.automatic {
-  display: none;
-  float: right;
-  color: #fff;
-  cursor: pointer;
-  font: 2rem sans-serif;
-  height: 3.125rem;
-  width: 3.125rem;
-  line-height: 1.25rem;
-  vertical-align: middle;
-  text-align: center;
-  margin: 0;
-}
-.app-bar .app-bar-pullbutton.automatic:before {
-  content: "\2261";
-  position: absolute;
-  top: .875rem;
-  left: .875rem;
-}
-.app-bar .app-bar-drop-container {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  margin-top: 10px;
-  border: 2px solid #005696;
-  background: #ffffff;
-}
-.app-bar .app-bar-drop-container:before {
-  content: '';
-  position: absolute;
-  background-color: #ffffff;
-  width: 10px;
-  height: 10px;
-  border: 2px #005696 solid;
-  top: 1px;
-  left: 1rem;
-  margin: -8px 0;
-  border-bottom: none;
-  border-right: none;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-.app-bar .app-bar-drop-container:before {
-  z-index: 0;
-}
-.app-bar .app-bar-drop-container.place-right {
-  right: 0;
-  left: auto;
-}
-.app-bar .app-bar-drop-container.place-right:before {
-  left: auto;
-  right: 1rem;
-}
-.app-bar .app-bar-element:before,
-.app-bar .app-bar-element:after {
-  display: table;
-  content: "";
-}
-.app-bar .app-bar-element:after {
-  clear: both;
-}
-.app-bar .app-bar-element > .input-control.text,
-.app-bar .app-bar-element > .input-control.password {
-  margin-top: .55rem;
-  font-size: .875rem;
-  line-height: 1.8rem;
-  display: block;
-}
-.app-bar .app-bar-element > .input-control.text input,
-.app-bar .app-bar-element > .input-control.password input {
-  border-color: transparent;
-}
-.app-bar .app-bar-element > .button {
-  margin-top: -0.15rem;
-}
-.app-bar .app-bar-element > .image-button {
-  margin: 0;
-  background-color: transparent;
-  color: #ffffff;
-  font-size: inherit;
-}
-.app-bar .app-bar-element > .image-button img.icon {
-  padding: 0;
-}
-.app-bar.drop-up .app-bar-drop-container {
-  top: auto;
-  bottom: 3.75rem;
-}
-.app-bar.drop-up .app-bar-drop-container:before {
-  top: auto;
-  bottom: 1px;
-  -webkit-transform: rotate(225deg);
-          transform: rotate(225deg);
-}
-.app-bar.drop-up .app-bar-menu > li > .d-menu {
-  top: auto;
-  bottom: 3.125rem;
-}
-.app-bar.drop-up .app-bar-element > .d-menu {
-  top: auto;
-  bottom: 3.125rem;
-}
-.app-bar.drop-up .app-bar-menu li .d-menu .d-menu,
-.app-bar.drop-up .app-bar-element .d-menu .d-menu {
-  top: auto ;
-  bottom: 0;
-}
-.app-bar .app-bar-element .dropdown-toggle:before,
-.app-bar .app-bar-menu .dropdown-toggle:before {
-  transition: all 0.3s ease;
-}
-.app-bar .app-bar-element .dropdown-toggle.active-toggle:before,
-.app-bar .app-bar-menu .dropdown-toggle.active-toggle:before {
-  -webkit-transform: rotate(135deg);
-          transform: rotate(135deg);
-  transition: all 0.3s ease;
-}
-.app-bar .app-bar-element .d-menu .dropdown-toggle.active-toggle:before,
-.app-bar .app-bar-menu .d-menu .dropdown-toggle.active-toggle:before {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-.app-bar.fixed-top,
-.app-bar.fixed-bottom {
-  z-index: 1030;
-  position: fixed;
-}
-.app-bar.fixed-top {
-  top: 0;
-}
-.app-bar.fixed-bottom {
-  bottom: 0;
-}
-.app-bar {
-  overflow: visible;
-  height: auto;
-}
-.app-bar .app-bar-pullbutton {
-  line-height: 3.125rem;
-  padding: 0 .625rem;
-  font-size: 1rem;
-  cursor: pointer;
-  color: inherit;
-  display: block;
-  float: left;
-  position: relative;
-  vertical-align: middle;
-  height: 3.125rem;
-  background-color: inherit;
-  float: right;
-}
-.app-bar .app-bar-pullbutton:hover,
-.app-bar .app-bar-pullbutton:active {
-  background-color: #005696;
-}
-.app-bar .app-bar-pullbutton.branding {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-.app-bar .app-bar-pullbutton.branding.no-hover:hover,
-.app-bar .app-bar-pullbutton.branding.no-hover:active {
-  background-color: #0072c6;
-}
-.app-bar .app-bar-pullbutton .d-menu {
-  top: 100%;
-  border: 2px solid #005696;
-}
-.app-bar .app-bar-pullbutton .d-menu li:not(.disabled):hover {
-  background-color: #eee;
-}
-.app-bar .app-bar-pullbutton .d-menu li:not(.disabled):hover > a {
-  color: #1d1d1d;
-}
-.app-bar .app-bar-pullbutton .d-menu .d-menu {
-  top: -0.625rem;
-  left: 100%;
-}
-.app-bar .app-bar-pullbutton .d-menu .dropdown-toggle:before {
-  border-color: #1d1d1d;
-}
-.app-bar .app-bar-pullbutton:before,
-.app-bar .app-bar-pullbutton:after {
-  display: table;
-  content: "";
-}
-.app-bar .app-bar-pullbutton:after {
-  clear: both;
-}
-.app-bar .app-bar-pullbutton > .input-control.text,
-.app-bar .app-bar-pullbutton > .input-control.password {
-  margin-top: .55rem;
-  font-size: .875rem;
-  line-height: 1.8rem;
-  display: block;
-}
-.app-bar .app-bar-pullbutton > .input-control.text input,
-.app-bar .app-bar-pullbutton > .input-control.password input {
-  border-color: transparent;
-}
-.app-bar .app-bar-pullbutton > .button {
-  margin-top: -0.15rem;
-}
-.app-bar .app-bar-pullbutton > .image-button {
-  margin: 0;
-  background-color: transparent;
-  color: #ffffff;
-  font-size: inherit;
-}
-.app-bar .app-bar-pullbutton > .image-button img.icon {
-  padding: 0;
-}
-.app-bar .app-bar-pullbutton .dropdown-toggle:before {
-  transition: all 0.3s ease;
-}
-.app-bar .app-bar-pullbutton .dropdown-toggle.active-toggle:before {
-  -webkit-transform: rotate(135deg);
-          transform: rotate(135deg);
-  transition: all 0.3s ease;
-}
-.app-bar .app-bar-pullbutton .d-menu .dropdown-toggle.active-toggle:before {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-.app-bar .app-bar-pullbutton {
-  display: none;
-}
-.app-bar .app-bar-pullmenu {
-  display: none;
-}
-.app-bar .app-bar-pullmenu.flexstyle-sidebar2 {
-  position: absolute;
-  right: 0;
-  z-index: 1000;
-}
-.app-bar .app-bar-pullmenu.flexstyle-sidebar2 .app-bar-pullmenubar {
-  float: right;
-}
-.app-bar .app-bar-pullmenu.flexstyle-sidebar2 .dropdown-toggle:before {
-  border-color: #323232;
-}
-.app-bar .app-bar-pullmenu.flexstyle-sidebar2 .sidebar2 li:hover {
-  background-color: #0072c6;
-}
-.app-bar .app-bar-pullmenu.flexstyle-sidebar2 .sidebar2 li .input-control {
-  text-align: center;
-  display: block;
-  margin: 0.325rem;
-}
-.app-bar .app-bar-pullmenu.flexstyle-sidebar2 .sidebar2 li:hover a {
-  background-color: #0072c6;
-}
-.app-bar .app-bar-pullmenu.flexstyle-sidebar2 .sidebar2 li li:not(:hover) {
-  color: #1d1d1d;
-}
-.app-bar .app-bar-pullmenu.flexstyle-sidebar2 .sidebar2 li li:not(:hover) a {
-  background-color: #ffffff;
-}
-.app-bar .app-bar-pullmenu .app-bar-menu {
-  width: 100%;
-  border-top: 1px solid #4c9cd7;
-  position: relative;
-  float: none;
-  display: none;
-  z-index: 1000 1;
-  background-color: #005696;
-  clear: both;
-}
-.app-bar .app-bar-pullmenu .app-bar-menu > li,
-.app-bar .app-bar-pullmenu .app-bar-menu > li > a {
-  float: none;
-}
-.app-bar .app-bar-pullmenu .app-bar-menu > li {
-  height: auto;
-}
-.app-bar .app-bar-pullmenu .app-bar-menu li:hover {
-  background-color: #0072c6;
-}
-.app-bar .app-bar-pullmenu .app-bar-menu li:hover a {
-  background-color: #0072c6;
-  color: #ffffff;
-}
-.app-bar .app-bar-pullmenu .app-bar-menu .d-menu {
-  border: 0;
-  border-top: 1px solid #4c9cd7;
-  clear: both;
-  float: none;
-  width: 100%;
-  position: relative;
-  left: 0;
-  box-shadow: none;
-  max-width: 100%;
-  background-color: #005696;
-}
-.app-bar .app-bar-pullmenu .app-bar-menu .d-menu li {
-  width: 100%;
-  background-color: inherit;
-}
-.app-bar .app-bar-pullmenu .app-bar-menu .d-menu li a {
-  padding-left: 20px;
-  padding-right: 0;
-  background-color: inherit;
-  width: 100%;
-  color: #ffffff;
-}
-.app-bar .app-bar-pullmenu .app-bar-menu .d-menu .dropdown-toggle:before {
-  border-color: #ffffff;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-.app-bar .app-bar-pullmenu .app-bar-menu .d-menu .divider {
-  background-color: #4c9cd7;
-}
-.app-bar .app-bar-pullmenu .app-bar-menu .d-menu .d-menu {
-  top: 0;
-  left: 0;
-}
-.app-bar > .container {
-  padding: 0 !important;
 }
 [data-role="dropdown"]:not(.open),
 [data-role="dropdown"]:not(.keep-open) {
@@ -17523,90 +16979,134 @@ video::-webkit-media-controls-enclosure {
 
 /* custom Wurst-Imperium styles */
 
-/* custom .app-bar scheme based on darcula */
-.app-bar.darcula {
+/* custom header navbar */
+.wi-header {
   background-color: #222;
+  color: white;
+  position: relative;
 }
-.app-bar.darcula .app-bar-element:hover,
-.app-bar.darcula .app-bar-menu > li:hover,
-.app-bar.darcula .app-bar-menu > li > a:hover,
-.app-bar.darcula .app-bar-element:active,
-.app-bar.darcula .app-bar-menu > li:active,
-.app-bar.darcula .app-bar-menu > li > a:active {
+.wi-navbar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-weight: 400;
+  padding: 0;
+}
+.wi-logo {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.wi-logo a {
+  height: 3.125rem;
+  padding: 0;
+}
+.wi-nav-list {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.wi-nav-item {
+  position: relative;
+}
+.wi-nav-link,
+.wi-nav-item a {
+  color: white;
+  text-decoration: none;
+  line-height: 3.125rem;
+  font-size: 1rem;
+  padding: 0 .625rem;
+  display: block;
+  cursor: pointer;
+}
+.wi-nav-item span {
+  cursor: default;
+}
+.wi-submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #222;
+  min-width: 150px;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.wi-submenu a {
+  color: white;
+  line-height: 1rem;
+  padding: .75rem 1rem;
+  text-decoration: none;
+  display: block;
+}
+.wi-nav-item:hover,
+.wi-submenu a:hover,
+.wi-logo:hover,
+.wi-menu-toggle:hover {
   background-color: #111;
 }
-.app-bar.darcula .app-bar-divider {
-  background-color: #666;
+.wi-spacer {
+  flex-grow: 1;
 }
-.app-bar.darcula .app-bar-element .d-menu,
-.app-bar.darcula .app-bar-menu > li .d-menu {
-  background-color: #222;
-  border-color: transparent;
+.wi-menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  line-height: 3.125rem;
+  cursor: pointer;
+  padding: 0 1rem;
 }
-.app-bar.darcula .app-bar-element .d-menu li:not(.disabled) > a,
-.app-bar.darcula .app-bar-menu > li .d-menu li:not(.disabled) > a,
-.app-bar.darcula .app-bar-element .d-menu li > a,
-.app-bar.darcula .app-bar-menu > li .d-menu li > a {
-  background-color: #222;
-  color: #fff;
+@media (min-width: 641px) {
+  .wi-nav-item:hover .wi-submenu {
+    display: block;
+  }
 }
-.app-bar.darcula .app-bar-element .d-menu li:not(.disabled) > a:hover,
-.app-bar.darcula .app-bar-menu > li .d-menu li:not(.disabled) > a:hover,
-.app-bar.darcula .app-bar-element .d-menu li > a:hover,
-.app-bar.darcula .app-bar-menu > li .d-menu li > a:hover {
-  background-color: #111;
-  color: #fff;
-}
-.app-bar.darcula .app-bar-element .d-menu li:hover > a,
-.app-bar.darcula .app-bar-menu > li .d-menu li:hover > a {
-  background-color: #111;
-}
-.app-bar.darcula .app-bar-element .d-menu .divider,
-.app-bar.darcula .app-bar-menu > li .d-menu .divider {
-  background-color: #666;
-}
-.app-bar.darcula .app-bar-element .d-menu .divider:hover,
-.app-bar.darcula .app-bar-menu > li .d-menu .divider:hover {
-  background-color: #666;
-}
-.app-bar.darcula .app-bar-element .dropdown-toggle:before,
-.app-bar.darcula .app-bar-menu li .dropdown-toggle:before {
-  border-color: #fff;
-}
-.app-bar.darcula .app-bar-element.disabled,
-.app-bar.darcula .app-bar-menu li.disabled,
-.app-bar.darcula .app-bar-element:disabled,
-.app-bar.darcula .app-bar-menu li:disabled {
-  color: #555;
-}
-.app-bar.darcula .app-bar-element.disabled a,
-.app-bar.darcula .app-bar-menu li.disabled a,
-.app-bar.darcula .app-bar-element:disabled a,
-.app-bar.darcula .app-bar-menu li:disabled a {
-  color: inherit !important;
-}
-.app-bar.darcula .app-bar-pullbutton:hover {
-  background-color: #111;
-}
-.app-bar.darcula .app-bar-drop-container {
-  border: 2px solid #222;
-  background-color: #222;
-  color: #fff;
-}
-.app-bar.darcula .app-bar-drop-container:before {
-  background-color: #222;
-  border-color: #222;
-}
-.app-bar.darcula .app-bar-pullmenu .app-bar-menu {
-  border-top: 1px solid #666;
-  background-color: #222;
-}
-.app-bar.darcula .app-bar-pullmenu .app-bar-menu li:hover {
-  background-color: #111;
-}
-.app-bar.darcula .app-bar-pullmenu .app-bar-menu li:hover a {
-  background-color: #111;
-  color: #fff;
+@media (max-width: 640px) {
+  .wi-menu-toggle {
+    display: block;
+  }
+  .wi-navbar {
+    flex-wrap: wrap;
+  }
+  .wi-nav-list {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin: 0;
+    width: 100%;
+    background-color: #222;
+    border-top: 1px solid #666;
+    order: 3;
+  }
+  .wi-nav-list.active {
+    display: flex;
+    z-index: 1;
+  }
+  .wi-navbar {
+    flex-wrap: wrap;
+  }
+  .wi-nav-item {
+    margin: 0;
+    text-align: left;
+  }
+  .wi-submenu {
+    position: static;
+    background-color: #222;
+    display: none;
+    top: 0;
+    margin: 0 .5rem .5rem .5rem;
+    z-index: 2;
+  }
+  .wi-submenu a {
+    padding: 1rem;
+  }
+  .wi-nav-item.active .wi-submenu {
+    display: block;
+  }
 }
 
 /* text-decoration for links */
@@ -17614,7 +17114,6 @@ a:active,
 a:hover {
   text-decoration: underline;
 }
-.app-bar a,
 a.command-button {
   text-decoration: none;
 }
