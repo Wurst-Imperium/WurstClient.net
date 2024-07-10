@@ -16,6 +16,20 @@ screenshots:
 details {
 	padding: 5px;
 }
+.loading {
+	background-color: #d9d9d9;
+	color: #d9d9d9;
+	border-radius: 0.3125rem;
+	animation: loading-fade 1.5s ease-in-out infinite;
+}
+@keyframes loading-fade {
+	0%, 100% {
+		opacity: 0.5;
+	}
+	50% {
+		opacity: 1;
+	}
+}
 </style>
 
 <section class="padding20 no-padding-left no-padding-right" id="purchase">
@@ -26,13 +40,15 @@ details {
 		<div class="wurst-grid cells2">
 			<div class="bg-grayLighter padding20 set-border">
 				<p style="display: flex;align-items: center;justify-content: center">
-					<span class="leader">
+					<span class="leader loading" id="price">
 						€<span class="text-bold">9.99</span>
 					</span>
 					<span style="margin-left: 0.5rem;">
 						<span style="font-weight: 500;">one-time payment</span>
 						<br>
-						<span class="fg-gray">taxes included</span>
+						<span class="fg-gray">
+							<span id="currency-code" class="loading">EUR</span>, incl. VAT
+						</span>
 					</span>
 				</p>
 				<button id="buy-button" class="button primary full-size shadow bg-hover-lightBlue">Get Ad-Free Access</button>
@@ -247,6 +263,58 @@ Paddle.Initialize({
 	eventCallback: handleCheckoutEvent
 });
 
+const afapItems = [{
+	priceId: "pri_01hwxrwp7ec9nfkv31kf6jc4j6",
+	quantity: 1
+}];
+
+// Set the price
+function updatePrice() {
+	const priceElement = document.getElementById("price");
+	const currencyCodeElement = document.getElementById("currency-code");
+	Paddle.PricePreview({items: afapItems})
+		.then((result) => {
+			const priceText = result.data.details.lineItems[0].formattedTotals.total;
+			const currencyCode = result.data.currencyCode;
+
+			// Update the currency code
+			currencyCodeElement.textContent = currencyCode;
+			currencyCodeElement.classList.remove("loading");
+
+			// Find the numeric part of the price
+			const matches = priceText.match(/(\d+([\.,]\d+)?)/);
+			if (!matches) {
+				priceElement.textContent = priceText;
+				priceElement.classList.remove("loading");
+				return;
+			}
+
+			// Format the price so that the numeric part is bold
+			const priceNumber = matches[0];
+			const priceNumberSpan = document.createElement("span");
+			priceNumberSpan.textContent = priceNumber;
+			priceNumberSpan.className = "text-bold";
+			const priceCurrencyNode = document.createTextNode(priceText.replace(priceNumber, ""));
+
+			// Update the price element
+			priceElement.textContent = "";
+			if (priceText.startsWith(priceNumber)) {
+				priceElement.appendChild(priceNumberSpan);
+				priceElement.appendChild(priceCurrencyNode);
+			} else {
+				priceElement.appendChild(priceCurrencyNode);
+				priceElement.appendChild(priceNumberSpan);
+			}
+			priceElement.classList.remove("loading");
+		})
+		.catch((error) => {
+			console.error("Error fetching price:", error);
+			priceElement.classList.remove("loading");
+			currencyCodeElement.classList.remove("loading");
+		});
+}
+updatePrice();
+
 // Load data from localStorage
 const alreadyPurchased = localStorage.getItem("WurstAdFreeAccess") === "true";
 const priorWurstDownloads = parseInt(localStorage.getItem("WurstDownloadCount")) || 0;
@@ -278,14 +346,7 @@ if (urlParams.get("open") === "true")
 	openCheckout();
 function openCheckout()
 {
-	Paddle.Checkout.open({
-		items: [
-			{
-				priceId: "pri_01hwxrwp7ec9nfkv31kf6jc4j6",
-				quantity: 1
-			}
-		]
-	});
+	Paddle.Checkout.open({items: afapItems});
 }
 
 // Handle checkout events
