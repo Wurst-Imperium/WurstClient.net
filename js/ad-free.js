@@ -24,38 +24,27 @@ const afapItems = [{
 function updatePrice() {
 	const priceElement = document.getElementById("price");
 	const currencyCodeElement = document.getElementById("currency-code");
-	Paddle.PricePreview({items: afapItems})
-		.then((result) => {
-			const priceText = result.data.details.lineItems[0].formattedTotals.total;
-			const currencyCode = result.data.currencyCode;
-
+	fetch("https://api.wurstclient.net/afa/price-preview")
+		.then((response) => response.json())
+		.then((data) => {
 			// Update the currency code
-			currencyCodeElement.textContent = currencyCode;
+			currencyCodeElement.textContent = data.currency_code;
 			currencyCodeElement.classList.remove("loading");
 
-			// Find the numeric part of the price
-			const matches = priceText.match(/(\d+([\.,]\d+)?)/);
-			if (!matches) {
-				priceElement.textContent = priceText;
-				priceElement.classList.remove("loading");
-				return;
-			}
-
-			// Format the price so that the numeric part is bold
-			const priceNumber = matches[0];
+			// Update the price
 			const priceNumberSpan = document.createElement("span");
-			priceNumberSpan.textContent = priceNumber;
+			priceNumberSpan.textContent = data.price_number;
 			priceNumberSpan.className = "text-bold";
-			const priceCurrencyNode = document.createTextNode(priceText.replace(priceNumber, ""));
+			const priceCurrencyNode = document.createTextNode(data.price_currency_symbol);
 
 			// Update the price element
 			priceElement.textContent = "";
-			if (priceText.startsWith(priceNumber)) {
-				priceElement.appendChild(priceNumberSpan);
+			if (data.currency_symbol_first) {
 				priceElement.appendChild(priceCurrencyNode);
+				priceElement.appendChild(priceNumberSpan);
 			} else {
-				priceElement.appendChild(priceCurrencyNode);
 				priceElement.appendChild(priceNumberSpan);
+				priceElement.appendChild(priceCurrencyNode);
 			}
 			priceElement.classList.remove("loading");
 		})
