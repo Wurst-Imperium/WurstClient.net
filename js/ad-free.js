@@ -1,6 +1,6 @@
 ---
 layout: none
-permalink: "/js/ad-free-v2024.07.10.js"
+permalink: "/js/ad-free-v2024.07.14.js"
 ---
 
 // Set up Paddle
@@ -32,18 +32,17 @@ function updatePrice() {
 			currencyCodeElement.classList.remove("loading");
 
 			// Update the price
-			const priceNumberSpan = document.createElement("span");
-			priceNumberSpan.textContent = data.price_number;
-			priceNumberSpan.className = "text-bold";
+			const priceNumberBold = document.createElement("b");
+			priceNumberBold.textContent = data.price_number;
 			const priceCurrencyNode = document.createTextNode(data.price_currency_symbol);
 
 			// Update the price element
 			priceElement.textContent = "";
 			if (data.currency_symbol_first) {
 				priceElement.appendChild(priceCurrencyNode);
-				priceElement.appendChild(priceNumberSpan);
+				priceElement.appendChild(priceNumberBold);
 			} else {
-				priceElement.appendChild(priceNumberSpan);
+				priceElement.appendChild(priceNumberBold);
 				priceElement.appendChild(priceCurrencyNode);
 			}
 			priceElement.classList.remove("loading");
