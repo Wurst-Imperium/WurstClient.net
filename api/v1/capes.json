@@ -12,6 +12,7 @@ capes:
   halloween6: "https://user-images.githubusercontent.com/10100202/66271218-c10c7d80-e85b-11e9-89d6-427a5f068df2.png"
   halloween7: "https://user-images.githubusercontent.com/10100202/66271219-c10c7d80-e85b-11e9-94d4-f6b9d3ed96f9.png"
   jj: "https://github.com/Wurst-Imperium/WurstClient.net/assets/10100202/4f412ff2-ab2b-48be-ab97-36e709e2e6b8"
+  flashbxng: "https://github.com/user-attachments/assets/6a42de06-a559-4df4-98b1-abec0f277f12"
 ---
 {
   "Alexander01998": "{{ page.capes.wurst }}",
@@ -79,6 +80,8 @@ capes:
   "099a282f-760e-4ffb-b765-59836b57da10": "{{ page.capes.wurst }}",
   "CureSaba": "{{ page.capes.wurst }}",
   "201ac3d0-5601-4129-9877-d9d7a65d6887": "{{ page.capes.wurst }}",
+  "FlashBxng": "{{ page.capes.flashbxng }}",
+  "c64e0a3b-763b-48df-8712-c975cf60e6a7": "{{ page.capes.flashbxng }}",
 
   "use_new_server": false
 }
