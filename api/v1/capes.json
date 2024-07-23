@@ -82,6 +82,8 @@ capes:
   "201ac3d0-5601-4129-9877-d9d7a65d6887": "{{ page.capes.wurst }}",
   "FlashBxng": "{{ page.capes.flashbxng }}",
   "c64e0a3b-763b-48df-8712-c975cf60e6a7": "{{ page.capes.flashbxng }}",
+  "Karataso": "{{ page.capes.wurst }}",
+  "5551f762-673b-43dc-8dc7-50819ae58028": "{{ page.capes.wurst }}",
 
   "use_new_server": false
 }
