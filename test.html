@@ -21,7 +21,7 @@ robots: noindex, nofollow
 
 <script>
 document.getElementById("testButton").addEventListener("click", function() {
-	fetch("https://api.wurstclient.net/afa/session-test")
+	fetch("https://api.wurstclient.net/afa/session-test", {credentials: "include"})
 		.then(response => response.json())
 		.then(data => {
 			document.getElementById("responseMessage").textContent = data.message;
