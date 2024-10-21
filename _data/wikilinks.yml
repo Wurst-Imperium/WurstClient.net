@@ -123,6 +123,7 @@ commands:
   .blink: https://wurst.wiki/cmd/blink
   .blocklist: https://wurst.wiki/cmd/blocklist
   .clear: https://wurst.wiki/cmd/clear
+  .damage: https://wurst.wiki/cmd/damage
   .dupe: https://wurst.wiki/cmd/dupe
   .enabledhax: https://wurst.wiki/cmd/enabledhax
   .enchant: https://wurst.wiki/cmd/enchant
@@ -135,6 +136,7 @@ commands:
   .potion: https://wurst.wiki/cmd/potion
   .rename: https://wurst.wiki/cmd/rename
   .RenameForceOPEvenThoughTheNameIsTechnicallyCorrect: https://wurst.wiki/cmd/renameforceopeventhoughthenameistechnicallycorrect
+  .say: https://wurst.wiki/cmd/say
   .setblock: https://wurst.wiki/cmd/setblock
   .setcolor: https://wurst.wiki/cmd/setcolor
   .setmode: https://wurst.wiki/cmd/setmode
