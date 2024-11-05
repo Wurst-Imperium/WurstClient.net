@@ -110,38 +110,4 @@
 			{{ srcfile }}
 		</a>
 	</li>
-	<li>
-		{%- capture devlink -%}{{ mcxbase }}{{ basepath }}-dev.jar{%- endcapture -%}
-		{%- assign devfile = devlink | split: '/' | last -%}
-		<a href="javascript:void(0)"
-			data-href="{{ devlink }}"
-			data-analytics="Download Wurst"
-			data-analytics-version="{{ page.wurst-version }}"
-			data-analytics-mcversion="{{ mcversion }}"
-			data-analytics-mcversiontype="{{ mcversion-type }}"
-			data-analytics-modloader="Fabric"
-			data-analytics-type="dev"
-			data-analytics-mirror="GitHub"
-			data-analytics-file="{{ devfile }}"
-		>
-			{{ devfile }}
-		</a>
-	</li>
-	<li>
-		{%- capture srcdevlink -%}{{ mcxbase }}{{ basepath }}-sources-dev.jar{%- endcapture -%}
-		{%- assign srcdevfile = srcdevlink | split: '/' | last -%}
-		<a href="javascript:void(0)"
-			data-href="{{ srcdevlink }}"
-			data-analytics="Download Wurst"
-			data-analytics-version="{{ page.wurst-version }}"
-			data-analytics-mcversion="{{ mcversion }}"
-			data-analytics-mcversiontype="{{ mcversion-type }}"
-			data-analytics-modloader="Fabric"
-			data-analytics-type="sources-dev"
-			data-analytics-mirror="GitHub"
-			data-analytics-file="{{ srcdevfile }}"
-		>
-			{{ srcdevfile }}
-		</a>
-	</li>
 </ul>
