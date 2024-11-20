@@ -1,0 +1,45 @@
+# Adds the necessary Jekyll metadata when an existing Wurst Client update is ported to a new Minecraft version.
+name: Add Wurst Port
+
+on:
+  workflow_dispatch:
+    inputs:
+      wurst_version:
+        description: "Wurst version"
+        required: true
+      mc_version:
+        description: "Minecraft version"
+        required: true
+      fapi_version:
+        description: "Fabric API version"
+        required: true
+
+jobs:
+  update-post:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: |
+          pip install requests ruamel.yaml
+
+      - name: Run add_wurst_port.py
+        run: |
+          python _scripts/add_wurst_port.py "${{ github.event.inputs.wurst_version }}" "${{ github.event.inputs.mc_version }}" "${{ github.event.inputs.fapi_version }}"
+
+      - name: Commit changes
+        run: |
+          git config --local user.email "contact.wurstimperium@gmail.com"
+          git config --local user.name "Wurst-Bot"
+          git add _updates/
+          git commit -m "[Wurst-Bot] Port Wurst ${{ github.event.inputs.wurst_version }} to Minecraft ${{ github.event.inputs.mc_version }}"
+          git push
