@@ -27,10 +27,11 @@ jobs:
         with:
           python-version: "3.12"
           cache: "pip"
+          cache-dependency-path: _scripts/requirements.txt
 
       - name: Install dependencies
         run: |
-          pip install requests ruamel.yaml
+          pip install -r _scripts/requirements.txt
 
       - name: Run add_wurst_port.py
         run: |
