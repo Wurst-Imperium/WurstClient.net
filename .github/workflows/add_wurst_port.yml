@@ -1,11 +1,12 @@
 # Adds the necessary Jekyll metadata when an existing Wurst Client update is ported to a new Minecraft version.
 name: Add Wurst Port
+run-name: Add Wurst ${{ github.event.inputs.wurst_version }} build for ${{ github.event.inputs.mc_version }}
 
 on:
   workflow_dispatch:
     inputs:
       wurst_version:
-        description: "Wurst version"
+        description: "Wurst version (without v or -MC)"
         required: true
       mc_version:
         description: "Minecraft version"
