@@ -106,6 +106,41 @@ google_adsense: true
 <div class="padding20 no-padding-left no-padding-right">
   <div class="container">
 
+    {%- assign latest_update = site.updates | where_exp: "item", "item.minecraft-versions" | sort: "modified_date" | last -%}
+    {%- assign upcoming_version = "" -%}
+    {%- assign latest_rc = "" -%}
+    {%- for snapshot in latest_update.snapshots -%}
+      {%- if snapshot contains "rc" -%}
+        {%- assign rc_version = snapshot | split: "-rc" | first -%}
+        {%- assign latest_rc = snapshot -%}
+        {%- assign has_full_version = false -%}
+        {%- for mcversion in latest_update.minecraft-versions -%}
+          {%- if mcversion == rc_version -%}
+            {%- assign has_full_version = true -%}
+            {%- break -%}
+          {%- endif -%}
+        {%- endfor -%}
+        {%- unless has_full_version -%}
+          {%- assign upcoming_version = rc_version -%}
+          {%- break -%}
+        {%- endunless -%}
+      {%- endif -%}
+    {%- endfor -%}
+
+    {%- if upcoming_version != "" -%}
+      <div class="margin20 no-margin-left no-margin-right no-margin-top padding20 bg-lightBlue fg-white">
+        <h2 class="text-accent text-bold">Wurst for Minecraft {{ upcoming_version }} is coming soon!</h2>
+        <p>
+          If you're seeing this message after Minecraft {{ upcoming_version }} has been released,
+          but before there is an official Wurst build for it, you can simply use the
+          <a href="{{ latest_update.url }}?mc={{ latest_rc }}" class="fg-white" style="text-decoration: underline">
+            latest {{ latest_rc }} build
+          </a>
+          for now. This build should already be fully compatible with Minecraft {{ upcoming_version }}.
+        </p>
+      </div>
+    {%- endif -%}
+
     <div class="margin20 no-margin-left no-margin-right no-margin-top">
       <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5218363098774955" data-ad-slot="6065673627" data-ad-format="auto" data-full-width-responsive="true"></ins>
       <script>
