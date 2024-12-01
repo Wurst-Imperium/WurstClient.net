@@ -8,6 +8,14 @@ from ruamel.yaml import YAML
 yaml = YAML()
 yaml.preserve_quotes = True
 
+manifest_url = "https://piston-meta.mojang.com/mc/game/version_manifest_v2.json"
+manifest = requests.get(manifest_url).json()
+
+version_info = {
+	version["id"]: {"type": version["type"], "releaseTime": version["releaseTime"]}
+	for version in manifest["versions"]
+}
+
 
 def read_front_matter(path):
 	"""Read YAML front matter from a Jekyll/Hugo post."""
@@ -43,16 +51,6 @@ def write_front_matter(path, front_matter):
 		file.write(new_content)
 
 
-def get_version_info():
-	"""Get Minecraft version information from Mojang API."""
-	manifest_url = "https://piston-meta.mojang.com/mc/game/version_manifest_v2.json"
-	manifest = requests.get(manifest_url).json()
-	return {
-		version["id"]: {"type": version["type"], "releaseTime": version["releaseTime"]}
-		for version in manifest["versions"]
-	}
-
-
 def find_wurst_update_post(version):
 	"""Find the Wurst update post for a specific version."""
 	for root, _, files in os.walk("_updates"):
@@ -70,7 +68,6 @@ def find_wurst_update_post(version):
 
 def update_wurst_post(wurst_version, mc_version, fapi_version):
 	"""Update a WurstClient.net post with new version information."""
-	version_info = get_version_info()
 	mc_version_type = version_info[mc_version]["type"]
 	front_matter, post_path = find_wurst_update_post(wurst_version)
 
@@ -112,6 +109,63 @@ def update_wurst_post(wurst_version, mc_version, fapi_version):
 	write_front_matter(post_path, front_matter)
 
 
+def update_install_guide(new_version):
+	"""Update the latest Minecraft version mentioned in the Wurst 7 installation guide."""
+	tutorial_path = "_tutorials/how-to-install/wurst-7.html"
+	front_matter = read_front_matter(tutorial_path)
+	front_matter["title"] = f"How To Install Wurst 7 for Minecraft {new_version} - 1.14.2"
+	front_matter["description"] = (
+		f"This step-by-step guide shows how to install the Wurst Client for Minecraft {new_version} - 1.14.2 with the Fabric Modloader. It works on Windows, Mac and Linux."
+	)
+	write_front_matter(tutorial_path, front_matter)
+
+
+def add_download_category(new_version, old_latest):
+	"""Add a new download category when a new Minecraft version is released."""
+	# Update download/index.html mcversions list
+	index_path = "download/index.html"
+	front_matter = read_front_matter(index_path)
+	if new_version not in front_matter["mcversions"]:
+		# Insert after "all" and "snapshots"
+		front_matter["mcversions"].insert(2, new_version)
+	write_front_matter(index_path, front_matter)
+
+	# Create download/minecraft-<version>.html page
+	# Get the update name from the previous version's page
+	old_page_path = f"download/minecraft-{old_latest.replace('.', '-')}.html"
+	old_front_matter = read_front_matter(old_page_path)
+	update_name = old_front_matter["description"].split(" - ", 1)[1]
+
+	new_page_path = f"download/minecraft-{new_version.replace('.', '-')}.html"
+	new_page_content = f"""---
+title: Minecraft {new_version} Wurst Hacked Client Downloads
+description: Wurst Client downloads for Minecraft {new_version} - {update_name}
+layout: download-list
+mcversion: "{new_version}"
+permalink: /download/minecraft-{new_version.replace('.', '-')}/
+---
+"""
+	with open(new_page_path, "w", encoding="utf-8") as f:
+		f.write(new_page_content)
+
+
+def update_latest_release(new_version):
+	"""Update all necessary files when the latest Minecraft release changes."""
+	with open("_config.yml", "r", encoding="utf-8") as f:
+		config = yaml.load(f)
+
+	old_latest = config["latest_mcversion"]
+	if new_version == old_latest:
+		return  # Already up to date
+
+	config["latest_mcversion"] = new_version
+	with open("_config.yml", "w", encoding="utf-8") as f:
+		yaml.dump(config, f)
+
+	update_install_guide(new_version)
+	add_download_category(new_version, old_latest)
+
+
 if __name__ == "__main__":
 	parser = argparse.ArgumentParser(
 		description="Adds the necessary Jekyll metadata when an existing Wurst Client update is ported to a new Minecraft version"
@@ -122,3 +176,7 @@ if __name__ == "__main__":
 
 	args = parser.parse_args()
 	update_wurst_post(args.wurst_version, args.mc_version, args.fapi_version)
+
+	mc_version_type = version_info[args.mc_version]["type"]
+	if mc_version_type == "release" and args.mc_version == manifest["latest"]["release"]:
+		update_latest_release(args.mc_version)
