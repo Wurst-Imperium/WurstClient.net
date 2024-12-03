@@ -106,7 +106,7 @@ google_adsense: true
 <div class="padding20 no-padding-left no-padding-right">
   <div class="container">
 
-    {%- assign latest_update = site.updates | where_exp: "item", "item.minecraft-versions" | sort: "modified_date" | last -%}
+    {%- assign latest_update = site.updates | where_exp: "item", "item.minecraft-versions" | last -%}
     {%- assign upcoming_version = "" -%}
     {%- assign latest_rc = "" -%}
     {%- for snapshot in latest_update.snapshots -%}
