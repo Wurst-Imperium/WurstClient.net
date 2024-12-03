@@ -42,6 +42,6 @@ jobs:
         run: |
           git config --local user.email "contact.wurstimperium@gmail.com"
           git config --local user.name "Wurst-Bot"
-          git add _updates/
+          git add .
           git commit -m "[Wurst-Bot] Port Wurst ${{ github.event.inputs.wurst_version }} to Minecraft ${{ github.event.inputs.mc_version }}"
           git push
