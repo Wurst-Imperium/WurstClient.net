@@ -15,6 +15,10 @@ on:
         description: "Fabric API version"
         required: true
 
+permissions:
+  # To push the automated commit.
+  contents: write
+
 jobs:
   update-post:
     runs-on: ubuntu-latest
