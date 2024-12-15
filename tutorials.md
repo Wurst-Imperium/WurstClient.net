@@ -16,7 +16,6 @@ google_adsense: true
 					<ul>
 						<li><p><a href="how-to-install/wurst-7/">How to install Wurst 7</a></p></li>
 						<li><p><a href="how-to-uninstall/wurst-7/">How to uninstall Wurst 7</a></p></li>
-						<li><p><a href="wurst-7-baritone">How to add Baritone to Wurst 7</a></p></li>
 					</ul>
 				</div>
 				<div class="cell">
