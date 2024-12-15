@@ -1,3 +1,4 @@
+import os
 from dataclasses import dataclass
 from io import StringIO
 from pathlib import Path
@@ -61,3 +62,12 @@ def write_data_file(path: Path, data: CommentedMap | CommentedSeq):
 	output = StringIO()
 	yaml.dump(data, output)
 	path.write_text(output.getvalue(), encoding="utf-8")
+
+
+def set_github_output(key: str, value: str):
+	"""Set a key-value pair in the GitHub Actions output."""
+	if "GITHUB_OUTPUT" not in os.environ:
+		print(f"Not running on GHA, would have set output: {key}={value}")
+		return
+	with open(os.environ["GITHUB_OUTPUT"], "a") as env:
+		print(f"{key}={value}", file=env)

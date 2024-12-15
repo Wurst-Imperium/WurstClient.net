@@ -1,0 +1,52 @@
+name: Announce Wurst Update
+run-name: Announce Wurst ${{ github.event.inputs.wurst_version }} update on WurstForum
+
+on:
+  workflow_dispatch:
+    inputs:
+      wurst_version:
+        description: "Wurst version (without v or -MC)"
+        required: true
+
+permissions:
+  # To push the automated commit.
+  contents: write
+
+jobs:
+  announce:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+          cache-dependency-path: _scripts/requirements.txt
+
+      - name: Install dependencies
+        run: |
+          pip install -r _scripts/requirements.txt
+
+      - name: Run announce_wurst_update.py
+        id: announce
+        env:
+          WURSTFORUM_TOKEN: ${{ secrets.WF_BOT_TOKEN }}
+        run: |
+          python _scripts/announce_wurst_update.py "${{ github.event.inputs.wurst_version }}"
+
+      - name: Write summary
+        run: |
+          echo "Discussion ID: ${{ steps.announce.outputs.discussion_id }}" >> $GITHUB_STEP_SUMMARY
+          echo "Link: <https://wurstforum.net/d/${{ steps.announce.outputs.discussion_id }}>" >> $GITHUB_STEP_SUMMARY
+
+      - name: Commit changes
+        run: |
+          git config --local user.email "contact.wurstimperium@gmail.com"
+          git config --local user.name "Wurst-Bot"
+          git add .
+          git commit -m "[Wurst-Bot] Link Wurst ${{ github.event.inputs.wurst_version }} post to WF thread ${{ steps.announce.outputs.discussion_id }}"
+          git push
