@@ -1,4 +1,6 @@
+import json
 import os
+import requests
 from dataclasses import dataclass
 from io import StringIO
 from pathlib import Path
@@ -14,6 +16,13 @@ class JekyllPost:
 	front_matter: CommentedMap
 	content: str
 	path: Path
+
+
+@dataclass
+class WurstForumDiscussion:
+	title: str
+	tags: list[int]
+	content: str
 
 
 def read_post(path: Path) -> JekyllPost:
@@ -50,6 +59,50 @@ def find_wurst_update_post(version: str) -> JekyllPost:
 			return post
 
 	raise ValueError(f"Could not find post for Wurst version {version}")
+
+
+def parse_changelog(content: str) -> str:
+	"""Parse the changelog from the content of a Wurst update post."""
+	changelog_lines = []
+	for line in content[content.find("## Changelog") :].splitlines():
+		stripped = line.strip()
+		if not stripped or stripped.startswith("-") or stripped.startswith("## Changelog"):
+			changelog_lines.append(line)
+			continue
+		break
+	return "\n".join(changelog_lines).strip()
+
+
+def upload_discussion(discussion: WurstForumDiscussion, dry_run: bool = False) -> int:
+	"""Upload a new discussion to WurstForum and return its ID."""
+	url = "https://wurstforum.net/api/discussions"
+	headers = {"Authorization": f"Token {os.getenv('WURSTFORUM_TOKEN')}"}
+	data = {
+		"data": {
+			"type": "discussions",
+			"attributes": {
+				"title": discussion.title,
+				"content": discussion.content,
+			},
+			"relationships": {
+				"tags": {
+					"data": [{"type": "tags", "id": tag_id} for tag_id in discussion.tags],
+				},
+			},
+		},
+	}
+
+	print(f"Request data: {json.dumps(data, indent=2)}")
+	if dry_run:
+		return 123
+
+	response = requests.post(url, headers=headers, json=data)
+	if not response.ok:
+		raise requests.HTTPError(f"Request failed (code {response.status_code}): {response.text}")
+	discussion_id = response.json().get("data", {}).get("id")
+	if not discussion_id:
+		raise ValueError(f"No discussion ID in response: {response.text}")
+	return discussion_id
 
 
 def read_data_file(path: Path) -> CommentedMap | CommentedSeq:
