@@ -6,6 +6,7 @@ from io import StringIO
 from pathlib import Path
 from ruamel.yaml import YAML
 from ruamel.yaml.comments import CommentedMap, CommentedSeq
+from typing import Iterator
 
 yaml = YAML()
 yaml.preserve_quotes = True
@@ -48,12 +49,16 @@ def write_front_matter(path: Path, front_matter: CommentedMap):
 	path.write_text(new_content, encoding="utf-8")
 
 
+def get_wurst_update_posts() -> Iterator[Path]:
+	"""Get all Wurst update post paths."""
+	for post_path in Path("_updates").rglob("????-??-??-Wurst-*.md"):
+		if post_path.is_file():
+			yield post_path
+
+
 def find_wurst_update_post(version: str) -> JekyllPost:
 	"""Find and read the Wurst update post for a specific version."""
-	for post_path in Path("_updates").rglob(f"????-??-??-Wurst-{version}.md"):
-		if not post_path.is_file():
-			continue
-
+	for post_path in get_wurst_update_posts():
 		post = read_post(post_path)
 		if post.front_matter["wurst-version"] == version:
 			return post
