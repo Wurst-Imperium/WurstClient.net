@@ -70,12 +70,12 @@ def main(wurst_version: str, mc_version: str, dry_run: bool = False):
 	prev_update = find_previous_wurst_update(mc_version, current_update_date)
 	if prev_update is None:
 		raise ValueError(f"No previous update found for Minecraft {mc_version}")
-	print(f"Previous update: {prev_update.path.name}")
+	print(f"Previous update: {prev_update.name}")
 
 	# Combine changelogs
 	changelogs = []
 	update_posts = find_updates_between(prev_update, wurst_version)
-	print(f"Updates between {prev_update.path.name} and {wurst_version}: {update_posts}")
+	print(f"Updates between {prev_update.name} and {wurst_version}: {update_posts}")
 	for post_path in update_posts:
 		post = read_post(post_path)
 		changelog = util.parse_changelog(post.content)
