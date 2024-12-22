@@ -27,7 +27,7 @@ def create_announcement(wurst_update: JekyllPost) -> WurstForumDiscussion:
 	content = announcement_template.format(
 		title=title,
 		wurst_version=wurst_version,
-		update_url=f"https://www.wurstclient.net/updates/wurst-{wurst_version.replace('.', '-')}/",
+		update_url=wurst_update.get_update_url(),
 		image_url=wurst_update.front_matter["image"],
 		changelog=util.parse_changelog(wurst_update.content),
 	)

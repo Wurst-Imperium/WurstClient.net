@@ -18,6 +18,9 @@ class JekyllPost:
 	content: str
 	path: Path
 
+	def get_update_url(self) -> str:
+		return f"https://www.wurstclient.net/updates/wurst-{self.front_matter['wurst-version'].replace('.', '-')}/"
+
 
 @dataclass
 class WurstForumDiscussion:
