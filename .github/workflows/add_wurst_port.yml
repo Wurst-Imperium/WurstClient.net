@@ -57,6 +57,7 @@ jobs:
 
   announce:
     runs-on: ubuntu-latest
+    needs: update-post
     if: ${{ github.event.inputs.announce == 'true' }}
     steps:
       - name: Checkout repository
