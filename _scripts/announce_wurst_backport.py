@@ -39,17 +39,13 @@ def find_updates_between(start_post: Path, end_version: str) -> list[Path]:
 	"""Find all update posts between start_post and the post for end_version, ordered by date."""
 	updates = []
 	start_date = datetime.strptime(start_post.name[:10], "%Y-%m-%d")
+	end_post = util.find_wurst_update_post(end_version)
+	end_date = datetime.strptime(end_post.path.name[:10], "%Y-%m-%d")
 
 	for post_path in util.get_wurst_update_posts():
 		post_date = datetime.strptime(post_path.name[:10], "%Y-%m-%d")
-		if post_date <= start_date:
-			continue
-
-		post = read_post(post_path)
-		if post.front_matter["wurst-version"] == end_version:
+		if post_date > start_date and post_date <= end_date:
 			updates.append(post_path)
-			break
-		updates.append(post_path)
 
 	return sorted(updates, key=lambda p: p.name[:10])
 
