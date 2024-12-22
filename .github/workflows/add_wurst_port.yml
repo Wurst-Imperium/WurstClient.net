@@ -14,34 +14,34 @@ on:
       fapi_version:
         description: "Fabric API version"
         required: true
+      announce:
+        description: "Announce on WurstForum (only works for backports)"
+        required: false
+        default: "false"
 
 permissions:
   # To push the automated commit.
   contents: write
 
 jobs:
+
   update-post:
     runs-on: ubuntu-latest
     steps:
-
       - name: Checkout repository
         uses: actions/checkout@v4
-
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
           cache: "pip"
           cache-dependency-path: _scripts/requirements.txt
-
       - name: Install dependencies
         run: |
           pip install -r _scripts/requirements.txt
-
       - name: Run add_wurst_port.py
         run: |
           python _scripts/add_wurst_port.py "${{ github.event.inputs.wurst_version }}" "${{ github.event.inputs.mc_version }}" "${{ github.event.inputs.fapi_version }}"
-
       - name: Commit changes
         run: |
           git config --local user.email "contact.wurstimperium@gmail.com"
@@ -49,3 +49,22 @@ jobs:
           git add .
           git commit -m "[Wurst-Bot] Port Wurst ${{ github.event.inputs.wurst_version }} to Minecraft ${{ github.event.inputs.mc_version }}"
           git push
+
+  announce:
+    runs-on: ubuntu-latest
+    if: ${{ github.event.inputs.announce == 'true' }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+          cache-dependency-path: _scripts/requirements.txt
+      - name: Install dependencies
+        run: |
+          pip install -r _scripts/requirements.txt
+      - name: Run announce_wurst_backport.py
+        run: |
+          python _scripts/announce_wurst_backport.py "${{ github.event.inputs.wurst_version }}" "${{ github.event.inputs.mc_version }}"
