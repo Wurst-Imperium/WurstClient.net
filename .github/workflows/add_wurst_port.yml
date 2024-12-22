@@ -72,5 +72,12 @@ jobs:
         run: |
           pip install -r _scripts/requirements.txt
       - name: Run announce_wurst_backport.py
+        id: announce
+        env:
+          WURSTFORUM_TOKEN: ${{ secrets.WF_BOT_TOKEN }}
         run: |
           python _scripts/announce_wurst_backport.py "${{ github.event.inputs.wurst_version }}" "${{ github.event.inputs.mc_version }}"
+      - name: Write summary
+        run: |
+          echo "Discussion ID: ${{ steps.announce.outputs.discussion_id }}" >> $GITHUB_STEP_SUMMARY
+          echo "Link: <https://wurstforum.net/d/${{ steps.announce.outputs.discussion_id }}>" >> $GITHUB_STEP_SUMMARY
