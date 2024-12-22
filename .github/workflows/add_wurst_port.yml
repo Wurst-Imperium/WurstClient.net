@@ -47,13 +47,13 @@ jobs:
       - name: Run add_wurst_port.py
         run: |
           python _scripts/add_wurst_port.py "${{ github.event.inputs.wurst_version }}" "${{ github.event.inputs.mc_version }}" "${{ github.event.inputs.fapi_version }}"
-      - name: Commit changes
-        run: |
-          git config --local user.email "contact.wurstimperium@gmail.com"
-          git config --local user.name "Wurst-Bot"
-          git add .
-          git commit -m "[Wurst-Bot] Port Wurst ${{ github.event.inputs.wurst_version }} to Minecraft ${{ github.event.inputs.mc_version }}"
-          git push
+      # - name: Commit changes
+      #   run: |
+      #     git config --local user.email "contact.wurstimperium@gmail.com"
+      #     git config --local user.name "Wurst-Bot"
+      #     git add .
+      #     git commit -m "[Wurst-Bot] Port Wurst ${{ github.event.inputs.wurst_version }} to Minecraft ${{ github.event.inputs.mc_version }}"
+      #     git push
 
   announce:
     runs-on: ubuntu-latest
