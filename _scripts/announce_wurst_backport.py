@@ -54,7 +54,7 @@ def find_updates_between(start_post: Path, end_version: str) -> list[Path]:
 	return sorted(updates, key=lambda p: p.name[:10])
 
 
-def main(wurst_version, mc_version):
+def main(wurst_version: str, mc_version: str, dry_run: bool = False):
 	# Title
 	title = f"Wurst {wurst_version} backported to Minecraft {mc_version}"
 
@@ -70,10 +70,12 @@ def main(wurst_version, mc_version):
 	prev_update = find_previous_wurst_update(mc_version, current_update_date)
 	if prev_update is None:
 		raise ValueError(f"No previous update found for Minecraft {mc_version}")
+	print(f"Previous update: {prev_update.path.name}")
 
 	# Combine changelogs
 	changelogs = []
 	update_posts = find_updates_between(prev_update, wurst_version)
+	print(f"Updates between {prev_update.path.name} and {wurst_version}: {update_posts}")
 	for post_path in update_posts:
 		post = read_post(post_path)
 		changelog = util.parse_changelog(post.content)
@@ -101,7 +103,7 @@ def main(wurst_version, mc_version):
 	print(f"Content: {announcement.content}")
 
 	# Upload announcement
-	discussion_id = util.upload_discussion(announcement)
+	discussion_id = util.upload_discussion(announcement, dry_run=dry_run)
 	print(f"https://wurstforum.net/d/{discussion_id}")
 	util.set_github_output("discussion_id", discussion_id)
 
@@ -110,5 +112,8 @@ if __name__ == "__main__":
 	parser = argparse.ArgumentParser(description="Announces a new Wurst backport on WurstForum")
 	parser.add_argument("wurst_version", help="Wurst version (without v or -MC)")
 	parser.add_argument("mc_version", help="Minecraft version")
+	parser.add_argument(
+		"--dry-run", action="store_true", help="Don't actually upload the announcement"
+	)
 	args = parser.parse_args()
-	main(args.wurst_version, args.mc_version)
+	main(args.wurst_version, args.mc_version, args.dry_run)
