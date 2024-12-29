@@ -33,6 +33,8 @@ def update_wurst_post(wurst_version, mc_version, fapi_version):
 				reverse=True,
 			)
 	else:
+		if "minecraft-versions" not in front_matter:
+			front_matter["minecraft-versions"] = []
 		if mc_version not in front_matter["minecraft-versions"]:
 			front_matter["minecraft-versions"].append(mc_version)
 			front_matter["minecraft-versions"].sort(
@@ -41,6 +43,8 @@ def update_wurst_post(wurst_version, mc_version, fapi_version):
 			)
 
 	# Update Fabric API versions
+	if "fabric-api" not in front_matter:
+		front_matter["fabric-api"] = {}
 	if mc_version not in front_matter["fabric-api"]:
 		front_matter["fabric-api"][mc_version] = fapi_version
 		front_matter["fabric-api"] = dict(

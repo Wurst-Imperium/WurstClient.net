@@ -25,6 +25,10 @@ google_adsense: true
 					{%- unless update.minecraft-versions contains page.mcversion -%}
 						{%- continue -%}
 					{%- endunless -%}
+				{%- else -%}
+					{%- unless update.minecraft-versions -%}
+						{%- continue -%}
+					{%- endunless -%}
 				{%- endif -%}
 				{%- if update.redirect_url -%}
 					{%- assign update_url = update.redirect_url -%}
