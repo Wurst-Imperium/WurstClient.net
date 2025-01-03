@@ -2,11 +2,14 @@
 name: Deploy Jekyll with GitHub Pages dependencies preinstalled
 
 on:
-  # Runs on pushes targeting the default branch
   push:
     branches: ["gh-pages"]
-
-  # Allows you to run this workflow manually from the Actions tab
+  schedule:
+    # cron: minute, hour, day of month, month, day of week
+    # Enable the santa hat logo on Dec 1st
+    - cron: "0 0 1 12 *"
+    # Update the copyright year and disable the santa hat logo on Jan 1st
+    - cron: "0 0 1 1 *"
   workflow_dispatch:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
