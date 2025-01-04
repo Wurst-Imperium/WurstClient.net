@@ -11,6 +11,8 @@ on:
 permissions:
   # To push the automated commit.
   contents: write
+  # To trigger the Jekyll workflow.
+  actions: write
 
 jobs:
   announce:
@@ -50,3 +52,10 @@ jobs:
           git add .
           git commit -m "[Wurst-Bot] Link Wurst ${{ github.event.inputs.wurst_version }} post to WF thread ${{ steps.announce.outputs.discussion_id }}"
           git push
+
+      # For some reason the commit above doesn't automatically trigger the
+      # Jekyll workflow, so we need to explicitly start it here.
+      - name: Trigger Jekyll workflow
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run jekyll.yml
