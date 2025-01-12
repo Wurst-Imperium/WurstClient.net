@@ -53,9 +53,21 @@ jobs:
           git commit -m "[Wurst-Bot] Link Wurst ${{ github.event.inputs.wurst_version }} post to WF thread ${{ steps.announce.outputs.discussion_id }}"
           git push
 
-      # For some reason the commit above doesn't automatically trigger the
-      # Jekyll workflow, so we need to explicitly start it here.
       - name: Trigger Jekyll workflow
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: gh workflow run jekyll.yml
+        id: jekyll_dispatch
+        uses: codex-/return-dispatch@v2
+        with:
+          token: ${{ github.token }}
+          owner: Wurst-Imperium
+          repo: WurstClient.net
+          ref: gh-pages
+          workflow: jekyll.yml
+
+      - name: Wait for Jekyll workflow to finish (run ${{ steps.jekyll_dispatch.outputs.run_id }})
+        uses: codex-/await-remote-run@v1
+        with:
+          token: ${{ github.token }}
+          owner: Wurst-Imperium
+          repo: WurstClient.net
+          run_id: ${{ steps.jekyll_dispatch.outputs.run_id }}
+          run_timeout_seconds: 300  # 5 minutes
