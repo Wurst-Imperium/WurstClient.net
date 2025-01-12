@@ -19,55 +19,58 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-      - name: Checkout repository
-        uses: actions/checkout@v4
+    - name: Checkout repository
+      uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-          cache: "pip"
-          cache-dependency-path: _scripts/requirements.txt
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: "3.12"
+        cache: "pip"
+        cache-dependency-path: _scripts/requirements.txt
 
-      - name: Install dependencies
-        run: |
-          pip install -r _scripts/requirements.txt
+    - name: Install dependencies
+      run: |
+        pip install -r _scripts/requirements.txt
 
-      - name: Run announce_wurst_update.py
-        id: announce
-        env:
-          WURSTFORUM_TOKEN: ${{ secrets.WF_BOT_TOKEN }}
-        run: |
-          python _scripts/announce_wurst_update.py "${{ github.event.inputs.wurst_version }}"
+    - name: Run announce_wurst_update.py
+      id: announce
+      env:
+        WURSTFORUM_TOKEN: ${{ secrets.WF_BOT_TOKEN }}
+      run: |
+        python _scripts/announce_wurst_update.py \
+          "${{ github.event.inputs.wurst_version }}"
 
-      - name: Write summary
-        run: |
-          echo "Discussion ID: ${{ steps.announce.outputs.discussion_id }}" >> $GITHUB_STEP_SUMMARY
-          echo "Link: <https://wurstforum.net/d/${{ steps.announce.outputs.discussion_id }}>" >> $GITHUB_STEP_SUMMARY
+    - name: Write summary
+      run: |
+        echo "Discussion ID: ${{ steps.announce.outputs.discussion_id }}" >> $GITHUB_STEP_SUMMARY
+        echo "Link: <https://wurstforum.net/d/${{ steps.announce.outputs.discussion_id }}>" >> $GITHUB_STEP_SUMMARY
 
-      - name: Commit changes
-        run: |
-          git config --local user.email "contact.wurstimperium@gmail.com"
-          git config --local user.name "Wurst-Bot"
-          git add .
-          git commit -m "[Wurst-Bot] Link Wurst ${{ github.event.inputs.wurst_version }} post to WF thread ${{ steps.announce.outputs.discussion_id }}"
-          git push
+    - name: Commit changes
+      run: |
+        WURST_VERSION=${{ github.event.inputs.wurst_version }}
+        DISCUSSION_ID=${{ steps.announce.outputs.discussion_id }}
+        git config --local user.email "contact.wurstimperium@gmail.com"
+        git config --local user.name "Wurst-Bot"
+        git add .
+        git commit -m "[Wurst-Bot] Link Wurst $WURST_VERSION post to WF thread $DISCUSSION_ID"
+        git push
 
-      - name: Trigger Jekyll workflow
-        id: jekyll_dispatch
-        uses: codex-/return-dispatch@v2
-        with:
-          token: ${{ github.token }}
-          owner: Wurst-Imperium
-          repo: WurstClient.net
-          ref: gh-pages
-          workflow: jekyll.yml
+    - name: Trigger Jekyll workflow
+      id: jekyll_dispatch
+      uses: codex-/return-dispatch@v2
+      with:
+        token: ${{ github.token }}
+        owner: Wurst-Imperium
+        repo: WurstClient.net
+        ref: gh-pages
+        workflow: jekyll.yml
 
-      - name: Wait for Jekyll workflow to finish (run ${{ steps.jekyll_dispatch.outputs.run_id }})
-        uses: codex-/await-remote-run@v1
-        with:
-          token: ${{ github.token }}
-          owner: Wurst-Imperium
-          repo: WurstClient.net
-          run_id: ${{ steps.jekyll_dispatch.outputs.run_id }}
-          run_timeout_seconds: 300  # 5 minutes
+    - name: Wait for Jekyll workflow to finish (run ${{ steps.jekyll_dispatch.outputs.run_id }})
+      uses: codex-/await-remote-run@v1
+      with:
+        token: ${{ github.token }}
+        owner: Wurst-Imperium
+        repo: WurstClient.net
+        run_id: ${{ steps.jekyll_dispatch.outputs.run_id }}
+        run_timeout_seconds: 300  # 5 minutes

@@ -1,8 +1,11 @@
-name: Deploy Jekyll site to GitHub Pages
+name: Deploy Jekyll site to Pages
 
 on:
   push:
-    branches: ["gh-pages"]
+    branches:
+      - "gh-pages"
+    tags-ignore:
+      - "**"
   schedule:
     # cron: minute, hour, day of month, month, day of week
     # Enable santa hat logo on Dec 1st
@@ -31,34 +34,34 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Echo distinct ID ${{ github.event.inputs.distinct_id }}
-        run: echo ${{ github.event.inputs.distinct_id }}
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-      - name: Build with Jekyll
-        uses: actions/jekyll-build-pages@v1
-        with:
-          source: ./
-          destination: ./_site
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+    - name: Echo distinct ID ${{ github.event.inputs.distinct_id }}
+      run: echo ${{ github.event.inputs.distinct_id }}
+    - name: Checkout repository
+      uses: actions/checkout@v4
+    - name: Setup Pages
+      uses: actions/configure-pages@v5
+    - name: Build with Jekyll
+      uses: actions/jekyll-build-pages@v1
+      with:
+        source: ./
+        destination: ./_site
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v3
 
   # Deployment job
   deploy:
+    runs-on: ubuntu-latest
+    needs: build
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
     steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
-      - name: Purge Cloudflare cache
-        run: |
-          curl -X POST "https://api.cloudflare.com/client/v4/zones/${{ secrets.CLOUDFLARE_ZONE_ID }}/purge_cache" \
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v4
+    - name: Purge Cloudflare cache
+      run: |
+        curl -X POST "https://api.cloudflare.com/client/v4/zones/${{ secrets.CLOUDFLARE_ZONE_ID }}/purge_cache" \
           -H "Authorization: Bearer ${{ secrets.CLOUDFLARE_PURGE_TOKEN }}" \
           -H "Content-Type: application/json" \
           --data '{"purge_everything":true}'
