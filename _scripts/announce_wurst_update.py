@@ -1,5 +1,5 @@
-import argparse
 import util
+from argparse import ArgumentParser
 from util import JekyllPost, WurstForumDiscussion
 
 announcement_template = """
@@ -56,7 +56,7 @@ def main(wurst_version):
 
 
 if __name__ == "__main__":
-	parser = argparse.ArgumentParser(description="Announces a new Wurst update on WurstForum")
+	parser = ArgumentParser(description="Announces a new Wurst update on WurstForum")
 	parser.add_argument("wurst_version", help="Wurst version (without v or -MC)")
 	args = parser.parse_args()
 	main(args.wurst_version)

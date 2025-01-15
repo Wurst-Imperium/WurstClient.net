@@ -1,8 +1,8 @@
-import argparse
 import datetime
 import requests
 import textwrap
 import util
+from argparse import ArgumentParser
 from pathlib import Path
 
 manifest_url = "https://piston-meta.mojang.com/mc/game/version_manifest_v2.json"
@@ -125,7 +125,7 @@ def main(wurst_version, mc_version, fapi_version):
 
 
 if __name__ == "__main__":
-	parser = argparse.ArgumentParser(
+	parser = ArgumentParser(
 		description="Adds the necessary Jekyll metadata when an existing Wurst Client update is ported to a new Minecraft version"
 	)
 	parser.add_argument("wurst_version", help="Wurst version")

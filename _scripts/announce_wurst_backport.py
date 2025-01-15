@@ -1,8 +1,8 @@
-import argparse
 import util
+from argparse import ArgumentParser
 from datetime import datetime
 from pathlib import Path
-from util import WurstForumDiscussion, read_post
+from util import WurstForumDiscussion
 
 announcement_template = """
 Wurst {wurst_version} has been backported to Minecraft {mc_version}. Download it here: <{update_url}>
@@ -26,7 +26,7 @@ def find_previous_wurst_update(mc_version: str, before_date: datetime) -> Path |
 		if post_date >= before_date:
 			continue
 
-		post = read_post(post_path)
+		post = util.read_post(post_path)
 		if mc_version in post.front_matter.get("minecraft-versions", []):
 			if latest_date is None or post_date > latest_date:
 				latest_date = post_date
@@ -105,7 +105,7 @@ def main(wurst_version: str, mc_version: str, dry_run: bool = False):
 
 
 if __name__ == "__main__":
-	parser = argparse.ArgumentParser(description="Announces a new Wurst backport on WurstForum")
+	parser = ArgumentParser(description="Announces a new Wurst backport on WurstForum")
 	parser.add_argument("wurst_version", help="Wurst version (without v or -MC)")
 	parser.add_argument("mc_version", help="Minecraft version")
 	parser.add_argument(
