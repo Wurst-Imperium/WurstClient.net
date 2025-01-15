@@ -73,7 +73,7 @@ def main(wurst_version: str, mc_version: str, dry_run: bool = False):
 	update_posts = find_updates_between(prev_update, wurst_version)
 	print(f"Updates between {prev_update.name} and {wurst_version}: {update_posts}")
 	for post_path in update_posts:
-		post = read_post(post_path)
+		post = util.read_post(post_path)
 		changelog = util.parse_changelog(post.content)
 		update_url = post.get_update_url()
 		new_heading = (
