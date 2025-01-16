@@ -59,17 +59,16 @@ def write_front_matter(path: Path, front_matter: CommentedMap):
 	path.write_text(new_content, encoding="utf-8")
 
 
-def get_wurst_update_posts() -> Iterator[Path]:
+def get_wurst_update_posts() -> Iterator[JekyllPost]:
 	"""Get all Wurst update post paths."""
 	for post_path in Path("_updates").rglob("????-??-??-Wurst-*.md"):
 		if post_path.is_file():
-			yield post_path
+			yield read_post(post_path)
 
 
 def find_wurst_update_post(version: str) -> JekyllPost:
 	"""Find and read the Wurst update post for a specific version."""
-	for post_path in get_wurst_update_posts():
-		post = read_post(post_path)
+	for post in get_wurst_update_posts():
 		if post.front_matter["wurst-version"] == version:
 			return post
 

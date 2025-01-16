@@ -18,8 +18,7 @@ This backport makes the following changes accessible to Minecraft {mc_version} p
 def find_update_before(before_date: datetime, mc_version: str) -> JekyllPost | None:
 	"""Find the newest Wurst update before before_date that was available for mc_version."""
 	latest_post = None
-	for post_path in util.get_wurst_update_posts():
-		post = util.read_post(post_path)
+	for post in util.get_wurst_update_posts():
 		if post.get_date() >= before_date:
 			continue
 		if mc_version in post.get_mc_versions():
@@ -35,8 +34,7 @@ def find_updates_between(start_post: JekyllPost, end_version: str) -> list[Jekyl
 	end_post = util.find_wurst_update_post(end_version)
 	end_date = end_post.get_date()
 
-	for post_path in util.get_wurst_update_posts():
-		post = util.read_post(post_path)
+	for post in util.get_wurst_update_posts():
 		post_date = post.get_date()
 		if post_date > start_date and post_date <= end_date:
 			updates.append(post)
