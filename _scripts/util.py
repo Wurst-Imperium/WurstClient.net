@@ -2,6 +2,7 @@ import json
 import os
 import requests
 from dataclasses import dataclass
+from datetime import datetime
 from io import StringIO
 from pathlib import Path
 from ruamel.yaml import YAML
@@ -20,6 +21,12 @@ class JekyllPost:
 
 	def get_update_url(self) -> str:
 		return f"https://www.wurstclient.net/updates/wurst-{self.front_matter['wurst-version'].replace('.', '-')}/"
+
+	def get_date(self) -> datetime:
+		return datetime.strptime(self.path.name[:10], "%Y-%m-%d")
+
+	def get_mc_versions(self) -> list[str]:
+		return self.front_matter.get("minecraft-versions", [])
 
 
 @dataclass

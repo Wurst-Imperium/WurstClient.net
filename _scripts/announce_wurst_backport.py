@@ -1,8 +1,7 @@
 import util
 from argparse import ArgumentParser
 from datetime import datetime
-from pathlib import Path
-from util import WurstForumDiscussion
+from util import JekyllPost, WurstForumDiscussion
 
 announcement_template = """
 Wurst {wurst_version} has been backported to Minecraft {mc_version}. Download it here: <{update_url}>
@@ -16,38 +15,33 @@ This backport makes the following changes accessible to Minecraft {mc_version} p
 """.strip()
 
 
-def find_previous_wurst_update(mc_version: str, before_date: datetime) -> Path | None:
-	"""Find the newest Wurst update before before_date that was available for the given MC version."""
+def find_update_before(before_date: datetime, mc_version: str) -> JekyllPost | None:
+	"""Find the newest Wurst update before before_date that was available for mc_version."""
 	latest_post = None
-	latest_date = None
-
 	for post_path in util.get_wurst_update_posts():
-		post_date = datetime.strptime(post_path.name[:10], "%Y-%m-%d")
-		if post_date >= before_date:
-			continue
-
 		post = util.read_post(post_path)
-		if mc_version in post.front_matter.get("minecraft-versions", []):
-			if latest_date is None or post_date > latest_date:
-				latest_date = post_date
-				latest_post = post_path
-
+		if post.get_date() >= before_date:
+			continue
+		if mc_version in post.get_mc_versions():
+			if latest_post is None or post.get_date() > latest_post.get_date():
+				latest_post = post
 	return latest_post
 
 
-def find_updates_between(start_post: Path, end_version: str) -> list[Path]:
+def find_updates_between(start_post: JekyllPost, end_version: str) -> list[JekyllPost]:
 	"""Find all update posts between start_post and the post for end_version, ordered by date."""
 	updates = []
-	start_date = datetime.strptime(start_post.name[:10], "%Y-%m-%d")
+	start_date = start_post.get_date()
 	end_post = util.find_wurst_update_post(end_version)
-	end_date = datetime.strptime(end_post.path.name[:10], "%Y-%m-%d")
+	end_date = end_post.get_date()
 
 	for post_path in util.get_wurst_update_posts():
-		post_date = datetime.strptime(post_path.name[:10], "%Y-%m-%d")
+		post = util.read_post(post_path)
+		post_date = post.get_date()
 		if post_date > start_date and post_date <= end_date:
-			updates.append(post_path)
+			updates.append(post)
 
-	return sorted(updates, key=lambda p: p.name[:10])
+	return sorted(updates, key=lambda p: p.get_date())
 
 
 def main(wurst_version: str, mc_version: str, dry_run: bool = False):
@@ -62,18 +56,18 @@ def main(wurst_version: str, mc_version: str, dry_run: bool = False):
 
 	# Find previous update for this MC version
 	current_update = util.find_wurst_update_post(wurst_version)
-	current_update_date = datetime.strptime(current_update.path.name[:10], "%Y-%m-%d")
-	prev_update = find_previous_wurst_update(mc_version, current_update_date)
+	prev_update = find_update_before(current_update.get_date(), mc_version)
 	if prev_update is None:
 		raise ValueError(f"No previous update found for Minecraft {mc_version}")
-	print(f"Previous update: {prev_update.name}")
+	print(f"Previous update: {prev_update.path.name}")
 
 	# Combine changelogs
 	changelogs = []
 	update_posts = find_updates_between(prev_update, wurst_version)
-	print(f"Updates between {prev_update.name} and {wurst_version}: {update_posts}")
-	for post_path in update_posts:
-		post = util.read_post(post_path)
+	print(
+		f"Updates between {prev_update.path.name} and {wurst_version}: {[post.path.name for post in update_posts]}"
+	)
+	for post in update_posts:
 		changelog = util.parse_changelog(post.content)
 		update_url = post.get_update_url()
 		new_heading = (
