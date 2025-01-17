@@ -76,7 +76,7 @@ def main(wurst_version: str, mc_version: str, dry_run: bool = False):
 	content = announcement_template.format(
 		wurst_version=wurst_version,
 		mc_version=mc_version,
-		update_url=f"{post.get_update_url()}?mc={mc_version}",
+		update_url=f"{current_update.get_update_url()}?mc={mc_version}",
 		changelogs="\n\n".join(changelogs),
 	)
 	announcement = WurstForumDiscussion(title, list(tags.values()), content)
