@@ -27,18 +27,13 @@ def find_update_before(before_date: datetime, mc_version: str) -> JekyllPost | N
 	return latest_post
 
 
-def find_updates_between(start_post: JekyllPost, end_version: str) -> list[JekyllPost]:
-	"""Find all update posts between start_post and the post for end_version, ordered by date."""
+def find_updates_between(start_date: datetime, end_date: datetime) -> list[JekyllPost]:
+	"""Find all update posts between start_date and end_date, in chronological order."""
 	updates = []
-	start_date = start_post.get_date()
-	end_post = util.find_wurst_update_post(end_version)
-	end_date = end_post.get_date()
-
 	for post in util.get_wurst_update_posts():
 		post_date = post.get_date()
 		if post_date > start_date and post_date <= end_date:
 			updates.append(post)
-
 	return sorted(updates, key=lambda p: p.get_date())
 
 
@@ -61,7 +56,7 @@ def main(wurst_version: str, mc_version: str, dry_run: bool = False):
 
 	# Combine changelogs
 	changelogs = []
-	update_posts = find_updates_between(prev_update, wurst_version)
+	update_posts = find_updates_between(prev_update.get_date(), current_update.get_date())
 	print(
 		f"Updates between {prev_update.path.name} and {wurst_version}: {[post.path.name for post in update_posts]}"
 	)
