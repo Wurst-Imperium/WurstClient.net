@@ -25,6 +25,9 @@ class JekyllPost:
 	def get_date(self) -> datetime:
 		return datetime.strptime(self.path.name[:10], "%Y-%m-%d")
 
+	def get_wurst_version(self) -> str:
+		return self.front_matter["wurst-version"]
+
 	def get_mc_versions(self) -> list[str]:
 		return self.front_matter.get("minecraft-versions", [])
 

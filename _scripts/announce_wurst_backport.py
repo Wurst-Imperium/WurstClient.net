@@ -52,20 +52,18 @@ def main(wurst_version: str, mc_version: str, dry_run: bool = False):
 	prev_update = find_update_before(current_update.get_date(), mc_version)
 	if prev_update is None:
 		raise ValueError(f"No previous update found for Minecraft {mc_version}")
-	print(f"Previous update: {prev_update.path.name}")
+	print(f"Previous update: {prev_update.get_wurst_version()}")
 
 	# Combine changelogs
 	changelogs = []
 	update_posts = find_updates_between(prev_update.get_date(), current_update.get_date())
 	print(
-		f"Updates between {prev_update.path.name} and {wurst_version}: {[post.path.name for post in update_posts]}"
+		f"Updates between {prev_update.get_wurst_version()} and {wurst_version}: {[post.get_wurst_version() for post in update_posts]}"
 	)
 	for post in update_posts:
 		changelog = util.parse_changelog(post.content)
 		update_url = post.get_update_url()
-		new_heading = (
-			f"## Changes from [Wurst {post.front_matter['wurst-version']}]({update_url})\n"
-		)
+		new_heading = f"## Changes from [Wurst {post.get_wurst_version()}]({update_url})\n"
 
 		# Filter out posts with multiple "## Changelog" headings
 		if changelog.startswith("## Changelog\n") and changelog.count("## Changelog") == 1:
