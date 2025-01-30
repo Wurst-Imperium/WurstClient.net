@@ -28,8 +28,12 @@ class JekyllPost:
 	def get_wurst_version(self) -> str:
 		return self.front_matter["wurst-version"]
 
-	def get_mc_versions(self) -> list[str]:
-		return self.front_matter.get("minecraft-versions", [])
+	def get_mc_versions_including_snapshots(self) -> list[str]:
+		return [
+			v
+			for v in self.front_matter.get("minecraft-versions", [])
+			+ self.front_matter.get("snapshots", [])
+		]
 
 
 @dataclass

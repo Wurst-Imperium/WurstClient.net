@@ -21,7 +21,7 @@ def find_update_before(before_date: datetime, mc_version: str) -> JekyllPost | N
 	for post in util.get_wurst_update_posts():
 		if post.get_date() >= before_date:
 			continue
-		if mc_version in post.get_mc_versions():
+		if mc_version in post.get_mc_versions_including_snapshots():
 			if latest_post is None or post.get_date() > latest_post.get_date():
 				latest_post = post
 	return latest_post
