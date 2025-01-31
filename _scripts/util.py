@@ -188,6 +188,25 @@ def write_data_file(path: Path, data: CommentedMap | CommentedSeq):
 	path.write_text(output.getvalue(), encoding="utf-8")
 
 
+def read_gradle_properties(branch: str) -> dict[str, str]:
+	"""Get a dict of gradle.properties entries for the given Wurst7 branch."""
+	response = requests.get(
+		f"https://raw.githubusercontent.com/Wurst-Imperium/Wurst7/{branch}/gradle.properties"
+	)
+	if not response.ok:
+		raise ValueError(
+			f"Failed to read gradle.properties from Wurst7@{branch}: {response.status_code}\n{response.text}"
+		)
+
+	props = {}
+	for line in response.text.splitlines():
+		if "=" not in line or line.startswith("#"):
+			continue
+		key, value = line.split("=", 1)
+		props[key.strip()] = value.strip()
+	return props
+
+
 def set_github_output(key: str, value: str):
 	"""Set a key-value pair in the GitHub Actions output."""
 	if "GITHUB_OUTPUT" not in os.environ:
