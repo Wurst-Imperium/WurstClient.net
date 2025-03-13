@@ -7,6 +7,9 @@ on:
       wurst_version:
         description: "Wurst version (without v or -MC)"
         required: true
+      distinct_id:
+        description: "Automatically set by the return-dispatch action (leave blank if running manually)"
+        required: false
 
 permissions:
   # To push the automated commit.
@@ -18,6 +21,9 @@ jobs:
   announce:
     runs-on: ubuntu-latest
     steps:
+
+    - name: Echo distinct ID ${{ github.event.inputs.distinct_id }}
+      run: echo ${{ github.event.inputs.distinct_id }}
 
     - name: Checkout repository
       uses: actions/checkout@v4
