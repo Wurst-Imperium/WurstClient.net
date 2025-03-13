@@ -7,6 +7,10 @@ on:
       wurst_version:
         description: "Wurst version (without v or -MC)"
         required: true
+      dry_run:
+        description: "Don't actually upload the announcement"
+        type: boolean
+        default: false
       distinct_id:
         description: "Automatically set by the return-dispatch action (leave blank if running manually)"
         required: false
@@ -45,14 +49,11 @@ jobs:
         WURSTFORUM_TOKEN: ${{ secrets.WF_BOT_TOKEN }}
       run: |
         python _scripts/announce_wurst_update.py \
-          "${{ github.event.inputs.wurst_version }}"
-
-    - name: Write summary
-      run: |
-        echo "Discussion ID: ${{ steps.announce.outputs.discussion_id }}" >> $GITHUB_STEP_SUMMARY
-        echo "Link: <https://wurstforum.net/d/${{ steps.announce.outputs.discussion_id }}>" >> $GITHUB_STEP_SUMMARY
+          "${{ github.event.inputs.wurst_version }}" \
+          ${{ github.event.inputs.dry_run == 'true' && '--dry-run' || '' }}
 
     - name: Commit changes
+      if: ${{ github.event.inputs.dry_run != 'true' }}
       run: |
         WURST_VERSION=${{ github.event.inputs.wurst_version }}
         DISCUSSION_ID=${{ steps.announce.outputs.discussion_id }}
@@ -63,6 +64,7 @@ jobs:
         git push
 
     - name: Trigger Jekyll workflow
+      if: ${{ github.event.inputs.dry_run != 'true' }}
       id: jekyll_dispatch
       uses: codex-/return-dispatch@v2
       with:
@@ -73,6 +75,7 @@ jobs:
         workflow: jekyll.yml
 
     - name: Wait for Jekyll workflow to finish (run ${{ steps.jekyll_dispatch.outputs.run_id }})
+      if: ${{ github.event.inputs.dry_run != 'true' }}
       uses: codex-/await-remote-run@v1
       with:
         token: ${{ github.token }}

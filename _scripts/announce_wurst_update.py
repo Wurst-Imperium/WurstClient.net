@@ -41,22 +41,18 @@ def link_update_to_discussion(wurst_update: JekyllPost, discussion_id: int) -> N
 	util.write_front_matter(wurst_update.path, wurst_update.front_matter)
 
 
-def main(wurst_version):
+def main(wurst_version: str, dry_run: bool):
 	jekyll_post = util.find_wurst_update_post(wurst_version)
-
 	announcement = create_announcement(jekyll_post)
-	print(f"Title: {announcement.title}")
-	print(f"Content: {announcement.content}")
-
-	discussion_id = util.upload_discussion(announcement)
-	print(f"https://wurstforum.net/d/{discussion_id}")
-	util.set_github_output("discussion_id", discussion_id)
-
+	discussion_id = util.upload_discussion(announcement, dry_run=dry_run)
 	link_update_to_discussion(jekyll_post, discussion_id)
 
 
 if __name__ == "__main__":
 	parser = ArgumentParser(description="Announces a new Wurst update on WurstForum")
 	parser.add_argument("wurst_version", help="Wurst version (without v or -MC)")
+	parser.add_argument(
+		"--dry-run", action="store_true", help="Don't actually upload the announcement"
+	)
 	args = parser.parse_args()
-	main(args.wurst_version)
+	main(args.wurst_version, args.dry_run)
