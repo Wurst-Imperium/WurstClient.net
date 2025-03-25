@@ -11,7 +11,10 @@
 	{%- endfor -%}
 	{%- if snapshots.size > 0 -%}
 		{%- if snapshots.size < 10 -%}
-			, as well as snapshot{%- if snapshots.size > 1 -%}s{% endif %}
+			{%- if mcversions.size > 0 -%}
+				{{- ", as well as " -}}
+			{%- endif -%}
+			snapshot{%- if snapshots.size > 1 -%}s{% endif %}
 			{{- " " -}}
 			{% for snapshot in snapshots -%}
 				{%- if forloop.length <= 1 %}{% elsif forloop.last %} and {% elsif forloop.index > 1 %}, {% endif -%}
