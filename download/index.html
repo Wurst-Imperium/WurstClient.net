@@ -110,7 +110,18 @@ google_adsense: true
 <div class="padding20 no-padding-left no-padding-right">
   <div class="container">
 
-    {%- assign latest_update = site.updates | where_exp: "item", "item.minecraft-versions or item.snapshots" | last -%}
+    {%- assign latest_update = nil -%}
+    {%- for update in site.updates reversed -%}
+      {%- if update.minecraft-versions -%}
+        {%- assign latest_update = update -%}
+        {%- break -%}
+      {%- endif -%}
+      {%- if update.snapshots -%}
+        {%- assign latest_update = update -%}
+        {%- break -%}
+      {%- endif -%}
+    {%- endfor -%}
+    
     {%- assign upcoming_version = "" -%}
     {%- assign latest_rc = "" -%}
     {%- for snapshot in latest_update.snapshots -%}
