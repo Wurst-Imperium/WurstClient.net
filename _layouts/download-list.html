@@ -26,7 +26,7 @@ google_adsense: true
 						{%- continue -%}
 					{%- endunless -%}
 				{%- else -%}
-					{%- unless update.minecraft-versions -%}
+					{%- unless update.minecraft-versions or update.snapshots -%}
 						{%- continue -%}
 					{%- endunless -%}
 				{%- endif -%}

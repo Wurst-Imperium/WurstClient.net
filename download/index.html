@@ -110,7 +110,7 @@ google_adsense: true
 <div class="padding20 no-padding-left no-padding-right">
   <div class="container">
 
-    {%- assign latest_update = site.updates | where_exp: "item", "item.minecraft-versions" | last -%}
+    {%- assign latest_update = site.updates | where_exp: "item", "item.minecraft-versions or item.snapshots" | last -%}
     {%- assign upcoming_version = "" -%}
     {%- assign latest_rc = "" -%}
     {%- for snapshot in latest_update.snapshots -%}
@@ -118,12 +118,14 @@ google_adsense: true
         {%- assign rc_version = snapshot | split: "-rc" | first -%}
         {%- assign latest_rc = snapshot -%}
         {%- assign has_full_version = false -%}
-        {%- for mcversion in latest_update.minecraft-versions -%}
-          {%- if mcversion == rc_version -%}
-            {%- assign has_full_version = true -%}
-            {%- break -%}
-          {%- endif -%}
-        {%- endfor -%}
+        {%- if latest_update.minecraft-versions -%}
+          {%- for mcversion in latest_update.minecraft-versions -%}
+            {%- if mcversion == rc_version -%}
+              {%- assign has_full_version = true -%}
+              {%- break -%}
+            {%- endif -%}
+          {%- endfor -%}
+        {%- endif -%}
         {%- unless has_full_version -%}
           {%- assign upcoming_version = rc_version -%}
           {%- break -%}
