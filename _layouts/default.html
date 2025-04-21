@@ -6,11 +6,10 @@ google_adsense: false
 <head>
 	{%- include meta.html -%}
 </head>
-<body>
-	<div style="min-height: 100%">
-		{%- include header.html -%}
+<body style="display: grid; grid-template-rows: auto 1fr auto;">
+	{%- include header.html -%}
+	<div>
 		{{- content -}}
-		<div style="height: 100px;"></div>
 	</div>
 	{%- include footer.html -%}
 	<script async src="/js/wi-v2024.07.07.js"></script>
