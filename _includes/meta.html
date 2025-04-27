@@ -34,7 +34,7 @@
 {%- elsif page.video -%}
 	{% capture page_image %}https://i.ytimg.com/vi/{{ page.video }}/maxresdefault.jpg{% endcapture %}
 {%- else -%}
-	{%- assign page_image = "https://wurst.wiki/_media/logo/wurst-bbq-480p_q90.webp" -%}
+	{%- assign page_image = "https://images.wurstclient.net/_media/logo/wurst-bbq-480p_q90.webp" -%}
 {%- endif -%}
 <meta name="twitter:image" content="{{ page_image }}">
 <meta property="og:image" content="{{ page_image }}">
