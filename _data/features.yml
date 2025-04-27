@@ -228,6 +228,7 @@ commands:
 - .tp
 - .unbind
 - .vclip
+- .viewcomp
 - .viewnbt
 - .wms
 - .xray
