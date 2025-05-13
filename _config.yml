@@ -4,6 +4,7 @@ exclude:
 timezone: Europe/Berlin
 title: WurstClient.net
 url: "https://www.wurstclient.net"
+api_url: "https://api.wurstclient.net"
 
 plugins:
 - jekyll-sitemap

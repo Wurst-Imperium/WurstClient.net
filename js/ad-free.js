@@ -24,7 +24,7 @@ const afapItems = [{
 function updatePrice() {
 	const priceElement = document.getElementById("price");
 	const currencyCodeElement = document.getElementById("currency-code");
-	fetch("https://api.wurstclient.net/afa/price-preview")
+	fetch("{{ site.api_url }}/afa/price-preview")
 		.then((response) => response.json())
 		.then((data) => {
 			// Update the currency code
@@ -134,7 +134,7 @@ form.addEventListener("submit", event => {
 function requestRestoreLink()
 {
 	const email = form.querySelector("input[name=email]").value;
-	fetch("https://api.wurstclient.net/afa/restore", {
+	fetch("{{ site.api_url }}/afa/restore", {
 		method: "POST",
 		headers: {"Content-Type": "application/json"},
 		body: JSON.stringify({email})
@@ -162,7 +162,7 @@ function handleRestoreResponse(response)
 
 // Handle restore token
 function validateToken(token) {
-	fetch("https://api.wurstclient.net/afa/validate", {
+	fetch("{{ site.api_url }}/afa/validate", {
 		method: "POST",
 		headers: {"Content-Type": "application/json"},
 		body: JSON.stringify({token})
