@@ -3,7 +3,7 @@ title: My Account
 permalink: /account/
 google_adsense: false
 ---
-<script src="https://unpkg.com/htmx.org@2.0.4"></script>
+<script src="/js/htmx-2.0.4-min.js"></script>
 <meta name="htmx-config" content='{"selfRequestsOnly": false}'>
 <script>
 const token = new URLSearchParams(window.location.search).get("token");
