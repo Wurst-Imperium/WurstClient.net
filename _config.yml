@@ -4,7 +4,9 @@ exclude:
 timezone: Europe/Berlin
 title: WurstClient.net
 url: "https://www.wurstclient.net"
-api_url: "https://api.wurstclient.net"
+
+# Changes to api.wurstclient.net on GitHub Pages, see jekyll.yml workflow
+api_url: "https://api.wurstclient.local"
 
 plugins:
 - jekyll-sitemap

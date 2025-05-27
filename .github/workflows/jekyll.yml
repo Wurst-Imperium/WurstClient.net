@@ -38,6 +38,9 @@ jobs:
       run: echo ${{ github.event.inputs.distinct_id }}
     - name: Checkout repository
       uses: actions/checkout@v4
+    - name: Set production API URL
+      run: |
+        sed -i 's|api_url: "https://api.wurstclient.local"|api_url: "https://api.wurstclient.net"|g' _config.yml
     - name: Setup Pages
       uses: actions/configure-pages@v5
     - name: Build with Jekyll
