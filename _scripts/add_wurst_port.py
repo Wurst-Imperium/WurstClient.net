@@ -83,15 +83,11 @@ def add_download_category(new_version, old_latest):
 	util.write_front_matter(download_index.path, download_index.front_matter)
 
 	# Create download/minecraft-<version>.html page
-	# Get the update name from the previous version's page
-	old_page = util.read_post(Path("download") / f"minecraft-{old_latest.replace('.', '-')}.html")
-	update_name = old_page.front_matter["description"].split(" - ", 1)[1]
-
 	new_page_path = Path("download") / f"minecraft-{new_version.replace('.', '-')}.html"
 	new_page_content = f"""\
 	---
 	title: Minecraft {new_version} Wurst Hacked Client Downloads
-	description: Wurst Client downloads for Minecraft {new_version} - {update_name}
+	description: Wurst Client downloads for Minecraft {new_version}
 	layout: download-list
 	mcversion: "{new_version}"
 	permalink: /download/minecraft-{new_version.replace('.', '-')}/

@@ -9,7 +9,13 @@ google_adsense: true
 	{%- assign param = page.mcversion -%}
 {%- endif -%}
 
-{%- include title.html l1 = page.title l2 = page.description -%}
+{%- if site.mc_update_names[page.mcversion] -%}
+	{%- assign mcversion_name = site.mc_update_names[page.mcversion] -%}
+	{%- assign combined_description = page.description | append: " - " | append: mcversion_name -%}
+	{%- include title.html l1 = page.title l2 = combined_description -%}
+{%- else -%}
+	{%- include title.html l1 = page.title l2 = page.description -%}
+{%- endif -%}
 <div class="padding20 no-padding-left no-padding-right">
 	<main class="container">
 		<div class="wurst-grid">
