@@ -84,6 +84,8 @@ capes:
   "c64e0a3b-763b-48df-8712-c975cf60e6a7": "{{ page.capes.flashbxng }}",
   "Karataso": "{{ page.capes.wurst }}",
   "5551f762-673b-43dc-8dc7-50819ae58028": "{{ page.capes.wurst }}",
+  "Nikotem": "{{ page.capes.wurst }}",
+  "b7287236-65ff-4f1e-8ddc-e4f650b02503": "{{ page.capes.wurst }}",
 
   "use_new_server": false
 }
