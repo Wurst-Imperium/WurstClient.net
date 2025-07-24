@@ -29,7 +29,7 @@
 				data-analytics-oldversion="{{ page.wurst-version }}"
 				data-analytics-newversion="{{ latest.wurst-version }}"
 				data-analytics-mcversion="{{ mcversion }}"
-				data-analytics-mcversiontype="{{ mcversion-type }}"
+				data-analytics-mcversiontype="{{ mcversion_type }}"
 			>
 				Wurst {{ latest.wurst-version }} MC{{ mcversion }}
 			</a></b>
@@ -47,11 +47,11 @@
 	<a class="command-button download"
 		href="javascript:void(0)"
 		data-href="{{ mainLink }}"
-		{%- if mcversion-type == "release" %} data-loot="{{ mainLoot }}"{%- endif %}
+		{%- if mcversion_type == "release" %} data-loot="{{ mainLoot }}"{%- endif %}
 		data-analytics="Download Wurst"
 		data-analytics-version="{{ page.wurst-version }}"
 		data-analytics-mcversion="{{ mcversion }}"
-		data-analytics-mcversiontype="{{ mcversion-type }}"
+		data-analytics-mcversiontype="{{ mcversion_type }}"
 		data-analytics-modloader="Fabric"
 		data-analytics-type="main"
 		data-analytics-mirror="GitHub"
@@ -86,7 +86,7 @@
 				data-analytics-url="{{ apilink }}"
 			{%- endif %}
 			data-analytics-mcversion="{{ mcversion }}"
-			data-analytics-mcversiontype="{{ mcversion-type }}"
+			data-analytics-mcversiontype="{{ mcversion_type }}"
 			data-analytics-wurstversion="{{ page.wurst-version }}"
 			data-analytics-wurstversionmc="{{ page.wurst-version }} MC{{ mcversion }}"
 			data-analytics-outdated="{{ isOutdated }}"
@@ -112,7 +112,7 @@
 			data-analytics="Download Wurst"
 			data-analytics-version="{{ page.wurst-version }}"
 			data-analytics-mcversion="{{ mcversion }}"
-			data-analytics-mcversiontype="{{ mcversion-type }}"
+			data-analytics-mcversiontype="{{ mcversion_type }}"
 			data-analytics-modloader="Fabric"
 			data-analytics-type="sources"
 			data-analytics-mirror="GitHub"
