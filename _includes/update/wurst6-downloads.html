@@ -20,12 +20,12 @@ Just extract it and run the 'Wurst Installer.cmd' file.{%- endcapture -%}
 	</h3>
 	{%- for mcversion in page.minecraft-versions -%}
 
-		{%- capture full-version %}v{{ page.wurst-version }} MC{{ mcversion }}{% endcapture -%}
-		{%- capture mcversion-range %}{% unless site.mcversions[mcversion] %}{{ mcversion }}{% else %}{{ site.mcversions[mcversion] }}{% endunless %}{% endcapture -%}
+		{%- capture full_version %}v{{ page.wurst-version }} MC{{ mcversion }}{% endcapture -%}
+		{%- capture mcversion_range %}{% unless site.mcversions[mcversion] %}{{ mcversion }}{% else %}{{ site.mcversions[mcversion] }}{% endunless %}{% endcapture -%}
 		{%- capture basepath %}v{{ page.wurst-version }}/Wurst-Client-v{{ page.wurst-version }}-MC{{ mcversion | replace: " ", "-" }}{% endcapture -%}
 
-		{%- capture mainlink %}{{ mcxbase }}{{ basepath }}{{ ext }}{% endcapture -%}
-		{% assign mainfile = mainlink | split: '/' | last %}
+		{%- capture mainLink %}{{ mcxbase }}{{ basepath }}{{ ext }}{% endcapture -%}
+		{% assign mainFile = mainLink | split: '/' | last %}
 		{%- if mcversion contains "OF" -%}
 			{%- assign modloader = "MCP with OptiFine" -%}
 		{%- else -%}
@@ -34,18 +34,18 @@ Just extract it and run the 'Wurst Installer.cmd' file.{%- endcapture -%}
 
 		<a class="command-button download"
 			href="javascript:void(0)"
-			onclick="window.open('{{ mainlink }}', '_blank')"
+			onclick="window.open('{{ mainLink }}', '_blank')"
 			data-analytics="Download Wurst"
 			data-analytics-version="{{ page.wurst-version }}"
 			data-analytics-mcversion="{{ mcversion | remove: ' OF' }}"
 			data-analytics-modloader="{{ modloader }}"
 			data-analytics-type="installer-{{ include.mode }}"
 			data-analytics-mirror="GitHub"
-			data-analytics-file="{{ mainfile }}"
+			data-analytics-file="{{ mainFile }}"
 		>
 			<span class="icon mif-file-download"></span>
-			Wurst Client {{ full-version }}
-			<small>for Minecraft {{ mcversion-range }}</small>
+			Wurst Client {{ full_version }}
+			<small>for Minecraft {{ mcversion_range }}</small>
 		</a>
 
 	{%- endfor -%}

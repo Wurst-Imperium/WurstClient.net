@@ -30,8 +30,8 @@
 		{%- assign mcversion_type = "release" -%}
 		{%- for mcversion in page.minecraft-versions -%}
 		<div data-mcversion="{{ mcversion }}" class="padding10 no-padding-left no-padding-right">
-			{%- capture mcversion-range -%}{%- unless site.mcversions[mcversion] -%}{{ mcversion }}{%- else -%}{{ site.mcversions[mcversion] }}{%- endunless -%}{%- endcapture -%}
-			<h3>for Minecraft {{ mcversion-range }} + Fabric</h3>
+			{%- capture mcversion_range -%}{%- unless site.mcversions[mcversion] -%}{{ mcversion }}{%- else -%}{{ site.mcversions[mcversion] }}{%- endunless -%}{%- endcapture -%}
+			<h3>for Minecraft {{ mcversion_range }} + Fabric</h3>
 			{%- include update/fabric-download.html -%}
 		</div>
 		{%- endfor -%}
