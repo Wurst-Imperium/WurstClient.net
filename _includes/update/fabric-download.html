@@ -12,8 +12,14 @@
 	{%- endif -%}
 {%- endfor -%}
 
-{{/*  if there is a newer version of Wurst for the given Minecraft version, display a warning  */}}
+{{/*  determine if current page is an outdated version  */}}
+{%- assign isOutdated = false -%}
 {%- if latest and page != latest -%}
+	{%- assign isOutdated = true -%}
+{%- endif -%}
+
+{{/*  if there is a newer version of Wurst for the given Minecraft version, display a warning  */}}
+{%- if isOutdated -%}
 <div class="bg-amber padding5">
 	<div class="bg-white padding10">
 		<p class="no-margin-top no-margin-bottom">
@@ -47,6 +53,7 @@
 		data-analytics-type="main"
 		data-analytics-mirror="GitHub"
 		data-analytics-file="{{ mainfile }}"
+		data-analytics-outdated="{{ isOutdated }}"
 	>
 		<span class="icon mif-file-download"></span>
 		Wurst Client {{ full-version }}
@@ -79,6 +86,7 @@
 			data-analytics-mcversiontype="{{ mcversion-type }}"
 			data-analytics-wurstversion="{{ page.wurst-version }}"
 			data-analytics-wurstversionmc="{{ page.wurst-version }} MC{{ mcversion }}"
+			data-analytics-outdated="{{ isOutdated }}"
 		>
 			<img src="https://images.wurstclient.net/_media/icon/fabric.png" width="52" height="56" alt="Fabric icon" class="icon">
 			Fabric API
@@ -106,6 +114,7 @@
 			data-analytics-type="sources"
 			data-analytics-mirror="GitHub"
 			data-analytics-file="{{ srcfile }}"
+			data-analytics-outdated="{{ isOutdated }}"
 		>
 			{{ srcfile }}
 		</a>
