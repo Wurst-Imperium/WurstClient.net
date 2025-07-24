@@ -167,8 +167,9 @@ if (!hasAdFreeAccess) {
 }
 
 if(!hasAdFreeAccess && localStorage.getItem("WurstAdBlockerDetected") === "true") {
-	document.querySelectorAll('a[data-loot]').forEach(element => {
-		element.setAttribute('data-href', element.getAttribute('data-loot'));
+	document.querySelectorAll("a[data-loot]").forEach(element => {
+		element.setAttribute("data-href", element.getAttribute("data-loot"));
+		element.setAttribute("data-analytics-lootlink", "true");
 	});
 }
 
