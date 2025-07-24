@@ -40,11 +40,14 @@
 {%- endif -%}
 
 <p>
-	{%- capture mainlink -%}{{ mcxbase }}{{ basepath }}.jar{%- endcapture -%}
-	{%- assign mainfile = mainlink | split: '/' | last -%}
+	{%- capture mainText -%}Wurst Client {{ full-version }}{%- endcapture -%}
+	{%- capture mainLink -%}{{ mcxbase }}{{ basepath }}.jar{%- endcapture -%}
+	{%- capture mainLoot -%}https://api.wurstclient.net/loot/?to={{ mainLink | uri_escape }}&title={{ mainText | uri_escape }}{%- endcapture -%}
+	{%- assign mainFile = mainLink | split: '/' | last -%}
 	<a class="command-button download"
 		href="javascript:void(0)"
-		data-href="{{ mainlink }}"
+		data-href="{{ mainLink }}"
+		{%- if mcversion-type == "release" %} data-loot="{{ mainLoot }}"{%- endif %}
 		data-analytics="Download Wurst"
 		data-analytics-version="{{ page.wurst-version }}"
 		data-analytics-mcversion="{{ mcversion }}"
@@ -52,12 +55,12 @@
 		data-analytics-modloader="Fabric"
 		data-analytics-type="main"
 		data-analytics-mirror="GitHub"
-		data-analytics-file="{{ mainfile }}"
+		data-analytics-file="{{ mainFile }}"
 		data-analytics-outdated="{{ isOutdated }}"
 	>
 		<span class="icon mif-file-download"></span>
-		Wurst Client {{ full-version }}
-		<small>File: {{ mainfile }}</small>
+		{{ mainText }}
+		<small>File: {{ mainFile }}</small>
 	</a>
 
 	{%- if page.fabric-api -%}
