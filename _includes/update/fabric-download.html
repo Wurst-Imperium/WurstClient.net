@@ -1,4 +1,4 @@
-{%- capture full-version -%}v{{ page.wurst-version }} MC{{ mcversion }}{%- endcapture -%}
+{%- capture full_version -%}v{{ page.wurst-version }} MC{{ mcversion }}{%- endcapture -%}
 {%- capture basepath -%}v{{ page.wurst-version }}/Wurst-Client-v{{ page.wurst-version }}-MC{{ mcversion | replace: " ", "-" }}{%- endcapture -%}
 
 {{/*  find the latest version of Wurst for the given Minecraft version  */}}
@@ -40,7 +40,7 @@
 {%- endif -%}
 
 <p>
-	{%- capture mainText -%}Wurst Client {{ full-version }}{%- endcapture -%}
+	{%- capture mainText -%}Wurst Client {{ full_version }}{%- endcapture -%}
 	{%- capture mainLink -%}{{ mcxbase }}{{ basepath }}.jar{%- endcapture -%}
 	{%- capture mainLoot -%}https://api.wurstclient.net/loot/?to={{ mainLink | uri_escape }}&title={{ mainText | uri_escape }}{%- endcapture -%}
 	{%- assign mainFile = mainLink | split: '/' | last -%}
