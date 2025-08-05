@@ -10,27 +10,46 @@ announcement_template = """
 {changelog}
 """.strip()
 
+kofi_template = """
+[![{title}]({image_url})]({update_url})
+
+**Download:** <{update_url}>
+
+{changelog}
+""".strip()
+
 
 def create_announcement(wurst_update: JekyllPost) -> WurstForumDiscussion:
 	"""Create an announcement from a Wurst update post."""
 	# Title
 	title = wurst_update.front_matter["title"]
+	kofi_url = wurst_update.front_matter.get("kofi_url", None)
 
 	# Tag IDs - check these at https://wurstforum.net/api/tags
 	tags = {
 		"Announcements": 3,
 		"Wurst updates": 22,
 	}
+	if kofi_url is not None:
+		tags["Ko-fi"] = 44
 
 	# Content
 	wurst_version = wurst_update.front_matter["wurst-version"]
-	content = announcement_template.format(
-		title=title,
-		wurst_version=wurst_version,
-		update_url=wurst_update.get_update_url(),
-		image_url=wurst_update.front_matter["image"],
-		changelog=util.parse_changelog(wurst_update.content),
-	)
+	if kofi_url is not None:
+		content = kofi_template.format(
+			title=title,
+			update_url=kofi_url,
+			image_url=wurst_update.front_matter["image"],
+			changelog=util.parse_changelog(wurst_update.content),
+		)
+	else:
+		content = announcement_template.format(
+			title=title,
+			wurst_version=wurst_version,
+			update_url=wurst_update.get_update_url(),
+			image_url=wurst_update.front_matter["image"],
+			changelog=util.parse_changelog(wurst_update.content),
+		)
 
 	return WurstForumDiscussion(title, list(tags.values()), content)
 
