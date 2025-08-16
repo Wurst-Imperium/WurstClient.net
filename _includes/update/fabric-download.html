@@ -42,7 +42,7 @@
 <p>
 	{%- capture mainText -%}Wurst Client {{ full_version }}{%- endcapture -%}
 	{%- capture mainLink -%}{{ mcxbase }}{{ basepath }}.jar{%- endcapture -%}
-	{%- capture mainLoot -%}https://api.wurstclient.net/loot/?to={{ mainLink | uri_escape }}&title={{ mainText | uri_escape }}{%- endcapture -%}
+	{%- capture mainLoot -%}{{ site.api_url }}/loot/?to={{ mainLink | uri_escape }}&title={{ mainText | uri_escape }}{%- endcapture -%}
 	{%- assign mainFile = mainLink | split: '/' | last -%}
 	<a class="command-button download"
 		href="javascript:void(0)"
