@@ -34,8 +34,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - name: Echo distinct ID ${{ github.event.inputs.distinct_id }}
-      run: echo ${{ github.event.inputs.distinct_id }}
+    - name: Echo distinct ID ${{ inputs.distinct_id }}
+      run: echo ${{ inputs.distinct_id }}
     - name: Checkout repository
       uses: actions/checkout@v5
     - name: Set production API URL

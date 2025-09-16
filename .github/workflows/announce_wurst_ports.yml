@@ -1,5 +1,5 @@
 name: Announce Wurst Ports
-run-name: Announce new Wurst ${{ github.event.inputs.wurst_version }} port(s) on WurstForum
+run-name: Announce new Wurst ${{ inputs.wurst_version }} port(s) on WurstForum
 
 on:
   workflow_dispatch:
@@ -23,8 +23,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-    - name: Echo distinct ID ${{ github.event.inputs.distinct_id }}
-      run: echo ${{ github.event.inputs.distinct_id }}
+    - name: Echo distinct ID ${{ inputs.distinct_id }}
+      run: echo ${{ inputs.distinct_id }}
 
     - name: Checkout repository
       uses: actions/checkout@v5
@@ -44,6 +44,6 @@ jobs:
         WURSTFORUM_TOKEN: ${{ secrets.WF_BOT_TOKEN }}
       run: |
         python _scripts/announce_wurst_ports.py \
-          "${{ github.event.inputs.wurst_version }}" \
-          ${{ github.event.inputs.branches }} \
-          ${{ github.event.inputs.dry_run == 'true' && '--dry-run' || '' }}
+          "${{ inputs.wurst_version }}" \
+          ${{ inputs.branches }} \
+          ${{ inputs.dry_run == 'true' && '--dry-run' || '' }}

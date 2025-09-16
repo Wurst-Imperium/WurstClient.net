@@ -1,6 +1,6 @@
 # Adds the necessary Jekyll metadata when an existing Wurst Client update is ported to a new Minecraft version.
 name: Add Wurst Port
-run-name: Add Wurst ${{ github.event.inputs.wurst_version }} build for ${{ github.event.inputs.mc_version }}
+run-name: Add Wurst ${{ inputs.wurst_version }} build for ${{ inputs.mc_version }}
 
 on:
   workflow_dispatch:
@@ -29,8 +29,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-    - name: Echo distinct ID ${{ github.event.inputs.distinct_id }}
-      run: echo ${{ github.event.inputs.distinct_id }}
+    - name: Echo distinct ID ${{ inputs.distinct_id }}
+      run: echo ${{ inputs.distinct_id }}
 
     - name: Checkout repository
       uses: actions/checkout@v5
@@ -48,14 +48,14 @@ jobs:
     - name: Run add_wurst_port.py
       run: |
         python _scripts/add_wurst_port.py \
-          "${{ github.event.inputs.wurst_version }}" \
-          "${{ github.event.inputs.mc_version }}" \
-          "${{ github.event.inputs.fapi_version }}"
+          "${{ inputs.wurst_version }}" \
+          "${{ inputs.mc_version }}" \
+          "${{ inputs.fapi_version }}"
 
     - name: Commit changes
       run: |
-        WURST_VERSION=${{ github.event.inputs.wurst_version }}
-        MC_VERSION=${{ github.event.inputs.mc_version }}
+        WURST_VERSION=${{ inputs.wurst_version }}
+        MC_VERSION=${{ inputs.mc_version }}
         git config --local user.email "contact.wurstimperium@gmail.com"
         git config --local user.name "Wurst-Bot"
         git add .

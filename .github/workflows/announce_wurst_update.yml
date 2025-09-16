@@ -1,5 +1,5 @@
 name: Announce Wurst Update
-run-name: Announce Wurst ${{ github.event.inputs.wurst_version }} update on WurstForum
+run-name: Announce Wurst ${{ inputs.wurst_version }} update on WurstForum
 
 on:
   workflow_dispatch:
@@ -26,8 +26,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-    - name: Echo distinct ID ${{ github.event.inputs.distinct_id }}
-      run: echo ${{ github.event.inputs.distinct_id }}
+    - name: Echo distinct ID ${{ inputs.distinct_id }}
+      run: echo ${{ inputs.distinct_id }}
 
     - name: Checkout repository
       uses: actions/checkout@v5
@@ -49,13 +49,13 @@ jobs:
         WURSTFORUM_TOKEN: ${{ secrets.WF_BOT_TOKEN }}
       run: |
         python _scripts/announce_wurst_update.py \
-          "${{ github.event.inputs.wurst_version }}" \
-          ${{ github.event.inputs.dry_run == 'true' && '--dry-run' || '' }}
+          "${{ inputs.wurst_version }}" \
+          ${{ inputs.dry_run == 'true' && '--dry-run' || '' }}
 
     - name: Commit changes
-      if: ${{ github.event.inputs.dry_run != 'true' }}
+      if: ${{ inputs.dry_run != 'true' }}
       run: |
-        WURST_VERSION=${{ github.event.inputs.wurst_version }}
+        WURST_VERSION=${{ inputs.wurst_version }}
         DISCUSSION_ID=${{ steps.announce.outputs.discussion_id }}
         git config --local user.email "contact.wurstimperium@gmail.com"
         git config --local user.name "Wurst-Bot"
@@ -64,7 +64,7 @@ jobs:
         git push
 
     - name: Trigger Jekyll workflow
-      if: ${{ github.event.inputs.dry_run != 'true' }}
+      if: ${{ inputs.dry_run != 'true' }}
       id: jekyll_dispatch
       uses: codex-/return-dispatch@v2
       with:
@@ -75,7 +75,7 @@ jobs:
         workflow: jekyll.yml
 
     - name: Wait for Jekyll workflow to finish (run ${{ steps.jekyll_dispatch.outputs.run_id }})
-      if: ${{ github.event.inputs.dry_run != 'true' }}
+      if: ${{ inputs.dry_run != 'true' }}
       uses: codex-/await-remote-run@v1
       with:
         token: ${{ github.token }}
