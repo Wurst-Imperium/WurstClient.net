@@ -3,15 +3,15 @@ name: Deploy Jekyll site to Pages
 on:
   push:
     branches:
-      - "gh-pages"
+    - "gh-pages"
     tags-ignore:
-      - "**"
+    - "**"
   schedule:
-    # cron: minute, hour, day of month, month, day of week
-    # Enable santa hat logo on Dec 1st
-    - cron: "0 0 1 12 *"
-    # Update copyright year and disable santa hat logo on Jan 1st
-    - cron: "0 0 1 1 *"
+  # cron: minute, hour, day of month, month, day of week
+  # Enable santa hat logo on Dec 1st
+  - cron: "0 0 1 12 *"
+  # Update copyright year and disable santa hat logo on Jan 1st
+  - cron: "0 0 1 1 *"
   workflow_dispatch:
     inputs:
       distinct_id:
