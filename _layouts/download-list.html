@@ -18,6 +18,19 @@ google_adsense: true
 {%- endif -%}
 <div class="padding20 no-padding-left no-padding-right">
 	<main class="container">
+
+		{%- if page.mcversion == "snapshots" -%}
+		<div class="margin20 no-margin-left no-margin-right no-margin-top padding20 bg-lightBlue fg-white">
+		  <h2 class="text-accent text-bold">Waiting for the latest snapshot to be supported?</h2>
+		  <p>
+			Check the
+			<a href="https://wurstforum.net/t/announcements-snapshots" class="fg-white text-bold" style="text-decoration: underline">Snapshot Announcements</a>
+			section on WurstForum to see the current progress.
+			If you create a WurstForum account, you can even get email notifications when new snapshot builds are released!
+		  </p>
+		</div>
+		{%- endif -%}
+
 		<div class="wurst-grid">
 
 			{%- assign i = 0 -%}
