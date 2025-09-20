@@ -33,6 +33,15 @@ google_adsense: true
 
 <div class="padding20 no-padding-left no-padding-right">
 	<div class="container">
+		<h2 class="text-normal">Snapshots</h2>
+		<ul>
+			<li><p><a href="snapshot-notifications/">How to get notified when Wurst updates to a new snapshot</a></p></li>
+		</ul>
+	</div>
+</div>
+
+<div class="padding20 no-padding-left no-padding-right bg-grayLighter">
+	<div class="container">
 		<h2 class="text-normal">Item Duplication</h2>
 		<ul>
 			<li><p><a href="https://wurst.wiki/cmd/dupe">How to duplicate items with .dupe (1.16+ servers)</a></p></li>
@@ -41,7 +50,7 @@ google_adsense: true
 	</div>
 </div>
 
-<div class="padding20 no-padding-left no-padding-right bg-grayLighter">
+<div class="padding20 no-padding-left no-padding-right">
 	<div class="container">
 		<h2 class="text-normal">Force OP</h2>
 		<ul>
@@ -52,7 +61,7 @@ google_adsense: true
 	</div>
 </div>
 
-<div class="padding20 no-padding-left no-padding-right">
+<div class="padding20 no-padding-left no-padding-right bg-grayLighter">
 	<div class="container">
 		<h2 class="text-normal">Using Features</h2>
 		<ul>
@@ -64,7 +73,7 @@ google_adsense: true
 	</div>
 </div>
 
-<div class="padding20 no-padding-left no-padding-right bg-grayLighter">
+<div class="padding20 no-padding-left no-padding-right">
 	<div class="container">
 		<h2 class="text-normal">Troubleshooting</h2>
 		<ul>
@@ -75,7 +84,7 @@ google_adsense: true
 	</div>
 </div>
 
-<div class="padding40 no-padding-left no-padding-right">
+<div class="padding40 no-padding-left no-padding-right bg-grayLighter">
 	<div class="container">
 		<h2 class="align-center text-light">Need help with something else? <a href="/contact/">Contact me!</a></h2>
 	</div>
