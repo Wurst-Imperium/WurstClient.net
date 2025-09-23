@@ -49,10 +49,10 @@ jobs:
       run: |
         python _scripts/announce_wurst_update.py \
           "${{ inputs.wurst_version }}" \
-          ${{ inputs.dry_run == 'true' && '--dry-run' || '' }}
+          ${{ inputs.dry_run && '--dry-run' || '' }}
 
     - name: Commit changes
-      if: ${{ inputs.dry_run != 'true' }}
+      if: ${{ !inputs.dry_run }}
       run: |
         WURST_VERSION=${{ inputs.wurst_version }}
         DISCUSSION_ID=${{ steps.announce.outputs.discussion_id }}
@@ -63,7 +63,7 @@ jobs:
         git push
 
     - name: Trigger Jekyll workflow
-      if: ${{ inputs.dry_run != 'true' }}
+      if: ${{ !inputs.dry_run }}
       id: jekyll_dispatch
       uses: Wurst-Imperium/dispatch-and-wait@v1
       with:
