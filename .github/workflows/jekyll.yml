@@ -15,7 +15,6 @@ on:
   workflow_dispatch:
     inputs:
       distinct_id:
-        description: "Automatically set by the return-dispatch action (leave blank if running manually)"
         required: false
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
