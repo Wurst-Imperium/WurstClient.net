@@ -17,12 +17,6 @@ on:
       distinct_id:
         required: false
 
-permissions:
-  # To push the automated commit.
-  contents: write
-  # To trigger the Jekyll workflow.
-  actions: write
-
 jobs:
   update_post:
     runs-on: ubuntu-latest
@@ -33,6 +27,9 @@ jobs:
 
     - name: Checkout repository
       uses: actions/checkout@v5
+      with:
+        # So that the jekyll workflow runs automatically.
+        token: ${{ secrets.WURSTCLIENT_NET_PUBLISH_TOKEN }}
 
     - name: Set up Python
       uses: actions/setup-python@v6
@@ -60,14 +57,3 @@ jobs:
         git add .
         git commit -m "[Wurst-Bot] Port Wurst $WURST_VERSION to Minecraft $MC_VERSION"
         git push
-
-    - name: Trigger Jekyll workflow
-      id: jekyll_dispatch
-      uses: Wurst-Imperium/dispatch-and-wait@v1
-      with:
-        token: ${{ github.token }}
-        owner: Wurst-Imperium
-        repo: WurstClient.net
-        ref: gh-pages
-        workflow: jekyll.yml
-        run_timeout_seconds: 300  # 5 minutes
