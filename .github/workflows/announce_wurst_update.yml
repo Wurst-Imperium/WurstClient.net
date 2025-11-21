@@ -24,7 +24,7 @@ jobs:
       run: echo ${{ inputs.distinct_id }}
 
     - name: Checkout repository
-      uses: actions/checkout@v5
+      uses: actions/checkout@v6
       with:
         # So that the jekyll workflow runs automatically.
         token: ${{ secrets.WURSTCLIENT_NET_PUBLISH_TOKEN }}
