@@ -36,7 +36,7 @@ jobs:
     - name: Echo distinct ID ${{ inputs.distinct_id }}
       run: echo ${{ inputs.distinct_id }}
     - name: Checkout repository
-      uses: actions/checkout@v5
+      uses: actions/checkout@v6
     - name: Set production API URL
       run: |
         sed -i 's|api_url: "https://api.wurstclient.local"|api_url: "https://api.wurstclient.net"|g' _config.yml
