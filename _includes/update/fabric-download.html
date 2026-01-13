@@ -71,7 +71,7 @@
 			{%- assign apilink = apiversion -%}
 			{%- assign mirror = "CurseForge" -%}
 		{%- else -%}
-			{%- capture apilink -%}https://github.com/FabricMC/fabric/releases/download/{{ apiversion }}/fabric-api-{{ apiversion }}.jar{%- endcapture -%}
+			{%- capture apilink -%}https://github.com/FabricMC/fabric-api/releases/download/{{ apiversion }}/fabric-api-{{ apiversion }}.jar{%- endcapture -%}
 			{%- assign mirror = "GitHub" -%}
 			{%- assign apifile = apilink | split: '/' | last -%}
 		{%- endif -%}
