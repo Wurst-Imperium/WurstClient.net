@@ -184,6 +184,11 @@ document.querySelectorAll('a[data-href]').forEach(element => {
 function openDataHref(event, dataHref) {
 	if(event.type === 'auxclick' && event.button !== 1)
 		return;
+	const warning = event.currentTarget.getAttribute('data-warning');
+	if(warning && !window.confirm(warning)) {
+		event.preventDefault();
+		return;
+	}
 	window.open(dataHref, '_blank');
 }
 </script>

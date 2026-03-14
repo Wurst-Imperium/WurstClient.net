@@ -111,6 +111,7 @@
 		{%- assign srcfile = srclink | split: '/' | last -%}
 		<a href="javascript:void(0)"
 			data-href="{{ srclink }}"
+			data-warning="This link downloads Wurst's source code, not the mod itself.&#10;&#10;If you want to install Wurst, click the big download button above instead. Putting this -sources.jar file into your mods folder will crash the game.&#10;&#10;Download the source code anyway?"
 			data-analytics="Download Wurst"
 			data-analytics-version="{{ page.wurst-version }}"
 			data-analytics-mcversion="{{ mcversion }}"
