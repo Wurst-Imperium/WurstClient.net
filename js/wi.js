@@ -1,6 +1,6 @@
 ---
 layout: none
-permalink: "/js/wi-v2024.07.07.js"
+permalink: "/js/wi-v2026.03.14.js"
 ---
 /* Wurst-Imperium JS */
 
@@ -10,13 +10,49 @@ for (var i = 0; i < links.length; i++) {
     links[i].addEventListener('click', handleLinkEvent);
     links[i].addEventListener('auxclick', handleLinkEvent);
 }
-function handleLinkEvent(event) {
-    var link = event.target;
-    var middle = event.type == "auxclick" && event.which == 2;
-    var click = event.type == "click";
-    while (link && (typeof link.tagName == 'undefined' || link.tagName.toLowerCase() != 'a' || !link.href)) {
-        link = link.parentNode;
+function sendPlausibleEvent(eventName, eventProps) {
+    let script = document.querySelector('script[data-domain][src*="/js/script"]');
+    if (!script || !script.getAttribute("data-domain")) {
+        plausible(eventName, {props: eventProps});
+        return;
     }
+
+    let endpoint = script.getAttribute("data-api");
+    if (!endpoint)
+        endpoint = new URL(script.src).origin + "/api/event";
+
+    let payload = {
+        n: eventName,
+        u: location.href,
+        d: script.getAttribute("data-domain"),
+        r: document.referrer || null,
+        p: eventProps,
+        v: 33
+    };
+    let body = JSON.stringify(payload);
+
+    if (navigator.sendBeacon) {
+        let blob = new Blob([body], {type: "text/plain"});
+        navigator.sendBeacon(endpoint, blob);
+        return;
+    }
+
+    if (window.fetch) {
+        fetch(endpoint, {
+            method: "POST",
+            headers: {"Content-Type": "text/plain"},
+            body: body,
+            keepalive: true
+        }).catch(function() {});
+        return;
+    }
+
+    plausible(eventName, {props: eventProps});
+}
+function handleLinkEvent(event) {
+    var link = event.currentTarget;
+    var middle = event.type == "auxclick" && event.button == 1;
+    var click = event.type == "click";
     if (middle || click) {
         let eventName = link.getAttribute('data-analytics');
         let eventProps = {};
@@ -27,17 +63,9 @@ function handleLinkEvent(event) {
                 eventProps[propName] = eventPropsAttrs[i].value;
             }
         }
-        plausible(eventName, {props: eventProps});
-        if (/^localhost$|^127(\.[0-9]+){0,2}\.[0-9]+$|^\[::1?\]$/.test(window.location.hostname) || "file:" === window.location.protocol)
+        sendPlausibleEvent(eventName, eventProps);
+        if (/^localhost$|(^|\.)wurstclient\.local$|^127(\.[0-9]+){0,2}\.[0-9]+$|^\[::1?\]$/.test(window.location.hostname) || "file:" === window.location.protocol)
             console.log(eventName, {props: eventProps});
-    }
-    if (!link.target) {
-        if (!(event.ctrlKey || event.metaKey || event.shiftKey) && click) {
-            setTimeout(function () {
-                location.href = link.href;
-            }, 150);
-            event.preventDefault();
-        }
     }
 }
 
