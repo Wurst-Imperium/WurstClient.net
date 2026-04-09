@@ -1,10 +1,11 @@
-<aside class="ribbed-amber padding10 text-bold">
-	<div class="container align-center">
-		<b>PSA:</b> Wurst does NOT have a Discord server. Beware of scam Discord servers pretending to be Wurst.
-	</div>
-</aside>
-
 <header class="wi-header">
+	<aside id="discord-warning-banner" class="ribbed-amber padding10 text-bold fg-black" style="display:none">
+		<div class="container align-center" style="position:relative">
+			<b>PSA:</b> Wurst does NOT have a Discord server. Beware of scam Discord servers pretending to be Wurst.
+			<button onclick="if(confirm('Are you sure? This is a real warning, not a cookie banner. Make sure you\u0027ve actually read and understood it before dismissing. It won\u0027t be shown again.')){localStorage.setItem('discord-warning-dismissed','1');document.getElementById('discord-warning-banner').remove()}" style="position:absolute;right:0;top:50%;transform:translateY(-50%);background:none;border:none;cursor:pointer;font-size:1.25rem;color:inherit;padding:0 .25rem" aria-label="Dismiss">&times;</button>
+		</div>
+	</aside>
+	<script>if(!localStorage.getItem('discord-warning-dismissed'))document.getElementById('discord-warning-banner').style.display='';</script>
 	<nav class="wi-navbar container">
 		<div class="wi-logo">
 			<a class="wi-nav-link" href="/">
