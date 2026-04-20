@@ -61,55 +61,6 @@ mcversions:
 - "1.9"
 - "1.8"
 - "1.7"
-old_mcversions:
-- "1.7"
-- "1.8"
-- "1.9"
-- "1.10"
-- "1.11"
-- "1.12"
-- 1.14.2
-- 1.14.3
-- 1.14.4
-- "1.15"
-- 1.15.1
-- 1.15.2
-- "1.16"
-- 1.16.1
-- 1.16.2
-- 1.16.3
-- 1.16.4
-- 1.16.5
-- "1.17"
-- 1.17.1
-- "1.18"
-- 1.18.1
-- 1.18.2
-- "1.19"
-- 1.19.1
-- 1.19.2
-- 1.19.3
-- 1.19.4
-- "1.20"
-- 1.20.1
-- 1.20.2
-- 1.20.3
-- 1.20.4
-- 1.20.5
-- 1.20.6
-- "1.21"
-- 1.21.1
-- 1.21.2
-- 1.21.3
-- 1.21.4
-- 1.21.5
-- 1.21.6
-- 1.21.7
-- 1.21.8
-- 1.21.9
-- 1.21.10
-- "26.1"
-- 26.1.1
 google_adsense: true
 ---
 {%- include title.html l1 = page.title l2 = page.description -%}
@@ -198,17 +149,17 @@ google_adsense: true
 
       <section class="padding10 no-padding-left no-padding-right">
         <a href="{{ allversions }}" class="fg-gray">
-          <div class="margin10 no-margin-left no-margin-right padding10 no-padding-top no-padding-bottom bg-grayLighter {% if page.old_mcversions contains mcversion %}fg-grayLight{% else %}fg-gray{% endif %} set-border">
-            <h2 class="{% if page.old_mcversions contains mcversion %}text-light{% endif %}">
+          <div class="margin10 no-margin-left no-margin-right padding10 no-padding-top no-padding-bottom bg-grayLighter {% if mcversion != "all" and mcversion != "snapshots" and site.supported_mcversions contains mcversion %}fg-gray{% elsif mcversion != "all" and mcversion != "snapshots" %}fg-grayLight{% else %}fg-gray{% endif %} set-border">
+            <h2 class="{% if mcversion != "all" and mcversion != "snapshots" and site.supported_mcversions contains mcversion %}{% else %}{% if mcversion != "all" and mcversion != "snapshots" %}text-light{% endif %}{% endif %}">
               {%- if mcversion == "all" -%}
                 Latest Wurst Updates
               {%- elsif mcversion == "snapshots" -%}
                 Snapshots, Pre-Releases, etc.
               {%- else -%}
                 Wurst for Minecraft {% if site.mc_version_aliases[mcversion] %}{{ site.mc_version_aliases[mcversion] }}{% else %}{{ mcversion }}{% endif %}
-                {%- if page.old_mcversions contains mcversion %}
+                {%- unless mcversion == "all" or mcversion == "snapshots" or site.supported_mcversions contains mcversion %}
                   <span class="tag fg-white bg-amber" style="cursor: help;vertical-align: baseline;" title="I'm no longer maintaining this version. You can still use it, but any bugs or missing features will not be fixed.">OLD</span>
-                {%- endif -%}
+                {%- endunless -%}
               {%- endif -%}
             </h2>
           </div>

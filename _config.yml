@@ -23,6 +23,10 @@ feed:
 
 latest_mcversion: "26.1.2"
 
+supported_mcversions:
+- "26.1.2"
+- "1.21.11"
+
 mc_version_aliases:
   "1.7": "1.7.2 - 1.7.10 (built on 1.7.2)"
   "1.8 OF": "1.8 - 1.8.9 + OptiFine (built on 1.8)"

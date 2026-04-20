@@ -96,6 +96,14 @@ def add_download_category(new_version, old_latest):
 	new_page_path.write_text(textwrap.dedent(new_page_content), encoding="utf-8")
 
 
+def mark_version_as_supported(config, new_version):
+	"""Mark a newly added Minecraft version as supported on the download page."""
+	if "supported_mcversions" not in config:
+		config["supported_mcversions"] = []
+	if new_version not in config["supported_mcversions"]:
+		config["supported_mcversions"].insert(0, new_version)
+
+
 def update_latest_release(new_version):
 	"""Update all necessary files when the latest Minecraft release changes."""
 	config_path = Path("_config.yml")
@@ -106,6 +114,7 @@ def update_latest_release(new_version):
 		return  # Already up to date
 
 	config["latest_mcversion"] = new_version
+	mark_version_as_supported(config, new_version)
 	util.write_data_file(config_path, config)
 
 	update_install_guide(new_version)
