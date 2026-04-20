@@ -203,7 +203,7 @@ google_adsense: true
               {%- elsif mcversion == "snapshots" -%}
                 Snapshots, Pre-Releases, etc.
               {%- else -%}
-                Wurst for Minecraft {% if site.mcversions[mcversion] %}{{ site.mcversions[mcversion] }}{% else %}{{ mcversion }}{% endif %}
+                Wurst for Minecraft {% if site.mc_version_aliases[mcversion] %}{{ site.mc_version_aliases[mcversion] }}{% else %}{{ mcversion }}{% endif %}
                 {%- if page.old_mcversions contains mcversion %}
                   <span class="tag fg-white bg-amber" style="cursor: help;vertical-align: baseline;" title="I'm no longer maintaining this version. You can still use it, but any bugs or missing features will not be fixed.">OLD</span>
                 {%- endif -%}

@@ -21,7 +21,7 @@ Just extract it and run the 'Wurst Installer.cmd' file.{%- endcapture -%}
 	{%- for mcversion in page.minecraft-versions -%}
 
 		{%- capture full_version %}v{{ page.wurst-version }} MC{{ mcversion }}{% endcapture -%}
-		{%- capture mcversion_range %}{% unless site.mcversions[mcversion] %}{{ mcversion }}{% else %}{{ site.mcversions[mcversion] }}{% endunless %}{% endcapture -%}
+		{%- capture mcversion_range %}{% unless site.mc_version_aliases[mcversion] %}{{ mcversion }}{% else %}{{ site.mc_version_aliases[mcversion] }}{% endunless %}{% endcapture -%}
 		{%- capture basepath %}v{{ page.wurst-version }}/Wurst-Client-v{{ page.wurst-version }}-MC{{ mcversion | replace: " ", "-" }}{% endcapture -%}
 
 		{%- capture mainLink %}{{ mcxbase }}{{ basepath }}{{ ext }}{% endcapture -%}
