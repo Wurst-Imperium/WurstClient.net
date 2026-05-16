@@ -17,6 +17,12 @@ on:
       distinct_id:
         required: false
 
+permissions:
+  # To wait for older runs
+  actions: read
+  # To push the commit
+  contents: write
+
 jobs:
   update_post:
     runs-on: ubuntu-latest
@@ -25,9 +31,35 @@ jobs:
     - name: Echo distinct ID ${{ inputs.distinct_id }}
       run: echo ${{ inputs.distinct_id }}
 
+    - name: Wait for older add_wurst_port.yml runs
+      env:
+        GH_TOKEN: ${{ github.token }}
+        RUN_ID: ${{ github.run_id }}
+        RUN_NUMBER: ${{ github.run_number }}
+      run: |
+        while true; do
+          older_runs=$(gh api \
+            "repos/$GITHUB_REPOSITORY/actions/workflows/add_wurst_port.yml/runs?branch=$GITHUB_REF_NAME&event=workflow_dispatch&per_page=100" \
+            --jq '[.workflow_runs[]
+              | select(.conclusion == null)
+              | select(.id != (env.RUN_ID | tonumber))
+              | select(.run_number < (env.RUN_NUMBER | tonumber))
+              | .html_url
+            ] | .[]')
+
+          if [ -z "$older_runs" ]; then
+            break
+          fi
+
+          echo "Waiting for older add_wurst_port.yml run(s):"
+          echo "$older_runs"
+          sleep 10
+        done
+
     - name: Checkout repository
       uses: actions/checkout@v6
       with:
+        ref: ${{ github.ref_name }}
         # So that the jekyll workflow runs automatically.
         token: ${{ secrets.WURSTCLIENT_NET_PUBLISH_TOKEN }}
 
