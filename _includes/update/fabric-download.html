@@ -42,12 +42,10 @@
 <p>
 	{%- capture mainText -%}Wurst Client {{ full_version }}{%- endcapture -%}
 	{%- capture mainLink -%}{{ mcxbase }}{{ basepath }}.jar{%- endcapture -%}
-	{%- capture mainLoot -%}{{ site.api_url }}/loot/?to={{ mainLink | uri_escape }}&title={{ mainText | uri_escape }}{%- endcapture -%}
 	{%- assign mainFile = mainLink | split: '/' | last -%}
 	<a class="command-button download"
 		href="javascript:void(0)"
 		data-href="{{ mainLink }}"
-		{%- if mcversion_type == "release" %} data-loot="{{ mainLoot }}"{%- endif %}
 		data-analytics="Download Wurst"
 		data-analytics-version="{{ page.wurst-version }}"
 		data-analytics-mcversion="{{ mcversion }}"
@@ -56,7 +54,6 @@
 		data-analytics-type="main"
 		data-analytics-mirror="GitHub"
 		data-analytics-file="{{ mainFile }}"
-		data-analytics-lootlink="false"
 		data-analytics-outdated="{{ isOutdated }}"
 	>
 		<span class="icon mif-file-download"></span>
@@ -90,7 +87,6 @@
 			data-analytics-mcversiontype="{{ mcversion_type }}"
 			data-analytics-wurstversion="{{ page.wurst-version }}"
 			data-analytics-wurstversionmc="{{ page.wurst-version }} MC{{ mcversion }}"
-			data-analytics-lootlink="false"
 			data-analytics-outdated="{{ isOutdated }}"
 		>
 			<img src="https://images.wurstclient.net/_media/icon/fabric.png" width="52" height="56" alt="Fabric icon" class="icon">
@@ -120,7 +116,6 @@
 			data-analytics-type="sources"
 			data-analytics-mirror="GitHub"
 			data-analytics-file="{{ srcfile }}"
-			data-analytics-lootlink="false"
 			data-analytics-outdated="{{ isOutdated }}"
 		>
 			{{ srcfile }}
