@@ -21,9 +21,10 @@ feed:
     updates:
       path: "/wurst-updates.xml"
 
-latest_mcversion: "26.1.2"
+latest_mcversion: "26.2"
 
 supported_mcversions:
+- '26.2'
 - "26.1.2"
 - "1.21.11"
 
