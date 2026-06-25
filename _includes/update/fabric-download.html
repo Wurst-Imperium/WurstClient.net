@@ -64,9 +64,10 @@
 	{%- if page.fabric-api -%}
 		{%- assign apiversion = page.fabric-api[mcversion] -%}
 		{%- assign apiversion_short = apiversion | split: '+' | first -%}
-		{%- capture apilink -%}https://github.com/FabricMC/fabric-api/releases/download/{{ apiversion }}/fabric-api-{{ apiversion }}.jar{%- endcapture -%}
+		{%- capture default_apifile -%}fabric-api-{{ apiversion }}.jar{%- endcapture -%}
+		{%- assign apifile = site.data.fabric_api_asset_overrides[apiversion] | default: default_apifile -%}
+		{%- capture apilink -%}https://github.com/FabricMC/fabric-api/releases/download/{{ apiversion }}/{{ apifile }}{%- endcapture -%}
 		{%- assign mirror = "GitHub" -%}
-		{%- assign apifile = apilink | split: '/' | last -%}
 		<a class="command-button"
 			href="javascript:void(0)"
 			data-href="{{ apilink }}"

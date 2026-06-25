@@ -1,0 +1,10 @@
+# GitHub asset filename overrides for Fabric API releases.
+# mod-publish-plugin 2.0.0 did not URL-encode GitHub release asset filenames, so '+' became ' ' and GitHub normalized it to '.'.
+# This was fixed in https://github.com/modmuss50/mod-publish-plugin/commit/b41db57000932eca8c9ddd7b16aeef7296f77b22
+"0.149.2+26.2": "fabric-api-0.149.2.26.2.jar"
+"0.150.1+26.2": "fabric-api-0.150.1.26.2.jar"
+"0.150.2+26.2": "fabric-api-0.150.2.26.2.jar"
+"0.150.3+26.2": "fabric-api-0.150.3.26.2.jar"
+"0.151.0+26.2": "fabric-api-0.151.0.26.2.jar"
+"0.152.0+26.2": "fabric-api-0.152.0.26.2.jar"
+"0.152.1+26.2": "fabric-api-0.152.1.26.2.jar"
