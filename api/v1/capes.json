@@ -90,6 +90,8 @@ capes:
   "c01dffaa-7188-41f1-a095-85e39ca93739": "{{ page.capes.wurst }}",
   "VlSON": "{{ page.capes.wurst }}",
   "59a0d698-72a2-4b31-86d4-fb0adcc54be2": "{{ page.capes.wurst }}",
+  "retegrity": "{{ page.capes.wurst }}",
+  "a91f0d03-e597-4f25-ab98-e5cb39a888a6": "{{ page.capes.wurst }}",
 
   "use_new_server": false
 }
